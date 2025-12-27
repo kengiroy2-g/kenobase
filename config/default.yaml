@@ -1,0 +1,144 @@
+# Kenobase V2.0 - Default Configuration
+# =============================================
+# Diese Konfiguration wird vom Config-System (src/core/config.py) geladen.
+# Basiert auf ADR-018 Model Laws aus v_master_Criticality.
+
+version: "2.0.0"
+debug: false
+active_game: keno
+
+# ==========================================
+# Pfade für Daten und Output
+# ==========================================
+paths:
+  data_dir: "data"
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+  output_dir: "output"
+  logs_dir: "logs"
+
+# ==========================================
+# Physics Layer (Model Laws A/B/C)
+# Basiert auf ADR-018, ADR-020, ADR-021
+# ==========================================
+physics:
+  enable_model_laws: true
+
+  # Model Law A: Stabilitätsprüfung
+  # Ein Pattern gilt als "Gesetz" wenn es >= 90% stabil ist
+  stability_threshold: 0.90
+  stability_variations: 100
+
+  # Model Law B: Least-Action Principle
+  # Wähle die einfachste Pipeline mit gleicher Performance
+  enable_least_action: true
+
+  # Model Law C: Criticality Detection (ADR-020)
+  # Erkennt "No-Bet" Zonen durch Sensitivitätsanalyse
+  criticality_warning: 0.70
+  criticality_critical: 0.85
+
+  # Avalanche Theory (ADR-021)
+  enable_avalanche: true
+  anti_avalanche_mode: true
+
+# ==========================================
+# Analyse-Einstellungen
+# ==========================================
+analysis:
+  # Häufigkeitsanalyse
+  min_frequency_threshold: 0.05
+  max_frequency_threshold: 0.20
+
+  # Duo/Trio/Quatro Analyse
+  # Mindestanzahl Vorkommen für Pattern-Erkennung
+  duo_min_occurrences: 3
+  trio_min_occurrences: 2
+  quatro_min_occurrences: 2
+
+  # Zehnergruppen-Filter
+  # Maximum Zahlen pro Zehnergruppe (1-10, 11-20, etc.)
+  zehnergruppen_max_per_group: 3
+
+  # 111-Prinzip
+  # Sucht nach Kombinationen deren Summe durch 111 teilbar ist
+  enable_111_principle: true
+
+  # Rolling Windows für Trendanalyse
+  windows: [5, 10, 20, 50]
+
+# ==========================================
+# Pipeline-Einstellungen
+# ==========================================
+pipeline:
+  # Parallelisierung
+  n_workers: 4
+  chunk_size: 10000
+
+  # Checkpoint/Resume
+  enable_checkpoints: true
+  checkpoint_dir: "checkpoints"
+  checkpoint_interval: 100000
+
+  # Output
+  output_format: "json"
+  output_dir: "output"
+
+# ==========================================
+# Spieltypen-Konfiguration
+# Hot/Cold Thresholds basieren auf erwarteter Frequenz:
+#   expected = numbers_to_draw / numbers_range
+#   hot = expected * 1.3 (30% über Erwartung)
+#   cold = expected * 0.7 (30% unter Erwartung)
+# ==========================================
+games:
+  keno:
+    name: "KENO"
+    numbers_range: [1, 70]
+    numbers_to_draw: 20
+    # expected: 20/70 = 28.6%
+    hot_threshold: 0.37   # 28.6% * 1.3
+    cold_threshold: 0.20  # 28.6% * 0.7
+
+  eurojackpot:
+    name: "EuroJackpot"
+    numbers_range: [1, 50]
+    numbers_to_draw: 5
+    bonus_range: [1, 12]
+    bonus_count: 2
+    # expected: 5/50 = 10%
+    hot_threshold: 0.13   # 10% * 1.3
+    cold_threshold: 0.07  # 10% * 0.7
+
+  lotto:
+    name: "Lotto 6aus49"
+    numbers_range: [1, 49]
+    numbers_to_draw: 6
+    bonus_range: [0, 9]
+    bonus_count: 1
+    # expected: 6/49 = 12.2%
+    hot_threshold: 0.16   # 12.2% * 1.3
+    cold_threshold: 0.09  # 12.2% * 0.7
+
+# ==========================================
+# Legacy-Kompatibilität (wird migriert)
+# ==========================================
+legacy:
+  # CSV-Dateipfade (relativ zu raw_data_dir)
+  keno_file: "keno/KENO_ab_2018.csv"
+  eurojackpot_file: "eurojackpot/eurojackpot_archiv_bereinigt.csv"
+  lotto_file: "lotto/Lotto_archiv_bereinigt.csv"
+
+  # CSV Parsing
+  csv_delimiter: ";"
+  csv_date_format: "%d.%m.%Y"
+  csv_encoding: "utf-8"
+
+# ==========================================
+# Logging
+# ==========================================
+logging:
+  level: "INFO"
+  file: "logs/kenobase.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
