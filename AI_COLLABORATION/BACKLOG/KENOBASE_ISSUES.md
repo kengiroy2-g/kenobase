@@ -11,12 +11,12 @@
 | Prioritaet | Anzahl | DONE | IN_PROGRESS | OFFEN |
 |------------|--------|------|-------------|-------|
 | KRITISCH   | 0      | 0    | 0           | 0     |
-| HOCH       | 2      | 0    | 0           | **2** |
+| HOCH       | 3      | 2    | 0           | **1** |
 | MITTEL     | 3      | 0    | 0           | **3** |
 | NIEDRIG    | 1      | 0    | 0           | **1** |
-| **Total**  | **6**  | **0**| **0**       | **6** |
+| **Total**  | **7**  | **2**| **0**       | **5** |
 
-**Letzte Aktualisierung:** 2025-12-27 11:07
+**Letzte Aktualisierung:** 2025-12-27 13:45
 
 ---
 
@@ -53,11 +53,13 @@ Aktuell werden Ziehungsdaten manuell aktualisiert. Es gibt keinen automatisierte
 **Vorhandene Ressourcen:**
 - `Keno_Webscrapping_Code.md` - Selenium-basierter Scraper (nicht integriert)
 - `Keno_GPTs/selenium-4.17.2/` - Selenium Package vorhanden
+- `scripts/master_update.py` - Master-Script (Basis vorhanden, Scraping TODO)
+- `AI_COLLABORATION/KNOWLEDGE_BASE/DATA_SOURCES.md` - Dokumentation aller Datenquellen
 
 **Loesung:**
-1. `scripts/update_data.py` erstellen
-2. Scraper fuer alle 3 Spiele implementieren
-3. Deduplizierung bei Update
+1. Scraping in `scripts/master_update.py` implementieren (aktuell TODO)
+2. Scraper fuer alle 3 Spiele fertigstellen
+3. Deduplizierung bereits implementiert
 4. Optional: Cron-Job Setup
 
 **Acceptance Criteria:**
@@ -99,6 +101,47 @@ Globale hot/cold Thresholds (0.20/0.05) funktionieren nicht fuer alle Spiele.
 | KENO | 0.4434 | 0.4434 | (Referenz) |
 | EuroJackpot | 0.0043 | 0.1353 | 31x |
 | Lotto | 0.0000 | 0.0405 | Hot Numbers erkannt |
+
+---
+
+### ISSUE-007: Keno_GPTs Daten-Mapping & Master-Script
+**Prioritaet:** HOCH
+**Status:** DONE
+**Kategorie:** Data/Documentation
+**Erstellt:** 2025-12-27
+**Abgeschlossen:** 2025-12-27
+
+**Problem:**
+Die Dateien im Keno_GPTs Ordner waren nicht dokumentiert. Unklar welche Scripts welche Dateien generieren.
+
+**Analyse durchgefuehrt:**
+| Kategorie | Dateien | Generiert von |
+|-----------|---------|---------------|
+| Ziehungsdaten | KENO_Ziehungen_*.csv | Web-Scraping (lotto-rlp.de) |
+| Gewinnquoten | Keno_GQ_*.csv, Plus5_GQ_*.csv | Web-Scraping |
+| Pattern-Analyse | KENO_10K*.csv, 10-9_*.csv | 00_KENO_ALL_V3.py |
+| Finanzanalyse | *_Restbetrag*.csv | Berechnet (Excel/Python) |
+
+**Loesung implementiert:**
+1. `AI_COLLABORATION/KNOWLEDGE_BASE/DATA_SOURCES.md` - Vollstaendige Dokumentation
+2. `scripts/master_update.py` - Master-Script fuer konsolidierte Ausfuehrung
+
+**Master-Script Verwendung:**
+```bash
+python scripts/master_update.py --game keno --mode full
+python scripts/master_update.py --game all --mode patterns-only
+python scripts/master_update.py --game eurojackpot --mode consolidate
+```
+
+**Acceptance Criteria:**
+- [x] Alle Dateien im Keno_GPTs dokumentiert
+- [x] Generierungs-Scripts identifiziert
+- [x] Master-Script erstellt
+- [x] Datenfluss-Diagramm erstellt
+
+**Betroffene Dateien:**
+- `AI_COLLABORATION/KNOWLEDGE_BASE/DATA_SOURCES.md` (NEU)
+- `scripts/master_update.py` (NEU)
 
 ---
 
@@ -219,6 +262,10 @@ GitHub Actions Workflow erstellen:
 ### ISSUE-002: Spielspezifische Thresholds ✅
 **Abgeschlossen:** 2025-12-27
 **Details:** Siehe oben
+
+### ISSUE-007: Keno_GPTs Daten-Mapping & Master-Script ✅
+**Abgeschlossen:** 2025-12-27
+**Details:** Siehe oben - Dokumentation und Master-Script erstellt
 
 ---
 
