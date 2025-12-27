@@ -26,7 +26,29 @@ ARCHITECT (KI #1) -> PROXY -> EXECUTOR (KI #2) -> PROXY -> VALIDATOR (KI #3) -> 
 
 ---
 
-## 0.1 GitHub Repository
+## 0.1 Backlog & Issue Tracking
+
+**WICHTIG - Vor jeder Arbeit lesen:**
+```
+AI_COLLABORATION/BACKLOG/KENOBASE_ISSUES.md
+```
+
+Diese Datei enthaelt:
+- Alle offenen Issues mit Prioritaet
+- Acceptance Criteria pro Issue
+- Geschaetzter Aufwand
+- Status-Tracking (OFFEN → IN_PROGRESS → DONE)
+
+**Workflow:**
+1. Issue aus Backlog waehlen (hoechste Prioritaet zuerst)
+2. Status auf IN_PROGRESS setzen
+3. Issue bearbeiten
+4. Tests + Validation
+5. Status auf DONE setzen, Ergebnis dokumentieren
+
+---
+
+## 0.2 GitHub Repository
 
 **Repository:** https://github.com/kengiroy2-g/kenobase
 
