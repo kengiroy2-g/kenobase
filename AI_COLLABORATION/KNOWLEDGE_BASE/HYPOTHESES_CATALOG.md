@@ -23,7 +23,7 @@
 
 ## Uebersicht nach Status
 
-### BESTAETIGT (10)
+### BESTAETIGT (11)
 
 | ID | Hypothese | Evidence | Datum |
 |----|-----------|----------|-------|
@@ -36,6 +36,7 @@
 | HOUSE-004 | Near-Miss Constraint | 70x Switch, Chi²>495 | 2025-12-29 |
 | **WL-001** | **Paar-Garantie pro GK** | **30/30 Paare >90%** | **2025-12-29** |
 | **WL-005** | **Paar-Gewinn-Frequenz** | **100% >=2x/Monat, +47% ROI** | **2025-12-29** |
+| **WL-006** | **Jackpot-Einzigartigkeit** | **90.9% haben Uniqueness>=0.5** | **2025-12-29** |
 | **WL-007** | **GK-spezifische Paare** | **GK_9_9: 4.07x Lift** | **2025-12-29** |
 
 ### FALSIFIZIERT (5)
@@ -48,14 +49,13 @@
 | DIST-003 | Sum-Manipulation | Zentraler Grenzwertsatz | 2025-12-29 |
 | PRED-001/002/003 | Pre-GK1 Vorhersagen | p>0.05 | 2025-12-29 |
 
-### OFFEN - Phase 4: Wirtschaftslogik (4)
+### OFFEN - Phase 4: Wirtschaftslogik (3)
 
 | ID | Hypothese | Testmethode | Prioritaet |
 |----|-----------|-------------|------------|
 | WL-002 | Bundesland-Verteilung | Korrelation mit Bevoelkerung | HOCH |
 | WL-003 | Reset-Zyklus Erkennung | Pre-GK1 Muster (7-14 Tage) | HOCH |
 | WL-004 | Dauerschein-Muster | Beliebte Kombinationen | MITTEL |
-| WL-006 | Jackpot-Einzigartigkeit | Uniqueness-Score | HOCH |
 
 ---
 
@@ -306,6 +306,33 @@ Typ-10 (Paar + 8 Hot-Numbers):
 ERKENNTNIS: Typ-8 und Typ-10 mit starken Paaren sind PROFITABEL!
 ```
 
+### WL-006: Jackpot-Einzigartigkeit
+**Status:** BESTAETIGT (2025-12-29)
+
+```
+11 GK1-Events analysiert (Typ-10 Jackpots):
+
+Uniqueness-Statistik:
+  Durchschnitt: 0.593
+  Minimum: 0.492
+  Maximum: 0.703
+  Ueber Schwelle (0.5): 10/11 (90.9%)
+
+Uniqueness-Komponenten:
+  - Anti-Birthday (30%): Viele Zahlen > 31
+  - Konsekutive (20%): Wenige aufeinanderfolgende Zahlen
+  - Dekaden-Verteilung (20%): Gute Streuung
+  - Sum-Extremitaet (15%): Extreme Summe
+  - Unpopularitaet (15%): Wenige beliebte Zahlen
+
+Jackpot-Kandidat (generiert):
+  Zahlen: [33, 35, 37, 41, 47, 49, 51, 56, 65, 69]
+  Uniqueness: 0.917 (SEHR HOCH)
+  Anti-Birthday: 100% (alle Zahlen > 31)
+
+ERKENNTNIS: Jackpots haben systematisch hohe Uniqueness!
+```
+
 ---
 
 ## Cross-Game Hypothesen (GEPLANT)
@@ -342,11 +369,15 @@ ANTI-BIRTHDAY:  37, 41, 49, 51 (>31)
 
 ## Changelog
 
+- 2025-12-29: **WL-006 BESTAETIGT - JACKPOT-UNIQUENESS**
+  - 90.9% der Jackpots haben Uniqueness >= 0.5
+  - Durchschnittliche Uniqueness: 0.593
+  - Jackpot-Kandidat generiert mit 0.917 Uniqueness
+  - 11 Hypothesen jetzt bestaetigt (von 16 getestet)
 - 2025-12-29: **WL-005 BESTAETIGT - PROFITABLES MODELL GEFUNDEN!**
   - Typ-8 und Typ-10 haben POSITIVE ROI (+22% und +47%)
   - Bestes Ticket: [2, 3, 9, 24, 33, 36, 49, 50, 51, 64] mit +126% ROI
   - 100% der Paare gewinnen >=2x/Monat
-  - 10 Hypothesen jetzt bestaetigt
 - 2025-12-29: **WL-001 & WL-007 BESTAETIGT**
   - WL-001: 30/30 starke Paare haben >90% monatliche Garantie
   - WL-007: GK_9_9 hat staerksten Lift (4.07x)
