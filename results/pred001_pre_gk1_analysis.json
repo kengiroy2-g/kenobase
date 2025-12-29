@@ -1,0 +1,538 @@
+{
+  "analysis_date": "2025-12-29 09:28:46",
+  "primary_analysis_7d": {
+    "hypothesis_id": "PRED-001",
+    "hypothesis": "Near-Miss Ratio (9/10 to 10/10) increases before GK1 events",
+    "window_days": 7,
+    "n_events_analyzed": 10,
+    "summary": {
+      "before_gk1": {
+        "mean_ratio": 24.9,
+        "std_ratio": 17.5696,
+        "min_ratio": 6.0,
+        "max_ratio": 59.0
+      },
+      "after_gk1": {
+        "mean_ratio": 23.4,
+        "std_ratio": 8.5697,
+        "min_ratio": 7.0,
+        "max_ratio": 38.0
+      },
+      "ratio_difference": 1.5
+    },
+    "statistical_tests": {
+      "paired_ttest": {
+        "t_statistic": 0.2447,
+        "p_value": 0.812139,
+        "significant_at_0.05": false
+      },
+      "wilcoxon_test": {
+        "w_statistic": 25.5,
+        "p_value": 0.867188,
+        "significant_at_0.05": false
+      },
+      "effect_size": {
+        "cohens_d": 0.0816,
+        "interpretation": "negligible"
+      }
+    },
+    "conclusion": {
+      "hypothesis_confirmed": false,
+      "interpretation": "FALSIFIED: No significant difference in Near-Miss Ratio before vs after GK1 events (before: 24.90 vs after: 23.40, p=0.8121). The hypothesis is not supported by the data."
+    },
+    "event_details": [
+      {
+        "event_date": "2022-01-31",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 43.0,
+          "near_miss_count": 43,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-01-24",
+          "end_date": "2022-01-30"
+        },
+        "after": {
+          "ratio": 38.0,
+          "near_miss_count": 38,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-02-01",
+          "end_date": "2022-02-07"
+        },
+        "ratio_difference": 5.0
+      },
+      {
+        "event_date": "2022-05-28",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 59.0,
+          "near_miss_count": 59,
+          "gk1_count": 1,
+          "days_with_data": 7,
+          "start_date": "2022-05-21",
+          "end_date": "2022-05-27"
+        },
+        "after": {
+          "ratio": 23.0,
+          "near_miss_count": 23,
+          "gk1_count": 1,
+          "days_with_data": 7,
+          "start_date": "2022-05-29",
+          "end_date": "2022-06-04"
+        },
+        "ratio_difference": 36.0
+      },
+      {
+        "event_date": "2022-10-16",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 42.0,
+          "near_miss_count": 42,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-10-09",
+          "end_date": "2022-10-15"
+        },
+        "after": {
+          "ratio": 28.0,
+          "near_miss_count": 28,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-10-17",
+          "end_date": "2022-10-23"
+        },
+        "ratio_difference": 14.0
+      },
+      {
+        "event_date": "2022-12-10",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 14.0,
+          "near_miss_count": 14,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-12-03",
+          "end_date": "2022-12-09"
+        },
+        "after": {
+          "ratio": 20.0,
+          "near_miss_count": 20,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2022-12-11",
+          "end_date": "2022-12-17"
+        },
+        "ratio_difference": -6.0
+      },
+      {
+        "event_date": "2023-02-01",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 8.0,
+          "near_miss_count": 8,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-01-25",
+          "end_date": "2023-01-31"
+        },
+        "after": {
+          "ratio": 22.0,
+          "near_miss_count": 22,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-02-02",
+          "end_date": "2023-02-08"
+        },
+        "ratio_difference": -14.0
+      },
+      {
+        "event_date": "2023-03-31",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 9.0,
+          "near_miss_count": 9,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-03-24",
+          "end_date": "2023-03-30"
+        },
+        "after": {
+          "ratio": 30.0,
+          "near_miss_count": 30,
+          "gk1_count": 1,
+          "days_with_data": 7,
+          "start_date": "2023-04-01",
+          "end_date": "2023-04-07"
+        },
+        "ratio_difference": -21.0
+      },
+      {
+        "event_date": "2023-06-13",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 18.0,
+          "near_miss_count": 18,
+          "gk1_count": 1,
+          "days_with_data": 7,
+          "start_date": "2023-06-06",
+          "end_date": "2023-06-12"
+        },
+        "after": {
+          "ratio": 20.0,
+          "near_miss_count": 20,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-06-14",
+          "end_date": "2023-06-20"
+        },
+        "ratio_difference": -2.0
+      },
+      {
+        "event_date": "2023-06-28",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 6.0,
+          "near_miss_count": 12,
+          "gk1_count": 2,
+          "days_with_data": 7,
+          "start_date": "2023-06-21",
+          "end_date": "2023-06-27"
+        },
+        "after": {
+          "ratio": 32.0,
+          "near_miss_count": 32,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-06-29",
+          "end_date": "2023-07-05"
+        },
+        "ratio_difference": -26.0
+      },
+      {
+        "event_date": "2023-07-25",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 14.0,
+          "near_miss_count": 14,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-07-18",
+          "end_date": "2023-07-24"
+        },
+        "after": {
+          "ratio": 7.0,
+          "near_miss_count": 7,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-07-26",
+          "end_date": "2023-08-01"
+        },
+        "ratio_difference": 7.0
+      },
+      {
+        "event_date": "2023-10-10",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 36.0,
+          "near_miss_count": 36,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-10-03",
+          "end_date": "2023-10-09"
+        },
+        "after": {
+          "ratio": 14.0,
+          "near_miss_count": 14,
+          "gk1_count": 0,
+          "days_with_data": 7,
+          "start_date": "2023-10-11",
+          "end_date": "2023-10-17"
+        },
+        "ratio_difference": 22.0
+      }
+    ],
+    "methodology": {
+      "near_miss_ratio_formula": "count(9/10 winners) / max(count(10/10 winners), 1)",
+      "statistical_tests_used": [
+        "Paired t-test",
+        "Wilcoxon signed-rank test"
+      ],
+      "significance_level": 0.05,
+      "data_sources": [
+        "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+        "Keno_GPTs/Keno_GQ_2022_2023-2024.csv"
+      ]
+    }
+  },
+  "sensitivity_analysis_14d": {
+    "hypothesis_id": "PRED-001",
+    "hypothesis": "Near-Miss Ratio (9/10 to 10/10) increases before GK1 events",
+    "window_days": 14,
+    "n_events_analyzed": 10,
+    "summary": {
+      "before_gk1": {
+        "mean_ratio": 40.6,
+        "std_ratio": 16.9127,
+        "min_ratio": 16.0,
+        "max_ratio": 70.0
+      },
+      "after_gk1": {
+        "mean_ratio": 42.45,
+        "std_ratio": 12.9662,
+        "min_ratio": 16.0,
+        "max_ratio": 61.0
+      },
+      "ratio_difference": -1.85
+    },
+    "statistical_tests": {
+      "paired_ttest": {
+        "t_statistic": -0.2199,
+        "p_value": 0.83087,
+        "significant_at_0.05": false
+      },
+      "wilcoxon_test": {
+        "w_statistic": 25.0,
+        "p_value": 0.845703,
+        "significant_at_0.05": false
+      },
+      "effect_size": {
+        "cohens_d": -0.0733,
+        "interpretation": "negligible"
+      }
+    },
+    "conclusion": {
+      "hypothesis_confirmed": false,
+      "interpretation": "FALSIFIED: No significant difference in Near-Miss Ratio before vs after GK1 events (before: 40.60 vs after: 42.45, p=0.8309). The hypothesis is not supported by the data."
+    },
+    "event_details": [
+      {
+        "event_date": "2022-01-31",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 55.0,
+          "near_miss_count": 55,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2022-01-17",
+          "end_date": "2022-01-30"
+        },
+        "after": {
+          "ratio": 51.0,
+          "near_miss_count": 51,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2022-02-01",
+          "end_date": "2022-02-14"
+        },
+        "ratio_difference": 4.0
+      },
+      {
+        "event_date": "2022-05-28",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 70.0,
+          "near_miss_count": 70,
+          "gk1_count": 1,
+          "days_with_data": 14,
+          "start_date": "2022-05-14",
+          "end_date": "2022-05-27"
+        },
+        "after": {
+          "ratio": 31.5,
+          "near_miss_count": 63,
+          "gk1_count": 2,
+          "days_with_data": 14,
+          "start_date": "2022-05-29",
+          "end_date": "2022-06-11"
+        },
+        "ratio_difference": 38.5
+      },
+      {
+        "event_date": "2022-10-16",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 60.0,
+          "near_miss_count": 60,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2022-10-02",
+          "end_date": "2022-10-15"
+        },
+        "after": {
+          "ratio": 48.0,
+          "near_miss_count": 48,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2022-10-17",
+          "end_date": "2022-10-30"
+        },
+        "ratio_difference": 12.0
+      },
+      {
+        "event_date": "2022-12-10",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 28.0,
+          "near_miss_count": 28,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2022-11-26",
+          "end_date": "2022-12-09"
+        },
+        "after": {
+          "ratio": 47.0,
+          "near_miss_count": 47,
+          "gk1_count": 1,
+          "days_with_data": 14,
+          "start_date": "2022-12-11",
+          "end_date": "2022-12-24"
+        },
+        "ratio_difference": -19.0
+      },
+      {
+        "event_date": "2023-02-01",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 21.0,
+          "near_miss_count": 21,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-01-18",
+          "end_date": "2023-01-31"
+        },
+        "after": {
+          "ratio": 57.0,
+          "near_miss_count": 57,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-02-02",
+          "end_date": "2023-02-15"
+        },
+        "ratio_difference": -36.0
+      },
+      {
+        "event_date": "2023-03-31",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 27.0,
+          "near_miss_count": 27,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-03-17",
+          "end_date": "2023-03-30"
+        },
+        "after": {
+          "ratio": 61.0,
+          "near_miss_count": 61,
+          "gk1_count": 1,
+          "days_with_data": 14,
+          "start_date": "2023-04-01",
+          "end_date": "2023-04-14"
+        },
+        "ratio_difference": -34.0
+      },
+      {
+        "event_date": "2023-06-13",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 44.0,
+          "near_miss_count": 44,
+          "gk1_count": 1,
+          "days_with_data": 14,
+          "start_date": "2023-05-30",
+          "end_date": "2023-06-12"
+        },
+        "after": {
+          "ratio": 16.0,
+          "near_miss_count": 32,
+          "gk1_count": 2,
+          "days_with_data": 14,
+          "start_date": "2023-06-14",
+          "end_date": "2023-06-27"
+        },
+        "ratio_difference": 28.0
+      },
+      {
+        "event_date": "2023-06-28",
+        "winners_on_event": 10,
+        "before": {
+          "ratio": 16.0,
+          "near_miss_count": 32,
+          "gk1_count": 2,
+          "days_with_data": 14,
+          "start_date": "2023-06-14",
+          "end_date": "2023-06-27"
+        },
+        "after": {
+          "ratio": 45.0,
+          "near_miss_count": 45,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-06-29",
+          "end_date": "2023-07-12"
+        },
+        "ratio_difference": -29.0
+      },
+      {
+        "event_date": "2023-07-25",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 37.0,
+          "near_miss_count": 37,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-07-11",
+          "end_date": "2023-07-24"
+        },
+        "after": {
+          "ratio": 38.0,
+          "near_miss_count": 38,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-07-26",
+          "end_date": "2023-08-08"
+        },
+        "ratio_difference": -1.0
+      },
+      {
+        "event_date": "2023-10-10",
+        "winners_on_event": 2,
+        "before": {
+          "ratio": 48.0,
+          "near_miss_count": 48,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-09-26",
+          "end_date": "2023-10-09"
+        },
+        "after": {
+          "ratio": 30.0,
+          "near_miss_count": 30,
+          "gk1_count": 0,
+          "days_with_data": 14,
+          "start_date": "2023-10-11",
+          "end_date": "2023-10-24"
+        },
+        "ratio_difference": 18.0
+      }
+    ],
+    "methodology": {
+      "near_miss_ratio_formula": "count(9/10 winners) / max(count(10/10 winners), 1)",
+      "statistical_tests_used": [
+        "Paired t-test",
+        "Wilcoxon signed-rank test"
+      ],
+      "significance_level": 0.05,
+      "data_sources": [
+        "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+        "Keno_GPTs/Keno_GQ_2022_2023-2024.csv"
+      ]
+    }
+  },
+  "overall_conclusion": {
+    "hypothesis_id": "PRED-001",
+    "status": "FALSIFIED",
+    "robustness": "Both 7d and 14d windows show consistent results"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "hypothesis": "POPULARITY_PROXY",
+  "title": "Birthday Score vs Winner Count Correlation",
+  "timestamp": "2025-12-28T22:39:46.523983",
+  "status": "NO_DATA",
+  "error": "No Gewinnquoten (GQ) files found",
+  "data_sources": {
+    "draws_file": "data\\raw\\keno\\KENO_ab_2018.csv",
+    "gq_dir": "data\\raw\\keno",
+    "gq_files_found": 0
+  },
+  "summary": {
+    "result": "INCONCLUSIVE",
+    "interpretation": "Cannot test hypothesis without GQ data"
+  }
+}

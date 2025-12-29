@@ -1,0 +1,77 @@
+{
+  "hypothesis": "HYP-012",
+  "description": "Stake-Number Correlation Analysis (Spieleinsatz)",
+  "timestamp": "2025-12-27T17:12:15.140207",
+  "correlation": {
+    "spieleinsatz": {
+      "pearson_r": 0.0807,
+      "pearson_p": 0.5068,
+      "spearman_r": 0.0518,
+      "spearman_p": 0.6703,
+      "is_significant": false
+    },
+    "total_auszahlung": {
+      "pearson_r": 0.3381,
+      "pearson_p": 0.0042,
+      "spearman_r": 0.3128,
+      "spearman_p": 0.0084,
+      "is_significant": true
+    },
+    "restbetrag": {
+      "pearson_r": -0.3202,
+      "pearson_p": 0.0069,
+      "spearman_r": -0.2937,
+      "spearman_p": 0.0136,
+      "is_significant": true
+    }
+  },
+  "data_summary": {
+    "n_numbers": 70,
+    "n_draws": 365
+  },
+  "classification": {
+    "low_stake_numbers": [
+      6,
+      14,
+      22,
+      24,
+      36,
+      42,
+      60,
+      64
+    ],
+    "high_stake_numbers": [
+      4,
+      11,
+      12,
+      13,
+      20,
+      28,
+      41,
+      44,
+      49,
+      52,
+      56,
+      58,
+      59,
+      66,
+      68
+    ],
+    "stats": {
+      "n_low_stake": 8.0,
+      "n_high_stake": 15.0,
+      "n_neutral": 47.0,
+      "mean_stake": 356798.01912597177,
+      "std_stake": 2067.253592205176,
+      "median_stake": 356537.65705541236,
+      "threshold_std": 1.0
+    }
+  },
+  "interpretation": {
+    "significance": "NOT_SIGNIFICANT",
+    "verdict": "No significant correlation found between draw frequency and stake amounts. Numbers appear independent of Spieleinsatz.",
+    "low_stake_count": 8,
+    "high_stake_count": 15,
+    "recommendation": "Low-stake numbers: [6, 14, 22, 24, 36, 42, 60, 64]"
+  }
+}

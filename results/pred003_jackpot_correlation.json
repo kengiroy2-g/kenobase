@@ -1,0 +1,72 @@
+{
+  "hypothesis": "PRED-003",
+  "description": "Hoher Jackpot korreliert mit niedriger Near-Miss Ratio",
+  "expected_correlation": "negative",
+  "analysis_date": "2025-12-29T09:28:05.757105",
+  "data_sources": {
+    "gewinnquoten": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+    "restbetrag": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_Ziehung2023_+_Restbetrag_v2.CSV"
+  },
+  "sample_sizes": {
+    "days_since_gk1": 25,
+    "restbetrag": 10,
+    "kasse": 10
+  },
+  "correlations": {
+    "days_since_gk1_vs_near_miss": {
+      "pearson_r": -0.1153,
+      "pearson_p": 0.583181,
+      "spearman_rho": -0.0455,
+      "spearman_p": 0.82918,
+      "sample_size": 25,
+      "significant_p05": "False"
+    },
+    "restbetrag_vs_near_miss": {
+      "pearson_r": 0.366,
+      "pearson_p": 0.298252,
+      "spearman_rho": 0.6231,
+      "spearman_p": 0.054295,
+      "sample_size": 10,
+      "significant_p05": "False"
+    },
+    "kasse_vs_near_miss": {
+      "pearson_r": -0.3295,
+      "pearson_p": 0.352531,
+      "spearman_rho": -0.4783,
+      "spearman_p": 0.161984,
+      "sample_size": 10,
+      "significant_p05": "False"
+    }
+  },
+  "conclusion": {
+    "hypothesis_confirmed": false,
+    "primary_metric": "spearman_rho",
+    "primary_correlation": -0.0455,
+    "primary_p_value": 0.82918,
+    "significance_level": 0.05,
+    "interpretation": "FALSIFIZIERT: Keine signifikante Korrelation gefunden. Spearman rho = -0.0455, p = 0.829180. Der Zusammenhang ist statistisch nicht nachweisbar."
+  },
+  "group_comparison": {
+    "high_jackpot_n": 13,
+    "high_jackpot_mean_nmr": 4.207,
+    "high_jackpot_median_nmr": 2.0,
+    "low_jackpot_n": 12,
+    "low_jackpot_mean_nmr": 2.0788,
+    "low_jackpot_median_nmr": 1.25,
+    "median_split_days": 21.0,
+    "mann_whitney_u": 82.5,
+    "mann_whitney_p": 0.826344,
+    "significant_p05": "False"
+  },
+  "descriptive_stats": {
+    "total_draws_analyzed": 769,
+    "draws_with_gk1_winner": 25,
+    "draws_without_gk1_winner": 744,
+    "near_miss_ratio_mean": 3.1855,
+    "near_miss_ratio_std": 6.1004,
+    "near_miss_ratio_min": 0.0,
+    "near_miss_ratio_max": 31.0,
+    "days_since_gk1_mean": 31.39,
+    "days_since_gk1_max": 107
+  }
+}

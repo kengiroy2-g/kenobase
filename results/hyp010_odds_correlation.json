@@ -1,0 +1,60 @@
+{
+  "hypothesis": "HYP-010",
+  "description": "Odds-Winner Correlation Analysis",
+  "timestamp": "2025-12-27T16:05:05.026649",
+  "correlation": {
+    "pearson_r": 0.0842,
+    "pearson_p": 0.4883,
+    "spearman_r": 0.0653,
+    "spearman_p": 0.5913,
+    "is_significant": false
+  },
+  "data_summary": {
+    "n_numbers": 70,
+    "n_draws": 769,
+    "n_gq_dates": 769
+  },
+  "classification": {
+    "safe_numbers": [
+      1,
+      35,
+      36,
+      51,
+      52,
+      53,
+      56,
+      57
+    ],
+    "popular_numbers": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      12,
+      17,
+      23,
+      25,
+      33
+    ],
+    "stats": {
+      "n_safe": 8.0,
+      "n_popular": 13.0,
+      "n_neutral": 49.0,
+      "mean_winners": 474.15352692576175,
+      "std_winners": 45.15436729031522,
+      "median_winners": 466.9865878891733,
+      "threshold_std": 1.0
+    }
+  },
+  "interpretation": {
+    "significance": "NOT_SIGNIFICANT",
+    "verdict": "No significant correlation found between draw frequency and winner counts.",
+    "safe_count": 8,
+    "popular_count": 13,
+    "recommendation": "Safe numbers: [1, 35, 36, 51, 52, 53, 56, 57]"
+  }
+}

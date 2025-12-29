@@ -1,0 +1,30 @@
+{
+  "hypothesis": "HOUSE-002",
+  "description": "High-stake draws favor unpopular numbers",
+  "timestamp": "2025-12-28T20:38:44.789615",
+  "parameters": {
+    "stake_file": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_Ziehung2023_+_Restbetrag_v2.CSV",
+    "high_stake_percentile": 0.75,
+    "correlation_threshold": 0.15
+  },
+  "result": {
+    "spearman_r": 0.024440545662990684,
+    "spearman_p": 0.6416422587160902,
+    "is_significant": false,
+    "supports_hypothesis": false,
+    "n_draws": 365,
+    "n_high_stake": 92,
+    "high_stake_threshold": 377154.0,
+    "mean_unpopular_ratio_high": 0.44673913043478264,
+    "mean_unpopular_ratio_low": 0.44157509157509156
+  },
+  "acceptance_criteria": {
+    "required_r": "|r| > 0.15",
+    "required_p": "p < 0.05"
+  },
+  "verdict": {
+    "is_significant": false,
+    "supports_hypothesis": false,
+    "conclusion": "NOT SUPPORTED: No significant correlation detected"
+  }
+}

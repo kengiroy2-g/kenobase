@@ -1,0 +1,332 @@
+{
+  "hypothesis": "HYP-007",
+  "title": "Duo/Trio/Quatro Pattern Prediction",
+  "timestamp": "2025-12-28T16:36:03.785431",
+  "config": {
+    "data_file": "data\\raw\\keno\\KENO_ab_2018.csv",
+    "n_draws": 2237,
+    "train_ratio": 0.8,
+    "top_n_patterns": 50,
+    "monte_carlo_iterations": 1000,
+    "random_seed": 42
+  },
+  "results": {
+    "duo": {
+      "pattern_type": "duo",
+      "top_n_patterns": 50,
+      "train_occurrences": 8482,
+      "test_hits": 1745,
+      "random_baseline_mean": 1761.89,
+      "random_baseline_std": 38.24,
+      "z_score": -0.4418,
+      "p_value": 0.675,
+      "is_significant": false,
+      "top_10_patterns": [
+        {
+          "pattern": [
+            64,
+            66
+          ],
+          "count": 178
+        },
+        {
+          "pattern": [
+            7,
+            10
+          ],
+          "count": 178
+        },
+        {
+          "pattern": [
+            27,
+            64
+          ],
+          "count": 176
+        },
+        {
+          "pattern": [
+            20,
+            36
+          ],
+          "count": 176
+        },
+        {
+          "pattern": [
+            32,
+            64
+          ],
+          "count": 175
+        },
+        {
+          "pattern": [
+            24,
+            27
+          ],
+          "count": 175
+        },
+        {
+          "pattern": [
+            49,
+            60
+          ],
+          "count": 174
+        },
+        {
+          "pattern": [
+            9,
+            10
+          ],
+          "count": 174
+        },
+        {
+          "pattern": [
+            27,
+            49
+          ],
+          "count": 172
+        },
+        {
+          "pattern": [
+            32,
+            49
+          ],
+          "count": 172
+        }
+      ]
+    },
+    "trio": {
+      "pattern_type": "trio",
+      "top_n_patterns": 50,
+      "train_occurrences": 2966,
+      "test_hits": 431,
+      "random_baseline_mean": 466.72,
+      "random_baseline_std": 21.91,
+      "z_score": -1.6306,
+      "p_value": 0.956,
+      "is_significant": false,
+      "top_10_patterns": [
+        {
+          "pattern": [
+            7,
+            9,
+            10
+          ],
+          "count": 64
+        },
+        {
+          "pattern": [
+            19,
+            28,
+            49
+          ],
+          "count": 62
+        },
+        {
+          "pattern": [
+            27,
+            49,
+            54
+          ],
+          "count": 62
+        },
+        {
+          "pattern": [
+            13,
+            32,
+            67
+          ],
+          "count": 62
+        },
+        {
+          "pattern": [
+            14,
+            49,
+            60
+          ],
+          "count": 61
+        },
+        {
+          "pattern": [
+            2,
+            3,
+            20
+          ],
+          "count": 61
+        },
+        {
+          "pattern": [
+            4,
+            53,
+            64
+          ],
+          "count": 61
+        },
+        {
+          "pattern": [
+            12,
+            32,
+            42
+          ],
+          "count": 61
+        },
+        {
+          "pattern": [
+            10,
+            12,
+            32
+          ],
+          "count": 60
+        },
+        {
+          "pattern": [
+            2,
+            36,
+            59
+          ],
+          "count": 60
+        }
+      ]
+    },
+    "quatro": {
+      "pattern_type": "quatro",
+      "top_n_patterns": 50,
+      "train_occurrences": 1218,
+      "test_hits": 112,
+      "random_baseline_mean": 119.34,
+      "random_baseline_std": 10.88,
+      "z_score": -0.6746,
+      "p_value": 0.755,
+      "is_significant": false,
+      "top_10_patterns": [
+        {
+          "pattern": [
+            12,
+            20,
+            36,
+            59
+          ],
+          "count": 26
+        },
+        {
+          "pattern": [
+            24,
+            27,
+            57,
+            59
+          ],
+          "count": 26
+        },
+        {
+          "pattern": [
+            9,
+            18,
+            56,
+            58
+          ],
+          "count": 26
+        },
+        {
+          "pattern": [
+            27,
+            29,
+            59,
+            64
+          ],
+          "count": 26
+        },
+        {
+          "pattern": [
+            8,
+            42,
+            43,
+            68
+          ],
+          "count": 26
+        },
+        {
+          "pattern": [
+            2,
+            53,
+            57,
+            66
+          ],
+          "count": 25
+        },
+        {
+          "pattern": [
+            23,
+            32,
+            64,
+            66
+          ],
+          "count": 25
+        },
+        {
+          "pattern": [
+            14,
+            16,
+            21,
+            54
+          ],
+          "count": 25
+        },
+        {
+          "pattern": [
+            3,
+            12,
+            20,
+            70
+          ],
+          "count": 25
+        },
+        {
+          "pattern": [
+            27,
+            57,
+            59,
+            61
+          ],
+          "count": 25
+        }
+      ]
+    }
+  },
+  "acceptance_criteria": {
+    "criteria": {
+      "any_pattern_significant": {
+        "target": "p < 0.05 for at least one pattern type",
+        "actual": [],
+        "passed": false
+      },
+      "any_high_zscore": {
+        "target": "z-score > 1.65 (90% confidence)",
+        "actual": {
+          "duo": -0.442,
+          "trio": -1.631,
+          "quatro": -0.675
+        },
+        "passed": false
+      },
+      "all_above_baseline": {
+        "target": "test_hits > random baseline for all types",
+        "actual": {
+          "duo": "1745 vs 1761.9",
+          "trio": "431 vs 466.7",
+          "quatro": "112 vs 119.3"
+        },
+        "passed": false
+      }
+    },
+    "passed": 0,
+    "total": 3,
+    "hypothesis_supported": false
+  },
+  "summary": {
+    "hypothesis_supported": false,
+    "key_findings": [
+      "Duos: Unter/gleich Baseline (p=0.6750)",
+      "Trios: Unter/gleich Baseline (p=0.9560)",
+      "Quatros: Unter/gleich Baseline (p=0.7550)"
+    ]
+  }
+}

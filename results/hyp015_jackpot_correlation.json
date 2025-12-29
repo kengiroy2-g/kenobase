@@ -1,0 +1,206 @@
+{
+  "hypothesis": "HYP-015",
+  "description": "Jackpot-Hoehe vs. Zahlentyp Korrelation",
+  "correlation": {
+    "pearson_r": 0.01695646854743629,
+    "pearson_p": 0.6458166061503912,
+    "spearman_r": 0.013549924016647294,
+    "spearman_p": 0.713438258212305,
+    "chi_square_stat": 0.11387343077292493,
+    "chi_square_p": 0.7357766613902117,
+    "chi_square_dof": 1,
+    "is_significant": false,
+    "n_jackpot_draws": 18,
+    "n_normal_draws": 719,
+    "n_total_draws": 737
+  },
+  "number_type_stats": [
+    {
+      "category": "birthday",
+      "jackpot_ratio": 0.45,
+      "normal_ratio": 0.4396383866481224,
+      "difference": 0.01036161335187763,
+      "z_score": 0.3912014648267721
+    },
+    {
+      "category": "decade_0",
+      "jackpot_ratio": 0.13333333333333333,
+      "normal_ratio": 0.1312239221140473,
+      "difference": 0.0021094112192860393,
+      "z_score": 0.11706050966609961
+    },
+    {
+      "category": "decade_1",
+      "jackpot_ratio": 0.14722222222222223,
+      "normal_ratio": 0.13977746870653684,
+      "difference": 0.007444753515685382,
+      "z_score": 0.4021350238527375
+    },
+    {
+      "category": "decade_2",
+      "jackpot_ratio": 0.1361111111111111,
+      "normal_ratio": 0.1404728789986092,
+      "difference": -0.004361767887498091,
+      "z_score": -0.23531862124683525
+    },
+    {
+      "category": "decade_3",
+      "jackpot_ratio": 0.14166666666666666,
+      "normal_ratio": 0.1450625869262865,
+      "difference": -0.00339592025961985,
+      "z_score": -0.18075806761524746
+    },
+    {
+      "category": "decade_4",
+      "jackpot_ratio": 0.1527777777777778,
+      "normal_ratio": 0.14318497913769124,
+      "difference": 0.009592798640086553,
+      "z_score": 0.5129078897342959
+    },
+    {
+      "category": "decade_5",
+      "jackpot_ratio": 0.14444444444444443,
+      "normal_ratio": 0.1422809457579972,
+      "difference": 0.0021634986864472183,
+      "z_score": 0.11604473366137447
+    },
+    {
+      "category": "decade_6",
+      "jackpot_ratio": 0.14444444444444443,
+      "normal_ratio": 0.1579972183588317,
+      "difference": -0.013552773914387278,
+      "z_score": -0.6969453340496501
+    },
+    {
+      "category": "even",
+      "jackpot_ratio": 0.48333333333333334,
+      "normal_ratio": 0.5039638386648122,
+      "difference": -0.020630505331478866,
+      "z_score": -0.7732718698672775
+    },
+    {
+      "category": "high",
+      "jackpot_ratio": 0.55,
+      "normal_ratio": 0.5603616133518776,
+      "difference": -0.010361613351877574,
+      "z_score": -0.39120146482677
+    },
+    {
+      "category": "odd",
+      "jackpot_ratio": 0.5166666666666667,
+      "normal_ratio": 0.49603616133518774,
+      "difference": 0.020630505331478977,
+      "z_score": 0.7732718698672817
+    }
+  ],
+  "jackpot_dates": [
+    "2022-01-31T00:00:00",
+    "2022-02-19T00:00:00",
+    "2022-05-28T00:00:00",
+    "2022-07-24T00:00:00",
+    "2022-08-01T00:00:00",
+    "2022-09-06T00:00:00",
+    "2022-09-16T00:00:00",
+    "2022-10-16T00:00:00",
+    "2022-12-10T00:00:00",
+    "2022-12-31T00:00:00",
+    "2023-02-01T00:00:00",
+    "2023-03-31T00:00:00",
+    "2023-06-13T00:00:00",
+    "2023-06-28T00:00:00",
+    "2023-07-25T00:00:00",
+    "2023-08-16T00:00:00",
+    "2023-10-10T00:00:00",
+    "2024-02-06T00:00:00"
+  ],
+  "birthday_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "high_numbers": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70
+  ],
+  "metadata": {
+    "gk1_source": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\10-9_KGDaten_gefiltert.csv",
+    "n_gk1_events": 20,
+    "keno_typ_distribution": {
+      "10": 11,
+      "9": 9
+    },
+    "avg_vergangene_tage": 36.8
+  },
+  "acceptance_criteria": {
+    "pearson_r_threshold": 0.2,
+    "p_value_threshold": 0.05,
+    "pearson_r_met": false,
+    "pearson_p_met": false,
+    "chi_square_p_met": false
+  }
+}

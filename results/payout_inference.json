@@ -1,0 +1,133 @@
+{
+  "n_draws": 13140,
+  "low_popularity_count": 0,
+  "high_popularity_count": 0,
+  "normal_count": 13140,
+  "anomaly_threshold": 0.1,
+  "low_popularity_rate": 0.0,
+  "high_popularity_rate": 0.0,
+  "number_rankings": [
+    {
+      "number": 1,
+      "low_popularity_count": 29,
+      "total_count": 597,
+      "unpopularity_ratio": 0.0486
+    },
+    {
+      "number": 54,
+      "low_popularity_count": 28,
+      "total_count": 635,
+      "unpopularity_ratio": 0.0441
+    },
+    {
+      "number": 57,
+      "low_popularity_count": 28,
+      "total_count": 653,
+      "unpopularity_ratio": 0.0429
+    },
+    {
+      "number": 62,
+      "low_popularity_count": 26,
+      "total_count": 609,
+      "unpopularity_ratio": 0.0427
+    },
+    {
+      "number": 47,
+      "low_popularity_count": 27,
+      "total_count": 640,
+      "unpopularity_ratio": 0.0422
+    },
+    {
+      "number": 14,
+      "low_popularity_count": 27,
+      "total_count": 642,
+      "unpopularity_ratio": 0.0421
+    },
+    {
+      "number": 15,
+      "low_popularity_count": 26,
+      "total_count": 618,
+      "unpopularity_ratio": 0.0421
+    },
+    {
+      "number": 36,
+      "low_popularity_count": 28,
+      "total_count": 667,
+      "unpopularity_ratio": 0.042
+    },
+    {
+      "number": 42,
+      "low_popularity_count": 28,
+      "total_count": 670,
+      "unpopularity_ratio": 0.0418
+    },
+    {
+      "number": 30,
+      "low_popularity_count": 26,
+      "total_count": 636,
+      "unpopularity_ratio": 0.0409
+    },
+    {
+      "number": 38,
+      "low_popularity_count": 26,
+      "total_count": 635,
+      "unpopularity_ratio": 0.0409
+    },
+    {
+      "number": 17,
+      "low_popularity_count": 25,
+      "total_count": 613,
+      "unpopularity_ratio": 0.0408
+    },
+    {
+      "number": 37,
+      "low_popularity_count": 24,
+      "total_count": 596,
+      "unpopularity_ratio": 0.0403
+    },
+    {
+      "number": 40,
+      "low_popularity_count": 26,
+      "total_count": 645,
+      "unpopularity_ratio": 0.0403
+    },
+    {
+      "number": 60,
+      "low_popularity_count": 25,
+      "total_count": 623,
+      "unpopularity_ratio": 0.0401
+    },
+    {
+      "number": 26,
+      "low_popularity_count": 25,
+      "total_count": 634,
+      "unpopularity_ratio": 0.0394
+    },
+    {
+      "number": 16,
+      "low_popularity_count": 25,
+      "total_count": 638,
+      "unpopularity_ratio": 0.0392
+    },
+    {
+      "number": 50,
+      "low_popularity_count": 25,
+      "total_count": 639,
+      "unpopularity_ratio": 0.0391
+    },
+    {
+      "number": 55,
+      "low_popularity_count": 25,
+      "total_count": 640,
+      "unpopularity_ratio": 0.0391
+    },
+    {
+      "number": 39,
+      "low_popularity_count": 26,
+      "total_count": 668,
+      "unpopularity_ratio": 0.0389
+    }
+  ],
+  "sample_low_popularity": [],
+  "sample_high_popularity": []
+}

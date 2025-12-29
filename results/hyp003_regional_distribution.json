@@ -1,0 +1,158 @@
+{
+  "hypothesis": "HYP-003",
+  "variant": "regional_distribution",
+  "title": "Regionale Gewinner-Verteilung vs. Bevoelkerungsanteil",
+  "timestamp": "2025-12-28T17:44:34.469945",
+  "data_sources": {
+    "scraped_dir": "data\\scraped",
+    "total_records_loaded": 2,
+    "min_confidence": 0.5
+  },
+  "chi2_test": {
+    "chi2_statistic": 0.0,
+    "p_value": 1.0,
+    "degrees_of_freedom": 0,
+    "is_significant": false,
+    "n_total": 2,
+    "observed": {
+      "brandenburg": 2
+    },
+    "expected": {},
+    "deviations": {}
+  },
+  "bundesland_summary": {
+    "baden-wuerttemberg": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 13.3
+    },
+    "bayern": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 15.9
+    },
+    "berlin": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 4.4
+    },
+    "brandenburg": {
+      "observed": 2,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 3.0
+    },
+    "bremen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 0.8
+    },
+    "hamburg": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 2.2
+    },
+    "hessen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 7.6
+    },
+    "mecklenburg-vorpommern": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 1.9
+    },
+    "niedersachsen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 9.6
+    },
+    "nordrhein-westfalen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 21.7
+    },
+    "rheinland-pfalz": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 5.0
+    },
+    "saarland": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 1.2
+    },
+    "sachsen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 4.9
+    },
+    "sachsen-anhalt": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 2.6
+    },
+    "schleswig-holstein": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 3.5
+    },
+    "thueringen": {
+      "observed": 0,
+      "expected": 0,
+      "deviation_pct": 0,
+      "population_share_pct": 2.5
+    }
+  },
+  "acceptance_criteria": {
+    "criteria": {
+      "sufficient_data": {
+        "target": ">= 10 winners with bundesland",
+        "actual": 2,
+        "passed": false
+      },
+      "regional_coverage": {
+        "target": ">= 3 Bundeslaender represented",
+        "actual": 1,
+        "passed": false
+      },
+      "chi2_computable": {
+        "target": "degrees of freedom >= 1",
+        "actual": 0,
+        "passed": false
+      },
+      "result_interpretable": {
+        "target": "p-value computed",
+        "actual": 1.0,
+        "passed": true
+      }
+    },
+    "passed": 1,
+    "total": 4,
+    "all_passed": false
+  },
+  "summary": {
+    "null_hypothesis": "Winner distribution matches population distribution",
+    "result": "NOT REJECTED",
+    "interpretation": "Insufficient data for statistical test. Collect more press releases.",
+    "key_findings": [
+      "2 winners from 1 Bundeslaender",
+      "Chi-Quadrat Statistik: 0.00 (df=0)",
+      "p-Wert: 1.0000 (nicht signifikant)"
+    ]
+  }
+}

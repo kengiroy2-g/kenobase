@@ -1,0 +1,230 @@
+{
+  "timestamp": "2025-12-28T17:14:19.623230",
+  "records_analyzed": 8,
+  "sources_analyzed": 5,
+  "hypotheses_generated": 5,
+  "hypotheses": [
+    {
+      "id": "HYP-PRESS-001",
+      "name": "Regionale KENO-Gewinner-Verteilung",
+      "category": "Regional",
+      "description": "KENO-Hochgewinne sind regional ungleich verteilt. Niedersachsen zeigt ueberdurchschnittlich viele Gewinne (37.5%). Dies koennte auf Spielerverhalten, Bevoelkerungsdichte oder Zufall zurueckzufuehren sein.",
+      "evidence": [
+        "Top Bundesland: Niedersachsen (3/8, 37.5%)",
+        "  - Niedersachsen: 3 (37.5%)",
+        "  - NRW: 2 (25.0%)",
+        "  - Sachsen: 1 (12.5%)",
+        "  - Bayern: 1 (12.5%)",
+        "  - Hamburg: 1 (12.5%)",
+        "Top Orte: Hannover, Region Hannover, Landkreis Goettingen"
+      ],
+      "supporting_data": {
+        "bundesland_distribution": {
+          "Niedersachsen": 3,
+          "Sachsen": 1,
+          "NRW": 2,
+          "Bayern": 1,
+          "Hamburg": 1
+        },
+        "city_distribution": {
+          "Hannover": 1,
+          "Region Hannover": 1,
+          "Landkreis Goettingen": 1,
+          "Leipzig": 1,
+          "Landkreis Rotenburg/Wuemme": 1,
+          "Koeln": 1,
+          "Kreis Recklinghausen": 1,
+          "Muenchen": 1,
+          "Oberbayern": 1,
+          "Hamburg": 1
+        },
+        "total_records": 8
+      },
+      "confidence": 0.48000000000000004,
+      "priority": "MITTEL",
+      "testable": true,
+      "acceptance_criteria": [
+        "Chi-Quadrat-Test auf Bevoelkerungs-Proportionalitaet",
+        "Vergleich mit DLTB-Statistiken (20% NRW Anteil)",
+        "Korrektur fuer unterschiedliche Spielerzahlen pro Bundesland"
+      ],
+      "data_requirements": [
+        "Bevoelkerungszahlen pro Bundesland",
+        "KENO-Spielerzahlen pro Bundesland (falls verfuegbar)",
+        "Mehr Pressemitteilungen fuer statistische Signifikanz"
+      ]
+    },
+    {
+      "id": "HYP-PRESS-002",
+      "name": "KENO-Typ Praeferenz bei Hochgewinnen",
+      "category": "Strategie",
+      "description": "KENO Typ 10 dominiert die Pressemitteilungen (62.5%). Dies ist bedingt durch hohe Quoten (100.000x) und Nachrichtenwert. Typ 8/9 erscheinen seltener trotz hoeherer Gewinnwahrscheinlichkeit.",
+      "evidence": [
+        "KENO-Typ Verteilung der Hochgewinne:",
+        "  - Typ 8: 2 (25.0%), Avg: 115,000 EUR",
+        "  - Typ 9: 1 (12.5%), Avg: 250,000 EUR",
+        "  - Typ 10: 5 (62.5%), Avg: 200,000 EUR"
+      ],
+      "supporting_data": {
+        "type_distribution": {
+          "10": 5,
+          "8": 2,
+          "9": 1
+        },
+        "type_avg_amounts": {
+          "10": 200000.0,
+          "8": 115000.0,
+          "9": 250000.0
+        }
+      },
+      "confidence": 0.7,
+      "priority": "MITTEL",
+      "testable": true,
+      "acceptance_criteria": [
+        "Vergleich mit tatsaechlicher GK1-Verteilung nach Typ",
+        "ROI-Berechnung: Typ 10 vs Typ 8 vs Typ 6",
+        "Erwartungswert-Analyse pro KENO-Typ"
+      ],
+      "data_requirements": [
+        "Offizielle KENO-Quoten und Wahrscheinlichkeiten",
+        "Historische GK1-Events nach Typ aus Keno_GPTs Daten"
+      ]
+    },
+    {
+      "id": "HYP-PRESS-003",
+      "name": "Gewinnhoehen-Clustering bei KENO",
+      "category": "Oekonomie",
+      "description": "KENO-Hochgewinne clustern um bestimmte Betraege (100k, 500k). Dies entspricht den festen Quoten und typischen Einsatzhoehen. Multi-Einsatz-Strategien fuehren zu aggregierten Gewinnen.",
+      "evidence": [
+        "Gewinnspanne: 50,000 - 500,000 EUR",
+        "Durchschnitt: 185,000 EUR",
+        "Median: 180,000 EUR",
+        "Verteilung nach Groesse:",
+        "  - 50k-100k: 1",
+        "  - 100k-500k: 6",
+        "  - 500k+: 1"
+      ],
+      "supporting_data": {
+        "min_amount": 50000.0,
+        "max_amount": 500000.0,
+        "avg_amount": 185000.0,
+        "median_amount": 180000.0,
+        "clusters": {
+          "10k-50k": 0,
+          "50k-100k": 1,
+          "100k-500k": 6,
+          "500k+": 1
+        },
+        "sample_size": 8
+      },
+      "confidence": 0.6,
+      "priority": "NIEDRIG",
+      "testable": true,
+      "acceptance_criteria": [
+        "Vergleich mit festen KENO-Quoten (10k, 100k, 1M)",
+        "Analyse typischer Einsatzhoehen (1, 2, 5, 10 EUR)",
+        "Identifikation von Multi-Einsatz-Faellen"
+      ],
+      "data_requirements": [
+        "KENO Quoten-Tabelle pro Typ und Einsatz",
+        "Detaillierte Gewinnaufschluesselung aus Pressemitteilungen"
+      ]
+    },
+    {
+      "id": "HYP-PRESS-004",
+      "name": "Zeitliche Muster bei KENO-Hochgewinnen",
+      "category": "Zeitlich",
+      "description": "KENO-Hochgewinne zeigen moegliche zeitliche Muster. Bestimmte Monate oder Wochentage koennten haeufiger vorkommen. Korrelation mit Spielerverhalten und Jackpot-Zyklen moeglich.",
+      "evidence": [
+        "Zeitliche Verteilung der Hochgewinne:",
+        "  - Top Monat: Oktober (1x)",
+        "  - Top Wochentag: Mittwoch (2x)"
+      ],
+      "supporting_data": {
+        "month_distribution": {
+          "10": 1,
+          "4": 1,
+          "7": 1,
+          "1": 1,
+          "3": 1,
+          "5": 1,
+          "2": 1,
+          "6": 1
+        },
+        "weekday_distribution": {
+          "6": 1,
+          "3": 1,
+          "2": 2,
+          "4": 1,
+          "5": 1,
+          "1": 1,
+          "0": 1
+        },
+        "date_range": {
+          "earliest": "2022-10-16T00:00:00",
+          "latest": "2025-07-30T00:00:00"
+        }
+      },
+      "confidence": 0.4,
+      "priority": "NIEDRIG",
+      "testable": true,
+      "acceptance_criteria": [
+        "Chi-Quadrat-Test auf Gleichverteilung",
+        "Vergleich mit HYP-011 (Feiertags-Effekt)",
+        "Kontrolle fuer Pressemitteilungs-Timing vs. Ziehungs-Timing"
+      ],
+      "data_requirements": [
+        "Vollstaendige KENO-Ziehungsdaten mit Datum",
+        "Feiertags-Kalender (bereits in HYP-011 genutzt)"
+      ]
+    },
+    {
+      "id": "HYP-PRESS-005",
+      "name": "Gewinnzahlen-Muster in Pressemitteilungen",
+      "category": "Pattern",
+      "description": "Birthday-Zahlen (1-31) machen 33.3% der Gewinnzahlen aus (erwartet: 44.3%). Abweichungen koennten auf Spielerverhalten oder Selection Bias hindeuten.",
+      "evidence": [
+        "Analysierte Zahlen: 63",
+        "Birthday-Zahlen (1-31): 21 (33.3%)",
+        "Erwarteter Anteil: 44.3%",
+        "Haeufigste Zahlen:",
+        "  - 70: 4x",
+        "  - 68: 3x",
+        "  - 41: 2x",
+        "  - 38: 2x",
+        "  - 63: 2x"
+      ],
+      "supporting_data": {
+        "total_numbers": 63,
+        "birthday_count": 21,
+        "birthday_percentage": 33.33333333333333,
+        "expected_birthday_pct": 44.285714285714285,
+        "top_numbers": {
+          "70": 4,
+          "68": 3,
+          "41": 2,
+          "38": 2,
+          "63": 2,
+          "69": 2,
+          "5": 1,
+          "12": 1,
+          "20": 1,
+          "26": 1
+        }
+      },
+      "confidence": 0.5,
+      "priority": "MITTEL",
+      "testable": true,
+      "acceptance_criteria": [
+        "Vergleich mit HYP-004 (Birthday-Korrelation r=0.39)",
+        "Binomial-Test auf Birthday-Abweichung",
+        "Kontrolle fuer Selection Bias (nur Hochgewinne publiziert)"
+      ],
+      "data_requirements": [
+        "Mehr extrahierte Gewinnzahlen aus Pressemitteilungen",
+        "Vollstaendige KENO-Ziehungsdaten zum Vergleich"
+      ]
+    }
+  ],
+  "warnings": []
+}

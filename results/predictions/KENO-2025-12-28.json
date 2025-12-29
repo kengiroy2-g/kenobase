@@ -1,0 +1,63 @@
+{
+  "draw_id": "KENO-2025-12-28",
+  "prediction_time": "2025-12-28T05:27:10.296149",
+  "numbers": [
+    1,
+    5,
+    17,
+    23,
+    45,
+    67
+  ],
+  "tier_predictions": {
+    "A": [
+      17,
+      23
+    ],
+    "B": [
+      1,
+      45
+    ],
+    "C": [
+      5,
+      67
+    ]
+  },
+  "mode": "rule_based",
+  "config": {
+    "game_type": "KENO",
+    "source": "track_predictions.py"
+  },
+  "actuals": [
+    3,
+    5,
+    17,
+    22,
+    28,
+    35,
+    41,
+    45,
+    48,
+    52,
+    55,
+    58,
+    61,
+    64,
+    67,
+    68,
+    69,
+    70,
+    11,
+    19
+  ],
+  "metrics": {
+    "hits": 4,
+    "hit_rate": 0.2,
+    "precision": 0.6667,
+    "tier_accuracy": {
+      "A": 0.5,
+      "B": 0.5,
+      "C": 1.0
+    }
+  }
+}

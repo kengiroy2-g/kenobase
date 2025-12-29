@@ -1,0 +1,96 @@
+{
+  "hypothesis_id": "HYP-011",
+  "n_draws": 2237,
+  "date_range": {
+    "start": "01.01.2018",
+    "end": "15.02.2024"
+  },
+  "weekday_analysis": {
+    "dimension": "weekday",
+    "n_draws": 2237,
+    "observed_counts": {
+      "Montag": 320,
+      "Dienstag": 320,
+      "Mittwoch": 320,
+      "Donnerstag": 320,
+      "Freitag": 319,
+      "Samstag": 319,
+      "Sonntag": 319
+    },
+    "expected_per_category": 319.57142857142856,
+    "chi2_statistic": 0.005364327223960662,
+    "p_value": 0.9999999967905474,
+    "degrees_of_freedom": 6,
+    "is_significant": false,
+    "interpretation": "Keine signifikante Abweichung von Gleichverteilung (p=1.0000). Ziehungen sind gleichmaessig verteilt.",
+    "most_common": "Montag",
+    "least_common": "Freitag"
+  },
+  "month_analysis": {
+    "dimension": "month",
+    "n_draws": 2237,
+    "observed_counts": {
+      "Januar": 217,
+      "Februar": 184,
+      "Maerz": 186,
+      "April": 180,
+      "Mai": 186,
+      "Juni": 180,
+      "Juli": 186,
+      "August": 186,
+      "September": 180,
+      "Oktober": 186,
+      "November": 180,
+      "Dezember": 186
+    },
+    "expected_per_category": 186.41666666666666,
+    "chi2_statistic": 5.937863209655789,
+    "p_value": 0.8774778378438666,
+    "degrees_of_freedom": 11,
+    "is_significant": false,
+    "interpretation": "Keine signifikante Abweichung von Gleichverteilung (p=0.8775). Ziehungen sind gleichmaessig verteilt.",
+    "most_common": "Januar",
+    "least_common": "April"
+  },
+  "year_analysis": {
+    "dimension": "year",
+    "n_draws": 2237,
+    "observed_counts": {
+      "2018": 365,
+      "2019": 365,
+      "2020": 366,
+      "2021": 365,
+      "2022": 365,
+      "2023": 365,
+      "2024": 46
+    },
+    "expected_per_category": 319.57142857142856,
+    "chi2_statistic": 273.22753687974966,
+    "p_value": 4.422938767324193e-56,
+    "degrees_of_freedom": 6,
+    "is_significant": true,
+    "interpretation": "Signifikante Abweichung von Gleichverteilung (p=0.0000). Haeufigster: 2020 (366), Seltenster: 2024 (46)",
+    "most_common": "2020",
+    "least_common": "2024"
+  },
+  "holiday_analysis": {
+    "window_days": 3,
+    "n_draws": 2237,
+    "near_holiday_count": 160,
+    "observed_rate": 0.07152436298614215,
+    "expected_rate": 0.0958904109589041,
+    "expected_count": 214.50684931506848,
+    "z_score": -3.9139922313717768,
+    "p_value": 9.078255741279406e-05,
+    "is_significant": true,
+    "interpretation": "Signifikante Abweichung bei Feiertags-Naehe (beobachtet: 7.2%, erwartet: 9.6%)"
+  },
+  "verdict": "BESTAETIGT",
+  "confidence": 0.8,
+  "analysis_timestamp": "2025-12-27T16:25:50.586352",
+  "data_source": "data\\raw\\keno\\KENO_ab_2018.csv",
+  "parameters": {
+    "alpha": 0.05,
+    "per_number_analysis": false
+  }
+}

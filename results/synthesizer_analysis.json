@@ -1,0 +1,26 @@
+{
+  "analysis_date": "2025-12-28T18:55:24.778673",
+  "data_sources": {
+    "draws": "Keno_GPTs\\Daten\\KENO_Stats_ab-2004.csv",
+    "quotes": "Keno_GPTs\\Keno_GQ_2022_2023-2024.csv"
+  },
+  "n_combined_draws": 6982,
+  "birthday_correlation": {
+    "n_draws": 769,
+    "correlation": 0.3921,
+    "interpretation": "BESTAETIGT: Mehr Birthday-Zahlen = mehr Gewinner",
+    "high_birthday_draws": 167,
+    "low_birthday_draws": 125,
+    "avg_winners_high_birthday": 4618.7,
+    "avg_winners_low_birthday": 3561.1,
+    "winner_ratio": 1.3
+  },
+  "distribution_stability": {
+    "weekly_mean_winners": 28499.0,
+    "weekly_std_winners": 2591.0,
+    "coefficient_of_variation": 0.0909,
+    "stability_interpretation": "SEHR STABIL (moegl. aktive Steuerung)",
+    "n_weeks": 110
+  },
+  "anomalies_count": 663
+}

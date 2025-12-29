@@ -1,0 +1,170 @@
+{
+  "hypothesis": "HYP-005-INDEX",
+  "description": "Index-Reset nach GK1 - Vorhersagekraft",
+  "acceptance_criteria": "t-Test p < 0.05",
+  "timestamp": "2025-12-28T15:35:16.980549",
+  "parameters": {
+    "data_path": "data/raw/keno/KENO_ab_2018.csv",
+    "gk1_path": "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+    "alpha": 0.05,
+    "top_n": 11
+  },
+  "data_summary": {
+    "n_draws": 2237,
+    "n_gk1_events": 20,
+    "n_segments_analyzed": 19,
+    "date_range": {
+      "start": "2018-01-01T00:00:00",
+      "end": "2024-02-15T00:00:00"
+    }
+  },
+  "current_index_status": {
+    "last_reset_date": "2024-02-06T00:00:00",
+    "draws_since_reset": 10,
+    "gk1_event_type": 9,
+    "top_10_indices": [
+      {
+        "number": 3,
+        "index": 7
+      },
+      {
+        "number": 14,
+        "index": 6
+      },
+      {
+        "number": 67,
+        "index": 6
+      },
+      {
+        "number": 25,
+        "index": 5
+      },
+      {
+        "number": 29,
+        "index": 5
+      },
+      {
+        "number": 49,
+        "index": 5
+      },
+      {
+        "number": 59,
+        "index": 5
+      },
+      {
+        "number": 65,
+        "index": 5
+      },
+      {
+        "number": 1,
+        "index": 4
+      },
+      {
+        "number": 4,
+        "index": 4
+      }
+    ]
+  },
+  "statistical_results": {
+    "correlation": 0.04415078196586755,
+    "p_value": 0.041880876617600586,
+    "mean_hits_high_index": 3.165959453088166,
+    "mean_hits_low_index": 3.081093823668081,
+    "effect_size_cohens_d": 0.06251431803954877,
+    "is_significant": true
+  },
+  "verdict": "SUPPORTED",
+  "interpretation": "Signifikanter Unterschied: Top-11 Index-Zahlen treffen haeufiger (3.17 vs. 3.08, p=0.0419). Erwartet bei Zufall: 3.14. Effect Size (Cohen's d): 0.06",
+  "segment_details": [
+    {
+      "segment": 0,
+      "n_draws": 1491,
+      "mean_hits_high": 3.1717171717171717
+    },
+    {
+      "segment": 1,
+      "n_draws": 19,
+      "mean_hits_high": 3.526315789473684
+    },
+    {
+      "segment": 2,
+      "n_draws": 98,
+      "mean_hits_high": 3.2244897959183674
+    },
+    {
+      "segment": 3,
+      "n_draws": 57,
+      "mean_hits_high": 3.3157894736842106
+    },
+    {
+      "segment": 5,
+      "n_draws": 36,
+      "mean_hits_high": 2.888888888888889
+    },
+    {
+      "segment": 6,
+      "n_draws": 10,
+      "mean_hits_high": 2.9
+    },
+    {
+      "segment": 7,
+      "n_draws": 30,
+      "mean_hits_high": 3.1333333333333333
+    },
+    {
+      "segment": 8,
+      "n_draws": 55,
+      "mean_hits_high": 3.327272727272727
+    },
+    {
+      "segment": 9,
+      "n_draws": 21,
+      "mean_hits_high": 3.4285714285714284
+    },
+    {
+      "segment": 10,
+      "n_draws": 32,
+      "mean_hits_high": 3.03125
+    },
+    {
+      "segment": 11,
+      "n_draws": 58,
+      "mean_hits_high": 2.8448275862068964
+    },
+    {
+      "segment": 12,
+      "n_draws": 74,
+      "mean_hits_high": 3.2972972972972974
+    },
+    {
+      "segment": 13,
+      "n_draws": 15,
+      "mean_hits_high": 3.2666666666666666
+    },
+    {
+      "segment": 14,
+      "n_draws": 27,
+      "mean_hits_high": 3.037037037037037
+    },
+    {
+      "segment": 15,
+      "n_draws": 22,
+      "mean_hits_high": 2.8636363636363638
+    },
+    {
+      "segment": 16,
+      "n_draws": 55,
+      "mean_hits_high": 3.2181818181818183
+    },
+    {
+      "segment": 17,
+      "n_draws": 119,
+      "mean_hits_high": 3.0588235294117645
+    },
+    {
+      "segment": 18,
+      "n_draws": 10,
+      "mean_hits_high": 3.6
+    }
+  ]
+}

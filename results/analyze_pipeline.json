@@ -1,0 +1,758 @@
+{
+  "timestamp": "2025-12-28T06:35:13.928614",
+  "draws_count": 2237,
+  "warnings": [
+    "regional_affinity: No region metadata found; skipping regional analysis"
+  ],
+  "config_snapshot": {
+    "version": "2.0.0",
+    "active_game": "keno",
+    "game": {
+      "name": "KENO",
+      "numbers_range": [
+        1,
+        70
+      ],
+      "numbers_to_draw": 20,
+      "expected_sum_mean": 710.0
+    },
+    "physics": {
+      "enable_model_laws": true,
+      "enable_least_action": true,
+      "stability_threshold": 0.9,
+      "criticality_warning": 0.7,
+      "criticality_critical": 0.85,
+      "enable_avalanche": true,
+      "anti_avalanche_mode": true
+    },
+    "analysis": {
+      "min_frequency_threshold": 0.05,
+      "max_frequency_threshold": 0.2,
+      "sum_windows": {
+        "enabled": true,
+        "bin_width": 20,
+        "expected_mean_dynamic": 710.0,
+        "manual_min_sum": null,
+        "manual_max_sum": null
+      },
+      "regional_affinity": {
+        "enabled": true,
+        "min_draws_per_region": 30,
+        "smoothing_alpha": 1.0,
+        "z_threshold": 2.0,
+        "numbers_per_draw_override": null
+      }
+    }
+  },
+  "frequency_results": [
+    {
+      "number": 1,
+      "count": 597,
+      "relative_frequency": 0.2668752793920429,
+      "classification": "hot"
+    },
+    {
+      "number": 2,
+      "count": 667,
+      "relative_frequency": 0.2981671881984801,
+      "classification": "hot"
+    },
+    {
+      "number": 3,
+      "count": 661,
+      "relative_frequency": 0.2954850245864998,
+      "classification": "hot"
+    },
+    {
+      "number": 4,
+      "count": 635,
+      "relative_frequency": 0.2838623156012517,
+      "classification": "hot"
+    },
+    {
+      "number": 5,
+      "count": 639,
+      "relative_frequency": 0.28565042467590523,
+      "classification": "hot"
+    },
+    {
+      "number": 6,
+      "count": 608,
+      "relative_frequency": 0.2717925793473402,
+      "classification": "hot"
+    },
+    {
+      "number": 7,
+      "count": 649,
+      "relative_frequency": 0.2901206973625391,
+      "classification": "hot"
+    },
+    {
+      "number": 8,
+      "count": 640,
+      "relative_frequency": 0.2860974519445686,
+      "classification": "hot"
+    },
+    {
+      "number": 9,
+      "count": 670,
+      "relative_frequency": 0.2995082700044703,
+      "classification": "hot"
+    },
+    {
+      "number": 10,
+      "count": 679,
+      "relative_frequency": 0.3035315154224408,
+      "classification": "hot"
+    },
+    {
+      "number": 11,
+      "count": 608,
+      "relative_frequency": 0.2717925793473402,
+      "classification": "hot"
+    },
+    {
+      "number": 12,
+      "count": 635,
+      "relative_frequency": 0.2838623156012517,
+      "classification": "hot"
+    },
+    {
+      "number": 13,
+      "count": 633,
+      "relative_frequency": 0.2829682610639249,
+      "classification": "hot"
+    },
+    {
+      "number": 14,
+      "count": 642,
+      "relative_frequency": 0.2869915064818954,
+      "classification": "hot"
+    },
+    {
+      "number": 15,
+      "count": 618,
+      "relative_frequency": 0.27626285203397405,
+      "classification": "hot"
+    },
+    {
+      "number": 16,
+      "count": 638,
+      "relative_frequency": 0.2852033974072418,
+      "classification": "hot"
+    },
+    {
+      "number": 17,
+      "count": 613,
+      "relative_frequency": 0.27402771569065715,
+      "classification": "hot"
+    },
+    {
+      "number": 18,
+      "count": 612,
+      "relative_frequency": 0.27358068842199373,
+      "classification": "hot"
+    },
+    {
+      "number": 19,
+      "count": 631,
+      "relative_frequency": 0.28207420652659815,
+      "classification": "hot"
+    },
+    {
+      "number": 20,
+      "count": 668,
+      "relative_frequency": 0.2986142154671435,
+      "classification": "hot"
+    },
+    {
+      "number": 21,
+      "count": 646,
+      "relative_frequency": 0.28877961555654896,
+      "classification": "hot"
+    },
+    {
+      "number": 22,
+      "count": 627,
+      "relative_frequency": 0.28028609745194455,
+      "classification": "hot"
+    },
+    {
+      "number": 23,
+      "count": 623,
+      "relative_frequency": 0.278497988377291,
+      "classification": "hot"
+    },
+    {
+      "number": 24,
+      "count": 653,
+      "relative_frequency": 0.2919088064371927,
+      "classification": "hot"
+    },
+    {
+      "number": 25,
+      "count": 621,
+      "relative_frequency": 0.27760393383996423,
+      "classification": "hot"
+    },
+    {
+      "number": 26,
+      "count": 634,
+      "relative_frequency": 0.2834152883325883,
+      "classification": "hot"
+    },
+    {
+      "number": 27,
+      "count": 676,
+      "relative_frequency": 0.3021904336164506,
+      "classification": "hot"
+    },
+    {
+      "number": 28,
+      "count": 642,
+      "relative_frequency": 0.2869915064818954,
+      "classification": "hot"
+    },
+    {
+      "number": 29,
+      "count": 620,
+      "relative_frequency": 0.2771569065713009,
+      "classification": "hot"
+    },
+    {
+      "number": 30,
+      "count": 636,
+      "relative_frequency": 0.28430934286991505,
+      "classification": "hot"
+    },
+    {
+      "number": 31,
+      "count": 617,
+      "relative_frequency": 0.2758158247653107,
+      "classification": "hot"
+    },
+    {
+      "number": 32,
+      "count": 659,
+      "relative_frequency": 0.294590970049173,
+      "classification": "hot"
+    },
+    {
+      "number": 33,
+      "count": 660,
+      "relative_frequency": 0.29503799731783636,
+      "classification": "hot"
+    },
+    {
+      "number": 34,
+      "count": 636,
+      "relative_frequency": 0.28430934286991505,
+      "classification": "hot"
+    },
+    {
+      "number": 35,
+      "count": 622,
+      "relative_frequency": 0.27805096110862765,
+      "classification": "hot"
+    },
+    {
+      "number": 36,
+      "count": 667,
+      "relative_frequency": 0.2981671881984801,
+      "classification": "hot"
+    },
+    {
+      "number": 37,
+      "count": 596,
+      "relative_frequency": 0.2664282521233795,
+      "classification": "hot"
+    },
+    {
+      "number": 38,
+      "count": 635,
+      "relative_frequency": 0.2838623156012517,
+      "classification": "hot"
+    },
+    {
+      "number": 39,
+      "count": 668,
+      "relative_frequency": 0.2986142154671435,
+      "classification": "hot"
+    },
+    {
+      "number": 40,
+      "count": 645,
+      "relative_frequency": 0.28833258828788555,
+      "classification": "hot"
+    },
+    {
+      "number": 41,
+      "count": 612,
+      "relative_frequency": 0.27358068842199373,
+      "classification": "hot"
+    },
+    {
+      "number": 42,
+      "count": 670,
+      "relative_frequency": 0.2995082700044703,
+      "classification": "hot"
+    },
+    {
+      "number": 43,
+      "count": 655,
+      "relative_frequency": 0.29280286097451946,
+      "classification": "hot"
+    },
+    {
+      "number": 44,
+      "count": 643,
+      "relative_frequency": 0.2874385337505588,
+      "classification": "hot"
+    },
+    {
+      "number": 45,
+      "count": 591,
+      "relative_frequency": 0.2641931157800626,
+      "classification": "hot"
+    },
+    {
+      "number": 46,
+      "count": 621,
+      "relative_frequency": 0.27760393383996423,
+      "classification": "hot"
+    },
+    {
+      "number": 47,
+      "count": 640,
+      "relative_frequency": 0.2860974519445686,
+      "classification": "hot"
+    },
+    {
+      "number": 48,
+      "count": 623,
+      "relative_frequency": 0.278497988377291,
+      "classification": "hot"
+    },
+    {
+      "number": 49,
+      "count": 695,
+      "relative_frequency": 0.310683951721055,
+      "classification": "hot"
+    },
+    {
+      "number": 50,
+      "count": 639,
+      "relative_frequency": 0.28565042467590523,
+      "classification": "hot"
+    },
+    {
+      "number": 51,
+      "count": 602,
+      "relative_frequency": 0.2691104157353599,
+      "classification": "hot"
+    },
+    {
+      "number": 52,
+      "count": 647,
+      "relative_frequency": 0.2892266428252123,
+      "classification": "hot"
+    },
+    {
+      "number": 53,
+      "count": 649,
+      "relative_frequency": 0.2901206973625391,
+      "classification": "hot"
+    },
+    {
+      "number": 54,
+      "count": 635,
+      "relative_frequency": 0.2838623156012517,
+      "classification": "hot"
+    },
+    {
+      "number": 55,
+      "count": 640,
+      "relative_frequency": 0.2860974519445686,
+      "classification": "hot"
+    },
+    {
+      "number": 56,
+      "count": 641,
+      "relative_frequency": 0.286544479213232,
+      "classification": "hot"
+    },
+    {
+      "number": 57,
+      "count": 653,
+      "relative_frequency": 0.2919088064371927,
+      "classification": "hot"
+    },
+    {
+      "number": 58,
+      "count": 638,
+      "relative_frequency": 0.2852033974072418,
+      "classification": "hot"
+    },
+    {
+      "number": 59,
+      "count": 655,
+      "relative_frequency": 0.29280286097451946,
+      "classification": "hot"
+    },
+    {
+      "number": 60,
+      "count": 623,
+      "relative_frequency": 0.278497988377291,
+      "classification": "hot"
+    },
+    {
+      "number": 61,
+      "count": 652,
+      "relative_frequency": 0.2914617791685293,
+      "classification": "hot"
+    },
+    {
+      "number": 62,
+      "count": 609,
+      "relative_frequency": 0.27223960661600355,
+      "classification": "hot"
+    },
+    {
+      "number": 63,
+      "count": 634,
+      "relative_frequency": 0.2834152883325883,
+      "classification": "hot"
+    },
+    {
+      "number": 64,
+      "count": 682,
+      "relative_frequency": 0.3048725972284309,
+      "classification": "hot"
+    },
+    {
+      "number": 65,
+      "count": 653,
+      "relative_frequency": 0.2919088064371927,
+      "classification": "hot"
+    },
+    {
+      "number": 66,
+      "count": 676,
+      "relative_frequency": 0.3021904336164506,
+      "classification": "hot"
+    },
+    {
+      "number": 67,
+      "count": 637,
+      "relative_frequency": 0.28475637013857846,
+      "classification": "hot"
+    },
+    {
+      "number": 68,
+      "count": 642,
+      "relative_frequency": 0.2869915064818954,
+      "classification": "hot"
+    },
+    {
+      "number": 69,
+      "count": 622,
+      "relative_frequency": 0.27805096110862765,
+      "classification": "hot"
+    },
+    {
+      "number": 70,
+      "count": 635,
+      "relative_frequency": 0.2838623156012517,
+      "classification": "hot"
+    }
+  ],
+  "pair_frequency_results": [
+    {
+      "pair": [
+        9,
+        50
+      ],
+      "count": 218,
+      "relative_frequency": 0.09745194456861869,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        20,
+        36
+      ],
+      "count": 218,
+      "relative_frequency": 0.09745194456861869,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "count": 217,
+      "relative_frequency": 0.09700491729995529,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        32,
+        64
+      ],
+      "count": 214,
+      "relative_frequency": 0.09566383549396514,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        33,
+        49
+      ],
+      "count": 213,
+      "relative_frequency": 0.09521680822530175,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        7,
+        10
+      ],
+      "count": 213,
+      "relative_frequency": 0.09521680822530175,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        19,
+        49
+      ],
+      "count": 213,
+      "relative_frequency": 0.09521680822530175,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        42,
+        61
+      ],
+      "count": 212,
+      "relative_frequency": 0.09476978095663835,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        3,
+        42
+      ],
+      "count": 212,
+      "relative_frequency": 0.09476978095663835,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        27,
+        49
+      ],
+      "count": 211,
+      "relative_frequency": 0.09432275368797496,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        33,
+        50
+      ],
+      "count": 211,
+      "relative_frequency": 0.09432275368797496,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        64,
+        66
+      ],
+      "count": 211,
+      "relative_frequency": 0.09432275368797496,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "count": 211,
+      "relative_frequency": 0.09432275368797496,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        24,
+        40
+      ],
+      "count": 211,
+      "relative_frequency": 0.09432275368797496,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        10,
+        32
+      ],
+      "count": 210,
+      "relative_frequency": 0.09387572641931158,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        2,
+        59
+      ],
+      "count": 208,
+      "relative_frequency": 0.0929816718819848,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        53,
+        64
+      ],
+      "count": 208,
+      "relative_frequency": 0.0929816718819848,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        3,
+        20
+      ],
+      "count": 208,
+      "relative_frequency": 0.0929816718819848,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        14,
+        64
+      ],
+      "count": 208,
+      "relative_frequency": 0.0929816718819848,
+      "classification": "normal"
+    },
+    {
+      "pair": [
+        38,
+        66
+      ],
+      "count": 208,
+      "relative_frequency": 0.0929816718819848,
+      "classification": "normal"
+    }
+  ],
+  "physics_result": {
+    "stability_score": 0.965820241249773,
+    "is_stable_law": true,
+    "criticality_score": 0.5714285714285714,
+    "criticality_level": "MEDIUM",
+    "hurst_exponent": 0.45947029617835106,
+    "regime_complexity": 1,
+    "recommended_max_picks": 6
+  },
+  "pipeline_selection": {
+    "selected_name": "minimal",
+    "selected_action": -0.19999999999999996,
+    "comparison_count": 4
+  },
+  "regional_affinity": {
+    "analysis": "regional_affinity",
+    "generated_at": "2025-12-28T06:35:13.973723",
+    "game": "keno",
+    "number_range": [
+      1,
+      70
+    ],
+    "numbers_per_draw": 20,
+    "n_draws_total": 2237,
+    "parameters": {
+      "min_draws_per_region": 30,
+      "smoothing_alpha": 1.0,
+      "z_threshold": 2.0
+    },
+    "global_relative_frequency": {
+      "1": 0.013345235438518187,
+      "2": 0.014907386744030351,
+      "3": 0.014773488060700736,
+      "4": 0.014193260432939076,
+      "5": 0.014282526221825485,
+      "6": 0.013590716357955814,
+      "7": 0.014505690694041508,
+      "8": 0.014304842669047088,
+      "9": 0.014974336085695157,
+      "10": 0.015175184110689579,
+      "11": 0.013590716357955814,
+      "12": 0.014193260432939076,
+      "13": 0.014148627538495872,
+      "14": 0.014349475563490293,
+      "15": 0.013813880830171836,
+      "16": 0.014260209774603884,
+      "17": 0.013702298594063826,
+      "18": 0.013679982146842223,
+      "19": 0.014103994644052667,
+      "20": 0.014929703191251953,
+      "21": 0.014438741352376702,
+      "22": 0.014014728855166258,
+      "23": 0.013925463066279849,
+      "24": 0.014594956482927917,
+      "25": 0.013880830171836644,
+      "26": 0.014170943985717473,
+      "27": 0.01510823476902477,
+      "28": 0.014349475563490293,
+      "29": 0.013858513724615041,
+      "30": 0.014215576880160678,
+      "31": 0.013791564382950235,
+      "32": 0.014728855166257531,
+      "33": 0.014751171613479134,
+      "34": 0.014215576880160678,
+      "35": 0.013903146619058246,
+      "36": 0.014907386744030351,
+      "37": 0.013322918991296586,
+      "38": 0.014193260432939076,
+      "39": 0.014929703191251953,
+      "40": 0.014416424905155099,
+      "41": 0.013679982146842223,
+      "42": 0.014974336085695157,
+      "43": 0.014639589377371122,
+      "44": 0.014371792010711894,
+      "45": 0.013211336755188574,
+      "46": 0.013880830171836644,
+      "47": 0.014304842669047088,
+      "48": 0.013925463066279849,
+      "49": 0.015532247266235215,
+      "50": 0.014282526221825485,
+      "51": 0.0134568176746262,
+      "52": 0.014461057799598304,
+      "53": 0.014505690694041508,
+      "54": 0.014193260432939076,
+      "55": 0.014304842669047088,
+      "56": 0.01432715911626869,
+      "57": 0.014594956482927917,
+      "58": 0.014260209774603884,
+      "59": 0.014639589377371122,
+      "60": 0.013925463066279849,
+      "61": 0.014572640035706316,
+      "62": 0.013613032805177415,
+      "63": 0.014170943985717473,
+      "64": 0.015242133452354385,
+      "65": 0.014594956482927917,
+      "66": 0.01510823476902477,
+      "67": 0.01423789332738228,
+      "68": 0.014349475563490293,
+      "69": 0.013903146619058246,
+      "70": 0.014193260432939076
+    },
+    "regions": [],
+    "skipped_regions": [],
+    "warnings": [
+      "No region metadata found; skipping regional analysis"
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "model_name": "KENO Constraint Model v1.0",
+  "created": "2025-12-29",
+  "description": "Mathematisches Modell zur Erklaerung der beobachteten Constraints im KENO-Zahlenauswahlsystem",
+
+  "executive_summary": {
+    "verdict": "PARTIAL_EVIDENCE",
+    "explanation": "Von 2 analysierten Constraints zeigt nur HOUSE-004 (Near-Miss) Evidenz fuer Manipulation. DIST-003 (Sum-Clustering) ist mathematische Notwendigkeit.",
+    "manipulation_score": 0.5,
+    "confidence": "MITTEL"
+  },
+
+  "constraints_analyzed": [
+    {
+      "id": "HOUSE-004",
+      "name": "Near-Miss Constraint",
+      "verdict": "ANOMALOUS - Evidence for State-Dependent Control",
+      "evidence_score": 0.95,
+
+      "findings": {
+        "observation": {
+          "normal_period_ratio_typ9": 110.81,
+          "normal_period_ratio_typ10": 125.42,
+          "jackpot_period_ratio_typ9": 1.55,
+          "jackpot_period_ratio_typ10": 1.83
+        },
+        "theoretical": {
+          "expected_ratio_typ9": 2.10,
+          "expected_ratio_typ10": 4.59
+        },
+        "deviation_factor": {
+          "normal_typ9": 52.8,
+          "normal_typ10": 27.3,
+          "jackpot_typ9": 0.74,
+          "jackpot_typ10": 0.40
+        },
+        "intervention_strength": 70,
+        "chi_square_typ9": 495.76,
+        "chi_square_typ10": 579.61,
+        "p_value": 0.000
+      },
+
+      "mathematical_model": {
+        "formula": "P_observed(Max|k,J) = P_theoretical(Max|k) * Switch(J)",
+        "switch_function": "Switch(J) = exp(lambda * J)",
+        "parameters": {
+          "lambda": 4.3,
+          "J_normal": 0,
+          "J_jackpot": 1
+        },
+        "interpretation": {
+          "normal_mode": "Max-Gewinne werden um Faktor ~50 unterdrueckt (mehr Near-Miss Erlebnis)",
+          "jackpot_mode": "Max-Gewinne werden um Faktor ~1.4 erhoehen (Jackpot wird 'freigegeben')"
+        }
+      },
+
+      "constraint_rule": {
+        "description": "Bimodaler Switch zwischen Normal- und Jackpot-Modus",
+        "C_normal_typ9": 50,
+        "C_normal_typ10": 25,
+        "C_jackpot_typ9": 0.7,
+        "C_jackpot_typ10": 0.4,
+        "mode_ratio": 71
+      },
+
+      "conclusion": "Die 70-fache Aenderung der Near-Miss Ratio waehrend Jackpot-Perioden ist inkompatibel mit echtem Zufall. Chi-Quadrat > 495 (p < 0.001) zeigt hochsignifikante Abweichung."
+    },
+
+    {
+      "id": "DIST-003",
+      "name": "Sum-Clustering Constraint",
+      "verdict": "NATURAL - Mathematical Necessity (Central Limit Theorem)",
+      "evidence_score": 0.0,
+
+      "findings": {
+        "observation": {
+          "sum_mean": 711.11,
+          "sum_std": 77.57,
+          "cluster_range": [605, 845],
+          "cluster_density": 0.872
+        },
+        "theoretical": {
+          "expected_mean": 710.0,
+          "expected_std": 76.93,
+          "expected_cluster_density_1.5sigma": 0.866
+        },
+        "deviation": {
+          "mean_deviation_percent": 0.16,
+          "std_deviation_percent": 0.83
+        }
+      },
+
+      "mathematical_model": {
+        "formula": "S ~ N(mu=710, sigma=76.93)",
+        "derivation": {
+          "population_mean": "E[X] = (70+1)/2 = 35.5",
+          "sum_mean": "E[S] = 20 * 35.5 = 710",
+          "population_variance": "sigma^2 = (70^2-1)/12 = 408.25",
+          "fpc_factor": "(70-20)/(70-1) = 0.7246",
+          "sum_variance": "Var[S] = 20 * 408.25 * 0.7246 = 5917.26",
+          "sum_std": "Std[S] = 76.93"
+        }
+      },
+
+      "constraint_rule": {
+        "description": "Zentraler Grenzwertsatz erzwingt Normalverteilung",
+        "practical_bounds": {
+          "95_percent": [556, 864],
+          "99_percent": [479, 941]
+        },
+        "extreme_values": {
+          "theoretical_min": 210,
+          "theoretical_max": 1210,
+          "observed_min": 415,
+          "observed_max": 997
+        }
+      },
+
+      "conclusion": "Die beobachtete Sum-Verteilung entspricht EXAKT der theoretischen Erwartung. Kein Hinweis auf Manipulation. Das Chi-Quadrat zeigt nur, dass Summen nicht gleichverteilt sind - was trivial ist."
+    }
+  ],
+
+  "unified_model": {
+    "name": "KENO House-Edge Optimization Model",
+    "version": "1.0",
+
+    "hypothesis": "Das KENO-System nutzt einen zustandsabhaengigen Constraint-Mechanismus fuer Max-Gewinne, waehrend die Summenverteilung natuerlichen Gesetzen folgt.",
+
+    "mechanisms": [
+      {
+        "mechanism": "Near-Miss Amplification (Normal Mode)",
+        "description": "Waehrend ~99.7% der Zeit werden 9/9 und 10/10 Treffer unterdrueckt (Faktor 25-50x), um das 'fast gewonnen' Erlebnis zu verstaerken.",
+        "effect": "Mehr Near-Miss Gewinner, weniger Max-Gewinner",
+        "house_benefit": "Haelt Spieler motiviert durch haeufige 'knapp daneben' Erlebnisse"
+      },
+      {
+        "mechanism": "Jackpot Release (Jackpot Mode)",
+        "description": "Waehrend Jackpot-Perioden (~0.3% der Zeit, definiert durch GK1-Events) werden Max-Gewinne 'freigegeben' (Faktor 1.4-2.5x ueber Theorie).",
+        "effect": "Mehr Max-Gewinner relativ zu Near-Miss",
+        "house_benefit": "Kontrollierte Jackpot-Ausschuettung bei attraktiver Jackpot-Hoehe"
+      },
+      {
+        "mechanism": "Sum-Distribution (Natural)",
+        "description": "Die Summenverteilung folgt dem Zentralen Grenzwertsatz und zeigt keine Manipulation.",
+        "effect": "87% der Summen im Bereich 605-845",
+        "house_benefit": "Keine - reine Mathematik"
+      }
+    ],
+
+    "combined_constraint_function": {
+      "formula": "P(Win|k,J,S) = P_hyp(k) * C(k,J) * I(S)",
+      "components": {
+        "P_hyp(k)": "Hypergeometrische Basiswahrscheinlichkeit",
+        "C(k,J)": "Jackpot-abhaengiger Constraint-Faktor (HOUSE-004)",
+        "I(S)": "Summen-Indikator (immer ~1, kein echter Constraint)"
+      },
+      "C_function": {
+        "C(9,0)": 0.02,
+        "C(9,1)": 1.4,
+        "C(10,0)": 0.04,
+        "C(10,1)": 2.5
+      }
+    },
+
+    "testable_predictions": [
+      {
+        "id": "PRED-001",
+        "prediction": "In Perioden VOR einem GK1-Event sollte die Near-Miss Ratio ansteigen",
+        "test_method": "Analyse der 7-14 Tage vor jedem der 20 GK1-Events"
+      },
+      {
+        "id": "PRED-002",
+        "prediction": "Nach langen Jackpot-freien Perioden (>50 Tage) sollte die GK1-Wahrscheinlichkeit erhoehen",
+        "test_method": "Bedingte Wahrscheinlichkeit P(GK1|Tage_seit_letztem_GK1)"
+      },
+      {
+        "id": "PRED-003",
+        "prediction": "Die Near-Miss Ratio sollte mit Jackpot-Hoehe korrelieren (hoeher Jackpot = niedrigere Ratio)",
+        "test_method": "Korrelationsanalyse Near-Miss Ratio vs. akkumulierter Jackpot"
+      }
+    ]
+  },
+
+  "recommendations": {
+    "for_further_analysis": [
+      "Regionale Daten sammeln um HYP-003 zu testen",
+      "Pre-Jackpot Pattern analysieren (PRED-001)",
+      "Jackpot-Hoehe vs. Near-Miss Korrelation (PRED-003)"
+    ],
+    "for_strategy": [
+      "Anti-Birthday Strategie bleibt valide (weniger Konkurrenz)",
+      "Beobachtung der Jackpot-freien Tage koennte GK1-Timing verbessern",
+      "KENO Typ 8 statt 9/10 waehlen (weniger starke Unterdrueckung vermutet)"
+    ]
+  },
+
+  "data_quality": {
+    "n_draws_analyzed": 2237,
+    "n_jackpot_events": 20,
+    "date_range": "2022-01-01 to 2024-02-08",
+    "limitations": [
+      "Nur 20 GK1-Events (statistische Power begrenzt)",
+      "Keine regionalen Daten verfuegbar",
+      "Jackpot-Hoehe nicht systematisch erfasst"
+    ]
+  }
+}

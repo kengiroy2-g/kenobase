@@ -1,0 +1,175 @@
+{
+  "backtest_date": "2025-12-28T18:56:56.550581",
+  "parameters": {
+    "data_source": "Keno_GPTs\\Daten\\KENO_Stats_ab-2004.csv",
+    "keno_type": 6,
+    "anti_birthday_threshold": 0.6
+  },
+  "birthday_distribution": {
+    "n_draws": 6982,
+    "mean_birthday_score": 0.4418647951876254,
+    "std_birthday_score": 0.09480408447081004,
+    "min_birthday_score": 0.15,
+    "max_birthday_score": 0.8,
+    "draws_above_50pct": 1309,
+    "draws_below_50pct": 4433
+  },
+  "main_result": {
+    "strategy_name": "AntiBirthday-60%",
+    "period": {
+      "start": "2004-02-02T00:00:00",
+      "end": "2024-02-10T00:00:00"
+    },
+    "n_draws": 6982,
+    "matches": {
+      "total": 12021,
+      "avg_per_draw": 1.7217
+    },
+    "birthday_metrics": {
+      "avg_anti_birthday_score": 0.8427,
+      "avg_drawn_birthday_score": 0.4419
+    },
+    "competition": {
+      "avg_strategy_advantage": 1.0398,
+      "advantageous_draws": 1309,
+      "disadvantageous_draws": 5673,
+      "advantage_ratio": 0.1875
+    },
+    "vs_random": {
+      "random_avg_matches": 1.7123,
+      "improvement": 0.0055
+    }
+  },
+  "threshold_comparison": {
+    "40%": {
+      "strategy_name": "AntiBirthday-40%",
+      "period": {
+        "start": "2004-02-02T00:00:00",
+        "end": "2024-02-10T00:00:00"
+      },
+      "n_draws": 6982,
+      "matches": {
+        "total": 11916,
+        "avg_per_draw": 1.7067
+      },
+      "birthday_metrics": {
+        "avg_anti_birthday_score": 0.7681,
+        "avg_drawn_birthday_score": 0.4419
+      },
+      "competition": {
+        "avg_strategy_advantage": 1.0398,
+        "advantageous_draws": 1309,
+        "disadvantageous_draws": 5673,
+        "advantage_ratio": 0.1875
+      },
+      "vs_random": {
+        "random_avg_matches": 1.716,
+        "improvement": -0.0055
+      }
+    },
+    "50%": {
+      "strategy_name": "AntiBirthday-50%",
+      "period": {
+        "start": "2004-02-02T00:00:00",
+        "end": "2024-02-10T00:00:00"
+      },
+      "n_draws": 6982,
+      "matches": {
+        "total": 11993,
+        "avg_per_draw": 1.7177
+      },
+      "birthday_metrics": {
+        "avg_anti_birthday_score": 0.7683,
+        "avg_drawn_birthday_score": 0.4419
+      },
+      "competition": {
+        "avg_strategy_advantage": 1.0398,
+        "advantageous_draws": 1309,
+        "disadvantageous_draws": 5673,
+        "advantage_ratio": 0.1875
+      },
+      "vs_random": {
+        "random_avg_matches": 1.7147,
+        "improvement": 0.0017
+      }
+    },
+    "60%": {
+      "strategy_name": "AntiBirthday-60%",
+      "period": {
+        "start": "2004-02-02T00:00:00",
+        "end": "2024-02-10T00:00:00"
+      },
+      "n_draws": 6982,
+      "matches": {
+        "total": 11957,
+        "avg_per_draw": 1.7125
+      },
+      "birthday_metrics": {
+        "avg_anti_birthday_score": 0.8439,
+        "avg_drawn_birthday_score": 0.4419
+      },
+      "competition": {
+        "avg_strategy_advantage": 1.0398,
+        "advantageous_draws": 1309,
+        "disadvantageous_draws": 5673,
+        "advantage_ratio": 0.1875
+      },
+      "vs_random": {
+        "random_avg_matches": 1.7129,
+        "improvement": -0.0002
+      }
+    },
+    "70%": {
+      "strategy_name": "AntiBirthday-70%",
+      "period": {
+        "start": "2004-02-02T00:00:00",
+        "end": "2024-02-10T00:00:00"
+      },
+      "n_draws": 6982,
+      "matches": {
+        "total": 12077,
+        "avg_per_draw": 1.7297
+      },
+      "birthday_metrics": {
+        "avg_anti_birthday_score": 0.9191,
+        "avg_drawn_birthday_score": 0.4419
+      },
+      "competition": {
+        "avg_strategy_advantage": 1.0398,
+        "advantageous_draws": 1309,
+        "disadvantageous_draws": 5673,
+        "advantage_ratio": 0.1875
+      },
+      "vs_random": {
+        "random_avg_matches": 1.7105,
+        "improvement": 0.0113
+      }
+    },
+    "80%": {
+      "strategy_name": "AntiBirthday-80%",
+      "period": {
+        "start": "2004-02-02T00:00:00",
+        "end": "2024-02-10T00:00:00"
+      },
+      "n_draws": 6982,
+      "matches": {
+        "total": 11868,
+        "avg_per_draw": 1.6998
+      },
+      "birthday_metrics": {
+        "avg_anti_birthday_score": 0.9207,
+        "avg_drawn_birthday_score": 0.4419
+      },
+      "competition": {
+        "avg_strategy_advantage": 1.0398,
+        "advantageous_draws": 1309,
+        "disadvantageous_draws": 5673,
+        "advantage_ratio": 0.1875
+      },
+      "vs_random": {
+        "random_avg_matches": 1.7145,
+        "improvement": -0.0086
+      }
+    }
+  }
+}

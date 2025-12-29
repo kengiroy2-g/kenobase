@@ -1,0 +1,732 @@
+{
+  "metadata": {
+    "task": "TASK-R05",
+    "description": "Langzeit-Zahlen-Balance mit Trigger-Analyse",
+    "generated_at": "2025-12-28T08:31:49.600593",
+    "total_draws": 2237,
+    "config": {
+      "window": 500,
+      "balance_threshold": 0.1,
+      "trigger_threshold_std": 2.0
+    }
+  },
+  "balance_analysis": {
+    "window": 500,
+    "expected_frequency": 0.2857142857142857,
+    "underrepresented_count": 3,
+    "overrepresented_count": 7,
+    "mean_absolute_deviation": 0.053200000000000004,
+    "is_balanced": true
+  },
+  "number_stats": [
+    {
+      "number": 22,
+      "observed_count": 125,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.12500000000000003,
+      "deviation_std": -1.7677669529663693,
+      "classification": "underrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 29,
+      "observed_count": 125,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.12500000000000003,
+      "deviation_std": -1.7677669529663693,
+      "classification": "underrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 69,
+      "observed_count": 125,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.12500000000000003,
+      "deviation_std": -1.7677669529663693,
+      "classification": "underrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 24,
+      "observed_count": 129,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.09700000000000003,
+      "deviation_std": -1.3717871555019028,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 53,
+      "observed_count": 129,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.09700000000000003,
+      "deviation_std": -1.3717871555019028,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 60,
+      "observed_count": 129,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.09700000000000003,
+      "deviation_std": -1.3717871555019028,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 67,
+      "observed_count": 130,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.09000000000000002,
+      "deviation_std": -1.272792206135786,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 27,
+      "observed_count": 131,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.08300000000000003,
+      "deviation_std": -1.1737972567696693,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 55,
+      "observed_count": 131,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.08300000000000003,
+      "deviation_std": -1.1737972567696693,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 8,
+      "observed_count": 132,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.07600000000000003,
+      "deviation_std": -1.0748023074035526,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 18,
+      "observed_count": 132,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.07600000000000003,
+      "deviation_std": -1.0748023074035526,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 7,
+      "observed_count": 133,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.06900000000000002,
+      "deviation_std": -0.975807358037436,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 34,
+      "observed_count": 133,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.06900000000000002,
+      "deviation_std": -0.975807358037436,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 11,
+      "observed_count": 134,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.06200000000000003,
+      "deviation_std": -0.8768124086713194,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 12,
+      "observed_count": 134,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.06200000000000003,
+      "deviation_std": -0.8768124086713194,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 41,
+      "observed_count": 135,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.05500000000000003,
+      "deviation_std": -0.7778174593052027,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 26,
+      "observed_count": 136,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04800000000000003,
+      "deviation_std": -0.6788225099390861,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 35,
+      "observed_count": 136,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04800000000000003,
+      "deviation_std": -0.6788225099390861,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 43,
+      "observed_count": 136,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04800000000000003,
+      "deviation_std": -0.6788225099390861,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 19,
+      "observed_count": 137,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04100000000000003,
+      "deviation_std": -0.5798275605729694,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 21,
+      "observed_count": 137,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04100000000000003,
+      "deviation_std": -0.5798275605729694,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 51,
+      "observed_count": 137,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.04100000000000003,
+      "deviation_std": -0.5798275605729694,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 15,
+      "observed_count": 138,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.03400000000000003,
+      "deviation_std": -0.4808326112068527,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 32,
+      "observed_count": 138,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.03400000000000003,
+      "deviation_std": -0.4808326112068527,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 45,
+      "observed_count": 138,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.03400000000000003,
+      "deviation_std": -0.4808326112068527,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 23,
+      "observed_count": 139,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.027000000000000027,
+      "deviation_std": -0.3818376618407361,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 44,
+      "observed_count": 140,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.020000000000000028,
+      "deviation_std": -0.28284271247461945,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 58,
+      "observed_count": 141,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.013000000000000029,
+      "deviation_std": -0.18384776310850276,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 20,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 28,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 30,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 42,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 59,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 61,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 63,
+      "observed_count": 142,
+      "expected_count": 142.85714285714286,
+      "balance_score": -0.006000000000000028,
+      "deviation_std": -0.08485281374238611,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 31,
+      "observed_count": 143,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.0009999999999999716,
+      "deviation_std": 0.01414213562373055,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 37,
+      "observed_count": 143,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.0009999999999999716,
+      "deviation_std": 0.01414213562373055,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 16,
+      "observed_count": 144,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.00799999999999997,
+      "deviation_std": 0.1131370849898472,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 48,
+      "observed_count": 144,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.00799999999999997,
+      "deviation_std": 0.1131370849898472,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 1,
+      "observed_count": 145,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.014999999999999972,
+      "deviation_std": 0.21213203435596387,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 17,
+      "observed_count": 145,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.014999999999999972,
+      "deviation_std": 0.21213203435596387,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 52,
+      "observed_count": 145,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.014999999999999972,
+      "deviation_std": 0.21213203435596387,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 57,
+      "observed_count": 145,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.014999999999999972,
+      "deviation_std": 0.21213203435596387,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 62,
+      "observed_count": 145,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.014999999999999972,
+      "deviation_std": 0.21213203435596387,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 10,
+      "observed_count": 146,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.02199999999999997,
+      "deviation_std": 0.31112698372208053,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 40,
+      "observed_count": 146,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.02199999999999997,
+      "deviation_std": 0.31112698372208053,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 47,
+      "observed_count": 146,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.02199999999999997,
+      "deviation_std": 0.31112698372208053,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 56,
+      "observed_count": 146,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.02199999999999997,
+      "deviation_std": 0.31112698372208053,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 4,
+      "observed_count": 147,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.02899999999999997,
+      "deviation_std": 0.41012193308819717,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 38,
+      "observed_count": 148,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.03599999999999997,
+      "deviation_std": 0.5091168824543139,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 46,
+      "observed_count": 148,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.03599999999999997,
+      "deviation_std": 0.5091168824543139,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 68,
+      "observed_count": 148,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.03599999999999997,
+      "deviation_std": 0.5091168824543139,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 70,
+      "observed_count": 148,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.03599999999999997,
+      "deviation_std": 0.5091168824543139,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 6,
+      "observed_count": 149,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.04299999999999997,
+      "deviation_std": 0.6081118318204305,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 13,
+      "observed_count": 149,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.04299999999999997,
+      "deviation_std": 0.6081118318204305,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 49,
+      "observed_count": 149,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.04299999999999997,
+      "deviation_std": 0.6081118318204305,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 54,
+      "observed_count": 150,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.04999999999999997,
+      "deviation_std": 0.7071067811865471,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 64,
+      "observed_count": 151,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.05699999999999997,
+      "deviation_std": 0.8061017305526639,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 5,
+      "observed_count": 152,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.06399999999999997,
+      "deviation_std": 0.9050966799187805,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 14,
+      "observed_count": 152,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.06399999999999997,
+      "deviation_std": 0.9050966799187805,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 36,
+      "observed_count": 152,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.06399999999999997,
+      "deviation_std": 0.9050966799187805,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 66,
+      "observed_count": 152,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.06399999999999997,
+      "deviation_std": 0.9050966799187805,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 65,
+      "observed_count": 157,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.09899999999999996,
+      "deviation_std": 1.4000714267493637,
+      "classification": "normal",
+      "trigger_active": false
+    },
+    {
+      "number": 9,
+      "observed_count": 158,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.10599999999999997,
+      "deviation_std": 1.4990663761154805,
+      "classification": "overrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 39,
+      "observed_count": 159,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.11299999999999996,
+      "deviation_std": 1.5980613254815972,
+      "classification": "overrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 50,
+      "observed_count": 159,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.11299999999999996,
+      "deviation_std": 1.5980613254815972,
+      "classification": "overrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 33,
+      "observed_count": 160,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.11999999999999997,
+      "deviation_std": 1.6970562748477138,
+      "classification": "overrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 3,
+      "observed_count": 161,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.12699999999999997,
+      "deviation_std": 1.7960512242138305,
+      "classification": "overrepresented",
+      "trigger_active": false
+    },
+    {
+      "number": 2,
+      "observed_count": 165,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.15499999999999997,
+      "deviation_std": 2.192031021678297,
+      "classification": "overrepresented",
+      "trigger_active": true
+    },
+    {
+      "number": 25,
+      "observed_count": 169,
+      "expected_count": 142.85714285714286,
+      "balance_score": 0.18299999999999997,
+      "deviation_std": 2.5880108191427635,
+      "classification": "overrepresented",
+      "trigger_active": true
+    }
+  ],
+  "triggers": [
+    {
+      "number": 25,
+      "trigger_type": "REVERSION_DOWN",
+      "balance_score": 0.18299999999999997,
+      "deviation_std": 2.5880108191427635,
+      "expected_correction": "decrease",
+      "confidence": 0.6673702342157146,
+      "date": "2024-02-15T00:00:00"
+    },
+    {
+      "number": 2,
+      "trigger_type": "REVERSION_DOWN",
+      "balance_score": 0.15499999999999997,
+      "deviation_std": 2.192031021678297,
+      "expected_correction": "decrease",
+      "confidence": 0.5623137466416036,
+      "date": "2024-02-15T00:00:00"
+    }
+  ],
+  "top_underrepresented": [
+    {
+      "number": 22,
+      "balance_score": -0.12500000000000003
+    },
+    {
+      "number": 29,
+      "balance_score": -0.12500000000000003
+    },
+    {
+      "number": 69,
+      "balance_score": -0.12500000000000003
+    }
+  ],
+  "top_overrepresented": [
+    {
+      "number": 25,
+      "balance_score": 0.18299999999999997
+    },
+    {
+      "number": 2,
+      "balance_score": 0.15499999999999997
+    },
+    {
+      "number": 3,
+      "balance_score": 0.12699999999999997
+    },
+    {
+      "number": 33,
+      "balance_score": 0.11999999999999997
+    },
+    {
+      "number": 50,
+      "balance_score": 0.11299999999999996
+    },
+    {
+      "number": 39,
+      "balance_score": 0.11299999999999996
+    },
+    {
+      "number": 9,
+      "balance_score": 0.10599999999999997
+    }
+  ],
+  "acceptance_criteria": {
+    "AC1_balance_scores_calculated": true,
+    "AC2_triggers_detected": true,
+    "AC3_classifications_assigned": true,
+    "AC4_report_generated": true
+  },
+  "summary": {
+    "hypothesis_testable": true,
+    "key_findings": [
+      "3 Zahlen sind unterrepraesentiert (< -10%)",
+      "7 Zahlen sind ueberrepraesentiert (> +10%)",
+      "2 Trigger aktiv: 0 REVERSION_UP, 2 REVERSION_DOWN",
+      "Durchschnittliche absolute Abweichung: 5.3%"
+    ]
+  }
+}

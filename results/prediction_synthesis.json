@@ -1,0 +1,95 @@
+{
+  "timestamp": "2025-12-27T18:22:05.625711",
+  "config": {
+    "results_dir": "results",
+    "top_n": 6,
+    "max_per_decade": 2,
+    "anti_avalanche_limit": 4
+  },
+  "hypotheses_used": [
+    "HYP-007",
+    "HYP-010",
+    "HYP-011",
+    "HYP-012"
+  ],
+  "recommendations": {
+    "count": 6,
+    "recommendations": [
+      {
+        "number": 36,
+        "combined_score": 0.7541,
+        "tier": "A",
+        "decade": 4,
+        "reasons": [
+          "HYP-010: Safe (wenige Mitspieler)",
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      },
+      {
+        "number": 64,
+        "combined_score": 0.7179,
+        "tier": "A",
+        "decade": 7,
+        "reasons": [
+          "HYP-007: In 6 Top-Patterns",
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      },
+      {
+        "number": 14,
+        "combined_score": 0.6739,
+        "tier": "B",
+        "decade": 2,
+        "reasons": [
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      },
+      {
+        "number": 24,
+        "combined_score": 0.6739,
+        "tier": "B",
+        "decade": 3,
+        "reasons": [
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      },
+      {
+        "number": 42,
+        "combined_score": 0.6739,
+        "tier": "B",
+        "decade": 5,
+        "reasons": [
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      },
+      {
+        "number": 60,
+        "combined_score": 0.6739,
+        "tier": "B",
+        "decade": 6,
+        "reasons": [
+          "HYP-011: Feiertags-Effekt signifikant",
+          "HYP-012: Low-Stake (weniger Einsatz)"
+        ]
+      }
+    ],
+    "numbers": [
+      36,
+      64,
+      14,
+      24,
+      42,
+      60
+    ],
+    "tier_summary": {
+      "A": 2,
+      "B": 4,
+      "C": 0
+    }
+  }
+}

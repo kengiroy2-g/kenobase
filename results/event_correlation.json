@@ -1,0 +1,107 @@
+{
+  "hypothesis_id": "HYP-EVENT",
+  "hypothesis_name": "GK1-Events vs. Deutsche Events Korrelation",
+  "analysis_date": "2025-12-29T09:38:51.085596",
+  "data_period": {
+    "start": "2022-01-01",
+    "end": "2024-12-31"
+  },
+  "baseline": {
+    "total_draws": 776,
+    "total_gk1_events": 20,
+    "baseline_probability": 0.02577319587628866
+  },
+  "event_correlations": {
+    "near_holiday_7d": {
+      "probability": 0.022222222222222223,
+      "gk1_count": 4,
+      "total_draws_in_condition": 180,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 0.8622222222222223,
+      "odds_ratio": 0.8238636363636364
+    },
+    "wm_2022": {
+      "probability": 0.03571428571428571,
+      "gk1_count": 1,
+      "total_draws_in_condition": 28,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 1.3857142857142857,
+      "odds_ratio": 1.4210526315789473
+    },
+    "em_2024": {
+      "probability": 0.0,
+      "gk1_count": 0,
+      "total_draws_in_condition": 0,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 0.0,
+      "odds_ratio": 0.0
+    },
+    "month_start_1_5": {
+      "probability": 0.015384615384615385,
+      "gk1_count": 2,
+      "total_draws_in_condition": 130,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 0.596923076923077,
+      "odds_ratio": 0.5451388888888888
+    },
+    "month_end_25_31": {
+      "probability": 0.037267080745341616,
+      "gk1_count": 6,
+      "total_draws_in_condition": 161,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 1.4459627329192548,
+      "odds_ratio": 1.6617511520737327
+    },
+    "quarter_end": {
+      "probability": 0.02830188679245283,
+      "gk1_count": 3,
+      "total_draws_in_condition": 106,
+      "baseline_probability": 0.02577319587628866,
+      "probability_ratio": 1.0981132075471698,
+      "odds_ratio": 1.1187892632781267
+    }
+  },
+  "chi_square_tests": {
+    "near_holiday_7d": {
+      "chi2_stat": 0.005580057526366246,
+      "p_value": 0.9404535806204201,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    },
+    "wm_2022": {
+      "chi2_stat": 0.0,
+      "p_value": 1.0,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    },
+    "em_2024": {
+      "chi2_stat": 0.0,
+      "p_value": 1.0,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    },
+    "month_start_1_5": {
+      "chi2_stat": 0.2662085076945758,
+      "p_value": 0.6058865525872639,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    },
+    "month_end_25_31": {
+      "chi2_stat": 0.5692873106982079,
+      "p_value": 0.45054225916590984,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    },
+    "quarter_end": {
+      "chi2_stat": 0.0,
+      "p_value": 1.0,
+      "degrees_of_freedom": 1,
+      "is_significant": false
+    }
+  },
+  "summary": {
+    "significant_events": [],
+    "conclusion": "Keine signifikante Korrelation zwischen GK1-Events und deutschen nationalen/internationalen Events gefunden. Die zeitliche Verteilung der Jackpots erscheint zufaellig.",
+    "is_hypothesis_supported": false
+  }
+}

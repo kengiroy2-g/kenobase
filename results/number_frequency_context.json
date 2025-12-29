@@ -1,0 +1,2619 @@
+{
+  "metadata": {
+    "analysis_date": "2025-12-29T09:57:39.170216",
+    "total_drawings": 2237,
+    "expected_frequency_per_number": 639.14,
+    "data_source": "KENO_ab_2018.csv",
+    "date_range": {
+      "start": "2018-01-01",
+      "end": "2024-02-15"
+    }
+  },
+  "summary": {
+    "hot_numbers": {
+      "threshold": ">680",
+      "count": 2,
+      "numbers": [
+        49,
+        64
+      ]
+    },
+    "cold_numbers": {
+      "threshold": "<600",
+      "count": 3,
+      "numbers": [
+        1,
+        37,
+        45
+      ]
+    },
+    "jackpot_context": {
+      "jackpot_days": 18,
+      "normal_days": 2219,
+      "jackpot_favored_numbers": [
+        3,
+        4,
+        9,
+        13,
+        24,
+        31,
+        35,
+        36,
+        37,
+        40,
+        41,
+        49,
+        51,
+        52,
+        64,
+        66,
+        69
+      ]
+    },
+    "temporal_context": {
+      "month_start_days": 370,
+      "month_end_days": 470,
+      "month_middle_days": 1397,
+      "month_start_favored": [
+        16,
+        20,
+        21,
+        25,
+        26,
+        33,
+        39,
+        41,
+        53,
+        55,
+        56,
+        60
+      ],
+      "month_end_favored": [
+        1,
+        2,
+        24,
+        34,
+        45,
+        48
+      ]
+    },
+    "birthday_effect": {
+      "birthday_numbers": {
+        "range": "1-31",
+        "count": 31,
+        "avg_frequency": 636.71,
+        "std_frequency": 20.87,
+        "vs_expected_pct": -0.38
+      },
+      "non_birthday_numbers": {
+        "range": "32-70",
+        "count": 39,
+        "avg_frequency": 641.08,
+        "std_frequency": 22.4,
+        "vs_expected_pct": 0.3
+      },
+      "birthday_effect": -4.37,
+      "birthday_effect_significant": false
+    }
+  },
+  "predictability_ranking": [
+    {
+      "rank": 1,
+      "number": 34,
+      "score": 26.12
+    },
+    {
+      "rank": 2,
+      "number": 45,
+      "score": 23.89
+    },
+    {
+      "rank": 3,
+      "number": 60,
+      "score": 22.06
+    },
+    {
+      "rank": 4,
+      "number": 24,
+      "score": 20.58
+    },
+    {
+      "rank": 5,
+      "number": 51,
+      "score": 19.16
+    },
+    {
+      "rank": 6,
+      "number": 41,
+      "score": 18.53
+    },
+    {
+      "rank": 7,
+      "number": 55,
+      "score": 18.39
+    },
+    {
+      "rank": 8,
+      "number": 25,
+      "score": 18.03
+    },
+    {
+      "rank": 9,
+      "number": 3,
+      "score": 17.87
+    },
+    {
+      "rank": 10,
+      "number": 37,
+      "score": 15.57
+    },
+    {
+      "rank": 11,
+      "number": 39,
+      "score": 15.15
+    },
+    {
+      "rank": 12,
+      "number": 2,
+      "score": 15.12
+    },
+    {
+      "rank": 13,
+      "number": 53,
+      "score": 14.71
+    },
+    {
+      "rank": 14,
+      "number": 26,
+      "score": 14.35
+    },
+    {
+      "rank": 15,
+      "number": 1,
+      "score": 11.98
+    },
+    {
+      "rank": 16,
+      "number": 62,
+      "score": 11.88
+    },
+    {
+      "rank": 17,
+      "number": 13,
+      "score": 11.56
+    },
+    {
+      "rank": 18,
+      "number": 4,
+      "score": 11.46
+    },
+    {
+      "rank": 19,
+      "number": 49,
+      "score": 11.33
+    },
+    {
+      "rank": 20,
+      "number": 16,
+      "score": 10.0
+    }
+  ],
+  "number_clusters": {
+    "description": "Pairs that appear together more than 15% above expected",
+    "expected_cooccurrence": 176.0,
+    "top_pairs": [
+      {
+        "pair": [
+          9,
+          50
+        ],
+        "count": 218,
+        "expected": 176.0,
+        "lift": 1.2387
+      },
+      {
+        "pair": [
+          20,
+          36
+        ],
+        "count": 218,
+        "expected": 176.0,
+        "lift": 1.2387
+      },
+      {
+        "pair": [
+          9,
+          10
+        ],
+        "count": 217,
+        "expected": 176.0,
+        "lift": 1.233
+      },
+      {
+        "pair": [
+          32,
+          64
+        ],
+        "count": 214,
+        "expected": 176.0,
+        "lift": 1.2159
+      },
+      {
+        "pair": [
+          33,
+          49
+        ],
+        "count": 213,
+        "expected": 176.0,
+        "lift": 1.2103
+      },
+      {
+        "pair": [
+          7,
+          10
+        ],
+        "count": 213,
+        "expected": 176.0,
+        "lift": 1.2103
+      },
+      {
+        "pair": [
+          19,
+          49
+        ],
+        "count": 213,
+        "expected": 176.0,
+        "lift": 1.2103
+      },
+      {
+        "pair": [
+          42,
+          61
+        ],
+        "count": 212,
+        "expected": 176.0,
+        "lift": 1.2046
+      },
+      {
+        "pair": [
+          3,
+          42
+        ],
+        "count": 212,
+        "expected": 176.0,
+        "lift": 1.2046
+      },
+      {
+        "pair": [
+          27,
+          49
+        ],
+        "count": 211,
+        "expected": 176.0,
+        "lift": 1.1989
+      },
+      {
+        "pair": [
+          33,
+          50
+        ],
+        "count": 211,
+        "expected": 176.0,
+        "lift": 1.1989
+      },
+      {
+        "pair": [
+          64,
+          66
+        ],
+        "count": 211,
+        "expected": 176.0,
+        "lift": 1.1989
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "count": 211,
+        "expected": 176.0,
+        "lift": 1.1989
+      },
+      {
+        "pair": [
+          24,
+          40
+        ],
+        "count": 211,
+        "expected": 176.0,
+        "lift": 1.1989
+      },
+      {
+        "pair": [
+          10,
+          32
+        ],
+        "count": 210,
+        "expected": 176.0,
+        "lift": 1.1932
+      },
+      {
+        "pair": [
+          2,
+          59
+        ],
+        "count": 208,
+        "expected": 176.0,
+        "lift": 1.1818
+      },
+      {
+        "pair": [
+          53,
+          64
+        ],
+        "count": 208,
+        "expected": 176.0,
+        "lift": 1.1818
+      },
+      {
+        "pair": [
+          3,
+          20
+        ],
+        "count": 208,
+        "expected": 176.0,
+        "lift": 1.1818
+      },
+      {
+        "pair": [
+          14,
+          64
+        ],
+        "count": 208,
+        "expected": 176.0,
+        "lift": 1.1818
+      },
+      {
+        "pair": [
+          38,
+          66
+        ],
+        "count": 208,
+        "expected": 176.0,
+        "lift": 1.1818
+      },
+      {
+        "pair": [
+          42,
+          68
+        ],
+        "count": 207,
+        "expected": 176.0,
+        "lift": 1.1762
+      },
+      {
+        "pair": [
+          20,
+          32
+        ],
+        "count": 207,
+        "expected": 176.0,
+        "lift": 1.1762
+      },
+      {
+        "pair": [
+          49,
+          57
+        ],
+        "count": 207,
+        "expected": 176.0,
+        "lift": 1.1762
+      },
+      {
+        "pair": [
+          39,
+          64
+        ],
+        "count": 207,
+        "expected": 176.0,
+        "lift": 1.1762
+      },
+      {
+        "pair": [
+          9,
+          49
+        ],
+        "count": 207,
+        "expected": 176.0,
+        "lift": 1.1762
+      },
+      {
+        "pair": [
+          10,
+          59
+        ],
+        "count": 206,
+        "expected": 176.0,
+        "lift": 1.1705
+      },
+      {
+        "pair": [
+          30,
+          59
+        ],
+        "count": 206,
+        "expected": 176.0,
+        "lift": 1.1705
+      },
+      {
+        "pair": [
+          36,
+          49
+        ],
+        "count": 206,
+        "expected": 176.0,
+        "lift": 1.1705
+      },
+      {
+        "pair": [
+          10,
+          65
+        ],
+        "count": 206,
+        "expected": 176.0,
+        "lift": 1.1705
+      },
+      {
+        "pair": [
+          49,
+          55
+        ],
+        "count": 205,
+        "expected": 176.0,
+        "lift": 1.1648
+      },
+      {
+        "pair": [
+          49,
+          61
+        ],
+        "count": 205,
+        "expected": 176.0,
+        "lift": 1.1648
+      },
+      {
+        "pair": [
+          28,
+          66
+        ],
+        "count": 205,
+        "expected": 176.0,
+        "lift": 1.1648
+      },
+      {
+        "pair": [
+          36,
+          55
+        ],
+        "count": 205,
+        "expected": 176.0,
+        "lift": 1.1648
+      },
+      {
+        "pair": [
+          9,
+          39
+        ],
+        "count": 205,
+        "expected": 176.0,
+        "lift": 1.1648
+      },
+      {
+        "pair": [
+          49,
+          52
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          26,
+          43
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          24,
+          27
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          36,
+          39
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          3,
+          9
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          34,
+          49
+        ],
+        "count": 204,
+        "expected": 176.0,
+        "lift": 1.1591
+      },
+      {
+        "pair": [
+          21,
+          68
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          27,
+          64
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          27,
+          38
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          49,
+          60
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          59,
+          64
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          39,
+          53
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          49,
+          66
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          10,
+          19
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          36,
+          42
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      },
+      {
+        "pair": [
+          39,
+          50
+        ],
+        "count": 203,
+        "expected": 176.0,
+        "lift": 1.1534
+      }
+    ]
+  },
+  "numbers_detail": {
+    "1": {
+      "number": 1,
+      "global": {
+        "frequency": 597,
+        "expected": 639.14,
+        "deviation": -42.14,
+        "deviation_pct": -6.59,
+        "status": "COLD"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 593,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2672,
+        "lift": 0.8316,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 89,
+        "month_end_freq": 143,
+        "month_middle_freq": 365,
+        "start_rate": 0.2405,
+        "end_rate": 0.3043,
+        "middle_rate": 0.2613,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 11.98
+    },
+    "2": {
+      "number": 2,
+      "global": {
+        "frequency": 667,
+        "expected": 639.14,
+        "deviation": 27.86,
+        "deviation_pct": 4.36,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 663,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2988,
+        "lift": 0.7438,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 97,
+        "month_end_freq": 164,
+        "month_middle_freq": 406,
+        "start_rate": 0.2622,
+        "end_rate": 0.3489,
+        "middle_rate": 0.2906,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 15.12
+    },
+    "3": {
+      "number": 3,
+      "global": {
+        "frequency": 661,
+        "expected": 639.14,
+        "deviation": 21.86,
+        "deviation_pct": 3.42,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 10,
+        "normal_freq": 651,
+        "jackpot_rate": 0.5556,
+        "normal_rate": 0.2934,
+        "lift": 1.8937,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 105,
+        "month_end_freq": 132,
+        "month_middle_freq": 424,
+        "start_rate": 0.2838,
+        "end_rate": 0.2809,
+        "middle_rate": 0.3035,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 17.87
+    },
+    "4": {
+      "number": 4,
+      "global": {
+        "frequency": 635,
+        "expected": 639.14,
+        "deviation": -4.14,
+        "deviation_pct": -0.65,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 627,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.2826,
+        "lift": 1.5729,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 101,
+        "month_end_freq": 125,
+        "month_middle_freq": 409,
+        "start_rate": 0.273,
+        "end_rate": 0.266,
+        "middle_rate": 0.2928,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 11.46
+    },
+    "5": {
+      "number": 5,
+      "global": {
+        "frequency": 639,
+        "expected": 639.14,
+        "deviation": -0.14,
+        "deviation_pct": -0.02,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 635,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2862,
+        "lift": 0.7766,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 107,
+        "month_end_freq": 139,
+        "month_middle_freq": 393,
+        "start_rate": 0.2892,
+        "end_rate": 0.2957,
+        "middle_rate": 0.2813,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.47
+    },
+    "6": {
+      "number": 6,
+      "global": {
+        "frequency": 608,
+        "expected": 639.14,
+        "deviation": -31.14,
+        "deviation_pct": -4.87,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 605,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2726,
+        "lift": 0.6113,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 101,
+        "month_end_freq": 114,
+        "month_middle_freq": 393,
+        "start_rate": 0.273,
+        "end_rate": 0.2426,
+        "middle_rate": 0.2813,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 7.77
+    },
+    "7": {
+      "number": 7,
+      "global": {
+        "frequency": 649,
+        "expected": 639.14,
+        "deviation": 9.86,
+        "deviation_pct": 1.54,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 645,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2907,
+        "lift": 0.7645,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 100,
+        "month_end_freq": 143,
+        "month_middle_freq": 406,
+        "start_rate": 0.2703,
+        "end_rate": 0.3043,
+        "middle_rate": 0.2906,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.71
+    },
+    "8": {
+      "number": 8,
+      "global": {
+        "frequency": 640,
+        "expected": 639.14,
+        "deviation": 0.86,
+        "deviation_pct": 0.13,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 636,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2866,
+        "lift": 0.7753,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 133,
+        "month_middle_freq": 408,
+        "start_rate": 0.2676,
+        "end_rate": 0.283,
+        "middle_rate": 0.2921,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.49
+    },
+    "9": {
+      "number": 9,
+      "global": {
+        "frequency": 670,
+        "expected": 639.14,
+        "deviation": 30.86,
+        "deviation_pct": 4.83,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 663,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.2988,
+        "lift": 1.3016,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 104,
+        "month_end_freq": 153,
+        "month_middle_freq": 413,
+        "start_rate": 0.2811,
+        "end_rate": 0.3255,
+        "middle_rate": 0.2956,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 6.03
+    },
+    "10": {
+      "number": 10,
+      "global": {
+        "frequency": 679,
+        "expected": 639.14,
+        "deviation": 39.86,
+        "deviation_pct": 6.24,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 674,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.3037,
+        "lift": 0.9145,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 105,
+        "month_end_freq": 133,
+        "month_middle_freq": 441,
+        "start_rate": 0.2838,
+        "end_rate": 0.283,
+        "middle_rate": 0.3157,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 1.87
+    },
+    "11": {
+      "number": 11,
+      "global": {
+        "frequency": 608,
+        "expected": 639.14,
+        "deviation": -31.14,
+        "deviation_pct": -4.87,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 603,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2717,
+        "lift": 1.0222,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 110,
+        "month_end_freq": 128,
+        "month_middle_freq": 370,
+        "start_rate": 0.2973,
+        "end_rate": 0.2723,
+        "middle_rate": 0.2649,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "12": {
+      "number": 12,
+      "global": {
+        "frequency": 635,
+        "expected": 639.14,
+        "deviation": -4.14,
+        "deviation_pct": -0.65,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 629,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2835,
+        "lift": 1.1759,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 89,
+        "month_end_freq": 136,
+        "month_middle_freq": 410,
+        "start_rate": 0.2405,
+        "end_rate": 0.2894,
+        "middle_rate": 0.2935,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "13": {
+      "number": 13,
+      "global": {
+        "frequency": 633,
+        "expected": 639.14,
+        "deviation": -6.14,
+        "deviation_pct": -0.96,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 625,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.2817,
+        "lift": 1.578,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 108,
+        "month_end_freq": 111,
+        "month_middle_freq": 414,
+        "start_rate": 0.2919,
+        "end_rate": 0.2362,
+        "middle_rate": 0.2963,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 11.56
+    },
+    "14": {
+      "number": 14,
+      "global": {
+        "frequency": 642,
+        "expected": 639.14,
+        "deviation": 2.86,
+        "deviation_pct": 0.45,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 637,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2871,
+        "lift": 0.9676,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 111,
+        "month_end_freq": 135,
+        "month_middle_freq": 396,
+        "start_rate": 0.3,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2835,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "15": {
+      "number": 15,
+      "global": {
+        "frequency": 618,
+        "expected": 639.14,
+        "deviation": -21.14,
+        "deviation_pct": -3.31,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 613,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2763,
+        "lift": 1.0055,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 103,
+        "month_end_freq": 115,
+        "month_middle_freq": 400,
+        "start_rate": 0.2784,
+        "end_rate": 0.2447,
+        "middle_rate": 0.2863,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "16": {
+      "number": 16,
+      "global": {
+        "frequency": 638,
+        "expected": 639.14,
+        "deviation": -1.14,
+        "deviation_pct": -0.18,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 633,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2853,
+        "lift": 0.9738,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 121,
+        "month_end_freq": 131,
+        "month_middle_freq": 386,
+        "start_rate": 0.327,
+        "end_rate": 0.2787,
+        "middle_rate": 0.2763,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 10.0
+    },
+    "17": {
+      "number": 17,
+      "global": {
+        "frequency": 613,
+        "expected": 639.14,
+        "deviation": -26.14,
+        "deviation_pct": -4.09,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 609,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2744,
+        "lift": 0.8097,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 103,
+        "month_end_freq": 132,
+        "month_middle_freq": 378,
+        "start_rate": 0.2784,
+        "end_rate": 0.2809,
+        "middle_rate": 0.2706,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "18": {
+      "number": 18,
+      "global": {
+        "frequency": 612,
+        "expected": 639.14,
+        "deviation": -27.14,
+        "deviation_pct": -4.25,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 607,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2735,
+        "lift": 1.0155,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 132,
+        "month_middle_freq": 381,
+        "start_rate": 0.2676,
+        "end_rate": 0.2809,
+        "middle_rate": 0.2727,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "19": {
+      "number": 19,
+      "global": {
+        "frequency": 631,
+        "expected": 639.14,
+        "deviation": -8.14,
+        "deviation_pct": -1.27,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 626,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2821,
+        "lift": 0.9846,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 103,
+        "month_end_freq": 130,
+        "month_middle_freq": 398,
+        "start_rate": 0.2784,
+        "end_rate": 0.2766,
+        "middle_rate": 0.2849,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "20": {
+      "number": 20,
+      "global": {
+        "frequency": 668,
+        "expected": 639.14,
+        "deviation": 28.86,
+        "deviation_pct": 4.51,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 662,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2983,
+        "lift": 1.1173,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 123,
+        "month_end_freq": 131,
+        "month_middle_freq": 414,
+        "start_rate": 0.3324,
+        "end_rate": 0.2787,
+        "middle_rate": 0.2963,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 10.0
+    },
+    "21": {
+      "number": 21,
+      "global": {
+        "frequency": 646,
+        "expected": 639.14,
+        "deviation": 6.86,
+        "deviation_pct": 1.07,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 640,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2884,
+        "lift": 1.1557,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 121,
+        "month_end_freq": 116,
+        "month_middle_freq": 409,
+        "start_rate": 0.327,
+        "end_rate": 0.2468,
+        "middle_rate": 0.2928,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 10.0
+    },
+    "22": {
+      "number": 22,
+      "global": {
+        "frequency": 627,
+        "expected": 639.14,
+        "deviation": -12.14,
+        "deviation_pct": -1.9,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 622,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2803,
+        "lift": 0.991,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 141,
+        "month_middle_freq": 387,
+        "start_rate": 0.2676,
+        "end_rate": 0.3,
+        "middle_rate": 0.277,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "23": {
+      "number": 23,
+      "global": {
+        "frequency": 623,
+        "expected": 639.14,
+        "deviation": -16.14,
+        "deviation_pct": -2.53,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 618,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2785,
+        "lift": 0.9974,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 113,
+        "month_end_freq": 135,
+        "month_middle_freq": 375,
+        "start_rate": 0.3054,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2684,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "24": {
+      "number": 24,
+      "global": {
+        "frequency": 653,
+        "expected": 639.14,
+        "deviation": 13.86,
+        "deviation_pct": 2.17,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 645,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.2907,
+        "lift": 1.529,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 98,
+        "month_end_freq": 161,
+        "month_middle_freq": 394,
+        "start_rate": 0.2649,
+        "end_rate": 0.3426,
+        "middle_rate": 0.282,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 20.58
+    },
+    "25": {
+      "number": 25,
+      "global": {
+        "frequency": 621,
+        "expected": 639.14,
+        "deviation": -18.14,
+        "deviation_pct": -2.84,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 618,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2785,
+        "lift": 0.5984,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 113,
+        "month_end_freq": 113,
+        "month_middle_freq": 395,
+        "start_rate": 0.3054,
+        "end_rate": 0.2404,
+        "middle_rate": 0.2827,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 18.03
+    },
+    "26": {
+      "number": 26,
+      "global": {
+        "frequency": 634,
+        "expected": 639.14,
+        "deviation": -5.14,
+        "deviation_pct": -0.8,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 630,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2839,
+        "lift": 0.7827,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 122,
+        "month_end_freq": 136,
+        "month_middle_freq": 376,
+        "start_rate": 0.3297,
+        "end_rate": 0.2894,
+        "middle_rate": 0.2691,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 14.35
+    },
+    "27": {
+      "number": 27,
+      "global": {
+        "frequency": 676,
+        "expected": 639.14,
+        "deviation": 36.86,
+        "deviation_pct": 5.77,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 672,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.3028,
+        "lift": 0.7338,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 139,
+        "month_middle_freq": 438,
+        "start_rate": 0.2676,
+        "end_rate": 0.2957,
+        "middle_rate": 0.3135,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 7.05
+    },
+    "28": {
+      "number": 28,
+      "global": {
+        "frequency": 642,
+        "expected": 639.14,
+        "deviation": 2.86,
+        "deviation_pct": 0.45,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 637,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2871,
+        "lift": 0.9676,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 114,
+        "month_end_freq": 133,
+        "month_middle_freq": 395,
+        "start_rate": 0.3081,
+        "end_rate": 0.283,
+        "middle_rate": 0.2827,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "29": {
+      "number": 29,
+      "global": {
+        "frequency": 620,
+        "expected": 639.14,
+        "deviation": -19.14,
+        "deviation_pct": -3.0,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 617,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2781,
+        "lift": 0.5994,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 104,
+        "month_end_freq": 124,
+        "month_middle_freq": 392,
+        "start_rate": 0.2811,
+        "end_rate": 0.2638,
+        "middle_rate": 0.2806,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 8.01
+    },
+    "30": {
+      "number": 30,
+      "global": {
+        "frequency": 636,
+        "expected": 639.14,
+        "deviation": -3.14,
+        "deviation_pct": -0.49,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 630,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2839,
+        "lift": 1.1741,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 100,
+        "month_end_freq": 133,
+        "month_middle_freq": 403,
+        "start_rate": 0.2703,
+        "end_rate": 0.283,
+        "middle_rate": 0.2885,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "31": {
+      "number": 31,
+      "global": {
+        "frequency": 617,
+        "expected": 639.14,
+        "deviation": -22.14,
+        "deviation_pct": -3.46,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 611,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2753,
+        "lift": 1.2106,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 91,
+        "month_end_freq": 131,
+        "month_middle_freq": 395,
+        "start_rate": 0.2459,
+        "end_rate": 0.2787,
+        "middle_rate": 0.2827,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.21
+    },
+    "32": {
+      "number": 32,
+      "global": {
+        "frequency": 659,
+        "expected": 639.14,
+        "deviation": 19.86,
+        "deviation_pct": 3.11,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 656,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2956,
+        "lift": 0.5638,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 119,
+        "month_end_freq": 135,
+        "month_middle_freq": 405,
+        "start_rate": 0.3216,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2899,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 8.72
+    },
+    "33": {
+      "number": 33,
+      "global": {
+        "frequency": 660,
+        "expected": 639.14,
+        "deviation": 20.86,
+        "deviation_pct": 3.26,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 655,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2952,
+        "lift": 0.9411,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 121,
+        "month_end_freq": 135,
+        "month_middle_freq": 404,
+        "start_rate": 0.327,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2892,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 10.0
+    },
+    "34": {
+      "number": 34,
+      "global": {
+        "frequency": 636,
+        "expected": 639.14,
+        "deviation": -3.14,
+        "deviation_pct": -0.49,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 1,
+        "normal_freq": 635,
+        "jackpot_rate": 0.0556,
+        "normal_rate": 0.2862,
+        "lift": 0.1941,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 94,
+        "month_end_freq": 147,
+        "month_middle_freq": 395,
+        "start_rate": 0.2541,
+        "end_rate": 0.3128,
+        "middle_rate": 0.2827,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 26.12
+    },
+    "35": {
+      "number": 35,
+      "global": {
+        "frequency": 622,
+        "expected": 639.14,
+        "deviation": -17.14,
+        "deviation_pct": -2.68,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 616,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2776,
+        "lift": 1.2008,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 109,
+        "month_end_freq": 124,
+        "month_middle_freq": 389,
+        "start_rate": 0.2946,
+        "end_rate": 0.2638,
+        "middle_rate": 0.2785,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.02
+    },
+    "36": {
+      "number": 36,
+      "global": {
+        "frequency": 667,
+        "expected": 639.14,
+        "deviation": 27.86,
+        "deviation_pct": 4.36,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 659,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.297,
+        "lift": 1.4965,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 108,
+        "month_end_freq": 153,
+        "month_middle_freq": 406,
+        "start_rate": 0.2919,
+        "end_rate": 0.3255,
+        "middle_rate": 0.2906,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 9.93
+    },
+    "37": {
+      "number": 37,
+      "global": {
+        "frequency": 596,
+        "expected": 639.14,
+        "deviation": -43.14,
+        "deviation_pct": -6.75,
+        "status": "COLD"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 588,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.265,
+        "lift": 1.6772,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 97,
+        "month_end_freq": 128,
+        "month_middle_freq": 371,
+        "start_rate": 0.2622,
+        "end_rate": 0.2723,
+        "middle_rate": 0.2656,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 15.57
+    },
+    "38": {
+      "number": 38,
+      "global": {
+        "frequency": 635,
+        "expected": 639.14,
+        "deviation": -4.14,
+        "deviation_pct": -0.65,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 631,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2844,
+        "lift": 0.7815,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 105,
+        "month_end_freq": 129,
+        "month_middle_freq": 401,
+        "start_rate": 0.2838,
+        "end_rate": 0.2745,
+        "middle_rate": 0.287,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.37
+    },
+    "39": {
+      "number": 39,
+      "global": {
+        "frequency": 668,
+        "expected": 639.14,
+        "deviation": 28.86,
+        "deviation_pct": 4.51,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 664,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2992,
+        "lift": 0.7426,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 122,
+        "month_end_freq": 136,
+        "month_middle_freq": 410,
+        "start_rate": 0.3297,
+        "end_rate": 0.2894,
+        "middle_rate": 0.2935,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 15.15
+    },
+    "40": {
+      "number": 40,
+      "global": {
+        "frequency": 645,
+        "expected": 639.14,
+        "deviation": 5.86,
+        "deviation_pct": 0.92,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 638,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.2875,
+        "lift": 1.3526,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 112,
+        "month_end_freq": 148,
+        "month_middle_freq": 385,
+        "start_rate": 0.3027,
+        "end_rate": 0.3149,
+        "middle_rate": 0.2756,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 7.05
+    },
+    "41": {
+      "number": 41,
+      "global": {
+        "frequency": 612,
+        "expected": 639.14,
+        "deviation": -27.14,
+        "deviation_pct": -4.25,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 605,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.2726,
+        "lift": 1.4264,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 115,
+        "month_end_freq": 127,
+        "month_middle_freq": 370,
+        "start_rate": 0.3108,
+        "end_rate": 0.2702,
+        "middle_rate": 0.2649,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 18.53
+    },
+    "42": {
+      "number": 42,
+      "global": {
+        "frequency": 670,
+        "expected": 639.14,
+        "deviation": 30.86,
+        "deviation_pct": 4.83,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 664,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2992,
+        "lift": 1.114,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 102,
+        "month_end_freq": 151,
+        "month_middle_freq": 417,
+        "start_rate": 0.2757,
+        "end_rate": 0.3213,
+        "middle_rate": 0.2985,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "43": {
+      "number": 43,
+      "global": {
+        "frequency": 655,
+        "expected": 639.14,
+        "deviation": 15.86,
+        "deviation_pct": 2.48,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 651,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2934,
+        "lift": 0.7575,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 93,
+        "month_end_freq": 128,
+        "month_middle_freq": 434,
+        "start_rate": 0.2514,
+        "end_rate": 0.2723,
+        "middle_rate": 0.3107,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.85
+    },
+    "44": {
+      "number": 44,
+      "global": {
+        "frequency": 643,
+        "expected": 639.14,
+        "deviation": 3.86,
+        "deviation_pct": 0.6,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 637,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2871,
+        "lift": 1.1612,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 88,
+        "month_end_freq": 144,
+        "month_middle_freq": 411,
+        "start_rate": 0.2378,
+        "end_rate": 0.3064,
+        "middle_rate": 0.2942,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "45": {
+      "number": 45,
+      "global": {
+        "frequency": 591,
+        "expected": 639.14,
+        "deviation": -48.14,
+        "deviation_pct": -7.53,
+        "status": "COLD"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 2,
+        "normal_freq": 589,
+        "jackpot_rate": 0.1111,
+        "normal_rate": 0.2654,
+        "lift": 0.4186,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 103,
+        "month_end_freq": 140,
+        "month_middle_freq": 348,
+        "start_rate": 0.2784,
+        "end_rate": 0.2979,
+        "middle_rate": 0.2491,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 23.89
+    },
+    "46": {
+      "number": 46,
+      "global": {
+        "frequency": 621,
+        "expected": 639.14,
+        "deviation": -18.14,
+        "deviation_pct": -2.84,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 616,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2776,
+        "lift": 1.0006,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 139,
+        "month_middle_freq": 383,
+        "start_rate": 0.2676,
+        "end_rate": 0.2957,
+        "middle_rate": 0.2742,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "47": {
+      "number": 47,
+      "global": {
+        "frequency": 640,
+        "expected": 639.14,
+        "deviation": 0.86,
+        "deviation_pct": 0.13,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 635,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2862,
+        "lift": 0.9707,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 101,
+        "month_end_freq": 127,
+        "month_middle_freq": 412,
+        "start_rate": 0.273,
+        "end_rate": 0.2702,
+        "middle_rate": 0.2949,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "48": {
+      "number": 48,
+      "global": {
+        "frequency": 623,
+        "expected": 639.14,
+        "deviation": -16.14,
+        "deviation_pct": -2.53,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 618,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2785,
+        "lift": 0.9974,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 108,
+        "month_end_freq": 144,
+        "month_middle_freq": 371,
+        "start_rate": 0.2919,
+        "end_rate": 0.3064,
+        "middle_rate": 0.2656,
+        "temporal_preference": "MONTH_END"
+      },
+      "predictability_score": 10.0
+    },
+    "49": {
+      "number": 49,
+      "global": {
+        "frequency": 695,
+        "expected": 639.14,
+        "deviation": 55.86,
+        "deviation_pct": 8.74,
+        "status": "HOT"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 8,
+        "normal_freq": 687,
+        "jackpot_rate": 0.4444,
+        "normal_rate": 0.3096,
+        "lift": 1.4355,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 107,
+        "month_end_freq": 149,
+        "month_middle_freq": 439,
+        "start_rate": 0.2892,
+        "end_rate": 0.317,
+        "middle_rate": 0.3142,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 11.33
+    },
+    "50": {
+      "number": 50,
+      "global": {
+        "frequency": 639,
+        "expected": 639.14,
+        "deviation": -0.14,
+        "deviation_pct": -0.02,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 634,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2857,
+        "lift": 0.9722,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 110,
+        "month_end_freq": 142,
+        "month_middle_freq": 387,
+        "start_rate": 0.2973,
+        "end_rate": 0.3021,
+        "middle_rate": 0.277,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "51": {
+      "number": 51,
+      "global": {
+        "frequency": 602,
+        "expected": 639.14,
+        "deviation": -37.14,
+        "deviation_pct": -5.81,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 9,
+        "normal_freq": 593,
+        "jackpot_rate": 0.5,
+        "normal_rate": 0.2672,
+        "lift": 1.871,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 96,
+        "month_end_freq": 127,
+        "month_middle_freq": 379,
+        "start_rate": 0.2595,
+        "end_rate": 0.2702,
+        "middle_rate": 0.2713,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 19.16
+    },
+    "52": {
+      "number": 52,
+      "global": {
+        "frequency": 647,
+        "expected": 639.14,
+        "deviation": 7.86,
+        "deviation_pct": 1.23,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 640,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.2884,
+        "lift": 1.3484,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 99,
+        "month_end_freq": 131,
+        "month_middle_freq": 417,
+        "start_rate": 0.2676,
+        "end_rate": 0.2787,
+        "middle_rate": 0.2985,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 6.97
+    },
+    "53": {
+      "number": 53,
+      "global": {
+        "frequency": 649,
+        "expected": 639.14,
+        "deviation": 9.86,
+        "deviation_pct": 1.54,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 645,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2907,
+        "lift": 0.7645,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 125,
+        "month_end_freq": 135,
+        "month_middle_freq": 389,
+        "start_rate": 0.3378,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2785,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 14.71
+    },
+    "54": {
+      "number": 54,
+      "global": {
+        "frequency": 635,
+        "expected": 639.14,
+        "deviation": -4.14,
+        "deviation_pct": -0.65,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 632,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2848,
+        "lift": 0.5852,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 94,
+        "month_end_freq": 143,
+        "month_middle_freq": 398,
+        "start_rate": 0.2541,
+        "end_rate": 0.3043,
+        "middle_rate": 0.2849,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 8.3
+    },
+    "55": {
+      "number": 55,
+      "global": {
+        "frequency": 640,
+        "expected": 639.14,
+        "deviation": 0.86,
+        "deviation_pct": 0.13,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 637,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2871,
+        "lift": 0.5806,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 117,
+        "month_end_freq": 138,
+        "month_middle_freq": 385,
+        "start_rate": 0.3162,
+        "end_rate": 0.2936,
+        "middle_rate": 0.2756,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 18.39
+    },
+    "56": {
+      "number": 56,
+      "global": {
+        "frequency": 641,
+        "expected": 639.14,
+        "deviation": 1.86,
+        "deviation_pct": 0.29,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 635,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2862,
+        "lift": 1.1648,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 118,
+        "month_end_freq": 128,
+        "month_middle_freq": 395,
+        "start_rate": 0.3189,
+        "end_rate": 0.2723,
+        "middle_rate": 0.2827,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 10.0
+    },
+    "57": {
+      "number": 57,
+      "global": {
+        "frequency": 653,
+        "expected": 639.14,
+        "deviation": 13.86,
+        "deviation_pct": 2.17,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 647,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2916,
+        "lift": 1.1432,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 102,
+        "month_end_freq": 137,
+        "month_middle_freq": 414,
+        "start_rate": 0.2757,
+        "end_rate": 0.2915,
+        "middle_rate": 0.2963,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "58": {
+      "number": 58,
+      "global": {
+        "frequency": 638,
+        "expected": 639.14,
+        "deviation": -1.14,
+        "deviation_pct": -0.18,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 634,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2857,
+        "lift": 0.7778,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 110,
+        "month_end_freq": 123,
+        "month_middle_freq": 405,
+        "start_rate": 0.2973,
+        "end_rate": 0.2617,
+        "middle_rate": 0.2899,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.44
+    },
+    "59": {
+      "number": 59,
+      "global": {
+        "frequency": 655,
+        "expected": 639.14,
+        "deviation": 15.86,
+        "deviation_pct": 2.48,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 5,
+        "normal_freq": 650,
+        "jackpot_rate": 0.2778,
+        "normal_rate": 0.2929,
+        "lift": 0.9483,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 111,
+        "month_end_freq": 120,
+        "month_middle_freq": 424,
+        "start_rate": 0.3,
+        "end_rate": 0.2553,
+        "middle_rate": 0.3035,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "60": {
+      "number": 60,
+      "global": {
+        "frequency": 623,
+        "expected": 639.14,
+        "deviation": -16.14,
+        "deviation_pct": -2.53,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 2,
+        "normal_freq": 621,
+        "jackpot_rate": 0.1111,
+        "normal_rate": 0.2799,
+        "lift": 0.397,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 114,
+        "month_end_freq": 135,
+        "month_middle_freq": 374,
+        "start_rate": 0.3081,
+        "end_rate": 0.2872,
+        "middle_rate": 0.2677,
+        "temporal_preference": "MONTH_START"
+      },
+      "predictability_score": 22.06
+    },
+    "61": {
+      "number": 61,
+      "global": {
+        "frequency": 652,
+        "expected": 639.14,
+        "deviation": 12.86,
+        "deviation_pct": 2.01,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 646,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2911,
+        "lift": 1.145,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 114,
+        "month_end_freq": 139,
+        "month_middle_freq": 399,
+        "start_rate": 0.3081,
+        "end_rate": 0.2957,
+        "middle_rate": 0.2856,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "62": {
+      "number": 62,
+      "global": {
+        "frequency": 609,
+        "expected": 639.14,
+        "deviation": -30.14,
+        "deviation_pct": -4.72,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 2,
+        "normal_freq": 607,
+        "jackpot_rate": 0.1111,
+        "normal_rate": 0.2735,
+        "lift": 0.4062,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 101,
+        "month_end_freq": 133,
+        "month_middle_freq": 375,
+        "start_rate": 0.273,
+        "end_rate": 0.283,
+        "middle_rate": 0.2684,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 11.88
+    },
+    "63": {
+      "number": 63,
+      "global": {
+        "frequency": 634,
+        "expected": 639.14,
+        "deviation": -5.14,
+        "deviation_pct": -0.8,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 628,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.283,
+        "lift": 1.1778,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 94,
+        "month_end_freq": 140,
+        "month_middle_freq": 400,
+        "start_rate": 0.2541,
+        "end_rate": 0.2979,
+        "middle_rate": 0.2863,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "64": {
+      "number": 64,
+      "global": {
+        "frequency": 682,
+        "expected": 639.14,
+        "deviation": 42.86,
+        "deviation_pct": 6.71,
+        "status": "HOT"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 675,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.3042,
+        "lift": 1.2784,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 117,
+        "month_end_freq": 139,
+        "month_middle_freq": 426,
+        "start_rate": 0.3162,
+        "end_rate": 0.2957,
+        "middle_rate": 0.3049,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 7.58
+    },
+    "65": {
+      "number": 65,
+      "global": {
+        "frequency": 653,
+        "expected": 639.14,
+        "deviation": 13.86,
+        "deviation_pct": 2.17,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 647,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2916,
+        "lift": 1.1432,
+        "jackpot_preference": "NEUTRAL"
+      },
+      "temporal_context": {
+        "month_start_freq": 103,
+        "month_end_freq": 128,
+        "month_middle_freq": 422,
+        "start_rate": 0.2784,
+        "end_rate": 0.2723,
+        "middle_rate": 0.3021,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 0.0
+    },
+    "66": {
+      "number": 66,
+      "global": {
+        "frequency": 676,
+        "expected": 639.14,
+        "deviation": 36.86,
+        "deviation_pct": 5.77,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 7,
+        "normal_freq": 669,
+        "jackpot_rate": 0.3889,
+        "normal_rate": 0.3015,
+        "lift": 1.2899,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 113,
+        "month_end_freq": 129,
+        "month_middle_freq": 434,
+        "start_rate": 0.3054,
+        "end_rate": 0.2745,
+        "middle_rate": 0.3107,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 7.53
+    },
+    "67": {
+      "number": 67,
+      "global": {
+        "frequency": 637,
+        "expected": 639.14,
+        "deviation": -2.14,
+        "deviation_pct": -0.34,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 634,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.2857,
+        "lift": 0.5833,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 106,
+        "month_end_freq": 138,
+        "month_middle_freq": 393,
+        "start_rate": 0.2865,
+        "end_rate": 0.2936,
+        "middle_rate": 0.2813,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 8.33
+    },
+    "68": {
+      "number": 68,
+      "global": {
+        "frequency": 642,
+        "expected": 639.14,
+        "deviation": 2.86,
+        "deviation_pct": 0.45,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 3,
+        "normal_freq": 639,
+        "jackpot_rate": 0.1667,
+        "normal_rate": 0.288,
+        "lift": 0.5788,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 115,
+        "month_end_freq": 126,
+        "month_middle_freq": 401,
+        "start_rate": 0.3108,
+        "end_rate": 0.2681,
+        "middle_rate": 0.287,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 8.42
+    },
+    "69": {
+      "number": 69,
+      "global": {
+        "frequency": 622,
+        "expected": 639.14,
+        "deviation": -17.14,
+        "deviation_pct": -2.68,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 6,
+        "normal_freq": 616,
+        "jackpot_rate": 0.3333,
+        "normal_rate": 0.2776,
+        "lift": 1.2008,
+        "jackpot_preference": "HIGH"
+      },
+      "temporal_context": {
+        "month_start_freq": 88,
+        "month_end_freq": 136,
+        "month_middle_freq": 398,
+        "start_rate": 0.2378,
+        "end_rate": 0.2894,
+        "middle_rate": 0.2849,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.02
+    },
+    "70": {
+      "number": 70,
+      "global": {
+        "frequency": 635,
+        "expected": 639.14,
+        "deviation": -4.14,
+        "deviation_pct": -0.65,
+        "status": "NORMAL"
+      },
+      "jackpot_context": {
+        "jackpot_freq": 4,
+        "normal_freq": 631,
+        "jackpot_rate": 0.2222,
+        "normal_rate": 0.2844,
+        "lift": 0.7815,
+        "jackpot_preference": "LOW"
+      },
+      "temporal_context": {
+        "month_start_freq": 98,
+        "month_end_freq": 127,
+        "month_middle_freq": 410,
+        "start_rate": 0.2649,
+        "end_rate": 0.2702,
+        "middle_rate": 0.2935,
+        "temporal_preference": "NO_PREFERENCE"
+      },
+      "predictability_score": 4.37
+    }
+  }
+}

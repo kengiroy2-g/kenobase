@@ -1,0 +1,55 @@
+{
+  "analysis_date": "2025-12-28T13:46:19.734048",
+  "data_source": "Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+  "period": {
+    "start": "2022-01-01T00:00:00",
+    "end": "2024-02-08T00:00:00",
+    "days": 768
+  },
+  "daily_payout": {
+    "mean": 83506.38415084526,
+    "std": 84664.54916720481,
+    "cv": 1.0138691793224748
+  },
+  "jackpots": [
+    {
+      "Keno_Typ": 8,
+      "Matches": 8,
+      "Total_Ziehungen": 769,
+      "Jackpot_Hits": 184,
+      "Hit_Rate": 0.23927178153446033,
+      "Avg_Winners_When_Hit": 2.2934782608695654
+    },
+    {
+      "Keno_Typ": 9,
+      "Matches": 9,
+      "Total_Ziehungen": 769,
+      "Jackpot_Hits": 25,
+      "Hit_Rate": 0.032509752925877766,
+      "Avg_Winners_When_Hit": 2.4
+    },
+    {
+      "Keno_Typ": 10,
+      "Matches": 10,
+      "Total_Ziehungen": 769,
+      "Jackpot_Hits": 31,
+      "Hit_Rate": 0.04031209362808843,
+      "Avg_Winners_When_Hit": 2.129032258064516
+    }
+  ],
+  "weekly_distribution": {
+    "weekly_mean_payout": 583785.5401090909,
+    "weekly_std_payout": 214075.78764084238,
+    "weekly_cv": 0.3667027922631288,
+    "weekly_min": 395808.994,
+    "weekly_max": 1574052.0899999999
+  },
+  "distribution_target": {
+    "mean_daily_payout": 83506.38415084526,
+    "std_daily_payout": 84664.54916720481,
+    "cv_payout": 1.0138691793224748,
+    "jackpot_10_count": 31,
+    "jackpot_10_avg_interval": 24.533333333333335,
+    "jackpot_10_max_interval": 77
+  }
+}

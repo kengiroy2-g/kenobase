@@ -1,0 +1,81 @@
+{
+  "optimization_timestamp": "2025-12-27T23:56:40.953621",
+  "total_draws": 2237,
+  "n_periods": 12,
+  "pool_sizes_tested": [
+    5,
+    11,
+    15,
+    20
+  ],
+  "optimal_pool_size": 20,
+  "results": [
+    {
+      "top_n_per_period": 5,
+      "avg_precision": 0.2854,
+      "avg_recall": 0.1458,
+      "avg_f1": 0.1928,
+      "std_f1": 0.0584,
+      "avg_pool_size": 10.2,
+      "n_periods_evaluated": 12
+    },
+    {
+      "top_n_per_period": 11,
+      "avg_precision": 0.2699,
+      "avg_recall": 0.2208,
+      "avg_f1": 0.2424,
+      "std_f1": 0.0921,
+      "avg_pool_size": 16.3,
+      "n_periods_evaluated": 12
+    },
+    {
+      "top_n_per_period": 15,
+      "avg_precision": 0.2491,
+      "avg_recall": 0.2292,
+      "avg_f1": 0.2385,
+      "std_f1": 0.0908,
+      "avg_pool_size": 18.5,
+      "n_periods_evaluated": 12
+    },
+    {
+      "top_n_per_period": 20,
+      "avg_precision": 0.2403,
+      "avg_recall": 0.2542,
+      "avg_f1": 0.2469,
+      "std_f1": 0.0755,
+      "avg_pool_size": 21.2,
+      "n_periods_evaluated": 12
+    }
+  ],
+  "summary": {
+    "optimal_top_n_per_period": 20,
+    "optimal_avg_f1": 0.24687041388686312,
+    "optimal_std_f1": 0.07547422929187243,
+    "all_results": [
+      {
+        "top_n_per_period": 5,
+        "avg_f1": 0.1928,
+        "std_f1": 0.0584,
+        "avg_pool_size": 10.2
+      },
+      {
+        "top_n_per_period": 11,
+        "avg_f1": 0.2424,
+        "std_f1": 0.0921,
+        "avg_pool_size": 16.3
+      },
+      {
+        "top_n_per_period": 15,
+        "avg_f1": 0.2385,
+        "std_f1": 0.0908,
+        "avg_pool_size": 18.5
+      },
+      {
+        "top_n_per_period": 20,
+        "avg_f1": 0.2469,
+        "std_f1": 0.0755,
+        "avg_pool_size": 21.2
+      }
+    ]
+  }
+}

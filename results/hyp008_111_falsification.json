@@ -1,0 +1,144 @@
+{
+  "hypothesis": "HYP-008",
+  "title": "111-Prinzip Falsifikation",
+  "timestamp": "2025-12-27T23:41:01.947427",
+  "config": {
+    "data_file": "data\\raw\\keno\\KENO_ab_2018.csv",
+    "n_draws": 2237,
+    "combo_size": 6,
+    "min_hits": 3,
+    "n_samples": 50000,
+    "random_seed": 42
+  },
+  "results": {
+    "hypothesis_falsified": true,
+    "111_filtered": {
+      "n_combinations": 42,
+      "hits": 4237,
+      "checks": 18816,
+      "hit_rate": 0.2251807
+    },
+    "non_111_control": {
+      "n_combinations": 42,
+      "hits": 4242,
+      "checks": 18816,
+      "hit_rate": 0.22544643
+    },
+    "comparison": {
+      "rate_difference": -0.00026573,
+      "rate_difference_pct": -0.0266,
+      "chi2_statistic": 0.0024,
+      "p_value_chi2": 0.960637
+    },
+    "sample_111_combis": [
+      [
+        4,
+        15,
+        17,
+        19,
+        23,
+        33
+      ],
+      [
+        1,
+        4,
+        7,
+        18,
+        24,
+        57
+      ],
+      [
+        6,
+        7,
+        10,
+        15,
+        34,
+        39
+      ],
+      [
+        2,
+        6,
+        8,
+        15,
+        36,
+        44
+      ],
+      [
+        1,
+        11,
+        14,
+        15,
+        21,
+        49
+      ],
+      [
+        6,
+        7,
+        11,
+        12,
+        16,
+        59
+      ],
+      [
+        3,
+        9,
+        10,
+        24,
+        25,
+        40
+      ],
+      [
+        2,
+        4,
+        7,
+        14,
+        32,
+        52
+      ],
+      [
+        1,
+        2,
+        4,
+        14,
+        35,
+        55
+      ],
+      [
+        1,
+        3,
+        6,
+        11,
+        20,
+        70
+      ]
+    ]
+  },
+  "acceptance_criteria": {
+    "p_value_threshold": {
+      "target": "p > 0.05 (H0 cannot be rejected)",
+      "actual": 0.960637,
+      "passed": true
+    },
+    "rate_difference_small": {
+      "target": "|rate_111 - rate_non111| < 5%",
+      "actual_pct": 0.0266,
+      "passed": true
+    },
+    "111_not_better": {
+      "target": "111 rate <= non-111 rate * 1.05 (no practical advantage)",
+      "actual": "0.225181 vs 0.225446",
+      "passed": true
+    }
+  },
+  "summary": {
+    "verdict": "FALSIFIED",
+    "interpretation": "Das 111-Prinzip bietet KEINEN statistisch signifikanten Vorteil gegenueber zufaellig gewaehlten Kombinationen. H0 (kein Unterschied) kann nicht abgelehnt werden. Die Hypothese HYP-008 gilt als WIDERLEGT.",
+    "key_findings": [
+      "Aus 50,000 Samples: 42 111-Kombis (0.084%)",
+      "Hit-Rate 111: 0.225181 (4,237/18,816)",
+      "Hit-Rate non-111: 0.225446 (4,242/18,816)",
+      "Differenz: -0.0266%",
+      "Chi2 p-Wert: 0.960637 (nicht signifikant)"
+    ]
+  }
+}

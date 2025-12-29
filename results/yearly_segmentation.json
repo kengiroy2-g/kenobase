@@ -1,0 +1,197 @@
+{
+  "analysis": "yearly_segmentation",
+  "description": "Near-Miss Patterns segmented by year to test HOUSE-004 anomaly consistency",
+  "timestamp": "2025-12-29T09:39:18.125596",
+  "data_sources": {
+    "gq_file": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+    "gk1_file": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\10-9_KGDaten_gefiltert.csv"
+  },
+  "near_miss_keno_typ_10": [
+    {
+      "year": 2022,
+      "keno_type": 10,
+      "n_draws": 365,
+      "max_winners": 260,
+      "near_miss_winners": 12330,
+      "near_miss_ratio": 47.4231,
+      "expected_ratio": 45.4545,
+      "ratio_deviation": 1.0433,
+      "chi2_stat": 0.4578,
+      "p_value": 0.498677,
+      "is_significant": false
+    },
+    {
+      "year": 2023,
+      "keno_type": 10,
+      "n_draws": 365,
+      "max_winners": 360,
+      "near_miss_winners": 11310,
+      "near_miss_ratio": 31.4167,
+      "expected_ratio": 45.4545,
+      "ratio_deviation": 0.6912,
+      "chi2_stat": 48.146,
+      "p_value": 0.0,
+      "is_significant": true
+    },
+    {
+      "year": 2024,
+      "keno_type": 10,
+      "n_draws": 39,
+      "max_winners": 40,
+      "near_miss_winners": 1050,
+      "near_miss_ratio": 26.25,
+      "expected_ratio": 45.4545,
+      "ratio_deviation": 0.5775,
+      "chi2_stat": 11.9103,
+      "p_value": 0.000558,
+      "is_significant": true
+    }
+  ],
+  "near_miss_keno_typ_9": [
+    {
+      "year": 2022,
+      "keno_type": 9,
+      "n_draws": 365,
+      "max_winners": 320,
+      "near_miss_winners": 8870,
+      "near_miss_ratio": 27.7188,
+      "expected_ratio": 37.5,
+      "ratio_deviation": 0.7392,
+      "chi2_stat": 28.4277,
+      "p_value": 0.0,
+      "is_significant": true
+    },
+    {
+      "year": 2023,
+      "keno_type": 9,
+      "n_draws": 365,
+      "max_winners": 240,
+      "near_miss_winners": 8680,
+      "near_miss_ratio": 36.1667,
+      "expected_ratio": 37.5,
+      "ratio_deviation": 0.9644,
+      "chi2_stat": 0.3061,
+      "p_value": 0.580066,
+      "is_significant": false
+    },
+    {
+      "year": 2024,
+      "keno_type": 9,
+      "n_draws": 39,
+      "max_winners": 40,
+      "near_miss_winners": 860,
+      "near_miss_ratio": 21.5,
+      "expected_ratio": 37.5,
+      "ratio_deviation": 0.5733,
+      "chi2_stat": 12.1363,
+      "p_value": 0.000494,
+      "is_significant": true
+    }
+  ],
+  "gk1_events_by_year": [
+    {
+      "year": 2022,
+      "n_gk1_events": 10,
+      "n_gk1_typ9": 6,
+      "n_gk1_typ10": 4,
+      "avg_waiting_days": 37.11,
+      "min_waiting_days": 8,
+      "max_waiting_days": 98,
+      "total_winners": 40
+    },
+    {
+      "year": 2023,
+      "n_gk1_events": 8,
+      "n_gk1_typ9": 2,
+      "n_gk1_typ10": 6,
+      "avg_waiting_days": 40.43,
+      "min_waiting_days": 15,
+      "max_waiting_days": 74,
+      "total_winners": 44
+    },
+    {
+      "year": 2024,
+      "n_gk1_events": 2,
+      "n_gk1_typ9": 1,
+      "n_gk1_typ10": 1,
+      "avg_waiting_days": 119.0,
+      "min_waiting_days": 119,
+      "max_waiting_days": 119,
+      "total_winners": 6
+    }
+  ],
+  "house004_keno_typ_10": [
+    {
+      "year": 2022,
+      "keno_type": 10,
+      "jackpot_near_miss_ratio": 25.45,
+      "normal_near_miss_ratio": 120.6667,
+      "ratio_difference": 4.7413,
+      "is_anomaly": false
+    },
+    {
+      "year": 2023,
+      "keno_type": 10,
+      "jackpot_near_miss_ratio": 9.3125,
+      "normal_near_miss_ratio": 208.25,
+      "ratio_difference": 22.3624,
+      "is_anomaly": true
+    },
+    {
+      "year": 2024,
+      "keno_type": 10,
+      "jackpot_near_miss_ratio": 8.5,
+      "normal_near_miss_ratio": 44.0,
+      "ratio_difference": 5.1765,
+      "is_anomaly": false
+    }
+  ],
+  "house004_keno_typ_9": [
+    {
+      "year": 2022,
+      "keno_type": 9,
+      "jackpot_near_miss_ratio": 14.2692,
+      "normal_near_miss_ratio": 86.0,
+      "ratio_difference": 6.027,
+      "is_anomaly": false
+    },
+    {
+      "year": 2023,
+      "keno_type": 9,
+      "jackpot_near_miss_ratio": 12.1053,
+      "normal_near_miss_ratio": 127.6,
+      "ratio_difference": 10.5409,
+      "is_anomaly": true
+    },
+    {
+      "year": 2024,
+      "keno_type": 9,
+      "jackpot_near_miss_ratio": 7.75,
+      "normal_near_miss_ratio": 0.0,
+      "ratio_difference": 0.0,
+      "is_anomaly": false
+    }
+  ],
+  "summary": {
+    "years_analyzed": [
+      2022,
+      2023,
+      2024
+    ],
+    "total_draws": 769,
+    "total_gk1_events": 20,
+    "house004_anomaly_by_year": {
+      "keno_typ_10": {
+        "2022": false,
+        "2023": true,
+        "2024": false
+      },
+      "keno_typ_9": {
+        "2022": false,
+        "2023": true,
+        "2024": false
+      }
+    },
+    "conclusion": "Keno Typ 10: HOUSE-004 anomaly present in SOME years ([2023]). Keno Typ 9: HOUSE-004 anomaly present in SOME years ([2023])."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "hypothesis": "HOUSE-005",
+  "description": "House-Edge Manipulation Synthesis",
+  "synthesis": {
+    "hypotheses": [
+      {
+        "hypothesis_id": "HOUSE-001",
+        "description": "Jackpot-Hoehe vs. Zahlentyp Korrelation",
+        "supported": false,
+        "evidence_score": 0.0,
+        "key_metrics": {
+          "pearson_r": 0.01695646854743629,
+          "pearson_p": 0.6458166061503912,
+          "chi_square_p": 0.7357766613902117,
+          "n_jackpot_draws": 18,
+          "n_total_draws": 737
+        },
+        "source_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\hyp015_jackpot_correlation.json"
+      },
+      {
+        "hypothesis_id": "HOUSE-002",
+        "description": "High-stake draws favor unpopular numbers",
+        "supported": false,
+        "evidence_score": 0.0,
+        "key_metrics": {
+          "spearman_r": 0.024440545662990684,
+          "spearman_p": 0.6416422587160902,
+          "n_draws": 365,
+          "mean_unpopular_ratio_high": 0.44673913043478264,
+          "mean_unpopular_ratio_low": 0.44157509157509156
+        },
+        "source_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\house002_stake_popularity.json"
+      },
+      {
+        "hypothesis_id": "HOUSE-003",
+        "description": "Rolling House-Edge Stability",
+        "supported": false,
+        "evidence_score": 0.0,
+        "key_metrics": {
+          "stable_count": 0,
+          "total_windows": 3,
+          "cv_values": {
+            "7": 0.543062,
+            "14": 0.451058,
+            "30": 0.490314
+          },
+          "cv_threshold": 0.15
+        },
+        "source_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\house003_rolling_stability.json"
+      },
+      {
+        "hypothesis_id": "HOUSE-004",
+        "description": "Near-Miss bei hohem Jackpot",
+        "supported": true,
+        "evidence_score": 0.5,
+        "key_metrics": {
+          "n_significant": 3,
+          "total_types": 9,
+          "n_gk1_events": 20,
+          "date_range_start": "2022-01-01T00:00:00",
+          "date_range_end": "2024-02-08T00:00:00"
+        },
+        "source_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\house004_near_miss_jackpot.json"
+      }
+    ],
+    "overall_evidence_score": 0.15,
+    "manipulation_verdict": "NO_EVIDENCE: Data consistent with fair random draws",
+    "weights": {
+      "HOUSE-001": 0.2,
+      "HOUSE-002": 0.25,
+      "HOUSE-003": 0.25,
+      "HOUSE-004": 0.3
+    },
+    "timestamp": "2025-12-28T21:28:57.011070",
+    "n_supported": 1,
+    "n_total": 4
+  },
+  "methodology": {
+    "aggregation": "Weighted average of individual hypothesis evidence scores",
+    "weights_description": {
+      "HOUSE-001": "Jackpot-Zahlentyp correlation (20%)",
+      "HOUSE-002": "Stake-popularity correlation (25%)",
+      "HOUSE-003": "Rolling stability CV analysis (25%)",
+      "HOUSE-004": "Near-miss jackpot analysis (30%)"
+    }
+  }
+}

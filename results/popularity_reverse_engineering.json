@@ -1,0 +1,1281 @@
+{
+  "timestamp": "2025-12-27T20:03:54.156137",
+  "config": {
+    "gq_files": [
+      "Keno_GPTs\\Keno_GQ_2023.csv",
+      "Keno_GPTs\\KENO_Quote_details_2023.csv",
+      "Keno_GPTs\\Keno_GQ_02-2024.csv",
+      "Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+      "Keno_GPTs\\Keno_GQ_2023-2024.csv",
+      "Keno_GPTs\\Keno_GQ_2024.csv"
+    ],
+    "draws_file": "Keno_GPTs\\Kenogpts_2\\Basis_Tab\\KENO_ab_2018.csv",
+    "days_analyzed": 781
+  },
+  "correlation": {
+    "pearson_r": -0.032022743916328096,
+    "pearson_p": 0.7924235094971874,
+    "spearman_r": 0.010295922938347439,
+    "spearman_p": 0.9325849296995106,
+    "interpretation": "NICHT SIGNIFIKANT: Keine Korrelation gefunden",
+    "hypothesis_confirmed": false
+  },
+  "popularity_ranking": [
+    {
+      "number": 57,
+      "popularity_score": -0.15702479338842976,
+      "times_in_popular": 40,
+      "times_in_unpopular": 78,
+      "times_in_neutral": 124,
+      "total_draws": 242,
+      "draw_frequency": 1.0845070422535212
+    },
+    {
+      "number": 55,
+      "popularity_score": -0.10666666666666667,
+      "times_in_popular": 43,
+      "times_in_unpopular": 67,
+      "times_in_neutral": 115,
+      "total_draws": 225,
+      "draw_frequency": 1.0083226632522406
+    },
+    {
+      "number": 51,
+      "popularity_score": -0.09417040358744394,
+      "times_in_popular": 44,
+      "times_in_unpopular": 65,
+      "times_in_neutral": 114,
+      "total_draws": 223,
+      "draw_frequency": 0.9993597951344431
+    },
+    {
+      "number": 21,
+      "popularity_score": -0.08968609865470852,
+      "times_in_popular": 43,
+      "times_in_unpopular": 63,
+      "times_in_neutral": 117,
+      "total_draws": 223,
+      "draw_frequency": 0.9993597951344431
+    },
+    {
+      "number": 28,
+      "popularity_score": -0.07964601769911504,
+      "times_in_popular": 47,
+      "times_in_unpopular": 65,
+      "times_in_neutral": 114,
+      "total_draws": 226,
+      "draw_frequency": 1.0128040973111396
+    },
+    {
+      "number": 61,
+      "popularity_score": -0.0782608695652174,
+      "times_in_popular": 55,
+      "times_in_unpopular": 73,
+      "times_in_neutral": 102,
+      "total_draws": 230,
+      "draw_frequency": 1.030729833546735
+    },
+    {
+      "number": 36,
+      "popularity_score": -0.0778688524590164,
+      "times_in_popular": 48,
+      "times_in_unpopular": 67,
+      "times_in_neutral": 129,
+      "total_draws": 244,
+      "draw_frequency": 1.0934699103713188
+    },
+    {
+      "number": 15,
+      "popularity_score": -0.07511737089201878,
+      "times_in_popular": 43,
+      "times_in_unpopular": 59,
+      "times_in_neutral": 111,
+      "total_draws": 213,
+      "draw_frequency": 0.9545454545454546
+    },
+    {
+      "number": 65,
+      "popularity_score": -0.0743801652892562,
+      "times_in_popular": 55,
+      "times_in_unpopular": 73,
+      "times_in_neutral": 114,
+      "total_draws": 242,
+      "draw_frequency": 1.0845070422535212
+    },
+    {
+      "number": 43,
+      "popularity_score": -0.07373271889400922,
+      "times_in_popular": 48,
+      "times_in_unpopular": 64,
+      "times_in_neutral": 105,
+      "total_draws": 217,
+      "draw_frequency": 0.9724711907810499
+    },
+    {
+      "number": 29,
+      "popularity_score": -0.07352941176470588,
+      "times_in_popular": 40,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 109,
+      "total_draws": 204,
+      "draw_frequency": 0.9142125480153649
+    },
+    {
+      "number": 42,
+      "popularity_score": -0.07172995780590717,
+      "times_in_popular": 52,
+      "times_in_unpopular": 69,
+      "times_in_neutral": 116,
+      "total_draws": 237,
+      "draw_frequency": 1.0620998719590269
+    },
+    {
+      "number": 58,
+      "popularity_score": -0.06451612903225806,
+      "times_in_popular": 47,
+      "times_in_unpopular": 61,
+      "times_in_neutral": 109,
+      "total_draws": 217,
+      "draw_frequency": 0.9724711907810499
+    },
+    {
+      "number": 64,
+      "popularity_score": -0.0635593220338983,
+      "times_in_popular": 55,
+      "times_in_unpopular": 70,
+      "times_in_neutral": 111,
+      "total_draws": 236,
+      "draw_frequency": 1.057618437900128
+    },
+    {
+      "number": 60,
+      "popularity_score": -0.057692307692307696,
+      "times_in_popular": 43,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 110,
+      "total_draws": 208,
+      "draw_frequency": 0.9321382842509603
+    },
+    {
+      "number": 41,
+      "popularity_score": -0.056074766355140186,
+      "times_in_popular": 47,
+      "times_in_unpopular": 59,
+      "times_in_neutral": 108,
+      "total_draws": 214,
+      "draw_frequency": 0.9590268886043534
+    },
+    {
+      "number": 35,
+      "popularity_score": -0.05454545454545454,
+      "times_in_popular": 47,
+      "times_in_unpopular": 59,
+      "times_in_neutral": 114,
+      "total_draws": 220,
+      "draw_frequency": 0.9859154929577465
+    },
+    {
+      "number": 56,
+      "popularity_score": -0.05309734513274336,
+      "times_in_popular": 50,
+      "times_in_unpopular": 62,
+      "times_in_neutral": 114,
+      "total_draws": 226,
+      "draw_frequency": 1.0128040973111396
+    },
+    {
+      "number": 67,
+      "popularity_score": -0.05238095238095238,
+      "times_in_popular": 49,
+      "times_in_unpopular": 60,
+      "times_in_neutral": 101,
+      "total_draws": 210,
+      "draw_frequency": 0.941101152368758
+    },
+    {
+      "number": 37,
+      "popularity_score": -0.04672897196261682,
+      "times_in_popular": 45,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 114,
+      "total_draws": 214,
+      "draw_frequency": 0.9590268886043534
+    },
+    {
+      "number": 1,
+      "popularity_score": -0.04017857142857143,
+      "times_in_popular": 49,
+      "times_in_unpopular": 58,
+      "times_in_neutral": 117,
+      "total_draws": 224,
+      "draw_frequency": 1.0038412291933418
+    },
+    {
+      "number": 53,
+      "popularity_score": -0.033816425120772944,
+      "times_in_popular": 50,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 100,
+      "total_draws": 207,
+      "draw_frequency": 0.9276568501920615
+    },
+    {
+      "number": 14,
+      "popularity_score": -0.03375527426160337,
+      "times_in_popular": 53,
+      "times_in_unpopular": 61,
+      "times_in_neutral": 123,
+      "total_draws": 237,
+      "draw_frequency": 1.0620998719590269
+    },
+    {
+      "number": 50,
+      "popularity_score": -0.030973451327433628,
+      "times_in_popular": 53,
+      "times_in_unpopular": 60,
+      "times_in_neutral": 113,
+      "total_draws": 226,
+      "draw_frequency": 1.0128040973111396
+    },
+    {
+      "number": 32,
+      "popularity_score": -0.027649769585253458,
+      "times_in_popular": 48,
+      "times_in_unpopular": 54,
+      "times_in_neutral": 115,
+      "total_draws": 217,
+      "draw_frequency": 0.9724711907810499
+    },
+    {
+      "number": 44,
+      "popularity_score": -0.02727272727272727,
+      "times_in_popular": 48,
+      "times_in_unpopular": 54,
+      "times_in_neutral": 118,
+      "total_draws": 220,
+      "draw_frequency": 0.9859154929577465
+    },
+    {
+      "number": 46,
+      "popularity_score": -0.02727272727272727,
+      "times_in_popular": 57,
+      "times_in_unpopular": 63,
+      "times_in_neutral": 100,
+      "total_draws": 220,
+      "draw_frequency": 0.9859154929577465
+    },
+    {
+      "number": 63,
+      "popularity_score": -0.026785714285714284,
+      "times_in_popular": 53,
+      "times_in_unpopular": 59,
+      "times_in_neutral": 112,
+      "total_draws": 224,
+      "draw_frequency": 1.0038412291933418
+    },
+    {
+      "number": 12,
+      "popularity_score": -0.02631578947368421,
+      "times_in_popular": 58,
+      "times_in_unpopular": 64,
+      "times_in_neutral": 106,
+      "total_draws": 228,
+      "draw_frequency": 1.0217669654289372
+    },
+    {
+      "number": 16,
+      "popularity_score": -0.01818181818181818,
+      "times_in_popular": 52,
+      "times_in_unpopular": 56,
+      "times_in_neutral": 112,
+      "total_draws": 220,
+      "draw_frequency": 0.9859154929577465
+    },
+    {
+      "number": 20,
+      "popularity_score": -0.017857142857142856,
+      "times_in_popular": 59,
+      "times_in_unpopular": 63,
+      "times_in_neutral": 102,
+      "total_draws": 224,
+      "draw_frequency": 1.0038412291933418
+    },
+    {
+      "number": 66,
+      "popularity_score": -0.01606425702811245,
+      "times_in_popular": 58,
+      "times_in_unpopular": 62,
+      "times_in_neutral": 129,
+      "total_draws": 249,
+      "draw_frequency": 1.1158770806658131
+    },
+    {
+      "number": 27,
+      "popularity_score": -0.013333333333333334,
+      "times_in_popular": 57,
+      "times_in_unpopular": 60,
+      "times_in_neutral": 108,
+      "total_draws": 225,
+      "draw_frequency": 1.0083226632522406
+    },
+    {
+      "number": 48,
+      "popularity_score": -0.009302325581395349,
+      "times_in_popular": 53,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 107,
+      "total_draws": 215,
+      "draw_frequency": 0.9635083226632523
+    },
+    {
+      "number": 45,
+      "popularity_score": -0.009216589861751152,
+      "times_in_popular": 55,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 105,
+      "total_draws": 217,
+      "draw_frequency": 0.9724711907810499
+    },
+    {
+      "number": 62,
+      "popularity_score": -0.004672897196261682,
+      "times_in_popular": 56,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 101,
+      "total_draws": 214,
+      "draw_frequency": 0.9590268886043534
+    },
+    {
+      "number": 40,
+      "popularity_score": -0.0045871559633027525,
+      "times_in_popular": 47,
+      "times_in_unpopular": 48,
+      "times_in_neutral": 123,
+      "total_draws": 218,
+      "draw_frequency": 0.9769526248399488
+    },
+    {
+      "number": 17,
+      "popularity_score": -0.004464285714285714,
+      "times_in_popular": 56,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 111,
+      "total_draws": 224,
+      "draw_frequency": 1.0038412291933418
+    },
+    {
+      "number": 69,
+      "popularity_score": 0.0,
+      "times_in_popular": 48,
+      "times_in_unpopular": 48,
+      "times_in_neutral": 110,
+      "total_draws": 206,
+      "draw_frequency": 0.9231754161331627
+    },
+    {
+      "number": 52,
+      "popularity_score": 0.0043859649122807015,
+      "times_in_popular": 60,
+      "times_in_unpopular": 59,
+      "times_in_neutral": 109,
+      "total_draws": 228,
+      "draw_frequency": 1.0217669654289372
+    },
+    {
+      "number": 24,
+      "popularity_score": 0.009009009009009009,
+      "times_in_popular": 54,
+      "times_in_unpopular": 52,
+      "times_in_neutral": 116,
+      "total_draws": 222,
+      "draw_frequency": 0.9948783610755442
+    },
+    {
+      "number": 22,
+      "popularity_score": 0.010309278350515464,
+      "times_in_popular": 44,
+      "times_in_unpopular": 42,
+      "times_in_neutral": 108,
+      "total_draws": 194,
+      "draw_frequency": 0.8693982074263764
+    },
+    {
+      "number": 38,
+      "popularity_score": 0.01282051282051282,
+      "times_in_popular": 63,
+      "times_in_unpopular": 60,
+      "times_in_neutral": 111,
+      "total_draws": 234,
+      "draw_frequency": 1.0486555697823303
+    },
+    {
+      "number": 10,
+      "popularity_score": 0.017391304347826087,
+      "times_in_popular": 64,
+      "times_in_unpopular": 60,
+      "times_in_neutral": 106,
+      "total_draws": 230,
+      "draw_frequency": 1.030729833546735
+    },
+    {
+      "number": 68,
+      "popularity_score": 0.017391304347826087,
+      "times_in_popular": 61,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 112,
+      "total_draws": 230,
+      "draw_frequency": 1.030729833546735
+    },
+    {
+      "number": 70,
+      "popularity_score": 0.017467248908296942,
+      "times_in_popular": 59,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 115,
+      "total_draws": 229,
+      "draw_frequency": 1.0262483994878362
+    },
+    {
+      "number": 34,
+      "popularity_score": 0.02262443438914027,
+      "times_in_popular": 60,
+      "times_in_unpopular": 55,
+      "times_in_neutral": 106,
+      "total_draws": 221,
+      "draw_frequency": 0.9903969270166454
+    },
+    {
+      "number": 59,
+      "popularity_score": 0.027777777777777776,
+      "times_in_popular": 60,
+      "times_in_unpopular": 54,
+      "times_in_neutral": 102,
+      "total_draws": 216,
+      "draw_frequency": 0.9679897567221512
+    },
+    {
+      "number": 49,
+      "popularity_score": 0.041666666666666664,
+      "times_in_popular": 68,
+      "times_in_unpopular": 58,
+      "times_in_neutral": 114,
+      "total_draws": 240,
+      "draw_frequency": 1.0755441741357235
+    },
+    {
+      "number": 18,
+      "popularity_score": 0.04807692307692308,
+      "times_in_popular": 58,
+      "times_in_unpopular": 48,
+      "times_in_neutral": 102,
+      "total_draws": 208,
+      "draw_frequency": 0.9321382842509603
+    },
+    {
+      "number": 23,
+      "popularity_score": 0.04888888888888889,
+      "times_in_popular": 60,
+      "times_in_unpopular": 49,
+      "times_in_neutral": 116,
+      "total_draws": 225,
+      "draw_frequency": 1.0083226632522406
+    },
+    {
+      "number": 54,
+      "popularity_score": 0.04888888888888889,
+      "times_in_popular": 57,
+      "times_in_unpopular": 46,
+      "times_in_neutral": 122,
+      "total_draws": 225,
+      "draw_frequency": 1.0083226632522406
+    },
+    {
+      "number": 31,
+      "popularity_score": 0.05188679245283019,
+      "times_in_popular": 57,
+      "times_in_unpopular": 46,
+      "times_in_neutral": 109,
+      "total_draws": 212,
+      "draw_frequency": 0.9500640204865557
+    },
+    {
+      "number": 4,
+      "popularity_score": 0.05357142857142857,
+      "times_in_popular": 59,
+      "times_in_unpopular": 47,
+      "times_in_neutral": 118,
+      "total_draws": 224,
+      "draw_frequency": 1.0038412291933418
+    },
+    {
+      "number": 26,
+      "popularity_score": 0.0547945205479452,
+      "times_in_popular": 63,
+      "times_in_unpopular": 51,
+      "times_in_neutral": 105,
+      "total_draws": 219,
+      "draw_frequency": 0.9814340588988476
+    },
+    {
+      "number": 39,
+      "popularity_score": 0.05508474576271186,
+      "times_in_popular": 70,
+      "times_in_unpopular": 57,
+      "times_in_neutral": 109,
+      "total_draws": 236,
+      "draw_frequency": 1.057618437900128
+    },
+    {
+      "number": 47,
+      "popularity_score": 0.05652173913043478,
+      "times_in_popular": 61,
+      "times_in_unpopular": 48,
+      "times_in_neutral": 121,
+      "total_draws": 230,
+      "draw_frequency": 1.030729833546735
+    },
+    {
+      "number": 30,
+      "popularity_score": 0.05829596412556054,
+      "times_in_popular": 57,
+      "times_in_unpopular": 44,
+      "times_in_neutral": 122,
+      "total_draws": 223,
+      "draw_frequency": 0.9993597951344431
+    },
+    {
+      "number": 25,
+      "popularity_score": 0.06147540983606557,
+      "times_in_popular": 67,
+      "times_in_unpopular": 52,
+      "times_in_neutral": 125,
+      "total_draws": 244,
+      "draw_frequency": 1.0934699103713188
+    },
+    {
+      "number": 13,
+      "popularity_score": 0.06635071090047394,
+      "times_in_popular": 61,
+      "times_in_unpopular": 47,
+      "times_in_neutral": 103,
+      "total_draws": 211,
+      "draw_frequency": 0.9455825864276569
+    },
+    {
+      "number": 8,
+      "popularity_score": 0.07246376811594203,
+      "times_in_popular": 55,
+      "times_in_unpopular": 40,
+      "times_in_neutral": 112,
+      "total_draws": 207,
+      "draw_frequency": 0.9276568501920615
+    },
+    {
+      "number": 2,
+      "popularity_score": 0.08264462809917356,
+      "times_in_popular": 73,
+      "times_in_unpopular": 53,
+      "times_in_neutral": 116,
+      "total_draws": 242,
+      "draw_frequency": 1.0845070422535212
+    },
+    {
+      "number": 11,
+      "popularity_score": 0.08292682926829269,
+      "times_in_popular": 62,
+      "times_in_unpopular": 45,
+      "times_in_neutral": 98,
+      "total_draws": 205,
+      "draw_frequency": 0.9186939820742638
+    },
+    {
+      "number": 9,
+      "popularity_score": 0.09205020920502092,
+      "times_in_popular": 69,
+      "times_in_unpopular": 47,
+      "times_in_neutral": 123,
+      "total_draws": 239,
+      "draw_frequency": 1.0710627400768247
+    },
+    {
+      "number": 6,
+      "popularity_score": 0.10043668122270742,
+      "times_in_popular": 66,
+      "times_in_unpopular": 43,
+      "times_in_neutral": 120,
+      "total_draws": 229,
+      "draw_frequency": 1.0262483994878362
+    },
+    {
+      "number": 33,
+      "popularity_score": 0.12658227848101267,
+      "times_in_popular": 78,
+      "times_in_unpopular": 48,
+      "times_in_neutral": 111,
+      "total_draws": 237,
+      "draw_frequency": 1.0620998719590269
+    },
+    {
+      "number": 7,
+      "popularity_score": 0.12682926829268293,
+      "times_in_popular": 63,
+      "times_in_unpopular": 37,
+      "times_in_neutral": 105,
+      "total_draws": 205,
+      "draw_frequency": 0.9186939820742638
+    },
+    {
+      "number": 19,
+      "popularity_score": 0.1306532663316583,
+      "times_in_popular": 70,
+      "times_in_unpopular": 44,
+      "times_in_neutral": 85,
+      "total_draws": 199,
+      "draw_frequency": 0.8918053777208707
+    },
+    {
+      "number": 5,
+      "popularity_score": 0.13656387665198239,
+      "times_in_popular": 72,
+      "times_in_unpopular": 41,
+      "times_in_neutral": 114,
+      "total_draws": 227,
+      "draw_frequency": 1.0172855313700384
+    },
+    {
+      "number": 3,
+      "popularity_score": 0.1440329218106996,
+      "times_in_popular": 78,
+      "times_in_unpopular": 43,
+      "times_in_neutral": 122,
+      "total_draws": 243,
+      "draw_frequency": 1.08898847631242
+    }
+  ],
+  "unpopular_numbers": [
+    57,
+    55,
+    51,
+    21,
+    28,
+    61,
+    36,
+    15,
+    65,
+    43
+  ],
+  "popular_numbers": [
+    3,
+    5,
+    19,
+    7,
+    33,
+    6,
+    9,
+    11,
+    2,
+    8
+  ],
+  "day_classifications": [
+    {
+      "date": "01.01.2022",
+      "classification": "UNPOPULAR",
+      "winners": 41.0,
+      "normalized": 1.144286105017555
+    },
+    {
+      "date": "01.01.2023",
+      "classification": "NEUTRAL",
+      "winners": 168.0,
+      "normalized": 4.901188538220518
+    },
+    {
+      "date": "01.01.2024",
+      "classification": "NEUTRAL",
+      "winners": 162.0,
+      "normalized": 4.974055083054438
+    },
+    {
+      "date": "01.02.2022",
+      "classification": "UNPOPULAR",
+      "winners": 47.0,
+      "normalized": 1.0897388336548448
+    },
+    {
+      "date": "01.02.2023",
+      "classification": "NEUTRAL",
+      "winners": 184.0,
+      "normalized": 4.856111310516648
+    },
+    {
+      "date": "01.02.2024",
+      "classification": "POPULAR",
+      "winners": 297.0,
+      "normalized": 7.3050690292128975
+    },
+    {
+      "date": "01.03.2022",
+      "classification": "NEUTRAL",
+      "winners": 73.0,
+      "normalized": 1.7847494382928994
+    },
+    {
+      "date": "01.03.2023",
+      "classification": "POPULAR",
+      "winners": 268.0,
+      "normalized": 7.0328839810322075
+    },
+    {
+      "date": "01.04.2022",
+      "classification": "NEUTRAL",
+      "winners": 138.0,
+      "normalized": 3.4473972151025976
+    },
+    {
+      "date": "01.04.2023",
+      "classification": "NEUTRAL",
+      "winners": 252.0,
+      "normalized": 6.448212156415204
+    },
+    {
+      "date": "01.05.2022",
+      "classification": "UNPOPULAR",
+      "winners": 39.0,
+      "normalized": 1.162014635425357
+    },
+    {
+      "date": "01.05.2023",
+      "classification": "NEUTRAL",
+      "winners": 144.0,
+      "normalized": 4.407025533204183
+    },
+    {
+      "date": "01.06.2022",
+      "classification": "UNPOPULAR",
+      "winners": 45.0,
+      "normalized": 1.1990759121636925
+    },
+    {
+      "date": "01.06.2023",
+      "classification": "NEUTRAL",
+      "winners": 224.0,
+      "normalized": 5.763347681667666
+    },
+    {
+      "date": "01.07.2022",
+      "classification": "UNPOPULAR",
+      "winners": 30.0,
+      "normalized": 0.7720437800292862
+    },
+    {
+      "date": "01.07.2023",
+      "classification": "NEUTRAL",
+      "winners": 248.0,
+      "normalized": 6.175514086646447
+    },
+    {
+      "date": "01.08.2022",
+      "classification": "NEUTRAL",
+      "winners": 65.0,
+      "normalized": 1.7620572153532112
+    },
+    {
+      "date": "01.08.2023",
+      "classification": "NEUTRAL",
+      "winners": 168.0,
+      "normalized": 4.479808861488576
+    },
+    {
+      "date": "01.09.2022",
+      "classification": "UNPOPULAR",
+      "winners": 35.0,
+      "normalized": 0.925725107251866
+    },
+    {
+      "date": "01.09.2023",
+      "classification": "NEUTRAL",
+      "winners": 228.0,
+      "normalized": 5.82957692101179
+    },
+    {
+      "date": "01.10.2022",
+      "classification": "NEUTRAL",
+      "winners": 107.0,
+      "normalized": 2.8016852005561477
+    },
+    {
+      "date": "01.10.2023",
+      "classification": "POPULAR",
+      "winners": 216.0,
+      "normalized": 6.564850695235924
+    },
+    {
+      "date": "01.11.2022",
+      "classification": "NEUTRAL",
+      "winners": 90.0,
+      "normalized": 2.710590276209149
+    },
+    {
+      "date": "01.11.2023",
+      "classification": "POPULAR",
+      "winners": 312.0,
+      "normalized": 9.175175269373735
+    },
+    {
+      "date": "01.12.2022",
+      "classification": "UNPOPULAR",
+      "winners": 35.0,
+      "normalized": 0.8927705987684867
+    },
+    {
+      "date": "01.12.2023",
+      "classification": "POPULAR",
+      "winners": 304.0,
+      "normalized": 7.605342753284183
+    },
+    {
+      "date": "02.01.2022",
+      "classification": "UNPOPULAR",
+      "winners": 47.0,
+      "normalized": 1.3309847588085706
+    },
+    {
+      "date": "02.01.2023",
+      "classification": "POPULAR",
+      "winners": 372.0,
+      "normalized": 9.66866624387911
+    },
+    {
+      "date": "02.01.2024",
+      "classification": "POPULAR",
+      "winners": 258.0,
+      "normalized": 7.135587220107975
+    },
+    {
+      "date": "02.02.2022",
+      "classification": "UNPOPULAR",
+      "winners": 33.0,
+      "normalized": 0.7984147837384684
+    },
+    {
+      "date": "02.02.2023",
+      "classification": "NEUTRAL",
+      "winners": 136.0,
+      "normalized": 3.332924886656047
+    },
+    {
+      "date": "02.02.2024",
+      "classification": "POPULAR",
+      "winners": 501.0,
+      "normalized": 12.42368485004786
+    },
+    {
+      "date": "02.03.2022",
+      "classification": "UNPOPULAR",
+      "winners": 37.0,
+      "normalized": 0.9445040077602491
+    },
+    {
+      "date": "02.03.2023",
+      "classification": "POPULAR",
+      "winners": 316.0,
+      "normalized": 7.837904203944253
+    },
+    {
+      "date": "02.04.2022",
+      "classification": "UNPOPULAR",
+      "winners": 31.0,
+      "normalized": 0.7998224910084472
+    },
+    {
+      "date": "02.04.2023",
+      "classification": "POPULAR",
+      "winners": 248.0,
+      "normalized": 7.320082409960035
+    },
+    {
+      "date": "02.05.2022",
+      "classification": "NEUTRAL",
+      "winners": 71.0,
+      "normalized": 1.9429431483888624
+    },
+    {
+      "date": "02.05.2023",
+      "classification": "NEUTRAL",
+      "winners": 176.0,
+      "normalized": 4.799301919720769
+    },
+    {
+      "date": "02.06.2022",
+      "classification": "NEUTRAL",
+      "winners": 126.0,
+      "normalized": 3.224196829539784
+    },
+    {
+      "date": "02.06.2023",
+      "classification": "NEUTRAL",
+      "winners": 232.0,
+      "normalized": 5.934490388427744
+    },
+    {
+      "date": "02.07.2022",
+      "classification": "UNPOPULAR",
+      "winners": 59.0,
+      "normalized": 1.5360743147546447
+    },
+    {
+      "date": "02.07.2023",
+      "classification": "NEUTRAL",
+      "winners": 212.0,
+      "normalized": 6.143075710510455
+    },
+    {
+      "date": "02.08.2022",
+      "classification": "UNPOPULAR",
+      "winners": 52.0,
+      "normalized": 1.409328671707727
+    },
+    {
+      "date": "02.08.2023",
+      "classification": "POPULAR",
+      "winners": 292.0,
+      "normalized": 7.878200856349641
+    },
+    {
+      "date": "02.09.2022",
+      "classification": "NEUTRAL",
+      "winners": 76.0,
+      "normalized": 1.9644892715622084
+    },
+    {
+      "date": "02.09.2023",
+      "classification": "POPULAR",
+      "winners": 268.0,
+      "normalized": 7.096799819931944
+    },
+    {
+      "date": "02.10.2022",
+      "classification": "NEUTRAL",
+      "winners": 97.0,
+      "normalized": 2.9851297454330594
+    },
+    {
+      "date": "02.10.2023",
+      "classification": "POPULAR",
+      "winners": 468.0,
+      "normalized": 12.07041072925398
+    },
+    {
+      "date": "02.11.2022",
+      "classification": "NEUTRAL",
+      "winners": 107.0,
+      "normalized": 2.932221829432382
+    },
+    {
+      "date": "02.11.2023",
+      "classification": "POPULAR",
+      "winners": 656.0,
+      "normalized": 16.280905178618408
+    },
+    {
+      "date": "02.12.2022",
+      "classification": "UNPOPULAR",
+      "winners": 47.0,
+      "normalized": 1.2117368313855308
+    },
+    {
+      "date": "02.12.2023",
+      "classification": "POPULAR",
+      "winners": 332.0,
+      "normalized": 8.749851753264723
+    },
+    {
+      "date": "03.01.2022",
+      "classification": "NEUTRAL",
+      "winners": 89.0,
+      "normalized": 2.221013281160317
+    },
+    {
+      "date": "03.01.2023",
+      "classification": "POPULAR",
+      "winners": 368.0,
+      "normalized": 9.634693273779757
+    },
+    {
+      "date": "03.01.2024",
+      "classification": "POPULAR",
+      "winners": 270.0,
+      "normalized": 7.552785579214735
+    },
+    {
+      "date": "03.02.2022",
+      "classification": "UNPOPULAR",
+      "winners": 63.0,
+      "normalized": 1.4854146428874575
+    },
+    {
+      "date": "03.02.2023",
+      "classification": "NEUTRAL",
+      "winners": 136.0,
+      "normalized": 3.3390539183552215
+    },
+    {
+      "date": "03.02.2024",
+      "classification": "NEUTRAL",
+      "winners": 123.0,
+      "normalized": 3.073171462979527
+    },
+    {
+      "date": "03.03.2022",
+      "classification": "UNPOPULAR",
+      "winners": 40.0,
+      "normalized": 0.9896482790016429
+    },
+    {
+      "date": "03.03.2023",
+      "classification": "POPULAR",
+      "winners": 804.0,
+      "normalized": 19.912079747384063
+    },
+    {
+      "date": "03.04.2022",
+      "classification": "NEUTRAL",
+      "winners": 118.0,
+      "normalized": 3.572293533543231
+    },
+    {
+      "date": "03.04.2023",
+      "classification": "NEUTRAL",
+      "winners": 196.0,
+      "normalized": 5.143209520185786
+    },
+    {
+      "date": "03.05.2022",
+      "classification": "NEUTRAL",
+      "winners": 57.0,
+      "normalized": 1.561194724805193
+    },
+    {
+      "date": "03.05.2023",
+      "classification": "POPULAR",
+      "winners": 272.0,
+      "normalized": 7.417325454243009
+    },
+    {
+      "date": "03.06.2022",
+      "classification": "NEUTRAL",
+      "winners": 87.0,
+      "normalized": 2.186704334952835
+    },
+    {
+      "date": "03.06.2023",
+      "classification": "POPULAR",
+      "winners": 308.0,
+      "normalized": 7.943200955247283
+    },
+    {
+      "date": "03.07.2022",
+      "classification": "NEUTRAL",
+      "winners": 59.0,
+      "normalized": 1.8253595030072023
+    },
+    {
+      "date": "03.07.2023",
+      "classification": "NEUTRAL",
+      "winners": 216.0,
+      "normalized": 5.686380329336194
+    },
+    {
+      "date": "03.08.2022",
+      "classification": "NEUTRAL",
+      "winners": 65.0,
+      "normalized": 1.7654024574402205
+    },
+    {
+      "date": "03.08.2023",
+      "classification": "POPULAR",
+      "winners": 368.0,
+      "normalized": 9.512091729649809
+    },
+    {
+      "date": "03.09.2022",
+      "classification": "UNPOPULAR",
+      "winners": 19.0,
+      "normalized": 0.5120037942175909
+    },
+    {
+      "date": "03.09.2023",
+      "classification": "POPULAR",
+      "winners": 232.0,
+      "normalized": 7.085397362521912
+    },
+    {
+      "date": "03.10.2022",
+      "classification": "NEUTRAL",
+      "winners": 83.0,
+      "normalized": 2.833925157060912
+    },
+    {
+      "date": "03.10.2023",
+      "classification": "POPULAR",
+      "winners": 364.0,
+      "normalized": 11.50362490597999
+    },
+    {
+      "date": "03.11.2022",
+      "classification": "NEUTRAL",
+      "winners": 70.0,
+      "normalized": 1.81304877101194
+    },
+    {
+      "date": "03.11.2023",
+      "classification": "POPULAR",
+      "winners": 440.0,
+      "normalized": 10.930753675465924
+    },
+    {
+      "date": "03.12.2022",
+      "classification": "UNPOPULAR",
+      "winners": 34.0,
+      "normalized": 0.8814387153808463
+    },
+    {
+      "date": "03.12.2023",
+      "classification": "NEUTRAL",
+      "winners": 200.0,
+      "normalized": 6.053928394134954
+    },
+    {
+      "date": "04.01.2022",
+      "classification": "NEUTRAL",
+      "winners": 99.0,
+      "normalized": 2.407394348216218
+    },
+    {
+      "date": "04.01.2023",
+      "classification": "POPULAR",
+      "winners": 412.0,
+      "normalized": 11.154278288413899
+    },
+    {
+      "date": "04.01.2024",
+      "classification": "NEUTRAL",
+      "winners": 99.0,
+      "normalized": 2.51882760024425
+    },
+    {
+      "date": "04.02.2022",
+      "classification": "NEUTRAL",
+      "winners": 71.0,
+      "normalized": 1.6616388439674317
+    },
+    {
+      "date": "04.02.2023",
+      "classification": "POPULAR",
+      "winners": 544.0,
+      "normalized": 13.587703128668554
+    },
+    {
+      "date": "04.02.2024",
+      "classification": "NEUTRAL",
+      "winners": 135.0,
+      "normalized": 3.928438402085855
+    },
+    {
+      "date": "04.03.2022",
+      "classification": "UNPOPULAR",
+      "winners": 34.0,
+      "normalized": 0.8303720799599467
+    },
+    {
+      "date": "04.03.2023",
+      "classification": "NEUTRAL",
+      "winners": 216.0,
+      "normalized": 5.395872157799284
+    },
+    {
+      "date": "04.04.2022",
+      "classification": "UNPOPULAR",
+      "winners": 33.0,
+      "normalized": 0.8995649376846835
+    },
+    {
+      "date": "04.04.2023",
+      "classification": "POPULAR",
+      "winners": 392.0,
+      "normalized": 10.350572846117082
+    },
+    {
+      "date": "04.05.2022",
+      "classification": "UNPOPULAR",
+      "winners": 40.0,
+      "normalized": 1.11998387223224
+    },
+    {
+      "date": "04.05.2023",
+      "classification": "POPULAR",
+      "winners": 264.0,
+      "normalized": 6.791992652298857
+    },
+    {
+      "date": "04.06.2022",
+      "classification": "UNPOPULAR",
+      "winners": 45.0,
+      "normalized": 1.1388224575788635
+    },
+    {
+      "date": "04.06.2023",
+      "classification": "POPULAR",
+      "winners": 280.0,
+      "normalized": 8.415585664650933
+    },
+    {
+      "date": "04.07.2022",
+      "classification": "UNPOPULAR",
+      "winners": 23.0,
+      "normalized": 0.6381390754752055
+    },
+    {
+      "date": "04.07.2023",
+      "classification": "POPULAR",
+      "winners": 352.0,
+      "normalized": 9.435833650541756
+    },
+    {
+      "date": "04.08.2022",
+      "classification": "UNPOPULAR",
+      "winners": 57.0,
+      "normalized": 1.4926623859553563
+    },
+    {
+      "date": "04.08.2023",
+      "classification": "POPULAR",
+      "winners": 384.0,
+      "normalized": 9.828361990857577
+    },
+    {
+      "date": "04.09.2022",
+      "classification": "NEUTRAL",
+      "winners": 116.0,
+      "normalized": 3.654821055550129
+    },
+    {
+      "date": "04.09.2023",
+      "classification": "NEUTRAL",
+      "winners": 228.0,
+      "normalized": 6.311960334312426
+    },
+    {
+      "date": "04.10.2022",
+      "classification": "UNPOPULAR",
+      "winners": 34.0,
+      "normalized": 0.9743572108165114
+    },
+    {
+      "date": "04.10.2023",
+      "classification": "POPULAR",
+      "winners": 472.0,
+      "normalized": 13.12354202174838
+    }
+  ]
+}

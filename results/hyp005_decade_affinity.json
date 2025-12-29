@@ -1,0 +1,394 @@
+{
+  "hypothesis": "HYP-005",
+  "description": "Zehnergruppen-Paar-Affinitaet",
+  "acceptance_criteria": "Chi-Quadrat-Test p < 0.05",
+  "timestamp": "2025-12-28T14:59:34.743996",
+  "summary": {
+    "n_draws": 2237,
+    "n_pairs_total": 21,
+    "n_pairs_significant": 0,
+    "alpha": 0.05,
+    "mean_affinity_score": -0.0004305442998441177,
+    "std_affinity_score": 0.0003923167080532232,
+    "max_affinity_score": 0.00029712611385507905,
+    "min_affinity_score": -0.000894738404012257
+  },
+  "top_pairs": [
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "pair_name": "(31-40, 41-50)",
+      "observed": 2128,
+      "expected": 2127.36790344211,
+      "affinity_score": 0.00029712611385507905,
+      "p_value": 0.9890657602703358,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "pair_name": "(11-20, 31-40)",
+      "observed": 2125,
+      "expected": 2124.4362986142155,
+      "affinity_score": 0.0002653416278719225,
+      "p_value": 0.9902420973521912,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "pair_name": "(21-30, 61-70)",
+      "observed": 2119,
+      "expected": 2118.5873938310237,
+      "affinity_score": 0.00019475532148340664,
+      "p_value": 0.99284768274654,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "pair_name": "(11-20, 41-50)",
+      "observed": 2116,
+      "expected": 2115.6897630755475,
+      "affinity_score": 0.00014663630266921734,
+      "p_value": 0.9946184886238026,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "pair_name": "(31-40, 61-70)",
+      "observed": 2134,
+      "expected": 2134.208314707197,
+      "affinity_score": -9.760748553062978e-05,
+      "p_value": 0.9964021743097107,
+      "is_significant": false
+    }
+  ],
+  "anti_pairs": [
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "pair_name": "(11-20, 21-30)",
+      "observed": 2107,
+      "expected": 2108.886902101028,
+      "affinity_score": -0.000894738404012257,
+      "p_value": 0.9672251587729722,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "pair_name": "(21-30, 41-50)",
+      "observed": 2110,
+      "expected": 2111.797049620027,
+      "affinity_score": -0.000850957538912285,
+      "p_value": 0.9688065533188518,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "pair_name": "(1-10, 21-30)",
+      "observed": 2115,
+      "expected": 2116.6472954850246,
+      "affinity_score": -0.0007782569578495451,
+      "p_value": 0.9714376107224117,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "pair_name": "(41-50, 51-60)",
+      "observed": 2116,
+      "expected": 2117.6361198033082,
+      "affinity_score": -0.0007726161204032611,
+      "p_value": 0.9716379247836361,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "pair_name": "(1-10, 11-20)",
+      "observed": 2119,
+      "expected": 2120.5489494859185,
+      "affinity_score": -0.0007304474090513052,
+      "p_value": 0.9731668736146591,
+      "is_significant": false
+    }
+  ],
+  "all_pairs": [
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "pair_name": "(31-40, 41-50)",
+      "observed": 2128,
+      "expected": 2127.36790344211,
+      "affinity_score": 0.00029712611385507905,
+      "p_value": 0.9890657602703358,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "pair_name": "(11-20, 31-40)",
+      "observed": 2125,
+      "expected": 2124.4362986142155,
+      "affinity_score": 0.0002653416278719225,
+      "p_value": 0.9902420973521912,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "pair_name": "(21-30, 61-70)",
+      "observed": 2119,
+      "expected": 2118.5873938310237,
+      "affinity_score": 0.00019475532148340664,
+      "p_value": 0.99284768274654,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "pair_name": "(11-20, 41-50)",
+      "observed": 2116,
+      "expected": 2115.6897630755475,
+      "affinity_score": 0.00014663630266921734,
+      "p_value": 0.9946184886238026,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "pair_name": "(31-40, 61-70)",
+      "observed": 2134,
+      "expected": 2134.208314707197,
+      "affinity_score": -9.760748553062978e-05,
+      "p_value": 0.9964021743097107,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "pair_name": "(1-10, 31-40)",
+      "observed": 2132,
+      "expected": 2132.253911488601,
+      "affinity_score": -0.00011908126289872392,
+      "p_value": 0.9956126653239539,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "pair_name": "(1-10, 61-70)",
+      "observed": 2130,
+      "expected": 2130.3030844881537,
+      "affinity_score": -0.00014227294245621117,
+      "p_value": 0.9947606193481408,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "pair_name": "(11-20, 51-60)",
+      "observed": 2114,
+      "expected": 2114.7179257934736,
+      "affinity_score": -0.00033949009686679244,
+      "p_value": 0.9875440816245283,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "pair_name": "(21-30, 51-60)",
+      "observed": 2110,
+      "expected": 2110.8270004470273,
+      "affinity_score": -0.00039178978042832973,
+      "p_value": 0.9856386246448401,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "pair_name": "(31-40, 51-60)",
+      "observed": 2125,
+      "expected": 2126.390701832812,
+      "affinity_score": -0.0006540198993595734,
+      "p_value": 0.9759404929442453,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "pair_name": "(41-50, 61-70)",
+      "observed": 2124,
+      "expected": 2125.4215467143495,
+      "affinity_score": -0.0006688304804978589,
+      "p_value": 0.9754014310110529,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "pair_name": "(51-60, 61-70)",
+      "observed": 2123,
+      "expected": 2124.4452391595887,
+      "affinity_score": -0.0006802901449041034,
+      "p_value": 0.9749858441660125,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        4
+      ],
+      "pair_name": "(1-10, 41-50)",
+      "observed": 2122,
+      "expected": 2123.475189986589,
+      "affinity_score": -0.0006947055437923313,
+      "p_value": 0.9744618021276721,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "pair_name": "(11-20, 61-70)",
+      "observed": 2121,
+      "expected": 2122.492624050067,
+      "affinity_score": -0.0007032411011252575,
+      "p_value": 0.9741541137314879,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        5
+      ],
+      "pair_name": "(1-10, 51-60)",
+      "observed": 2121,
+      "expected": 2122.4997764863656,
+      "affinity_score": -0.0007066085485522898,
+      "p_value": 0.9740303514028117,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "pair_name": "(21-30, 31-40)",
+      "observed": 2119,
+      "expected": 2120.527492177023,
+      "affinity_score": -0.0007203359459653421,
+      "p_value": 0.9735383168192568,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "pair_name": "(1-10, 11-20)",
+      "observed": 2119,
+      "expected": 2120.5489494859185,
+      "affinity_score": -0.0007304474090513052,
+      "p_value": 0.9731668736146591,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "pair_name": "(41-50, 51-60)",
+      "observed": 2116,
+      "expected": 2117.6361198033082,
+      "affinity_score": -0.0007726161204032611,
+      "p_value": 0.9716379247836361,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "pair_name": "(1-10, 21-30)",
+      "observed": 2115,
+      "expected": 2116.6472954850246,
+      "affinity_score": -0.0007782569578495451,
+      "p_value": 0.9714376107224117,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "pair_name": "(21-30, 41-50)",
+      "observed": 2110,
+      "expected": 2111.797049620027,
+      "affinity_score": -0.000850957538912285,
+      "p_value": 0.9688065533188518,
+      "is_significant": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "pair_name": "(11-20, 21-30)",
+      "observed": 2107,
+      "expected": 2108.886902101028,
+      "affinity_score": -0.000894738404012257,
+      "p_value": 0.9672251587729722,
+      "is_significant": false
+    }
+  ]
+}

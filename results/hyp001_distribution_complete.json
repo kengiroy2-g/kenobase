@@ -1,0 +1,990 @@
+{
+  "analysis_date": "2025-12-28T21:42:51.092111",
+  "data_source": "Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+  "period_start": "2022-01-01T00:00:00",
+  "period_end": "2024-02-08T00:00:00",
+  "n_draws": 769,
+  "distribution_results": [
+    {
+      "keno_type": 2,
+      "matches": 2,
+      "mean_winners": 3519.62,
+      "std_winners": 1001.28,
+      "cv": 0.2845,
+      "skewness": 1.0447,
+      "kurtosis": 2.2485,
+      "min_winners": 1355,
+      "max_winners": 9230,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 3,
+      "matches": 2,
+      "mean_winners": 2820.81,
+      "std_winners": 948.64,
+      "cv": 0.3363,
+      "skewness": -1.2004,
+      "kurtosis": 1.85,
+      "min_winners": 26,
+      "max_winners": 5149,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 3,
+      "matches": 3,
+      "mean_winners": 3553.26,
+      "std_winners": 1327.01,
+      "cv": 0.3735,
+      "skewness": 1.1768,
+      "kurtosis": 2.2655,
+      "min_winners": 114,
+      "max_winners": 9310,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 2,
+      "mean_winners": 1931.73,
+      "std_winners": 2346.78,
+      "cv": 1.2149,
+      "skewness": 2.681,
+      "kurtosis": 5.6335,
+      "min_winners": 11,
+      "max_winners": 9980,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 3,
+      "mean_winners": 3130.61,
+      "std_winners": 826.69,
+      "cv": 0.2641,
+      "skewness": 0.8804,
+      "kurtosis": 1.8225,
+      "min_winners": 1290,
+      "max_winners": 7750,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 4,
+      "mean_winners": 270.83,
+      "std_winners": 174.66,
+      "cv": 0.6449,
+      "skewness": 2.139,
+      "kurtosis": 7.6127,
+      "min_winners": 10,
+      "max_winners": 1380,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 3,
+      "mean_winners": 2305.49,
+      "std_winners": 836.47,
+      "cv": 0.3628,
+      "skewness": -1.3108,
+      "kurtosis": 1.5191,
+      "min_winners": 22,
+      "max_winners": 4196,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 4,
+      "mean_winners": 4385.85,
+      "std_winners": 1303.54,
+      "cv": 0.2972,
+      "skewness": 0.8272,
+      "kurtosis": 1.5633,
+      "min_winners": 127,
+      "max_winners": 9960,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 5,
+      "mean_winners": 287.59,
+      "std_winners": 260.83,
+      "cv": 0.9069,
+      "skewness": 8.1589,
+      "kurtosis": 111.2119,
+      "min_winners": 20,
+      "max_winners": 4620,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 3,
+      "mean_winners": 7406.52,
+      "std_winners": 2343.89,
+      "cv": 0.3165,
+      "skewness": -1.9086,
+      "kurtosis": 3.2906,
+      "min_winners": 58,
+      "max_winners": 11064,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 4,
+      "mean_winners": 1903.71,
+      "std_winners": 750.03,
+      "cv": 0.394,
+      "skewness": -0.8033,
+      "kurtosis": 1.087,
+      "min_winners": 14,
+      "max_winners": 4182,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 5,
+      "mean_winners": 2755.38,
+      "std_winners": 1071.44,
+      "cv": 0.3889,
+      "skewness": 1.8393,
+      "kurtosis": 5.3549,
+      "min_winners": 1046,
+      "max_winners": 9360,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 6,
+      "mean_winners": 138.78,
+      "std_winners": 117.77,
+      "cv": 0.8486,
+      "skewness": 3.2951,
+      "kurtosis": 19.4492,
+      "min_winners": 10,
+      "max_winners": 1300,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 4,
+      "mean_winners": 1874.64,
+      "std_winners": 692.36,
+      "cv": 0.3693,
+      "skewness": -1.1491,
+      "kurtosis": 1.5654,
+      "min_winners": 19,
+      "max_winners": 3893,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 5,
+      "mean_winners": 4122.72,
+      "std_winners": 1331.19,
+      "cv": 0.3229,
+      "skewness": 1.1532,
+      "kurtosis": 1.6348,
+      "min_winners": 1118,
+      "max_winners": 9660,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 6,
+      "mean_winners": 418.13,
+      "std_winners": 341.27,
+      "cv": 0.8162,
+      "skewness": 4.0697,
+      "kurtosis": 22.4669,
+      "min_winners": 50,
+      "max_winners": 3240,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 7,
+      "mean_winners": 16.27,
+      "std_winners": 51.13,
+      "cv": 3.1427,
+      "skewness": 17.0004,
+      "kurtosis": 375.6472,
+      "min_winners": 0,
+      "max_winners": 1200,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 0,
+      "mean_winners": 2164.95,
+      "std_winners": 729.48,
+      "cv": 0.337,
+      "skewness": -1.3699,
+      "kurtosis": 2.4285,
+      "min_winners": 18,
+      "max_winners": 4567,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 4,
+      "mean_winners": 4457.8,
+      "std_winners": 1440.32,
+      "cv": 0.3231,
+      "skewness": -1.9187,
+      "kurtosis": 3.2026,
+      "min_winners": 39,
+      "max_winners": 7267,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 5,
+      "mean_winners": 1781.56,
+      "std_winners": 2086.22,
+      "cv": 1.171,
+      "skewness": 3.2503,
+      "kurtosis": 9.2888,
+      "min_winners": 10,
+      "max_winners": 9980,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 6,
+      "mean_winners": 2069.15,
+      "std_winners": 743.73,
+      "cv": 0.3594,
+      "skewness": 2.4673,
+      "kurtosis": 12.576,
+      "min_winners": 750,
+      "max_winners": 8620,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 7,
+      "mean_winners": 168.99,
+      "std_winners": 118.67,
+      "cv": 0.7022,
+      "skewness": 3.7461,
+      "kurtosis": 31.6804,
+      "min_winners": 10,
+      "max_winners": 1590,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 8,
+      "mean_winners": 5.49,
+      "std_winners": 14.33,
+      "cv": 2.6107,
+      "skewness": 4.2082,
+      "kurtosis": 22.0852,
+      "min_winners": 0,
+      "max_winners": 120,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 0,
+      "mean_winners": 4521.26,
+      "std_winners": 3953.08,
+      "cv": 0.8743,
+      "skewness": 0.267,
+      "kurtosis": -1.8535,
+      "min_winners": 10,
+      "max_winners": 9990,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 5,
+      "mean_winners": 1407.09,
+      "std_winners": 823.09,
+      "cv": 0.585,
+      "skewness": 6.4604,
+      "kurtosis": 66.6796,
+      "min_winners": 13,
+      "max_winners": 9970,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 6,
+      "mean_winners": 3164.25,
+      "std_winners": 846.01,
+      "cv": 0.2674,
+      "skewness": 1.2484,
+      "kurtosis": 2.5552,
+      "min_winners": 1350,
+      "max_winners": 7250,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 7,
+      "mean_winners": 406.8,
+      "std_winners": 215.5,
+      "cv": 0.5297,
+      "skewness": 2.632,
+      "kurtosis": 13.2315,
+      "min_winners": 50,
+      "max_winners": 2280,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 8,
+      "mean_winners": 23.94,
+      "std_winners": 33.74,
+      "cv": 1.4093,
+      "skewness": 3.0498,
+      "kurtosis": 13.9396,
+      "min_winners": 0,
+      "max_winners": 310,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 9,
+      "mean_winners": 0.78,
+      "std_winners": 6.6,
+      "cv": 8.4633,
+      "skewness": 13.301,
+      "kurtosis": 201.7449,
+      "min_winners": 0,
+      "max_winners": 110,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 0,
+      "mean_winners": 3871.12,
+      "std_winners": 1422.69,
+      "cv": 0.3675,
+      "skewness": -0.9443,
+      "kurtosis": 2.1217,
+      "min_winners": 34,
+      "max_winners": 10235,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 5,
+      "mean_winners": 12524.67,
+      "std_winners": 4128.4,
+      "cv": 0.3296,
+      "skewness": -1.6964,
+      "kurtosis": 2.8162,
+      "min_winners": 117,
+      "max_winners": 21995,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 6,
+      "mean_winners": 3295.5,
+      "std_winners": 1317.35,
+      "cv": 0.3997,
+      "skewness": -0.7822,
+      "kurtosis": 1.2644,
+      "min_winners": 25,
+      "max_winners": 8099,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 7,
+      "mean_winners": 5751.68,
+      "std_winners": 1730.84,
+      "cv": 0.3009,
+      "skewness": -0.4513,
+      "kurtosis": 1.3728,
+      "min_winners": 103,
+      "max_winners": 9960,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 8,
+      "mean_winners": 634.47,
+      "std_winners": 385.93,
+      "cv": 0.6083,
+      "skewness": 7.5521,
+      "kurtosis": 110.9852,
+      "min_winners": 140,
+      "max_winners": 7180,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 9,
+      "mean_winners": 32.11,
+      "std_winners": 41.54,
+      "cv": 1.2939,
+      "skewness": 2.3769,
+      "kurtosis": 7.7517,
+      "min_winners": 0,
+      "max_winners": 340,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 10,
+      "mean_winners": 0.86,
+      "std_winners": 6.71,
+      "cv": 7.8193,
+      "skewness": 12.8831,
+      "kurtosis": 183.5929,
+      "min_winners": 0,
+      "max_winners": 100,
+      "n_draws": 769
+    }
+  ],
+  "near_miss_results": [
+    {
+      "keno_type": 2,
+      "max_matches": 2,
+      "near_miss_matches": 1,
+      "near_miss_ratio": 0.0,
+      "expected_ratio": 6.2018,
+      "chi2_stat": 0.0,
+      "p_value": 1.0,
+      "is_significant": false,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 3,
+      "max_matches": 3,
+      "near_miss_matches": 2,
+      "near_miss_ratio": 0.7939,
+      "expected_ratio": 10.416,
+      "chi2_stat": 13539605.0496,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "max_matches": 4,
+      "near_miss_matches": 3,
+      "near_miss_ratio": 11.5592,
+      "expected_ratio": 3.9091,
+      "chi2_stat": 248271.1638,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "max_matches": 5,
+      "near_miss_matches": 4,
+      "near_miss_ratio": 15.2501,
+      "expected_ratio": 6.0233,
+      "chi2_stat": 192365.4607,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "max_matches": 6,
+      "near_miss_matches": 5,
+      "near_miss_ratio": 19.8546,
+      "expected_ratio": 6.3182,
+      "chi2_stat": 148409.4052,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "max_matches": 7,
+      "near_miss_matches": 6,
+      "near_miss_ratio": 25.7026,
+      "expected_ratio": 5.0588,
+      "chi2_stat": 39466.9444,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "max_matches": 8,
+      "near_miss_matches": 7,
+      "near_miss_ratio": 30.7938,
+      "expected_ratio": 3.2381,
+      "chi2_stat": 31124.6255,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "max_matches": 9,
+      "near_miss_matches": 8,
+      "near_miss_ratio": 30.6833,
+      "expected_ratio": 2.0968,
+      "chi2_stat": 7380.6139,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "max_matches": 10,
+      "near_miss_matches": 9,
+      "near_miss_ratio": 37.4091,
+      "expected_ratio": 4.5909,
+      "chi2_stat": 4031.2548,
+      "p_value": 0.0,
+      "is_significant": true,
+      "n_draws": 769
+    }
+  ],
+  "gewinnklassen_matrix": [
+    {
+      "keno_type": 2,
+      "matches": 2,
+      "total_winners": 2706585,
+      "mean_winners": 3519.62,
+      "cv": 0.2845,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 3,
+      "matches": 2,
+      "total_winners": 2169200,
+      "mean_winners": 2820.81,
+      "cv": 0.3363,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 3,
+      "matches": 3,
+      "total_winners": 2732458,
+      "mean_winners": 3553.26,
+      "cv": 0.3735,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 2,
+      "total_winners": 1485503,
+      "mean_winners": 1931.73,
+      "cv": 1.2149,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 3,
+      "total_winners": 2407440,
+      "mean_winners": 3130.61,
+      "cv": 0.2641,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 4,
+      "matches": 4,
+      "total_winners": 208270,
+      "mean_winners": 270.83,
+      "cv": 0.6449,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 3,
+      "total_winners": 1772925,
+      "mean_winners": 2305.49,
+      "cv": 0.3628,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 4,
+      "total_winners": 3372717,
+      "mean_winners": 4385.85,
+      "cv": 0.2972,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 5,
+      "matches": 5,
+      "total_winners": 221160,
+      "mean_winners": 287.59,
+      "cv": 0.9069,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 3,
+      "total_winners": 5695616,
+      "mean_winners": 7406.52,
+      "cv": 0.3165,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 4,
+      "total_winners": 1463953,
+      "mean_winners": 1903.71,
+      "cv": 0.394,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 5,
+      "total_winners": 2118888,
+      "mean_winners": 2755.38,
+      "cv": 0.3889,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 6,
+      "matches": 6,
+      "total_winners": 106720,
+      "mean_winners": 138.78,
+      "cv": 0.8486,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 4,
+      "total_winners": 1441595,
+      "mean_winners": 1874.64,
+      "cv": 0.3693,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 5,
+      "total_winners": 3170369,
+      "mean_winners": 4122.72,
+      "cv": 0.3229,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 6,
+      "total_winners": 321540,
+      "mean_winners": 418.13,
+      "cv": 0.8162,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 7,
+      "matches": 7,
+      "total_winners": 12510,
+      "mean_winners": 16.27,
+      "cv": 3.1427,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 0,
+      "total_winners": 1664843,
+      "mean_winners": 2164.95,
+      "cv": 0.337,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 4,
+      "total_winners": 3428045,
+      "mean_winners": 4457.8,
+      "cv": 0.3231,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 5,
+      "total_winners": 1370018,
+      "mean_winners": 1781.56,
+      "cv": 1.171,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 6,
+      "total_winners": 1591180,
+      "mean_winners": 2069.15,
+      "cv": 0.3594,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 7,
+      "total_winners": 129950,
+      "mean_winners": 168.99,
+      "cv": 0.7022,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 8,
+      "matches": 8,
+      "total_winners": 4220,
+      "mean_winners": 5.49,
+      "cv": 2.6107,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 0,
+      "total_winners": 3476850,
+      "mean_winners": 4521.26,
+      "cv": 0.8743,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 5,
+      "total_winners": 1082049,
+      "mean_winners": 1407.09,
+      "cv": 0.585,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 6,
+      "total_winners": 2433310,
+      "mean_winners": 3164.25,
+      "cv": 0.2674,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 7,
+      "total_winners": 312830,
+      "mean_winners": 406.8,
+      "cv": 0.5297,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 8,
+      "total_winners": 18410,
+      "mean_winners": 23.94,
+      "cv": 1.4093,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 9,
+      "matches": 9,
+      "total_winners": 600,
+      "mean_winners": 0.78,
+      "cv": 8.4633,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 0,
+      "total_winners": 2976892,
+      "mean_winners": 3871.12,
+      "cv": 0.3675,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 5,
+      "total_winners": 9631474,
+      "mean_winners": 12524.67,
+      "cv": 0.3296,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 6,
+      "total_winners": 2534240,
+      "mean_winners": 3295.5,
+      "cv": 0.3997,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 7,
+      "total_winners": 4423045,
+      "mean_winners": 5751.68,
+      "cv": 0.3009,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 8,
+      "total_winners": 487911,
+      "mean_winners": 634.47,
+      "cv": 0.6083,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 9,
+      "total_winners": 24690,
+      "mean_winners": 32.11,
+      "cv": 1.2939,
+      "n_draws": 769
+    },
+    {
+      "keno_type": 10,
+      "matches": 10,
+      "total_winners": 660,
+      "mean_winners": 0.86,
+      "cv": 7.8193,
+      "n_draws": 769
+    }
+  ],
+  "temporal_correlations": [
+    {
+      "lag": 1,
+      "autocorr": -0.0023,
+      "p_value": 0.950233,
+      "is_significant": false
+    },
+    {
+      "lag": 2,
+      "autocorr": -0.0079,
+      "p_value": 0.826163,
+      "is_significant": false
+    },
+    {
+      "lag": 3,
+      "autocorr": -0.0431,
+      "p_value": 0.232941,
+      "is_significant": false
+    },
+    {
+      "lag": 4,
+      "autocorr": 0.0267,
+      "p_value": 0.460692,
+      "is_significant": false
+    },
+    {
+      "lag": 5,
+      "autocorr": 0.0698,
+      "p_value": 0.053766,
+      "is_significant": false
+    },
+    {
+      "lag": 6,
+      "autocorr": -0.0105,
+      "p_value": 0.772172,
+      "is_significant": false
+    },
+    {
+      "lag": 7,
+      "autocorr": 0.0506,
+      "p_value": 0.163313,
+      "is_significant": false
+    }
+  ],
+  "anomalies": [
+    {
+      "keno_type": 4,
+      "matches": 2,
+      "reason": "high_cv=1.21, high_skew=2.68"
+    },
+    {
+      "keno_type": 4,
+      "matches": 4,
+      "reason": "high_skew=2.14"
+    },
+    {
+      "keno_type": 5,
+      "matches": 5,
+      "reason": "high_skew=8.16"
+    },
+    {
+      "keno_type": 6,
+      "matches": 6,
+      "reason": "high_skew=3.30"
+    },
+    {
+      "keno_type": 7,
+      "matches": 6,
+      "reason": "high_skew=4.07"
+    },
+    {
+      "keno_type": 7,
+      "matches": 7,
+      "reason": "high_cv=3.14, high_skew=17.00"
+    },
+    {
+      "keno_type": 8,
+      "matches": 5,
+      "reason": "high_cv=1.17, high_skew=3.25"
+    },
+    {
+      "keno_type": 8,
+      "matches": 6,
+      "reason": "high_skew=2.47"
+    },
+    {
+      "keno_type": 8,
+      "matches": 7,
+      "reason": "high_skew=3.75"
+    },
+    {
+      "keno_type": 8,
+      "matches": 8,
+      "reason": "high_cv=2.61, high_skew=4.21"
+    },
+    {
+      "keno_type": 9,
+      "matches": 5,
+      "reason": "high_skew=6.46"
+    },
+    {
+      "keno_type": 9,
+      "matches": 7,
+      "reason": "high_skew=2.63"
+    },
+    {
+      "keno_type": 9,
+      "matches": 8,
+      "reason": "high_cv=1.41, high_skew=3.05"
+    },
+    {
+      "keno_type": 9,
+      "matches": 9,
+      "reason": "high_cv=8.46, high_skew=13.30"
+    },
+    {
+      "keno_type": 10,
+      "matches": 8,
+      "reason": "high_skew=7.55"
+    },
+    {
+      "keno_type": 10,
+      "matches": 9,
+      "reason": "high_cv=1.29, high_skew=2.38"
+    },
+    {
+      "keno_type": 10,
+      "matches": 10,
+      "reason": "high_cv=7.82, high_skew=12.88"
+    }
+  ],
+  "hypothesis_evaluation": {
+    "verdict": "TEILWEISE",
+    "confidence": "MITTEL",
+    "explanation": "Einige Anomalien gefunden, aber nicht eindeutig",
+    "indicators": {
+      "stability_suspicious": "False",
+      "avg_cv": 1.1121,
+      "near_miss_significant_count": 8,
+      "near_miss_suspicious": true,
+      "temporal_significant_count": 0,
+      "temporal_suspicious": false,
+      "anomaly_count": 17,
+      "anomaly_suspicious": true
+    },
+    "suspicious_indicators": "2",
+    "total_indicators": 4
+  },
+  "summary_stats": {
+    "total_distribution_results": 36,
+    "total_near_miss_results": 9,
+    "total_matrix_entries": 36,
+    "total_temporal_lags": 7,
+    "total_anomalies": 17,
+    "near_miss_significant": 8,
+    "avg_cv": 1.1121,
+    "max_cv": 8.4633
+  }
+}

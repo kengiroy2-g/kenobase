@@ -1,0 +1,190 @@
+{
+  "validation_timestamp": "2025-12-28T00:13:57.013086",
+  "data_file": "data/raw/keno/KENO_ab_2018.csv",
+  "n_draws": 2237,
+  "n_periods": 12,
+  "variants": [
+    {
+      "variant_name": "no_filter",
+      "max_per_decade": null,
+      "avg_f1": 0.0293,
+      "std_f1": 0.0295,
+      "avg_precision": 0.2076,
+      "avg_recall": 0.016,
+      "n_combinations_avg": 1,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0938,
+        0.0,
+        0.0301
+      ]
+    },
+    {
+      "variant_name": "max_1",
+      "max_per_decade": 1,
+      "avg_f1": 0.0269,
+      "std_f1": 0.0244,
+      "avg_precision": 0.2072,
+      "avg_recall": 0.0145,
+      "n_combinations_avg": 0.92,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0646,
+        0.0,
+        0.0301
+      ]
+    },
+    {
+      "variant_name": "max_2",
+      "max_per_decade": 2,
+      "avg_f1": 0.0293,
+      "std_f1": 0.0295,
+      "avg_precision": 0.2076,
+      "avg_recall": 0.016,
+      "n_combinations_avg": 1,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0938,
+        0.0,
+        0.0301
+      ]
+    },
+    {
+      "variant_name": "max_3",
+      "max_per_decade": 3,
+      "avg_f1": 0.0293,
+      "std_f1": 0.0295,
+      "avg_precision": 0.2076,
+      "avg_recall": 0.016,
+      "n_combinations_avg": 1,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0938,
+        0.0,
+        0.0301
+      ]
+    },
+    {
+      "variant_name": "max_4",
+      "max_per_decade": 4,
+      "avg_f1": 0.0293,
+      "std_f1": 0.0295,
+      "avg_precision": 0.2076,
+      "avg_recall": 0.016,
+      "n_combinations_avg": 1,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0938,
+        0.0,
+        0.0301
+      ]
+    },
+    {
+      "variant_name": "max_5",
+      "max_per_decade": 5,
+      "avg_f1": 0.0293,
+      "std_f1": 0.0295,
+      "avg_precision": 0.2076,
+      "avg_recall": 0.016,
+      "n_combinations_avg": 1,
+      "f1_scores": [
+        0.0,
+        0.067,
+        0.0478,
+        0.0175,
+        0.0,
+        0.0,
+        0.0276,
+        0.0326,
+        0.0351,
+        0.0938,
+        0.0,
+        0.0301
+      ]
+    }
+  ],
+  "ab_test": {
+    "delta_f1": 0.0,
+    "t_statistic": null,
+    "p_value": null,
+    "significant": false,
+    "recommendation": "Kein signifikanter Unterschied (delta=0.0000, p=nan)"
+  },
+  "grid_search": {
+    "best_variant": "max_2",
+    "best_max_per_decade": 2,
+    "best_avg_f1": 0.0293,
+    "ranking": [
+      {
+        "variant": "max_2",
+        "max_per_decade": 2,
+        "avg_f1": 0.0293,
+        "std_f1": 0.0295
+      },
+      {
+        "variant": "max_3",
+        "max_per_decade": 3,
+        "avg_f1": 0.0293,
+        "std_f1": 0.0295
+      },
+      {
+        "variant": "max_4",
+        "max_per_decade": 4,
+        "avg_f1": 0.0293,
+        "std_f1": 0.0295
+      },
+      {
+        "variant": "max_5",
+        "max_per_decade": 5,
+        "avg_f1": 0.0293,
+        "std_f1": 0.0295
+      },
+      {
+        "variant": "max_1",
+        "max_per_decade": 1,
+        "avg_f1": 0.0269,
+        "std_f1": 0.0244
+      }
+    ]
+  }
+}

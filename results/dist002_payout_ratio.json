@@ -1,0 +1,435 @@
+{
+  "analysis_date": "2025-12-28T22:06:44.868884",
+  "task_id": "DIST-002",
+  "data_source": "Keno_GPTs\\KENO_Quote_details_2023.csv",
+  "period": {
+    "start": "2023-01-01T00:00:00",
+    "end": "2023-12-31T00:00:00",
+    "total_rows": 13140
+  },
+  "results": [
+    {
+      "keno_type": 2,
+      "matches": 2,
+      "mean_payout_per_winner": 6.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 6.0,
+      "max_payout_per_winner": 6.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 3,
+      "matches": 2,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 3,
+      "matches": 3,
+      "mean_payout_per_winner": 16.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 16.0,
+      "max_payout_per_winner": 16.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 4,
+      "matches": 2,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 4,
+      "matches": 3,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 4,
+      "matches": 4,
+      "mean_payout_per_winner": 22.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 22.0,
+      "max_payout_per_winner": 22.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 5,
+      "matches": 3,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 5,
+      "matches": 4,
+      "mean_payout_per_winner": 7.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 7.0,
+      "max_payout_per_winner": 7.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 5,
+      "matches": 5,
+      "mean_payout_per_winner": 100.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 100.0,
+      "max_payout_per_winner": 100.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 6,
+      "matches": 3,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 6,
+      "matches": 4,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 6,
+      "matches": 5,
+      "mean_payout_per_winner": 15.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 15.0,
+      "max_payout_per_winner": 15.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 6,
+      "matches": 6,
+      "mean_payout_per_winner": 500.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 500.0,
+      "max_payout_per_winner": 500.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 7,
+      "matches": 4,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 7,
+      "matches": 5,
+      "mean_payout_per_winner": 12.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 12.0,
+      "max_payout_per_winner": 12.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 7,
+      "matches": 6,
+      "mean_payout_per_winner": 100.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 100.0,
+      "max_payout_per_winner": 100.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 7,
+      "matches": 7,
+      "mean_payout_per_winner": 1000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1000.0,
+      "max_payout_per_winner": 1000.0,
+      "n_draws": 190,
+      "zero_winner_draws": 175
+    },
+    {
+      "keno_type": 8,
+      "matches": 0,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 8,
+      "matches": 4,
+      "mean_payout_per_winner": 1.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1.0,
+      "max_payout_per_winner": 1.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 8,
+      "matches": 5,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 8,
+      "matches": 6,
+      "mean_payout_per_winner": 15.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 15.0,
+      "max_payout_per_winner": 15.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 8,
+      "matches": 7,
+      "mean_payout_per_winner": 100.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 100.0,
+      "max_payout_per_winner": 100.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 8,
+      "matches": 8,
+      "mean_payout_per_winner": 10000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 10000.0,
+      "max_payout_per_winner": 10000.0,
+      "n_draws": 85,
+      "zero_winner_draws": 280
+    },
+    {
+      "keno_type": 9,
+      "matches": 0,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 9,
+      "matches": 5,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 9,
+      "matches": 6,
+      "mean_payout_per_winner": 5.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 5.0,
+      "max_payout_per_winner": 5.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 9,
+      "matches": 7,
+      "mean_payout_per_winner": 20.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 20.0,
+      "max_payout_per_winner": 20.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 9,
+      "matches": 8,
+      "mean_payout_per_winner": 1000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1000.0,
+      "max_payout_per_winner": 1000.0,
+      "n_draws": 255,
+      "zero_winner_draws": 110
+    },
+    {
+      "keno_type": 9,
+      "matches": 9,
+      "mean_payout_per_winner": 50000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 50000.0,
+      "max_payout_per_winner": 50000.0,
+      "n_draws": 10,
+      "zero_winner_draws": 355
+    },
+    {
+      "keno_type": 10,
+      "matches": 0,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 10,
+      "matches": 5,
+      "mean_payout_per_winner": 2.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 2.0,
+      "max_payout_per_winner": 2.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 10,
+      "matches": 6,
+      "mean_payout_per_winner": 5.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 5.0,
+      "max_payout_per_winner": 5.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 10,
+      "matches": 7,
+      "mean_payout_per_winner": 15.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 15.0,
+      "max_payout_per_winner": 15.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 10,
+      "matches": 8,
+      "mean_payout_per_winner": 100.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 100.0,
+      "max_payout_per_winner": 100.0,
+      "n_draws": 365,
+      "zero_winner_draws": 0
+    },
+    {
+      "keno_type": 10,
+      "matches": 9,
+      "mean_payout_per_winner": 1000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 1000.0,
+      "max_payout_per_winner": 1000.0,
+      "n_draws": 281,
+      "zero_winner_draws": 84
+    },
+    {
+      "keno_type": 10,
+      "matches": 10,
+      "mean_payout_per_winner": 100000.0,
+      "std_payout_per_winner": 0.0,
+      "cv": 0.0,
+      "min_payout_per_winner": 100000.0,
+      "max_payout_per_winner": 100000.0,
+      "n_draws": 14,
+      "zero_winner_draws": 351
+    }
+  ],
+  "anomalies": [
+    {
+      "keno_type": 7,
+      "matches": 7,
+      "reason": "many_zero_draws=175/365"
+    },
+    {
+      "keno_type": 8,
+      "matches": 8,
+      "reason": "many_zero_draws=280/365"
+    },
+    {
+      "keno_type": 9,
+      "matches": 9,
+      "reason": "many_zero_draws=355/365"
+    },
+    {
+      "keno_type": 10,
+      "matches": 10,
+      "reason": "many_zero_draws=351/365"
+    }
+  ],
+  "summary": {
+    "total_combinations": 36,
+    "anomaly_count": 4,
+    "mean_cv": 0.0
+  }
+}

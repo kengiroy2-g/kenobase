@@ -1,0 +1,101 @@
+{
+  "hypothesis": "PRED-002",
+  "description": "Long jackpot-free periods increase P(GK1)",
+  "analysis_date": "2025-12-29T09:27:24.258393",
+  "data_period": {
+    "start": "2022-01-31T00:00:00",
+    "end": "2024-02-06T00:00:00",
+    "total_gk1_events": 20
+  },
+  "waiting_time_statistics": {
+    "n_events": 20,
+    "n_waiting_periods": 17,
+    "mean_waiting_days": 43.294117647058826,
+    "median_waiting_days": 32.0,
+    "std_waiting_days": 30.354309134700834,
+    "min_waiting_days": 8,
+    "max_waiting_days": 119,
+    "waiting_times": [
+      19,
+      98,
+      57,
+      8,
+      36,
+      10,
+      30,
+      55,
+      21,
+      32,
+      58,
+      74,
+      15,
+      27,
+      22,
+      55,
+      119
+    ]
+  },
+  "conditional_probabilities": {
+    "short_wait_lt20": {
+      "n_days": 295,
+      "n_gk1_events": 39,
+      "p_gk1_next_7_days": 0.13220338983050847,
+      "ci_95_lower": 0.09823839433623736,
+      "ci_95_upper": 0.17562441458996303
+    },
+    "medium_wait_20_40": {
+      "n_days": 195,
+      "n_gk1_events": 31,
+      "p_gk1_next_7_days": 0.15897435897435896,
+      "ci_95_lower": 0.11431345891721756,
+      "ci_95_upper": 0.21681242218613306
+    },
+    "long_wait_gt40": {
+      "n_days": 229,
+      "n_gk1_events": 49,
+      "p_gk1_next_7_days": 0.21397379912663755,
+      "ci_95_lower": 0.1658044919599523,
+      "ci_95_upper": 0.27158126728581816
+    }
+  },
+  "chi_square_test": {
+    "chi2_statistic": 6.324034571759661,
+    "p_value": 0.04234024249862362,
+    "degrees_of_freedom": 2,
+    "expected_frequencies": [
+      [
+        48.82475660639778,
+        246.17524339360222
+      ],
+      [
+        32.27399165507649,
+        162.7260083449235
+      ],
+      [
+        37.90125173852573,
+        191.09874826147427
+      ]
+    ]
+  },
+  "trend_analysis": {
+    "slope": 0.04088520464806454,
+    "r_squared": 0.9617930180901947,
+    "p_value_trend": 0.12524389993282783,
+    "trend_direction": "increasing",
+    "trend_significant": false,
+    "hypothesis_supported": false
+  },
+  "conclusion": {
+    "hypothesis_confirmed": false,
+    "alpha_level": 0.05,
+    "interpretation": "The hypothesis is FALSIFIED: P(GK1) does NOT significantly increase with waiting time. GK1 events appear to follow a memoryless (random) process.",
+    "evidence_summary": {
+      "chi_square_p_value": 0.04234024249862362,
+      "trend_p_value": 0.12524389993282783,
+      "trend_direction": "increasing",
+      "p_short_wait": 0.13220338983050847,
+      "p_medium_wait": 0.15897435897435896,
+      "p_long_wait": 0.21397379912663755
+    }
+  }
+}

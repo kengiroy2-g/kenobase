@@ -1,0 +1,72 @@
+{
+  "hypothesis": "HYP-008",
+  "title": "111-Prinzip Falsifikation",
+  "timestamp": "2025-12-27T23:44:51.113761",
+  "config": {
+    "data_file": "data\\raw\\keno\\KENO_ab_2018.csv",
+    "n_draws": 2237,
+    "combo_size": 6,
+    "min_hits": 3,
+    "n_samples": 1000,
+    "random_seed": 42
+  },
+  "results": {
+    "hypothesis_falsified": true,
+    "111_filtered": {
+      "n_combinations": 1,
+      "hits": 93,
+      "checks": 448,
+      "hit_rate": 0.20758929
+    },
+    "non_111_control": {
+      "n_combinations": 1,
+      "hits": 109,
+      "checks": 448,
+      "hit_rate": 0.24330357
+    },
+    "comparison": {
+      "rate_difference": -0.03571429,
+      "rate_difference_pct": -3.5714,
+      "chi2_statistic": 1.4381,
+      "p_value_chi2": 0.230452
+    },
+    "sample_111_combis": [
+      [
+        4,
+        15,
+        17,
+        19,
+        23,
+        33
+      ]
+    ]
+  },
+  "acceptance_criteria": {
+    "p_value_threshold": {
+      "target": "p > 0.05 (H0 cannot be rejected)",
+      "actual": 0.230452,
+      "passed": true
+    },
+    "rate_difference_small": {
+      "target": "|rate_111 - rate_non111| < 5%",
+      "actual_pct": 3.5714,
+      "passed": true
+    },
+    "111_not_better": {
+      "target": "111 rate <= non-111 rate * 1.05 (no practical advantage)",
+      "actual": "0.207589 vs 0.243304",
+      "passed": true
+    }
+  },
+  "summary": {
+    "verdict": "FALSIFIED",
+    "interpretation": "Das 111-Prinzip bietet KEINEN statistisch signifikanten Vorteil gegenueber zufaellig gewaehlten Kombinationen. H0 (kein Unterschied) kann nicht abgelehnt werden. Die Hypothese HYP-008 gilt als WIDERLEGT.",
+    "key_findings": [
+      "Aus 1,000 Samples: 1 111-Kombis (0.100%)",
+      "Hit-Rate 111: 0.207589 (93/448)",
+      "Hit-Rate non-111: 0.243304 (109/448)",
+      "Differenz: -3.5714%",
+      "Chi2 p-Wert: 0.230452 (nicht signifikant)"
+    ]
+  }
+}

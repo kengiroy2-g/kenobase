@@ -1,0 +1,1027 @@
+{
+  "metadata": {
+    "analysis": "Near-Miss Number Frequency Analysis",
+    "description": "Welche Zahlen erscheinen haeufiger an Tagen mit vielen Near-Miss Gewinnern",
+    "median_near_miss_winners": 20.0,
+    "high_nm_days_count": 294,
+    "low_nm_days_count": 475,
+    "scoring": {
+      "near_miss_score": "Differenz: Erscheinungsrate(High-NM-Tage) - Erscheinungsrate(Low-NM-Tage)",
+      "positive_score": "Zahl erscheint haeufiger an Near-Miss Tagen",
+      "negative_score": "Zahl erscheint seltener an Near-Miss Tagen (Jackpot-Indikator)"
+    }
+  },
+  "all_numbers_by_near_miss_score": [
+    {
+      "number": 31,
+      "high_nm_count": 96,
+      "low_nm_count": 113,
+      "high_nm_rate": 0.3265,
+      "low_nm_rate": 0.2379,
+      "near_miss_score": 0.0886,
+      "ratio": 1.3726
+    },
+    {
+      "number": 11,
+      "high_nm_count": 93,
+      "low_nm_count": 109,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.2295,
+      "near_miss_score": 0.0869,
+      "ratio": 1.3785
+    },
+    {
+      "number": 25,
+      "high_nm_count": 106,
+      "low_nm_count": 131,
+      "high_nm_rate": 0.3605,
+      "low_nm_rate": 0.2758,
+      "near_miss_score": 0.0848,
+      "ratio": 1.3073
+    },
+    {
+      "number": 18,
+      "high_nm_count": 93,
+      "low_nm_count": 113,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.2379,
+      "near_miss_score": 0.0784,
+      "ratio": 1.3297
+    },
+    {
+      "number": 17,
+      "high_nm_count": 97,
+      "low_nm_count": 121,
+      "high_nm_rate": 0.3299,
+      "low_nm_rate": 0.2547,
+      "near_miss_score": 0.0752,
+      "ratio": 1.2952
+    },
+    {
+      "number": 2,
+      "high_nm_count": 105,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3571,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0729,
+      "ratio": 1.2566
+    },
+    {
+      "number": 47,
+      "high_nm_count": 98,
+      "low_nm_count": 128,
+      "high_nm_rate": 0.3333,
+      "low_nm_rate": 0.2695,
+      "near_miss_score": 0.0639,
+      "ratio": 1.237
+    },
+    {
+      "number": 9,
+      "high_nm_count": 102,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3469,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0627,
+      "ratio": 1.2207
+    },
+    {
+      "number": 4,
+      "high_nm_count": 95,
+      "low_nm_count": 125,
+      "high_nm_rate": 0.3231,
+      "low_nm_rate": 0.2632,
+      "near_miss_score": 0.06,
+      "ratio": 1.2279
+    },
+    {
+      "number": 5,
+      "high_nm_count": 95,
+      "low_nm_count": 129,
+      "high_nm_rate": 0.3231,
+      "low_nm_rate": 0.2716,
+      "near_miss_score": 0.0516,
+      "ratio": 1.1898
+    },
+    {
+      "number": 10,
+      "high_nm_count": 96,
+      "low_nm_count": 131,
+      "high_nm_rate": 0.3265,
+      "low_nm_rate": 0.2758,
+      "near_miss_score": 0.0507,
+      "ratio": 1.184
+    },
+    {
+      "number": 19,
+      "high_nm_count": 83,
+      "low_nm_count": 112,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.2358,
+      "near_miss_score": 0.0465,
+      "ratio": 1.1973
+    },
+    {
+      "number": 21,
+      "high_nm_count": 91,
+      "low_nm_count": 128,
+      "high_nm_rate": 0.3095,
+      "low_nm_rate": 0.2695,
+      "near_miss_score": 0.0401,
+      "ratio": 1.1486
+    },
+    {
+      "number": 46,
+      "high_nm_count": 90,
+      "low_nm_count": 127,
+      "high_nm_rate": 0.3061,
+      "low_nm_rate": 0.2674,
+      "near_miss_score": 0.0388,
+      "ratio": 1.1449
+    },
+    {
+      "number": 3,
+      "high_nm_count": 97,
+      "low_nm_count": 140,
+      "high_nm_rate": 0.3299,
+      "low_nm_rate": 0.2947,
+      "near_miss_score": 0.0352,
+      "ratio": 1.1194
+    },
+    {
+      "number": 70,
+      "high_nm_count": 92,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.3129,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": 0.0308,
+      "ratio": 1.1092
+    },
+    {
+      "number": 59,
+      "high_nm_count": 85,
+      "low_nm_count": 126,
+      "high_nm_rate": 0.2891,
+      "low_nm_rate": 0.2653,
+      "near_miss_score": 0.0239,
+      "ratio": 1.0899
+    },
+    {
+      "number": 7,
+      "high_nm_count": 82,
+      "low_nm_count": 122,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2568,
+      "near_miss_score": 0.0221,
+      "ratio": 1.0859
+    },
+    {
+      "number": 60,
+      "high_nm_count": 82,
+      "low_nm_count": 123,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2589,
+      "near_miss_score": 0.02,
+      "ratio": 1.0771
+    },
+    {
+      "number": 12,
+      "high_nm_count": 89,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3027,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0185,
+      "ratio": 1.0651
+    },
+    {
+      "number": 53,
+      "high_nm_count": 81,
+      "low_nm_count": 124,
+      "high_nm_rate": 0.2755,
+      "low_nm_rate": 0.2611,
+      "near_miss_score": 0.0145,
+      "ratio": 1.0554
+    },
+    {
+      "number": 28,
+      "high_nm_count": 87,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.2959,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": 0.0138,
+      "ratio": 1.049
+    },
+    {
+      "number": 62,
+      "high_nm_count": 82,
+      "low_nm_count": 127,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2674,
+      "near_miss_score": 0.0115,
+      "ratio": 1.0432
+    },
+    {
+      "number": 16,
+      "high_nm_count": 85,
+      "low_nm_count": 132,
+      "high_nm_rate": 0.2891,
+      "low_nm_rate": 0.2779,
+      "near_miss_score": 0.0112,
+      "ratio": 1.0404
+    },
+    {
+      "number": 20,
+      "high_nm_count": 86,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.2925,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0083,
+      "ratio": 1.0292
+    },
+    {
+      "number": 55,
+      "high_nm_count": 86,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.2925,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0083,
+      "ratio": 1.0292
+    },
+    {
+      "number": 26,
+      "high_nm_count": 84,
+      "low_nm_count": 132,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.2779,
+      "near_miss_score": 0.0078,
+      "ratio": 1.0281
+    },
+    {
+      "number": 36,
+      "high_nm_count": 93,
+      "low_nm_count": 148,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.3116,
+      "near_miss_score": 0.0047,
+      "ratio": 1.0152
+    },
+    {
+      "number": 56,
+      "high_nm_count": 85,
+      "low_nm_count": 136,
+      "high_nm_rate": 0.2891,
+      "low_nm_rate": 0.2863,
+      "near_miss_score": 0.0028,
+      "ratio": 1.0098
+    },
+    {
+      "number": 33,
+      "high_nm_count": 90,
+      "low_nm_count": 145,
+      "high_nm_rate": 0.3061,
+      "low_nm_rate": 0.3053,
+      "near_miss_score": 0.0009,
+      "ratio": 1.0028
+    },
+    {
+      "number": 13,
+      "high_nm_count": 80,
+      "low_nm_count": 129,
+      "high_nm_rate": 0.2721,
+      "low_nm_rate": 0.2716,
+      "near_miss_score": 0.0005,
+      "ratio": 1.002
+    },
+    {
+      "number": 66,
+      "high_nm_count": 93,
+      "low_nm_count": 150,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.3158,
+      "near_miss_score": 0.0005,
+      "ratio": 1.0017
+    },
+    {
+      "number": 65,
+      "high_nm_count": 90,
+      "low_nm_count": 146,
+      "high_nm_rate": 0.3061,
+      "low_nm_rate": 0.3074,
+      "near_miss_score": -0.0012,
+      "ratio": 0.9959
+    },
+    {
+      "number": 24,
+      "high_nm_count": 84,
+      "low_nm_count": 137,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.2884,
+      "near_miss_score": -0.0027,
+      "ratio": 0.9906
+    },
+    {
+      "number": 45,
+      "high_nm_count": 82,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": -0.0032,
+      "ratio": 0.9887
+    },
+    {
+      "number": 44,
+      "high_nm_count": 83,
+      "low_nm_count": 136,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.2863,
+      "near_miss_score": -0.004,
+      "ratio": 0.986
+    },
+    {
+      "number": 68,
+      "high_nm_count": 86,
+      "low_nm_count": 142,
+      "high_nm_rate": 0.2925,
+      "low_nm_rate": 0.2989,
+      "near_miss_score": -0.0064,
+      "ratio": 0.9785
+    },
+    {
+      "number": 52,
+      "high_nm_count": 84,
+      "low_nm_count": 139,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.2926,
+      "near_miss_score": -0.0069,
+      "ratio": 0.9764
+    },
+    {
+      "number": 48,
+      "high_nm_count": 80,
+      "low_nm_count": 133,
+      "high_nm_rate": 0.2721,
+      "low_nm_rate": 0.28,
+      "near_miss_score": -0.0079,
+      "ratio": 0.9718
+    },
+    {
+      "number": 63,
+      "high_nm_count": 83,
+      "low_nm_count": 138,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.2905,
+      "near_miss_score": -0.0082,
+      "ratio": 0.9717
+    },
+    {
+      "number": 23,
+      "high_nm_count": 83,
+      "low_nm_count": 140,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.2947,
+      "near_miss_score": -0.0124,
+      "ratio": 0.9578
+    },
+    {
+      "number": 69,
+      "high_nm_count": 75,
+      "low_nm_count": 129,
+      "high_nm_rate": 0.2551,
+      "low_nm_rate": 0.2716,
+      "near_miss_score": -0.0165,
+      "ratio": 0.9393
+    },
+    {
+      "number": 39,
+      "high_nm_count": 86,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2925,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.017,
+      "ratio": 0.9452
+    },
+    {
+      "number": 1,
+      "high_nm_count": 81,
+      "low_nm_count": 139,
+      "high_nm_rate": 0.2755,
+      "low_nm_rate": 0.2926,
+      "near_miss_score": -0.0171,
+      "ratio": 0.9415
+    },
+    {
+      "number": 50,
+      "high_nm_count": 82,
+      "low_nm_count": 141,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2968,
+      "near_miss_score": -0.0179,
+      "ratio": 0.9396
+    },
+    {
+      "number": 8,
+      "high_nm_count": 75,
+      "low_nm_count": 130,
+      "high_nm_rate": 0.2551,
+      "low_nm_rate": 0.2737,
+      "near_miss_score": -0.0186,
+      "ratio": 0.9321
+    },
+    {
+      "number": 49,
+      "high_nm_count": 86,
+      "low_nm_count": 150,
+      "high_nm_rate": 0.2925,
+      "low_nm_rate": 0.3158,
+      "near_miss_score": -0.0233,
+      "ratio": 0.9263
+    },
+    {
+      "number": 54,
+      "high_nm_count": 81,
+      "low_nm_count": 142,
+      "high_nm_rate": 0.2755,
+      "low_nm_rate": 0.2989,
+      "near_miss_score": -0.0234,
+      "ratio": 0.9216
+    },
+    {
+      "number": 14,
+      "high_nm_count": 84,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.0238,
+      "ratio": 0.9232
+    },
+    {
+      "number": 32,
+      "high_nm_count": 77,
+      "low_nm_count": 137,
+      "high_nm_rate": 0.2619,
+      "low_nm_rate": 0.2884,
+      "near_miss_score": -0.0265,
+      "ratio": 0.9081
+    },
+    {
+      "number": 58,
+      "high_nm_count": 76,
+      "low_nm_count": 137,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2884,
+      "near_miss_score": -0.0299,
+      "ratio": 0.8963
+    },
+    {
+      "number": 40,
+      "high_nm_count": 76,
+      "low_nm_count": 138,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2905,
+      "near_miss_score": -0.032,
+      "ratio": 0.8898
+    },
+    {
+      "number": 42,
+      "high_nm_count": 84,
+      "low_nm_count": 151,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.3179,
+      "near_miss_score": -0.0322,
+      "ratio": 0.8988
+    },
+    {
+      "number": 61,
+      "high_nm_count": 81,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2755,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.034,
+      "ratio": 0.8903
+    },
+    {
+      "number": 34,
+      "high_nm_count": 76,
+      "low_nm_count": 139,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2926,
+      "near_miss_score": -0.0341,
+      "ratio": 0.8834
+    },
+    {
+      "number": 64,
+      "high_nm_count": 83,
+      "low_nm_count": 151,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.3179,
+      "near_miss_score": -0.0356,
+      "ratio": 0.8881
+    },
+    {
+      "number": 57,
+      "high_nm_count": 84,
+      "low_nm_count": 153,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.3221,
+      "near_miss_score": -0.0364,
+      "ratio": 0.887
+    },
+    {
+      "number": 15,
+      "high_nm_count": 73,
+      "low_nm_count": 136,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.2863,
+      "near_miss_score": -0.038,
+      "ratio": 0.8672
+    },
+    {
+      "number": 22,
+      "high_nm_count": 66,
+      "low_nm_count": 125,
+      "high_nm_rate": 0.2245,
+      "low_nm_rate": 0.2632,
+      "near_miss_score": -0.0387,
+      "ratio": 0.8531
+    },
+    {
+      "number": 41,
+      "high_nm_count": 74,
+      "low_nm_count": 138,
+      "high_nm_rate": 0.2517,
+      "low_nm_rate": 0.2905,
+      "near_miss_score": -0.0388,
+      "ratio": 0.8664
+    },
+    {
+      "number": 38,
+      "high_nm_count": 80,
+      "low_nm_count": 150,
+      "high_nm_rate": 0.2721,
+      "low_nm_rate": 0.3158,
+      "near_miss_score": -0.0437,
+      "ratio": 0.8617
+    },
+    {
+      "number": 6,
+      "high_nm_count": 78,
+      "low_nm_count": 148,
+      "high_nm_rate": 0.2653,
+      "low_nm_rate": 0.3116,
+      "near_miss_score": -0.0463,
+      "ratio": 0.8515
+    },
+    {
+      "number": 37,
+      "high_nm_count": 73,
+      "low_nm_count": 140,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.2947,
+      "near_miss_score": -0.0464,
+      "ratio": 0.8424
+    },
+    {
+      "number": 67,
+      "high_nm_count": 69,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.2347,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": -0.0474,
+      "ratio": 0.8319
+    },
+    {
+      "number": 51,
+      "high_nm_count": 75,
+      "low_nm_count": 146,
+      "high_nm_rate": 0.2551,
+      "low_nm_rate": 0.3074,
+      "near_miss_score": -0.0523,
+      "ratio": 0.83
+    },
+    {
+      "number": 35,
+      "high_nm_count": 73,
+      "low_nm_count": 145,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3053,
+      "near_miss_score": -0.057,
+      "ratio": 0.8134
+    },
+    {
+      "number": 27,
+      "high_nm_count": 73,
+      "low_nm_count": 146,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3074,
+      "near_miss_score": -0.0591,
+      "ratio": 0.8078
+    },
+    {
+      "number": 30,
+      "high_nm_count": 73,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.0612,
+      "ratio": 0.8023
+    },
+    {
+      "number": 29,
+      "high_nm_count": 64,
+      "low_nm_count": 133,
+      "high_nm_rate": 0.2177,
+      "low_nm_rate": 0.28,
+      "near_miss_score": -0.0623,
+      "ratio": 0.7775
+    },
+    {
+      "number": 43,
+      "high_nm_count": 68,
+      "low_nm_count": 145,
+      "high_nm_rate": 0.2313,
+      "low_nm_rate": 0.3053,
+      "near_miss_score": -0.074,
+      "ratio": 0.7577
+    }
+  ],
+  "top_20_near_miss_indicators": [
+    {
+      "number": 31,
+      "high_nm_count": 96,
+      "low_nm_count": 113,
+      "high_nm_rate": 0.3265,
+      "low_nm_rate": 0.2379,
+      "near_miss_score": 0.0886,
+      "ratio": 1.3726
+    },
+    {
+      "number": 11,
+      "high_nm_count": 93,
+      "low_nm_count": 109,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.2295,
+      "near_miss_score": 0.0869,
+      "ratio": 1.3785
+    },
+    {
+      "number": 25,
+      "high_nm_count": 106,
+      "low_nm_count": 131,
+      "high_nm_rate": 0.3605,
+      "low_nm_rate": 0.2758,
+      "near_miss_score": 0.0848,
+      "ratio": 1.3073
+    },
+    {
+      "number": 18,
+      "high_nm_count": 93,
+      "low_nm_count": 113,
+      "high_nm_rate": 0.3163,
+      "low_nm_rate": 0.2379,
+      "near_miss_score": 0.0784,
+      "ratio": 1.3297
+    },
+    {
+      "number": 17,
+      "high_nm_count": 97,
+      "low_nm_count": 121,
+      "high_nm_rate": 0.3299,
+      "low_nm_rate": 0.2547,
+      "near_miss_score": 0.0752,
+      "ratio": 1.2952
+    },
+    {
+      "number": 2,
+      "high_nm_count": 105,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3571,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0729,
+      "ratio": 1.2566
+    },
+    {
+      "number": 47,
+      "high_nm_count": 98,
+      "low_nm_count": 128,
+      "high_nm_rate": 0.3333,
+      "low_nm_rate": 0.2695,
+      "near_miss_score": 0.0639,
+      "ratio": 1.237
+    },
+    {
+      "number": 9,
+      "high_nm_count": 102,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3469,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0627,
+      "ratio": 1.2207
+    },
+    {
+      "number": 4,
+      "high_nm_count": 95,
+      "low_nm_count": 125,
+      "high_nm_rate": 0.3231,
+      "low_nm_rate": 0.2632,
+      "near_miss_score": 0.06,
+      "ratio": 1.2279
+    },
+    {
+      "number": 5,
+      "high_nm_count": 95,
+      "low_nm_count": 129,
+      "high_nm_rate": 0.3231,
+      "low_nm_rate": 0.2716,
+      "near_miss_score": 0.0516,
+      "ratio": 1.1898
+    },
+    {
+      "number": 10,
+      "high_nm_count": 96,
+      "low_nm_count": 131,
+      "high_nm_rate": 0.3265,
+      "low_nm_rate": 0.2758,
+      "near_miss_score": 0.0507,
+      "ratio": 1.184
+    },
+    {
+      "number": 19,
+      "high_nm_count": 83,
+      "low_nm_count": 112,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.2358,
+      "near_miss_score": 0.0465,
+      "ratio": 1.1973
+    },
+    {
+      "number": 21,
+      "high_nm_count": 91,
+      "low_nm_count": 128,
+      "high_nm_rate": 0.3095,
+      "low_nm_rate": 0.2695,
+      "near_miss_score": 0.0401,
+      "ratio": 1.1486
+    },
+    {
+      "number": 46,
+      "high_nm_count": 90,
+      "low_nm_count": 127,
+      "high_nm_rate": 0.3061,
+      "low_nm_rate": 0.2674,
+      "near_miss_score": 0.0388,
+      "ratio": 1.1449
+    },
+    {
+      "number": 3,
+      "high_nm_count": 97,
+      "low_nm_count": 140,
+      "high_nm_rate": 0.3299,
+      "low_nm_rate": 0.2947,
+      "near_miss_score": 0.0352,
+      "ratio": 1.1194
+    },
+    {
+      "number": 70,
+      "high_nm_count": 92,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.3129,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": 0.0308,
+      "ratio": 1.1092
+    },
+    {
+      "number": 59,
+      "high_nm_count": 85,
+      "low_nm_count": 126,
+      "high_nm_rate": 0.2891,
+      "low_nm_rate": 0.2653,
+      "near_miss_score": 0.0239,
+      "ratio": 1.0899
+    },
+    {
+      "number": 7,
+      "high_nm_count": 82,
+      "low_nm_count": 122,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2568,
+      "near_miss_score": 0.0221,
+      "ratio": 1.0859
+    },
+    {
+      "number": 60,
+      "high_nm_count": 82,
+      "low_nm_count": 123,
+      "high_nm_rate": 0.2789,
+      "low_nm_rate": 0.2589,
+      "near_miss_score": 0.02,
+      "ratio": 1.0771
+    },
+    {
+      "number": 12,
+      "high_nm_count": 89,
+      "low_nm_count": 135,
+      "high_nm_rate": 0.3027,
+      "low_nm_rate": 0.2842,
+      "near_miss_score": 0.0185,
+      "ratio": 1.0651
+    }
+  ],
+  "top_20_jackpot_indicators": [
+    {
+      "number": 43,
+      "high_nm_count": 68,
+      "low_nm_count": 145,
+      "high_nm_rate": 0.2313,
+      "low_nm_rate": 0.3053,
+      "near_miss_score": -0.074,
+      "ratio": 0.7577
+    },
+    {
+      "number": 29,
+      "high_nm_count": 64,
+      "low_nm_count": 133,
+      "high_nm_rate": 0.2177,
+      "low_nm_rate": 0.28,
+      "near_miss_score": -0.0623,
+      "ratio": 0.7775
+    },
+    {
+      "number": 30,
+      "high_nm_count": 73,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.0612,
+      "ratio": 0.8023
+    },
+    {
+      "number": 27,
+      "high_nm_count": 73,
+      "low_nm_count": 146,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3074,
+      "near_miss_score": -0.0591,
+      "ratio": 0.8078
+    },
+    {
+      "number": 35,
+      "high_nm_count": 73,
+      "low_nm_count": 145,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.3053,
+      "near_miss_score": -0.057,
+      "ratio": 0.8134
+    },
+    {
+      "number": 51,
+      "high_nm_count": 75,
+      "low_nm_count": 146,
+      "high_nm_rate": 0.2551,
+      "low_nm_rate": 0.3074,
+      "near_miss_score": -0.0523,
+      "ratio": 0.83
+    },
+    {
+      "number": 67,
+      "high_nm_count": 69,
+      "low_nm_count": 134,
+      "high_nm_rate": 0.2347,
+      "low_nm_rate": 0.2821,
+      "near_miss_score": -0.0474,
+      "ratio": 0.8319
+    },
+    {
+      "number": 37,
+      "high_nm_count": 73,
+      "low_nm_count": 140,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.2947,
+      "near_miss_score": -0.0464,
+      "ratio": 0.8424
+    },
+    {
+      "number": 6,
+      "high_nm_count": 78,
+      "low_nm_count": 148,
+      "high_nm_rate": 0.2653,
+      "low_nm_rate": 0.3116,
+      "near_miss_score": -0.0463,
+      "ratio": 0.8515
+    },
+    {
+      "number": 38,
+      "high_nm_count": 80,
+      "low_nm_count": 150,
+      "high_nm_rate": 0.2721,
+      "low_nm_rate": 0.3158,
+      "near_miss_score": -0.0437,
+      "ratio": 0.8617
+    },
+    {
+      "number": 41,
+      "high_nm_count": 74,
+      "low_nm_count": 138,
+      "high_nm_rate": 0.2517,
+      "low_nm_rate": 0.2905,
+      "near_miss_score": -0.0388,
+      "ratio": 0.8664
+    },
+    {
+      "number": 22,
+      "high_nm_count": 66,
+      "low_nm_count": 125,
+      "high_nm_rate": 0.2245,
+      "low_nm_rate": 0.2632,
+      "near_miss_score": -0.0387,
+      "ratio": 0.8531
+    },
+    {
+      "number": 15,
+      "high_nm_count": 73,
+      "low_nm_count": 136,
+      "high_nm_rate": 0.2483,
+      "low_nm_rate": 0.2863,
+      "near_miss_score": -0.038,
+      "ratio": 0.8672
+    },
+    {
+      "number": 57,
+      "high_nm_count": 84,
+      "low_nm_count": 153,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.3221,
+      "near_miss_score": -0.0364,
+      "ratio": 0.887
+    },
+    {
+      "number": 64,
+      "high_nm_count": 83,
+      "low_nm_count": 151,
+      "high_nm_rate": 0.2823,
+      "low_nm_rate": 0.3179,
+      "near_miss_score": -0.0356,
+      "ratio": 0.8881
+    },
+    {
+      "number": 34,
+      "high_nm_count": 76,
+      "low_nm_count": 139,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2926,
+      "near_miss_score": -0.0341,
+      "ratio": 0.8834
+    },
+    {
+      "number": 61,
+      "high_nm_count": 81,
+      "low_nm_count": 147,
+      "high_nm_rate": 0.2755,
+      "low_nm_rate": 0.3095,
+      "near_miss_score": -0.034,
+      "ratio": 0.8903
+    },
+    {
+      "number": 42,
+      "high_nm_count": 84,
+      "low_nm_count": 151,
+      "high_nm_rate": 0.2857,
+      "low_nm_rate": 0.3179,
+      "near_miss_score": -0.0322,
+      "ratio": 0.8988
+    },
+    {
+      "number": 40,
+      "high_nm_count": 76,
+      "low_nm_count": 138,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2905,
+      "near_miss_score": -0.032,
+      "ratio": 0.8898
+    },
+    {
+      "number": 58,
+      "high_nm_count": 76,
+      "low_nm_count": 137,
+      "high_nm_rate": 0.2585,
+      "low_nm_rate": 0.2884,
+      "near_miss_score": -0.0299,
+      "ratio": 0.8963
+    }
+  ],
+  "summary": {
+    "strongest_near_miss_numbers": [
+      31,
+      11,
+      25,
+      18,
+      17
+    ],
+    "strongest_jackpot_numbers": [
+      43,
+      29,
+      30,
+      27,
+      35
+    ],
+    "interpretation": "Zahlen mit positivem Score erscheinen haeufiger an Tagen mit vielen Near-Miss Gewinnern. Hypothese: Diese Zahlen werden vom System bevorzugt um Near-Misses zu generieren. Zahlen mit negativem Score erscheinen haeufiger an Tagen mit wenigen Near-Misses (Jackpot-Tage)."
+  }
+}

@@ -1,0 +1,1596 @@
+{
+  "generated_at": "2025-12-29T10:06:20.497235",
+  "paradigm": "System als manipuliert angenommen - ALLE Anomalien genutzt",
+  "focus": "Alle Gewinnklassen (GK1-GK10), nicht nur Jackpot",
+  "weights_used": {
+    "hot": 0.5,
+    "jackpot_lift": 1.0,
+    "near_miss": 1.2,
+    "predictability": 1.5,
+    "pair_bonus": 1.0,
+    "trio_bonus": 1.0,
+    "anti_birthday": 0.5,
+    "month_end": 0.3
+  },
+  "signals_summary": {
+    "total_numbers": 70,
+    "jackpot_favored": 17,
+    "near_miss_indicators": 20,
+    "high_predictability": 19,
+    "in_top_pairs": 36,
+    "anti_birthday": 39
+  },
+  "top_20_numbers_by_score": [
+    {
+      "rank": 1,
+      "number": 49,
+      "combined_score": 0.9093,
+      "predictability": 11.33,
+      "near_miss_score": -0.0233,
+      "jackpot_lift": 1.435,
+      "pair_count": 12,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 2,
+      "number": 3,
+      "combined_score": 0.8986,
+      "predictability": 17.87,
+      "near_miss_score": 0.0352,
+      "jackpot_lift": 1.894,
+      "pair_count": 4,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 3,
+      "number": 4,
+      "combined_score": 0.8392,
+      "predictability": 11.46,
+      "near_miss_score": 0.06,
+      "jackpot_lift": 1.573,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 4,
+      "number": 24,
+      "combined_score": 0.7316,
+      "predictability": 20.58,
+      "near_miss_score": -0.0027,
+      "jackpot_lift": 1.529,
+      "pair_count": 2,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 5,
+      "number": 51,
+      "combined_score": 0.7082,
+      "predictability": 19.16,
+      "near_miss_score": -0.0523,
+      "jackpot_lift": 1.871,
+      "pair_count": 0,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 6,
+      "number": 2,
+      "combined_score": 0.6817,
+      "predictability": 15.12,
+      "near_miss_score": 0.0729,
+      "jackpot_lift": 0.744,
+      "pair_count": 2,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 7,
+      "number": 25,
+      "combined_score": 0.6686,
+      "predictability": 18.03,
+      "near_miss_score": 0.0848,
+      "jackpot_lift": 0.598,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 8,
+      "number": 41,
+      "combined_score": 0.6588,
+      "predictability": 18.53,
+      "near_miss_score": -0.0388,
+      "jackpot_lift": 1.426,
+      "pair_count": 0,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 9,
+      "number": 31,
+      "combined_score": 0.6369,
+      "predictability": 0.0,
+      "near_miss_score": 0.0886,
+      "jackpot_lift": 1.211,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 10,
+      "number": 37,
+      "combined_score": 0.6364,
+      "predictability": 15.57,
+      "near_miss_score": -0.0464,
+      "jackpot_lift": 1.677,
+      "pair_count": 0,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 11,
+      "number": 9,
+      "combined_score": 0.627,
+      "predictability": 0.0,
+      "near_miss_score": 0.0627,
+      "jackpot_lift": 1.302,
+      "pair_count": 5,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 12,
+      "number": 11,
+      "combined_score": 0.5325,
+      "predictability": 0.0,
+      "near_miss_score": 0.0869,
+      "jackpot_lift": 1.022,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 13,
+      "number": 64,
+      "combined_score": 0.5042,
+      "predictability": 0.0,
+      "near_miss_score": -0.0356,
+      "jackpot_lift": 1.278,
+      "pair_count": 7,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 14,
+      "number": 13,
+      "combined_score": 0.4842,
+      "predictability": 11.56,
+      "near_miss_score": 0.0005,
+      "jackpot_lift": 1.578,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 15,
+      "number": 18,
+      "combined_score": 0.4782,
+      "predictability": 0.0,
+      "near_miss_score": 0.0784,
+      "jackpot_lift": 1.016,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 16,
+      "number": 36,
+      "combined_score": 0.4514,
+      "predictability": 0.0,
+      "near_miss_score": 0.0047,
+      "jackpot_lift": 1.496,
+      "pair_count": 5,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": true,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 17,
+      "number": 47,
+      "combined_score": 0.4438,
+      "predictability": 0.0,
+      "near_miss_score": 0.0639,
+      "jackpot_lift": 0.971,
+      "pair_count": 0,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 18,
+      "number": 10,
+      "combined_score": 0.3814,
+      "predictability": 0.0,
+      "near_miss_score": 0.0507,
+      "jackpot_lift": 0.914,
+      "pair_count": 6,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    },
+    {
+      "rank": 19,
+      "number": 53,
+      "combined_score": 0.3785,
+      "predictability": 14.71,
+      "near_miss_score": 0.0145,
+      "jackpot_lift": 0.764,
+      "pair_count": 2,
+      "is_anti_birthday": true,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": false
+    },
+    {
+      "rank": 20,
+      "number": 17,
+      "combined_score": 0.356,
+      "predictability": 0.0,
+      "near_miss_score": 0.0752,
+      "jackpot_lift": 0.81,
+      "pair_count": 0,
+      "is_anti_birthday": false,
+      "is_jackpot_favored": false,
+      "is_near_miss_indicator": true
+    }
+  ],
+  "groups_by_type": {
+    "typ_5": {
+      "balanced": {
+        "numbers": [
+          3,
+          4,
+          42,
+          49,
+          61
+        ],
+        "score": 22.05,
+        "details": {
+          "base_score": 3.05,
+          "pair_bonus": 10,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "anti_birthday_bonus": 3.0,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 2,
+          "anti_birthday_count": 3,
+          "nm_indicators": 2,
+          "jp_indicators": 2,
+          "jackpot_favored": 3,
+          "high_predictability": 3
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          20,
+          36
+        ],
+        "score": 22.04,
+        "details": {
+          "base_score": 3.04,
+          "pair_bonus": 15,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.0,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 3,
+          "anti_birthday_count": 1,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 3,
+          "high_predictability": 3
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          4,
+          20,
+          36,
+          49
+        ],
+        "score": 26.27,
+        "details": {
+          "base_score": 3.27,
+          "pair_bonus": 15,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "anti_birthday_bonus": 2.0,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 2,
+          "anti_birthday_count": 2,
+          "nm_indicators": 2,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 3
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          24,
+          49
+        ],
+        "score": 17.06,
+        "details": {
+          "base_score": 4.06,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.0,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 3,
+          "anti_birthday_count": 1,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 5
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          3,
+          9,
+          33,
+          49,
+          50
+        ],
+        "score": 29.65,
+        "details": {
+          "base_score": 2.65,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "anti_birthday_bonus": 3.0,
+          "pairs_found": [
+            [
+              9,
+              50
+            ],
+            [
+              33,
+              49
+            ],
+            [
+              33,
+              50
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 2,
+          "anti_birthday_count": 3,
+          "nm_indicators": 2,
+          "jp_indicators": 0,
+          "jackpot_favored": 3,
+          "high_predictability": 2
+        }
+      }
+    },
+    "typ_6": {
+      "balanced": {
+        "numbers": [
+          3,
+          4,
+          9,
+          42,
+          49,
+          61
+        ],
+        "score": 24.17,
+        "details": {
+          "base_score": 3.67,
+          "pair_bonus": 15,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.5,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 3,
+          "anti_birthday_count": 3,
+          "nm_indicators": 3,
+          "jp_indicators": 2,
+          "jackpot_favored": 4,
+          "high_predictability": 3
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          36
+        ],
+        "score": 19.5,
+        "details": {
+          "base_score": 3.67,
+          "pair_bonus": 15,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 0.83,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 4,
+          "anti_birthday_count": 1,
+          "nm_indicators": 4,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 3
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          4,
+          9,
+          20,
+          36,
+          49
+        ],
+        "score": 28.56,
+        "details": {
+          "base_score": 3.89,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.67,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 2,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 5,
+          "high_predictability": 3
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          24,
+          49,
+          51
+        ],
+        "score": 20.44,
+        "details": {
+          "base_score": 4.77,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.67,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 2,
+          "nm_indicators": 3,
+          "jp_indicators": 1,
+          "jackpot_favored": 5,
+          "high_predictability": 6
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          2,
+          3,
+          9,
+          33,
+          49,
+          50
+        ],
+        "score": 33.83,
+        "details": {
+          "base_score": 3.33,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.5,
+          "pairs_found": [
+            [
+              9,
+              50
+            ],
+            [
+              33,
+              49
+            ],
+            [
+              33,
+              50
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 3,
+          "anti_birthday_count": 3,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 3,
+          "high_predictability": 3
+        }
+      }
+    },
+    "typ_7": {
+      "balanced": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          42,
+          49,
+          61
+        ],
+        "score": 28.5,
+        "details": {
+          "base_score": 4.36,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 2.14,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 3,
+          "max_per_decade": 4,
+          "anti_birthday_count": 3,
+          "nm_indicators": 4,
+          "jp_indicators": 2,
+          "jackpot_favored": 4,
+          "high_predictability": 4
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          25,
+          36
+        ],
+        "score": 22.05,
+        "details": {
+          "base_score": 4.33,
+          "pair_bonus": 15,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 0.71,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 4,
+          "anti_birthday_count": 1,
+          "nm_indicators": 5,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 4
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          36,
+          49
+        ],
+        "score": 33.0,
+        "details": {
+          "base_score": 4.58,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 1.43,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 4,
+          "anti_birthday_count": 2,
+          "nm_indicators": 4,
+          "jp_indicators": 0,
+          "jackpot_favored": 5,
+          "high_predictability": 4
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          24,
+          25,
+          49,
+          51
+        ],
+        "score": 22.87,
+        "details": {
+          "base_score": 5.44,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.43,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 2,
+          "nm_indicators": 4,
+          "jp_indicators": 1,
+          "jackpot_favored": 5,
+          "high_predictability": 7
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          49,
+          50
+        ],
+        "score": 36.2,
+        "details": {
+          "base_score": 4.06,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.14,
+          "pairs_found": [
+            [
+              9,
+              50
+            ],
+            [
+              33,
+              49
+            ],
+            [
+              33,
+              50
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 3,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 4
+        }
+      }
+    },
+    "typ_8": {
+      "balanced": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          24,
+          42,
+          49,
+          61
+        ],
+        "score": 30.96,
+        "details": {
+          "base_score": 5.09,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 1.88,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 4,
+          "anti_birthday_count": 3,
+          "nm_indicators": 4,
+          "jp_indicators": 2,
+          "jackpot_favored": 5,
+          "high_predictability": 5
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          25,
+          31,
+          59
+        ],
+        "score": 24.63,
+        "details": {
+          "base_score": 5.01,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 9,
+          "anti_birthday_bonus": 0.62,
+          "pairs_found": [
+            [
+              9,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              59
+            ],
+            [
+              10,
+              59
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 5,
+          "anti_birthday_count": 1,
+          "nm_indicators": 8,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 4
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          24,
+          36,
+          49
+        ],
+        "score": 35.56,
+        "details": {
+          "base_score": 5.31,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 1.25,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 4,
+          "anti_birthday_count": 2,
+          "nm_indicators": 4,
+          "jp_indicators": 0,
+          "jackpot_favored": 6,
+          "high_predictability": 5
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          24,
+          25,
+          41,
+          49,
+          51
+        ],
+        "score": 25.97,
+        "details": {
+          "base_score": 6.1,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 1.88,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 3,
+          "nm_indicators": 4,
+          "jp_indicators": 2,
+          "jackpot_favored": 6,
+          "high_predictability": 8
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          36,
+          49,
+          50
+        ],
+        "score": 42.01,
+        "details": {
+          "base_score": 4.51,
+          "pair_bonus": 30,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.5,
+          "pairs_found": [
+            [
+              9,
+              50
+            ],
+            [
+              33,
+              49
+            ],
+            [
+              33,
+              50
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 4,
+          "max_per_decade": 3,
+          "anti_birthday_count": 4,
+          "nm_indicators": 3,
+          "jp_indicators": 0,
+          "jackpot_favored": 5,
+          "high_predictability": 4
+        }
+      }
+    },
+    "typ_9": {
+      "balanced": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          24,
+          42,
+          49,
+          51,
+          61
+        ],
+        "score": 34.02,
+        "details": {
+          "base_score": 5.8,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 2.22,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 4,
+          "anti_birthday_count": 4,
+          "nm_indicators": 4,
+          "jp_indicators": 3,
+          "jackpot_favored": 6,
+          "high_predictability": 6
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          11,
+          25,
+          31,
+          59
+        ],
+        "score": 25.09,
+        "details": {
+          "base_score": 5.54,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 9,
+          "anti_birthday_bonus": 0.56,
+          "pairs_found": [
+            [
+              9,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              59
+            ],
+            [
+              10,
+              59
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 5,
+          "anti_birthday_count": 1,
+          "nm_indicators": 9,
+          "jp_indicators": 0,
+          "jackpot_favored": 4,
+          "high_predictability": 4
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          24,
+          36,
+          49,
+          51
+        ],
+        "score": 38.68,
+        "details": {
+          "base_score": 6.02,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 1.67,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 6,
+          "max_per_decade": 4,
+          "anti_birthday_count": 3,
+          "nm_indicators": 4,
+          "jp_indicators": 1,
+          "jackpot_favored": 7,
+          "high_predictability": 6
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          24,
+          25,
+          37,
+          41,
+          49,
+          51
+        ],
+        "score": 28.95,
+        "details": {
+          "base_score": 6.73,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.22,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 3,
+          "anti_birthday_count": 4,
+          "nm_indicators": 4,
+          "jp_indicators": 3,
+          "jackpot_favored": 7,
+          "high_predictability": 9
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          2,
+          3,
+          9,
+          20,
+          24,
+          36,
+          39,
+          49,
+          64
+        ],
+        "score": 44.54,
+        "details": {
+          "base_score": 5.32,
+          "pair_bonus": 30,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.22,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              39,
+              64
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 6,
+          "max_per_decade": 3,
+          "anti_birthday_count": 4,
+          "nm_indicators": 3,
+          "jp_indicators": 1,
+          "jackpot_favored": 6,
+          "high_predictability": 5
+        }
+      }
+    },
+    "typ_10": {
+      "balanced": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          24,
+          25,
+          42,
+          49,
+          51,
+          61
+        ],
+        "score": 36.46,
+        "details": {
+          "base_score": 6.46,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 2.0,
+          "pairs_found": [
+            [
+              42,
+              61
+            ],
+            [
+              3,
+              42
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              9,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 4,
+          "anti_birthday_count": 4,
+          "nm_indicators": 5,
+          "jp_indicators": 3,
+          "jackpot_favored": 6,
+          "high_predictability": 7
+        }
+      },
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          11,
+          13,
+          25,
+          31,
+          59
+        ],
+        "score": 27.52,
+        "details": {
+          "base_score": 6.02,
+          "pair_bonus": 20,
+          "trio_bonus": 0,
+          "decade_penalty": 9,
+          "anti_birthday_bonus": 0.5,
+          "pairs_found": [
+            [
+              9,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              59
+            ],
+            [
+              10,
+              59
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 5,
+          "max_per_decade": 5,
+          "anti_birthday_count": 1,
+          "nm_indicators": 9,
+          "jp_indicators": 0,
+          "jackpot_favored": 5,
+          "high_predictability": 5
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          24,
+          25,
+          36,
+          49,
+          51
+        ],
+        "score": 41.18,
+        "details": {
+          "base_score": 6.68,
+          "pair_bonus": 25,
+          "trio_bonus": 0,
+          "decade_penalty": 6,
+          "anti_birthday_bonus": 1.5,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 6,
+          "max_per_decade": 4,
+          "anti_birthday_count": 3,
+          "nm_indicators": 5,
+          "jp_indicators": 1,
+          "jackpot_favored": 7,
+          "high_predictability": 7
+        }
+      },
+      "predictable": {
+        "numbers": [
+          2,
+          3,
+          4,
+          13,
+          24,
+          25,
+          37,
+          41,
+          49,
+          51
+        ],
+        "score": 31.22,
+        "details": {
+          "base_score": 7.22,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.0,
+          "pairs_found": [
+            [
+              2,
+              3
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 6,
+          "max_per_decade": 3,
+          "anti_birthday_count": 4,
+          "nm_indicators": 4,
+          "jp_indicators": 3,
+          "jackpot_favored": 8,
+          "high_predictability": 10
+        }
+      },
+      "pair_focused": {
+        "numbers": [
+          2,
+          3,
+          9,
+          20,
+          24,
+          36,
+          39,
+          49,
+          53,
+          64
+        ],
+        "score": 52.2,
+        "details": {
+          "base_score": 5.7,
+          "pair_bonus": 35,
+          "trio_bonus": 0,
+          "decade_penalty": 3,
+          "anti_birthday_bonus": 2.5,
+          "pairs_found": [
+            [
+              20,
+              36
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              53,
+              64
+            ],
+            [
+              3,
+              20
+            ],
+            [
+              39,
+              64
+            ],
+            [
+              9,
+              49
+            ],
+            [
+              36,
+              49
+            ]
+          ],
+          "trios_found": [],
+          "decades_used": 7,
+          "max_per_decade": 3,
+          "anti_birthday_count": 5,
+          "nm_indicators": 3,
+          "jp_indicators": 1,
+          "jackpot_favored": 6,
+          "high_predictability": 6
+        }
+      }
+    }
+  }
+}

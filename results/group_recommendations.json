@@ -1,0 +1,656 @@
+{
+  "generated_at": "2025-12-29T10:02:24.111007",
+  "target_date": "2025-12-29",
+  "day_of_month": 29,
+  "period": "month_end",
+  "model_version": "1.0",
+  "paradigm": "System als manipuliert angenommen",
+  "keno_types": {
+    "typ_5": {
+      "near_miss": {
+        "numbers": [
+          3,
+          18,
+          24,
+          25,
+          31
+        ],
+        "total_score": 104.67,
+        "components": {
+          "base_score": 73.21,
+          "context_multiplier": 1.02,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 30
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 0,
+          "jackpot_favored_count": 3,
+          "near_miss_indicator_count": 3,
+          "jackpot_indicator_count": 0,
+          "decades_used": 4,
+          "max_per_decade": 2
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          4,
+          36,
+          37,
+          51
+        ],
+        "total_score": 188.56,
+        "components": {
+          "base_score": 113.56,
+          "context_multiplier": 1.0,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 75
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 1,
+          "jackpot_favored_count": 5,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 3,
+          "max_per_decade": 2
+        }
+      },
+      "balanced": {
+        "numbers": [
+          3,
+          13,
+          24,
+          51,
+          66
+        ],
+        "total_score": 137.82,
+        "components": {
+          "base_score": 106.43,
+          "context_multiplier": 1.06,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 25
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 0,
+          "jackpot_favored_count": 5,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 1
+        }
+      }
+    },
+    "typ_6": {
+      "near_miss": {
+        "numbers": [
+          3,
+          11,
+          17,
+          24,
+          25,
+          31
+        ],
+        "total_score": 118.68,
+        "components": {
+          "base_score": 77.39,
+          "context_multiplier": 1.017,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 40
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 0,
+          "jackpot_favored_count": 3,
+          "near_miss_indicator_count": 4,
+          "jackpot_indicator_count": 0,
+          "decades_used": 4,
+          "max_per_decade": 2
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          9,
+          13,
+          24,
+          37,
+          49,
+          51
+        ],
+        "total_score": 218.41,
+        "components": {
+          "base_score": 117.54,
+          "context_multiplier": 1.05,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 90
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 6,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 6,
+          "max_per_decade": 1
+        }
+      },
+      "balanced": {
+        "numbers": [
+          4,
+          13,
+          24,
+          37,
+          51,
+          66
+        ],
+        "total_score": 156.46,
+        "components": {
+          "base_score": 120.44,
+          "context_multiplier": 1.05,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 30
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 1,
+          "jackpot_favored_count": 6,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 6,
+          "max_per_decade": 1
+        }
+      }
+    },
+    "typ_7": {
+      "near_miss": {
+        "numbers": [
+          17,
+          18,
+          25,
+          31,
+          37,
+          49,
+          51
+        ],
+        "total_score": 132.21,
+        "components": {
+          "base_score": 94.92,
+          "context_multiplier": 0.971,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 40
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 4,
+          "near_miss_indicator_count": 4,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 2
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          24,
+          36,
+          41,
+          49,
+          51,
+          52
+        ],
+        "total_score": 247.2,
+        "components": {
+          "base_score": 135.26,
+          "context_multiplier": 1.014,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 105
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 0,
+          "jackpot_favored_count": 7,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 2
+        }
+      },
+      "balanced": {
+        "numbers": [
+          3,
+          4,
+          24,
+          37,
+          49,
+          51,
+          53
+        ],
+        "total_score": 174.51,
+        "components": {
+          "base_score": 142.47,
+          "context_multiplier": 1.014,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 30
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 6,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 2
+        }
+      }
+    },
+    "typ_8": {
+      "near_miss": {
+        "numbers": [
+          2,
+          3,
+          11,
+          17,
+          18,
+          24,
+          25,
+          31
+        ],
+        "total_score": 144.46,
+        "components": {
+          "base_score": 89.96,
+          "context_multiplier": 1.05,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 5,
+          "strategy_bonus": 50
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 0,
+          "jackpot_favored_count": 3,
+          "near_miss_indicator_count": 5,
+          "jackpot_indicator_count": 0,
+          "decades_used": 4,
+          "max_per_decade": 3
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          4,
+          24,
+          36,
+          37,
+          40,
+          49,
+          51,
+          52
+        ],
+        "total_score": 272.73,
+        "components": {
+          "base_score": 142.39,
+          "context_multiplier": 1.038,
+          "pair_bonus": 10,
+          "trio_bonus": 0,
+          "decade_penalty": 5,
+          "strategy_bonus": 120
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 8,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 3
+        }
+      },
+      "balanced": {
+        "numbers": [
+          2,
+          4,
+          13,
+          24,
+          36,
+          37,
+          51,
+          66
+        ],
+        "total_score": 190.02,
+        "components": {
+          "base_score": 144.21,
+          "context_multiplier": 1.075,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 35
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 1,
+          "jackpot_favored_count": 7,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 6,
+          "max_per_decade": 2
+        }
+      }
+    },
+    "typ_9": {
+      "near_miss": {
+        "numbers": [
+          3,
+          11,
+          17,
+          18,
+          25,
+          31,
+          36,
+          37,
+          49
+        ],
+        "total_score": 163.1,
+        "components": {
+          "base_score": 115.67,
+          "context_multiplier": 0.978,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 5,
+          "strategy_bonus": 50
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 5,
+          "near_miss_indicator_count": 5,
+          "jackpot_indicator_count": 0,
+          "decades_used": 5,
+          "max_per_decade": 3
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          13,
+          24,
+          30,
+          37,
+          51,
+          52,
+          64,
+          66
+        ],
+        "total_score": 286.69,
+        "components": {
+          "base_score": 146.8,
+          "context_multiplier": 1.033,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 130
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 8,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 1,
+          "decades_used": 6,
+          "max_per_decade": 2
+        }
+      },
+      "balanced": {
+        "numbers": [
+          2,
+          3,
+          4,
+          13,
+          24,
+          41,
+          49,
+          51,
+          66
+        ],
+        "total_score": 216.19,
+        "components": {
+          "base_score": 168.7,
+          "context_multiplier": 1.044,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 5,
+          "strategy_bonus": 40
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 0,
+          "jackpot_favored_count": 8,
+          "near_miss_indicator_count": 0,
+          "jackpot_indicator_count": 0,
+          "decades_used": 6,
+          "max_per_decade": 3
+        }
+      }
+    },
+    "typ_10": {
+      "near_miss": {
+        "numbers": [
+          3,
+          4,
+          11,
+          17,
+          18,
+          25,
+          31,
+          37,
+          45,
+          52
+        ],
+        "total_score": 169.23,
+        "components": {
+          "base_score": 123.0,
+          "context_multiplier": 1.01,
+          "pair_bonus": 0,
+          "trio_bonus": 0,
+          "decade_penalty": 5,
+          "strategy_bonus": 50
+        },
+        "characteristics": {
+          "hot_count": 0,
+          "cold_count": 2,
+          "jackpot_favored_count": 5,
+          "near_miss_indicator_count": 5,
+          "jackpot_indicator_count": 0,
+          "decades_used": 6,
+          "max_per_decade": 3
+        }
+      },
+      "jackpot": {
+        "numbers": [
+          3,
+          4,
+          13,
+          24,
+          29,
+          31,
+          40,
+          51,
+          64,
+          66
+        ],
+        "total_score": 313.79,
+        "components": {
+          "base_score": 154.16,
+          "context_multiplier": 1.03,
+          "pair_bonus": 10,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 145
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 0,
+          "jackpot_favored_count": 9,
+          "near_miss_indicator_count": 1,
+          "jackpot_indicator_count": 1,
+          "decades_used": 6,
+          "max_per_decade": 2
+        }
+      },
+      "balanced": {
+        "numbers": [
+          3,
+          13,
+          24,
+          31,
+          36,
+          45,
+          49,
+          51,
+          52,
+          66
+        ],
+        "total_score": 234.92,
+        "components": {
+          "base_score": 169.73,
+          "context_multiplier": 1.06,
+          "pair_bonus": 5,
+          "trio_bonus": 0,
+          "decade_penalty": 0,
+          "strategy_bonus": 50
+        },
+        "characteristics": {
+          "hot_count": 1,
+          "cold_count": 1,
+          "jackpot_favored_count": 9,
+          "near_miss_indicator_count": 1,
+          "jackpot_indicator_count": 0,
+          "decades_used": 7,
+          "max_per_decade": 2
+        }
+      }
+    }
+  },
+  "summary": {
+    "top_20_numbers": [
+      3,
+      51,
+      37,
+      24,
+      4,
+      49,
+      13,
+      41,
+      36,
+      66,
+      9,
+      64,
+      31,
+      52,
+      45,
+      25,
+      40,
+      2,
+      1,
+      21
+    ],
+    "jackpot_favored_today": [
+      24
+    ],
+    "near_miss_favored_today": [
+      11,
+      17,
+      18,
+      25,
+      31
+    ],
+    "strong_pairs_in_model": [
+      [
+        9,
+        50
+      ],
+      [
+        20,
+        36
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        32,
+        64
+      ],
+      [
+        33,
+        49
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        19,
+        49
+      ],
+      [
+        42,
+        61
+      ],
+      [
+        3,
+        42
+      ],
+      [
+        27,
+        49
+      ]
+    ],
+    "strong_trios_in_model": [
+      [
+        9,
+        39,
+        50
+      ],
+      [
+        19,
+        28,
+        49
+      ],
+      [
+        27,
+        49,
+        54
+      ],
+      [
+        7,
+        9,
+        10
+      ],
+      [
+        2,
+        4,
+        59
+      ]
+    ]
+  }
+}

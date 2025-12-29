@@ -1,0 +1,751 @@
+{
+  "metadata": {
+    "hypothesis": "HYP-006",
+    "description": "Wiederkehrende Gewinnzahlen (WGZ) Analyse",
+    "generated_at": "2025-12-28T15:00:04.484520",
+    "total_draws": 2237,
+    "config": {
+      "window": 1,
+      "min_occurrences": 3,
+      "min_streak": 3,
+      "top_n": 50,
+      "recurrence_days": 7
+    }
+  },
+  "recurrence": {
+    "total_draws": 2236,
+    "draws_with_recurrence": 2236,
+    "recurrence_rate": 1.0,
+    "recurrence_percentage": 100.0,
+    "avg_recurrence_count": 5.729874776386405,
+    "max_recurrence_count": 11,
+    "top_recurring_numbers": [
+      [
+        49,
+        223
+      ],
+      [
+        39,
+        216
+      ],
+      [
+        27,
+        209
+      ],
+      [
+        9,
+        209
+      ],
+      [
+        36,
+        208
+      ],
+      [
+        66,
+        205
+      ],
+      [
+        16,
+        202
+      ],
+      [
+        64,
+        202
+      ],
+      [
+        24,
+        202
+      ],
+      [
+        42,
+        200
+      ],
+      [
+        52,
+        200
+      ],
+      [
+        59,
+        198
+      ],
+      [
+        33,
+        197
+      ],
+      [
+        53,
+        196
+      ],
+      [
+        7,
+        196
+      ],
+      [
+        68,
+        194
+      ],
+      [
+        21,
+        193
+      ],
+      [
+        50,
+        193
+      ],
+      [
+        2,
+        191
+      ],
+      [
+        10,
+        190
+      ]
+    ],
+    "consecutive_pairs": [
+      [
+        8,
+        7
+      ],
+      [
+        14,
+        3
+      ],
+      [
+        69,
+        3
+      ],
+      [
+        21,
+        2
+      ],
+      [
+        28,
+        2
+      ],
+      [
+        29,
+        2
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        7,
+        2
+      ],
+      [
+        30,
+        2
+      ],
+      [
+        23,
+        2
+      ],
+      [
+        52,
+        2
+      ],
+      [
+        46,
+        2
+      ],
+      [
+        34,
+        2
+      ]
+    ]
+  },
+  "pair_stability": {
+    "total_pairs_analyzed": 2415,
+    "stable_pairs_count": 2415,
+    "stability_score": 1.0,
+    "top_pairs": [
+      {
+        "pair": [
+          9,
+          50
+        ],
+        "count": 218
+      },
+      {
+        "pair": [
+          20,
+          36
+        ],
+        "count": 218
+      },
+      {
+        "pair": [
+          9,
+          10
+        ],
+        "count": 217
+      },
+      {
+        "pair": [
+          32,
+          64
+        ],
+        "count": 214
+      },
+      {
+        "pair": [
+          33,
+          49
+        ],
+        "count": 213
+      },
+      {
+        "pair": [
+          7,
+          10
+        ],
+        "count": 213
+      },
+      {
+        "pair": [
+          19,
+          49
+        ],
+        "count": 213
+      },
+      {
+        "pair": [
+          42,
+          61
+        ],
+        "count": 212
+      },
+      {
+        "pair": [
+          3,
+          42
+        ],
+        "count": 212
+      },
+      {
+        "pair": [
+          27,
+          49
+        ],
+        "count": 211
+      },
+      {
+        "pair": [
+          33,
+          50
+        ],
+        "count": 211
+      },
+      {
+        "pair": [
+          64,
+          66
+        ],
+        "count": 211
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "count": 211
+      },
+      {
+        "pair": [
+          24,
+          40
+        ],
+        "count": 211
+      },
+      {
+        "pair": [
+          10,
+          32
+        ],
+        "count": 210
+      },
+      {
+        "pair": [
+          2,
+          59
+        ],
+        "count": 208
+      },
+      {
+        "pair": [
+          53,
+          64
+        ],
+        "count": 208
+      },
+      {
+        "pair": [
+          3,
+          20
+        ],
+        "count": 208
+      },
+      {
+        "pair": [
+          14,
+          64
+        ],
+        "count": 208
+      },
+      {
+        "pair": [
+          38,
+          66
+        ],
+        "count": 208
+      },
+      {
+        "pair": [
+          42,
+          68
+        ],
+        "count": 207
+      },
+      {
+        "pair": [
+          20,
+          32
+        ],
+        "count": 207
+      },
+      {
+        "pair": [
+          49,
+          57
+        ],
+        "count": 207
+      },
+      {
+        "pair": [
+          39,
+          64
+        ],
+        "count": 207
+      },
+      {
+        "pair": [
+          9,
+          49
+        ],
+        "count": 207
+      },
+      {
+        "pair": [
+          10,
+          59
+        ],
+        "count": 206
+      },
+      {
+        "pair": [
+          30,
+          59
+        ],
+        "count": 206
+      },
+      {
+        "pair": [
+          36,
+          49
+        ],
+        "count": 206
+      },
+      {
+        "pair": [
+          10,
+          65
+        ],
+        "count": 206
+      },
+      {
+        "pair": [
+          49,
+          55
+        ],
+        "count": 205
+      },
+      {
+        "pair": [
+          49,
+          61
+        ],
+        "count": 205
+      },
+      {
+        "pair": [
+          28,
+          66
+        ],
+        "count": 205
+      },
+      {
+        "pair": [
+          36,
+          55
+        ],
+        "count": 205
+      },
+      {
+        "pair": [
+          9,
+          39
+        ],
+        "count": 205
+      },
+      {
+        "pair": [
+          49,
+          52
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          26,
+          43
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          24,
+          27
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          36,
+          39
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          3,
+          9
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          34,
+          49
+        ],
+        "count": 204
+      },
+      {
+        "pair": [
+          21,
+          68
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          27,
+          64
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          27,
+          38
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          49,
+          60
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          59,
+          64
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          39,
+          53
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          49,
+          66
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          10,
+          19
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          36,
+          42
+        ],
+        "count": 203
+      },
+      {
+        "pair": [
+          39,
+          50
+        ],
+        "count": 203
+      }
+    ]
+  },
+  "streaks": {
+    "numbers_with_streaks": 70,
+    "total_streaks": 2651,
+    "top_streaks": [
+      {
+        "number": 20,
+        "streak_count": 34,
+        "max_length": 9
+      },
+      {
+        "number": 63,
+        "streak_count": 27,
+        "max_length": 7
+      },
+      {
+        "number": 54,
+        "streak_count": 41,
+        "max_length": 7
+      },
+      {
+        "number": 8,
+        "streak_count": 40,
+        "max_length": 7
+      },
+      {
+        "number": 55,
+        "streak_count": 36,
+        "max_length": 7
+      },
+      {
+        "number": 34,
+        "streak_count": 40,
+        "max_length": 7
+      },
+      {
+        "number": 65,
+        "streak_count": 35,
+        "max_length": 7
+      },
+      {
+        "number": 68,
+        "streak_count": 39,
+        "max_length": 7
+      },
+      {
+        "number": 21,
+        "streak_count": 41,
+        "max_length": 6
+      },
+      {
+        "number": 35,
+        "streak_count": 27,
+        "max_length": 6
+      },
+      {
+        "number": 26,
+        "streak_count": 37,
+        "max_length": 6
+      },
+      {
+        "number": 61,
+        "streak_count": 36,
+        "max_length": 6
+      },
+      {
+        "number": 1,
+        "streak_count": 34,
+        "max_length": 6
+      },
+      {
+        "number": 24,
+        "streak_count": 43,
+        "max_length": 6
+      },
+      {
+        "number": 51,
+        "streak_count": 36,
+        "max_length": 6
+      },
+      {
+        "number": 66,
+        "streak_count": 47,
+        "max_length": 6
+      },
+      {
+        "number": 19,
+        "streak_count": 33,
+        "max_length": 6
+      },
+      {
+        "number": 12,
+        "streak_count": 41,
+        "max_length": 6
+      },
+      {
+        "number": 6,
+        "streak_count": 37,
+        "max_length": 6
+      },
+      {
+        "number": 27,
+        "streak_count": 44,
+        "max_length": 6
+      }
+    ]
+  },
+  "weekly_cycle": {
+    "total_draws": 2236,
+    "draws_by_weekday": {
+      "Montag": 319,
+      "Dienstag": 320,
+      "Mittwoch": 320,
+      "Donnerstag": 320,
+      "Freitag": 319,
+      "Samstag": 319,
+      "Sonntag": 319
+    },
+    "recurrence_by_weekday": {
+      "Montag": 1.0,
+      "Dienstag": 1.0,
+      "Mittwoch": 1.0,
+      "Donnerstag": 1.0,
+      "Freitag": 1.0,
+      "Samstag": 1.0,
+      "Sonntag": 1.0
+    },
+    "best_weekday": "Montag",
+    "worst_weekday": "Montag"
+  },
+  "recurrence_7d": {
+    "days": 7,
+    "total_draws": 2236,
+    "draws_with_recurrence": 2236,
+    "recurrence_rate": 1.0,
+    "avg_recurrence_count": 18.088998211091234,
+    "max_recurrence_count": 20,
+    "top_recurring_numbers": [
+      [
+        49,
+        645
+      ],
+      [
+        10,
+        631
+      ],
+      [
+        64,
+        628
+      ],
+      [
+        66,
+        627
+      ],
+      [
+        27,
+        622
+      ],
+      [
+        42,
+        620
+      ],
+      [
+        20,
+        618
+      ],
+      [
+        36,
+        617
+      ],
+      [
+        2,
+        613
+      ],
+      [
+        9,
+        613
+      ],
+      [
+        32,
+        604
+      ],
+      [
+        39,
+        604
+      ],
+      [
+        3,
+        601
+      ],
+      [
+        33,
+        598
+      ],
+      [
+        65,
+        596
+      ],
+      [
+        57,
+        595
+      ],
+      [
+        53,
+        594
+      ],
+      [
+        43,
+        593
+      ],
+      [
+        59,
+        592
+      ],
+      [
+        28,
+        591
+      ]
+    ]
+  },
+  "gk1_correlation": {
+    "total_gk1_events": 4,
+    "gk1_with_prior_recurrence": 4,
+    "correlation_rate": 1.0,
+    "baseline_recurrence_rate": 1.0,
+    "correlation_vs_baseline": 0.0,
+    "is_significant": false
+  },
+  "acceptance_criteria": {
+    "AC1_recurrence_rate_calculated": true,
+    "AC2_pair_stability_measured": true,
+    "AC3_gk1_correlation_computed": true,
+    "AC4_streaks_identified": true,
+    "AC5_7day_recurrence_calculated": true,
+    "AC6_weekly_cycle_analyzed": true
+  }
+}

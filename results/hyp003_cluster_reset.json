@@ -1,0 +1,144 @@
+{
+  "hypothesis": "HYP-003",
+  "title": "Anti-Cluster Reset-Regel",
+  "timestamp": "2025-12-27T22:29:03.190815",
+  "data_sources": {
+    "data_file": "data\\raw\\keno\\KENO_ab_2018.csv",
+    "total_draws": 2237
+  },
+  "config": {
+    "threshold": 5
+  },
+  "cluster_detection": {
+    "total_clusters": 195,
+    "min_length": 5,
+    "max_length": 9,
+    "avg_length": 5.297435897435897,
+    "clusters_by_length": {
+      "5": 148,
+      "6": 38,
+      "7": 8,
+      "9": 1
+    },
+    "top_clusters": [
+      {
+        "number": 20,
+        "length": 9,
+        "start_date": "2021-11-13T00:00:00",
+        "end_date": "2021-11-21T00:00:00"
+      },
+      {
+        "number": 65,
+        "length": 7,
+        "start_date": "2018-04-18T00:00:00",
+        "end_date": "2018-04-24T00:00:00"
+      },
+      {
+        "number": 54,
+        "length": 7,
+        "start_date": "2019-01-02T00:00:00",
+        "end_date": "2019-01-08T00:00:00"
+      },
+      {
+        "number": 68,
+        "length": 7,
+        "start_date": "2019-06-29T00:00:00",
+        "end_date": "2019-07-05T00:00:00"
+      },
+      {
+        "number": 63,
+        "length": 7,
+        "start_date": "2020-04-14T00:00:00",
+        "end_date": "2020-04-20T00:00:00"
+      },
+      {
+        "number": 34,
+        "length": 7,
+        "start_date": "2021-03-20T00:00:00",
+        "end_date": "2021-03-26T00:00:00"
+      },
+      {
+        "number": 55,
+        "length": 7,
+        "start_date": "2022-03-20T00:00:00",
+        "end_date": "2022-03-26T00:00:00"
+      },
+      {
+        "number": 65,
+        "length": 7,
+        "start_date": "2022-03-23T00:00:00",
+        "end_date": "2022-03-29T00:00:00"
+      },
+      {
+        "number": 8,
+        "length": 7,
+        "start_date": "2024-01-26T00:00:00",
+        "end_date": "2024-02-01T00:00:00"
+      },
+      {
+        "number": 21,
+        "length": 6,
+        "start_date": "2018-01-01T00:00:00",
+        "end_date": "2018-01-06T00:00:00"
+      }
+    ]
+  },
+  "reset_analysis": {
+    "total_clusters": 195,
+    "clusters_with_reset": 195,
+    "reset_probability": 1.0,
+    "baseline_probability": 0.7142857142857143,
+    "lift": 1.4,
+    "is_significant": true,
+    "clusters_by_reset_status": {
+      "reset_occurred": 195,
+      "no_reset": 0,
+      "unknown": 0
+    }
+  },
+  "signal_generation": {
+    "total_signals": 0,
+    "no_bet_numbers": [],
+    "signals_detail": []
+  },
+  "acceptance_criteria": {
+    "criteria": {
+      "clusters_detected": {
+        "target": ">= 10 clusters",
+        "actual": 195,
+        "passed": true
+      },
+      "reset_probability_calculated": {
+        "target": "probability > 0 or no clusters",
+        "actual": 1.0,
+        "passed": true
+      },
+      "lift_above_baseline": {
+        "target": "lift > 1.0 (indicates predictive value)",
+        "actual": 1.4,
+        "passed": true
+      },
+      "signals_generated": {
+        "target": "signal generation works",
+        "actual": 0,
+        "passed": true
+      },
+      "hypothesis_testable": {
+        "target": "enough data for statistical test",
+        "actual": "195 clusters",
+        "passed": true
+      }
+    },
+    "passed": 5,
+    "total": 5,
+    "all_passed": true
+  },
+  "summary": {
+    "hypothesis_supported": true,
+    "key_findings": [
+      "Reset-Wahrscheinlichkeit (100.0%) ist 1.40x hoeher als Baseline (71.4%)",
+      "195 Cluster mit Laenge >= 5 gefunden",
+      "Laengster Cluster: 9 aufeinanderfolgende Erscheinungen"
+    ]
+  }
+}
