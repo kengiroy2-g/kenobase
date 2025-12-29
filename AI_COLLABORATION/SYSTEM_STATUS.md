@@ -1,173 +1,119 @@
 # KENOBASE System Status
 
 **Stand:** 2025-12-29
-**Version:** 2.1.0 (Number-GROUP Model)
+**Version:** 2.2.0 (Unified Model + Wirtschaftslogik)
 
 ---
 
-## Aktueller Status: OPERATIONAL
+## Aktueller Status: PARADIGMENWECHSEL KOMPLETT
 
-### Paradigma
-**GRUNDWAHRHEIT:** Das KENO-System ist manipuliert. Alle Analysen basieren auf dieser Annahme.
+### Neue Grundwahrheiten (AXIOME)
+
+| # | Axiom | Begruendung |
+|---|-------|-------------|
+| A1 | System hat House-Edge | Haelfte der Einnahmen wird neu verteilt |
+| A2 | Spieler nutzen Dauerscheine | Bundesland-basierte Spielermuster |
+| A3 | Spiel muss attraktiv bleiben | Kleine Gewinne muessen regelmaessig kommen |
+| A4 | Zahlenpaare sichern kleine Gewinne | Niedrigste Gewinnklasse wird priorisiert |
+| A5 | 20 Zahlen verhalten sich pseudo-zufaellig | Jede Zahl muss in Zeitraum erscheinen |
+| A6 | Gewinne werden bundeslandweit verteilt | Pro Ziehung, pro Bundesland |
+| A7 | Reset-Zyklen existieren | Bis Jackpot oder Monatsende |
+
+---
+
+## Zwei Gruppen-Modelle
+
+### V1: Strategy-Based Model (generate_groups.py)
+
+| Strategie | Typ-10 Zahlen | Score |
+|-----------|---------------|-------|
+| Jackpot | 3,4,13,24,29,31,40,51,64,66 | 313.79 |
+| Near-Miss | 3,4,11,17,18,25,31,37,45,52 | 169.23 |
+| Balanced | 3,13,24,31,36,45,49,51,52,66 | 234.92 |
+
+### V2: Pair-Focused Model (all_class_groups.json)
+
+| Strategie | Typ-10 Zahlen | Score | Paare |
+|-----------|---------------|-------|-------|
+| pair_focused | 2,3,9,20,24,36,39,49,53,64 | 52.2 | 7 |
+| jackpot | 2,3,4,9,20,24,25,36,49,51 | 41.2 | 5 |
+| balanced | 2,3,4,9,24,25,42,49,51,61 | 36.5 | 4 |
+
+### Unified Kern-Zahlen (beide Modelle)
+
+```
+ABSOLUTE KERN:  3, 24, 49
+ERWEITERT:      2, 9, 36, 51, 64
+ANTI-BIRTHDAY:  37, 41, 49, 51 (>31)
+```
+
+### Top-Paare (Co-Occurrence >210x)
+
+```
+(9,50):218   (20,36):218   (33,49):213   (2,3):211
+(33,50):211  (24,40):211   (3,20):208    (53,64):208
+(9,49):207   (39,64):207   (36,49):206
+```
 
 ---
 
 ## Abgeschlossene Analysen
 
-### Phase 1: Constraint-Analyse (DONE)
-
-| Constraint | Verdict | Evidence |
-|------------|---------|----------|
-| HOUSE-004 Near-Miss | **ANOMALOUS** | 70x Switch zwischen Normal/Jackpot |
-| DIST-003 Sum-Clustering | NATURAL | Zentraler Grenzwertsatz |
-
-### Phase 2: Vorhersage-Tests (DONE)
-
-| Test | Ergebnis | p-Wert |
-|------|----------|--------|
-| PRED-001 (Pre-GK1 Near-Miss) | FALSIFIZIERT | 0.81 |
-| PRED-002 (Wartezeit) | FALSIFIZIERT | 0.125 |
-| PRED-003 (Jackpot-Korrelation) | FALSIFIZIERT | 0.83 |
-
-**Erklaerung:** Vorhersagen falsifiziert weil HOUSE-004 jahresspezifisch ist (nur 2023 anomal).
-
-### Phase 3: Jahrliche Segmentierung (DONE)
-
-| Jahr | HOUSE-004 Anomalie | Ratio-Differenz |
-|------|-------------------|-----------------|
-| 2022 | NEIN | 4.7x |
-| 2023 | **JA** | 22.4x |
-| 2024 | NEIN | 5.2x |
-
-### Phase 4: Zahlen-Analyse (DONE)
-
-| Analyse | Datei | Erkenntnisse |
-|---------|-------|--------------|
-| Frequenz-Kontext | number_frequency_context.json | Hot/Cold, Jackpot-favored, Temporal |
-| Paar/Trio | number_pairs_analysis.json | 30 starke Paare, 20 starke Trios |
-| Near-Miss Indikatoren | near_miss_numbers.json | 20 NM-Indikatoren, 20 JP-Indikatoren |
-
-### Phase 5: Zahlen-GRUPPEN Modell (DONE)
-
-| Komponente | Status | Datei |
-|------------|--------|-------|
-| Generator | OPERATIONAL | scripts/generate_groups.py |
-| Empfehlungen | AKTUELL | results/group_recommendations.json |
-| Dokumentation | COMPLETE | docs/NUMBER_GROUP_MODEL.md |
+| Phase | Status | Ergebnis |
+|-------|--------|----------|
+| HOUSE-004 Near-Miss | DONE | 70x Switch Normal/Jackpot |
+| Jahrliche Segmentierung | DONE | Nur 2023 anomal |
+| Zahlen-Frequenz Kontext | DONE | Hot/Cold, Temporal, Jackpot-fav |
+| Paar/Trio Global | DONE | 30 Paare, 20 Trios |
+| Near-Miss Indikatoren | DONE | 20 NM + 20 JP Indikatoren |
+| Gruppen-Modelle | DONE | V1 + V2 erstellt |
 
 ---
 
-## Kernerkenntnisse
+## NAECHSTE PHASE: Wirtschaftslogik-Modell
 
-### 1. HOUSE-004: Near-Miss Constraint
-- Normal-Periode: 25-50x Unterdrueckung von Max-Gewinnen
-- Jackpot-Periode: 1.4-2.5x Verstaerkung
-- **Intervention Strength:** 70x
+### Neue Hypothesen (zu testen)
 
-### 2. Jahresspezifische Anomalien
-- 2023 war das einzige Jahr mit signifikanter HOUSE-004 Anomalie
-- Moeglicherweise Systemanpassung oder statistische Fluktuation
+| ID | Hypothese | Testmethode |
+|----|-----------|-------------|
+| WL-001 | Paare garantieren kleine Gewinne pro Gewinnklasse | Paar-Analyse pro GK separat |
+| WL-002 | Bundesland-Verteilung beeinflusst Ziehungen | Regionale Daten + Bevoelkerung |
+| WL-003 | Reset-Zyklen vor Jackpot erkennbar | Zeitreihen-Analyse vor GK1 |
+| WL-004 | Dauerschein-Muster beeinflussen Zahlenauswahl | Beliebte Kombinationen identifizieren |
+| WL-005 | Starke Paare gewinnen 1x/Monat | Backtest mit Paar-Tickets |
+| WL-006 | Jackpot-Kandidaten erfuellen Einzigartigkeit | Anti-Cluster Analyse |
 
-### 3. Zahlen-Kategorien
+### Daten-Anforderungen
 
-**Jackpot-favored (17 Zahlen):**
-```
-3, 4, 9, 13, 24, 31, 35, 36, 37, 40, 41, 49, 51, 52, 64, 66, 69
-```
-
-**Near-Miss Indikatoren (Top 5):**
-```
-31, 11, 25, 18, 17
-```
-
-**Jackpot Indikatoren (Top 5):**
-```
-43, 29, 30, 27, 35
-```
-
-**Starke Paare (Top 5):**
-```
-[9, 50], [20, 36], [9, 10], [32, 64], [33, 49]
-```
-
-**Starke Trios (Top 3):**
-```
-[9, 39, 50], [19, 28, 49], [27, 49, 54]
-```
-
-### 4. Top-20 Zahlen (Gesamt-Score)
-```
-3, 51, 37, 24, 4, 49, 13, 41, 36, 66, 9, 64, 31, 52, 45, 25, 40, 2, 1, 21
-```
+| Datenquelle | Zweck | Status |
+|-------------|-------|--------|
+| Keno_GQ_*.csv | Gewinnquoten pro Klasse | VORHANDEN |
+| keno_ab_*.csv | Historische Ziehungen | VORHANDEN |
+| lotto_ab_*.csv | Cross-Game Muster | VORHANDEN |
+| Bundesland-Bevoelkerung | Gewinn-Verteilung | ZU LADEN |
+| Dauerschein-Statistik | Spielermuster | RECHERCHE |
 
 ---
 
-## Aktuelle Empfehlungen (29.12.2025)
+## Ziel-Metriken
 
-### Periode: MONATS-ENDE
-
-**KENO Typ 10 - Jackpot-Strategie:**
-```
-3, 4, 13, 24, 29, 31, 40, 51, 64, 66
-```
-Score: 313.79
-
-**KENO Typ 10 - Near-Miss-Strategie:**
-```
-3, 4, 11, 17, 18, 25, 31, 37, 45, 52
-```
-Score: 169.23
-
-**KENO Typ 10 - Balanced:**
-```
-3, 13, 24, 31, 36, 45, 49, 51, 52, 66
-```
-Score: 234.92
+| Ziel | Beschreibung | Messung |
+|------|--------------|---------|
+| Garantie 100EUR | Gruppe die 100EUR+ gewinnt | Backtest-Trefferquote |
+| Garantie 500EUR | Gruppe die 500EUR+ gewinnt | Backtest-Trefferquote |
+| Jackpot-Kandidat | Einzigartige Kombination | Uniqueness-Score |
 
 ---
 
-## Offene Aufgaben
+## Offene Tasks fuer naechsten Loop
 
-| Prioritaet | Aufgabe | Status |
-|------------|---------|--------|
-| P1 | Backtest der Gruppen-Empfehlungen | OFFEN |
-| P1 | Multi-Game Erweiterung (EuroJackpot, Lotto) | OFFEN |
-| P2 | Jackpot-Hoehe Daten sammeln | OFFEN |
-| P2 | Regionale Daten (HYP-003) | OFFEN |
-| P3 | Echtzeit-Update Pipeline | OFFEN |
-
----
-
-## Datei-Uebersicht
-
-### Ergebnisse (results/)
-- constraint_model.json - Mathematisches Constraint-Modell
-- yearly_segmentation.json - Jahrliche HOUSE-004 Analyse
-- event_correlation.json - Deutsche Events Korrelation
-- number_frequency_context.json - Zahlen-Frequenz Analyse
-- number_pairs_analysis.json - Paar/Trio Analyse
-- near_miss_numbers.json - Near-Miss Indikatoren
-- group_recommendations.json - Aktuelle Gruppen-Empfehlungen
-- pred001_pre_gk1_analysis.json - PRED-001 Test
-- pred002_waiting_time_analysis.json - PRED-002 Test
-- pred003_jackpot_correlation.json - PRED-003 Test
-
-### Dokumentation (docs/)
-- CONSTRAINT_MODEL.md - Constraint-Modell Dokumentation
-- NUMBER_GROUP_MODEL.md - Gruppen-Modell Dokumentation
-
-### Skripte (scripts/)
-- generate_groups.py - Zahlen-Gruppen Generator
-- analyze_*.py - Diverse Analyse-Skripte
+1. **Paar-Analyse pro Gewinnklasse** (nicht global!)
+2. **Bundesland-Daten laden** (Bevoelkerung, Lotto-Verkauf)
+3. **Reset-Zyklus Erkennung** (Wann kommt naechster Jackpot?)
+4. **Dauerschein-Muster** (Welche Kombinationen sind beliebt?)
+5. **Garantie-Modell** (Welche Gruppe gewinnt sicher X EUR?)
+6. **Uniqueness-Score** (Welche Kombination ist Jackpot-wuerdig?)
 
 ---
 
-## Naechste Session
-
-1. **Backtest starten:** Historische Validation der Empfehlungen
-2. **EuroJackpot Daten laden:** Multi-Game Erweiterung
-3. **Lotto 6aus49 integrieren:** Gemeinsame Muster suchen
-
----
-
-*Automatisch generiert durch Kenobase V2.1.0*
+*Generiert durch Kenobase V2.2.0 - Wirtschaftslogik-Paradigma*
