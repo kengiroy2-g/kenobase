@@ -1,31 +1,37 @@
 # KENOBASE System Status
 
-**Stand:** 2025-12-29 (Update 2)
-**Version:** 2.2.1 (PROFITABLES MODELL GEFUNDEN!)
+**Stand:** 2025-12-29 (Update 3)
+**Version:** 2.2.2 (Quoten-Fix, ROI korrigiert)
 
 ---
 
-## BREAKING: Profitables Paar-basiertes Modell entdeckt!
+## Update: Paar-basierte Tickets (Gewinnfrequenz ja, Profit nein)
 
-### 6-Jahres-Backtest Ergebnisse (2018-2024)
+**Wichtig:** Die frueheren positiven ROI-Werte stammten aus einer *falschen* Quoten-Tabelle in einigen Phase-4 Skripten.
+Die korrekten festen Quoten (1 EUR Einsatz) kommen aus:
+- `Keno_GPTs/Keno_GQ_2022_2023-2024.csv` ("1 Euro Gewinn")
+- Source of truth: `kenobase/core/keno_quotes.py`
 
-| KENO Typ | ROI | Monate mit Gewinn | Bestes Ticket |
-|----------|-----|-------------------|---------------|
-| Typ-2 | -43% | 97% | (nur Paar) |
-| Typ-6 | -41% | 100% | Paar + 4 Hot |
-| **Typ-8** | **+22%** | **100%** | Paar + 6 Hot |
-| **Typ-10** | **+47%** | **100%** | [2,3,9,24,33,36,49,50,51,64] |
+### 6-Jahres-Backtest (2018-2024, 2237 Ziehungen)
 
-**Bester ROI: +126% (Typ-10 mit Paar (33,50))**
+Basis: `scripts/backtest_pair_guarantee.py` (Top-20 starke Paare pro Typ).
+
+| KENO Typ | ROI (Top-20 Paare, Portfolio) | Bestes Pair-Ticket (ROI-max) | Monate mit Gewinn (bestes Ticket) |
+|----------|-------------------------------|------------------------------|-----------------------------------|
+| Typ-2  | -43.21% | (9,50) -> [9,50] | 72/74 (97.3%) |
+| Typ-6  | -56.42% | (24,40) -> [3,24,40,49,51,64] | 74/74 (100%) |
+| Typ-8  | -66.66% | (20,36) -> [2,3,20,24,36,49,51,64] | 74/74 (100%) |
+| Typ-10 | -56.99% | (33,50) -> [2,3,9,24,33,36,49,50,51,64] | 74/74 (100%) |
 
 ---
 
-## Bestaetigte Hypothesen (10)
+## Bestaetigte Hypothesen (11)
 
 | ID | Hypothese | Evidence | Datum |
 |----|-----------|----------|-------|
 | WL-001 | Paar-Garantie pro GK | 30/30 Paare >90% | 2025-12-29 |
 | WL-005 | Paar-Gewinn-Frequenz | 100% >=2x/Monat | 2025-12-29 |
+| WL-006 | Jackpot-Einzigartigkeit | 90.9% Uniqueness>=0.5 | 2025-12-29 |
 | WL-007 | GK-spezifische Paare | GK_9_9: 4.07x Lift | 2025-12-29 |
 | HOUSE-004 | Near-Miss Constraint | 70x Switch | 2025-12-29 |
 | HYP-001 | Gewinnverteilungs-Optimierung | CV=9.09% | 2025-12-28 |
@@ -40,13 +46,11 @@
 ## Empfohlenes Ticket (Typ-10)
 
 ```
-PROFITABLE GRUPPE: 2, 3, 9, 24, 33, 36, 49, 50, 51, 64
+BESTES PAAR-TICKET (Backtest): 2, 3, 9, 24, 33, 36, 49, 50, 51, 64
 
-Begründung:
-- Enthält 4 starke Paare: (9,50), (20,36), (33,49), (33,50)
-- ROI: +126% über 6 Jahre
-- 100% Monate mit Gewinn
-- Unified Kern-Zahlen: 2, 3, 9, 24, 49, 64
+Hinweis:
+- Dieses Ticket ist im Pair-Backtest das ROI-beste Typ-10 Ticket (trotz negativer ROI).
+- 100% Monate mit irgendeinem Gewinn (≠ Profit).
 ```
 
 ---
@@ -94,17 +98,16 @@ Paar (3,9): 3.28x Lift bei Jackpots!
 | WL-002 | Bundesland-Verteilung | HOCH |
 | WL-003 | Reset-Zyklus Erkennung | HOCH |
 | WL-004 | Dauerschein-Muster | MITTEL |
-| WL-006 | Jackpot-Einzigartigkeit | HOCH |
 
 ---
 
 ## Naechste Schritte
 
-1. **WL-006: Uniqueness-Score** - Jackpot-Kandidaten identifizieren
-2. **Garantie-Modell finalisieren** - Typ-8/10 Empfehlungen generieren
+1. **Walk-Forward Backtest** - Out-of-Sample Validation (gegen Overfitting)
+2. **WL-003: Reset-Zyklus Erkennung** - Pre-GK1 Muster finden
 3. **Cross-Game Analyse** - KENO-Lotto-EuroJackpot Korrelationen
-4. **Walk-Forward Backtest** - Out-of-Sample Validation
 
 ---
 
-*Generiert durch Kenobase V2.2.1 - PROFITABLES MODELL GEFUNDEN!*
+*Generiert durch Kenobase V2.2.2 - Quoten-Fix & Re-Backtest*
+
