@@ -1,0 +1,2050 @@
+{
+  "metadata": {
+    "analysis_date": "2025-12-29T11:48:29.119953",
+    "total_draws": 2237,
+    "pairs_tested": 20,
+    "keno_types": [
+      2,
+      6,
+      8,
+      10
+    ]
+  },
+  "by_type": {
+    "typ_2": {
+      "total_invested": 44740,
+      "total_won": 25410,
+      "wins_by_class": {
+        "2": 4235
+      },
+      "best_pair": "(9,50)",
+      "worst_pair": "(38,66)",
+      "pair_results": [
+        {
+          "pair": "(9,50)",
+          "ticket": [
+            9,
+            50
+          ],
+          "total_invested": 2237,
+          "total_won": 1308,
+          "roi": -0.4152883325882879,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 2.945945945945946,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 218
+          }
+        },
+        {
+          "pair": "(20,36)",
+          "ticket": [
+            20,
+            36
+          ],
+          "total_invested": 2237,
+          "total_won": 1308,
+          "roi": -0.4152883325882879,
+          "months_with_win": 70,
+          "total_months": 74,
+          "win_rate_monthly": 0.9459459459459459,
+          "avg_wins_per_month": 2.945945945945946,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 218
+          }
+        },
+        {
+          "pair": "(9,10)",
+          "ticket": [
+            9,
+            10
+          ],
+          "total_invested": 2237,
+          "total_won": 1302,
+          "roi": -0.4179704962002682,
+          "months_with_win": 71,
+          "total_months": 74,
+          "win_rate_monthly": 0.9594594594594594,
+          "avg_wins_per_month": 2.9324324324324325,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 217
+          }
+        },
+        {
+          "pair": "(32,64)",
+          "ticket": [
+            32,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1284,
+          "roi": -0.4260169870362092,
+          "months_with_win": 71,
+          "total_months": 74,
+          "win_rate_monthly": 0.9594594594594594,
+          "avg_wins_per_month": 2.891891891891892,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 214
+          }
+        },
+        {
+          "pair": "(33,49)",
+          "ticket": [
+            33,
+            49
+          ],
+          "total_invested": 2237,
+          "total_won": 1278,
+          "roi": -0.42869915064818953,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 2.8783783783783785,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 213
+          }
+        },
+        {
+          "pair": "(7,10)",
+          "ticket": [
+            7,
+            10
+          ],
+          "total_invested": 2237,
+          "total_won": 1278,
+          "roi": -0.42869915064818953,
+          "months_with_win": 71,
+          "total_months": 74,
+          "win_rate_monthly": 0.9594594594594594,
+          "avg_wins_per_month": 2.8783783783783785,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 213
+          }
+        },
+        {
+          "pair": "(19,49)",
+          "ticket": [
+            19,
+            49
+          ],
+          "total_invested": 2237,
+          "total_won": 1278,
+          "roi": -0.42869915064818953,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 2.8783783783783785,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 213
+          }
+        },
+        {
+          "pair": "(42,61)",
+          "ticket": [
+            42,
+            61
+          ],
+          "total_invested": 2237,
+          "total_won": 1272,
+          "roi": -0.43138131426016985,
+          "months_with_win": 69,
+          "total_months": 74,
+          "win_rate_monthly": 0.9324324324324325,
+          "avg_wins_per_month": 2.864864864864865,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 212
+          }
+        },
+        {
+          "pair": "(3,42)",
+          "ticket": [
+            3,
+            42
+          ],
+          "total_invested": 2237,
+          "total_won": 1272,
+          "roi": -0.43138131426016985,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 2.864864864864865,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 212
+          }
+        },
+        {
+          "pair": "(27,49)",
+          "ticket": [
+            27,
+            49
+          ],
+          "total_invested": 2237,
+          "total_won": 1266,
+          "roi": -0.4340634778721502,
+          "months_with_win": 68,
+          "total_months": 74,
+          "win_rate_monthly": 0.918918918918919,
+          "avg_wins_per_month": 2.8513513513513513,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 211
+          }
+        },
+        {
+          "pair": "(33,50)",
+          "ticket": [
+            33,
+            50
+          ],
+          "total_invested": 2237,
+          "total_won": 1266,
+          "roi": -0.4340634778721502,
+          "months_with_win": 70,
+          "total_months": 74,
+          "win_rate_monthly": 0.9459459459459459,
+          "avg_wins_per_month": 2.8513513513513513,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 211
+          }
+        },
+        {
+          "pair": "(64,66)",
+          "ticket": [
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 1266,
+          "roi": -0.4340634778721502,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 2.8513513513513513,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 211
+          }
+        },
+        {
+          "pair": "(2,3)",
+          "ticket": [
+            2,
+            3
+          ],
+          "total_invested": 2237,
+          "total_won": 1266,
+          "roi": -0.4340634778721502,
+          "months_with_win": 71,
+          "total_months": 74,
+          "win_rate_monthly": 0.9594594594594594,
+          "avg_wins_per_month": 2.8513513513513513,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 211
+          }
+        },
+        {
+          "pair": "(24,40)",
+          "ticket": [
+            24,
+            40
+          ],
+          "total_invested": 2237,
+          "total_won": 1266,
+          "roi": -0.4340634778721502,
+          "months_with_win": 69,
+          "total_months": 74,
+          "win_rate_monthly": 0.9324324324324325,
+          "avg_wins_per_month": 2.8513513513513513,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 211
+          }
+        },
+        {
+          "pair": "(10,32)",
+          "ticket": [
+            10,
+            32
+          ],
+          "total_invested": 2237,
+          "total_won": 1260,
+          "roi": -0.43674564148413053,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 2.8378378378378377,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 210
+          }
+        },
+        {
+          "pair": "(2,59)",
+          "ticket": [
+            2,
+            59
+          ],
+          "total_invested": 2237,
+          "total_won": 1248,
+          "roi": -0.4421099687080912,
+          "months_with_win": 70,
+          "total_months": 74,
+          "win_rate_monthly": 0.9459459459459459,
+          "avg_wins_per_month": 2.810810810810811,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 208
+          }
+        },
+        {
+          "pair": "(53,64)",
+          "ticket": [
+            53,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1248,
+          "roi": -0.4421099687080912,
+          "months_with_win": 70,
+          "total_months": 74,
+          "win_rate_monthly": 0.9459459459459459,
+          "avg_wins_per_month": 2.810810810810811,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 208
+          }
+        },
+        {
+          "pair": "(3,20)",
+          "ticket": [
+            3,
+            20
+          ],
+          "total_invested": 2237,
+          "total_won": 1248,
+          "roi": -0.4421099687080912,
+          "months_with_win": 68,
+          "total_months": 74,
+          "win_rate_monthly": 0.918918918918919,
+          "avg_wins_per_month": 2.810810810810811,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 208
+          }
+        },
+        {
+          "pair": "(14,64)",
+          "ticket": [
+            14,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1248,
+          "roi": -0.4421099687080912,
+          "months_with_win": 68,
+          "total_months": 74,
+          "win_rate_monthly": 0.918918918918919,
+          "avg_wins_per_month": 2.810810810810811,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 208
+          }
+        },
+        {
+          "pair": "(38,66)",
+          "ticket": [
+            38,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 1248,
+          "roi": -0.4421099687080912,
+          "months_with_win": 71,
+          "total_months": 74,
+          "win_rate_monthly": 0.9594594594594594,
+          "avg_wins_per_month": 2.810810810810811,
+          "avg_win_amount": 6.0,
+          "wins_by_class": {
+            "2": 208
+          }
+        }
+      ],
+      "best_roi": -0.4152883325882879,
+      "worst_roi": -0.4421099687080912
+    },
+    "typ_6": {
+      "total_invested": 44740,
+      "total_won": 26338,
+      "wins_by_class": {
+        "3": 8253,
+        "4": 2280,
+        "5": 279,
+        "6": 5
+      },
+      "best_pair": "(20,36)",
+      "worst_pair": "(2,3)",
+      "pair_results": [
+        {
+          "pair": "(20,36)",
+          "ticket": [
+            3,
+            20,
+            36,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1728,
+          "roi": -0.22753687974966472,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.527027027027027,
+          "avg_win_amount": 3.1023339317773786,
+          "wins_by_class": {
+            "4": 126,
+            "3": 418,
+            "5": 12,
+            "6": 1
+          }
+        },
+        {
+          "pair": "(24,40)",
+          "ticket": [
+            3,
+            24,
+            40,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1705,
+          "roi": -0.23781850692892267,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.351351351351352,
+          "avg_win_amount": 3.1341911764705883,
+          "wins_by_class": {
+            "3": 415,
+            "5": 15,
+            "4": 113,
+            "6": 1
+          }
+        },
+        {
+          "pair": "(38,66)",
+          "ticket": [
+            3,
+            38,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 1665,
+          "roi": -0.2556995976754582,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.351351351351352,
+          "avg_win_amount": 3.0606617647058822,
+          "wins_by_class": {
+            "3": 420,
+            "4": 110,
+            "6": 1,
+            "5": 13
+          }
+        },
+        {
+          "pair": "(2,59)",
+          "ticket": [
+            2,
+            3,
+            49,
+            51,
+            59,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1648,
+          "roi": -0.26329906124273583,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.148648648648648,
+          "avg_win_amount": 3.11531190926276,
+          "wins_by_class": {
+            "3": 388,
+            "4": 134,
+            "5": 6,
+            "6": 1
+          }
+        },
+        {
+          "pair": "(3,20)",
+          "ticket": [
+            3,
+            20,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1631,
+          "roi": -0.2708985248100134,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.162162162162162,
+          "avg_win_amount": 3.077358490566038,
+          "wins_by_class": {
+            "4": 112,
+            "3": 406,
+            "5": 11,
+            "6": 1
+          }
+        },
+        {
+          "pair": "(42,61)",
+          "ticket": [
+            3,
+            42,
+            49,
+            51,
+            61,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1268,
+          "roi": -0.43316942333482344,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.486486486486487,
+          "avg_win_amount": 2.288808664259928,
+          "wins_by_class": {
+            "4": 112,
+            "3": 423,
+            "5": 19
+          }
+        },
+        {
+          "pair": "(27,49)",
+          "ticket": [
+            3,
+            24,
+            27,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1252,
+          "roi": -0.4403218596334376,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.27027027027027,
+          "avg_win_amount": 2.3271375464684017,
+          "wins_by_class": {
+            "3": 407,
+            "4": 112,
+            "5": 19
+          }
+        },
+        {
+          "pair": "(9,50)",
+          "ticket": [
+            3,
+            9,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1236,
+          "roi": -0.44747429593205185,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.216216216216216,
+          "avg_win_amount": 2.3146067415730336,
+          "wins_by_class": {
+            "3": 391,
+            "4": 130,
+            "5": 13
+          }
+        },
+        {
+          "pair": "(10,32)",
+          "ticket": [
+            3,
+            10,
+            32,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1229,
+          "roi": -0.4506034868126956,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.445945945945946,
+          "avg_win_amount": 2.2304900181488203,
+          "wins_by_class": {
+            "3": 419,
+            "5": 15,
+            "4": 117
+          }
+        },
+        {
+          "pair": "(33,50)",
+          "ticket": [
+            3,
+            33,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1217,
+          "roi": -0.45596781403665626,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.175675675675675,
+          "avg_win_amount": 2.2919020715630887,
+          "wins_by_class": {
+            "3": 392,
+            "4": 126,
+            "5": 13
+          }
+        },
+        {
+          "pair": "(14,64)",
+          "ticket": [
+            3,
+            14,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1213,
+          "roi": -0.4577559231113098,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.0675675675675675,
+          "avg_win_amount": 2.3193116634799233,
+          "wins_by_class": {
+            "3": 398,
+            "4": 106,
+            "5": 19
+          }
+        },
+        {
+          "pair": "(9,10)",
+          "ticket": [
+            3,
+            9,
+            10,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1210,
+          "roi": -0.45909700491729993,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.4324324324324325,
+          "avg_win_amount": 2.2,
+          "wins_by_class": {
+            "3": 425,
+            "4": 109,
+            "5": 16
+          }
+        },
+        {
+          "pair": "(33,49)",
+          "ticket": [
+            3,
+            24,
+            33,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1203,
+          "roi": -0.46222619579794366,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.256756756756757,
+          "avg_win_amount": 2.2402234636871508,
+          "wins_by_class": {
+            "4": 107,
+            "3": 413,
+            "5": 17
+          }
+        },
+        {
+          "pair": "(32,64)",
+          "ticket": [
+            3,
+            24,
+            32,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1200,
+          "roi": -0.46356727760393385,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.1891891891891895,
+          "avg_win_amount": 2.255639097744361,
+          "wins_by_class": {
+            "3": 405,
+            "5": 16,
+            "4": 111
+          }
+        },
+        {
+          "pair": "(64,66)",
+          "ticket": [
+            3,
+            24,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 1193,
+          "roi": -0.4666964684845776,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.5,
+          "avg_win_amount": 2.1495495495495494,
+          "wins_by_class": {
+            "3": 423,
+            "4": 121,
+            "5": 11
+          }
+        },
+        {
+          "pair": "(3,42)",
+          "ticket": [
+            3,
+            24,
+            42,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1181,
+          "roi": -0.4720607957085382,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.283783783783784,
+          "avg_win_amount": 2.1910946196660483,
+          "wins_by_class": {
+            "3": 416,
+            "4": 108,
+            "5": 15
+          }
+        },
+        {
+          "pair": "(7,10)",
+          "ticket": [
+            3,
+            7,
+            10,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1160,
+          "roi": -0.4814483683504694,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.081081081081081,
+          "avg_win_amount": 2.213740458015267,
+          "wins_by_class": {
+            "4": 110,
+            "3": 400,
+            "5": 14
+          }
+        },
+        {
+          "pair": "(19,49)",
+          "ticket": [
+            3,
+            19,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1156,
+          "roi": -0.48323647742512293,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.378378378378378,
+          "avg_win_amount": 2.1172161172161172,
+          "wins_by_class": {
+            "3": 416,
+            "4": 121,
+            "5": 9
+          }
+        },
+        {
+          "pair": "(53,64)",
+          "ticket": [
+            3,
+            24,
+            49,
+            51,
+            53,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1122,
+          "roi": -0.49843540455967816,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.45945945945946,
+          "avg_win_amount": 2.032608695652174,
+          "wins_by_class": {
+            "3": 442,
+            "4": 97,
+            "5": 13
+          }
+        },
+        {
+          "pair": "(2,3)",
+          "ticket": [
+            2,
+            3,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 1121,
+          "roi": -0.4988824318283415,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 7.391891891891892,
+          "avg_win_amount": 2.049360146252285,
+          "wins_by_class": {
+            "3": 436,
+            "5": 13,
+            "4": 98
+          }
+        }
+      ],
+      "best_roi": -0.22753687974966472,
+      "worst_roi": -0.4988824318283415
+    },
+    "typ_8": {
+      "total_invested": 44740,
+      "total_won": 54562,
+      "wins_by_class": {
+        "5": 1564,
+        "4": 5961,
+        "6": 200,
+        "7": 7
+      },
+      "best_pair": "(20,36)",
+      "worst_pair": "(2,59)",
+      "pair_results": [
+        {
+          "pair": "(20,36)",
+          "ticket": [
+            2,
+            3,
+            20,
+            24,
+            36,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3660,
+          "roi": 0.6361198033080018,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.337837837837838,
+          "avg_win_amount": 9.265822784810126,
+          "wins_by_class": {
+            "4": 295,
+            "5": 87,
+            "6": 12,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(3,42)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            42,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3438,
+          "roi": 0.5368797496647295,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.04054054054054,
+          "avg_win_amount": 9.2171581769437,
+          "wins_by_class": {
+            "4": 284,
+            "5": 77,
+            "6": 11,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(27,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            27,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3414,
+          "roi": 0.5261510952168083,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.202702702702703,
+          "avg_win_amount": 8.867532467532467,
+          "wins_by_class": {
+            "4": 302,
+            "5": 71,
+            "6": 11,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(10,32)",
+          "ticket": [
+            2,
+            3,
+            10,
+            24,
+            32,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3348,
+          "roi": 0.49664729548502456,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.202702702702703,
+          "avg_win_amount": 8.696103896103896,
+          "wins_by_class": {
+            "4": 299,
+            "7": 1,
+            "5": 75,
+            "6": 10
+          }
+        },
+        {
+          "pair": "(42,61)",
+          "ticket": [
+            2,
+            3,
+            24,
+            42,
+            49,
+            51,
+            61,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3292,
+          "roi": 0.47161376843987485,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.391891891891892,
+          "avg_win_amount": 8.25062656641604,
+          "wins_by_class": {
+            "4": 301,
+            "5": 89,
+            "6": 8,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(32,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            32,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3116,
+          "roi": 0.39293696915511844,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.081081081081081,
+          "avg_win_amount": 8.287234042553191,
+          "wins_by_class": {
+            "6": 7,
+            "4": 283,
+            "5": 85,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(33,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            33,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3050,
+          "roi": 0.3634331694233348,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.135135135135135,
+          "avg_win_amount": 8.026315789473685,
+          "wins_by_class": {
+            "4": 285,
+            "5": 88,
+            "6": 6,
+            "7": 1
+          }
+        },
+        {
+          "pair": "(2,3)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2876,
+          "roi": 0.28565042467590523,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.22972972972973,
+          "avg_win_amount": 7.431524547803617,
+          "wins_by_class": {
+            "5": 79,
+            "4": 293,
+            "6": 15
+          }
+        },
+        {
+          "pair": "(14,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            14,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2654,
+          "roi": 0.186410371032633,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 5.148648648648648,
+          "avg_win_amount": 6.965879265091863,
+          "wins_by_class": {
+            "4": 302,
+            "5": 65,
+            "6": 14
+          }
+        },
+        {
+          "pair": "(33,50)",
+          "ticket": [
+            2,
+            3,
+            24,
+            33,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2580,
+          "roi": 0.15333035315154225,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.108108108108108,
+          "avg_win_amount": 6.825396825396825,
+          "wins_by_class": {
+            "4": 285,
+            "5": 81,
+            "6": 12
+          }
+        },
+        {
+          "pair": "(3,20)",
+          "ticket": [
+            2,
+            3,
+            9,
+            20,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2568,
+          "roi": 0.1479660259275816,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.243243243243243,
+          "avg_win_amount": 6.618556701030927,
+          "wins_by_class": {
+            "4": 299,
+            "5": 77,
+            "6": 12
+          }
+        },
+        {
+          "pair": "(64,66)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 2498,
+          "roi": 0.1166741171211444,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.162162162162162,
+          "avg_win_amount": 6.539267015706806,
+          "wins_by_class": {
+            "5": 82,
+            "4": 289,
+            "6": 11
+          }
+        },
+        {
+          "pair": "(9,10)",
+          "ticket": [
+            2,
+            3,
+            9,
+            10,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2462,
+          "roi": 0.10058113544926241,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.243243243243243,
+          "avg_win_amount": 6.345360824742268,
+          "wins_by_class": {
+            "6": 11,
+            "5": 76,
+            "4": 301
+          }
+        },
+        {
+          "pair": "(24,40)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            40,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2342,
+          "roi": 0.04693786320965579,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.527027027027027,
+          "avg_win_amount": 5.726161369193154,
+          "wins_by_class": {
+            "4": 331,
+            "6": 10,
+            "5": 68
+          }
+        },
+        {
+          "pair": "(38,66)",
+          "ticket": [
+            2,
+            3,
+            24,
+            38,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 2256,
+          "roi": 0.008493518104604381,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.135135135135135,
+          "avg_win_amount": 5.936842105263158,
+          "wins_by_class": {
+            "4": 283,
+            "5": 89,
+            "6": 8
+          }
+        },
+        {
+          "pair": "(9,50)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2244,
+          "roi": 0.0031291908806437194,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.256756756756757,
+          "avg_win_amount": 5.768637532133676,
+          "wins_by_class": {
+            "5": 73,
+            "4": 307,
+            "6": 9
+          }
+        },
+        {
+          "pair": "(53,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            49,
+            51,
+            53,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2222,
+          "roi": -0.006705409029950827,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.3108108108108105,
+          "avg_win_amount": 5.653944020356234,
+          "wins_by_class": {
+            "5": 57,
+            "6": 10,
+            "4": 326
+          }
+        },
+        {
+          "pair": "(7,10)",
+          "ticket": [
+            2,
+            3,
+            7,
+            10,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2214,
+          "roi": -0.010281627179257935,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.121621621621622,
+          "avg_win_amount": 5.841688654353562,
+          "wins_by_class": {
+            "4": 287,
+            "6": 8,
+            "5": 84
+          }
+        },
+        {
+          "pair": "(19,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            19,
+            24,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2186,
+          "roi": -0.022798390701832812,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.364864864864865,
+          "avg_win_amount": 5.506297229219143,
+          "wins_by_class": {
+            "5": 76,
+            "4": 313,
+            "6": 8
+          }
+        },
+        {
+          "pair": "(2,59)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            49,
+            51,
+            59,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2142,
+          "roi": -0.0424675905230219,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 5.243243243243243,
+          "avg_win_amount": 5.520618556701031,
+          "wins_by_class": {
+            "4": 296,
+            "5": 85,
+            "6": 7
+          }
+        }
+      ],
+      "best_roi": 0.6361198033080018,
+      "worst_roi": -0.0424675905230219
+    },
+    "typ_10": {
+      "total_invested": 44740,
+      "total_won": 65638,
+      "wins_by_class": {
+        "5": 4095,
+        "6": 1091,
+        "0": 899,
+        "7": 220,
+        "8": 5
+      },
+      "best_pair": "(33,50)",
+      "worst_pair": "(2,3)",
+      "pair_results": [
+        {
+          "pair": "(33,50)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            33,
+            36,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 5062,
+          "roi": 1.2628520339740723,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.621621621621622,
+          "avg_win_amount": 14.801169590643275,
+          "wins_by_class": {
+            "0": 51,
+            "5": 231,
+            "7": 11,
+            "6": 47,
+            "8": 2
+          }
+        },
+        {
+          "pair": "(42,61)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            42,
+            49,
+            51,
+            61,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 4522,
+          "roi": 1.0214573088958427,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.4324324324324325,
+          "avg_win_amount": 13.786585365853659,
+          "wins_by_class": {
+            "0": 46,
+            "5": 206,
+            "6": 60,
+            "8": 1,
+            "7": 15
+          }
+        },
+        {
+          "pair": "(7,10)",
+          "ticket": [
+            2,
+            3,
+            7,
+            9,
+            10,
+            24,
+            36,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3824,
+          "roi": 0.7094322753687975,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.324324324324325,
+          "avg_win_amount": 11.95,
+          "wins_by_class": {
+            "0": 47,
+            "6": 61,
+            "5": 203,
+            "7": 8,
+            "8": 1
+          }
+        },
+        {
+          "pair": "(32,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            32,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3674,
+          "roi": 0.6423781850692892,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.256756756756757,
+          "avg_win_amount": 11.663492063492063,
+          "wins_by_class": {
+            "5": 187,
+            "6": 69,
+            "0": 52,
+            "7": 6,
+            "8": 1
+          }
+        },
+        {
+          "pair": "(38,66)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            38,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 3387,
+          "roi": 0.5140813589628968,
+          "months_with_win": 72,
+          "total_months": 74,
+          "win_rate_monthly": 0.972972972972973,
+          "avg_wins_per_month": 4.202702702702703,
+          "avg_win_amount": 10.890675241157556,
+          "wins_by_class": {
+            "5": 202,
+            "6": 53,
+            "7": 15,
+            "0": 41
+          }
+        },
+        {
+          "pair": "(3,42)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            41,
+            42,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3368,
+          "roi": 0.5055878408582923,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.202702702702703,
+          "avg_win_amount": 10.829581993569132,
+          "wins_by_class": {
+            "5": 200,
+            "6": 52,
+            "0": 44,
+            "7": 15
+          }
+        },
+        {
+          "pair": "(20,36)",
+          "ticket": [
+            2,
+            3,
+            9,
+            20,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3299,
+          "roi": 0.4747429593205186,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.202702702702703,
+          "avg_win_amount": 10.607717041800644,
+          "wins_by_class": {
+            "5": 201,
+            "0": 42,
+            "6": 54,
+            "7": 14
+          }
+        },
+        {
+          "pair": "(3,20)",
+          "ticket": [
+            2,
+            3,
+            9,
+            20,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3299,
+          "roi": 0.4747429593205186,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.202702702702703,
+          "avg_win_amount": 10.607717041800644,
+          "wins_by_class": {
+            "5": 201,
+            "0": 42,
+            "6": 54,
+            "7": 14
+          }
+        },
+        {
+          "pair": "(10,32)",
+          "ticket": [
+            2,
+            3,
+            9,
+            10,
+            24,
+            32,
+            36,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3207,
+          "roi": 0.4336164506034868,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.391891891891892,
+          "avg_win_amount": 9.867692307692307,
+          "wins_by_class": {
+            "0": 46,
+            "7": 12,
+            "6": 58,
+            "5": 209
+          }
+        },
+        {
+          "pair": "(27,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            27,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3200,
+          "roi": 0.4304872597228431,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.243243243243243,
+          "avg_win_amount": 10.19108280254777,
+          "wins_by_class": {
+            "5": 203,
+            "0": 45,
+            "6": 53,
+            "7": 13
+          }
+        },
+        {
+          "pair": "(64,66)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64,
+            66
+          ],
+          "total_invested": 2237,
+          "total_won": 3091,
+          "roi": 0.38176128743853377,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.256756756756757,
+          "avg_win_amount": 9.812698412698413,
+          "wins_by_class": {
+            "5": 216,
+            "0": 38,
+            "6": 49,
+            "7": 12
+          }
+        },
+        {
+          "pair": "(24,40)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            40,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3047,
+          "roi": 0.3620920876173447,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.418918918918919,
+          "avg_win_amount": 9.318042813455657,
+          "wins_by_class": {
+            "5": 213,
+            "6": 52,
+            "0": 51,
+            "7": 11
+          }
+        },
+        {
+          "pair": "(14,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            14,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 3038,
+          "roi": 0.3580688421993742,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.0675675675675675,
+          "avg_win_amount": 10.093023255813954,
+          "wins_by_class": {
+            "5": 199,
+            "0": 39,
+            "6": 51,
+            "7": 12
+          }
+        },
+        {
+          "pair": "(9,50)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            41,
+            49,
+            50,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2950,
+          "roi": 0.31873044255699595,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.256756756756757,
+          "avg_win_amount": 9.365079365079366,
+          "wins_by_class": {
+            "5": 204,
+            "6": 56,
+            "0": 45,
+            "7": 10
+          }
+        },
+        {
+          "pair": "(2,59)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            41,
+            49,
+            51,
+            59,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2947,
+          "roi": 0.3173893607510058,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.256756756756757,
+          "avg_win_amount": 9.355555555555556,
+          "wins_by_class": {
+            "5": 203,
+            "0": 46,
+            "6": 56,
+            "7": 10
+          }
+        },
+        {
+          "pair": "(9,10)",
+          "ticket": [
+            2,
+            3,
+            9,
+            10,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2915,
+          "roi": 0.30308448815377736,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.202702702702703,
+          "avg_win_amount": 9.37299035369775,
+          "wins_by_class": {
+            "6": 53,
+            "5": 208,
+            "0": 40,
+            "7": 10
+          }
+        },
+        {
+          "pair": "(33,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            33,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2909,
+          "roi": 0.30040232454179705,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.216216216216216,
+          "avg_win_amount": 9.323717948717949,
+          "wins_by_class": {
+            "5": 201,
+            "0": 47,
+            "6": 54,
+            "7": 10
+          }
+        },
+        {
+          "pair": "(19,49)",
+          "ticket": [
+            2,
+            3,
+            9,
+            19,
+            24,
+            36,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2837,
+          "roi": 0.2682163611980331,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.324324324324325,
+          "avg_win_amount": 8.865625,
+          "wins_by_class": {
+            "5": 213,
+            "6": 52,
+            "0": 46,
+            "7": 9
+          }
+        },
+        {
+          "pair": "(53,64)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            41,
+            49,
+            51,
+            53,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2680,
+          "roi": 0.19803308001788109,
+          "months_with_win": 73,
+          "total_months": 74,
+          "win_rate_monthly": 0.9864864864864865,
+          "avg_wins_per_month": 4.121621621621622,
+          "avg_win_amount": 8.78688524590164,
+          "wins_by_class": {
+            "5": 199,
+            "6": 53,
+            "0": 45,
+            "7": 8
+          }
+        },
+        {
+          "pair": "(2,3)",
+          "ticket": [
+            2,
+            3,
+            9,
+            24,
+            36,
+            37,
+            41,
+            49,
+            51,
+            64
+          ],
+          "total_invested": 2237,
+          "total_won": 2382,
+          "roi": 0.06481895395619133,
+          "months_with_win": 74,
+          "total_months": 74,
+          "win_rate_monthly": 1.0,
+          "avg_wins_per_month": 4.0675675675675675,
+          "avg_win_amount": 7.913621262458472,
+          "wins_by_class": {
+            "5": 196,
+            "0": 46,
+            "6": 54,
+            "7": 5
+          }
+        }
+      ],
+      "best_roi": 1.2628520339740723,
+      "worst_roi": 0.06481895395619133
+    }
+  },
+  "by_pair": {},
+  "monthly_summary": {},
+  "guarantee_thresholds": {
+    "100_eur": {
+      "pairs_meeting": 80,
+      "pairs_tested": 80
+    },
+    "500_eur": {
+      "pairs_meeting": 80,
+      "pairs_tested": 80
+    },
+    "monthly_win": {
+      "pairs_meeting": 80,
+      "pairs_tested": 80
+    }
+  },
+  "wl005_status": "BESTAETIGT"
+}
