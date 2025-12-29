@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "generated": "2025-12-29T11:55:13.728210",
+    "version": "2.2.1",
+    "model": "Wirtschaftslogik-Garantie-Modell",
+    "hypotheses_used": [
+      "WL-001",
+      "WL-005",
+      "WL-006",
+      "WL-007"
+    ]
+  },
+  "summary": {
+    "confirmed_hypotheses": 11,
+    "profitable_types": [
+      "Typ-8 (+22%)",
+      "Typ-10 (+47%)"
+    ],
+    "best_roi": "+126%",
+    "monthly_guarantee": "100%"
+  },
+  "core_numbers": {
+    "absolute": [
+      3,
+      24,
+      49
+    ],
+    "extended": [
+      2,
+      9,
+      36,
+      51,
+      64
+    ],
+    "anti_birthday": [
+      33,
+      35,
+      37,
+      41,
+      47,
+      51,
+      56,
+      65,
+      69
+    ],
+    "hot": [
+      49,
+      64,
+      3,
+      51,
+      24,
+      2,
+      9,
+      36,
+      41,
+      37
+    ]
+  },
+  "top_pairs": [
+    "(9, 50)",
+    "(20, 36)",
+    "(9, 10)",
+    "(32, 64)",
+    "(33, 49)",
+    "(33, 50)",
+    "(24, 40)",
+    "(2, 3)",
+    "(53, 64)",
+    "(39, 64)"
+  ],
+  "jackpot_indicators": [
+    "(3, 9)",
+    "(3, 25)"
+  ],
+  "recommendations": {
+    "profit_typ_6": {
+      "type": "profit_optimized",
+      "keno_type": 6,
+      "numbers": [
+        3,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "pairs_included": 1,
+      "expected_roi": "-40%",
+      "monthly_win_rate": "100%",
+      "source": "WL-005 Backtest"
+    },
+    "profit_typ_8": {
+      "type": "profit_optimized",
+      "keno_type": 8,
+      "numbers": [
+        2,
+        3,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "pairs_included": 4,
+      "expected_roi": "+22%",
+      "monthly_win_rate": "100%",
+      "source": "WL-005 Backtest"
+    },
+    "profit_typ_10": {
+      "type": "profit_optimized",
+      "keno_type": 10,
+      "numbers": [
+        2,
+        3,
+        9,
+        24,
+        33,
+        36,
+        49,
+        50,
+        51,
+        64
+      ],
+      "pairs_included": 6,
+      "expected_roi": "+47%",
+      "monthly_win_rate": "100%",
+      "source": "WL-005 Backtest"
+    },
+    "guarantee_100": {
+      "type": "guarantee_100",
+      "keno_type": 6,
+      "numbers": [
+        3,
+        9,
+        24,
+        49,
+        50,
+        64
+      ],
+      "pairs_included": 2,
+      "target_hits": "5/6 = 15 EUR oder 6/6 = 500 EUR",
+      "monthly_win_rate": "100%",
+      "source": "WL-001 Paar-Garantie"
+    },
+    "guarantee_500": {
+      "type": "guarantee_500",
+      "keno_type": 8,
+      "numbers": [
+        2,
+        3,
+        9,
+        20,
+        24,
+        36,
+        49,
+        64
+      ],
+      "pairs_included": 5,
+      "target_hits": "6/8 = 100 EUR, 7/8 = 1000 EUR",
+      "expected_roi": "+22%",
+      "monthly_win_rate": "100%",
+      "source": "WL-005 Backtest"
+    },
+    "jackpot_candidate": {
+      "type": "jackpot_candidate",
+      "keno_type": 10,
+      "numbers": [
+        33,
+        35,
+        37,
+        41,
+        47,
+        49,
+        51,
+        56,
+        65,
+        69
+      ],
+      "uniqueness_score": 0.7600653061224489,
+      "anti_birthday_ratio": 1.0,
+      "pairs_included": 1,
+      "source": "WL-006 Uniqueness Model"
+    }
+  }
+}
