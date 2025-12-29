@@ -1,0 +1,826 @@
+{
+  "analysis_date": "2025-12-29T21:09:44.532874",
+  "year": 2024,
+  "months_analyzed": [
+    1,
+    2
+  ],
+  "comparison": {
+    "typ_9": {
+      "with_warning": {
+        "invested": 35,
+        "won": 112,
+        "roi": 220.0
+      },
+      "without_warning": {
+        "invested": 49,
+        "won": 116,
+        "roi": 136.73
+      },
+      "difference": 83.27
+    },
+    "typ_8": {
+      "with_warning": {
+        "invested": 35,
+        "won": 130,
+        "roi": 271.43
+      },
+      "without_warning": {
+        "invested": 49,
+        "won": 132,
+        "roi": 169.39
+      },
+      "difference": 102.04
+    },
+    "typ_10": {
+      "with_warning": {
+        "invested": 35,
+        "won": 87,
+        "roi": 148.57
+      },
+      "without_warning": {
+        "invested": 49,
+        "won": 97,
+        "roi": 97.96
+      },
+      "difference": 50.61
+    },
+    "typ_7": {
+      "with_warning": {
+        "invested": 35,
+        "won": 36,
+        "roi": 2.86
+      },
+      "without_warning": {
+        "invested": 49,
+        "won": 44,
+        "roi": -10.2
+      },
+      "difference": 13.06
+    },
+    "typ_6": {
+      "with_warning": {
+        "invested": 35,
+        "won": 22,
+        "roi": -37.14
+      },
+      "without_warning": {
+        "invested": 49,
+        "won": 24,
+        "roi": -51.02
+      },
+      "difference": 13.88
+    }
+  },
+  "with_warning": {
+    "mode": "MIT Jackpot-Warnung",
+    "months": [
+      {
+        "year": 2024,
+        "month": 1,
+        "draws": 30,
+        "use_jackpot_warning": true,
+        "skipped_days": 0,
+        "played_days": 30,
+        "by_type": {
+          "typ_9": {
+            "invested": 30,
+            "won": 98,
+            "roi": 226.67,
+            "avg_hits": 2.77,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "2": 9,
+              "6": 1,
+              "3": 6,
+              "5": 4,
+              "1": 5,
+              "4": 4,
+              "0": 1
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                2,
+                3,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 50,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          },
+          "typ_8": {
+            "invested": 30,
+            "won": 126,
+            "roi": 320.0,
+            "avg_hits": 2.5,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "2": 11,
+              "5": 2,
+              "1": 7,
+              "3": 6,
+              "4": 3,
+              "6": 1
+            },
+            "best_day": {
+              "date": "2024-01-18",
+              "ticket": [
+                2,
+                3,
+                20,
+                24,
+                27,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 100,
+              "exclusions": [
+                25
+              ],
+              "boosts": []
+            }
+          },
+          "typ_10": {
+            "invested": 30,
+            "won": 62,
+            "roi": 106.67,
+            "avg_hits": 3.1,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "3": 7,
+              "6": 3,
+              "2": 5,
+              "4": 6,
+              "1": 5,
+              "5": 3,
+              "0": 1
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                2,
+                3,
+                4,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 15,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          },
+          "typ_7": {
+            "invested": 30,
+            "won": 33,
+            "roi": 10.0,
+            "avg_hits": 2.13,
+            "max_hits": 5,
+            "wins_by_hits": {
+              "3": 9,
+              "4": 3,
+              "0": 5,
+              "2": 8,
+              "1": 4,
+              "5": 1
+            },
+            "best_day": {
+              "date": "2024-01-18",
+              "ticket": [
+                2,
+                3,
+                24,
+                30,
+                49,
+                59,
+                64
+              ],
+              "hits": 5,
+              "win": 12,
+              "exclusions": [
+                25
+              ],
+              "boosts": []
+            }
+          },
+          "typ_6": {
+            "invested": 30,
+            "won": 16,
+            "roi": -46.67,
+            "avg_hits": 1.77,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "0": 5,
+              "4": 2,
+              "2": 10,
+              "3": 6,
+              "1": 7
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                3,
+                9,
+                10,
+                32,
+                49,
+                64
+              ],
+              "hits": 4,
+              "win": 5,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "month": 2,
+        "draws": 19,
+        "use_jackpot_warning": true,
+        "skipped_days": 14,
+        "played_days": 5,
+        "by_type": {
+          "typ_9": {
+            "invested": 5,
+            "won": 14,
+            "roi": 180.0,
+            "avg_hits": 3.4,
+            "max_hits": 5,
+            "wins_by_hits": {
+              "4": 2,
+              "2": 2,
+              "5": 1
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                2,
+                3,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 5,
+              "win": 10,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_8": {
+            "invested": 5,
+            "won": 4,
+            "roi": -20.0,
+            "avg_hits": 3.2,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "3": 2,
+              "2": 1,
+              "4": 2
+            },
+            "best_day": {
+              "date": "2024-02-05",
+              "ticket": [
+                3,
+                20,
+                24,
+                27,
+                36,
+                49,
+                51,
+                64
+              ],
+              "hits": 4,
+              "win": 2,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_10": {
+            "invested": 5,
+            "won": 25,
+            "roi": 400.0,
+            "avg_hits": 4.0,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "5": 2,
+              "2": 2,
+              "6": 1
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                2,
+                3,
+                4,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 15,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_7": {
+            "invested": 5,
+            "won": 3,
+            "roi": -40.0,
+            "avg_hits": 2.4,
+            "max_hits": 3,
+            "wins_by_hits": {
+              "3": 3,
+              "2": 1,
+              "1": 1
+            },
+            "best_day": {
+              "date": "2024-02-02",
+              "ticket": [
+                2,
+                3,
+                24,
+                30,
+                49,
+                59,
+                64
+              ],
+              "hits": 3,
+              "win": 1,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_6": {
+            "invested": 5,
+            "won": 6,
+            "roi": 20.0,
+            "avg_hits": 2.4,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "3": 1,
+              "2": 2,
+              "1": 1,
+              "4": 1
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                3,
+                9,
+                10,
+                32,
+                49,
+                64
+              ],
+              "hits": 4,
+              "win": 5,
+              "exclusions": [],
+              "boosts": []
+            }
+          }
+        }
+      }
+    ],
+    "totals": {
+      "typ_9": {
+        "invested": 35,
+        "won": 112,
+        "roi": 220.0
+      },
+      "typ_8": {
+        "invested": 35,
+        "won": 130,
+        "roi": 271.43
+      },
+      "typ_10": {
+        "invested": 35,
+        "won": 87,
+        "roi": 148.57
+      },
+      "typ_7": {
+        "invested": 35,
+        "won": 36,
+        "roi": 2.86
+      },
+      "typ_6": {
+        "invested": 35,
+        "won": 22,
+        "roi": -37.14
+      }
+    }
+  },
+  "without_warning": {
+    "mode": "OHNE Jackpot-Warnung",
+    "months": [
+      {
+        "year": 2024,
+        "month": 1,
+        "draws": 30,
+        "use_jackpot_warning": false,
+        "skipped_days": 0,
+        "played_days": 30,
+        "by_type": {
+          "typ_9": {
+            "invested": 30,
+            "won": 98,
+            "roi": 226.67,
+            "avg_hits": 2.77,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "2": 9,
+              "6": 1,
+              "3": 6,
+              "5": 4,
+              "1": 5,
+              "4": 4,
+              "0": 1
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                2,
+                3,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 50,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          },
+          "typ_8": {
+            "invested": 30,
+            "won": 126,
+            "roi": 320.0,
+            "avg_hits": 2.5,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "2": 11,
+              "5": 2,
+              "1": 7,
+              "3": 6,
+              "4": 3,
+              "6": 1
+            },
+            "best_day": {
+              "date": "2024-01-18",
+              "ticket": [
+                2,
+                3,
+                20,
+                24,
+                27,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 100,
+              "exclusions": [
+                25
+              ],
+              "boosts": []
+            }
+          },
+          "typ_10": {
+            "invested": 30,
+            "won": 62,
+            "roi": 106.67,
+            "avg_hits": 3.1,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "3": 7,
+              "6": 3,
+              "2": 5,
+              "4": 6,
+              "1": 5,
+              "5": 3,
+              "0": 1
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                2,
+                3,
+                4,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 15,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          },
+          "typ_7": {
+            "invested": 30,
+            "won": 33,
+            "roi": 10.0,
+            "avg_hits": 2.13,
+            "max_hits": 5,
+            "wins_by_hits": {
+              "3": 9,
+              "4": 3,
+              "0": 5,
+              "2": 8,
+              "1": 4,
+              "5": 1
+            },
+            "best_day": {
+              "date": "2024-01-18",
+              "ticket": [
+                2,
+                3,
+                24,
+                30,
+                49,
+                59,
+                64
+              ],
+              "hits": 5,
+              "win": 12,
+              "exclusions": [
+                25
+              ],
+              "boosts": []
+            }
+          },
+          "typ_6": {
+            "invested": 30,
+            "won": 16,
+            "roi": -46.67,
+            "avg_hits": 1.77,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "0": 5,
+              "4": 2,
+              "2": 10,
+              "3": 6,
+              "1": 7
+            },
+            "best_day": {
+              "date": "2024-01-03",
+              "ticket": [
+                3,
+                9,
+                10,
+                32,
+                49,
+                64
+              ],
+              "hits": 4,
+              "win": 5,
+              "exclusions": [
+                65
+              ],
+              "boosts": []
+            }
+          }
+        }
+      },
+      {
+        "year": 2024,
+        "month": 2,
+        "draws": 19,
+        "use_jackpot_warning": false,
+        "skipped_days": 0,
+        "played_days": 19,
+        "by_type": {
+          "typ_9": {
+            "invested": 19,
+            "won": 18,
+            "roi": -5.26,
+            "avg_hits": 2.53,
+            "max_hits": 5,
+            "wins_by_hits": {
+              "4": 4,
+              "2": 11,
+              "5": 1,
+              "3": 1,
+              "1": 2
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                2,
+                3,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 5,
+              "win": 10,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_8": {
+            "invested": 19,
+            "won": 6,
+            "roi": -68.42,
+            "avg_hits": 2.47,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "3": 6,
+              "2": 7,
+              "4": 3,
+              "1": 3
+            },
+            "best_day": {
+              "date": "2024-02-05",
+              "ticket": [
+                3,
+                20,
+                24,
+                27,
+                36,
+                49,
+                51,
+                64
+              ],
+              "hits": 4,
+              "win": 2,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_10": {
+            "invested": 19,
+            "won": 35,
+            "roi": 84.21,
+            "avg_hits": 2.95,
+            "max_hits": 6,
+            "wins_by_hits": {
+              "5": 4,
+              "2": 9,
+              "6": 1,
+              "4": 1,
+              "3": 2,
+              "1": 2
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                2,
+                3,
+                4,
+                9,
+                10,
+                20,
+                24,
+                36,
+                49,
+                64
+              ],
+              "hits": 6,
+              "win": 15,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_7": {
+            "invested": 19,
+            "won": 11,
+            "roi": -42.11,
+            "avg_hits": 2.11,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "3": 7,
+              "2": 4,
+              "1": 7,
+              "4": 1
+            },
+            "best_day": {
+              "date": "2024-02-07",
+              "ticket": [
+                2,
+                3,
+                24,
+                30,
+                49,
+                59,
+                64
+              ],
+              "hits": 4,
+              "win": 4,
+              "exclusions": [],
+              "boosts": []
+            }
+          },
+          "typ_6": {
+            "invested": 19,
+            "won": 8,
+            "roi": -57.89,
+            "avg_hits": 1.89,
+            "max_hits": 4,
+            "wins_by_hits": {
+              "3": 3,
+              "2": 9,
+              "1": 5,
+              "4": 1,
+              "0": 1
+            },
+            "best_day": {
+              "date": "2024-02-06",
+              "ticket": [
+                3,
+                9,
+                10,
+                32,
+                49,
+                64
+              ],
+              "hits": 4,
+              "win": 5,
+              "exclusions": [],
+              "boosts": []
+            }
+          }
+        }
+      }
+    ],
+    "totals": {
+      "typ_9": {
+        "invested": 49,
+        "won": 116,
+        "roi": 136.73
+      },
+      "typ_8": {
+        "invested": 49,
+        "won": 132,
+        "roi": 169.39
+      },
+      "typ_10": {
+        "invested": 49,
+        "won": 97,
+        "roi": 97.96
+      },
+      "typ_7": {
+        "invested": 49,
+        "won": 44,
+        "roi": -10.2
+      },
+      "typ_6": {
+        "invested": 49,
+        "won": 24,
+        "roi": -51.02
+      }
+    }
+  },
+  "statistics": {
+    "days_played_with_warning": 35,
+    "days_skipped": 14,
+    "days_played_without_warning": 49
+  }
+}

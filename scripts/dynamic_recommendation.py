@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-Dynamisches Empfehlungssystem mit Exclusion-Filter
+Dynamisches Empfehlungssystem mit Exclusion-Filter und Jackpot-Warnung
 
 Kombiniert:
 1. Optimale Basis-Tickets (Typ 9: +351% ROI)
 2. Multi-Exclusion Regeln (96%+ Accuracy)
 3. Inclusion-Boost basierend auf heutiger Ziehung
 4. Korrelierte Absenzen
+5. NEU: Jackpot-Warnung (30 Tage nach GK10_10 = NICHT SPIELEN)
 
 Autor: Kenobase V2.2
 Datum: 2025-12-29
@@ -20,6 +21,11 @@ from typing import Dict, List, Optional, Set, Tuple
 
 import pandas as pd
 import numpy as np
+
+
+# Jackpot-Warnung Konfiguration
+JACKPOT_COOLDOWN_DAYS = 30  # Tage nach Jackpot ohne Spiel
+JACKPOT_ROI_PENALTY = 0.66  # 66% schlechtere Performance nach Jackpot
 
 
 # Optimale Basis-Tickets aus Analyse
@@ -67,6 +73,76 @@ CORE_NUMBERS = [3, 24, 49, 51, 64]
 
 # Hot Numbers (aus Frequenz-Analyse)
 HOT_NUMBERS = [49, 64, 3, 51, 24, 2, 9, 36, 41, 37, 4, 25, 31, 13, 66, 52, 20, 10]
+
+
+def load_jackpot_dates(gk1_path: str) -> List[datetime]:
+    """Laedt alle GK10_10 Jackpot-Daten."""
+    if not Path(gk1_path).exists():
+        return []
+
+    gk1_df = pd.read_csv(gk1_path, encoding="utf-8")
+    gk1_df["Datum"] = pd.to_datetime(gk1_df["Datum"], format="%d.%m.%Y")
+
+    # Nur Typ 10 Jackpots
+    gk1_typ10 = gk1_df[gk1_df["Keno-Typ"] == 10]
+
+    return sorted(gk1_typ10["Datum"].tolist())
+
+
+def check_jackpot_warning(
+    check_date: datetime,
+    jackpot_dates: List[datetime],
+    cooldown_days: int = JACKPOT_COOLDOWN_DAYS
+) -> Dict:
+    """
+    Prueft ob ein Datum im Post-Jackpot Cooldown liegt.
+
+    Returns:
+        Dict mit:
+        - in_cooldown: bool
+        - days_since_jackpot: int oder None
+        - last_jackpot: datetime oder None
+        - days_remaining: int oder None
+        - warning_level: str (NONE, LOW, MEDIUM, HIGH, CRITICAL)
+    """
+    result = {
+        "in_cooldown": False,
+        "days_since_jackpot": None,
+        "last_jackpot": None,
+        "days_remaining": None,
+        "warning_level": "NONE"
+    }
+
+    if not jackpot_dates:
+        return result
+
+    # Finde letzten Jackpot vor check_date
+    past_jackpots = [jp for jp in jackpot_dates if jp < check_date]
+
+    if not past_jackpots:
+        return result
+
+    last_jackpot = max(past_jackpots)
+    days_since = (check_date - last_jackpot).days
+
+    result["last_jackpot"] = last_jackpot
+    result["days_since_jackpot"] = days_since
+
+    if days_since <= cooldown_days:
+        result["in_cooldown"] = True
+        result["days_remaining"] = cooldown_days - days_since
+
+        # Warning Level basierend auf Tagen seit Jackpot
+        if days_since <= 7:
+            result["warning_level"] = "CRITICAL"  # Erste Woche: -80% ROI
+        elif days_since <= 14:
+            result["warning_level"] = "HIGH"      # Zweite Woche: -70% ROI
+        elif days_since <= 21:
+            result["warning_level"] = "MEDIUM"    # Dritte Woche: -50% ROI
+        else:
+            result["warning_level"] = "LOW"       # Vierte Woche: -30% ROI
+
+    return result
 
 
 def load_latest_draw(path: str) -> Optional[Dict]:
@@ -172,15 +248,41 @@ def generate_dynamic_ticket(
     return sorted(filtered[:keno_type])
 
 
-def generate_recommendations(today_draw: Dict) -> Dict:
-    """Generiert alle Empfehlungen fuer morgen."""
+def generate_recommendations(
+    today_draw: Dict,
+    jackpot_dates: List[datetime] = None
+) -> Dict:
+    """Generiert alle Empfehlungen fuer morgen mit Jackpot-Warnung."""
     today_positions = today_draw["positions"]
     today_set = today_draw["numbers_set"]
     today_absent = set(range(1, 71)) - today_set
+    tomorrow = today_draw["date"] + timedelta(days=1)
 
     print("\n" + "=" * 70)
     print(f"ANALYSE DER HEUTIGEN ZIEHUNG ({today_draw['date'].date()})")
     print("=" * 70)
+
+    # 0. JACKPOT-WARNUNG PRUEFEN (NEU!)
+    jackpot_warning = None
+    if jackpot_dates:
+        jackpot_warning = check_jackpot_warning(tomorrow, jackpot_dates)
+
+        if jackpot_warning["in_cooldown"]:
+            print("\n" + "!" * 70)
+            print(f"  ⚠️  JACKPOT-WARNUNG: {jackpot_warning['warning_level']}  ⚠️")
+            print("!" * 70)
+            print(f"  Letzter Jackpot: {jackpot_warning['last_jackpot'].date()}")
+            print(f"  Tage seit Jackpot: {jackpot_warning['days_since_jackpot']}")
+            print(f"  Verbleibende Cooldown-Tage: {jackpot_warning['days_remaining']}")
+            print()
+            print("  EMPFEHLUNG: NICHT SPIELEN!")
+            print("  Grund: Post-Jackpot Perioden haben -66% ROI vs normal")
+            print("!" * 70)
+        else:
+            print(f"\n  ✓ Kein Jackpot-Cooldown aktiv")
+            if jackpot_warning["last_jackpot"]:
+                print(f"    Letzter Jackpot: {jackpot_warning['last_jackpot'].date()} ({jackpot_warning['days_since_jackpot']} Tage her)")
+
     print(f"\nPositionen: {today_positions}")
     print()
 
@@ -210,7 +312,15 @@ def generate_recommendations(today_draw: Dict) -> Dict:
 
     recommendations = {
         "analysis_date": str(today_draw["date"].date()),
-        "for_date": str((today_draw["date"] + timedelta(days=1)).date()),
+        "for_date": str(tomorrow.date()),
+        "jackpot_warning": {
+            "in_cooldown": jackpot_warning["in_cooldown"] if jackpot_warning else False,
+            "warning_level": jackpot_warning["warning_level"] if jackpot_warning else "NONE",
+            "days_since_jackpot": jackpot_warning["days_since_jackpot"] if jackpot_warning else None,
+            "days_remaining": jackpot_warning["days_remaining"] if jackpot_warning else None,
+            "last_jackpot": str(jackpot_warning["last_jackpot"].date()) if jackpot_warning and jackpot_warning["last_jackpot"] else None,
+            "recommendation": "NICHT SPIELEN" if (jackpot_warning and jackpot_warning["in_cooldown"]) else "SPIELEN OK"
+        },
         "exclusions": sorted(exclude),
         "boosts": boost,
         "likely_absent": sorted(likely_absent),
@@ -246,7 +356,7 @@ def generate_recommendations(today_draw: Dict) -> Dict:
 def main():
     """Hauptfunktion."""
     print("=" * 70)
-    print("KENOBASE - DYNAMISCHES EMPFEHLUNGSSYSTEM")
+    print("KENOBASE - DYNAMISCHES EMPFEHLUNGSSYSTEM V2 (mit Jackpot-Warnung)")
     print("=" * 70)
     print()
 
@@ -270,6 +380,15 @@ def main():
 
     print(f"Lade Daten: {data_path}")
 
+    # Jackpot-Daten laden
+    gk1_path = base_path / "Keno_GPTs" / "10-9_KGDaten_gefiltert.csv"
+    jackpot_dates = []
+    if gk1_path.exists():
+        jackpot_dates = load_jackpot_dates(str(gk1_path))
+        print(f"Jackpot-Daten geladen: {len(jackpot_dates)} GK10_10 Events")
+    else:
+        print("WARNUNG: Keine Jackpot-Daten gefunden - Warnung deaktiviert")
+
     # Letzte Ziehung laden
     today = load_latest_draw(str(data_path))
     if not today:
@@ -278,8 +397,8 @@ def main():
 
     print(f"Letzte Ziehung: {today['date'].date()}")
 
-    # Empfehlungen generieren
-    recommendations = generate_recommendations(today)
+    # Empfehlungen generieren (mit Jackpot-Warnung)
+    recommendations = generate_recommendations(today, jackpot_dates)
 
     # Speichern
     output_path = base_path / "results" / "dynamic_recommendations.json"
@@ -295,10 +414,25 @@ def main():
     print("ZUSAMMENFASSUNG")
     print("=" * 70)
 
+    jp_info = recommendations.get("jackpot_warning", {})
+    jp_status = "⚠️ NICHT SPIELEN" if jp_info.get("in_cooldown") else "✓ SPIELEN OK"
+
     print(f"""
 FUER MORGEN ({recommendations['for_date']}):
 
-BESTE EMPFEHLUNG (Typ 9, ROI +351%):
+JACKPOT-STATUS: {jp_status}
+  Letzter Jackpot: {jp_info.get('last_jackpot', 'unbekannt')}
+  Tage seit Jackpot: {jp_info.get('days_since_jackpot', 'N/A')}
+  Warning Level: {jp_info.get('warning_level', 'NONE')}
+""")
+
+    if jp_info.get("in_cooldown"):
+        print(f"""  ⚠️ ACHTUNG: Noch {jp_info.get('days_remaining')} Tage Cooldown!
+  Post-Jackpot Perioden haben -66% ROI vs normal.
+  Empfehlung: Warten bis Cooldown abgelaufen.
+""")
+    else:
+        print(f"""BESTE EMPFEHLUNG (Typ 9, ROI +351%):
   {recommendations['tickets']['typ_9']['zahlen']}
 
 AUSGESCHLOSSEN (basierend auf heute):
@@ -306,8 +440,9 @@ AUSGESCHLOSSEN (basierend auf heute):
 
 BEVORZUGT (basierend auf heute):
   {recommendations['boosts'] if recommendations['boosts'] else 'keine'}
+""")
 
-HINWEIS: Dies ist ein statistisches Modell.
+    print("""HINWEIS: Dies ist ein statistisches Modell.
          Keine Gewinngarantie!
 """)
     print("=" * 70)
