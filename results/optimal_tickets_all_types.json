@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "generated": "2025-12-29T13:25:47.313253",
+    "total_draws": 2237,
+    "date_range": "2018-01-01 - 2024-02-15"
+  },
+  "by_type": {
+    "typ_2": {
+      "ticket": [
+        9,
+        50
+      ],
+      "roi": -41.53,
+      "roi_per_draw": -0.4153,
+      "total_invested": 2237,
+      "total_won": 1308,
+      "monthly_win_rate": 97.3,
+      "wins_by_hits": {
+        "2": 218
+      }
+    },
+    "typ_3": {
+      "ticket": [
+        7,
+        9,
+        10
+      ],
+      "roi": -28.79,
+      "roi_per_draw": -0.2879,
+      "total_invested": 2237,
+      "total_won": 1593,
+      "monthly_win_rate": 98.6,
+      "wins_by_hits": {
+        "2": 409,
+        "3": 74
+      }
+    },
+    "typ_4": {
+      "ticket": [
+        30,
+        49,
+        59,
+        64
+      ],
+      "roi": -34.15,
+      "roi_per_draw": -0.3415,
+      "total_invested": 2237,
+      "total_won": 1473,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "2": 571,
+        "3": 154,
+        "4": 27
+      }
+    },
+    "typ_5": {
+      "ticket": [
+        9,
+        19,
+        49,
+        50,
+        64
+      ],
+      "roi": -23.29,
+      "roi_per_draw": -0.2329,
+      "total_invested": 2237,
+      "total_won": 1716,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "3": 304,
+        "4": 44,
+        "5": 8
+      }
+    },
+    "typ_6": {
+      "ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "roi": -0.04,
+      "roi_per_draw": -0.0004,
+      "total_invested": 2237,
+      "total_won": 2236,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "3": 431,
+        "4": 134,
+        "5": 9,
+        "6": 2
+      }
+    },
+    "typ_7": {
+      "ticket": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "roi": 41.35,
+      "roi_per_draw": 0.4135,
+      "total_invested": 2237,
+      "total_won": 3162,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "4": 192,
+        "5": 40,
+        "3": 514,
+        "7": 1,
+        "6": 4
+      }
+    },
+    "typ_8": {
+      "ticket": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "roi": 115.38,
+      "roi_per_draw": 1.1538,
+      "total_invested": 2237,
+      "total_won": 4818,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "4": 289,
+        "5": 94,
+        "6": 13,
+        "7": 2
+      }
+    },
+    "typ_9": {
+      "ticket": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "roi": 351.23,
+      "roi_per_draw": 3.5123,
+      "total_invested": 2237,
+      "total_won": 10094,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "4": 402,
+        "5": 144,
+        "6": 27,
+        "8": 1,
+        "7": 3
+      }
+    },
+    "typ_10": {
+      "ticket": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "roi": 189.27,
+      "roi_per_draw": 1.8927,
+      "total_invested": 2237,
+      "total_won": 6471,
+      "monthly_win_rate": 100.0,
+      "wins_by_hits": {
+        "6": 62,
+        "5": 213,
+        "7": 4,
+        "0": 38,
+        "8": 4
+      }
+    }
+  }
+}
