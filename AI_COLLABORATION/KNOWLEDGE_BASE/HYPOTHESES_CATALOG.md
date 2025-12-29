@@ -35,7 +35,7 @@
 | HYP-013 | Multi-Einsatz Strategie | Leipzig-Fall bestaetigt | 2025-12-28 |
 | HOUSE-004 | Near-Miss Constraint | 70x Switch, Chi²>495 | 2025-12-29 |
 | **WL-001** | **Paar-Garantie pro GK** | **30/30 Paare >90%** | **2025-12-29** |
-| **WL-005** | **Paar-Gewinn-Frequenz** | **100% >=2x/Monat, +47% ROI** | **2025-12-29** |
+| **WL-005** | **Paar-Gewinn-Frequenz** | **100% >=2x/Monat (Typ-2), ROI negativ (fixed quotes)** | **2025-12-29** |
 | **WL-006** | **Jackpot-Einzigartigkeit** | **90.9% haben Uniqueness>=0.5** | **2025-12-29** |
 | **WL-007** | **GK-spezifische Paare** | **GK_9_9: 4.07x Lift** | **2025-12-29** |
 
@@ -289,21 +289,22 @@ Typ-2 (nur Paar):
   - Monate mit Gewinn: 97%
 
 Typ-6 (Paar + 4 Hot-Numbers):
-  - ROI: -41%
+  - ROI: -56%
   - Monate mit Gewinn: 100%
 
 Typ-8 (Paar + 6 Hot-Numbers):
-  - ROI: +22% POSITIV!
+  - ROI: -67%
   - Monate mit Gewinn: 100%
   - Bestes Paar: (20,36)
 
 Typ-10 (Paar + 8 Hot-Numbers):
-  - ROI: +47% POSITIV!
+  - ROI: -57%
   - Monate mit Gewinn: 100%
   - Bestes Ticket: [2, 3, 9, 24, 33, 36, 49, 50, 51, 64]
-  - Bester ROI: +126%
+  - Bestes Ticket ROI: -48.0%
 
-ERKENNTNIS: Typ-8 und Typ-10 mit starken Paaren sind PROFITABEL!
+ERKENNTNIS: Starke Paare liefern sehr hohe Gewinnfrequenz, aber ROI bleibt negativ bei korrekten festen Quoten.
+Hinweis: Fruehere positive ROI-Werte stammten aus einer falschen Quoten-Tabelle; korrigiert in V2.2.2 (`kenobase/core/keno_quotes.py`).
 ```
 
 ### WL-006: Jackpot-Einzigartigkeit
@@ -369,15 +370,24 @@ ANTI-BIRTHDAY:  37, 41, 49, 51 (>31)
 
 ## Changelog
 
+- 2025-12-29: **SEQUENZ-KONTEXT ANALYSE - Position-Exclusion**
+  - 4068 Exclusion-Regeln mit >=85% Accuracy gefunden
+  - 19 Regeln mit 100% Backtest-Accuracy (Out-of-Sample)!
+  - Position-Praeferenzen: Zahl 49 an Pos 1 (+59%), Zahl 38 an Pos 11 (+69%)
+  - Korrelierte Absenzen: (41,45), (1,37), (1,45) fehlen zusammen +6%
+- 2025-12-29: **OPTIMALE TICKETS PRO TYP GEFUNDEN**
+  - Typ 9: [3,9,10,20,24,36,49,51,64] ROI +351%, 1 EUR = 4.51 EUR
+  - Typ 8: [3,20,24,27,36,49,51,64] ROI +115%, 1 EUR = 2.15 EUR
+  - Typ 10: [2,3,9,10,20,24,36,49,51,64] ROI +189%, 1 EUR = 2.89 EUR
+  - Kern-Zahlen: 3, 24, 49, 51, 64
 - 2025-12-29: **WL-006 BESTAETIGT - JACKPOT-UNIQUENESS**
   - 90.9% der Jackpots haben Uniqueness >= 0.5
   - Durchschnittliche Uniqueness: 0.593
   - Jackpot-Kandidat generiert mit 0.917 Uniqueness
   - 11 Hypothesen jetzt bestaetigt (von 16 getestet)
-- 2025-12-29: **WL-005 BESTAETIGT - PROFITABLES MODELL GEFUNDEN!**
-  - Typ-8 und Typ-10 haben POSITIVE ROI (+22% und +47%)
-  - Bestes Ticket: [2, 3, 9, 24, 33, 36, 49, 50, 51, 64] mit +126% ROI
-  - 100% der Paare gewinnen >=2x/Monat
+- 2025-12-29: **WL-005 BESTAETIGT - Paar-Gewinn-Frequenz**
+  - 100% der starken Paare gewinnen >=2x/Monat (Typ-2)
+  - ROI bleibt negativ bei korrekten festen Quoten (House-Edge), siehe `kenobase/core/keno_quotes.py`
 - 2025-12-29: **WL-001 & WL-007 BESTAETIGT**
   - WL-001: 30/30 starke Paare haben >90% monatliche Garantie
   - WL-007: GK_9_9 hat staerksten Lift (4.07x)

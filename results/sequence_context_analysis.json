@@ -1,0 +1,2295 @@
+{
+  "metadata": {
+    "generated": "2025-12-29T13:52:30.142610",
+    "draws": 2242,
+    "date_range": "2018-01-01 - 2024-02-20"
+  },
+  "position_preferences": {
+    "preferences": [
+      {
+        "zahl": 38,
+        "position": 11,
+        "count": 54,
+        "expected": 32.0,
+        "deviation": 68.6
+      },
+      {
+        "zahl": 49,
+        "position": 1,
+        "count": 51,
+        "expected": 32.0,
+        "deviation": 59.2
+      },
+      {
+        "zahl": 61,
+        "position": 11,
+        "count": 50,
+        "expected": 32.0,
+        "deviation": 56.1
+      },
+      {
+        "zahl": 42,
+        "position": 3,
+        "count": 49,
+        "expected": 32.0,
+        "deviation": 53.0
+      },
+      {
+        "zahl": 24,
+        "position": 5,
+        "count": 16,
+        "expected": 32.0,
+        "deviation": -50.0
+      },
+      {
+        "zahl": 59,
+        "position": 10,
+        "count": 48,
+        "expected": 32.0,
+        "deviation": 49.9
+      },
+      {
+        "zahl": 56,
+        "position": 11,
+        "count": 17,
+        "expected": 32.0,
+        "deviation": -46.9
+      },
+      {
+        "zahl": 27,
+        "position": 15,
+        "count": 47,
+        "expected": 32.0,
+        "deviation": 46.7
+      },
+      {
+        "zahl": 29,
+        "position": 7,
+        "count": 47,
+        "expected": 32.0,
+        "deviation": 46.7
+      },
+      {
+        "zahl": 48,
+        "position": 5,
+        "count": 47,
+        "expected": 32.0,
+        "deviation": 46.7
+      },
+      {
+        "zahl": 57,
+        "position": 16,
+        "count": 47,
+        "expected": 32.0,
+        "deviation": 46.7
+      },
+      {
+        "zahl": 64,
+        "position": 7,
+        "count": 47,
+        "expected": 32.0,
+        "deviation": 46.7
+      },
+      {
+        "zahl": 1,
+        "position": 16,
+        "count": 18,
+        "expected": 32.0,
+        "deviation": -43.8
+      },
+      {
+        "zahl": 31,
+        "position": 10,
+        "count": 18,
+        "expected": 32.0,
+        "deviation": -43.8
+      },
+      {
+        "zahl": 57,
+        "position": 5,
+        "count": 18,
+        "expected": 32.0,
+        "deviation": -43.8
+      },
+      {
+        "zahl": 60,
+        "position": 8,
+        "count": 18,
+        "expected": 32.0,
+        "deviation": -43.8
+      },
+      {
+        "zahl": 8,
+        "position": 14,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 16,
+        "position": 10,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 39,
+        "position": 10,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 39,
+        "position": 12,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 64,
+        "position": 18,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 67,
+        "position": 20,
+        "count": 46,
+        "expected": 32.0,
+        "deviation": 43.6
+      },
+      {
+        "zahl": 18,
+        "position": 16,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 29,
+        "position": 4,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 36,
+        "position": 11,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 36,
+        "position": 20,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 37,
+        "position": 12,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 60,
+        "position": 14,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 67,
+        "position": 6,
+        "count": 19,
+        "expected": 32.0,
+        "deviation": -40.7
+      },
+      {
+        "zahl": 3,
+        "position": 13,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 7,
+        "position": 10,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 11,
+        "position": 13,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 12,
+        "position": 19,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 26,
+        "position": 3,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 32,
+        "position": 11,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 52,
+        "position": 20,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 70,
+        "position": 4,
+        "count": 45,
+        "expected": 32.0,
+        "deviation": 40.5
+      },
+      {
+        "zahl": 1,
+        "position": 8,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 13,
+        "position": 4,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 13,
+        "position": 9,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 15,
+        "position": 10,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 22,
+        "position": 1,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 22,
+        "position": 9,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 23,
+        "position": 6,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 27,
+        "position": 13,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 35,
+        "position": 20,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 37,
+        "position": 3,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 48,
+        "position": 12,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 61,
+        "position": 3,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      },
+      {
+        "zahl": 62,
+        "position": 4,
+        "count": 20,
+        "expected": 32.0,
+        "deviation": -37.6
+      }
+    ],
+    "expected_per_pos": 32.03
+  },
+  "sequential_patterns": {
+    "vertical_count": 642,
+    "diagonal_right_count": 619,
+    "diagonal_left_count": 613,
+    "avg_repeats_per_day": 5.729138777331548,
+    "samples": {
+      "vertical": [
+        {
+          "date": "2018-01-04",
+          "zahl": 28,
+          "position": 15
+        },
+        {
+          "date": "2018-01-12",
+          "zahl": 61,
+          "position": 5
+        },
+        {
+          "date": "2018-01-15",
+          "zahl": 47,
+          "position": 9
+        },
+        {
+          "date": "2018-01-16",
+          "zahl": 64,
+          "position": 18
+        },
+        {
+          "date": "2018-01-19",
+          "zahl": 51,
+          "position": 12
+        },
+        {
+          "date": "2018-01-24",
+          "zahl": 43,
+          "position": 17
+        },
+        {
+          "date": "2018-01-27",
+          "zahl": 57,
+          "position": 10
+        },
+        {
+          "date": "2018-01-30",
+          "zahl": 8,
+          "position": 15
+        },
+        {
+          "date": "2018-02-02",
+          "zahl": 57,
+          "position": 16
+        },
+        {
+          "date": "2018-02-03",
+          "zahl": 59,
+          "position": 7
+        }
+      ],
+      "diagonal_right": [
+        {
+          "date": "2018-01-07",
+          "zahl": 22,
+          "from_pos": 1,
+          "to_pos": 2
+        },
+        {
+          "date": "2018-01-09",
+          "zahl": 38,
+          "from_pos": 5,
+          "to_pos": 6
+        },
+        {
+          "date": "2018-01-12",
+          "zahl": 57,
+          "from_pos": 1,
+          "to_pos": 2
+        },
+        {
+          "date": "2018-01-17",
+          "zahl": 61,
+          "from_pos": 5,
+          "to_pos": 6
+        },
+        {
+          "date": "2018-01-19",
+          "zahl": 11,
+          "from_pos": 7,
+          "to_pos": 8
+        },
+        {
+          "date": "2018-01-20",
+          "zahl": 37,
+          "from_pos": 19,
+          "to_pos": 20
+        },
+        {
+          "date": "2018-01-23",
+          "zahl": 5,
+          "from_pos": 2,
+          "to_pos": 3
+        },
+        {
+          "date": "2018-02-02",
+          "zahl": 69,
+          "from_pos": 8,
+          "to_pos": 9
+        },
+        {
+          "date": "2018-02-03",
+          "zahl": 64,
+          "from_pos": 5,
+          "to_pos": 6
+        },
+        {
+          "date": "2018-02-04",
+          "zahl": 40,
+          "from_pos": 14,
+          "to_pos": 15
+        }
+      ],
+      "repeat": [
+        {
+          "date": "2018-01-02",
+          "repeated": [
+            32,
+            21,
+            27,
+            28,
+            29
+          ],
+          "count": 5
+        },
+        {
+          "date": "2018-01-03",
+          "repeated": [
+            33,
+            38,
+            49,
+            21,
+            53,
+            28
+          ],
+          "count": 6
+        },
+        {
+          "date": "2018-01-04",
+          "repeated": [
+            10,
+            44,
+            15,
+            21,
+            53,
+            28
+          ],
+          "count": 6
+        },
+        {
+          "date": "2018-01-05",
+          "repeated": [
+            2,
+            35,
+            13,
+            15,
+            21,
+            31
+          ],
+          "count": 6
+        },
+        {
+          "date": "2018-01-06",
+          "repeated": [
+            2,
+            35,
+            21
+          ],
+          "count": 3
+        }
+      ]
+    }
+  },
+  "context_windows": [
+    {
+      "trigger": "Zahl 38 an Position 11",
+      "trigger_count": 54,
+      "likely_after": [
+        [
+          19,
+          38.3
+        ],
+        [
+          67,
+          27.5
+        ],
+        [
+          42,
+          25.3
+        ],
+        [
+          50,
+          25.3
+        ],
+        [
+          64,
+          23.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          23,
+          -26.5
+        ],
+        [
+          3,
+          -24.4
+        ],
+        [
+          28,
+          -20.1
+        ],
+        [
+          17,
+          -17.9
+        ],
+        [
+          51,
+          -17.9
+        ]
+      ],
+      "exclusion_candidates": [
+        23,
+        3,
+        28
+      ]
+    },
+    {
+      "trigger": "Zahl 49 an Position 1",
+      "trigger_count": 51,
+      "likely_after": [
+        [
+          70,
+          28.1
+        ],
+        [
+          10,
+          23.5
+        ],
+        [
+          18,
+          21.2
+        ],
+        [
+          22,
+          21.2
+        ],
+        [
+          17,
+          19.0
+        ]
+      ],
+      "unlikely_after": [
+        [
+          67,
+          -35.9
+        ],
+        [
+          50,
+          -29.1
+        ],
+        [
+          1,
+          -24.5
+        ],
+        [
+          6,
+          -17.6
+        ],
+        [
+          25,
+          -17.6
+        ]
+      ],
+      "exclusion_candidates": [
+        67,
+        50,
+        1
+      ]
+    },
+    {
+      "trigger": "Zahl 61 an Position 11",
+      "trigger_count": 50,
+      "likely_after": [
+        [
+          44,
+          28.3
+        ],
+        [
+          49,
+          23.7
+        ],
+        [
+          2,
+          16.7
+        ],
+        [
+          10,
+          16.7
+        ],
+        [
+          25,
+          16.7
+        ]
+      ],
+      "unlikely_after": [
+        [
+          62,
+          -27.7
+        ],
+        [
+          34,
+          -23.0
+        ],
+        [
+          48,
+          -23.0
+        ],
+        [
+          37,
+          -18.3
+        ],
+        [
+          46,
+          -18.3
+        ]
+      ],
+      "exclusion_candidates": [
+        62,
+        34,
+        48
+      ]
+    },
+    {
+      "trigger": "Zahl 42 an Position 3",
+      "trigger_count": 49,
+      "likely_after": [
+        [
+          49,
+          31.0
+        ],
+        [
+          27,
+          23.8
+        ],
+        [
+          39,
+          23.8
+        ],
+        [
+          7,
+          21.4
+        ],
+        [
+          23,
+          21.4
+        ]
+      ],
+      "unlikely_after": [
+        [
+          38,
+          -21.4
+        ],
+        [
+          55,
+          -21.4
+        ],
+        [
+          6,
+          -19.0
+        ],
+        [
+          44,
+          -19.0
+        ],
+        [
+          48,
+          -19.0
+        ]
+      ],
+      "exclusion_candidates": [
+        38,
+        55,
+        6
+      ]
+    },
+    {
+      "trigger": "Zahl 24 an Position 5",
+      "trigger_count": 16,
+      "likely_after": [
+        [
+          57,
+          53.1
+        ],
+        [
+          11,
+          45.8
+        ],
+        [
+          20,
+          38.5
+        ],
+        [
+          52,
+          38.5
+        ],
+        [
+          55,
+          38.5
+        ]
+      ],
+      "unlikely_after": [
+        [
+          33,
+          -49.0
+        ],
+        [
+          17,
+          -41.7
+        ],
+        [
+          39,
+          -41.7
+        ],
+        [
+          50,
+          -41.7
+        ],
+        [
+          16,
+          -34.4
+        ]
+      ],
+      "exclusion_candidates": [
+        33,
+        17,
+        39
+      ]
+    },
+    {
+      "trigger": "Zahl 59 an Position 10",
+      "trigger_count": 48,
+      "likely_after": [
+        [
+          49,
+          36.1
+        ],
+        [
+          57,
+          31.3
+        ],
+        [
+          16,
+          24.0
+        ],
+        [
+          68,
+          24.0
+        ],
+        [
+          20,
+          21.5
+        ]
+      ],
+      "unlikely_after": [
+        [
+          18,
+          -41.7
+        ],
+        [
+          26,
+          -39.2
+        ],
+        [
+          22,
+          -29.5
+        ],
+        [
+          31,
+          -29.5
+        ],
+        [
+          17,
+          -22.2
+        ]
+      ],
+      "exclusion_candidates": [
+        18,
+        26,
+        22
+      ]
+    },
+    {
+      "trigger": "Zahl 56 an Position 11",
+      "trigger_count": 17,
+      "likely_after": [
+        [
+          32,
+          71.6
+        ],
+        [
+          2,
+          37.3
+        ],
+        [
+          35,
+          37.3
+        ],
+        [
+          5,
+          30.4
+        ],
+        [
+          10,
+          30.4
+        ]
+      ],
+      "unlikely_after": [
+        [
+          6,
+          -45.1
+        ],
+        [
+          48,
+          -45.1
+        ],
+        [
+          67,
+          -45.1
+        ],
+        [
+          52,
+          -38.2
+        ],
+        [
+          37,
+          -31.4
+        ]
+      ],
+      "exclusion_candidates": [
+        6,
+        48,
+        67
+      ]
+    },
+    {
+      "trigger": "Zahl 27 an Position 15",
+      "trigger_count": 47,
+      "likely_after": [
+        [
+          66,
+          29.1
+        ],
+        [
+          10,
+          26.6
+        ],
+        [
+          70,
+          26.6
+        ],
+        [
+          5,
+          21.6
+        ],
+        [
+          22,
+          19.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          1,
+          -33.0
+        ],
+        [
+          6,
+          -33.0
+        ],
+        [
+          42,
+          -25.5
+        ],
+        [
+          30,
+          -20.6
+        ],
+        [
+          60,
+          -20.6
+        ]
+      ],
+      "exclusion_candidates": [
+        1,
+        6,
+        42
+      ]
+    },
+    {
+      "trigger": "Zahl 29 an Position 7",
+      "trigger_count": 47,
+      "likely_after": [
+        [
+          35,
+          36.5
+        ],
+        [
+          27,
+          21.6
+        ],
+        [
+          32,
+          21.6
+        ],
+        [
+          45,
+          21.6
+        ],
+        [
+          66,
+          19.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          67,
+          -25.5
+        ],
+        [
+          18,
+          -20.6
+        ],
+        [
+          19,
+          -20.6
+        ],
+        [
+          42,
+          -20.6
+        ],
+        [
+          11,
+          -18.1
+        ]
+      ],
+      "exclusion_candidates": [
+        67,
+        18,
+        19
+      ]
+    },
+    {
+      "trigger": "Zahl 48 an Position 5",
+      "trigger_count": 47,
+      "likely_after": [
+        [
+          2,
+          46.5
+        ],
+        [
+          41,
+          34.0
+        ],
+        [
+          10,
+          29.1
+        ],
+        [
+          54,
+          24.1
+        ],
+        [
+          55,
+          24.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          37,
+          -35.5
+        ],
+        [
+          1,
+          -25.5
+        ],
+        [
+          53,
+          -23.0
+        ],
+        [
+          29,
+          -20.6
+        ],
+        [
+          59,
+          -20.6
+        ]
+      ],
+      "exclusion_candidates": [
+        37,
+        1,
+        53
+      ]
+    },
+    {
+      "trigger": "Zahl 57 an Position 16",
+      "trigger_count": 47,
+      "likely_after": [
+        [
+          25,
+          39.0
+        ],
+        [
+          3,
+          34.0
+        ],
+        [
+          27,
+          34.0
+        ],
+        [
+          66,
+          24.1
+        ],
+        [
+          61,
+          21.6
+        ]
+      ],
+      "unlikely_after": [
+        [
+          22,
+          -42.9
+        ],
+        [
+          45,
+          -35.5
+        ],
+        [
+          29,
+          -30.5
+        ],
+        [
+          53,
+          -25.5
+        ],
+        [
+          5,
+          -23.0
+        ]
+      ],
+      "exclusion_candidates": [
+        22,
+        45,
+        29
+      ]
+    },
+    {
+      "trigger": "Zahl 64 an Position 7",
+      "trigger_count": 47,
+      "likely_after": [
+        [
+          9,
+          39.0
+        ],
+        [
+          32,
+          36.5
+        ],
+        [
+          60,
+          34.0
+        ],
+        [
+          68,
+          34.0
+        ],
+        [
+          40,
+          24.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          18,
+          -33.0
+        ],
+        [
+          31,
+          -30.5
+        ],
+        [
+          28,
+          -25.5
+        ],
+        [
+          29,
+          -23.0
+        ],
+        [
+          37,
+          -23.0
+        ]
+      ],
+      "exclusion_candidates": [
+        18,
+        31,
+        28
+      ]
+    },
+    {
+      "trigger": "Zahl 1 an Position 16",
+      "trigger_count": 18,
+      "likely_after": [
+        [
+          46,
+          62.0
+        ],
+        [
+          50,
+          62.0
+        ],
+        [
+          31,
+          42.6
+        ],
+        [
+          53,
+          42.6
+        ],
+        [
+          64,
+          42.6
+        ]
+      ],
+      "unlikely_after": [
+        [
+          13,
+          -48.1
+        ],
+        [
+          8,
+          -41.7
+        ],
+        [
+          21,
+          -41.7
+        ],
+        [
+          2,
+          -35.2
+        ],
+        [
+          23,
+          -35.2
+        ]
+      ],
+      "exclusion_candidates": [
+        13,
+        8,
+        21
+      ]
+    },
+    {
+      "trigger": "Zahl 31 an Position 10",
+      "trigger_count": 18,
+      "likely_after": [
+        [
+          17,
+          42.6
+        ],
+        [
+          40,
+          42.6
+        ],
+        [
+          61,
+          42.6
+        ],
+        [
+          7,
+          29.6
+        ],
+        [
+          20,
+          29.6
+        ]
+      ],
+      "unlikely_after": [
+        [
+          11,
+          -41.7
+        ],
+        [
+          28,
+          -41.7
+        ],
+        [
+          35,
+          -41.7
+        ],
+        [
+          51,
+          -41.7
+        ],
+        [
+          58,
+          -41.7
+        ]
+      ],
+      "exclusion_candidates": [
+        11,
+        28,
+        35
+      ]
+    },
+    {
+      "trigger": "Zahl 57 an Position 5",
+      "trigger_count": 18,
+      "likely_after": [
+        [
+          15,
+          62.0
+        ],
+        [
+          10,
+          55.6
+        ],
+        [
+          3,
+          42.6
+        ],
+        [
+          29,
+          42.6
+        ],
+        [
+          49,
+          36.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          27,
+          -48.1
+        ],
+        [
+          65,
+          -41.7
+        ],
+        [
+          8,
+          -35.2
+        ],
+        [
+          11,
+          -28.7
+        ],
+        [
+          35,
+          -28.7
+        ]
+      ],
+      "exclusion_candidates": [
+        27,
+        65,
+        8
+      ]
+    },
+    {
+      "trigger": "Zahl 60 an Position 8",
+      "trigger_count": 18,
+      "likely_after": [
+        [
+          2,
+          55.6
+        ],
+        [
+          45,
+          36.1
+        ],
+        [
+          20,
+          29.6
+        ],
+        [
+          67,
+          29.6
+        ],
+        [
+          7,
+          23.1
+        ]
+      ],
+      "unlikely_after": [
+        [
+          16,
+          -48.1
+        ],
+        [
+          52,
+          -35.2
+        ],
+        [
+          15,
+          -28.7
+        ],
+        [
+          34,
+          -28.7
+        ],
+        [
+          46,
+          -28.7
+        ]
+      ],
+      "exclusion_candidates": [
+        16,
+        52,
+        15
+      ]
+    },
+    {
+      "trigger": "Zahl 8 an Position 14",
+      "trigger_count": 46,
+      "likely_after": [
+        [
+          54,
+          47.1
+        ],
+        [
+          26,
+          26.8
+        ],
+        [
+          55,
+          26.8
+        ],
+        [
+          67,
+          26.8
+        ],
+        [
+          33,
+          21.7
+        ]
+      ],
+      "unlikely_after": [
+        [
+          60,
+          -39.1
+        ],
+        [
+          56,
+          -26.4
+        ],
+        [
+          1,
+          -21.4
+        ],
+        [
+          25,
+          -21.4
+        ],
+        [
+          29,
+          -21.4
+        ]
+      ],
+      "exclusion_candidates": [
+        60,
+        56,
+        1
+      ]
+    },
+    {
+      "trigger": "Zahl 16 an Position 10",
+      "trigger_count": 46,
+      "likely_after": [
+        [
+          59,
+          29.3
+        ],
+        [
+          36,
+          26.8
+        ],
+        [
+          2,
+          24.3
+        ],
+        [
+          14,
+          24.3
+        ],
+        [
+          20,
+          24.3
+        ]
+      ],
+      "unlikely_after": [
+        [
+          58,
+          -31.5
+        ],
+        [
+          15,
+          -23.9
+        ],
+        [
+          32,
+          -23.9
+        ],
+        [
+          69,
+          -21.4
+        ],
+        [
+          17,
+          -18.8
+        ]
+      ],
+      "exclusion_candidates": [
+        58,
+        15,
+        32
+      ]
+    },
+    {
+      "trigger": "Zahl 39 an Position 10",
+      "trigger_count": 46,
+      "likely_after": [
+        [
+          42,
+          31.9
+        ],
+        [
+          2,
+          24.3
+        ],
+        [
+          31,
+          24.3
+        ],
+        [
+          21,
+          21.7
+        ],
+        [
+          56,
+          21.7
+        ]
+      ],
+      "unlikely_after": [
+        [
+          51,
+          -29.0
+        ],
+        [
+          54,
+          -29.0
+        ],
+        [
+          15,
+          -21.4
+        ],
+        [
+          46,
+          -21.4
+        ],
+        [
+          48,
+          -21.4
+        ]
+      ],
+      "exclusion_candidates": [
+        51,
+        54,
+        15
+      ]
+    },
+    {
+      "trigger": "Zahl 39 an Position 12",
+      "trigger_count": 46,
+      "likely_after": [
+        [
+          3,
+          23.5
+        ],
+        [
+          27,
+          23.5
+        ],
+        [
+          55,
+          23.5
+        ],
+        [
+          36,
+          21.0
+        ],
+        [
+          35,
+          18.4
+        ]
+      ],
+      "unlikely_after": [
+        [
+          1,
+          -30.5
+        ],
+        [
+          8,
+          -25.4
+        ],
+        [
+          56,
+          -25.4
+        ],
+        [
+          17,
+          -20.2
+        ],
+        [
+          40,
+          -20.2
+        ]
+      ],
+      "exclusion_candidates": [
+        1,
+        8,
+        56
+      ]
+    }
+  ],
+  "exclusion_rules": {
+    "rules": [
+      {
+        "trigger": "Zahl 4 an Pos 17",
+        "trigger_zahl": 4,
+        "trigger_pos": 17,
+        "exclude": 70,
+        "accuracy": 100.0,
+        "samples": 34,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 24 an Pos 2",
+        "trigger_zahl": 24,
+        "trigger_pos": 2,
+        "exclude": 22,
+        "accuracy": 100.0,
+        "samples": 28,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 4 an Pos 14",
+        "trigger_zahl": 4,
+        "trigger_pos": 14,
+        "exclude": 25,
+        "accuracy": 100.0,
+        "samples": 27,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 14 an Pos 7",
+        "trigger_zahl": 14,
+        "trigger_pos": 7,
+        "exclude": 38,
+        "accuracy": 100.0,
+        "samples": 26,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 5 an Pos 2",
+        "trigger_zahl": 5,
+        "trigger_pos": 2,
+        "exclude": 13,
+        "accuracy": 100.0,
+        "samples": 25,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 68 an Pos 20",
+        "trigger_zahl": 68,
+        "trigger_pos": 20,
+        "exclude": 65,
+        "accuracy": 100.0,
+        "samples": 25,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 29 an Pos 3",
+        "trigger_zahl": 29,
+        "trigger_pos": 3,
+        "exclude": 14,
+        "accuracy": 100.0,
+        "samples": 23,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 50 an Pos 4",
+        "trigger_zahl": 50,
+        "trigger_pos": 4,
+        "exclude": 64,
+        "accuracy": 100.0,
+        "samples": 23,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 1 an Pos 8",
+        "trigger_zahl": 1,
+        "trigger_pos": 8,
+        "exclude": 33,
+        "accuracy": 100.0,
+        "samples": 20,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 22 an Pos 9",
+        "trigger_zahl": 22,
+        "trigger_pos": 9,
+        "exclude": 29,
+        "accuracy": 100.0,
+        "samples": 20,
+        "improvement": 28.6
+      },
+      {
+        "trigger": "Zahl 30 an Pos 3",
+        "trigger_zahl": 30,
+        "trigger_pos": 3,
+        "exclude": 14,
+        "accuracy": 97.3,
+        "samples": 37,
+        "improvement": 25.9
+      },
+      {
+        "trigger": "Zahl 61 an Pos 10",
+        "trigger_zahl": 61,
+        "trigger_pos": 10,
+        "exclude": 52,
+        "accuracy": 97.3,
+        "samples": 37,
+        "improvement": 25.9
+      },
+      {
+        "trigger": "Zahl 27 an Pos 17",
+        "trigger_zahl": 27,
+        "trigger_pos": 17,
+        "exclude": 58,
+        "accuracy": 97.2,
+        "samples": 36,
+        "improvement": 25.8
+      },
+      {
+        "trigger": "Zahl 2 an Pos 14",
+        "trigger_zahl": 2,
+        "trigger_pos": 14,
+        "exclude": 42,
+        "accuracy": 97.1,
+        "samples": 34,
+        "improvement": 25.6
+      },
+      {
+        "trigger": "Zahl 31 an Pos 4",
+        "trigger_zahl": 31,
+        "trigger_pos": 4,
+        "exclude": 11,
+        "accuracy": 96.9,
+        "samples": 32,
+        "improvement": 25.4
+      },
+      {
+        "trigger": "Zahl 9 an Pos 7",
+        "trigger_zahl": 9,
+        "trigger_pos": 7,
+        "exclude": 14,
+        "accuracy": 96.9,
+        "samples": 32,
+        "improvement": 25.4
+      },
+      {
+        "trigger": "Zahl 35 an Pos 7",
+        "trigger_zahl": 35,
+        "trigger_pos": 7,
+        "exclude": 14,
+        "accuracy": 96.9,
+        "samples": 32,
+        "improvement": 25.4
+      },
+      {
+        "trigger": "Zahl 66 an Pos 8",
+        "trigger_zahl": 66,
+        "trigger_pos": 8,
+        "exclude": 44,
+        "accuracy": 96.9,
+        "samples": 32,
+        "improvement": 25.4
+      },
+      {
+        "trigger": "Zahl 24 an Pos 17",
+        "trigger_zahl": 24,
+        "trigger_pos": 17,
+        "exclude": 23,
+        "accuracy": 96.9,
+        "samples": 32,
+        "improvement": 25.4
+      },
+      {
+        "trigger": "Zahl 26 an Pos 17",
+        "trigger_zahl": 26,
+        "trigger_pos": 17,
+        "exclude": 44,
+        "accuracy": 96.8,
+        "samples": 31,
+        "improvement": 25.3
+      },
+      {
+        "trigger": "Zahl 11 an Pos 18",
+        "trigger_zahl": 11,
+        "trigger_pos": 18,
+        "exclude": 2,
+        "accuracy": 96.8,
+        "samples": 31,
+        "improvement": 25.3
+      },
+      {
+        "trigger": "Zahl 7 an Pos 4",
+        "trigger_zahl": 7,
+        "trigger_pos": 4,
+        "exclude": 27,
+        "accuracy": 96.7,
+        "samples": 30,
+        "improvement": 25.2
+      },
+      {
+        "trigger": "Zahl 47 an Pos 4",
+        "trigger_zahl": 47,
+        "trigger_pos": 4,
+        "exclude": 48,
+        "accuracy": 96.7,
+        "samples": 30,
+        "improvement": 25.2
+      },
+      {
+        "trigger": "Zahl 26 an Pos 5",
+        "trigger_zahl": 26,
+        "trigger_pos": 5,
+        "exclude": 12,
+        "accuracy": 96.7,
+        "samples": 30,
+        "improvement": 25.2
+      },
+      {
+        "trigger": "Zahl 52 an Pos 11",
+        "trigger_zahl": 52,
+        "trigger_pos": 11,
+        "exclude": 50,
+        "accuracy": 96.7,
+        "samples": 30,
+        "improvement": 25.2
+      },
+      {
+        "trigger": "Zahl 65 an Pos 1",
+        "trigger_zahl": 65,
+        "trigger_pos": 1,
+        "exclude": 50,
+        "accuracy": 96.6,
+        "samples": 29,
+        "improvement": 25.1
+      },
+      {
+        "trigger": "Zahl 8 an Pos 5",
+        "trigger_zahl": 8,
+        "trigger_pos": 5,
+        "exclude": 55,
+        "accuracy": 96.6,
+        "samples": 29,
+        "improvement": 25.1
+      },
+      {
+        "trigger": "Zahl 54 an Pos 6",
+        "trigger_zahl": 54,
+        "trigger_pos": 6,
+        "exclude": 37,
+        "accuracy": 96.6,
+        "samples": 29,
+        "improvement": 25.1
+      },
+      {
+        "trigger": "Zahl 53 an Pos 20",
+        "trigger_zahl": 53,
+        "trigger_pos": 20,
+        "exclude": 52,
+        "accuracy": 96.6,
+        "samples": 29,
+        "improvement": 25.1
+      },
+      {
+        "trigger": "Zahl 8 an Pos 1",
+        "trigger_zahl": 8,
+        "trigger_pos": 1,
+        "exclude": 48,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 15 an Pos 1",
+        "trigger_zahl": 15,
+        "trigger_pos": 1,
+        "exclude": 48,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 58 an Pos 1",
+        "trigger_zahl": 58,
+        "trigger_pos": 1,
+        "exclude": 50,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 4 an Pos 6",
+        "trigger_zahl": 4,
+        "trigger_pos": 6,
+        "exclude": 62,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 38 an Pos 6",
+        "trigger_zahl": 38,
+        "trigger_pos": 6,
+        "exclude": 41,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 64 an Pos 8",
+        "trigger_zahl": 64,
+        "trigger_pos": 8,
+        "exclude": 51,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 21 an Pos 13",
+        "trigger_zahl": 21,
+        "trigger_pos": 13,
+        "exclude": 22,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 7 an Pos 16",
+        "trigger_zahl": 7,
+        "trigger_pos": 16,
+        "exclude": 22,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 26 an Pos 18",
+        "trigger_zahl": 26,
+        "trigger_pos": 18,
+        "exclude": 1,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 69 an Pos 19",
+        "trigger_zahl": 69,
+        "trigger_pos": 19,
+        "exclude": 38,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 5 an Pos 20",
+        "trigger_zahl": 5,
+        "trigger_pos": 20,
+        "exclude": 8,
+        "accuracy": 96.4,
+        "samples": 28,
+        "improvement": 25.0
+      },
+      {
+        "trigger": "Zahl 16 an Pos 5",
+        "trigger_zahl": 16,
+        "trigger_pos": 5,
+        "exclude": 18,
+        "accuracy": 96.3,
+        "samples": 27,
+        "improvement": 24.9
+      },
+      {
+        "trigger": "Zahl 47 an Pos 5",
+        "trigger_zahl": 47,
+        "trigger_pos": 5,
+        "exclude": 9,
+        "accuracy": 96.3,
+        "samples": 27,
+        "improvement": 24.9
+      },
+      {
+        "trigger": "Zahl 65 an Pos 7",
+        "trigger_zahl": 65,
+        "trigger_pos": 7,
+        "exclude": 27,
+        "accuracy": 96.3,
+        "samples": 27,
+        "improvement": 24.9
+      },
+      {
+        "trigger": "Zahl 69 an Pos 10",
+        "trigger_zahl": 69,
+        "trigger_pos": 10,
+        "exclude": 5,
+        "accuracy": 96.3,
+        "samples": 27,
+        "improvement": 24.9
+      },
+      {
+        "trigger": "Zahl 12 an Pos 15",
+        "trigger_zahl": 12,
+        "trigger_pos": 15,
+        "exclude": 68,
+        "accuracy": 96.3,
+        "samples": 27,
+        "improvement": 24.9
+      },
+      {
+        "trigger": "Zahl 1 an Pos 3",
+        "trigger_zahl": 1,
+        "trigger_pos": 3,
+        "exclude": 51,
+        "accuracy": 96.2,
+        "samples": 26,
+        "improvement": 24.7
+      },
+      {
+        "trigger": "Zahl 4 an Pos 3",
+        "trigger_zahl": 4,
+        "trigger_pos": 3,
+        "exclude": 48,
+        "accuracy": 96.2,
+        "samples": 26,
+        "improvement": 24.7
+      },
+      {
+        "trigger": "Zahl 11 an Pos 4",
+        "trigger_zahl": 11,
+        "trigger_pos": 4,
+        "exclude": 65,
+        "accuracy": 96.2,
+        "samples": 26,
+        "improvement": 24.7
+      },
+      {
+        "trigger": "Zahl 28 an Pos 4",
+        "trigger_zahl": 28,
+        "trigger_pos": 4,
+        "exclude": 69,
+        "accuracy": 96.2,
+        "samples": 26,
+        "improvement": 24.7
+      },
+      {
+        "trigger": "Zahl 69 an Pos 8",
+        "trigger_zahl": 69,
+        "trigger_pos": 8,
+        "exclude": 31,
+        "accuracy": 96.2,
+        "samples": 26,
+        "improvement": 24.7
+      }
+    ],
+    "total_found": 4068
+  },
+  "absence_correlations": [
+    {
+      "pair": [
+        41,
+        45
+      ],
+      "both_absent_rate": 54.5,
+      "expected": 51.0,
+      "deviation": 6.8
+    },
+    {
+      "pair": [
+        1,
+        37
+      ],
+      "both_absent_rate": 54.1,
+      "expected": 51.0,
+      "deviation": 6.0
+    },
+    {
+      "pair": [
+        1,
+        45
+      ],
+      "both_absent_rate": 53.9,
+      "expected": 51.0,
+      "deviation": 5.7
+    },
+    {
+      "pair": [
+        1,
+        51
+      ],
+      "both_absent_rate": 53.9,
+      "expected": 51.0,
+      "deviation": 5.6
+    },
+    {
+      "pair": [
+        45,
+        51
+      ],
+      "both_absent_rate": 53.9,
+      "expected": 51.0,
+      "deviation": 5.6
+    },
+    {
+      "pair": [
+        17,
+        45
+      ],
+      "both_absent_rate": 53.7,
+      "expected": 51.0,
+      "deviation": 5.3
+    },
+    {
+      "pair": [
+        37,
+        45
+      ],
+      "both_absent_rate": 53.7,
+      "expected": 51.0,
+      "deviation": 5.3
+    },
+    {
+      "pair": [
+        37,
+        48
+      ],
+      "both_absent_rate": 53.7,
+      "expected": 51.0,
+      "deviation": 5.3
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "both_absent_rate": 53.6,
+      "expected": 51.0,
+      "deviation": 5.1
+    },
+    {
+      "pair": [
+        18,
+        31
+      ],
+      "both_absent_rate": 53.6,
+      "expected": 51.0,
+      "deviation": 5.1
+    },
+    {
+      "pair": [
+        25,
+        31
+      ],
+      "both_absent_rate": 53.6,
+      "expected": 51.0,
+      "deviation": 5.1
+    }
+  ],
+  "backtest": [
+    {
+      "rule": "Zahl 4 an Pos 17",
+      "exclude": 70,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 9
+    },
+    {
+      "rule": "Zahl 24 an Pos 2",
+      "exclude": 22,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 9
+    },
+    {
+      "rule": "Zahl 4 an Pos 14",
+      "exclude": 25,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 5
+    },
+    {
+      "rule": "Zahl 14 an Pos 7",
+      "exclude": 38,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 7
+    },
+    {
+      "rule": "Zahl 5 an Pos 2",
+      "exclude": 13,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 7
+    },
+    {
+      "rule": "Zahl 68 an Pos 20",
+      "exclude": 65,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 11
+    },
+    {
+      "rule": "Zahl 29 an Pos 3",
+      "exclude": 14,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 6
+    },
+    {
+      "rule": "Zahl 50 an Pos 4",
+      "exclude": 64,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 8
+    },
+    {
+      "rule": "Zahl 1 an Pos 8",
+      "exclude": 33,
+      "test_accuracy": 100.0,
+      "train_accuracy": 100.0,
+      "test_samples": 5
+    },
+    {
+      "rule": "Zahl 30 an Pos 3",
+      "exclude": 14,
+      "test_accuracy": 100.0,
+      "train_accuracy": 97.3,
+      "test_samples": 11
+    },
+    {
+      "rule": "Zahl 61 an Pos 10",
+      "exclude": 52,
+      "test_accuracy": 100.0,
+      "train_accuracy": 97.3,
+      "test_samples": 11
+    },
+    {
+      "rule": "Zahl 27 an Pos 17",
+      "exclude": 58,
+      "test_accuracy": 100.0,
+      "train_accuracy": 97.2,
+      "test_samples": 10
+    },
+    {
+      "rule": "Zahl 2 an Pos 14",
+      "exclude": 42,
+      "test_accuracy": 100.0,
+      "train_accuracy": 97.1,
+      "test_samples": 10
+    },
+    {
+      "rule": "Zahl 31 an Pos 4",
+      "exclude": 11,
+      "test_accuracy": 100.0,
+      "train_accuracy": 96.9,
+      "test_samples": 12
+    },
+    {
+      "rule": "Zahl 9 an Pos 7",
+      "exclude": 14,
+      "test_accuracy": 100.0,
+      "train_accuracy": 96.9,
+      "test_samples": 10
+    },
+    {
+      "rule": "Zahl 35 an Pos 7",
+      "exclude": 14,
+      "test_accuracy": 91.7,
+      "train_accuracy": 96.9,
+      "test_samples": 12
+    },
+    {
+      "rule": "Zahl 66 an Pos 8",
+      "exclude": 44,
+      "test_accuracy": 90.9,
+      "train_accuracy": 96.9,
+      "test_samples": 11
+    },
+    {
+      "rule": "Zahl 24 an Pos 17",
+      "exclude": 23,
+      "test_accuracy": 100.0,
+      "train_accuracy": 96.9,
+      "test_samples": 7
+    },
+    {
+      "rule": "Zahl 26 an Pos 17",
+      "exclude": 44,
+      "test_accuracy": 88.9,
+      "train_accuracy": 96.8,
+      "test_samples": 9
+    }
+  ]
+}
