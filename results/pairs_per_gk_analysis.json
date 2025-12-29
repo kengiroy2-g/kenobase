@@ -1,0 +1,2689 @@
+{
+  "metadata": {
+    "analysis_date": "2025-12-29T11:45:09.393235",
+    "total_draws": 2237,
+    "gq_records": 27684,
+    "min_cooccurrence": 200
+  },
+  "global_pairs": {
+    "total_pairs": 2415,
+    "strong_pairs_count": 91,
+    "top_20": [
+      "((9, 50), 218)",
+      "((20, 36), 218)",
+      "((9, 10), 217)",
+      "((32, 64), 214)",
+      "((33, 49), 213)",
+      "((7, 10), 213)",
+      "((19, 49), 213)",
+      "((42, 61), 212)",
+      "((3, 42), 212)",
+      "((27, 49), 211)",
+      "((33, 50), 211)",
+      "((64, 66), 211)",
+      "((2, 3), 211)",
+      "((24, 40), 211)",
+      "((10, 32), 210)",
+      "((2, 59), 208)",
+      "((53, 64), 208)",
+      "((3, 20), 208)",
+      "((14, 64), 208)",
+      "((38, 66), 208)"
+    ]
+  },
+  "pairs_per_gk": {
+    "GK_2_2": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_3_2": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_3_3": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_4_2": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_4_3": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_4_4": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_5_3": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_5_4": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_5_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_6_3": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_6_4": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_6_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_6_6": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_7_4": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_7_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_7_6": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_7_7": {
+      "draws_with_winners": 385,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 56,
+          "expected": 30.29,
+          "lift": 1.849
+        },
+        {
+          "pair": "(3, 9)",
+          "count": 54,
+          "expected": 30.29,
+          "lift": 1.783
+        },
+        {
+          "pair": "(33, 49)",
+          "count": 50,
+          "expected": 30.29,
+          "lift": 1.651
+        },
+        {
+          "pair": "(42, 68)",
+          "count": 50,
+          "expected": 30.29,
+          "lift": 1.651
+        },
+        {
+          "pair": "(3, 12)",
+          "count": 49,
+          "expected": 30.29,
+          "lift": 1.618
+        },
+        {
+          "pair": "(9, 45)",
+          "count": 48,
+          "expected": 30.29,
+          "lift": 1.585
+        },
+        {
+          "pair": "(4, 12)",
+          "count": 48,
+          "expected": 30.29,
+          "lift": 1.585
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 48,
+          "expected": 30.29,
+          "lift": 1.585
+        },
+        {
+          "pair": "(3, 18)",
+          "count": 47,
+          "expected": 30.29,
+          "lift": 1.552
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 47,
+          "expected": 30.29,
+          "lift": 1.552
+        }
+      ]
+    },
+    "GK_8_0": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_8_4": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_8_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_8_6": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_8_7": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_8_8": {
+      "draws_with_winners": 184,
+      "top_pairs": [
+        {
+          "pair": "(25, 31)",
+          "count": 28,
+          "expected": 14.48,
+          "lift": 1.934
+        },
+        {
+          "pair": "(23, 47)",
+          "count": 28,
+          "expected": 14.48,
+          "lift": 1.934
+        },
+        {
+          "pair": "(23, 27)",
+          "count": 28,
+          "expected": 14.48,
+          "lift": 1.934
+        },
+        {
+          "pair": "(21, 25)",
+          "count": 27,
+          "expected": 14.48,
+          "lift": 1.865
+        },
+        {
+          "pair": "(2, 23)",
+          "count": 27,
+          "expected": 14.48,
+          "lift": 1.865
+        },
+        {
+          "pair": "(10, 23)",
+          "count": 27,
+          "expected": 14.48,
+          "lift": 1.865
+        },
+        {
+          "pair": "(9, 23)",
+          "count": 27,
+          "expected": 14.48,
+          "lift": 1.865
+        },
+        {
+          "pair": "(27, 30)",
+          "count": 27,
+          "expected": 14.48,
+          "lift": 1.865
+        },
+        {
+          "pair": "(5, 27)",
+          "count": 26,
+          "expected": 14.48,
+          "lift": 1.796
+        },
+        {
+          "pair": "(24, 66)",
+          "count": 26,
+          "expected": 14.48,
+          "lift": 1.796
+        }
+      ]
+    },
+    "GK_9_0": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_9_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_9_6": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_9_7": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_9_8": {
+      "draws_with_winners": 537,
+      "top_pairs": [
+        {
+          "pair": "(9, 39)",
+          "count": 66,
+          "expected": 42.25,
+          "lift": 1.562
+        },
+        {
+          "pair": "(2, 70)",
+          "count": 64,
+          "expected": 42.25,
+          "lift": 1.515
+        },
+        {
+          "pair": "(3, 25)",
+          "count": 63,
+          "expected": 42.25,
+          "lift": 1.491
+        },
+        {
+          "pair": "(2, 38)",
+          "count": 63,
+          "expected": 42.25,
+          "lift": 1.491
+        },
+        {
+          "pair": "(9, 45)",
+          "count": 62,
+          "expected": 42.25,
+          "lift": 1.468
+        },
+        {
+          "pair": "(3, 9)",
+          "count": 61,
+          "expected": 42.25,
+          "lift": 1.444
+        },
+        {
+          "pair": "(38, 66)",
+          "count": 61,
+          "expected": 42.25,
+          "lift": 1.444
+        },
+        {
+          "pair": "(3, 12)",
+          "count": 61,
+          "expected": 42.25,
+          "lift": 1.444
+        },
+        {
+          "pair": "(3, 47)",
+          "count": 61,
+          "expected": 42.25,
+          "lift": 1.444
+        },
+        {
+          "pair": "(3, 70)",
+          "count": 61,
+          "expected": 42.25,
+          "lift": 1.444
+        }
+      ]
+    },
+    "GK_9_9": {
+      "draws_with_winners": 25,
+      "top_pairs": [
+        {
+          "pair": "(4, 49)",
+          "count": 8,
+          "expected": 1.97,
+          "lift": 4.067
+        },
+        {
+          "pair": "(3, 31)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(5, 50)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(49, 65)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(4, 66)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(65, 66)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(49, 66)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(36, 49)",
+          "count": 7,
+          "expected": 1.97,
+          "lift": 3.559
+        },
+        {
+          "pair": "(1, 49)",
+          "count": 6,
+          "expected": 1.97,
+          "lift": 3.051
+        },
+        {
+          "pair": "(3, 49)",
+          "count": 6,
+          "expected": 1.97,
+          "lift": 3.051
+        }
+      ]
+    },
+    "GK_10_0": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_10_5": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_10_6": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_10_7": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_10_8": {
+      "draws_with_winners": 769,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 87,
+          "expected": 60.5,
+          "lift": 1.438
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 86,
+          "expected": 60.5,
+          "lift": 1.421
+        },
+        {
+          "pair": "(50, 64)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 84,
+          "expected": 60.5,
+          "lift": 1.388
+        },
+        {
+          "pair": "(49, 57)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 83,
+          "expected": 60.5,
+          "lift": 1.372
+        },
+        {
+          "pair": "(42, 46)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(28, 66)",
+          "count": 82,
+          "expected": 60.5,
+          "lift": 1.355
+        },
+        {
+          "pair": "(39, 64)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        },
+        {
+          "pair": "(51, 57)",
+          "count": 81,
+          "expected": 60.5,
+          "lift": 1.339
+        }
+      ]
+    },
+    "GK_10_9": {
+      "draws_with_winners": 585,
+      "top_pairs": [
+        {
+          "pair": "(3, 25)",
+          "count": 71,
+          "expected": 46.02,
+          "lift": 1.543
+        },
+        {
+          "pair": "(25, 31)",
+          "count": 68,
+          "expected": 46.02,
+          "lift": 1.477
+        },
+        {
+          "pair": "(25, 64)",
+          "count": 68,
+          "expected": 46.02,
+          "lift": 1.477
+        },
+        {
+          "pair": "(9, 45)",
+          "count": 67,
+          "expected": 46.02,
+          "lift": 1.456
+        },
+        {
+          "pair": "(27, 49)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        },
+        {
+          "pair": "(68, 70)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        },
+        {
+          "pair": "(9, 39)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        },
+        {
+          "pair": "(9, 68)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        },
+        {
+          "pair": "(4, 66)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        },
+        {
+          "pair": "(42, 61)",
+          "count": 64,
+          "expected": 46.02,
+          "lift": 1.391
+        }
+      ]
+    },
+    "GK_10_10": {
+      "draws_with_winners": 31,
+      "top_pairs": [
+        {
+          "pair": "(3, 9)",
+          "count": 8,
+          "expected": 2.44,
+          "lift": 3.28
+        },
+        {
+          "pair": "(7, 42)",
+          "count": 8,
+          "expected": 2.44,
+          "lift": 3.28
+        },
+        {
+          "pair": "(3, 36)",
+          "count": 8,
+          "expected": 2.44,
+          "lift": 3.28
+        },
+        {
+          "pair": "(17, 48)",
+          "count": 8,
+          "expected": 2.44,
+          "lift": 3.28
+        },
+        {
+          "pair": "(23, 58)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        },
+        {
+          "pair": "(7, 48)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        },
+        {
+          "pair": "(13, 51)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        },
+        {
+          "pair": "(15, 35)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        },
+        {
+          "pair": "(15, 58)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        },
+        {
+          "pair": "(18, 51)",
+          "count": 7,
+          "expected": 2.44,
+          "lift": 2.87
+        }
+      ]
+    }
+  },
+  "pair_guarantee_test": {
+    "hypothesis": "WL-001: Starke Paare gewinnen mind. 1x/Monat",
+    "threshold": 0.9,
+    "pairs_tested": 30,
+    "pairs_meeting_threshold": 30,
+    "results": [
+      {
+        "pair": "(27,38)",
+        "months_with_win": 74,
+        "total_months": 74,
+        "guarantee_rate": 1.0,
+        "avg_wins_per_month": 2.74
+      },
+      {
+        "pair": "(34,63)",
+        "months_with_win": 73,
+        "total_months": 74,
+        "guarantee_rate": 0.986,
+        "avg_wins_per_month": 2.72
+      },
+      {
+        "pair": "(33,49)",
+        "months_with_win": 73,
+        "total_months": 74,
+        "guarantee_rate": 0.986,
+        "avg_wins_per_month": 2.88
+      },
+      {
+        "pair": "(27,64)",
+        "months_with_win": 72,
+        "total_months": 74,
+        "guarantee_rate": 0.973,
+        "avg_wins_per_month": 2.74
+      },
+      {
+        "pair": "(42,68)",
+        "months_with_win": 72,
+        "total_months": 74,
+        "guarantee_rate": 0.973,
+        "avg_wins_per_month": 2.8
+      },
+      {
+        "pair": "(25,31)",
+        "months_with_win": 72,
+        "total_months": 74,
+        "guarantee_rate": 0.973,
+        "avg_wins_per_month": 2.72
+      },
+      {
+        "pair": "(49,55)",
+        "months_with_win": 72,
+        "total_months": 74,
+        "guarantee_rate": 0.973,
+        "avg_wins_per_month": 2.77
+      },
+      {
+        "pair": "(10,32)",
+        "months_with_win": 72,
+        "total_months": 74,
+        "guarantee_rate": 0.973,
+        "avg_wins_per_month": 2.84
+      },
+      {
+        "pair": "(21,68)",
+        "months_with_win": 71,
+        "total_months": 74,
+        "guarantee_rate": 0.959,
+        "avg_wins_per_month": 2.74
+      },
+      {
+        "pair": "(32,64)",
+        "months_with_win": 71,
+        "total_months": 74,
+        "guarantee_rate": 0.959,
+        "avg_wins_per_month": 2.89
+      },
+      {
+        "pair": "(49,60)",
+        "months_with_win": 71,
+        "total_months": 74,
+        "guarantee_rate": 0.959,
+        "avg_wins_per_month": 2.74
+      },
+      {
+        "pair": "(10,66)",
+        "months_with_win": 71,
+        "total_months": 74,
+        "guarantee_rate": 0.959,
+        "avg_wins_per_month": 2.7
+      },
+      {
+        "pair": "(61,64)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.73
+      },
+      {
+        "pair": "(20,32)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.8
+      },
+      {
+        "pair": "(10,61)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.7
+      },
+      {
+        "pair": "(33,50)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.85
+      },
+      {
+        "pair": "(2,35)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.73
+      },
+      {
+        "pair": "(2,59)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.81
+      },
+      {
+        "pair": "(23,66)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.73
+      },
+      {
+        "pair": "(28,66)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.77
+      },
+      {
+        "pair": "(53,64)",
+        "months_with_win": 70,
+        "total_months": 74,
+        "guarantee_rate": 0.946,
+        "avg_wins_per_month": 2.81
+      },
+      {
+        "pair": "(21,42)",
+        "months_with_win": 69,
+        "total_months": 74,
+        "guarantee_rate": 0.932,
+        "avg_wins_per_month": 2.72
+      },
+      {
+        "pair": "(26,64)",
+        "months_with_win": 69,
+        "total_months": 74,
+        "guarantee_rate": 0.932,
+        "avg_wins_per_month": 2.72
+      },
+      {
+        "pair": "(27,65)",
+        "months_with_win": 69,
+        "total_months": 74,
+        "guarantee_rate": 0.932,
+        "avg_wins_per_month": 2.73
+      },
+      {
+        "pair": "(42,61)",
+        "months_with_win": 69,
+        "total_months": 74,
+        "guarantee_rate": 0.932,
+        "avg_wins_per_month": 2.86
+      },
+      {
+        "pair": "(10,59)",
+        "months_with_win": 69,
+        "total_months": 74,
+        "guarantee_rate": 0.932,
+        "avg_wins_per_month": 2.78
+      },
+      {
+        "pair": "(27,49)",
+        "months_with_win": 68,
+        "total_months": 74,
+        "guarantee_rate": 0.919,
+        "avg_wins_per_month": 2.85
+      },
+      {
+        "pair": "(47,49)",
+        "months_with_win": 68,
+        "total_months": 74,
+        "guarantee_rate": 0.919,
+        "avg_wins_per_month": 2.73
+      },
+      {
+        "pair": "(49,61)",
+        "months_with_win": 68,
+        "total_months": 74,
+        "guarantee_rate": 0.919,
+        "avg_wins_per_month": 2.77
+      },
+      {
+        "pair": "(26,42)",
+        "months_with_win": 67,
+        "total_months": 74,
+        "guarantee_rate": 0.905,
+        "avg_wins_per_month": 2.7
+      }
+    ]
+  },
+  "monthly_backtest": {
+    "description": "Typ-2 Ticket Simulation mit starken Paaren",
+    "results": [
+      {
+        "pair": "(21, 42)",
+        "total_draws": 2237,
+        "wins_2_2": 201,
+        "hits_1_2": 914,
+        "hits_0_2": 1122,
+        "win_rate": 0.08985248100134108,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(21, 68)",
+        "total_draws": 2237,
+        "wins_2_2": 203,
+        "hits_1_2": 882,
+        "hits_0_2": 1152,
+        "win_rate": 0.09074653553866786,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(26, 42)",
+        "total_draws": 2237,
+        "wins_2_2": 200,
+        "hits_1_2": 904,
+        "hits_0_2": 1133,
+        "win_rate": 0.08940545373267769,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(26, 64)",
+        "total_draws": 2237,
+        "wins_2_2": 201,
+        "hits_1_2": 914,
+        "hits_0_2": 1122,
+        "win_rate": 0.08985248100134108,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(27, 64)",
+        "total_draws": 2237,
+        "wins_2_2": 203,
+        "hits_1_2": 952,
+        "hits_0_2": 1082,
+        "win_rate": 0.09074653553866786,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(27, 65)",
+        "total_draws": 2237,
+        "wins_2_2": 202,
+        "hits_1_2": 925,
+        "hits_0_2": 1110,
+        "win_rate": 0.09029950827000446,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(32, 64)",
+        "total_draws": 2237,
+        "wins_2_2": 214,
+        "hits_1_2": 913,
+        "hits_0_2": 1110,
+        "win_rate": 0.09566383549396514,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(34, 63)",
+        "total_draws": 2237,
+        "wins_2_2": 201,
+        "hits_1_2": 868,
+        "hits_0_2": 1168,
+        "win_rate": 0.08985248100134108,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(42, 61)",
+        "total_draws": 2237,
+        "wins_2_2": 212,
+        "hits_1_2": 898,
+        "hits_0_2": 1127,
+        "win_rate": 0.09476978095663835,
+        "expected_rate": 0.07867494824016563
+      },
+      {
+        "pair": "(42, 68)",
+        "total_draws": 2237,
+        "wins_2_2": 207,
+        "hits_1_2": 898,
+        "hits_0_2": 1132,
+        "win_rate": 0.0925346446133214,
+        "expected_rate": 0.07867494824016563
+      }
+    ]
+  }
+}
