@@ -23,8 +23,10 @@ import argparse
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 import pandas as pd
+import yaml
+import time
 
 # Logging Setup
 logging.basicConfig(
@@ -36,6 +38,17 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+
+def load_config(config_path: Optional[Path] = None) -> Dict[str, Any]:
+    """Laedt Konfiguration aus YAML-Datei."""
+    if config_path is None:
+        config_path = Path(__file__).parent.parent / 'config' / 'default.yaml'
+
+    if config_path.exists():
+        with open(config_path, 'r', encoding='utf-8') as f:
+            return yaml.safe_load(f)
+    return {}
 
 
 class DataSourceConfig:
@@ -64,6 +77,188 @@ class DataSourceConfig:
             'update_freq': 'wed_sat'
         }
     }
+
+
+class KenoScraper:
+    """Web Scraper fuer KENO-Daten von lotto-rlp.de.
+
+    Basiert auf all_code/00_web_scrapping_V4_+_Datum.py mit konfigurierbarem
+    ChromeDriver-Pfad und Headless-Modus.
+    """
+
+    def __init__(self, config: Dict[str, Any]):
+        self.config = config.get('scraper', {})
+        self.logger = logging.getLogger(self.__class__.__name__)
+
+        # Scraper settings from config
+        self.chromedriver_path = self.config.get('chromedriver_path')
+        self.headless = self.config.get('headless', True)
+        self.page_load_timeout = self.config.get('page_load_timeout', 30)
+        self.element_wait_timeout = self.config.get('element_wait_timeout', 10)
+        self.max_retries = self.config.get('max_retries', 3)
+        self.retry_delay = self.config.get('retry_delay', 5)
+        self.request_delay = self.config.get('request_delay', 2)
+
+    def _get_driver(self):
+        """Erstellt und konfiguriert Chrome WebDriver."""
+        from selenium import webdriver
+        from selenium.webdriver.chrome.service import Service
+        from selenium.webdriver.chrome.options import Options
+
+        chrome_options = Options()
+        if self.headless:
+            chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+
+        if self.chromedriver_path:
+            service = Service(self.chromedriver_path)
+            driver = webdriver.Chrome(service=service, options=chrome_options)
+        else:
+            driver = webdriver.Chrome(options=chrome_options)
+
+        driver.set_page_load_timeout(self.page_load_timeout)
+        return driver
+
+    def _select_year(self, driver, year: str):
+        """Waehlt ein Jahr im Dropdown aus."""
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait, Select
+        from selenium.webdriver.support import expected_conditions as EC
+
+        WebDriverWait(driver, self.element_wait_timeout).until(
+            EC.visibility_of_element_located((By.ID, 'year'))
+        )
+        year_select = Select(driver.find_element(By.ID, 'year'))
+        year_select.select_by_value(year)
+
+    def _scrape_keno_for_date(
+        self,
+        driver,
+        date_url: str,
+        keno_type: int,
+        date_text: str
+    ) -> List[Dict[str, Any]]:
+        """Scrapt KENO-Daten fuer ein spezifisches Datum und Keno-Typ."""
+        from bs4 import BeautifulSoup
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait, Select
+        from selenium.webdriver.support import expected_conditions as EC
+
+        data = []
+        retries = 0
+
+        while retries < self.max_retries:
+            try:
+                driver.get(date_url)
+                select = Select(WebDriverWait(driver, self.element_wait_timeout).until(
+                    EC.visibility_of_element_located((By.ID, 'kenotyp'))
+                ))
+                select.select_by_value(str(keno_type))
+
+                WebDriverWait(driver, self.element_wait_timeout).until(
+                    EC.visibility_of_element_located((By.CLASS_NAME, 'table_quoten'))
+                )
+                time.sleep(self.request_delay)
+
+                soup = BeautifulSoup(driver.page_source, 'html.parser')
+                table_container = soup.select_one(
+                    'body > main > div.quoten > section.row.row_outer.margin_elements > div:nth-child(2)'
+                )
+
+                if table_container:
+                    quoten_blocks = table_container.find_all('div', class_='table_quoten')
+                    for block in quoten_blocks:
+                        numbers = block.find('span').get_text(strip=True) if block.find('span') else 'N/A'
+                        winners = block.find('div', class_='text_align').get_text(strip=True) if block.find('div', class_='text_align') else 'N/A'
+                        euro_values = [div.get_text(strip=True) for div in block.find_all('div', class_='text_align')[1:]]
+
+                        data_entry = {
+                            'Datum': date_text,
+                            'Keno-Typ': keno_type,
+                            'Anzahl richtiger Zahlen': numbers,
+                            'Anzahl der Gewinner': winners,
+                            '1 Euro Gewinn': euro_values[0] if euro_values else 'N/A',
+                        }
+                        data.append(data_entry)
+                    break
+                else:
+                    retries += 1
+                    self.logger.warning(
+                        f"Keine Daten fuer {date_text}, Typ {keno_type}. Retry {retries}/{self.max_retries}"
+                    )
+                    time.sleep(self.retry_delay)
+
+            except Exception as e:
+                retries += 1
+                self.logger.warning(f"Fehler beim Scrapen: {e}. Retry {retries}/{self.max_retries}")
+                time.sleep(self.retry_delay)
+
+        return data
+
+    def scrape_year(self, year: int, url: str, output_path: Path) -> bool:
+        """Scrapt alle KENO-Daten fuer ein Jahr.
+
+        Args:
+            year: Jahr zum Scrapen (z.B. 2024)
+            url: Basis-URL fuer KENO-Quoten
+            output_path: Pfad fuer Output-CSV
+
+        Returns:
+            True wenn erfolgreich, False sonst
+        """
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait, Select
+        from selenium.webdriver.support import expected_conditions as EC
+
+        self.logger.info(f"Starte Scraping fuer Jahr {year}")
+        all_data = []
+        driver = None
+
+        try:
+            driver = self._get_driver()
+            driver.get(url)
+            self._select_year(driver, str(year))
+            time.sleep(self.retry_delay)
+
+            date_select = Select(WebDriverWait(driver, self.element_wait_timeout).until(
+                EC.presence_of_element_located((By.ID, 'gcid'))
+            ))
+            dates = [(option.get_attribute('value'), option.text) for option in date_select.options]
+
+            self.logger.info(f"Gefunden: {len(dates)} Ziehungstermine fuer {year}")
+
+            for idx, (value, date_text) in enumerate(dates):
+                self.logger.info(f"Scrape Datum {idx + 1}/{len(dates)}: {date_text}")
+
+                for keno_type in range(2, 11):
+                    date_url = f"{url}?gbn=6&gcid={value}"
+                    data = self._scrape_keno_for_date(driver, date_url, keno_type, date_text)
+                    all_data.extend(data)
+
+            if all_data:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                df = pd.DataFrame(all_data)
+                df.to_csv(output_path, index=False, encoding='utf-8-sig')
+                self.logger.info(f"Gespeichert: {len(all_data)} Eintraege in {output_path}")
+                return True
+            else:
+                self.logger.warning("Keine Daten gefunden")
+                return False
+
+        except Exception as e:
+            self.logger.error(f"Fehler beim Scraping: {e}")
+            if all_data:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                df = pd.DataFrame(all_data)
+                df.to_csv(output_path, index=False, encoding='utf-8-sig')
+                self.logger.info(f"Teilweise gespeichert: {len(all_data)} Eintraege")
+            return False
+
+        finally:
+            if driver:
+                driver.quit()
 
 
 class PatternAnalyzer:
@@ -203,20 +398,74 @@ class MasterUpdater:
         (self.base_dir / 'logs').mkdir(exist_ok=True)
 
     def run_scrape(self, game: str, year: Optional[int] = None) -> bool:
-        """Fuehrt Web-Scraping fuer ein Spiel aus."""
+        """Fuehrt Web-Scraping fuer ein Spiel aus.
+
+        Args:
+            game: Spieltyp ('keno', 'eurojackpot', 'lotto')
+            year: Jahr zum Scrapen (default: aktuelles Jahr)
+
+        Returns:
+            True wenn erfolgreich, False sonst
+        """
         self.logger.info(f"Starte Scraping fuer {game}...")
 
+        # Pruefe ob Selenium verfuegbar ist
         try:
             from selenium import webdriver
-            from selenium.webdriver.chrome.service import Service
-            from selenium.webdriver.chrome.options import Options
-        except ImportError:
-            self.logger.error("Selenium nicht installiert. Bitte 'pip install selenium' ausfuehren.")
+            from bs4 import BeautifulSoup
+        except ImportError as e:
+            self.logger.error(
+                f"Fehlende Abhaengigkeit: {e}. "
+                "Bitte 'pip install selenium beautifulsoup4' ausfuehren."
+            )
             return False
 
-        # TODO: Implementiere Scraping-Logik basierend auf Keno_Webscrapping_Code.md
-        self.logger.warning("Scraping noch nicht vollstaendig implementiert. Verwende manuelle Daten.")
-        return False
+        # Lade Konfiguration
+        config = load_config()
+        game_config = DataSourceConfig.GAMES.get(game)
+
+        if not game_config:
+            self.logger.error(f"Unbekanntes Spiel: {game}")
+            return False
+
+        # Aktuell nur KENO unterstuetzt
+        if game != 'keno':
+            self.logger.warning(
+                f"Scraping fuer {game} noch nicht implementiert. "
+                "Nur 'keno' wird aktuell unterstuetzt."
+            )
+            return False
+
+        # Jahr festlegen
+        if year is None:
+            year = datetime.now().year
+
+        # Output-Pfad bestimmen
+        output_dir = self.base_dir / 'data' / 'scraped'
+        output_path = output_dir / f'{game}_scraped_{year}.csv'
+
+        # Scraper initialisieren und ausfuehren
+        scraper = KenoScraper(config)
+        url = game_config['url']
+
+        success = scraper.scrape_year(year, url, output_path)
+
+        if success:
+            self.logger.info(f"Scraping abgeschlossen: {output_path}")
+
+            # Merge mit Hauptdatei wenn gewuenscht
+            main_file = self.base_dir / game_config['output_file']
+            if main_file.exists():
+                consolidator = DataConsolidator(game)
+                try:
+                    scraped_df = pd.read_csv(output_path, encoding='utf-8-sig')
+                    merged_df = consolidator.merge_new_data(main_file, scraped_df)
+                    merged_df.to_csv(main_file, sep=';', index=False, encoding='utf-8')
+                    self.logger.info(f"Daten gemerged in {main_file}")
+                except Exception as e:
+                    self.logger.warning(f"Merge fehlgeschlagen: {e}")
+
+        return success
 
     def run_patterns(self, game: str) -> bool:
         """Fuehrt Pattern-Analyse aus."""

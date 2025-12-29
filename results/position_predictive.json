@@ -1,0 +1,1336 @@
+{
+  "n_draws": 2242,
+  "top_preferences": [
+    {
+      "number": 38,
+      "position": 11,
+      "count": 54,
+      "expected": 32.02857142857143,
+      "deviation": 0.6859946476360391,
+      "is_positive": true
+    },
+    {
+      "number": 49,
+      "position": 1,
+      "count": 51,
+      "expected": 32.02857142857143,
+      "deviation": 0.5923282783229258,
+      "is_positive": true
+    },
+    {
+      "number": 61,
+      "position": 11,
+      "count": 50,
+      "expected": 32.02857142857143,
+      "deviation": 0.5611061552185547,
+      "is_positive": true
+    },
+    {
+      "number": 42,
+      "position": 3,
+      "count": 49,
+      "expected": 32.02857142857143,
+      "deviation": 0.5298840321141836,
+      "is_positive": true
+    },
+    {
+      "number": 24,
+      "position": 5,
+      "count": 16,
+      "expected": 32.02857142857143,
+      "deviation": -0.5004460303300625,
+      "is_positive": false
+    },
+    {
+      "number": 59,
+      "position": 10,
+      "count": 48,
+      "expected": 32.02857142857143,
+      "deviation": 0.4986619090098125,
+      "is_positive": true
+    },
+    {
+      "number": 56,
+      "position": 11,
+      "count": 17,
+      "expected": 32.02857142857143,
+      "deviation": -0.4692239072256914,
+      "is_positive": false
+    },
+    {
+      "number": 48,
+      "position": 5,
+      "count": 47,
+      "expected": 32.02857142857143,
+      "deviation": 0.4674397859054414,
+      "is_positive": true
+    },
+    {
+      "number": 29,
+      "position": 7,
+      "count": 47,
+      "expected": 32.02857142857143,
+      "deviation": 0.4674397859054414,
+      "is_positive": true
+    },
+    {
+      "number": 64,
+      "position": 7,
+      "count": 47,
+      "expected": 32.02857142857143,
+      "deviation": 0.4674397859054414,
+      "is_positive": true
+    },
+    {
+      "number": 27,
+      "position": 15,
+      "count": 47,
+      "expected": 32.02857142857143,
+      "deviation": 0.4674397859054414,
+      "is_positive": true
+    },
+    {
+      "number": 57,
+      "position": 16,
+      "count": 47,
+      "expected": 32.02857142857143,
+      "deviation": 0.4674397859054414,
+      "is_positive": true
+    },
+    {
+      "number": 57,
+      "position": 5,
+      "count": 18,
+      "expected": 32.02857142857143,
+      "deviation": -0.4380017841213203,
+      "is_positive": false
+    },
+    {
+      "number": 60,
+      "position": 8,
+      "count": 18,
+      "expected": 32.02857142857143,
+      "deviation": -0.4380017841213203,
+      "is_positive": false
+    },
+    {
+      "number": 31,
+      "position": 10,
+      "count": 18,
+      "expected": 32.02857142857143,
+      "deviation": -0.4380017841213203,
+      "is_positive": false
+    },
+    {
+      "number": 1,
+      "position": 16,
+      "count": 18,
+      "expected": 32.02857142857143,
+      "deviation": -0.4380017841213203,
+      "is_positive": false
+    },
+    {
+      "number": 16,
+      "position": 10,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 39,
+      "position": 10,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 39,
+      "position": 12,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 8,
+      "position": 14,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 64,
+      "position": 18,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 67,
+      "position": 20,
+      "count": 46,
+      "expected": 32.02857142857143,
+      "deviation": 0.4362176628010703,
+      "is_positive": true
+    },
+    {
+      "number": 29,
+      "position": 4,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 67,
+      "position": 6,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 36,
+      "position": 11,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 37,
+      "position": 12,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 60,
+      "position": 14,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 18,
+      "position": 16,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 36,
+      "position": 20,
+      "count": 19,
+      "expected": 32.02857142857143,
+      "deviation": -0.40677966101694923,
+      "is_positive": false
+    },
+    {
+      "number": 26,
+      "position": 3,
+      "count": 45,
+      "expected": 32.02857142857143,
+      "deviation": 0.4049955396966992,
+      "is_positive": true
+    }
+  ],
+  "rules": [
+    {
+      "trigger": "Zahl 56 an Position 11",
+      "trigger_number": 56,
+      "trigger_position": 11,
+      "action": "include",
+      "include_numbers": [
+        32,
+        17,
+        2,
+        62,
+        24
+      ],
+      "confidence": 0.935294117647059,
+      "occurrences": 17
+    },
+    {
+      "trigger": "Zahl 57 an Position 5",
+      "trigger_number": 57,
+      "trigger_position": 5,
+      "action": "include",
+      "include_numbers": [
+        15,
+        29,
+        69,
+        14,
+        24
+      ],
+      "confidence": 0.8666666666666668,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 1 an Position 16",
+      "trigger_number": 1,
+      "trigger_position": 16,
+      "action": "include",
+      "include_numbers": [
+        64,
+        52,
+        44,
+        46,
+        20
+      ],
+      "confidence": 0.8277777777777778,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 60 an Position 8",
+      "trigger_number": 60,
+      "trigger_position": 8,
+      "action": "include",
+      "include_numbers": [
+        4,
+        20,
+        2,
+        67,
+        28
+      ],
+      "confidence": 0.788888888888889,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 56 an Position 11",
+      "trigger_number": 56,
+      "trigger_position": 11,
+      "action": "exclude",
+      "exclude_numbers": [
+        41,
+        45,
+        70,
+        6,
+        7
+      ],
+      "confidence": 0.7529411764705882,
+      "occurrences": 17
+    },
+    {
+      "trigger": "Zahl 24 an Position 5",
+      "trigger_number": 24,
+      "trigger_position": 5,
+      "action": "include",
+      "include_numbers": [
+        4,
+        19,
+        20,
+        25,
+        27
+      ],
+      "confidence": 0.7500000000000001,
+      "occurrences": 16
+    },
+    {
+      "trigger": "Zahl 24 an Position 5",
+      "trigger_number": 24,
+      "trigger_position": 5,
+      "action": "exclude",
+      "exclude_numbers": [
+        12,
+        18,
+        42,
+        54,
+        1
+      ],
+      "confidence": 0.7375,
+      "occurrences": 16
+    },
+    {
+      "trigger": "Zahl 60 an Position 8",
+      "trigger_number": 60,
+      "trigger_position": 8,
+      "action": "exclude",
+      "exclude_numbers": [
+        46,
+        48,
+        16,
+        31,
+        35
+      ],
+      "confidence": 0.6888888888888889,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 57 an Position 5",
+      "trigger_number": 57,
+      "trigger_position": 5,
+      "action": "exclude",
+      "exclude_numbers": [
+        33,
+        19,
+        42,
+        53,
+        67
+      ],
+      "confidence": 0.65,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 1 an Position 16",
+      "trigger_number": 1,
+      "trigger_position": 16,
+      "action": "exclude",
+      "exclude_numbers": [
+        2,
+        13,
+        28,
+        39,
+        51
+      ],
+      "confidence": 0.65,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 31 an Position 10",
+      "trigger_number": 31,
+      "trigger_position": 10,
+      "action": "include",
+      "include_numbers": [
+        7,
+        34,
+        61,
+        66,
+        8
+      ],
+      "confidence": 0.5944444444444447,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 31 an Position 10",
+      "trigger_number": 31,
+      "trigger_position": 10,
+      "action": "exclude",
+      "exclude_numbers": [
+        59,
+        13,
+        28,
+        2,
+        11
+      ],
+      "confidence": 0.5722222222222222,
+      "occurrences": 18
+    },
+    {
+      "trigger": "Zahl 48 an Position 5",
+      "trigger_number": 48,
+      "trigger_position": 5,
+      "action": "exclude",
+      "exclude_numbers": [
+        37,
+        58,
+        34,
+        36,
+        1
+      ],
+      "confidence": 0.553191489361702,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 59 an Position 10",
+      "trigger_number": 59,
+      "trigger_position": 10,
+      "action": "exclude",
+      "exclude_numbers": [
+        63,
+        18,
+        48,
+        22,
+        15
+      ],
+      "confidence": 0.5479166666666667,
+      "occurrences": 48
+    },
+    {
+      "trigger": "Zahl 64 an Position 7",
+      "trigger_number": 64,
+      "trigger_position": 7,
+      "action": "include",
+      "include_numbers": [
+        57,
+        47,
+        68,
+        49,
+        2
+      ],
+      "confidence": 0.5340425531914896,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 29 an Position 7",
+      "trigger_number": 29,
+      "trigger_position": 7,
+      "action": "include",
+      "include_numbers": [
+        26,
+        35,
+        1,
+        21,
+        69
+      ],
+      "confidence": 0.5042553191489364,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 8 an Position 14",
+      "trigger_number": 8,
+      "trigger_position": 14,
+      "action": "include",
+      "include_numbers": [
+        54,
+        33,
+        64,
+        67,
+        26
+      ],
+      "confidence": 0.491304347826087,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 38 an Position 11",
+      "trigger_number": 38,
+      "trigger_position": 11,
+      "action": "include",
+      "include_numbers": [
+        39,
+        64,
+        59,
+        19,
+        33
+      ],
+      "confidence": 0.4907407407407409,
+      "occurrences": 54
+    },
+    {
+      "trigger": "Zahl 16 an Position 10",
+      "trigger_number": 16,
+      "trigger_position": 10,
+      "action": "include",
+      "include_numbers": [
+        48,
+        42,
+        14,
+        49,
+        54
+      ],
+      "confidence": 0.47608695652173916,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 39 an Position 12",
+      "trigger_number": 39,
+      "trigger_position": 12,
+      "action": "exclude",
+      "exclude_numbers": [
+        1,
+        21,
+        28,
+        30,
+        56
+      ],
+      "confidence": 0.46739130434782605,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 27 an Position 15",
+      "trigger_number": 27,
+      "trigger_position": 15,
+      "action": "include",
+      "include_numbers": [
+        51,
+        36,
+        40,
+        58,
+        5
+      ],
+      "confidence": 0.4595744680851065,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 39 an Position 10",
+      "trigger_number": 39,
+      "trigger_position": 10,
+      "action": "include",
+      "include_numbers": [
+        2,
+        7,
+        9,
+        31,
+        40
+      ],
+      "confidence": 0.44565217391304357,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 39 an Position 10",
+      "trigger_number": 39,
+      "trigger_position": 10,
+      "action": "exclude",
+      "exclude_numbers": [
+        25,
+        29,
+        46,
+        14,
+        44
+      ],
+      "confidence": 0.43695652173913035,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 42 an Position 3",
+      "trigger_number": 42,
+      "trigger_position": 3,
+      "action": "include",
+      "include_numbers": [
+        27,
+        20,
+        23,
+        8,
+        18
+      ],
+      "confidence": 0.42857142857142855,
+      "occurrences": 49
+    },
+    {
+      "trigger": "Zahl 8 an Position 14",
+      "trigger_number": 8,
+      "trigger_position": 14,
+      "action": "exclude",
+      "exclude_numbers": [
+        57,
+        63,
+        8,
+        29,
+        56
+      ],
+      "confidence": 0.4217391304347826,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 38 an Position 11",
+      "trigger_number": 38,
+      "trigger_position": 11,
+      "action": "exclude",
+      "exclude_numbers": [
+        34,
+        61,
+        2,
+        16,
+        22
+      ],
+      "confidence": 0.41666666666666663,
+      "occurrences": 54
+    },
+    {
+      "trigger": "Zahl 59 an Position 10",
+      "trigger_number": 59,
+      "trigger_position": 10,
+      "action": "include",
+      "include_numbers": [
+        49,
+        1,
+        42,
+        60,
+        7
+      ],
+      "confidence": 0.4145833333333334,
+      "occurrences": 48
+    },
+    {
+      "trigger": "Zahl 49 an Position 1",
+      "trigger_number": 49,
+      "trigger_position": 1,
+      "action": "include",
+      "include_numbers": [
+        70,
+        65,
+        51,
+        63,
+        64
+      ],
+      "confidence": 0.41372549019607846,
+      "occurrences": 51
+    },
+    {
+      "trigger": "Zahl 27 an Position 15",
+      "trigger_number": 27,
+      "trigger_position": 15,
+      "action": "exclude",
+      "exclude_numbers": [
+        1,
+        23,
+        30,
+        47,
+        2
+      ],
+      "confidence": 0.4042553191489361,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 57 an Position 16",
+      "trigger_number": 57,
+      "trigger_position": 16,
+      "action": "exclude",
+      "exclude_numbers": [
+        48,
+        5,
+        8,
+        51,
+        22
+      ],
+      "confidence": 0.4042553191489361,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 16 an Position 10",
+      "trigger_number": 16,
+      "trigger_position": 10,
+      "action": "exclude",
+      "exclude_numbers": [
+        58,
+        17,
+        38,
+        69,
+        4
+      ],
+      "confidence": 0.3913043478260869,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 64 an Position 7",
+      "trigger_number": 64,
+      "trigger_position": 7,
+      "action": "exclude",
+      "exclude_numbers": [
+        8,
+        22,
+        29,
+        1,
+        7
+      ],
+      "confidence": 0.3893617021276595,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 49 an Position 1",
+      "trigger_number": 49,
+      "trigger_position": 1,
+      "action": "exclude",
+      "exclude_numbers": [
+        1,
+        6,
+        40,
+        47,
+        50
+      ],
+      "confidence": 0.38235294117647056,
+      "occurrences": 51
+    },
+    {
+      "trigger": "Zahl 29 an Position 7",
+      "trigger_number": 29,
+      "trigger_position": 7,
+      "action": "exclude",
+      "exclude_numbers": [
+        63,
+        59,
+        29,
+        46,
+        52
+      ],
+      "confidence": 0.37446808510638296,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 57 an Position 16",
+      "trigger_number": 57,
+      "trigger_position": 16,
+      "action": "include",
+      "include_numbers": [
+        43,
+        66,
+        54,
+        3,
+        27
+      ],
+      "confidence": 0.37021276595744695,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 48 an Position 5",
+      "trigger_number": 48,
+      "trigger_position": 5,
+      "action": "include",
+      "include_numbers": [
+        10,
+        2,
+        5,
+        26,
+        42
+      ],
+      "confidence": 0.35531914893617034,
+      "occurrences": 47
+    },
+    {
+      "trigger": "Zahl 61 an Position 11",
+      "trigger_number": 61,
+      "trigger_position": 11,
+      "action": "include",
+      "include_numbers": [
+        12,
+        20,
+        29,
+        56,
+        9
+      ],
+      "confidence": 0.3440000000000001,
+      "occurrences": 50
+    },
+    {
+      "trigger": "Zahl 39 an Position 12",
+      "trigger_number": 39,
+      "trigger_position": 12,
+      "action": "include",
+      "include_numbers": [
+        19,
+        20,
+        64,
+        5,
+        35
+      ],
+      "confidence": 0.3391304347826087,
+      "occurrences": 46
+    },
+    {
+      "trigger": "Zahl 42 an Position 3",
+      "trigger_number": 42,
+      "trigger_position": 3,
+      "action": "exclude",
+      "exclude_numbers": [
+        38,
+        21,
+        5,
+        22,
+        50
+      ],
+      "confidence": 0.32857142857142857,
+      "occurrences": 49
+    },
+    {
+      "trigger": "Zahl 61 an Position 11",
+      "trigger_number": 61,
+      "trigger_position": 11,
+      "action": "exclude",
+      "exclude_numbers": [
+        33,
+        64,
+        5,
+        11,
+        35
+      ],
+      "confidence": 0.32799999999999996,
+      "occurrences": 50
+    }
+  ],
+  "backtest": {
+    "total_predictions": 2545,
+    "exclusion_accuracy": 0.8689075630252101,
+    "inclusion_accuracy": 0.43468634686346863,
+    "top_rules": [
+      {
+        "rule": "Zahl 56 an Position 11",
+        "action": "exclude",
+        "applications": 5,
+        "correct": 24,
+        "wrong": 1,
+        "accuracy": 0.96,
+        "numbers": [
+          41,
+          45,
+          70,
+          6,
+          7
+        ]
+      },
+      {
+        "rule": "Zahl 57 an Position 5",
+        "action": "exclude",
+        "applications": 9,
+        "correct": 42,
+        "wrong": 3,
+        "accuracy": 0.9333333333333333,
+        "numbers": [
+          33,
+          19,
+          42,
+          53,
+          67
+        ]
+      },
+      {
+        "rule": "Zahl 31 an Position 10",
+        "action": "exclude",
+        "applications": 13,
+        "correct": 59,
+        "wrong": 6,
+        "accuracy": 0.9076923076923077,
+        "numbers": [
+          59,
+          13,
+          28,
+          2,
+          11
+        ]
+      },
+      {
+        "rule": "Zahl 60 an Position 8",
+        "action": "exclude",
+        "applications": 6,
+        "correct": 27,
+        "wrong": 3,
+        "accuracy": 0.9,
+        "numbers": [
+          46,
+          48,
+          16,
+          31,
+          35
+        ]
+      },
+      {
+        "rule": "Zahl 27 an Position 15",
+        "action": "exclude",
+        "applications": 19,
+        "correct": 84,
+        "wrong": 11,
+        "accuracy": 0.8842105263157894,
+        "numbers": [
+          1,
+          23,
+          30,
+          47,
+          2
+        ]
+      },
+      {
+        "rule": "Zahl 48 an Position 5",
+        "action": "exclude",
+        "applications": 24,
+        "correct": 106,
+        "wrong": 14,
+        "accuracy": 0.8833333333333333,
+        "numbers": [
+          37,
+          58,
+          34,
+          36,
+          1
+        ]
+      },
+      {
+        "rule": "Zahl 59 an Position 10",
+        "action": "exclude",
+        "applications": 25,
+        "correct": 110,
+        "wrong": 15,
+        "accuracy": 0.88,
+        "numbers": [
+          63,
+          18,
+          48,
+          22,
+          15
+        ]
+      },
+      {
+        "rule": "Zahl 57 an Position 16",
+        "action": "exclude",
+        "applications": 23,
+        "correct": 101,
+        "wrong": 14,
+        "accuracy": 0.8782608695652174,
+        "numbers": [
+          48,
+          5,
+          8,
+          51,
+          22
+        ]
+      },
+      {
+        "rule": "Zahl 1 an Position 16",
+        "action": "exclude",
+        "applications": 11,
+        "correct": 48,
+        "wrong": 7,
+        "accuracy": 0.8727272727272727,
+        "numbers": [
+          2,
+          13,
+          28,
+          39,
+          51
+        ]
+      },
+      {
+        "rule": "Zahl 8 an Position 14",
+        "action": "exclude",
+        "applications": 20,
+        "correct": 87,
+        "wrong": 13,
+        "accuracy": 0.87,
+        "numbers": [
+          57,
+          63,
+          8,
+          29,
+          56
+        ]
+      },
+      {
+        "rule": "Zahl 39 an Position 10",
+        "action": "exclude",
+        "applications": 27,
+        "correct": 116,
+        "wrong": 19,
+        "accuracy": 0.8592592592592593,
+        "numbers": [
+          25,
+          29,
+          46,
+          14,
+          44
+        ]
+      },
+      {
+        "rule": "Zahl 24 an Position 5",
+        "action": "exclude",
+        "applications": 4,
+        "correct": 17,
+        "wrong": 3,
+        "accuracy": 0.85,
+        "numbers": [
+          12,
+          18,
+          42,
+          54,
+          1
+        ]
+      },
+      {
+        "rule": "Zahl 39 an Position 12",
+        "action": "exclude",
+        "applications": 22,
+        "correct": 93,
+        "wrong": 17,
+        "accuracy": 0.8454545454545455,
+        "numbers": [
+          1,
+          21,
+          28,
+          30,
+          56
+        ]
+      },
+      {
+        "rule": "Zahl 38 an Position 11",
+        "action": "exclude",
+        "applications": 30,
+        "correct": 120,
+        "wrong": 30,
+        "accuracy": 0.8,
+        "numbers": [
+          34,
+          61,
+          2,
+          16,
+          22
+        ]
+      },
+      {
+        "rule": "Zahl 60 an Position 8",
+        "action": "include",
+        "applications": 6,
+        "correct": 18,
+        "wrong": 12,
+        "accuracy": 0.6,
+        "numbers": [
+          4,
+          20,
+          2,
+          67,
+          28
+        ]
+      },
+      {
+        "rule": "Zahl 24 an Position 5",
+        "action": "include",
+        "applications": 4,
+        "correct": 11,
+        "wrong": 9,
+        "accuracy": 0.55,
+        "numbers": [
+          4,
+          19,
+          20,
+          25,
+          27
+        ]
+      },
+      {
+        "rule": "Zahl 31 an Position 10",
+        "action": "include",
+        "applications": 13,
+        "correct": 35,
+        "wrong": 30,
+        "accuracy": 0.5384615384615384,
+        "numbers": [
+          7,
+          34,
+          61,
+          66,
+          8
+        ]
+      },
+      {
+        "rule": "Zahl 64 an Position 7",
+        "action": "include",
+        "applications": 22,
+        "correct": 57,
+        "wrong": 53,
+        "accuracy": 0.5181818181818182,
+        "numbers": [
+          57,
+          47,
+          68,
+          49,
+          2
+        ]
+      },
+      {
+        "rule": "Zahl 57 an Position 5",
+        "action": "include",
+        "applications": 9,
+        "correct": 22,
+        "wrong": 23,
+        "accuracy": 0.4888888888888889,
+        "numbers": [
+          15,
+          29,
+          69,
+          14,
+          24
+        ]
+      },
+      {
+        "rule": "Zahl 56 an Position 11",
+        "action": "include",
+        "applications": 5,
+        "correct": 12,
+        "wrong": 13,
+        "accuracy": 0.48,
+        "numbers": [
+          32,
+          17,
+          2,
+          62,
+          24
+        ]
+      }
+    ]
+  },
+  "correlated_absences": [
+    {
+      "pair": [
+        41,
+        45
+      ],
+      "both_absent_count": 1222,
+      "expected": 1137.2463768115945,
+      "deviation": 0.07452529629157614
+    },
+    {
+      "pair": [
+        1,
+        37
+      ],
+      "both_absent_count": 1213,
+      "expected": 1137.2463768115945,
+      "deviation": 0.06661144386389678
+    },
+    {
+      "pair": [
+        1,
+        45
+      ],
+      "both_absent_count": 1209,
+      "expected": 1137.2463768115945,
+      "deviation": 0.0630941761182615
+    },
+    {
+      "pair": [
+        1,
+        51
+      ],
+      "both_absent_count": 1208,
+      "expected": 1137.2463768115945,
+      "deviation": 0.06221485918185268
+    },
+    {
+      "pair": [
+        45,
+        51
+      ],
+      "both_absent_count": 1208,
+      "expected": 1137.2463768115945,
+      "deviation": 0.06221485918185268
+    },
+    {
+      "pair": [
+        37,
+        48
+      ],
+      "both_absent_count": 1205,
+      "expected": 1137.2463768115945,
+      "deviation": 0.059576908372626226
+    },
+    {
+      "pair": [
+        17,
+        45
+      ],
+      "both_absent_count": 1204,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05869759143621741
+    },
+    {
+      "pair": [
+        37,
+        45
+      ],
+      "both_absent_count": 1204,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05869759143621741
+    },
+    {
+      "pair": [
+        17,
+        18
+      ],
+      "both_absent_count": 1202,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05693895756339978
+    },
+    {
+      "pair": [
+        18,
+        31
+      ],
+      "both_absent_count": 1202,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05693895756339978
+    },
+    {
+      "pair": [
+        25,
+        31
+      ],
+      "both_absent_count": 1202,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05693895756339978
+    },
+    {
+      "pair": [
+        23,
+        45
+      ],
+      "both_absent_count": 1200,
+      "expected": 1137.2463768115945,
+      "deviation": 0.055180323690582136
+    },
+    {
+      "pair": [
+        22,
+        45
+      ],
+      "both_absent_count": 1199,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05430100675417332
+    },
+    {
+      "pair": [
+        1,
+        11
+      ],
+      "both_absent_count": 1199,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05430100675417332
+    },
+    {
+      "pair": [
+        1,
+        15
+      ],
+      "both_absent_count": 1199,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05430100675417332
+    },
+    {
+      "pair": [
+        15,
+        45
+      ],
+      "both_absent_count": 1198,
+      "expected": 1137.2463768115945,
+      "deviation": 0.0534216898177645
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "both_absent_count": 1198,
+      "expected": 1137.2463768115945,
+      "deviation": 0.0534216898177645
+    },
+    {
+      "pair": [
+        37,
+        51
+      ],
+      "both_absent_count": 1198,
+      "expected": 1137.2463768115945,
+      "deviation": 0.0534216898177645
+    },
+    {
+      "pair": [
+        13,
+        45
+      ],
+      "both_absent_count": 1197,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05254237288135568
+    },
+    {
+      "pair": [
+        18,
+        45
+      ],
+      "both_absent_count": 1197,
+      "expected": 1137.2463768115945,
+      "deviation": 0.05254237288135568
+    }
+  ]
+}

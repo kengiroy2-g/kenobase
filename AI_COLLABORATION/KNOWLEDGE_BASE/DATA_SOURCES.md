@@ -227,7 +227,48 @@ Siehe `scripts/master_update.py` (NEU).
 
 ---
 
-## 8. Referenz-Tabelle: Datei -> Script -> Zweck
+## 8. Pattern-Hypothesen
+
+### 8.1 Regionale Gewinnverteilung (Konzept)
+
+**Hypothese:** KENO-Gewinne werden absichtlich nach Bundeslaendern verteilt, basierend auf:
+- Einwohnerzahl
+- Anzahl aktiver Spieler
+- Optimierung der Auszahlungsquote (min. 50% behalten)
+
+**Kern-Idee:**
+Wenn die Gewinnverteilung so gestaltet ist, dass Spieler "suechtig bleiben" (psychologische Verstärkung),
+dann koennten Ziehungen mit maximalen Einzelgewinnen (z.B. 4 von 6 richtig)
+die meistgezogenen Zahlen des entsprechenden "bevorzugten" Bundeslandes enthalten.
+
+**Analyse-Dateien:**
+| Datei | Zweck |
+|-------|-------|
+| `Keno_GQ_2022_2023-2024.csv` | Gewinnquoten mit Gewinner-Anzahl |
+| `10-9_KGDaten_gefiltert.csv` | Gefilterte Gewinnklasse-1 Daten |
+| `10-9_Liste_GK1_Treffer.csv` | Historie der GK1 Treffer |
+
+**Pattern-Logik:**
+```
+1. Identifiziere Ziehungen mit ungewoehnlich hoher Einzelgewinner-Anzahl
+2. Korreliere mit gezogenen Zahlen
+3. Suche regionale Muster (falls Bundesland-Daten verfuegbar)
+4. Hypothese: Diese Zahlen sind "bevorzugt" fuer zukuenftige Ziehungen
+```
+
+**Relevante Spalten in Keno_GQ_*.csv:**
+- `Datum` - Ziehungsdatum
+- `Keno-Typ` - Spielvariante (2-10)
+- `Anzahl richtiger Zahlen` - Gewinnklasse
+- `Anzahl der Gewinner` - Schluessel fuer die Analyse!
+- `1 Euro Gewinn` - Quote
+
+**Datenumfang:**
+- `Keno_GQ_2022_2023-2024.csv`: 27.685 Zeilen (2022-2024)
+
+---
+
+## 9. Referenz-Tabelle: Datei -> Script -> Zweck
 
 | Datei | Generiert von | Zweck | Update-Frequenz |
 |-------|---------------|-------|-----------------|

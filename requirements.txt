@@ -28,6 +28,22 @@ mypy>=1.5.0
 # CLI
 click>=8.1.0
 
+# Web Scraping (for data updates)
+selenium>=4.15.0
+beautifulsoup4>=4.12.0
+
 # Optional: Visualization
 # matplotlib>=3.7.0
 # seaborn>=0.12.0
+
+# Web Dashboard (TASK-P12)
+streamlit>=1.28.0
+plotly>=5.18.0
+
+# Bot Dependencies (TASK-P13)
+python-telegram-bot>=21.0
+discord.py>=2.3.0
+schedule>=1.2.0
+
+# Model Explainability (TASK-P14)
+shap>=0.44.0

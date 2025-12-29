@@ -57,6 +57,17 @@ class GameConfig(BaseModel):
         expected = self.numbers_to_draw / (self.numbers_range[1] - self.numbers_range[0] + 1)
         return expected * 0.7
 
+    def get_expected_sum_mean(self) -> float:
+        """Berechnet den erwarteten Summenmittelwert fuer das Spiel.
+
+        Formel: E[sum] = numbers_to_draw * (min + max) / 2
+
+        Returns:
+            Erwarteter Summenmittelwert.
+        """
+        min_num, max_num = self.numbers_range
+        return self.numbers_to_draw * (min_num + max_num) / 2
+
     @field_validator("numbers_range")
     @classmethod
     def validate_numbers_range(cls, v: tuple[int, int]) -> tuple[int, int]:
@@ -97,6 +108,29 @@ class PhysicsConfig(BaseModel):
         return v
 
 
+class SumWindowsConfig(BaseModel):
+    """Konfiguration fuer Summen-Fenster-Analyse (TASK-M04)."""
+
+    enabled: bool = True
+    bin_width: int = 20
+    expected_mean: float = 710.0  # KENO: E[sum] = 20 * (1+70)/2 = 710
+    min_cluster_density: float = 0.10
+    significance_level: float = 0.05
+    # Manual overrides (if set, skip cluster detection)
+    manual_min_sum: Optional[int] = None
+    manual_max_sum: Optional[int] = None
+
+
+class RegionalAffinityConfig(BaseModel):
+    """Konfiguration fuer regionale Affinitaetsanalyse (Bundesland)."""
+
+    enabled: bool = True
+    min_draws_per_region: int = 30
+    smoothing_alpha: float = Field(default=1.0, ge=0.0)
+    z_threshold: float = Field(default=2.0, ge=0.0)
+    numbers_per_draw_override: Optional[int] = None
+
+
 class AnalysisConfig(BaseModel):
     """Analyse-Einstellungen."""
 
@@ -108,6 +142,8 @@ class AnalysisConfig(BaseModel):
     zehnergruppen_max_per_group: int = 3
     enable_111_principle: bool = True
     windows: list[int] = Field(default_factory=lambda: [5, 10, 20, 50])
+    sum_windows: SumWindowsConfig = Field(default_factory=SumWindowsConfig)
+    regional_affinity: RegionalAffinityConfig = Field(default_factory=RegionalAffinityConfig)
 
 
 class PipelineConfig(BaseModel):
@@ -277,7 +313,15 @@ def _parse_yaml_to_config(data: dict) -> KenobaseConfig:
 
     # Analysis
     if "analysis" in data:
-        config_data["analysis"] = AnalysisConfig(**data["analysis"])
+        analysis_data = data["analysis"].copy()
+        # Handle nested sum_windows
+        if "sum_windows" in analysis_data:
+            analysis_data["sum_windows"] = SumWindowsConfig(**analysis_data["sum_windows"])
+        if "regional_affinity" in analysis_data:
+            analysis_data["regional_affinity"] = RegionalAffinityConfig(
+                **analysis_data["regional_affinity"]
+            )
+        config_data["analysis"] = AnalysisConfig(**analysis_data)
 
     # Pipeline
     if "pipeline" in data:
@@ -395,6 +439,8 @@ __all__ = [
     "GameConfig",
     "PhysicsConfig",
     "AnalysisConfig",
+    "SumWindowsConfig",
+    "RegionalAffinityConfig",
     "PipelineConfig",
     "PathsConfig",
     "LegacyConfig",

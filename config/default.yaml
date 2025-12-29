@@ -44,6 +44,19 @@ physics:
   anti_avalanche_mode: true
 
 # ==========================================
+# Number Pool Settings (NumberPoolGenerator)
+# ==========================================
+number_pool:
+  # Anzahl Zeitraeume fuer Pool-Generierung
+  n_periods: 3
+  # Ziehungen pro Zeitraum
+  draws_per_period: 10
+  # Top-N Zahlen pro Zeitraum (optimiert via TASK-M01)
+  top_n_per_period: 11
+  # Top-N Zahlen fuer Gesamtanalyse
+  top_n_total: 20
+
+# ==========================================
 # Analyse-Einstellungen
 # ==========================================
 analysis:
@@ -67,6 +80,29 @@ analysis:
 
   # Rolling Windows für Trendanalyse
   windows: [5, 10, 20, 50]
+
+  # Sum Windows Analysis (TASK-M04)
+  # Hypothese: KENO-Summen clustern in bestimmten Fenstern
+  sum_windows:
+    enabled: true
+    bin_width: 20
+    # KENO: E[sum] = 20 * (1+70)/2 = 710
+    expected_mean: 710
+    # Minimale Dichte fuer Cluster-Erkennung (10%)
+    min_cluster_density: 0.10
+    # Signifikanz-Niveau fuer Chi-Quadrat-Test
+    significance_level: 0.05
+  # Regionale Affinitaet (Bundesland)
+  regional_affinity:
+    enabled: true
+    # Mindestanzahl Ziehungen pro Region, sonst Skip
+    min_draws_per_region: 30
+    # Laplace-Smoothing fuer seltene Regionen
+    smoothing_alpha: 1.0
+    # Z-Score Threshold fuer Signifikanz (zweiseitig)
+    z_threshold: 2.0
+    # Optional: manuelle Vorgabe der Zahlen pro Ziehung (sonst aus Spiel)
+    numbers_per_draw_override: null
 
 # ==========================================
 # Pipeline-Einstellungen
@@ -134,6 +170,142 @@ legacy:
   csv_delimiter: ";"
   csv_date_format: "%d.%m.%Y"
   csv_encoding: "utf-8"
+
+# ==========================================
+# Web Scraper Configuration
+# ==========================================
+scraper:
+  # ChromeDriver path (null = auto-detect via webdriver-manager)
+  chromedriver_path: null
+
+  # Browser options
+  headless: true
+  page_load_timeout: 30
+  element_wait_timeout: 10
+
+  # Retry settings
+  max_retries: 3
+  retry_delay: 5
+
+  # Rate limiting (avoid getting blocked)
+  request_delay: 2
+
+  # Game-specific URLs
+  urls:
+    keno: "https://www.lotto-rlp.de/keno/quoten"
+    eurojackpot: "https://www.eurojackpot.de/zahlen-quoten/"
+    lotto: "https://www.lotto.de/lotto-6aus49/lottozahlen"
+
+# ==========================================
+# ML Model Configuration (TASK-P02)
+# LightGBM Binary Classifier fuer Zahlenvorhersage
+# ==========================================
+ml:
+  # Model type
+  model_type: "lightgbm"
+
+  # LightGBM Hyperparameter
+  lightgbm:
+    boosting_type: "gbdt"
+    objective: "binary"
+    num_leaves: 31
+    max_depth: -1
+    learning_rate: 0.05
+    n_estimators: 100
+    min_child_samples: 20
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.0
+    reg_lambda: 0.0
+    class_weight: "balanced"
+    random_state: 42
+
+  # Cross-Validation
+  cv:
+    n_folds: 5
+    shuffle: true
+    stratified: true
+
+  # Walk-Forward Validation
+  walk_forward:
+    train_months: 6
+    test_months: 1
+    step_months: 1
+    min_train_samples: 100
+
+  # Hyperparameter Tuning (Optuna)
+  tuning:
+    enabled: false
+    n_trials: 50
+    learning_rate_range: [0.01, 0.3]
+    num_leaves_range: [15, 63]
+    max_depth_range: [3, 12]
+    min_child_samples_range: [10, 100]
+    subsample_range: [0.6, 1.0]
+    colsample_bytree_range: [0.6, 1.0]
+
+  # Acceptance Criteria (TASK-P02)
+  acceptance:
+    f1_target: 0.50
+    stability_target: 0.05  # max std of F1 across CV folds
+
+  # Feature configuration
+  features:
+    # Use 20 features from FeatureExtractor
+    use_registry: true
+    # Optional: subset of features
+    # include_only: []
+    # exclude: []
+
+  # SHAP Explainability (TASK-P14)
+  shap:
+    enabled: true
+    # Check SHAP additivity (sum(shap_values) + base_value == prediction)
+    check_additivity: true
+    # Maximum features to display in summary plot
+    max_display: 10
+    # Minimum correlation with native LightGBM importance for validation
+    native_correlation_threshold: 0.7
+
+# ==========================================
+# Bot Configuration (TASK-P13)
+# Telegram/Discord Integration
+# ==========================================
+bot:
+  # Enable/disable platforms
+  enable_telegram: false
+  enable_discord: false
+
+  # Telegram settings
+  telegram:
+    # Token via environment variable (never commit tokens!)
+    token: "${TELEGRAM_BOT_TOKEN}"
+    # Optional: restrict to specific chats (empty = allow all)
+    allowed_chat_ids: []
+
+  # Discord settings
+  discord:
+    # Token via environment variable
+    token: "${DISCORD_BOT_TOKEN}"
+    # Command prefix
+    command_prefix: "!"
+    # Optional: restrict to specific guilds (empty = allow all)
+    allowed_guild_ids: []
+
+  # Rate limiting (prevent abuse)
+  rate_limit:
+    requests_per_minute: 10
+    cooldown_seconds: 6
+
+  # Prediction cache (reduce computation)
+  cache:
+    enabled: true
+    ttl_seconds: 300
+
+  # Scheduled daily push (optional)
+  scheduler:
+    enabled: false
+    daily_push_time: "08:00"
 
 # ==========================================
 # Logging

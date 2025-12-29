@@ -176,6 +176,37 @@ class TestKenoParser:
         assert "spieleinsatz" in results[0].metadata
         assert results[0].metadata["spieleinsatz"] == "304.198,00"
 
+    def test_keno_preserves_numbers_ordered(self, loader: DataLoader, fixtures_dir: Path):
+        """Test: Original-Reihenfolge (Positionen) wird in metadata gespeichert."""
+        path = fixtures_dir / "keno_sample.csv"
+        results = loader.load(path)
+
+        first = results[0]
+        assert first.metadata.get("numbers_ordered") == [
+            29,
+            51,
+            28,
+            1,
+            50,
+            27,
+            34,
+            32,
+            21,
+            63,
+            61,
+            26,
+            42,
+            68,
+            48,
+            65,
+            6,
+            19,
+            64,
+            11,
+        ]
+        # DrawResult.numbers bleibt absichtlich sortiert (legacy behavior).
+        assert first.numbers == sorted(first.metadata["numbers_ordered"])
+
 
 # ============================================================================
 # EuroJackpot Parser Tests

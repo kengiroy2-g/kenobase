@@ -37,6 +37,15 @@ from kenobase.analysis.pattern import (
     extract_patterns,
     extract_patterns_from_draws,
 )
+from kenobase.analysis.sum_distribution import (
+    SumDistributionResult,
+    analyze_sum_distribution,
+)
+from kenobase.analysis.regional_affinity import (
+    RegionalAffinityAnalysis,
+    analyze_regional_affinity,
+)
+from kenobase.core.combination_filter import SumBounds, derive_sum_bounds_from_result
 from kenobase.physics.avalanche import (
     AvalancheResult,
     AvalancheState,
@@ -104,9 +113,12 @@ class PipelineResult:
         pair_frequency_results: Paar-Frequenzen (Duos)
         pattern_results: Muster-Ergebnisse (wenn combination angegeben)
         aggregated_patterns: Aggregierte Muster-Haeufigkeiten
+        sum_distribution_result: Summen-Verteilungs-Analyse (TASK-P05)
+        sum_bounds: Abgeleitete Summen-Grenzen fuer Kombinations-Filter
         physics_result: Physics-Layer Ergebnisse
         warnings: Liste von Warnungen waehrend der Ausfuehrung
         config_snapshot: Verwendete Konfiguration (als Dict)
+        regional_affinity: Regionale Affinitaetsanalyse (optional)
     """
 
     timestamp: datetime
@@ -115,8 +127,11 @@ class PipelineResult:
     pair_frequency_results: list[PairFrequencyResult]
     pattern_results: list[PatternResult] = field(default_factory=list)
     aggregated_patterns: dict = field(default_factory=dict)
+    sum_distribution_result: Optional[SumDistributionResult] = None
+    sum_bounds: Optional[SumBounds] = None
     physics_result: Optional[PhysicsResult] = None
     pipeline_selection: Optional[SelectionResult] = None
+    regional_affinity: Optional[RegionalAffinityAnalysis] = None
     warnings: list[str] = field(default_factory=list)
     config_snapshot: dict = field(default_factory=dict)
 
@@ -215,6 +230,40 @@ class PipelineRunner:
             pattern_results = extract_patterns_from_draws(combination, draws)
             aggregated_patterns = aggregate_patterns(pattern_results)
 
+        # Step 2.5: Sum Distribution Analysis (TASK-P05)
+        sum_distribution_result: Optional[SumDistributionResult] = None
+        sum_bounds: Optional[SumBounds] = None
+
+        sum_cfg = self.config.analysis.sum_windows
+        if sum_cfg.enabled:
+            logger.debug("Step 2.5: Sum distribution analysis")
+            sum_distribution_result, sum_bounds = self._run_sum_analysis(draws)
+
+            if sum_bounds and sum_bounds.is_active():
+                logger.info(
+                    f"Sum bounds derived: [{sum_bounds.min_sum}, {sum_bounds.max_sum}] "
+                    f"(source={sum_bounds.source})"
+                )
+
+        # Step 2.6: Regionale Affinitaet (Bundesland)
+        regional_affinity: Optional[RegionalAffinityAnalysis] = None
+        regional_cfg = self.config.analysis.regional_affinity
+        if regional_cfg.enabled:
+            regional_affinity = analyze_regional_affinity(
+                draws,
+                number_range=number_range,
+                numbers_per_draw=regional_cfg.numbers_per_draw_override
+                or game_config.numbers_to_draw,
+                min_draws_per_region=regional_cfg.min_draws_per_region,
+                smoothing_alpha=regional_cfg.smoothing_alpha,
+                z_threshold=regional_cfg.z_threshold,
+                game=self.config.active_game,
+            )
+            if regional_affinity.warnings:
+                warnings.extend(
+                    f"regional_affinity: {w}" for w in regional_affinity.warnings
+                )
+
         # Step 3: Physics Layer
         logger.debug("Step 3: Physics layer")
         physics_result = None
@@ -260,8 +309,11 @@ class PipelineRunner:
             pair_frequency_results=pair_frequency_results,
             pattern_results=pattern_results,
             aggregated_patterns=aggregated_patterns,
+            sum_distribution_result=sum_distribution_result,
+            sum_bounds=sum_bounds,
             physics_result=physics_result,
             pipeline_selection=pipeline_selection,
+            regional_affinity=regional_affinity,
             warnings=warnings,
             config_snapshot=self._get_config_snapshot(),
         )
@@ -343,6 +395,64 @@ class PipelineRunner:
             recommended_max_picks=recommended_max_picks,
         )
 
+    def _run_sum_analysis(
+        self,
+        draws: list[DrawResult],
+    ) -> tuple[Optional[SumDistributionResult], Optional[SumBounds]]:
+        """Fuehrt Summen-Verteilungsanalyse durch (TASK-P05).
+
+        Analysiert die Summen der gezogenen Zahlen und erkennt Cluster.
+        Leitet daraus min_sum/max_sum Grenzen fuer den Kombinations-Filter ab.
+
+        Args:
+            draws: Liste von Ziehungen.
+
+        Returns:
+            Tuple (SumDistributionResult, SumBounds)
+        """
+        sum_cfg = self.config.analysis.sum_windows
+
+        # Check for manual overrides first
+        if sum_cfg.manual_min_sum is not None or sum_cfg.manual_max_sum is not None:
+            logger.info("Using manual sum bounds from config")
+            return None, SumBounds(
+                min_sum=sum_cfg.manual_min_sum,
+                max_sum=sum_cfg.manual_max_sum,
+                source="config",
+            )
+
+        if not draws:
+            return None, None
+
+        # Calculate sums from draws
+        sums = [sum(d.numbers) for d in draws]
+
+        # Compute expected_mean dynamically from active game config
+        game_config = self.config.get_active_game()
+        expected_mean = game_config.get_expected_sum_mean()
+
+        logger.debug(
+            f"Sum analysis using game={self.config.active_game}, "
+            f"expected_mean={expected_mean:.1f} (dynamic)"
+        )
+
+        # Run analysis
+        result = analyze_sum_distribution(
+            sums=sums,
+            expected_mean=expected_mean,
+            bin_width=sum_cfg.bin_width,
+        )
+
+        # Derive bounds from detected clusters
+        sum_bounds = derive_sum_bounds_from_result(result, use_union=True)
+
+        logger.info(
+            f"Sum analysis: n={result.total_draws}, mean={result.sum_mean:.1f}, "
+            f"std={result.sum_std:.1f}, clusters={len(result.clusters)}"
+        )
+
+        return result, sum_bounds
+
     def _run_least_action_selection(
         self,
         performance_overrides: Optional[dict[str, float]] = None,
@@ -370,9 +480,18 @@ class PipelineRunner:
 
     def _get_config_snapshot(self) -> dict:
         """Erstellt einen Snapshot der relevanten Config-Werte."""
+        sum_cfg = self.config.analysis.sum_windows
+        regional_cfg = self.config.analysis.regional_affinity
+        game_config = self.config.get_active_game()
         return {
             "version": self.config.version,
             "active_game": self.config.active_game,
+            "game": {
+                "name": game_config.name,
+                "numbers_range": list(game_config.numbers_range),
+                "numbers_to_draw": game_config.numbers_to_draw,
+                "expected_sum_mean": game_config.get_expected_sum_mean(),
+            },
             "physics": {
                 "enable_model_laws": self.config.physics.enable_model_laws,
                 "enable_least_action": self.config.physics.enable_least_action,
@@ -385,6 +504,20 @@ class PipelineRunner:
             "analysis": {
                 "min_frequency_threshold": self.config.analysis.min_frequency_threshold,
                 "max_frequency_threshold": self.config.analysis.max_frequency_threshold,
+                "sum_windows": {
+                    "enabled": sum_cfg.enabled,
+                    "bin_width": sum_cfg.bin_width,
+                    "expected_mean_dynamic": game_config.get_expected_sum_mean(),
+                    "manual_min_sum": sum_cfg.manual_min_sum,
+                    "manual_max_sum": sum_cfg.manual_max_sum,
+                },
+                "regional_affinity": {
+                    "enabled": regional_cfg.enabled,
+                    "min_draws_per_region": regional_cfg.min_draws_per_region,
+                    "smoothing_alpha": regional_cfg.smoothing_alpha,
+                    "z_threshold": regional_cfg.z_threshold,
+                    "numbers_per_draw_override": regional_cfg.numbers_per_draw_override,
+                },
             },
         }
 
@@ -448,5 +581,6 @@ __all__ = [
     "PhysicsResult",
     "PipelineResult",
     "PipelineRunner",
+    "SumBounds",
     "run_pipeline",
 ]

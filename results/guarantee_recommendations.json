@@ -1,23 +1,29 @@
 {
   "metadata": {
-    "generated": "2025-12-29T11:55:13.728210",
-    "version": "2.2.1",
+    "generated": "2025-12-29T13:35:19.203753",
+    "version": "2.2.2",
     "model": "Wirtschaftslogik-Garantie-Modell",
     "hypotheses_used": [
       "WL-001",
       "WL-005",
       "WL-006",
       "WL-007"
-    ]
+    ],
+    "pair_backtest_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\pair_guarantee_backtest.json"
   },
   "summary": {
     "confirmed_hypotheses": 11,
-    "profitable_types": [
-      "Typ-8 (+22%)",
-      "Typ-10 (+47%)"
-    ],
-    "best_roi": "+126%",
-    "monthly_guarantee": "100%"
+    "payout_model": "fixed_quotes_1eur",
+    "expected_return_per_draw": {
+      "typ_6": 0.497439,
+      "typ_8": 0.489384,
+      "typ_10": 0.493997
+    },
+    "expected_roi": {
+      "typ_6": -0.502561,
+      "typ_8": -0.510616,
+      "typ_10": -0.506003
+    }
   },
   "core_numbers": {
     "absolute": [
@@ -73,24 +79,33 @@
     "(3, 25)"
   ],
   "recommendations": {
-    "profit_typ_6": {
-      "type": "profit_optimized",
+    "best_pair_typ_6": {
+      "type": "best_pair_backtest",
       "keno_type": 6,
       "numbers": [
         3,
         24,
-        36,
+        40,
         49,
         51,
         64
       ],
       "pairs_included": 1,
-      "expected_roi": "-40%",
-      "monthly_win_rate": "100%",
-      "source": "WL-005 Backtest"
+      "expected_return_per_draw": 0.497439,
+      "expected_roi": -0.502561,
+      "source": "pair_guarantee_backtest.json best_pair=(24,40)",
+      "note": "Bei festen Quoten ist der EV (theoretisch) unabhaengig von den konkreten Zahlen.",
+      "backtest": {
+        "roi": -0.389361,
+        "return_per_draw": 0.610639,
+        "profit_per_draw": -0.389361,
+        "months_with_win": 74,
+        "total_months": 74,
+        "monthly_win_rate": 1.0
+      }
     },
-    "profit_typ_8": {
-      "type": "profit_optimized",
+    "best_pair_typ_8": {
+      "type": "best_pair_backtest",
       "keno_type": 8,
       "numbers": [
         2,
@@ -103,12 +118,21 @@
         64
       ],
       "pairs_included": 4,
-      "expected_roi": "+22%",
-      "monthly_win_rate": "100%",
-      "source": "WL-005 Backtest"
+      "expected_return_per_draw": 0.489384,
+      "expected_roi": -0.510616,
+      "source": "pair_guarantee_backtest.json best_pair=(20,36)",
+      "note": "Bei festen Quoten ist der EV (theoretisch) unabhaengig von den konkreten Zahlen.",
+      "backtest": {
+        "roi": -0.61198,
+        "return_per_draw": 0.38802,
+        "profit_per_draw": -0.61198,
+        "months_with_win": 74,
+        "total_months": 74,
+        "monthly_win_rate": 1.0
+      }
     },
-    "profit_typ_10": {
-      "type": "profit_optimized",
+    "best_pair_typ_10": {
+      "type": "best_pair_backtest",
       "keno_type": 10,
       "numbers": [
         2,
@@ -123,9 +147,18 @@
         64
       ],
       "pairs_included": 6,
-      "expected_roi": "+47%",
-      "monthly_win_rate": "100%",
-      "source": "WL-005 Backtest"
+      "expected_return_per_draw": 0.493997,
+      "expected_roi": -0.506003,
+      "source": "pair_guarantee_backtest.json best_pair=(33,50)",
+      "note": "Bei festen Quoten ist der EV (theoretisch) unabhaengig von den konkreten Zahlen.",
+      "backtest": {
+        "roi": -0.47966,
+        "return_per_draw": 0.52034,
+        "profit_per_draw": -0.47966,
+        "months_with_win": 74,
+        "total_months": 74,
+        "monthly_win_rate": 1.0
+      }
     },
     "guarantee_100": {
       "type": "guarantee_100",
@@ -140,7 +173,8 @@
       ],
       "pairs_included": 2,
       "target_hits": "5/6 = 15 EUR oder 6/6 = 500 EUR",
-      "monthly_win_rate": "100%",
+      "expected_return_per_draw": 0.497439,
+      "expected_roi": -0.502561,
       "source": "WL-001 Paar-Garantie"
     },
     "guarantee_500": {
@@ -157,9 +191,9 @@
         64
       ],
       "pairs_included": 5,
-      "target_hits": "6/8 = 100 EUR, 7/8 = 1000 EUR",
-      "expected_roi": "+22%",
-      "monthly_win_rate": "100%",
+      "target_hits": "6/8 = 15 EUR, 7/8 = 100 EUR, 8/8 = 10000 EUR",
+      "expected_return_per_draw": 0.489384,
+      "expected_roi": -0.510616,
       "source": "WL-005 Backtest"
     },
     "jackpot_candidate": {

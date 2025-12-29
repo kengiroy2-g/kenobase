@@ -275,6 +275,13 @@ def setup_logging(verbose: int) -> None:
     type=click.Path(exists=True),
 )
 @click.option(
+    "--game",
+    "-g",
+    type=click.Choice(["keno", "eurojackpot", "lotto"]),
+    default=None,
+    help="Spiel-Name fuer Report-Titel (optional)",
+)
+@click.option(
     "--format",
     "-f",
     "output_format",
@@ -292,15 +299,16 @@ def setup_logging(verbose: int) -> None:
 @click.option(
     "--title",
     "-t",
-    default="Kenobase Backtest Report",
-    help="Titel fuer den Report",
+    default=None,
+    help="Titel fuer den Report (default: automatisch basierend auf --game)",
 )
 @click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
 def main(
     input_file: str,
+    game: Optional[str],
     output_format: str,
     output_file: Optional[str],
-    title: str,
+    title: Optional[str],
     verbose: int,
 ) -> None:
     """Generiert HTML/Markdown Reports aus BacktestResult JSON-Dateien.
@@ -320,6 +328,13 @@ def main(
         python scripts/report.py -i output/backtest.json -f html -t "KENO Analysis Q4 2024"
     """
     setup_logging(verbose)
+
+    # Generate title based on --game if not explicitly provided
+    if title is None:
+        if game:
+            title = f"{game.upper()} Backtest Report"
+        else:
+            title = "Kenobase Backtest Report"
 
     input_path = Path(input_file)
 

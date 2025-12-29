@@ -206,9 +206,163 @@ def aggregate_patterns(
     }
 
 
+def calculate_pattern_lift(
+    observed_freq: int,
+    total_draws: int,
+    pool_size: int,
+    drawn_per_draw: int,
+    pattern_size: int,
+) -> tuple[float, float, float]:
+    """Berechnet den Lift eines Patterns gegenueber Zufalls-Baseline.
+
+    Lift = observed_rate / expected_rate
+    - Lift > 1: Pattern erscheint haeufiger als zufaellig erwartet
+    - Lift = 1: Pattern entspricht Zufall
+    - Lift < 1: Pattern erscheint seltener als erwartet
+
+    Args:
+        observed_freq: Beobachtete Haeufigkeit des Patterns
+        total_draws: Gesamtanzahl Ziehungen
+        pool_size: Groesse des Zahlenpools (z.B. 70 bei KENO)
+        drawn_per_draw: Anzahl gezogener Zahlen pro Ziehung (z.B. 20)
+        pattern_size: Groesse des Patterns (2, 3, oder 4)
+
+    Returns:
+        Tuple aus (observed_rate, expected_rate, lift)
+
+    Example:
+        >>> # Duo erscheint 15 mal in 100 KENO-Ziehungen
+        >>> obs, exp, lift = calculate_pattern_lift(15, 100, 70, 20, 2)
+        >>> obs
+        0.15
+        >>> round(exp, 4)  # (20*19)/(70*69) approx 0.0788
+        0.0788
+        >>> round(lift, 2)  # 0.15 / 0.0788 approx 1.90
+        1.9
+    """
+    if total_draws == 0:
+        return 0.0, 0.0, 1.0
+
+    observed_rate = observed_freq / total_draws
+
+    # Berechne erwartete Wahrscheinlichkeit (hypergeometrisch approx)
+    # P(alle k Zahlen gezogen) = product((drawn-i)/(pool-i)) fuer i in 0..k-1
+    expected_rate = 1.0
+    for i in range(pattern_size):
+        expected_rate *= (drawn_per_draw - i) / (pool_size - i)
+
+    # Berechne Lift
+    lift = observed_rate / expected_rate if expected_rate > 0 else 1.0
+
+    return observed_rate, expected_rate, lift
+
+
+def calculate_feature_importance(
+    pattern_frequencies: dict[tuple[int, ...], int],
+    total_draws: int,
+    pool_size: int = 70,
+    drawn_per_draw: int = 20,
+) -> list[dict]:
+    """Berechnet Feature-Importance fuer alle Patterns.
+
+    Sortiert Patterns nach Lift (absteigend). Patterns mit hohem Lift
+    sind statistisch interessanter als erwarteter Zufall.
+
+    Args:
+        pattern_frequencies: Dict {pattern_tuple: frequency}
+        total_draws: Gesamtanzahl Ziehungen
+        pool_size: Groesse des Zahlenpools
+        drawn_per_draw: Anzahl gezogener Zahlen pro Ziehung
+
+    Returns:
+        Liste von Dicts mit pattern, frequency, observed_rate, expected_rate, lift
+        Sortiert nach Lift (hoechster zuerst)
+
+    Example:
+        >>> freqs = {(1, 5): 15, (12, 23): 8, (34, 45): 20}
+        >>> importance = calculate_feature_importance(freqs, 100, 70, 20)
+        >>> importance[0]["pattern"]  # Hoechster Lift
+        (34, 45)
+    """
+    results = []
+
+    for pattern, freq in pattern_frequencies.items():
+        pattern_size = len(pattern)
+        obs_rate, exp_rate, lift = calculate_pattern_lift(
+            freq, total_draws, pool_size, drawn_per_draw, pattern_size
+        )
+
+        results.append({
+            "pattern": pattern,
+            "frequency": freq,
+            "observed_rate": obs_rate,
+            "expected_rate": exp_rate,
+            "lift": lift,
+            "pattern_size": pattern_size,
+        })
+
+    # Sortiere nach Lift (absteigend)
+    results.sort(key=lambda x: x["lift"], reverse=True)
+
+    return results
+
+
+def get_significant_patterns(
+    aggregated: dict[str, dict[tuple[int, ...], int]],
+    total_draws: int,
+    min_lift: float = 1.5,
+    min_frequency: int = 3,
+    pool_size: int = 70,
+    drawn_per_draw: int = 20,
+) -> dict[str, list[dict]]:
+    """Filtert statistisch signifikante Patterns.
+
+    Ein Pattern gilt als signifikant wenn:
+    1. Lift >= min_lift (standardmaessig 1.5x ueber Zufall)
+    2. Frequency >= min_frequency (mind. 3 Vorkommen)
+
+    Args:
+        aggregated: Aggregierte Patterns aus aggregate_patterns()
+        total_draws: Gesamtanzahl Ziehungen
+        min_lift: Minimaler Lift fuer Signifikanz
+        min_frequency: Minimale Haeufigkeit
+        pool_size: Groesse des Zahlenpools
+        drawn_per_draw: Anzahl gezogener Zahlen pro Ziehung
+
+    Returns:
+        Dict mit Pattern-Typ als Key und Liste signifikanter Patterns
+
+    Example:
+        >>> from kenobase.analysis.pattern import aggregate_patterns
+        >>> aggregated = aggregate_patterns(pattern_results)
+        >>> significant = get_significant_patterns(aggregated, 100)
+        >>> len(significant["duos"])  # Anzahl signifikanter Duos
+        5
+    """
+    result = {}
+
+    for ptype, patterns in aggregated.items():
+        importance = calculate_feature_importance(
+            patterns, total_draws, pool_size, drawn_per_draw
+        )
+
+        # Filtere nach Signifikanz-Kriterien
+        significant = [
+            p for p in importance
+            if p["lift"] >= min_lift and p["frequency"] >= min_frequency
+        ]
+
+        result[ptype] = significant
+
+    return result
+
+
 __all__ = [
     "PatternResult",
     "extract_patterns",
     "extract_patterns_from_draws",
     "aggregate_patterns",
+    "calculate_pattern_lift",
+    "calculate_feature_importance",
+    "get_significant_patterns",
 ]

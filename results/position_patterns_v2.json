@@ -1,0 +1,239 @@
+{
+  "n_draws": 2242,
+  "vertical_matches": {
+    "found": 642,
+    "expected": 640.2857142857142,
+    "deviation_pct": 0.2677376171352108
+  },
+  "diagonal_right": {
+    "found": 619,
+    "expected": 608.2714285714286,
+    "deviation_pct": 1.7637802672678893
+  },
+  "diagonal_left": {
+    "found": 613,
+    "expected": 608.2714285714286,
+    "deviation_pct": 0.7773785199276517
+  },
+  "overlap": {
+    "avg_overlap": 5.729138777331548,
+    "expected_overlap": 5.714285714285714,
+    "ratio": 1.0025992860330208,
+    "deviation_pct": 0.2599286033020842,
+    "min_overlap": 1,
+    "max_overlap": 11,
+    "std_overlap": 1.7407353072806613
+  },
+  "position_preferences": [
+    {
+      "position": 11,
+      "number": 38,
+      "count": 54,
+      "expected": 32.0,
+      "deviation_pct": 68.6
+    },
+    {
+      "position": 1,
+      "number": 49,
+      "count": 51,
+      "expected": 32.0,
+      "deviation_pct": 59.2
+    },
+    {
+      "position": 11,
+      "number": 61,
+      "count": 50,
+      "expected": 32.0,
+      "deviation_pct": 56.1
+    },
+    {
+      "position": 3,
+      "number": 42,
+      "count": 49,
+      "expected": 32.0,
+      "deviation_pct": 53.0
+    },
+    {
+      "position": 5,
+      "number": 24,
+      "count": 16,
+      "expected": 32.0,
+      "deviation_pct": -50.0
+    },
+    {
+      "position": 10,
+      "number": 59,
+      "count": 48,
+      "expected": 32.0,
+      "deviation_pct": 49.9
+    },
+    {
+      "position": 11,
+      "number": 56,
+      "count": 17,
+      "expected": 32.0,
+      "deviation_pct": -46.9
+    },
+    {
+      "position": 5,
+      "number": 48,
+      "count": 47,
+      "expected": 32.0,
+      "deviation_pct": 46.7
+    },
+    {
+      "position": 7,
+      "number": 64,
+      "count": 47,
+      "expected": 32.0,
+      "deviation_pct": 46.7
+    },
+    {
+      "position": 7,
+      "number": 29,
+      "count": 47,
+      "expected": 32.0,
+      "deviation_pct": 46.7
+    },
+    {
+      "position": 15,
+      "number": 27,
+      "count": 47,
+      "expected": 32.0,
+      "deviation_pct": 46.7
+    },
+    {
+      "position": 16,
+      "number": 57,
+      "count": 47,
+      "expected": 32.0,
+      "deviation_pct": 46.7
+    },
+    {
+      "position": 5,
+      "number": 57,
+      "count": 18,
+      "expected": 32.0,
+      "deviation_pct": -43.8
+    },
+    {
+      "position": 8,
+      "number": 60,
+      "count": 18,
+      "expected": 32.0,
+      "deviation_pct": -43.8
+    },
+    {
+      "position": 10,
+      "number": 31,
+      "count": 18,
+      "expected": 32.0,
+      "deviation_pct": -43.8
+    },
+    {
+      "position": 16,
+      "number": 1,
+      "count": 18,
+      "expected": 32.0,
+      "deviation_pct": -43.8
+    },
+    {
+      "position": 10,
+      "number": 16,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 10,
+      "number": 39,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 12,
+      "number": 39,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 14,
+      "number": 8,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 18,
+      "number": 64,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 20,
+      "number": 67,
+      "count": 46,
+      "expected": 32.0,
+      "deviation_pct": 43.6
+    },
+    {
+      "position": 4,
+      "number": 29,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 6,
+      "number": 67,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 11,
+      "number": 36,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 12,
+      "number": 37,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 14,
+      "number": 60,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 16,
+      "number": 18,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 20,
+      "number": 36,
+      "count": 19,
+      "expected": 32.0,
+      "deviation_pct": -40.7
+    },
+    {
+      "position": 3,
+      "number": 26,
+      "count": 45,
+      "expected": 32.0,
+      "deviation_pct": 40.5
+    }
+  ]
+}

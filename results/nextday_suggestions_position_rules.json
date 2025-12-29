@@ -1,0 +1,148 @@
+{
+  "analysis": "nextday_suggestions_position_rule_layer",
+  "generated_at": "2025-12-29T19:29:53.480371",
+  "trained_until_date": "2024-02-15",
+  "for_date": "2024-02-16",
+  "config": {
+    "types": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "recent_draws": 365,
+    "recent_weight": 0.6,
+    "rule_window": 2000,
+    "rule_min_support": 5,
+    "exclude_max": 3,
+    "include_max": 5,
+    "exclude_lb": 0.85,
+    "include_lb": 0.35,
+    "hard_exclude": true,
+    "hard_exclude_lb": 0.95,
+    "exclude_weight": 2.0,
+    "include_weight": 1.0
+  },
+  "today_ordered": [
+    3,
+    52,
+    40,
+    59,
+    25,
+    18,
+    34,
+    39,
+    55,
+    66,
+    61,
+    32,
+    48,
+    1,
+    49,
+    14,
+    38,
+    46,
+    51,
+    68
+  ],
+  "exclusions": [
+    65
+  ],
+  "inclusions": [
+    10,
+    20,
+    24,
+    52,
+    53
+  ],
+  "top_ranked": [
+    10,
+    52,
+    20,
+    24,
+    53,
+    3,
+    50,
+    49,
+    39,
+    25,
+    47,
+    66,
+    64,
+    6,
+    14,
+    2,
+    9,
+    33,
+    38,
+    36
+  ],
+  "suggestions": [
+    {
+      "keno_type": 6,
+      "ticket": [
+        3,
+        10,
+        20,
+        24,
+        52,
+        53
+      ]
+    },
+    {
+      "keno_type": 7,
+      "ticket": [
+        3,
+        10,
+        20,
+        24,
+        50,
+        52,
+        53
+      ]
+    },
+    {
+      "keno_type": 8,
+      "ticket": [
+        3,
+        10,
+        20,
+        24,
+        49,
+        50,
+        52,
+        53
+      ]
+    },
+    {
+      "keno_type": 9,
+      "ticket": [
+        3,
+        10,
+        20,
+        24,
+        39,
+        49,
+        50,
+        52,
+        53
+      ]
+    },
+    {
+      "keno_type": 10,
+      "ticket": [
+        3,
+        10,
+        20,
+        24,
+        25,
+        39,
+        49,
+        50,
+        52,
+        53
+      ]
+    }
+  ]
+}

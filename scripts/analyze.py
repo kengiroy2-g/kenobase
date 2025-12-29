@@ -23,6 +23,10 @@ import click
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from kenobase.analysis.stable_numbers import (
+    analyze_stable_numbers,
+    export_stable_numbers,
+)
 from kenobase.core.config import KenobaseConfig, load_config
 from kenobase.core.data_loader import DataLoader, DrawResult, GameType
 from kenobase.pipeline.output_formats import (
@@ -161,6 +165,9 @@ def result_to_dict(result: PipelineResult) -> dict:
     if result.aggregated_patterns:
         output["aggregated_patterns"] = result.aggregated_patterns
 
+    if result.regional_affinity:
+        output["regional_affinity"] = result.regional_affinity.to_dict()
+
     return output
 
 
@@ -170,9 +177,18 @@ def result_to_dict(result: PipelineResult) -> dict:
 # Main CLI Group
 @click.group()
 @click.version_option(version="2.0.0", prog_name="kenobase")
-def cli():
+@click.option(
+    "--game",
+    "-g",
+    type=click.Choice(["keno", "eurojackpot", "lotto"]),
+    default=None,
+    help="Spiel-Typ (ueberschreibt config.active_game)",
+)
+@click.pass_context
+def cli(ctx: click.Context, game: Optional[str]):
     """Kenobase V2.0 - Lottozahlen-Analysesystem mit Physics-Integration."""
-    pass
+    ctx.ensure_object(dict)
+    ctx.obj["game"] = game
 
 
 @cli.command()
@@ -194,6 +210,11 @@ def cli():
     "--output",
     "-o",
     help="Pfad zur Ausgabedatei (stdout wenn nicht angegeben)",
+    type=click.Path(),
+)
+@click.option(
+    "--regional-affinity-output",
+    help="Pfad fuer regionale Affinitaet (JSON); erfordert Region-Metadaten",
     type=click.Path(),
 )
 @click.option(
@@ -221,10 +242,13 @@ def cli():
     help="Spielkombination fuer Pattern-Analyse (z.B. 1,2,3,4,5,6)",
 )
 @click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
+@click.pass_context
 def analyze(
+    ctx: click.Context,
     config: str,
     data: str,
     output: Optional[str],
+    regional_affinity_output: Optional[str],
     output_format: str,
     start_date: Optional[datetime],
     end_date: Optional[datetime],
@@ -242,6 +266,12 @@ def analyze(
     # Load config
     logger.info(f"Loading config from {config}")
     cfg = load_config(config)
+
+    # Override active_game if --game was provided
+    game = ctx.obj.get("game") if ctx.obj else None
+    if game:
+        cfg.active_game = game
+        logger.info(f"Using game: {game}")
 
     # Load data
     logger.info(f"Loading data from {data}")
@@ -287,6 +317,22 @@ def analyze(
     else:
         click.echo(formatted)
 
+    # Optional: regional affinity artifact
+    if regional_affinity_output:
+        if result.regional_affinity:
+            regional_path = Path(regional_affinity_output)
+            regional_path.parent.mkdir(parents=True, exist_ok=True)
+            regional_payload = result.regional_affinity.to_dict()
+            regional_path.write_text(
+                json.dumps(regional_payload, indent=2, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            logger.info(f"Regional affinity written to {regional_affinity_output}")
+        else:
+            logger.warning(
+                "Regional affinity output requested but no analysis available (no region data?)"
+            )
+
     # Show warnings summary
     if result.warnings:
         click.echo(f"\n{len(result.warnings)} warning(s):", err=True)
@@ -323,7 +369,9 @@ def analyze(
     type=click.Path(),
 )
 @click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
+@click.pass_context
 def backtest(
+    ctx: click.Context,
     config: str,
     data: str,
     periods: int,
@@ -342,6 +390,12 @@ def backtest(
 
     # Load config and data
     cfg = load_config(config)
+
+    # Override active_game if --game was provided
+    game = ctx.obj.get("game") if ctx.obj else None
+    if game:
+        cfg.active_game = game
+        logger.info(f"Using game: {game}")
     loader = DataLoader()
     draws = loader.load(data)
 
@@ -426,7 +480,9 @@ def backtest(
     type=float,
 )
 @click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
+@click.pass_context
 def validate(
+    ctx: click.Context,
     config: str,
     combination: str,
     precision: float,
@@ -440,9 +496,16 @@ def validate(
         python scripts/analyze.py validate --combination 1,2,3,4,5,6
     """
     setup_logging(verbose)
+    logger = logging.getLogger(__name__)
 
     # Load config
     cfg = load_config(config)
+
+    # Override active_game if --game was provided
+    game = ctx.obj.get("game") if ctx.obj else None
+    if game:
+        cfg.active_game = game
+        logger.info(f"Using game: {game}")
 
     # Parse combination
     try:
@@ -474,13 +537,19 @@ def validate(
     help="Pfad zur Konfigurationsdatei",
     type=click.Path(exists=False),
 )
-def info(config: str):
+@click.pass_context
+def info(ctx: click.Context, config: str):
     """Zeigt Konfigurationsinformationen an.
 
     Example:
         python scripts/analyze.py info --config config/keno.yaml
     """
     cfg = load_config(config)
+
+    # Override active_game if --game was provided
+    game = ctx.obj.get("game") if ctx.obj else None
+    if game:
+        cfg.active_game = game
 
     info_data = {
         "version": cfg.version,
@@ -505,6 +574,154 @@ def info(config: str):
     }
 
     click.echo(json.dumps(info_data, indent=2, ensure_ascii=False))
+
+
+@cli.command("stable-numbers")
+@click.option(
+    "--config",
+    "-c",
+    default="config/default.yaml",
+    help="Pfad zur Konfigurationsdatei",
+    type=click.Path(exists=False),
+)
+@click.option(
+    "--data",
+    "-d",
+    required=True,
+    help="Pfad zur Eingabe-CSV-Datei",
+    type=click.Path(exists=True),
+)
+@click.option(
+    "--output",
+    "-o",
+    help="Pfad zur Ausgabedatei (stdout wenn nicht angegeben)",
+    type=click.Path(),
+)
+@click.option(
+    "--window",
+    "-w",
+    default=50,
+    help="Fenstergroesse fuer Rolling-Frequency (default 50)",
+    type=int,
+)
+@click.option(
+    "--threshold",
+    "-t",
+    default=None,
+    help="Stabilitaets-Schwellwert (default: aus config physics.stability_threshold)",
+    type=float,
+)
+@click.option(
+    "--all",
+    "include_all",
+    is_flag=True,
+    default=False,
+    help="Alle Zahlen ausgeben (nicht nur stabile)",
+)
+@click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
+@click.pass_context
+def stable_numbers(
+    ctx: click.Context,
+    config: str,
+    data: str,
+    output: Optional[str],
+    window: int,
+    threshold: Optional[float],
+    include_all: bool,
+    verbose: int,
+):
+    """Identifiziert Core Stable Numbers basierend auf Model Law A.
+
+    Analysiert welche Zahlen ueber Zeit stabil erscheinen (geringe Varianz
+    in der Rolling Frequency). Nutzt physics.stability_threshold aus Config.
+
+    Example:
+        python scripts/analyze.py stable-numbers -d data/raw/keno/KENO.csv -o results/stable.json
+    """
+    setup_logging(verbose)
+    logger = logging.getLogger(__name__)
+
+    # Load config
+    logger.info(f"Loading config from {config}")
+    cfg = load_config(config)
+
+    # Override active_game if --game was provided
+    game = ctx.obj.get("game") if ctx.obj else None
+    if game:
+        cfg.active_game = game
+        logger.info(f"Using game: {game}")
+
+    # Use threshold from config if not provided
+    stability_threshold = threshold if threshold is not None else cfg.physics.stability_threshold
+    logger.info(f"Using stability threshold: {stability_threshold}")
+
+    # Get number range from game config
+    game_cfg = cfg.get_active_game()
+    number_range = tuple(game_cfg.numbers_range)
+    logger.info(f"Using number range: {number_range}")
+
+    # Load data
+    logger.info(f"Loading data from {data}")
+    loader = DataLoader()
+    draws = loader.load(data)
+
+    if not draws:
+        click.echo("Error: No draws found in data file", err=True)
+        sys.exit(1)
+
+    logger.info(f"Loaded {len(draws)} draws")
+
+    if len(draws) < window:
+        click.echo(
+            f"Error: Not enough draws ({len(draws)}) for window size ({window})",
+            err=True,
+        )
+        sys.exit(1)
+
+    # Run analysis
+    logger.info(f"Analyzing stable numbers with window={window}, threshold={stability_threshold}")
+    results = analyze_stable_numbers(
+        draws,
+        window=window,
+        stability_threshold=stability_threshold,
+        number_range=number_range,
+    )
+
+    stable_count = len([r for r in results if r.is_stable])
+    logger.info(f"Found {stable_count} stable numbers out of {len(results)} total")
+
+    # Output
+    if output:
+        export_stable_numbers(results, output, include_all=include_all)
+        click.echo(f"Results written to {output}")
+        click.echo(f"Stable numbers: {stable_count}/{len(results)}")
+    else:
+        # Print to stdout
+        import json
+
+        export_results = results if include_all else [r for r in results if r.is_stable]
+        output_data = {
+            "analysis": "stable_numbers",
+            "game": cfg.active_game,
+            "count_total": len(results),
+            "count_stable": stable_count,
+            "parameters": {
+                "window": window,
+                "stability_threshold": stability_threshold,
+                "number_range": list(number_range),
+            },
+            "results": [
+                {
+                    "number": r.number,
+                    "stability_score": round(r.stability_score, 4),
+                    "is_stable": r.is_stable,
+                    "avg_frequency": round(r.avg_frequency, 4),
+                    "std_frequency": round(r.std_frequency, 4),
+                }
+                for r in export_results
+            ],
+        }
+        click.echo(json.dumps(output_data, indent=2, ensure_ascii=False))
 
 
 if __name__ == "__main__":

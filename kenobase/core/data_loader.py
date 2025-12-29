@@ -28,6 +28,8 @@ from typing import Optional
 import pandas as pd
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
+from kenobase.core.regions import normalize_region
+
 logger = logging.getLogger(__name__)
 
 
@@ -37,6 +39,8 @@ class GameType(str, Enum):
     KENO = "keno"
     EUROJACKPOT = "eurojackpot"
     LOTTO = "lotto"
+    GK1_SUMMARY = "gk1_summary"
+    GK1_HIT = "gk1_hit"
     UNKNOWN = "unknown"
 
 
@@ -76,6 +80,88 @@ class DrawResult(BaseModel):
     model_config = ConfigDict(use_enum_values=True)
 
 
+class GK1Summary(BaseModel):
+    """Gewinnklasse 1 Zusammenfassung.
+
+    Modell fuer 10-9_KGDaten_gefiltert.csv.
+    Enthaelt aggregierte GK1-Ereignisse ohne Zahlen.
+
+    Attributes:
+        datum: Datum der GK1-Ziehung
+        keno_typ: Keno-Typ (9 oder 10)
+        anzahl_gewinner: Anzahl der Gewinner
+        vergangene_tage: Tage seit letztem GK1 Treffer
+    """
+
+    datum: datetime
+    keno_typ: int
+    anzahl_gewinner: int
+    vergangene_tage: int
+
+    @field_validator("keno_typ")
+    @classmethod
+    def validate_keno_typ(cls, v: int) -> int:
+        """Validiert dass Keno-Typ 9 oder 10 ist."""
+        if v not in (9, 10):
+            raise ValueError(f"Keno-Typ must be 9 or 10, got {v}")
+        return v
+
+    @field_validator("anzahl_gewinner")
+    @classmethod
+    def validate_anzahl_gewinner(cls, v: int) -> int:
+        """Validiert dass Anzahl Gewinner positiv ist."""
+        if v < 1:
+            raise ValueError(f"Anzahl Gewinner must be >= 1, got {v}")
+        return v
+
+    model_config = ConfigDict(use_enum_values=True)
+
+
+class GK1Hit(BaseModel):
+    """Gewinnklasse 1 Treffer mit Zahlen.
+
+    Modell fuer 10-9_Liste_GK1_Treffer.csv.
+    Enthaelt GK1-Ereignis mit gepruefter Kombination.
+
+    Attributes:
+        datum: Datum der Original-GK1-Ziehung
+        keno_typ: Keno-Typ (9 oder 10)
+        anzahl_gewinner: Anzahl der Gewinner
+        vergangene_tage: Tage seit letztem GK1 Treffer
+        date_check: Datum an dem die Kombination erneut geprueft wurde
+        anzahl_treffer: Anzahl Treffer bei date_check
+        numbers: Die 6 geprueften Zahlen (z1-z6)
+    """
+
+    datum: datetime
+    keno_typ: int
+    anzahl_gewinner: int
+    vergangene_tage: int
+    date_check: datetime
+    anzahl_treffer: int
+    numbers: list[int]
+
+    @field_validator("keno_typ")
+    @classmethod
+    def validate_keno_typ(cls, v: int) -> int:
+        """Validiert dass Keno-Typ 9 oder 10 ist."""
+        if v not in (9, 10):
+            raise ValueError(f"Keno-Typ must be 9 or 10, got {v}")
+        return v
+
+    @field_validator("numbers")
+    @classmethod
+    def validate_numbers(cls, v: list[int]) -> list[int]:
+        """Validiert dass genau 6 positive Zahlen vorhanden sind."""
+        if len(v) != 6:
+            raise ValueError(f"Expected 6 numbers, got {len(v)}")
+        if not all(1 <= n <= 70 for n in v):
+            raise ValueError("All numbers must be between 1 and 70")
+        return sorted(v)
+
+    model_config = ConfigDict(use_enum_values=True)
+
+
 @dataclass
 class FormatInfo:
     """Erkannte Format-Informationen."""
@@ -106,6 +192,8 @@ class DataLoader:
     EUROJACKPOT_HEADERS = {"Datum", "5 aus 50", "EZ", "Spieleinsatz"}
     LOTTO_OLD_HEADERS = {"Datum", "z1", "z2", "z3", "z4", "z5", "z6"}
     LOTTO_NEW_HEADERS = {"Datum", "Gewinnzahlen", "ZZ", "Spiel77", "Super6"}
+    GK1_SUMMARY_HEADERS = {"Datum", "Keno-Typ", "Anzahl der Gewinner"}
+    GK1_HIT_HEADERS = {"Datum", "Keno-Typ", "Date_Check", "z1", "z2"}
 
     def __init__(
         self,
@@ -160,6 +248,8 @@ class DataLoader:
             GameType.KENO: self._parse_keno,
             GameType.EUROJACKPOT: self._parse_eurojackpot,
             GameType.LOTTO: self._parse_lotto,
+            GameType.GK1_SUMMARY: self._parse_gk1_summary,
+            GameType.GK1_HIT: self._parse_gk1_hit,
         }
 
         parser = parser_map.get(format_info.game_type)
@@ -193,7 +283,14 @@ class DataLoader:
         header_parts = {h.strip() for h in first_line.split(delimiter)}
 
         # Detect game type based on header patterns
-        if self.KENO_HEADERS.issubset(header_parts) or "Keno_Z1" in header_parts:
+        # GK1 formats must be checked before LOTTO (both have z1-z6)
+        if self.GK1_HIT_HEADERS.issubset(header_parts):
+            # GK1Hit has Date_Check column (differentiator)
+            game_type = GameType.GK1_HIT
+        elif self.GK1_SUMMARY_HEADERS.issubset(header_parts) and "Date_Check" not in header_parts:
+            # GK1Summary: has Keno-Typ but NOT Date_Check
+            game_type = GameType.GK1_SUMMARY
+        elif self.KENO_HEADERS.issubset(header_parts) or "Keno_Z1" in header_parts:
             game_type = GameType.KENO
         elif "5 aus 50" in first_line or "EZ" in header_parts:
             game_type = GameType.EUROJACKPOT
@@ -214,6 +311,17 @@ class DataLoader:
             date_format=self.default_date_format,
             encoding=encoding,
         )
+
+    @staticmethod
+    def _extract_region_from_row(row: dict[str, str]) -> Optional[str]:
+        """Extrahiert und normalisiert Region/Bundesland aus einer CSV-Zeile."""
+        for key, value in row.items():
+            key_lower = key.strip().lower()
+            if key_lower in {"bundesland", "region", "state"} or "bundesland" in key_lower:
+                region = normalize_region(value)
+                if region:
+                    return region
+        return None
 
     def _parse_keno(self, path: Path, format_info: FormatInfo) -> list[DrawResult]:
         """Parst KENO CSV-Format.
@@ -268,6 +376,13 @@ class DataLoader:
                     spieleinsatz = row.get("Keno_Spieleinsatz", "")
                     if spieleinsatz:
                         metadata["spieleinsatz"] = spieleinsatz
+
+                    # Preserve original draw order for position-based analyses.
+                    metadata["numbers_ordered"] = list(numbers)
+
+                    region = self._extract_region_from_row(row)
+                    if region:
+                        metadata["region"] = region
 
                     results.append(
                         DrawResult(
@@ -629,6 +744,164 @@ class DataLoader:
         logger.info(f"Loaded {len(results)} Lotto draws (archiv format) from {path.name}")
         return results
 
+    def _parse_gk1_summary(
+        self, path: Path, format_info: FormatInfo
+    ) -> list[GK1Summary]:
+        """Parst GK1Summary CSV-Format (10-9_KGDaten_gefiltert.csv).
+
+        Format: Datum,Keno-Typ,Anzahl der Gewinner,Vergangene Tage seit dem letzten Gewinnklasse 1
+        4 Spalten, Komma-Delimiter, deutsches Datumsformat
+
+        Args:
+            path: Pfad zur CSV-Datei
+            format_info: Format-Informationen
+
+        Returns:
+            Liste von GK1Summary-Objekten
+        """
+        results: list[GK1Summary] = []
+
+        with open(path, "r", encoding=format_info.encoding) as f:
+            reader = csv.DictReader(f, delimiter=format_info.delimiter)
+
+            for row_num, row in enumerate(reader, start=2):
+                try:
+                    # Clean whitespace from keys and values
+                    row = {k.strip(): v.strip() if v else "" for k, v in row.items() if k}
+
+                    # Parse date
+                    date_str = row.get("Datum", "")
+                    if not date_str:
+                        continue
+                    datum = datetime.strptime(date_str, format_info.date_format)
+
+                    # Parse Keno-Typ
+                    keno_typ_str = row.get("Keno-Typ", "")
+                    if not keno_typ_str:
+                        continue
+                    keno_typ = int(keno_typ_str)
+
+                    # Parse Anzahl der Gewinner (float in CSV, but we want int)
+                    anzahl_str = row.get("Anzahl der Gewinner", "")
+                    if not anzahl_str:
+                        continue
+                    anzahl_gewinner = int(float(anzahl_str))
+
+                    # Parse Vergangene Tage
+                    tage_str = row.get("Vergangene Tage seit dem letzten Gewinnklasse 1", "")
+                    if not tage_str:
+                        continue
+                    vergangene_tage = int(float(tage_str))
+
+                    results.append(
+                        GK1Summary(
+                            datum=datum,
+                            keno_typ=keno_typ,
+                            anzahl_gewinner=anzahl_gewinner,
+                            vergangene_tage=vergangene_tage,
+                        )
+                    )
+
+                except (ValueError, KeyError) as e:
+                    logger.warning(f"Row {row_num}: Parse error - {e}")
+                    continue
+
+        logger.info(f"Loaded {len(results)} GK1Summary records from {path.name}")
+        return results
+
+    def _parse_gk1_hit(
+        self, path: Path, format_info: FormatInfo
+    ) -> list[GK1Hit]:
+        """Parst GK1Hit CSV-Format (10-9_Liste_GK1_Treffer.csv).
+
+        Format: Datum,Keno-Typ,Anzahl der Gewinner,Vergangene Tage...,Date_Check,Anzahl Treffer,z1,z2,z3,z4,z5,z6
+        12 Spalten, Komma-Delimiter, deutsches Datumsformat
+
+        Args:
+            path: Pfad zur CSV-Datei
+            format_info: Format-Informationen
+
+        Returns:
+            Liste von GK1Hit-Objekten
+        """
+        results: list[GK1Hit] = []
+
+        with open(path, "r", encoding=format_info.encoding) as f:
+            reader = csv.DictReader(f, delimiter=format_info.delimiter)
+
+            for row_num, row in enumerate(reader, start=2):
+                try:
+                    # Clean whitespace from keys and values
+                    row = {k.strip(): v.strip() if v else "" for k, v in row.items() if k}
+
+                    # Parse datum
+                    date_str = row.get("Datum", "")
+                    if not date_str:
+                        continue
+                    datum = datetime.strptime(date_str, format_info.date_format)
+
+                    # Parse Keno-Typ
+                    keno_typ_str = row.get("Keno-Typ", "")
+                    if not keno_typ_str:
+                        continue
+                    keno_typ = int(keno_typ_str)
+
+                    # Parse Anzahl der Gewinner
+                    anzahl_str = row.get("Anzahl der Gewinner", "")
+                    if not anzahl_str:
+                        continue
+                    anzahl_gewinner = int(float(anzahl_str))
+
+                    # Parse Vergangene Tage
+                    tage_str = row.get("Vergangene Tage seit dem letzten Gewinnklasse 1", "")
+                    if not tage_str:
+                        continue
+                    vergangene_tage = int(float(tage_str))
+
+                    # Parse Date_Check
+                    date_check_str = row.get("Date_Check", "")
+                    if not date_check_str:
+                        continue
+                    date_check = datetime.strptime(date_check_str, format_info.date_format)
+
+                    # Parse Anzahl Treffer
+                    treffer_str = row.get("Anzahl Treffer", "")
+                    if not treffer_str:
+                        continue
+                    anzahl_treffer = int(treffer_str)
+
+                    # Parse z1-z6
+                    numbers = []
+                    for i in range(1, 7):
+                        key = f"z{i}"
+                        if key in row and row[key]:
+                            numbers.append(int(row[key]))
+
+                    if len(numbers) != 6:
+                        logger.warning(
+                            f"Row {row_num}: Expected 6 numbers, got {len(numbers)}"
+                        )
+                        continue
+
+                    results.append(
+                        GK1Hit(
+                            datum=datum,
+                            keno_typ=keno_typ,
+                            anzahl_gewinner=anzahl_gewinner,
+                            vergangene_tage=vergangene_tage,
+                            date_check=date_check,
+                            anzahl_treffer=anzahl_treffer,
+                            numbers=numbers,
+                        )
+                    )
+
+                except (ValueError, KeyError) as e:
+                    logger.warning(f"Row {row_num}: Parse error - {e}")
+                    continue
+
+        logger.info(f"Loaded {len(results)} GK1Hit records from {path.name}")
+        return results
+
     def to_dataframe(self, results: list[DrawResult]) -> pd.DataFrame:
         """Konvertiert DrawResult-Liste zu Pandas DataFrame.
 
@@ -684,4 +957,6 @@ __all__ = [
     "DrawResult",
     "GameType",
     "FormatInfo",
+    "GK1Summary",
+    "GK1Hit",
 ]

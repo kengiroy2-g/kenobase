@@ -10,6 +10,7 @@ Datum: 2025-12-29
 """
 
 import json
+import sys
 from collections import defaultdict
 from datetime import datetime
 from itertools import combinations
@@ -19,20 +20,11 @@ from typing import Dict, List, Tuple
 import pandas as pd
 import numpy as np
 
+# Ensure project root is importable when running `python scripts/...`
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(PROJECT_ROOT))
 
-# KENO Gewinnquoten (1 EUR Einsatz)
-KENO_QUOTES = {
-    2: {2: 6, 1: 0, 0: 0},
-    3: {3: 16, 2: 1, 1: 0, 0: 0},
-    4: {4: 22, 3: 2, 2: 1, 1: 0, 0: 0},
-    5: {5: 100, 4: 7, 3: 2, 2: 0, 1: 0, 0: 0},
-    6: {6: 500, 5: 15, 4: 5, 3: 1, 2: 0, 1: 0, 0: 0},
-    7: {7: 1000, 6: 100, 5: 12, 4: 4, 3: 1, 2: 0, 1: 0, 0: 0},
-    8: {8: 10000, 7: 1000, 6: 100, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    9: {9: 50000, 8: 5000, 7: 500, 6: 50, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    10: {10: 100000, 9: 10000, 8: 1000, 7: 100, 6: 15, 5: 5, 4: 0, 3: 0, 2: 0, 1: 0, 0: 2}
-}
-
+from kenobase.core.keno_quotes import get_fixed_quote
 
 def load_keno_draws(path: str = "data/raw/keno/KENO_ab_2018.csv") -> pd.DataFrame:
     """Laedt KENO Ziehungen."""
@@ -65,7 +57,7 @@ def simulate_ticket(
     ticket_numbers: List[int],
     keno_type: int,
     draw_numbers: set
-) -> int:
+) -> float:
     """
     Simuliert einen Tippschein und gibt Gewinn zurueck.
 
@@ -78,7 +70,7 @@ def simulate_ticket(
         Gewinn in EUR (bei 1 EUR Einsatz)
     """
     hits = sum(1 for n in ticket_numbers if n in draw_numbers)
-    return KENO_QUOTES.get(keno_type, {}).get(hits, 0)
+    return get_fixed_quote(keno_type, hits)
 
 
 def create_pair_ticket(pair: Tuple[int, int], keno_type: int, fill_strategy: str = "hot") -> List[int]:

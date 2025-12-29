@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_date": "2025-12-29T11:52:15.841953",
+    "analysis_date": "2025-12-29T13:24:04.742222",
     "gk1_events": 20,
     "threshold": 0.5
   },
@@ -525,31 +525,31 @@
       33,
       "35",
       "37",
-      "41",
-      "47",
-      49,
-      "51",
-      "56",
-      "65",
-      "69"
+      "39",
+      "42",
+      "46",
+      "48",
+      50,
+      "52",
+      "63"
     ],
     "uniqueness": {
-      "total_score": 0.917,
+      "total_score": 0.928,
       "anti_birthday": 1.0,
       "consecutive_pairs": 0,
       "consecutive_score": 1.0,
-      "decade_distribution": 0.996,
+      "decade_distribution": 0.993,
       "decades": {
         "1": 0,
         "2": 0,
         "3": 0,
-        "4": 3,
-        "5": 3,
-        "6": 2,
-        "7": 2
+        "4": 4,
+        "5": 4,
+        "6": 1,
+        "7": 1
       },
-      "sum": "483",
-      "sum_extremity": 0.454,
+      "sum": "445",
+      "sum_extremity": 0.53,
       "unpopularity": 1.0
     }
   }

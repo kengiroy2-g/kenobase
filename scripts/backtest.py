@@ -28,6 +28,11 @@ from kenobase.analysis.frequency import get_hot_numbers
 from kenobase.core.config import KenobaseConfig, load_config
 from kenobase.core.data_loader import DataLoader, DrawResult
 from kenobase.pipeline.runner import PipelineRunner
+from kenobase.pipeline.strategy import (
+    BacktestStrategy,
+    HotNumberStrategy,
+    StrategyFactory,
+)
 from kenobase.pipeline.validation_metrics import (
     calculate_hits,
     calculate_metrics_dict as calculate_metrics,
@@ -61,6 +66,7 @@ class BacktestPeriodResult:
         f1_score: 2 * P * R / (P + R)
         stability_score: Stability-Score aus Physics Layer
         criticality_level: Criticality-Level aus Physics Layer
+        strategy_name: Name der verwendeten Strategie
     """
 
     period_id: int
@@ -78,6 +84,7 @@ class BacktestPeriodResult:
     f1_score: float
     stability_score: float
     criticality_level: str
+    strategy_name: str = "hot_number"
 
 
 @dataclass
@@ -111,6 +118,7 @@ class BacktestEngine:
 
     Fuehrt historische Backtests durch mit Train/Test-Split pro Periode.
     Nutzt PipelineRunner fuer Physics-Layer Integration.
+    Unterstuetzt austauschbare Strategien via Strategy-Pattern (TASK-P03).
 
     Example:
         >>> config = load_config("config/default.yaml")
@@ -118,34 +126,46 @@ class BacktestEngine:
         >>> draws = DataLoader().load("data/raw/keno/KENO.csv")
         >>> result = engine.run(draws, n_periods=12)
         >>> print(f"Avg F1: {result.summary['avg_f1']:.3f}")
+
+        # Mit alternativer Strategie:
+        >>> strategy = StrategyFactory.create("cold_number", config)
+        >>> result = engine.run(draws, n_periods=12, strategy=strategy)
     """
 
-    def __init__(self, config: KenobaseConfig) -> None:
+    def __init__(
+        self,
+        config: KenobaseConfig,
+        strategy: BacktestStrategy | None = None,
+    ) -> None:
         """Initialisiert BacktestEngine.
 
         Args:
             config: Kenobase-Konfiguration
+            strategy: Optionale Strategie (default: HotNumberStrategy)
         """
         self.config = config
         self.runner = PipelineRunner(config)
+        self.strategy = strategy or StrategyFactory.get_default(config)
 
     def run(
         self,
         draws: list[DrawResult],
         n_periods: int = 12,
         train_ratio: float = 0.8,
+        strategy: BacktestStrategy | None = None,
     ) -> BacktestResult:
         """Fuehrt Walk-Forward Backtest durch.
 
         Teilt Daten in n_periods auf. Fuer jede Periode:
         1. Train auf ersten train_ratio% der Periode
-        2. Identifiziere Hot-Numbers aus Training
+        2. Generiere Vorhersage via Strategy aus Training
         3. Evaluiere auf restlichen (1-train_ratio)% als Test
 
         Args:
             draws: Chronologisch sortierte Ziehungen
             n_periods: Anzahl Backtest-Perioden
             train_ratio: Anteil Training pro Periode (default 0.8)
+            strategy: Optionale Strategy (ueberschreibt Engine-Default)
 
         Returns:
             BacktestResult mit allen Perioden-Ergebnissen
@@ -153,6 +173,8 @@ class BacktestEngine:
         Raises:
             ValueError: Wenn zu wenig Ziehungen fuer n_periods
         """
+        # Use provided strategy or fall back to engine default
+        active_strategy = strategy or self.strategy
         min_draws = n_periods * 10
         if len(draws) < min_draws:
             raise ValueError(
@@ -186,14 +208,9 @@ class BacktestEngine:
                 logger.warning(f"Period {i + 1}: Skipping due to empty train/test")
                 continue
 
-            # Get hot numbers from training period
-            # Use game-specific thresholds (ADR-018 style: 1.3x/0.7x expected frequency)
-            predicted_hot = get_hot_numbers(
-                train_draws,
-                hot_threshold=game_config.get_hot_threshold(),
-                cold_threshold=game_config.get_cold_threshold(),
-                number_range=game_config.numbers_range,
-            )
+            # Get predictions from strategy (default: HotNumberStrategy)
+            # Uses game-specific thresholds (ADR-018 style: 1.3x/0.7x expected frequency)
+            predicted_hot = active_strategy.predict(train_draws, game_config)
 
             # Calculate metrics on test period
             metrics = calculate_metrics(
@@ -227,6 +244,7 @@ class BacktestEngine:
                 f1_score=metrics["f1_score"],
                 stability_score=stability_score,
                 criticality_level=criticality_level,
+                strategy_name=active_strategy.name,
             )
             period_results.append(period_result)
 
@@ -333,6 +351,7 @@ def format_result_json(result: BacktestResult) -> str:
                 "f1_score": round(r.f1_score, 4),
                 "stability_score": round(r.stability_score, 4),
                 "criticality_level": r.criticality_level,
+                "strategy_name": r.strategy_name,
             }
             for r in result.period_results
         ],
@@ -420,6 +439,13 @@ def setup_logging(verbose: int) -> None:
     type=click.Path(exists=False),
 )
 @click.option(
+    "--game",
+    "-g",
+    type=click.Choice(["keno", "eurojackpot", "lotto"]),
+    default=None,
+    help="Spiel-Typ (ueberschreibt config.active_game)",
+)
+@click.option(
     "--data",
     "-d",
     required=True,
@@ -454,14 +480,23 @@ def setup_logging(verbose: int) -> None:
     type=click.Choice(["json", "markdown"]),
     help="Ausgabeformat (default: json)",
 )
+@click.option(
+    "--strategy",
+    "-s",
+    default="hot_number",
+    type=click.Choice(["hot_number", "cold_number", "random"]),
+    help="Vorhersage-Strategie (default: hot_number)",
+)
 @click.option("-v", "--verbose", count=True, help="Verbosity (-v INFO, -vv DEBUG)")
 def main(
     config: str,
+    game: Optional[str],
     data: str,
     periods: int,
     train_ratio: float,
     output: Optional[str],
     output_format: str,
+    strategy: str,
     verbose: int,
 ) -> None:
     """Fuehrt historischen Walk-Forward Backtest durch.
@@ -490,7 +525,13 @@ def main(
 
     # Load config
     cfg = load_config(config)
-    click.echo(f"Config loaded: {config}")
+
+    # Override active_game if --game was provided
+    if game:
+        cfg.active_game = game
+        logger.info(f"Using game: {game}")
+
+    click.echo(f"Config loaded: {config} (active_game: {cfg.active_game})")
 
     # Load data
     loader = DataLoader()
@@ -512,8 +553,12 @@ def main(
         )
         sys.exit(1)
 
+    # Create strategy
+    strat = StrategyFactory.create(strategy, cfg)
+    click.echo(f"Using strategy: {strategy}")
+
     # Run backtest
-    engine = BacktestEngine(cfg)
+    engine = BacktestEngine(cfg, strategy=strat)
     try:
         result = engine.run(draws, n_periods=periods, train_ratio=train_ratio)
     except ValueError as e:

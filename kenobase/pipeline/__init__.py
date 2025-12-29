@@ -20,6 +20,16 @@ from kenobase.pipeline.runner import (
     PipelineRunner,
     run_pipeline,
 )
+from kenobase.pipeline.strategy import (
+    AntiClusterStrategy,
+    BacktestStrategy,
+    ColdNumberStrategy,
+    CompositeStrategy,
+    HotNumberAntiClusterStrategy,
+    HotNumberStrategy,
+    RandomStrategy,
+    StrategyFactory,
+)
 from kenobase.pipeline.validation_metrics import (
     ValidationMetrics,
     calculate_f1,
@@ -31,8 +41,14 @@ from kenobase.pipeline.validation_metrics import (
 )
 
 __all__ = [
+    "AntiClusterStrategy",
+    "BacktestStrategy",
+    "ColdNumberStrategy",
+    "CompositeStrategy",
     "DEFAULT_PIPELINE_VARIANTS",
     "FormatterConfig",
+    "HotNumberAntiClusterStrategy",
+    "HotNumberStrategy",
     "OutputFormat",
     "OutputFormatter",
     "PhysicsResult",
@@ -40,7 +56,9 @@ __all__ = [
     "PipelineRunner",
     "PipelineSelector",
     "PipelineVariant",
+    "RandomStrategy",
     "SelectionResult",
+    "StrategyFactory",
     "ValidationMetrics",
     "calculate_f1",
     "calculate_hits",
