@@ -1,0 +1,730 @@
+{
+  "analysis_date": "2025-12-29T21:31:26.493510",
+  "best_model": {
+    "components": [
+      "jackpot_warning",
+      "exclusion_rules",
+      "anti_birthday"
+    ],
+    "performance": {
+      "typ_9": {
+        "components": [
+          "jackpot_warning",
+          "exclusion_rules",
+          "anti_birthday"
+        ],
+        "num_components": 3,
+        "roi": 467.36242884250476,
+        "invested": 1581,
+        "won": 8970,
+        "skipped": 296,
+        "played": 1581
+      }
+    }
+  },
+  "all_results": [
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "anti_birthday"
+      ],
+      "num_components": 3,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 4,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "sum_context",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 6,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "sum_context",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 6,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "sum_context",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 6,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "sum_context",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 7,
+      "roi": 467.36242884250476,
+      "invested": 1581,
+      "won": 8970,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday"
+      ],
+      "num_components": 3,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday"
+      ],
+      "num_components": 4,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "anti_birthday"
+      ],
+      "num_components": 4,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "sum_context"
+      ],
+      "num_components": 4,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "anti_birthday"
+      ],
+      "num_components": 4,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "sum_context"
+      ],
+      "num_components": 5,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "sum_context",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "sum_context",
+        "anti_birthday"
+      ],
+      "num_components": 6,
+      "roi": 467.23592662871596,
+      "invested": 1581,
+      "won": 8968,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules"
+      ],
+      "num_components": 2,
+      "roi": 466.8564199873498,
+      "invested": 1581,
+      "won": 8962,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "sum_context"
+      ],
+      "num_components": 3,
+      "roi": 466.8564199873498,
+      "invested": 1581,
+      "won": 8962,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "sum_context",
+        "anti_birthday"
+      ],
+      "num_components": 4,
+      "roi": 466.8564199873498,
+      "invested": 1581,
+      "won": 8962,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal"
+      ],
+      "num_components": 3,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "pair_synergy"
+      ],
+      "num_components": 3,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "sum_context"
+      ],
+      "num_components": 4,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "pair_synergy"
+      ],
+      "num_components": 4,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "pair_synergy"
+      ],
+      "num_components": 4,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "sum_context",
+        "pair_synergy"
+      ],
+      "num_components": 4,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "pair_synergy"
+      ],
+      "num_components": 5,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "sum_context",
+        "pair_synergy"
+      ],
+      "num_components": 5,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "sum_context",
+        "anti_birthday"
+      ],
+      "num_components": 5,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "weekday",
+        "sum_context",
+        "pair_synergy"
+      ],
+      "num_components": 5,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "exclusion_rules",
+        "temporal",
+        "weekday",
+        "sum_context",
+        "pair_synergy"
+      ],
+      "num_components": 6,
+      "roi": 466.729917773561,
+      "invested": 1581,
+      "won": 8960,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning"
+      ],
+      "num_components": 1,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal"
+      ],
+      "num_components": 2,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "weekday"
+      ],
+      "num_components": 2,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "sum_context"
+      ],
+      "num_components": 2,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "pair_synergy"
+      ],
+      "num_components": 2,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "anti_birthday"
+      ],
+      "num_components": 2,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "weekday"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "sum_context"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "pair_synergy"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "anti_birthday"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "weekday",
+        "sum_context"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "weekday",
+        "pair_synergy"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "weekday",
+        "anti_birthday"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "sum_context",
+        "pair_synergy"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "sum_context",
+        "anti_birthday"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "pair_synergy",
+        "anti_birthday"
+      ],
+      "num_components": 3,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "weekday",
+        "sum_context"
+      ],
+      "num_components": 4,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    },
+    {
+      "components": [
+        "jackpot_warning",
+        "temporal",
+        "weekday",
+        "pair_synergy"
+      ],
+      "num_components": 4,
+      "roi": 466.6034155597723,
+      "invested": 1581,
+      "won": 8958,
+      "skipped": 296,
+      "played": 1581
+    }
+  ],
+  "component_definitions": {
+    "jackpot_warning": "30-Tage Cooldown nach GK10_10 Jackpot",
+    "exclusion_rules": "Position-basierte Exclusion (100% Accuracy)",
+    "temporal": "Monats-Start/Ende Favoriten",
+    "weekday": "Wochentags-spezifische Zahlen",
+    "sum_context": "Summen-basierte Favoriten",
+    "pair_synergy": "Starke Paar-Kombinationen",
+    "correlated_absence": "Korrelierte Absenzen",
+    "anti_birthday": "Anti-Birthday Zahlen (>31)"
+  }
+}
