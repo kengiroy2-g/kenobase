@@ -1,0 +1,327 @@
+{
+  "keno": {
+    "baseline": {
+      "label": "Alle KENO Ziehungen",
+      "total_numbers": 20429,
+      "birthday_count": 12840,
+      "non_birthday_count": 7589,
+      "birthday_per_num": 414.19354838709677,
+      "non_birthday_per_num": 421.6111111111111,
+      "birthday_ratio": 0.9824066241886602,
+      "lucky_count": 2950,
+      "lucky_per_num": 421.42857142857144,
+      "other_per_num": 416.1666666666667,
+      "lucky_ratio": 1.012643743921277,
+      "low_count": 10366,
+      "high_count": 10063,
+      "low_high_ratio": 1.0301103050780085
+    },
+    "typ10_10": {
+      "n_draws": 31,
+      "distribution": {
+        "label": "typ10_10",
+        "total_numbers": 435,
+        "birthday_count": 262,
+        "non_birthday_count": 173,
+        "birthday_per_num": 8.451612903225806,
+        "non_birthday_per_num": 9.61111111111111,
+        "birthday_ratio": 0.8793585679656908,
+        "lucky_count": 67,
+        "lucky_per_num": 9.571428571428571,
+        "other_per_num": 8.761904761904763,
+        "lucky_ratio": 1.092391304347826,
+        "low_count": 216,
+        "high_count": 219,
+        "low_high_ratio": 0.9863013698630136
+      },
+      "comparison": {
+        "birthday_ratio_high_win": 0.8793585679656908,
+        "birthday_ratio_normal": 0.9824066241886602,
+        "birthday_difference_pct": -10.489348675562288,
+        "birthday_avoided": true,
+        "lucky_ratio_high_win": 1.092391304347826,
+        "lucky_ratio_normal": 1.012643743921277,
+        "lucky_difference_pct": 7.875184229918922,
+        "lucky_avoided": false,
+        "low_high_ratio_high_win": 0.9863013698630136,
+        "low_high_ratio_normal": 1.0301103050780085,
+        "low_high_difference_pct": -4.252839234695092,
+        "high_numbers_preferred": false
+      }
+    },
+    "typ9_9": {
+      "n_draws": 25,
+      "distribution": {
+        "label": "typ9_9",
+        "total_numbers": 348,
+        "birthday_count": 215,
+        "non_birthday_count": 133,
+        "birthday_per_num": 6.935483870967742,
+        "non_birthday_per_num": 7.388888888888889,
+        "birthday_ratio": 0.9386369148678146,
+        "lucky_count": 59,
+        "lucky_per_num": 8.428571428571429,
+        "other_per_num": 6.880952380952381,
+        "lucky_ratio": 1.2249134948096885,
+        "low_count": 178,
+        "high_count": 170,
+        "low_high_ratio": 1.0470588235294118
+      },
+      "comparison": {
+        "birthday_ratio_high_win": 0.9386369148678146,
+        "birthday_ratio_normal": 0.9824066241886602,
+        "birthday_difference_pct": -4.455355678916929,
+        "birthday_avoided": false,
+        "lucky_ratio_high_win": 1.2249134948096885,
+        "lucky_ratio_normal": 1.012643743921277,
+        "lucky_difference_pct": 20.961937716262963,
+        "lucky_avoided": false,
+        "low_high_ratio_high_win": 1.0470588235294118,
+        "low_high_ratio_normal": 1.0301103050780085,
+        "low_high_difference_pct": 1.6453110281349765,
+        "high_numbers_preferred": false
+      }
+    },
+    "typ8_8": {
+      "n_draws": 184,
+      "distribution": {
+        "label": "typ8_8",
+        "total_numbers": 2647,
+        "birthday_count": 1708,
+        "non_birthday_count": 939,
+        "birthday_per_num": 55.096774193548384,
+        "non_birthday_per_num": 52.166666666666664,
+        "birthday_ratio": 1.0561681954034834,
+        "lucky_count": 396,
+        "lucky_per_num": 56.57142857142857,
+        "other_per_num": 53.595238095238095,
+        "lucky_ratio": 1.0555308751665926,
+        "low_count": 1374,
+        "high_count": 1273,
+        "low_high_ratio": 1.0793401413982717
+      },
+      "comparison": {
+        "birthday_ratio_high_win": 1.0561681954034834,
+        "birthday_ratio_normal": 0.9824066241886602,
+        "birthday_difference_pct": 7.5082526317186264,
+        "birthday_avoided": false,
+        "lucky_ratio_high_win": 1.0555308751665926,
+        "lucky_ratio_normal": 1.012643743921277,
+        "lucky_difference_pct": 4.235164785519049,
+        "lucky_avoided": false,
+        "low_high_ratio_high_win": 1.0793401413982717,
+        "low_high_ratio_normal": 1.0301103050780085,
+        "low_high_difference_pct": 4.779083956114306,
+        "high_numbers_preferred": false
+      }
+    }
+  },
+  "lotto": {
+    "baseline": {
+      "label": "Alle Lotto Ziehungen",
+      "total_numbers": 2496,
+      "birthday_count": 1614,
+      "non_birthday_count": 882,
+      "birthday_per_num": 52.064516129032256,
+      "non_birthday_per_num": 49.0,
+      "birthday_ratio": 1.0625411454904543,
+      "lucky_count": 354,
+      "lucky_per_num": 50.57142857142857,
+      "other_per_num": 51.0,
+      "lucky_ratio": 0.9915966386554621,
+      "low_count": 1288,
+      "high_count": 1208,
+      "low_high_ratio": 1.0662251655629138
+    },
+    "jackpot": {
+      "n_draws": 68,
+      "distribution": {
+        "label": "Jackpot (6+SZ)",
+        "total_numbers": 408,
+        "birthday_count": 275,
+        "non_birthday_count": 133,
+        "birthday_per_num": 8.870967741935484,
+        "non_birthday_per_num": 7.388888888888889,
+        "birthday_ratio": 1.2005821004123212,
+        "lucky_count": 61,
+        "lucky_per_num": 8.714285714285714,
+        "other_per_num": 8.261904761904763,
+        "lucky_ratio": 1.0547550432276656,
+        "low_count": 223,
+        "high_count": 185,
+        "low_high_ratio": 1.2054054054054053
+      },
+      "comparison": {
+        "birthday_ratio_high_win": 1.2005821004123212,
+        "birthday_ratio_normal": 1.0625411454904543,
+        "birthday_difference_pct": 12.99158677362551,
+        "birthday_avoided": false,
+        "lucky_ratio_high_win": 1.0547550432276656,
+        "lucky_ratio_normal": 0.9915966386554621,
+        "lucky_difference_pct": 6.369364528891705,
+        "lucky_avoided": false,
+        "low_high_ratio_high_win": 1.2054054054054053,
+        "low_high_ratio_normal": 1.0662251655629138,
+        "low_high_difference_pct": 13.053550444854794,
+        "high_numbers_preferred": false
+      }
+    },
+    "sum_analysis": {
+      "median_sum": 147.0,
+      "high_sum_birthday_ratio": 0.6306146243962023,
+      "low_sum_birthday_ratio": 1.896259779230522
+    }
+  },
+  "einzelzahlen": {
+    "keno_typ10": {
+      "over_represented": [
+        [
+          51,
+          1.5817307692307692
+        ],
+        [
+          58,
+          1.4582338902147973
+        ],
+        [
+          61,
+          1.454761904761905
+        ],
+        [
+          7,
+          1.44987146529563
+        ],
+        [
+          36,
+          1.4176334106728539
+        ],
+        [
+          13,
+          1.4029850746268657
+        ],
+        [
+          43,
+          1.3891625615763548
+        ],
+        [
+          15,
+          1.375609756097561
+        ],
+        [
+          3,
+          1.357777777777778
+        ],
+        [
+          48,
+          1.3557692307692308
+        ]
+      ],
+      "under_represented": [
+        [
+          6,
+          0.5477855477855478
+        ],
+        [
+          68,
+          0.5490654205607477
+        ],
+        [
+          27,
+          0.5516431924882629
+        ],
+        [
+          5,
+          0.5649038461538461
+        ],
+        [
+          16,
+          0.5788177339901478
+        ],
+        [
+          1,
+          0.5816831683168316
+        ],
+        [
+          25,
+          0.6573426573426574
+        ],
+        [
+          20,
+          0.6730310262529833
+        ],
+        [
+          8,
+          0.6778846153846154
+        ]
+      ],
+      "over_birthday_count": 5,
+      "under_birthday_count": 8
+    },
+    "lotto_jackpot": {
+      "over_represented": [
+        [
+          13,
+          1.8352941176470587
+        ],
+        [
+          23,
+          1.5959079283887467
+        ],
+        [
+          46,
+          1.5649794801641586
+        ],
+        [
+          31,
+          1.4565826330532214
+        ],
+        [
+          25,
+          1.3479561316051845
+        ],
+        [
+          3,
+          1.3194925028835065
+        ]
+      ],
+      "under_represented": [
+        [
+          43,
+          0.5561497326203209
+        ],
+        [
+          40,
+          0.5664488017429194
+        ],
+        [
+          28,
+          0.6221335992023929
+        ],
+        [
+          14,
+          0.6372549019607843
+        ],
+        [
+          21,
+          0.6508135168961202
+        ],
+        [
+          38,
+          0.6797385620915032
+        ],
+        [
+          35,
+          0.6797385620915033
+        ],
+        [
+          45,
+          0.6797385620915033
+        ]
+      ],
+      "over_birthday_count": 5,
+      "under_birthday_count": 3,
+      "over_high_count": 1,
+      "under_high_count": 5
+    }
+  }
+}

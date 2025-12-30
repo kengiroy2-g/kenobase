@@ -1,0 +1,77 @@
+{
+  "analysis_date": "2025-12-30T10:00:39.159235",
+  "results": {
+    "typ_8": {
+      "original": {
+        "roi": 115.81277672359266,
+        "played": 1581,
+        "won": 3412,
+        "high_wins": 15
+      },
+      "v2": {
+        "roi": 98.86148007590133,
+        "played": 1581,
+        "won": 3144,
+        "high_wins": 13,
+        "mode_distribution": {
+          "normal": 904,
+          "conservative": 298,
+          "jackpot": 379
+        },
+        "mode_roi": {
+          "normal": 173.00884955752213,
+          "conservative": 14.093959731543624,
+          "jackpot": -11.345646437994723
+        }
+      }
+    },
+    "typ_9": {
+      "original": {
+        "roi": 228.39974699557243,
+        "played": 1581,
+        "won": 5192,
+        "high_wins": 5
+      },
+      "v2": {
+        "roi": 156.2934851359899,
+        "played": 1581,
+        "won": 4052,
+        "high_wins": 3,
+        "mode_distribution": {
+          "normal": 904,
+          "conservative": 298,
+          "jackpot": 379
+        },
+        "mode_roi": {
+          "normal": 184.73451327433628,
+          "conservative": 195.97315436241612,
+          "jackpot": 57.25593667546174
+        }
+      }
+    },
+    "typ_10": {
+      "original": {
+        "roi": 224.7311827956989,
+        "played": 1581,
+        "won": 5134,
+        "high_wins": 10
+      },
+      "v2": {
+        "roi": 135.6103731815307,
+        "played": 1581,
+        "won": 3725,
+        "high_wins": 5,
+        "mode_distribution": {
+          "normal": 904,
+          "conservative": 298,
+          "jackpot": 379
+        },
+        "mode_roi": {
+          "normal": 237.0575221238938,
+          "conservative": 10.738255033557047,
+          "jackpot": -8.179419525065963
+        }
+      }
+    }
+  }
+}

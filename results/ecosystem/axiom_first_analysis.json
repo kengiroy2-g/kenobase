@@ -1,0 +1,166 @@
+{
+  "events": {
+    "evt_001": {
+      "avg_days_between_jackpots": 10.058823529411764,
+      "std_days": 6.5031267433017454,
+      "min_days": 1,
+      "max_days": 28,
+      "coefficient_of_variation": 0.6465096762346765,
+      "distributed_evenly": "True"
+    },
+    "evt_002": {
+      "autocorrelations": [
+        {
+          "lag": 1,
+          "correlation": -0.3466490837933464,
+          "p_value": 1.2467132775602309e-11
+        },
+        {
+          "lag": 2,
+          "correlation": -0.3256369970402804,
+          "p_value": 2.445172422587325e-10
+        },
+        {
+          "lag": 3,
+          "correlation": 0.20662221280223073,
+          "p_value": 8.016059900937074e-05
+        },
+        {
+          "lag": 4,
+          "correlation": 0.17594227771010504,
+          "p_value": 0.000827405295526685
+        },
+        {
+          "lag": 5,
+          "correlation": -0.306140391569843,
+          "p_value": 3.495015938400575e-09
+        },
+        {
+          "lag": 6,
+          "correlation": -0.3484938316378739,
+          "p_value": 1.3285107289835472e-11
+        },
+        {
+          "lag": 7,
+          "correlation": 0.9355044555484294,
+          "p_value": 1.4377762519798327e-161
+        }
+      ],
+      "lag1_correlation": -0.3466490837933464,
+      "shows_compensation": "True"
+    }
+  },
+  "numbers": {
+    "num_001": {
+      "avg_overlap": 10.23076923076923,
+      "expected_overlap": 7.1,
+      "avg_jaccard": 0.22610714306202873,
+      "deviation_pct": 44.09534127843987,
+      "shows_avoidance": "False"
+    },
+    "num_002": {
+      "avg_correlation": 0.02487161692550209,
+      "monthly_correlations": [
+        {
+          "month": "2022-11",
+          "r": 0.1693696954992938,
+          "p": 0.24466315549546452
+        },
+        {
+          "month": "2024-09",
+          "r": -0.12385587502326154,
+          "p": 0.396504207591455
+        },
+        {
+          "month": "2025-08",
+          "r": -0.0942231892508391,
+          "p": 0.5195944767852702
+        },
+        {
+          "month": "2022-02",
+          "r": -0.015992936017376058,
+          "p": 0.9131490139829046
+        },
+        {
+          "month": "2023-12",
+          "r": 0.11323463887343319,
+          "p": 0.43853074634083633
+        }
+      ],
+      "shows_inverse": "False"
+    },
+    "num_003": {
+      "avg_decade_correlation": 0.04288538719370182,
+      "shows_balancing": "False"
+    }
+  },
+  "dauerschein": {
+    "dau_001": {
+      "birthday_per_number": 52.064516129032256,
+      "non_birthday_per_number": 49.0,
+      "difference_pct": 6.254114549045421,
+      "birthday_compensated": false
+    },
+    "dau_002": {
+      "lucky_per_number": 50.57142857142857,
+      "other_per_number": 51.0,
+      "difference_pct": -0.8403361344537854,
+      "lucky_avoided": false
+    },
+    "dau_003": {
+      "diagonal_analysis": [
+        {
+          "diagonal": [
+            1,
+            9,
+            17,
+            25,
+            33,
+            41
+          ],
+          "count": 4,
+          "pct": 0.9615384615384616
+        },
+        {
+          "diagonal": [
+            7,
+            13,
+            19,
+            25,
+            31,
+            37
+          ],
+          "count": 8,
+          "pct": 1.9230769230769231
+        },
+        {
+          "diagonal": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "count": 5,
+          "pct": 1.201923076923077
+        },
+        {
+          "diagonal": [
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "count": 12,
+          "pct": 2.8846153846153846
+        }
+      ],
+      "avg_diagonal_pct": 1.7427884615384617,
+      "diagonals_avoided": "False"
+    }
+  }
+}

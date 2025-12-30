@@ -1,0 +1,171 @@
+# =============================================================================
+# AXIOM-FIRST ANALYSE PLAN
+# =============================================================================
+# Erstellt: 2025-12-30
+# Paradigma: Wirtschaftslogik statt Pattern-Suche
+# =============================================================================
+
+meta:
+  name: "Axiom-First Tiefenanalyse"
+  version: "1.0"
+  created: "2025-12-30"
+
+  lessons_learned: |
+    Die Perioden-Analyse hat gezeigt:
+    - "3.5-Tage Periode" = Artefakt der Ziehungstage (Mi/Sa)
+    - Lag-Korrelationen = nicht kausal nutzbar
+    - Zeitbasierte Analyse funktioniert NICHT
+
+    Neuer Ansatz: EVENT-basiert und ZAHLEN-basiert
+
+# =============================================================================
+# ANSATZ 1: EVENT-BASIERTE ANALYSE
+# =============================================================================
+
+approach_1_events:
+  name: "Event-basierte Analyse"
+  axiom_basis: ["A1_house_edge", "A7_reset_cycles"]
+
+  core_idea: |
+    Das System reagiert auf EVENTS, nicht auf Zeit.
+    Events = Jackpots, hohe Einsaetze, Gewinn-Cluster
+
+    Nach einem Event muss das System reagieren um
+    House-Edge zu stabilisieren.
+
+  hypotheses:
+    EVT-001:
+      name: "Jackpot-Kaskaden-Vermeidung"
+      statement: |
+        Nach einem Jackpot bei Spiel A wird das System
+        Jackpots bei allen Spielen fuer X Ziehungen vermeiden.
+      test: "Zaehle Tage bis naechster Jackpot nach jedem Jackpot"
+
+    EVT-002:
+      name: "Einsatz-Schwellen-Trigger"
+      statement: |
+        Wenn kumulierter Einsatz eine Schwelle erreicht,
+        wird ein Jackpot wahrscheinlicher.
+      test: "Korrelation Einsatz-Kumulation vs Jackpot"
+
+    EVT-003:
+      name: "Gewinner-Dichte-Ausgleich"
+      statement: |
+        Nach Tagen mit vielen Gewinnern folgen Tage
+        mit weniger Gewinnern (und umgekehrt).
+      test: "Autokorrelation der Gewinner-Zahlen"
+
+  metrics:
+    - "Tage bis naechster Jackpot (nach Jackpot)"
+    - "Kumulierter Einsatz vor Jackpot"
+    - "Gewinner-Autokorrelation Lag 1-7"
+
+# =============================================================================
+# ANSATZ 2: ZAHLEN-EBENE ANALYSE
+# =============================================================================
+
+approach_2_numbers:
+  name: "Cross-Lotterie Zahlen-Korrelation"
+  axiom_basis: ["A2_player_overlap", "A5_anti_clustering"]
+
+  core_idea: |
+    Spieler verwenden AEHNLICHE Zahlen bei verschiedenen Lotterien.
+    Das System WEISS das (Dauerschein-Daten).
+
+    Hypothese: Zahlen die bei KENO gezogen werden,
+    werden bei Lotto vermieden (und umgekehrt).
+
+  hypotheses:
+    NUM-001:
+      name: "Zahlen-Ausschluss"
+      statement: |
+        Zahlen 1-49 (gemeinsamer Bereich KENO/Lotto):
+        Wenn Zahl X bei KENO gezogen, erscheint sie
+        bei Lotto in der gleichen Woche seltener.
+      test: "Jaccard-Index KENO vs Lotto Gewinnzahlen"
+
+    NUM-002:
+      name: "Inverse Zahlen-Frequenz"
+      statement: |
+        Haeufige KENO-Zahlen sind seltene Lotto-Zahlen
+        (und umgekehrt) im gleichen Zeitraum.
+      test: "Korrelation Monats-Frequenz KENO vs Lotto"
+
+    NUM-003:
+      name: "Dekaden-Balancing"
+      statement: |
+        Das Oekosystem balanciert Dekaden ueber alle Spiele.
+        Wenn KENO viele Zahlen aus Dekade 1-10 zieht,
+        zieht Lotto weniger aus dieser Dekade.
+      test: "Dekaden-Korrelation KENO vs Lotto"
+
+  data_needed:
+    - "KENO Gewinnzahlen 2025 (z1-z20)"
+    - "Lotto 6aus49 Gewinnzahlen 2025 (z1-z6)"
+    - "Gemeinsamer Zahlenraum: 1-49"
+
+# =============================================================================
+# ANSATZ 3: DAUERSCHEIN-SIMULATION
+# =============================================================================
+
+approach_3_dauerschein:
+  name: "Dauerschein-Simulation"
+  axiom_basis: ["A2_dauerscheine", "A3_attractiveness", "A4_paar_garantie"]
+
+  core_idea: |
+    Viele Spieler nutzen Dauerscheine mit festen Zahlen.
+    Diese Zahlen folgen typischen Mustern:
+    - Geburtstage (1-31)
+    - Glueckszahlen (7, 13, 21, ...)
+    - Diagonalen auf dem Spielschein
+
+    Das System KENNT diese Muster und muss:
+    - Kleine Gewinne garantieren (Attraktivitaet)
+    - Grosse Gewinne vermeiden (House-Edge)
+
+  hypotheses:
+    DAU-001:
+      name: "Birthday-Zahlen-Haeufigkeit"
+      statement: |
+        Zahlen 1-31 (Geburtstage) erscheinen NICHT haeufiger
+        als 32-49/70, obwohl mehr Spieler sie tippen.
+        Das System kompensiert aktiv.
+      test: "Vergleiche Frequenz 1-31 vs 32-49"
+
+    DAU-002:
+      name: "Glueckszahlen-Vermeidung"
+      statement: |
+        Typische Glueckszahlen (7, 13, 21, 27, 33, 42)
+        werden bei Jackpots VERMIEDEN.
+      test: "Frequenz Glueckszahlen in GK1 vs alle Ziehungen"
+
+    DAU-003:
+      name: "Diagonalen-Vermeidung"
+      statement: |
+        Zahlen die Diagonalen auf dem Spielschein bilden
+        erscheinen selten zusammen.
+      test: "Haeufigkeit typischer Diagonalmuster"
+
+  typical_patterns:
+    geburtstage: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+    glueckszahlen: [7, 13, 21, 27, 33, 42, 49]
+    spielschein_diagonalen:
+      - [1, 9, 17, 25, 33, 41]  # Diagonal links-rechts
+      - [7, 13, 19, 25, 31, 37]  # Diagonal rechts-links
+      - [1, 2, 3, 4, 5, 6]  # Erste Reihe
+      - [43, 44, 45, 46, 47, 48, 49]  # Letzte Reihe
+
+# =============================================================================
+# IMPLEMENTATION
+# =============================================================================
+
+implementation:
+  script: "scripts/ecosystem/axiom_first_analysis.py"
+
+  outputs:
+    - "results/ecosystem/event_analysis.json"
+    - "results/ecosystem/number_correlation.json"
+    - "results/ecosystem/dauerschein_analysis.json"
+    - "results/ecosystem/axiom_first_report.md"
+
+  estimated_time: "30 min"
