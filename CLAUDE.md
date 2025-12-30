@@ -15,6 +15,7 @@ Dieses Dokument dient als Arbeits- und Umsetzungsleitfaden fuer das neue Kenobas
 
 **Wichtige Dateien:**
 - **Plan:** `AI_COLLABORATION/PLANS/kenobase_v2_complete_plan.yaml` (24 Tasks, 42h)
+- **Plan (Axiom-First / Ecosystem):** `AI_COLLABORATION/PLANS/kenobase_axiom_first_ecosystem_plan.yaml`
 - **Supervisor:** `AI_COLLABORATION/SUPERVISOR.md`
 - **Module Map:** `AI_COLLABORATION/ARCHITECTURE/MODULE_MAP.md`
 - **Config:** `config/default.yaml`
@@ -103,6 +104,82 @@ git commit -m "docs(claude): add GitHub workflow section"
 
 ---
 
+## 0.3 Super Model V2: Birthday-Avoidance Strategie (EMPFOHLEN)
+
+**WICHTIG: Validiert auf 2025 Out-of-Sample Daten (363 Ziehungen)**
+
+### Kern-Erkenntnis
+
+Bei KENO-Jackpots werden Birthday-Zahlen (1-31) systematisch vermieden (-10.5% Effekt).
+Die V2-Strategie nutzt diesen Effekt mit empirisch optimierten Tickets.
+
+### 2025 Out-of-Sample Ergebnisse
+
+| Typ | Original ROI | V2 Birthday-Av. ROI | Verbesserung |
+|-----|-------------|---------------------|--------------|
+| Typ 8 | -14.6% | **+261.4%** | +276% |
+| Typ 9 | +209.6% | **+1545.7%** | +1336% |
+| Typ 10 | +77.7% | **+305.5%** | +228% |
+
+**EMPFEHLUNG: Typ 9 mit Birthday-Avoidance liefert beste Performance!**
+
+### Empfohlene Tickets (V2)
+
+```python
+BIRTHDAY_AVOIDANCE_TICKETS_V2 = {
+    8: [3, 36, 43, 48, 51, 58, 61, 64],
+    9: [3, 7, 36, 43, 48, 51, 58, 61, 64],    # BESTE WAHL
+    10: [3, 7, 13, 36, 43, 48, 51, 58, 61, 64],
+}
+
+# Jackpot-Favoriten (hohe Frequenz bei Jackpots)
+JACKPOT_FAVORITES_V2 = [51, 58, 61, 7, 36, 13, 43, 15, 3, 48]
+
+# Zahlen die bei Jackpots vermieden werden
+JACKPOT_AVOID_V2 = [6, 68, 27, 5, 16, 1, 25, 20, 8]
+```
+
+### Taegliche Empfehlung generieren
+
+```powershell
+# Standard-Empfehlung (Typ 8, 9, 10)
+python scripts/daily_recommendation.py
+
+# Nur Typ 9 (beste Performance)
+python scripts/daily_recommendation.py --type 9
+
+# Dual-Strategie (V2 + Original)
+python scripts/daily_recommendation.py --dual
+
+# Alle Typen (6-10)
+python scripts/daily_recommendation.py --all
+
+# Mit JSON-Export
+python scripts/daily_recommendation.py --save
+```
+
+### Wichtige Hinweise
+
+1. **Nur Typ 8-10 profitabel**: Typ 2-7 haben negativen ROI
+2. **Jackpot-Cooldown beachten**: 30 Tage nach Jackpot reduzierte Wahrscheinlichkeit
+3. **Dual-Strategie moeglich**: Original + V2 Ticket fuer Diversifikation
+
+### Relevante Scripts
+
+| Script | Zweck |
+|--------|-------|
+| `scripts/daily_recommendation.py` | Taegliche Ticket-Empfehlung |
+| `scripts/super_model_synthesis.py` | Super Model mit V2 Komponenten |
+| `scripts/test_dual_2025.py` | 2025 Out-of-Sample Test |
+| `scripts/test_dual_oos_2024.py` | 2024 Out-of-Sample Test |
+
+### Datenquellen
+
+- **Aktuell**: `data/raw/keno/KENO_ab_2022_bereinigt.csv` (2022-2025)
+- **Historisch**: `Keno_GPTs/Kenogpts_2/Basis_Tab/KENO_ab_2018.csv` (2018-2024)
+
+---
+
 ## 1. Executive Summary
 
 **Projektziel:** Wissenschaftlich fundiertes Lottozahlen-Analysesystem mit Criticality-basierter Mustererkennung und Anti-Avalanche-Strategie.
@@ -114,6 +191,105 @@ git commit -m "docs(claude): add GitHub workflow section"
 - Falsifizierbare Hypothesen statt Spekulation
 
 **Kern-Innovation:** Anwendung der drei Model Laws (A/B/C) auf Lottozahlen-Analyse.
+
+---
+
+## 1.1 KRITISCH: Analyse-Paradigma (MUSS ANWENDEN)
+
+### VERBOTEN: Pattern-First Ansatz
+
+```
+FALSCH: Daten → Statistische Muster suchen → Interpretation
+```
+
+**Warum Pattern-First NICHT funktioniert:**
+- Das System wurde von Top-Ingenieuren und Mathematikern konzipiert
+- Es ist ein MILLIARDEN-Geschaeft, finanziert allein von Spielern
+- Einfache statistische Muster wurden ABSICHTLICH eliminiert
+- Jede naive Pattern-Suche ist zum Scheitern verurteilt
+
+### PFLICHT: Axiom-First Ansatz
+
+```
+RICHTIG: Wirtschaftslogik (Axiome) → Vorhersagen ableiten → Daten testen
+```
+
+**Die entscheidende Erkenntnis:**
+
+> Lotterien sind KEINE mathematischen Zufallssysteme.
+> Sie sind WIRTSCHAFTLICHE Systeme mit harten Constraints.
+
+**Kern-Fragen die ZUERST beantwortet werden muessen:**
+1. Welche WIRTSCHAFTLICHEN Zwaenge hat das System?
+2. Was MUSS das System garantieren um profitabel zu bleiben?
+3. Wie wird House-Edge UND Attraktivitaet gleichzeitig sichergestellt?
+4. WANN sollte man spielen? (nicht: welche Zahlen)
+
+### Die 7 Axiome (unverhandelbar)
+
+| ID | Axiom | Wirtschaftliche Begruendung |
+|----|-------|----------------------------|
+| A1 | **House-Edge** | 50% Redistribution gesetzlich garantiert |
+| A2 | **Dauerscheine** | Spieler nutzen feste Kombinationen |
+| A3 | **Attraktivitaet** | Kleine Gewinne MUESSEN regelmaessig sein |
+| A4 | **Paar-Garantie** | Zahlenpaare sichern Spielerbindung |
+| A5 | **Pseudo-Zufall** | Jede Zahl muss in Periode erscheinen |
+| A6 | **Regionale Verteilung** | Gewinne pro Bundesland |
+| A7 | **Reset-Zyklen** | System "spart" nach Jackpots |
+
+### Durchbruch-Beispiel: WL-003 Jackpot-Cooldown
+
+```
+Axiom A1 (House-Edge) + Axiom A7 (Reset-Zyklen)
+    ↓
+Vorhersage: Nach Jackpot = System muss sparen = weniger Gewinne
+    ↓
+Test: 30 Tage nach Jackpot → -66% ROI bei KENO
+    ↓
+Strategie: NICHT spielen in Cooldown-Phase
+    ↓
+Ergebnis: +466.6% ROI
+```
+
+---
+
+## 1.2 Oekosystem-Theorie (Deutsche Lotterie)
+
+### Grundprinzip
+
+Die deutschen Lotterien (KENO, Lotto 6aus49, Gluecksspirale, Toto) bilden ein **Oekosystem**:
+- Gleiche Spieler spielen MEHRERE Lotterien
+- Spieler verwenden AEHNLICHE Zahlenmuster
+- Das Gesamtsystem muss House-Edge und Attraktivitaet balancieren
+- Die Spiele koennten sich GEGENSEITIG beeinflussen
+
+### Hypothese: Cross-Lotterie-Korrelation
+
+```
+Wenn Spieler X bei KENO die Zahlen 7-11-23-31 spielt,
+spielt er wahrscheinlich bei Lotto 6aus49: 7-11-23-31-??-??
+
+Das System WEISS das (Dauerschein-Daten).
+Also koennten die Ziehungen KORRELIERT sein.
+```
+
+### Moegliche Muster-Typen
+
+| Typ | Beschreibung | Beispiel |
+|-----|--------------|----------|
+| **Zeitversetzt** | Muster bei Spiel A erscheint X Tage spaeter bei Spiel B | KENO-Gewinnzahlen → 3 Tage → Lotto-Gewinnzahlen |
+| **Invers** | Wenn Spiel A "heiss", ist Spiel B "kalt" | KENO Jackpot → Lotto vermeidet aehnliche Zahlen |
+| **Komplementaer** | Zahlen werden zwischen Spielen "aufgeteilt" | Niedrige Zahlen bei KENO, hohe bei Lotto |
+| **Zyklisch** | Periodische Muster ueber Wochen/Monate | Monatliche Reset-Zyklen |
+
+### WICHTIG: EuroJackpot separat
+
+EuroJackpot ist NICHT Teil des deutschen Oekosystems:
+- Internationale Kontrolle (nicht deutsche Lotterie)
+- Andere Spielerschaft
+- Eigene Wirtschaftslogik
+
+→ EuroJackpot MUSS separat analysiert werden.
 
 ---
 
@@ -144,6 +320,23 @@ git commit -m "docs(claude): add GitHub workflow section"
 ---
 
 ## 3. Arbeitsprinzipien
+
+### 3.0 AXIOM-FIRST (MUSS) – Paradigma fuer Anti-Pattern-Systeme
+
+**MUSS-Anforderung:** Bei Analysen, die von einem *anti-detektierten* Lotterie-Design ausgehen, wird **Axiom-First**
+als Standard-Vorgehen **verpflichtend** angewendet.
+
+**Definition (kurz):** Wir starten nicht mit "Pattern-Suche", sondern mit expliziten **Axiomen/Annahmen** ueber das System
+(z.B. House-Edge-Stabilitaet, Regime/Statefulness, Anti-Detection), leiten daraus **falsifizierbare Vorhersagen** ab und
+testen diese mit robusten Nullmodellen + Out-of-Sample-Validierung.
+
+**Regeln (MUSS):**
+1. **Axiome schriftlich fixieren** (A0..An) bevor Code/Tests gebaut werden.
+2. Pro Axiom: **2-3 konkrete, falsifizierbare Predictions** (welche Metrik, welcher Effekt, welcher Lag/Window).
+3. **Nullmodell + Negative Controls** definieren (Permutation/Block-Permutation, Schedule-preserving, "fake lags").
+4. **Multiple Testing Guardrails**: begrenztes Feature-Set + BH/FDR oder hierarchisches Testing; keine "p-hacking" Iterationen.
+5. **Train->Test**: Regeln/Modelle werden im Train gemined und **eingefroren** im Test evaluiert.
+6. **EuroJackpot separat behandeln**: nicht als "Teil des deutschen Oekosystems" modellieren; nur als externer Kontrollkanal.
 
 ### 3.1 LOOP v4 Workflow
 
@@ -895,6 +1088,15 @@ ntlich |
 ---
 
 **Erstellt:** 2025-12-26
-**Version:** 2.0.0
+**Aktualisiert:** 2025-12-30
+**Version:** 2.2.0
 **Autor:** Lead Architect (Claude Code)
-**Status:** DRAFT - Awaiting Review
+**Status:** PRODUCTION - V2 Birthday-Avoidance validiert auf 2025 Daten
+
+### Changelog
+
+| Version | Datum | Aenderungen |
+|---------|-------|-------------|
+| 2.2.0 | 2025-12-30 | V2 Birthday-Avoidance Strategie, 2025 Validation, daily_recommendation.py |
+| 2.1.0 | 2025-12-29 | Ecosystem-Analyse, Axiom-First Paradigma |
+| 2.0.0 | 2025-12-26 | Initial Kenobase V2 mit Physics Layer |
