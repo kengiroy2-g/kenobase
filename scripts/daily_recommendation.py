@@ -5,31 +5,76 @@ TAEGLICHE KENO EMPFEHLUNG
 Strategien:
 1. Birthday-Avoidance (V2) - Standard fuer Typ 8, 9, 10
 2. Post-Jackpot Anti-Momentum - Typ 7 mit kombinierten Timing-Regeln
+3. Pool-Reife System - Wann ist der Pool "spielbereit"?
 
 BESTE STRATEGIE (Backtest 2023-2024, 1000 Simulationen):
   Typ 7 + Anti-Momentum + (Tag 24-28 ODER Mittwoch) + Boost-Phase
   ROI: +36.3%
 
+POOL-REIFE SYSTEM (Neu!):
+  Der Pool braucht Zeit um zu "reifen":
+  - Tag 1: 31% Chance auf 6+ Treffer (ZU FRUEH!)
+  - Tag 3: 61% Chance (Median)
+  - Tag 4: 76% Chance (OPTIMAL)
+  - Tag 7: 94% Chance
+
+  EMPFEHLUNG: Nicht sofort spielen! Warte 3-4 Tage nach Pool-Generierung.
+
 TIMING-REGELN (KOMBINIERT):
 - Boost-Phase: 8-14 Tage nach Jackpot
 - UND: Tag 24-28 des Monats ODER Mittwoch
+- Pool-Reife: Mindestens 3 Tage nach Pool-Generierung
 
 Verwendung:
     python scripts/daily_recommendation.py
     python scripts/daily_recommendation.py --postjp  # Post-Jackpot Modus
 
-Autor: Kenobase V2.4
-Datum: 2026-01-01
+Autor: Kenobase V2.5
+Datum: 2026-01-03
 """
 
 import argparse
 import json
 import random
+from collections import defaultdict
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Dict, List, Optional, Set, Tuple
 
+import numpy as np
 import pandas as pd
+
+# ============================================================================
+# POOL-REIFE SYSTEM (basierend auf pool_hit_timing_extended.json)
+# ============================================================================
+# Diese Werte kommen aus der empirischen Messung:
+# "Wie viele Tage bis der dynamische Pool 6+ Treffer hat?"
+#
+# INTERPRETATION:
+# - Tag 1: Pool ist "frisch" - nur 31% Chance dass er heute trifft
+# - Tag 3: Pool ist "gereift" - 61% Chance (Median erreicht)
+# - Tag 4: Pool ist "optimal" - 76% Chance (empfohlener Spieltag)
+# - Tag 7: Pool ist "sehr reif" - 94% Chance
+# - Nach Tag 7: Pool neu generieren (sinkt nicht, aber frischer = besser)
+
+POOL_RIPENESS = {
+    1: {"probability": 0.31, "status": "UNREIF", "recommendation": "Nicht spielen"},
+    2: {"probability": 0.45, "status": "FRUEH", "recommendation": "Noch warten"},
+    3: {"probability": 0.61, "status": "REIF", "recommendation": "Spielbereit (Median)"},
+    4: {"probability": 0.76, "status": "OPTIMAL", "recommendation": "Beste Zeit zum Spielen!"},
+    5: {"probability": 0.85, "status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
+    6: {"probability": 0.91, "status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
+    7: {"probability": 0.94, "status": "MAXIMAL", "recommendation": "Letzte Chance vor Neustart"},
+}
+
+# Treffer-Schwellen Erfolgsraten
+HIT_THRESHOLD_SUCCESS = {
+    6: 1.000,   # 100% - immer erfolgreich
+    7: 1.000,   # 100%
+    8: 0.979,   # 97.9%
+    9: 0.653,   # 65.3%
+    10: 0.176,  # 17.6%
+}
 
 # Import from super_model_synthesis
 try:
@@ -97,6 +142,199 @@ def load_jackpot_dates(base_path: Path) -> List[datetime]:
         return sorted(dates)
     except:
         return []
+
+
+# ============================================================================
+# POOL GENERATION (Dynamischer Pool)
+# ============================================================================
+
+# Konstanten fuer Pool-Generierung
+BIRTHDAY_NUMBERS = set(range(1, 32))
+NON_BIRTHDAY_NUMBERS = set(range(32, 71))
+ALL_NUMBERS = set(range(1, 71))
+TOP_20_CORRECTION = {1, 2, 12, 14, 16, 18, 21, 24, 26, 32, 37, 38, 41, 42, 47, 52, 58, 60, 68, 70}
+BAD_PATTERNS = {"0010010", "1000111", "0101011", "1010000", "0001101", "0001000", "0100100", "0001010", "0000111"}
+
+
+def get_hot_numbers_from_draws(draws: List[Dict], lookback: int = 3) -> Set[int]:
+    """Ermittelt 'heisse' Zahlen aus den letzten X Ziehungen."""
+    if len(draws) < lookback:
+        return set()
+    recent = draws[-lookback:]
+    counts = defaultdict(int)
+    for draw in recent:
+        for z in draw["zahlen"]:
+            counts[z] += 1
+    return {z for z, c in counts.items() if c >= 2}
+
+
+def get_count_from_draws(draws: List[Dict], number: int, lookback: int = 30) -> int:
+    """Zaehlt wie oft eine Zahl in den letzten X Ziehungen erschien."""
+    recent = draws[-lookback:] if len(draws) >= lookback else draws
+    return sum(1 for d in recent if number in d["zahlen"])
+
+
+def get_streak_from_draws(draws: List[Dict], number: int) -> int:
+    """Berechnet Streak einer Zahl (positiv = erschienen, negativ = nicht erschienen)."""
+    if not draws:
+        return 0
+    streak = 0
+    in_last = number in draws[-1]["zahlen"]
+    for draw in reversed(draws):
+        if (number in draw["zahlen"]) == in_last:
+            streak += 1
+        else:
+            break
+    return streak if in_last else -streak
+
+
+def get_pattern_7_from_draws(draws: List[Dict], number: int) -> str:
+    """Ermittelt 7-Tage Pattern einer Zahl (1=erschienen, 0=nicht)."""
+    pattern = ""
+    for draw in draws[-7:]:
+        pattern += "1" if number in draw["zahlen"] else "0"
+    return pattern
+
+
+def get_avg_gap_from_draws(draws: List[Dict], number: int, lookback: int = 60) -> float:
+    """Berechnet durchschnittlichen Abstand zwischen Erscheinungen."""
+    gaps = []
+    last_seen = None
+    for i, draw in enumerate(draws[-lookback:]):
+        if number in draw["zahlen"]:
+            if last_seen is not None:
+                gaps.append(i - last_seen)
+            last_seen = i
+    return np.mean(gaps) if gaps else 10.0
+
+
+def get_index_from_draws(draws: List[Dict], number: int) -> int:
+    """Ermittelt Index (Tage seit letztem Erscheinen)."""
+    for i, draw in enumerate(reversed(draws)):
+        if number in draw["zahlen"]:
+            return i
+    return len(draws)
+
+
+def score_number_for_pool(draws: List[Dict], number: int, hot: Set[int]) -> float:
+    """Berechnet Score einer Zahl fuer Pool-Aufnahme."""
+    score = 50.0
+    pattern = get_pattern_7_from_draws(draws, number)
+    if pattern in BAD_PATTERNS:
+        score -= 20
+    streak = get_streak_from_draws(draws, number)
+    if streak >= 3:
+        score -= 10
+    elif 0 < streak <= 2:
+        score += 5
+    avg_gap = get_avg_gap_from_draws(draws, number)
+    if avg_gap <= 3:
+        score += 10
+    elif avg_gap > 5:
+        score -= 5
+    index = get_index_from_draws(draws, number)
+    if 3 <= index <= 6:
+        score += 5
+    return score
+
+
+def build_dynamic_pool(draws: List[Dict]) -> Set[int]:
+    """
+    Generiert dynamischen Pool basierend auf aktuellen Ziehungen.
+
+    Der Pool besteht aus:
+    - Top 5 "heisse" Zahlen (ohne TOP_20_CORRECTION)
+    - Top 6 "kalte" Birthday-Zahlen (1-31)
+    - Top 6 "kalte" Non-Birthday-Zahlen (32-70)
+
+    Gesamt: ~17 Zahlen
+    """
+    if len(draws) < 10:
+        return set()
+
+    hot = get_hot_numbers_from_draws(draws, lookback=3)
+    cold = ALL_NUMBERS - hot
+    cold_birthday = cold & BIRTHDAY_NUMBERS
+    cold_nonbd = cold & NON_BIRTHDAY_NUMBERS
+
+    # Hot-Zahlen filtern und scoren
+    hot_filtered = hot - TOP_20_CORRECTION
+    hot_scored = [(z, score_number_for_pool(draws, z, hot)) for z in hot_filtered]
+    hot_scored.sort(key=lambda x: x[1], reverse=True)
+    hot_keep = set(z for z, s in hot_scored[:5])
+
+    # Kalte Birthday-Zahlen
+    cold_bd_scored = [(z, get_count_from_draws(draws, z), score_number_for_pool(draws, z, hot)) for z in cold_birthday]
+    cold_bd_scored.sort(key=lambda x: (x[1], -x[2]))
+    cold_bd_filtered = [(z, c, s) for z, c, s in cold_bd_scored if get_pattern_7_from_draws(draws, z) not in BAD_PATTERNS]
+    cold_bd_keep = set(z for z, c, s in cold_bd_filtered[:6])
+    if len(cold_bd_keep) < 6:
+        remaining = [z for z, c, s in cold_bd_scored if z not in cold_bd_keep]
+        cold_bd_keep.update(remaining[:6 - len(cold_bd_keep)])
+
+    # Kalte Non-Birthday-Zahlen
+    cold_nbd_scored = [(z, get_count_from_draws(draws, z), score_number_for_pool(draws, z, hot)) for z in cold_nonbd]
+    cold_nbd_scored.sort(key=lambda x: (x[1], -x[2]))
+    cold_nbd_filtered = [(z, c, s) for z, c, s in cold_nbd_scored if get_pattern_7_from_draws(draws, z) not in BAD_PATTERNS]
+    cold_nbd_keep = set(z for z, c, s in cold_nbd_filtered[:6])
+    if len(cold_nbd_keep) < 6:
+        remaining = [z for z, c, s in cold_nbd_scored if z not in cold_nbd_keep]
+        cold_nbd_keep.update(remaining[:6 - len(cold_nbd_keep)])
+
+    return hot_keep | cold_bd_keep | cold_nbd_keep
+
+
+def convert_df_to_draws(df: pd.DataFrame) -> List[Dict]:
+    """Konvertiert DataFrame in Liste von Ziehungs-Dicts."""
+    draws = []
+    for _, row in df.iterrows():
+        draws.append({
+            "datum": row["Datum"],
+            "zahlen": row["numbers_set"]
+        })
+    return draws
+
+
+def calculate_pool_ripeness(pool_age_days: int) -> Dict:
+    """
+    Berechnet Pool-Reife basierend auf Alter.
+
+    Args:
+        pool_age_days: Tage seit Pool-Generierung
+
+    Returns:
+        Dict mit probability, status, recommendation
+    """
+    if pool_age_days <= 0:
+        return {
+            "age_days": 0,
+            "probability": 0.0,
+            "status": "NEU",
+            "recommendation": "Pool gerade generiert - warte mindestens 3 Tage",
+            "play_now": False
+        }
+
+    if pool_age_days > 7:
+        return {
+            "age_days": pool_age_days,
+            "probability": 0.94,
+            "status": "ABGELAUFEN",
+            "recommendation": "Pool ist zu alt - generiere neuen Pool!",
+            "play_now": False
+        }
+
+    ripeness = POOL_RIPENESS.get(pool_age_days, POOL_RIPENESS[7])
+
+    # Spielempfehlung: Ab Tag 3 (61% Chance)
+    play_now = pool_age_days >= 3
+
+    return {
+        "age_days": pool_age_days,
+        "probability": ripeness["probability"],
+        "status": ripeness["status"],
+        "recommendation": ripeness["recommendation"],
+        "play_now": play_now
+    }
 
 
 def get_momentum_numbers(df: pd.DataFrame, lookback: int = 3) -> Set[int]:
@@ -277,18 +515,32 @@ def generate_recommendations(
     jackpot_dates: List[datetime],
     types: List[int] = [8, 9, 10],
     use_dual: bool = False,
-    force_postjp: bool = False
+    force_postjp: bool = False,
+    pool_age_days: int = 0
 ) -> Dict:
     """Generiert alle Empfehlungen."""
 
     today = datetime.now()
     timing = check_timing_rules(today, jackpot_dates)
 
+    # Dynamischen Pool generieren
+    draws = convert_df_to_draws(df)
+    current_pool = build_dynamic_pool(draws)
+
+    # Pool-Reife berechnen
+    ripeness = calculate_pool_ripeness(pool_age_days)
+
     recommendations = {
         "generated_at": datetime.now().isoformat(),
         "for_date": today.date().isoformat(),
         "last_drawing": analyze_last_drawing(df),
         "timing": timing,
+        "pool": {
+            "numbers": sorted(current_pool),
+            "size": len(current_pool),
+            "age_days": pool_age_days,
+            "ripeness": ripeness,
+        },
         "warnings": [],
         "tickets": {},
     }
@@ -354,6 +606,26 @@ def generate_recommendations(
             "recommendation": "Reduzierte Gewinnwahrscheinlichkeit"
         })
 
+    # Pool-Reife Warnung
+    if ripeness["status"] == "UNREIF":
+        recommendations["warnings"].append({
+            "type": "pool_unreif",
+            "message": f"Pool ist UNREIF (Tag {pool_age_days}) - nur {ripeness['probability']*100:.0f}% Chance",
+            "recommendation": "Warte noch 2-3 Tage bis Pool reif ist!"
+        })
+    elif ripeness["status"] == "FRUEH":
+        recommendations["warnings"].append({
+            "type": "pool_frueh",
+            "message": f"Pool ist FRUEH (Tag {pool_age_days}) - {ripeness['probability']*100:.0f}% Chance",
+            "recommendation": "Noch 1-2 Tage warten fuer optimale Chancen"
+        })
+    elif ripeness["status"] == "ABGELAUFEN":
+        recommendations["warnings"].append({
+            "type": "pool_abgelaufen",
+            "message": f"Pool ist ABGELAUFEN (Tag {pool_age_days})",
+            "recommendation": "Generiere neuen Pool mit --pool-age 0!"
+        })
+
     return recommendations
 
 
@@ -371,6 +643,45 @@ def print_recommendations(recommendations: Dict, verbose: bool = False):
     print(f"  Tage seit Jackpot: {timing.get('days_since_jp', '?')}")
     print(f"  Tag des Monats: {timing.get('day_of_month', '?')}")
     print(f"  Wochentag: {timing.get('weekday_name', '?')}")
+
+    # Pool-Info
+    pool = recommendations.get("pool", {})
+    ripeness = pool.get("ripeness", {})
+    if pool:
+        print(f"\n" + "-" * 70)
+        print("DYNAMISCHER POOL:")
+        print(f"  Zahlen ({pool.get('size', 0)}): {pool.get('numbers', [])}")
+        print(f"\n  POOL-REIFE:")
+
+        # Status mit Farb-Indikator
+        status = ripeness.get("status", "?")
+        prob = ripeness.get("probability", 0)
+        age = ripeness.get("age_days", 0)
+        play = ripeness.get("play_now", False)
+
+        # Visuelle Fortschrittsanzeige
+        bar_filled = int(prob * 20)
+        bar_empty = 20 - bar_filled
+        progress_bar = "█" * bar_filled + "░" * bar_empty
+
+        print(f"  Tag {age}: [{progress_bar}] {prob*100:.0f}%")
+        print(f"  Status: {status}")
+        print(f"  {ripeness.get('recommendation', '')}")
+
+        if play:
+            print(f"\n  >>> SPIELEN: JA - Pool ist spielbereit! <<<")
+        else:
+            print(f"\n  >>> SPIELEN: NEIN - Warte auf Pool-Reife! <<<")
+
+        # Timing-Tabelle
+        print(f"\n  POOL-REIFE TABELLE:")
+        print(f"  ┌─────────┬────────────┬──────────────────────────────┐")
+        print(f"  │ Tag     │ Chance     │ Empfehlung                   │")
+        print(f"  ├─────────┼────────────┼──────────────────────────────┤")
+        for day, info in POOL_RIPENESS.items():
+            marker = " ◄" if day == age else ""
+            print(f"  │ Tag {day}   │ {info['probability']*100:5.0f}%     │ {info['status']:<12}{marker:>16} │")
+        print(f"  └─────────┴────────────┴──────────────────────────────┘")
 
     # Letzte Ziehung
     last = recommendations["last_drawing"]
@@ -470,7 +781,30 @@ def save_recommendations(recommendations: Dict, output_path: Path):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="KENO Taegliche Empfehlung")
+    parser = argparse.ArgumentParser(
+        description="KENO Taegliche Empfehlung",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+POOL-REIFE SYSTEM:
+  Der Pool braucht Zeit um zu "reifen". Nicht sofort spielen!
+
+  Tag 1: 31%  - UNREIF (nicht spielen)
+  Tag 2: 45%  - FRUEH (noch warten)
+  Tag 3: 61%  - REIF (spielbereit)
+  Tag 4: 76%  - OPTIMAL (beste Zeit!)
+  Tag 7: 94%  - MAXIMAL (dann neuer Pool)
+
+BEISPIELE:
+  # Pool heute generiert (Tag 0)
+  python daily_recommendation.py --pool-age 0
+
+  # Pool vor 4 Tagen generiert (optimal!)
+  python daily_recommendation.py --pool-age 4
+
+  # Pool vor 8 Tagen - zu alt, neuen generieren
+  python daily_recommendation.py --pool-age 8
+        """
+    )
     parser.add_argument("--type", "-t", type=int, choices=[6, 7, 8, 9, 10],
                         help="Nur bestimmten Typ anzeigen")
     parser.add_argument("--dual", "-d", action="store_true",
@@ -479,6 +813,8 @@ def main():
                         help="Alle Typen anzeigen (6-10)")
     parser.add_argument("--postjp", "-p", action="store_true",
                         help="Post-Jackpot Modus erzwingen")
+    parser.add_argument("--pool-age", type=int, default=4,
+                        help="Tage seit Pool-Generierung (default: 4 = optimal)")
     parser.add_argument("--save", "-s", action="store_true",
                         help="Empfehlungen als JSON speichern")
     parser.add_argument("--verbose", "-v", action="store_true",
@@ -507,7 +843,8 @@ def main():
         df, jackpot_dates,
         types=types,
         use_dual=args.dual,
-        force_postjp=args.postjp
+        force_postjp=args.postjp,
+        pool_age_days=args.pool_age
     )
 
     # Ausgabe
