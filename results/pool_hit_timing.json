@@ -1,0 +1,23 @@
+{
+  "static": {
+    "success_rate": 100.0,
+    "min_days": 1,
+    "max_days": 7,
+    "avg_days": 2.888888888888889,
+    "median_days": 3.0
+  },
+  "dynamic": {
+    "success_rate": 100.0,
+    "min_days": 1,
+    "max_days": 8,
+    "avg_days": 3.2666666666666666,
+    "median_days": 3.0,
+    "p25": 1.0,
+    "p75": 4.0
+  },
+  "recommendation": {
+    "wait_min_days": 1,
+    "play_by_days": 4,
+    "optimal_day": 3
+  }
+}
