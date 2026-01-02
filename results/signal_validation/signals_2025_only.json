@@ -1,0 +1,218 @@
+{
+  "analysis_date": "2025-12-31T14:21:45.714209",
+  "data_period": "2025",
+  "total_days": 363,
+  "total_jackpots": 17,
+  "jackpot_dates": [
+    "2025-01-16",
+    "2025-01-29",
+    "2025-02-02",
+    "2025-02-16",
+    "2025-03-09",
+    "2025-03-19",
+    "2025-03-27",
+    "2025-04-24",
+    "2025-05-28",
+    "2025-06-18",
+    "2025-06-30",
+    "2025-07-15",
+    "2025-07-27",
+    "2025-08-07",
+    "2025-09-27",
+    "2025-10-25",
+    "2025-12-04"
+  ],
+  "signal_results": [
+    {
+      "signal": "count_top5_sum >= 200",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "count_top5_sum >= 190",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "count_top5_sum >= 180",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "count_top5_sum >= 170",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "count_top5_sum >= 160",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "count_top5_sum >= 150",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 0,
+      "signal_pct": 0.0,
+      "signal_jp": 0,
+      "signal_rate": 0,
+      "ratio": 0.0,
+      "jp_dates": []
+    },
+    {
+      "signal": "mcount_mean >= 9.0",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 22,
+      "signal_pct": 6.077348066298343,
+      "signal_jp": 2,
+      "signal_rate": 0.09090909090909091,
+      "ratio": 1.9358288770053478,
+      "jp_dates": [
+        "2025-01-29",
+        "2025-06-30"
+      ]
+    },
+    {
+      "signal": "mcount_mean >= 8.5",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 42,
+      "signal_pct": 11.602209944751381,
+      "signal_jp": 3,
+      "signal_rate": 0.07142857142857142,
+      "ratio": 1.5210084033613445,
+      "jp_dates": [
+        "2025-01-29",
+        "2025-06-30",
+        "2025-07-27"
+      ]
+    },
+    {
+      "signal": "mcount_mean >= 8.0",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 64,
+      "signal_pct": 17.67955801104972,
+      "signal_jp": 4,
+      "signal_rate": 0.0625,
+      "ratio": 1.3308823529411766,
+      "jp_dates": [
+        "2025-01-29",
+        "2025-06-30",
+        "2025-07-27",
+        "2025-09-27"
+      ]
+    },
+    {
+      "signal": "mcount_mean >= 7.5",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 88,
+      "signal_pct": 24.30939226519337,
+      "signal_jp": 7,
+      "signal_rate": 0.07954545454545454,
+      "ratio": 1.6938502673796791,
+      "jp_dates": [
+        "2025-01-29",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-05-28",
+        "2025-06-30",
+        "2025-07-27",
+        "2025-09-27"
+      ]
+    },
+    {
+      "signal": "index_ge5 >= 1",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 58,
+      "signal_pct": 16.022099447513813,
+      "signal_jp": 3,
+      "signal_rate": 0.05172413793103448,
+      "ratio": 1.1014198782961462,
+      "jp_dates": [
+        "2025-01-16",
+        "2025-01-29",
+        "2025-04-24"
+      ]
+    },
+    {
+      "signal": "index_ge4 >= 2",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 27,
+      "signal_pct": 7.458563535911603,
+      "signal_jp": 2,
+      "signal_rate": 0.07407407407407407,
+      "ratio": 1.577342047930283,
+      "jp_dates": [
+        "2025-01-16",
+        "2025-06-30"
+      ]
+    },
+    {
+      "signal": "index_ge4 >= 1",
+      "total_days": 362,
+      "total_jp": 17,
+      "baseline": 0.04696132596685083,
+      "signal_days": 156,
+      "signal_pct": 43.0939226519337,
+      "signal_jp": 7,
+      "signal_rate": 0.04487179487179487,
+      "ratio": 0.9555052790346908,
+      "jp_dates": [
+        "2025-01-16",
+        "2025-01-29",
+        "2025-03-09",
+        "2025-03-27",
+        "2025-04-24",
+        "2025-06-30",
+        "2025-10-25"
+      ]
+    }
+  ]
+}

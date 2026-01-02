@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/cycle_phases.py",
+    "scripts/test_frueh_phase_isolated.py",
+    "results/frueh_phase_isolated_test.json"
+]

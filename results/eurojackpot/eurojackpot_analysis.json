@@ -1,0 +1,1710 @@
+{
+  "metadata": {
+    "analysis_date": "2025-12-30 00:20:52",
+    "data_source": "C:\\Users\\kenfu\\Documents\\keno_base\\data\\raw\\eurojackpot\\EJ_ab_2022_bereinigt.csv",
+    "total_draws": 403,
+    "date_range": {
+      "start": "2022-01-07",
+      "end": "2025-12-26"
+    },
+    "total_jackpots": 59
+  },
+  "jackpot_cooldown": {
+    "cooldown_days": 30,
+    "total_draws": 403,
+    "total_jackpots": 59,
+    "after_jackpot_stats": {
+      "count": 305,
+      "total_stake": 11038860618.0,
+      "next_jackpots": 36,
+      "jackpot_rate": 0.1180327868852459,
+      "avg_stake": 36192985.632786885
+    },
+    "normal_stats": {
+      "count": 98,
+      "total_stake": 6028302068.0,
+      "next_jackpots": 23,
+      "jackpot_rate": 0.23469387755102042,
+      "avg_stake": 61513286.408163264
+    },
+    "cooldown_effect_percent": -49.71,
+    "hypothesis_confirmed": true
+  },
+  "hauptzahlen_pairs": {
+    "total_draws": 403,
+    "expected_pair_frequency": 3.29,
+    "total_possible_pairs": 1225,
+    "top_50_pairs": [
+      {
+        "pair": [
+          11,
+          20
+        ],
+        "frequency": 10,
+        "expected": 3.29,
+        "deviation_percent": 203.97
+      },
+      {
+        "pair": [
+          27,
+          41
+        ],
+        "frequency": 9,
+        "expected": 3.29,
+        "deviation_percent": 173.57
+      },
+      {
+        "pair": [
+          11,
+          16
+        ],
+        "frequency": 9,
+        "expected": 3.29,
+        "deviation_percent": 173.57
+      },
+      {
+        "pair": [
+          17,
+          30
+        ],
+        "frequency": 9,
+        "expected": 3.29,
+        "deviation_percent": 173.57
+      },
+      {
+        "pair": [
+          28,
+          31
+        ],
+        "frequency": 9,
+        "expected": 3.29,
+        "deviation_percent": 173.57
+      },
+      {
+        "pair": [
+          21,
+          29
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          17,
+          49
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          18,
+          39
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          15,
+          17
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          45,
+          50
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          14,
+          50
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          30,
+          35
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          11,
+          33
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          21,
+          39
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          2,
+          40
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          7,
+          11
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          8,
+          13
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          20,
+          21
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          14,
+          45
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          30,
+          34
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          21,
+          34
+        ],
+        "frequency": 8,
+        "expected": 3.29,
+        "deviation_percent": 143.18
+      },
+      {
+        "pair": [
+          8,
+          21
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          21,
+          23
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          9,
+          41
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          1,
+          20
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          11,
+          35
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          11,
+          46
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          35,
+          46
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          8,
+          35
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          15,
+          35
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          13,
+          24
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          6,
+          39
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          6,
+          49
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          13,
+          43
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          4,
+          22
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          3,
+          47
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          9,
+          16
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          23,
+          37
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          12,
+          31
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          23,
+          44
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          14,
+          34
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          20,
+          38
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          16,
+          27
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          20,
+          30
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          42,
+          48
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          2,
+          49
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          17,
+          39
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          21,
+          43
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          23,
+          38
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      },
+      {
+        "pair": [
+          26,
+          49
+        ],
+        "frequency": 7,
+        "expected": 3.29,
+        "deviation_percent": 112.78
+      }
+    ],
+    "max_deviation_percent": 203.97
+  },
+  "eurozahlen_pairs": {
+    "total_draws": 403,
+    "expected_pair_frequency": 6.11,
+    "total_possible_pairs": 66,
+    "all_pairs": [
+      {
+        "pair": [
+          3,
+          9
+        ],
+        "frequency": 11,
+        "expected": 6.11,
+        "deviation_percent": 80.15
+      },
+      {
+        "pair": [
+          2,
+          6
+        ],
+        "frequency": 10,
+        "expected": 6.11,
+        "deviation_percent": 63.77
+      },
+      {
+        "pair": [
+          3,
+          10
+        ],
+        "frequency": 10,
+        "expected": 6.11,
+        "deviation_percent": 63.77
+      },
+      {
+        "pair": [
+          1,
+          5
+        ],
+        "frequency": 10,
+        "expected": 6.11,
+        "deviation_percent": 63.77
+      },
+      {
+        "pair": [
+          5,
+          10
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          3,
+          5
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          7,
+          8
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          7,
+          12
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          5,
+          9
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          6,
+          12
+        ],
+        "frequency": 9,
+        "expected": 6.11,
+        "deviation_percent": 47.39
+      },
+      {
+        "pair": [
+          5,
+          8
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          3,
+          4
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          1,
+          9
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          2,
+          3
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          3,
+          7
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          10,
+          11
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          6,
+          8
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          4,
+          10
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          3,
+          12
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          6,
+          7
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          1,
+          3
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          1,
+          10
+        ],
+        "frequency": 8,
+        "expected": 6.11,
+        "deviation_percent": 31.02
+      },
+      {
+        "pair": [
+          5,
+          12
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          4,
+          5
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          1,
+          11
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          10,
+          12
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          4,
+          9
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          6,
+          11
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          7,
+          10
+        ],
+        "frequency": 7,
+        "expected": 6.11,
+        "deviation_percent": 14.64
+      },
+      {
+        "pair": [
+          2,
+          11
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          8,
+          12
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          4,
+          12
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          2,
+          5
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          5,
+          6
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          11,
+          12
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          4,
+          11
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          4,
+          8
+        ],
+        "frequency": 6,
+        "expected": 6.11,
+        "deviation_percent": -1.74
+      },
+      {
+        "pair": [
+          2,
+          4
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          7,
+          9
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          9,
+          10
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          4,
+          7
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          6,
+          9
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          8,
+          9
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          2,
+          8
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          9,
+          12
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          1,
+          6
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          2,
+          9
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          1,
+          12
+        ],
+        "frequency": 5,
+        "expected": 6.11,
+        "deviation_percent": -18.11
+      },
+      {
+        "pair": [
+          8,
+          10
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          2,
+          12
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          2,
+          7
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          5,
+          11
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          3,
+          6
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          1,
+          4
+        ],
+        "frequency": 4,
+        "expected": 6.11,
+        "deviation_percent": -34.49
+      },
+      {
+        "pair": [
+          6,
+          10
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          7,
+          11
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          3,
+          8
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          1,
+          8
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          9,
+          11
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          3,
+          11
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          2,
+          10
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          1,
+          7
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          8,
+          11
+        ],
+        "frequency": 3,
+        "expected": 6.11,
+        "deviation_percent": -50.87
+      },
+      {
+        "pair": [
+          5,
+          7
+        ],
+        "frequency": 2,
+        "expected": 6.11,
+        "deviation_percent": -67.25
+      },
+      {
+        "pair": [
+          4,
+          6
+        ],
+        "frequency": 1,
+        "expected": 6.11,
+        "deviation_percent": -83.62
+      }
+    ],
+    "most_frequent": {
+      "pair": [
+        3,
+        9
+      ],
+      "frequency": 11,
+      "expected": 6.11,
+      "deviation_percent": 80.15
+    },
+    "least_frequent": {
+      "pair": [
+        4,
+        6
+      ],
+      "frequency": 1,
+      "expected": 6.11,
+      "deviation_percent": -83.62
+    }
+  },
+  "number_frequency": {
+    "hauptzahlen": {
+      "expected_per_number": 40.3,
+      "by_frequency": [
+        {
+          "number": 11,
+          "frequency": 55,
+          "expected": 40.3,
+          "deviation_percent": 36.48
+        },
+        {
+          "number": 20,
+          "frequency": 49,
+          "expected": 40.3,
+          "deviation_percent": 21.59
+        },
+        {
+          "number": 30,
+          "frequency": 49,
+          "expected": 40.3,
+          "deviation_percent": 21.59
+        },
+        {
+          "number": 21,
+          "frequency": 48,
+          "expected": 40.3,
+          "deviation_percent": 19.11
+        },
+        {
+          "number": 17,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 34,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 45,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 8,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 13,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 35,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 41,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 2,
+          "frequency": 45,
+          "expected": 40.3,
+          "deviation_percent": 11.66
+        },
+        {
+          "number": 23,
+          "frequency": 45,
+          "expected": 40.3,
+          "deviation_percent": 11.66
+        },
+        {
+          "number": 29,
+          "frequency": 45,
+          "expected": 40.3,
+          "deviation_percent": 11.66
+        },
+        {
+          "number": 1,
+          "frequency": 44,
+          "expected": 40.3,
+          "deviation_percent": 9.18
+        },
+        {
+          "number": 16,
+          "frequency": 44,
+          "expected": 40.3,
+          "deviation_percent": 9.18
+        },
+        {
+          "number": 37,
+          "frequency": 44,
+          "expected": 40.3,
+          "deviation_percent": 9.18
+        },
+        {
+          "number": 9,
+          "frequency": 42,
+          "expected": 40.3,
+          "deviation_percent": 4.22
+        },
+        {
+          "number": 18,
+          "frequency": 42,
+          "expected": 40.3,
+          "deviation_percent": 4.22
+        },
+        {
+          "number": 39,
+          "frequency": 42,
+          "expected": 40.3,
+          "deviation_percent": 4.22
+        },
+        {
+          "number": 6,
+          "frequency": 41,
+          "expected": 40.3,
+          "deviation_percent": 1.74
+        },
+        {
+          "number": 12,
+          "frequency": 41,
+          "expected": 40.3,
+          "deviation_percent": 1.74
+        },
+        {
+          "number": 26,
+          "frequency": 41,
+          "expected": 40.3,
+          "deviation_percent": 1.74
+        },
+        {
+          "number": 22,
+          "frequency": 40,
+          "expected": 40.3,
+          "deviation_percent": -0.74
+        },
+        {
+          "number": 31,
+          "frequency": 40,
+          "expected": 40.3,
+          "deviation_percent": -0.74
+        },
+        {
+          "number": 49,
+          "frequency": 40,
+          "expected": 40.3,
+          "deviation_percent": -0.74
+        },
+        {
+          "number": 4,
+          "frequency": 39,
+          "expected": 40.3,
+          "deviation_percent": -3.23
+        },
+        {
+          "number": 14,
+          "frequency": 39,
+          "expected": 40.3,
+          "deviation_percent": -3.23
+        },
+        {
+          "number": 27,
+          "frequency": 39,
+          "expected": 40.3,
+          "deviation_percent": -3.23
+        },
+        {
+          "number": 46,
+          "frequency": 39,
+          "expected": 40.3,
+          "deviation_percent": -3.23
+        },
+        {
+          "number": 3,
+          "frequency": 38,
+          "expected": 40.3,
+          "deviation_percent": -5.71
+        },
+        {
+          "number": 7,
+          "frequency": 38,
+          "expected": 40.3,
+          "deviation_percent": -5.71
+        },
+        {
+          "number": 10,
+          "frequency": 38,
+          "expected": 40.3,
+          "deviation_percent": -5.71
+        },
+        {
+          "number": 15,
+          "frequency": 38,
+          "expected": 40.3,
+          "deviation_percent": -5.71
+        },
+        {
+          "number": 24,
+          "frequency": 37,
+          "expected": 40.3,
+          "deviation_percent": -8.19
+        },
+        {
+          "number": 32,
+          "frequency": 37,
+          "expected": 40.3,
+          "deviation_percent": -8.19
+        },
+        {
+          "number": 43,
+          "frequency": 37,
+          "expected": 40.3,
+          "deviation_percent": -8.19
+        },
+        {
+          "number": 47,
+          "frequency": 37,
+          "expected": 40.3,
+          "deviation_percent": -8.19
+        },
+        {
+          "number": 50,
+          "frequency": 37,
+          "expected": 40.3,
+          "deviation_percent": -8.19
+        },
+        {
+          "number": 5,
+          "frequency": 36,
+          "expected": 40.3,
+          "deviation_percent": -10.67
+        },
+        {
+          "number": 42,
+          "frequency": 36,
+          "expected": 40.3,
+          "deviation_percent": -10.67
+        },
+        {
+          "number": 28,
+          "frequency": 35,
+          "expected": 40.3,
+          "deviation_percent": -13.15
+        },
+        {
+          "number": 36,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 38,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 40,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 48,
+          "frequency": 33,
+          "expected": 40.3,
+          "deviation_percent": -18.11
+        },
+        {
+          "number": 33,
+          "frequency": 32,
+          "expected": 40.3,
+          "deviation_percent": -20.6
+        },
+        {
+          "number": 44,
+          "frequency": 32,
+          "expected": 40.3,
+          "deviation_percent": -20.6
+        },
+        {
+          "number": 19,
+          "frequency": 29,
+          "expected": 40.3,
+          "deviation_percent": -28.04
+        },
+        {
+          "number": 25,
+          "frequency": 25,
+          "expected": 40.3,
+          "deviation_percent": -37.97
+        }
+      ],
+      "most_frequent": [
+        {
+          "number": 11,
+          "frequency": 55,
+          "expected": 40.3,
+          "deviation_percent": 36.48
+        },
+        {
+          "number": 20,
+          "frequency": 49,
+          "expected": 40.3,
+          "deviation_percent": 21.59
+        },
+        {
+          "number": 30,
+          "frequency": 49,
+          "expected": 40.3,
+          "deviation_percent": 21.59
+        },
+        {
+          "number": 21,
+          "frequency": 48,
+          "expected": 40.3,
+          "deviation_percent": 19.11
+        },
+        {
+          "number": 17,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 34,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 45,
+          "frequency": 47,
+          "expected": 40.3,
+          "deviation_percent": 16.63
+        },
+        {
+          "number": 8,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 13,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        },
+        {
+          "number": 35,
+          "frequency": 46,
+          "expected": 40.3,
+          "deviation_percent": 14.14
+        }
+      ],
+      "least_frequent": [
+        {
+          "number": 42,
+          "frequency": 36,
+          "expected": 40.3,
+          "deviation_percent": -10.67
+        },
+        {
+          "number": 28,
+          "frequency": 35,
+          "expected": 40.3,
+          "deviation_percent": -13.15
+        },
+        {
+          "number": 36,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 38,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 40,
+          "frequency": 34,
+          "expected": 40.3,
+          "deviation_percent": -15.63
+        },
+        {
+          "number": 48,
+          "frequency": 33,
+          "expected": 40.3,
+          "deviation_percent": -18.11
+        },
+        {
+          "number": 33,
+          "frequency": 32,
+          "expected": 40.3,
+          "deviation_percent": -20.6
+        },
+        {
+          "number": 44,
+          "frequency": 32,
+          "expected": 40.3,
+          "deviation_percent": -20.6
+        },
+        {
+          "number": 19,
+          "frequency": 29,
+          "expected": 40.3,
+          "deviation_percent": -28.04
+        },
+        {
+          "number": 25,
+          "frequency": 25,
+          "expected": 40.3,
+          "deviation_percent": -37.97
+        }
+      ]
+    },
+    "eurozahlen": {
+      "expected_per_number": 67.17,
+      "by_frequency": [
+        {
+          "number": 3,
+          "frequency": 80,
+          "expected": 67.17,
+          "deviation_percent": 19.11
+        },
+        {
+          "number": 5,
+          "frequency": 77,
+          "expected": 67.17,
+          "deviation_percent": 14.64
+        },
+        {
+          "number": 10,
+          "frequency": 72,
+          "expected": 67.17,
+          "deviation_percent": 7.2
+        },
+        {
+          "number": 12,
+          "frequency": 72,
+          "expected": 67.17,
+          "deviation_percent": 7.2
+        },
+        {
+          "number": 9,
+          "frequency": 68,
+          "expected": 67.17,
+          "deviation_percent": 1.24
+        },
+        {
+          "number": 1,
+          "frequency": 67,
+          "expected": 67.17,
+          "deviation_percent": -0.25
+        },
+        {
+          "number": 6,
+          "frequency": 66,
+          "expected": 67.17,
+          "deviation_percent": -1.74
+        },
+        {
+          "number": 4,
+          "frequency": 63,
+          "expected": 67.17,
+          "deviation_percent": -6.2
+        },
+        {
+          "number": 7,
+          "frequency": 63,
+          "expected": 67.17,
+          "deviation_percent": -6.2
+        },
+        {
+          "number": 2,
+          "frequency": 62,
+          "expected": 67.17,
+          "deviation_percent": -7.69
+        },
+        {
+          "number": 8,
+          "frequency": 60,
+          "expected": 67.17,
+          "deviation_percent": -10.67
+        },
+        {
+          "number": 11,
+          "frequency": 56,
+          "expected": 67.17,
+          "deviation_percent": -16.63
+        }
+      ],
+      "most_frequent": [
+        {
+          "number": 3,
+          "frequency": 80,
+          "expected": 67.17,
+          "deviation_percent": 19.11
+        },
+        {
+          "number": 5,
+          "frequency": 77,
+          "expected": 67.17,
+          "deviation_percent": 14.64
+        },
+        {
+          "number": 10,
+          "frequency": 72,
+          "expected": 67.17,
+          "deviation_percent": 7.2
+        },
+        {
+          "number": 12,
+          "frequency": 72,
+          "expected": 67.17,
+          "deviation_percent": 7.2
+        },
+        {
+          "number": 9,
+          "frequency": 68,
+          "expected": 67.17,
+          "deviation_percent": 1.24
+        }
+      ],
+      "least_frequent": [
+        {
+          "number": 4,
+          "frequency": 63,
+          "expected": 67.17,
+          "deviation_percent": -6.2
+        },
+        {
+          "number": 7,
+          "frequency": 63,
+          "expected": 67.17,
+          "deviation_percent": -6.2
+        },
+        {
+          "number": 2,
+          "frequency": 62,
+          "expected": 67.17,
+          "deviation_percent": -7.69
+        },
+        {
+          "number": 8,
+          "frequency": 60,
+          "expected": 67.17,
+          "deviation_percent": -10.67
+        },
+        {
+          "number": 11,
+          "frequency": 56,
+          "expected": 67.17,
+          "deviation_percent": -16.63
+        }
+      ]
+    }
+  },
+  "spieleinsatz_correlation": {
+    "median_spieleinsatz": 40444064.0,
+    "high_stake_draws": 201,
+    "high_stake_jackpots": 40,
+    "high_stake_jackpot_rate": 19.9,
+    "low_stake_draws": 202,
+    "low_stake_jackpots": 19,
+    "low_stake_jackpot_rate": 9.41,
+    "hypothesis_confirmed": false
+  },
+  "weekday_patterns": {
+    "by_weekday": [
+      {
+        "weekday": "Di",
+        "draws": 196,
+        "jackpots": 22,
+        "jackpot_rate": 11.22,
+        "avg_stake": 33785242.56
+      },
+      {
+        "weekday": "Fr",
+        "draws": 207,
+        "jackpots": 37,
+        "jackpot_rate": 17.87,
+        "avg_stake": 50460169.78
+      }
+    ]
+  }
+}

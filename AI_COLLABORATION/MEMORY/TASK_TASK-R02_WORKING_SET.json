@@ -1,0 +1,8 @@
+﻿[
+    "scripts/analyze_hyp002.py",
+    "kenobase/analysis/gk1_waiting.py",
+    "kenobase/core/data_loader.py",
+    "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+    "AI_COLLABORATION/BACKLOG/KENOBASE_ISSUES.md",
+    "results/hyp002_gk1_waiting.json"
+]

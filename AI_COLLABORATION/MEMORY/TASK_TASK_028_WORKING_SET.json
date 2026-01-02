@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/prediction/ticket_backtester.py",
+    "scripts/backtest_random_tickets.py",
+    "results/random_ticket_null_model.json"
+]

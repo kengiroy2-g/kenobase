@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/core/combination_engine.py (verified existing)",
+    "kenobase/core/__init__.py (verified exports)",
+    "tests/unit/test_combination_engine.py (verified existing)"
+]

@@ -1,64 +1,64 @@
 {
-  "analysis_date": "2025-12-30T09:57:18.937773",
+  "analysis_date": "2025-12-30T10:53:04.367380",
   "results": {
     "typ_8": {
       "original": {
-        "roi": 115.81277672359266,
+        "roi": -55.597722960151806,
         "played": 1581,
-        "won": 3412,
-        "high_wins_count": 15
+        "won": 702.0,
+        "high_wins_count": 1
       },
       "v1_jackpot": {
-        "roi": 76.0910815939279,
+        "roi": -61.54332700822265,
         "played": 1581,
-        "won": 2784,
-        "high_wins_count": 10
+        "won": 608.0,
+        "high_wins_count": 1
       },
       "v1_balanced": {
-        "roi": 6.7678684376976594,
+        "roi": -67.10942441492726,
         "played": 1581,
-        "won": 1688,
-        "high_wins_count": 6
+        "won": 520.0,
+        "high_wins_count": 0
       }
     },
     "typ_9": {
       "original": {
-        "roi": 228.39974699557243,
+        "roi": -50.60088551549652,
         "played": 1581,
-        "won": 5192,
-        "high_wins_count": 5
+        "won": 781.0,
+        "high_wins_count": 0
       },
       "v1_jackpot": {
-        "roi": 176.02783048703353,
+        "roi": -53.636938646426316,
         "played": 1581,
-        "won": 4364,
-        "high_wins_count": 4
+        "won": 733.0,
+        "high_wins_count": 0
       },
       "v1_balanced": {
-        "roi": 174.63630613535736,
+        "roi": -52.68817204301075,
         "played": 1581,
-        "won": 4342,
-        "high_wins_count": 4
+        "won": 748.0,
+        "high_wins_count": 0
       }
     },
     "typ_10": {
       "original": {
-        "roi": 224.7311827956989,
+        "roi": -38.45667299177736,
         "played": 1581,
-        "won": 5134,
-        "high_wins_count": 10
+        "won": 973.0,
+        "high_wins_count": 3
       },
       "v1_jackpot": {
-        "roi": 83.42820999367488,
+        "roi": -53.38393421884883,
         "played": 1581,
-        "won": 2900,
-        "high_wins_count": 6
+        "won": 737.0,
+        "high_wins_count": 1
       },
       "v1_balanced": {
-        "roi": 85.07273877292853,
+        "roi": -51.67615433270082,
         "played": 1581,
-        "won": 2926,
-        "high_wins_count": 6
+        "won": 764.0,
+        "high_wins_count": 1
       }
     }
   }

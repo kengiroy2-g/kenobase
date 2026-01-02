@@ -1,0 +1,3334 @@
+{
+  "generated_at": "2026-01-02T19:06:39.845186",
+  "analysis_type": "monthly_pools_2025",
+  "summary": {
+    "total_months": 12,
+    "total_days": 329,
+    "total_jackpots_6": 64,
+    "big_hits_8plus": 19
+  },
+  "monthly_results": {
+    "1": {
+      "pool_date": "03.01.2025",
+      "pool": [
+        2,
+        4,
+        10,
+        12,
+        14,
+        24,
+        30,
+        33,
+        34,
+        36,
+        39,
+        42,
+        48,
+        54,
+        61,
+        62,
+        64
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          22,
+          23,
+          30,
+          32,
+          34,
+          36,
+          38,
+          39,
+          44,
+          46,
+          51,
+          54,
+          56,
+          57,
+          68,
+          70
+        ],
+        "hot_keep": [
+          30,
+          34,
+          36,
+          39,
+          54
+        ],
+        "cold_birthday_keep": [
+          2,
+          4,
+          10,
+          12,
+          14,
+          24
+        ],
+        "cold_nonbd_keep": [
+          33,
+          42,
+          48,
+          61,
+          62,
+          64
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 953,
+      "test_period": {
+        "start": "04.01.2025",
+        "end": "31.01.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 3,
+      "jackpot_days": [
+        {
+          "datum": "04.01.2025",
+          "count": 1
+        },
+        {
+          "datum": "15.01.2025",
+          "count": 2
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "05.01.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            24,
+            30,
+            33,
+            34,
+            36,
+            54,
+            62,
+            64
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "15.01.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            4,
+            12,
+            24,
+            33,
+            34,
+            36,
+            61,
+            62
+          ],
+          "gk_potential": "GK8 moeglich"
+        }
+      ],
+      "avg_pool_hits": 4.785714285714286,
+      "daily_results": [
+        {
+          "datum": "04.01.2025",
+          "pool_hits": 6,
+          "jackpots_6": 1
+        },
+        {
+          "datum": "05.01.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.01.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.01.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.01.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.01.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.01.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.01.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.01.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.01.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.01.2025",
+          "pool_hits": 8,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "16.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.01.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.01.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.01.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.01.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.01.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.01.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.01.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.01.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.01.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "2": {
+      "pool_date": "03.02.2025",
+      "pool": [
+        7,
+        10,
+        12,
+        14,
+        16,
+        17,
+        19,
+        20,
+        32,
+        34,
+        38,
+        44,
+        45,
+        47,
+        51,
+        56,
+        57
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          7,
+          19,
+          34,
+          42,
+          45,
+          48,
+          51,
+          52,
+          55,
+          60,
+          61,
+          62,
+          63,
+          68
+        ],
+        "hot_keep": [
+          7,
+          19,
+          34,
+          45,
+          51
+        ],
+        "cold_birthday_keep": [
+          10,
+          12,
+          14,
+          16,
+          17,
+          20
+        ],
+        "cold_nonbd_keep": [
+          32,
+          38,
+          44,
+          47,
+          56,
+          57
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 310,
+      "test_period": {
+        "start": "04.02.2025",
+        "end": "28.02.2025",
+        "days": 25
+      },
+      "total_jackpots_6": 5,
+      "jackpot_days": [
+        {
+          "datum": "09.02.2025",
+          "count": 4
+        },
+        {
+          "datum": "28.02.2025",
+          "count": 1
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "09.02.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            7,
+            10,
+            12,
+            19,
+            32,
+            44,
+            56,
+            57
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "23.02.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            16,
+            17,
+            20,
+            32,
+            34,
+            38,
+            45,
+            51
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "26.02.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            16,
+            17,
+            19,
+            44,
+            47,
+            51,
+            56,
+            57
+          ],
+          "gk_potential": "GK8 moeglich"
+        }
+      ],
+      "avg_pool_hits": 5.48,
+      "daily_results": [
+        {
+          "datum": "04.02.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.02.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.02.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.02.2025",
+          "pool_hits": 8,
+          "jackpots_6": 4
+        },
+        {
+          "datum": "10.02.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.02.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.02.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.02.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.02.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.02.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.02.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.02.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.02.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.02.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.02.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.02.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.02.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.02.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.02.2025",
+          "pool_hits": 7,
+          "jackpots_6": 1
+        }
+      ]
+    },
+    "3": {
+      "pool_date": "03.03.2025",
+      "pool": [
+        1,
+        4,
+        5,
+        6,
+        10,
+        11,
+        19,
+        22,
+        23,
+        30,
+        35,
+        36,
+        40,
+        52,
+        64,
+        66,
+        67
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          5,
+          6,
+          10,
+          15,
+          16,
+          21,
+          23,
+          25,
+          31,
+          54,
+          55,
+          59,
+          67
+        ],
+        "hot_keep": [
+          5,
+          6,
+          10,
+          23,
+          67
+        ],
+        "cold_birthday_keep": [
+          1,
+          4,
+          11,
+          19,
+          22,
+          30
+        ],
+        "cold_nonbd_keep": [
+          35,
+          36,
+          40,
+          52,
+          64,
+          66
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 377,
+      "test_period": {
+        "start": "04.03.2025",
+        "end": "31.03.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 3,
+      "jackpot_days": [
+        {
+          "datum": "14.03.2025",
+          "count": 2
+        },
+        {
+          "datum": "21.03.2025",
+          "count": 1
+        }
+      ],
+      "big_hits_8plus": [],
+      "avg_pool_hits": 4.392857142857143,
+      "daily_results": [
+        {
+          "datum": "04.03.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.03.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.03.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.03.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.03.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.03.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.03.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.03.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "15.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.03.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.03.2025",
+          "pool_hits": 6,
+          "jackpots_6": 1
+        },
+        {
+          "datum": "22.03.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.03.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.03.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.03.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.03.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.03.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "4": {
+      "pool_date": "03.04.2025",
+      "pool": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        24,
+        34,
+        35,
+        36,
+        45,
+        50,
+        60,
+        61,
+        69
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          4,
+          5,
+          8,
+          9,
+          16,
+          20,
+          32,
+          36,
+          41,
+          42,
+          47,
+          50,
+          54,
+          70
+        ],
+        "hot_keep": [
+          4,
+          5,
+          8,
+          36,
+          50
+        ],
+        "cold_birthday_keep": [
+          1,
+          2,
+          6,
+          7,
+          11,
+          24
+        ],
+        "cold_nonbd_keep": [
+          34,
+          35,
+          45,
+          60,
+          61,
+          69
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 366,
+      "test_period": {
+        "start": "04.04.2025",
+        "end": "30.04.2025",
+        "days": 27
+      },
+      "total_jackpots_6": 5,
+      "jackpot_days": [
+        {
+          "datum": "15.04.2025",
+          "count": 4
+        },
+        {
+          "datum": "17.04.2025",
+          "count": 1
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "09.04.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            1,
+            6,
+            7,
+            11,
+            24,
+            35,
+            45,
+            61
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "15.04.2025",
+          "pool_hits": 9,
+          "pool_numbers_drawn": [
+            1,
+            5,
+            8,
+            11,
+            24,
+            45,
+            50,
+            60,
+            61
+          ],
+          "gk_potential": "GK9 moeglich"
+        }
+      ],
+      "avg_pool_hits": 5.296296296296297,
+      "daily_results": [
+        {
+          "datum": "04.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.04.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.04.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.04.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.04.2025",
+          "pool_hits": 9,
+          "jackpots_6": 4
+        },
+        {
+          "datum": "16.04.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.04.2025",
+          "pool_hits": 7,
+          "jackpots_6": 1
+        },
+        {
+          "datum": "18.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.04.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.04.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.04.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.04.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.04.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.04.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.04.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "5": {
+      "pool_date": "03.05.2025",
+      "pool": [
+        3,
+        9,
+        10,
+        13,
+        14,
+        19,
+        21,
+        25,
+        26,
+        32,
+        33,
+        36,
+        39,
+        49,
+        65,
+        66,
+        70
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          2,
+          3,
+          4,
+          9,
+          18,
+          19,
+          28,
+          30,
+          36,
+          41,
+          47,
+          49,
+          62,
+          68
+        ],
+        "hot_keep": [
+          3,
+          9,
+          19,
+          36,
+          49
+        ],
+        "cold_birthday_keep": [
+          10,
+          13,
+          14,
+          21,
+          25,
+          26
+        ],
+        "cold_nonbd_keep": [
+          32,
+          33,
+          39,
+          65,
+          66,
+          70
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 657,
+      "test_period": {
+        "start": "04.05.2025",
+        "end": "31.05.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 0,
+      "jackpot_days": [],
+      "big_hits_8plus": [
+        {
+          "datum": "04.05.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            3,
+            9,
+            14,
+            19,
+            26,
+            65,
+            66,
+            70
+          ],
+          "gk_potential": "GK8 moeglich"
+        }
+      ],
+      "avg_pool_hits": 4.642857142857143,
+      "daily_results": [
+        {
+          "datum": "04.05.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.05.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.05.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.05.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.05.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.05.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.05.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.05.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.05.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.05.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.05.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.05.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "6": {
+      "pool_date": "03.06.2025",
+      "pool": [
+        6,
+        7,
+        9,
+        11,
+        16,
+        21,
+        29,
+        36,
+        38,
+        43,
+        45,
+        50,
+        54,
+        56,
+        59,
+        65,
+        67
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          1,
+          4,
+          7,
+          34,
+          41,
+          43,
+          45,
+          52,
+          56,
+          64,
+          67,
+          68
+        ],
+        "hot_keep": [
+          7,
+          43,
+          45,
+          56,
+          67
+        ],
+        "cold_birthday_keep": [
+          6,
+          9,
+          11,
+          16,
+          21,
+          29
+        ],
+        "cold_nonbd_keep": [
+          36,
+          38,
+          50,
+          54,
+          59,
+          65
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 894,
+      "test_period": {
+        "start": "04.06.2025",
+        "end": "30.06.2025",
+        "days": 27
+      },
+      "total_jackpots_6": 0,
+      "jackpot_days": [],
+      "big_hits_8plus": [],
+      "avg_pool_hits": 4.444444444444445,
+      "daily_results": [
+        {
+          "datum": "04.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.06.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.06.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.06.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.06.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.06.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.06.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.06.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.06.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.06.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.06.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.06.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.06.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.06.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.06.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.06.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.06.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.06.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.06.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.06.2025",
+          "pool_hits": 1,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "7": {
+      "pool_date": "03.07.2025",
+      "pool": [
+        1,
+        6,
+        8,
+        9,
+        10,
+        11,
+        26,
+        29,
+        35,
+        36,
+        44,
+        53,
+        56,
+        63,
+        64,
+        67,
+        68
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          2,
+          6,
+          10,
+          13,
+          19,
+          21,
+          27,
+          30,
+          31,
+          35,
+          36,
+          40,
+          44,
+          45,
+          46,
+          62
+        ],
+        "hot_keep": [
+          6,
+          10,
+          35,
+          36,
+          44
+        ],
+        "cold_birthday_keep": [
+          1,
+          8,
+          9,
+          11,
+          26,
+          29
+        ],
+        "cold_nonbd_keep": [
+          53,
+          56,
+          63,
+          64,
+          67,
+          68
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 630,
+      "test_period": {
+        "start": "04.07.2025",
+        "end": "31.07.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 3,
+      "jackpot_days": [
+        {
+          "datum": "22.07.2025",
+          "count": 1
+        },
+        {
+          "datum": "25.07.2025",
+          "count": 2
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "06.07.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            1,
+            8,
+            26,
+            29,
+            35,
+            56,
+            63,
+            67
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "17.07.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            1,
+            8,
+            9,
+            10,
+            35,
+            36,
+            44,
+            63
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "19.07.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            6,
+            10,
+            29,
+            36,
+            53,
+            63,
+            67,
+            68
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "30.07.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            6,
+            9,
+            10,
+            26,
+            29,
+            35,
+            36,
+            68
+          ],
+          "gk_potential": "GK8 moeglich"
+        }
+      ],
+      "avg_pool_hits": 5.357142857142857,
+      "daily_results": [
+        {
+          "datum": "04.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.07.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.07.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.07.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.07.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.07.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.07.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.07.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.07.2025",
+          "pool_hits": 7,
+          "jackpots_6": 1
+        },
+        {
+          "datum": "23.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.07.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.07.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "26.07.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.07.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.07.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.07.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.07.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.07.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "8": {
+      "pool_date": "03.08.2025",
+      "pool": [
+        2,
+        3,
+        13,
+        17,
+        18,
+        20,
+        22,
+        23,
+        28,
+        34,
+        41,
+        43,
+        50,
+        53,
+        59,
+        61,
+        62
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          5,
+          8,
+          12,
+          13,
+          16,
+          22,
+          23,
+          25,
+          26,
+          29,
+          34,
+          42,
+          52,
+          53,
+          54,
+          57
+        ],
+        "hot_keep": [
+          13,
+          22,
+          23,
+          34,
+          53
+        ],
+        "cold_birthday_keep": [
+          2,
+          3,
+          17,
+          18,
+          20,
+          28
+        ],
+        "cold_nonbd_keep": [
+          41,
+          43,
+          50,
+          59,
+          61,
+          62
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 957,
+      "test_period": {
+        "start": "04.08.2025",
+        "end": "31.08.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 2,
+      "jackpot_days": [
+        {
+          "datum": "11.08.2025",
+          "count": 2
+        }
+      ],
+      "big_hits_8plus": [],
+      "avg_pool_hits": 4.642857142857143,
+      "daily_results": [
+        {
+          "datum": "04.08.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.08.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.08.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.08.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "12.08.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.08.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.08.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.08.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.08.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.08.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.08.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.08.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.08.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.08.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.08.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.08.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.08.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.08.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.08.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.08.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.08.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "9": {
+      "pool_date": "03.09.2025",
+      "pool": [
+        3,
+        6,
+        14,
+        15,
+        20,
+        23,
+        26,
+        41,
+        45,
+        46,
+        48,
+        49,
+        50,
+        59,
+        62,
+        66,
+        67
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          15,
+          16,
+          25,
+          32,
+          34,
+          46,
+          47,
+          48,
+          49,
+          52,
+          56,
+          60,
+          63,
+          65,
+          66
+        ],
+        "hot_keep": [
+          15,
+          46,
+          48,
+          49,
+          66
+        ],
+        "cold_birthday_keep": [
+          3,
+          6,
+          14,
+          20,
+          23,
+          26
+        ],
+        "cold_nonbd_keep": [
+          41,
+          45,
+          50,
+          59,
+          62,
+          67
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 402,
+      "test_period": {
+        "start": "04.09.2025",
+        "end": "30.09.2025",
+        "days": 27
+      },
+      "total_jackpots_6": 0,
+      "jackpot_days": [],
+      "big_hits_8plus": [],
+      "avg_pool_hits": 4.851851851851852,
+      "daily_results": [
+        {
+          "datum": "04.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.09.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.09.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.09.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.09.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.09.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.09.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.09.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.09.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.09.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.09.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.09.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.09.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.09.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.09.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.09.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "10": {
+      "pool_date": "03.10.2025",
+      "pool": [
+        8,
+        15,
+        16,
+        20,
+        26,
+        29,
+        30,
+        33,
+        35,
+        40,
+        42,
+        45,
+        47,
+        57,
+        66,
+        67,
+        68
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          8,
+          12,
+          14,
+          17,
+          21,
+          32,
+          33,
+          45,
+          46,
+          50,
+          54,
+          61,
+          64,
+          66,
+          67
+        ],
+        "hot_keep": [
+          8,
+          33,
+          45,
+          66,
+          67
+        ],
+        "cold_birthday_keep": [
+          15,
+          16,
+          20,
+          26,
+          29,
+          30
+        ],
+        "cold_nonbd_keep": [
+          35,
+          40,
+          42,
+          47,
+          57,
+          68
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 749,
+      "test_period": {
+        "start": "04.10.2025",
+        "end": "31.10.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 23,
+      "jackpot_days": [
+        {
+          "datum": "20.10.2025",
+          "count": 1
+        },
+        {
+          "datum": "21.10.2025",
+          "count": 22
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "21.10.2025",
+          "pool_hits": 10,
+          "pool_numbers_drawn": [
+            8,
+            15,
+            20,
+            26,
+            29,
+            35,
+            42,
+            45,
+            47,
+            57
+          ],
+          "gk_potential": "GK10 moeglich"
+        },
+        {
+          "datum": "27.10.2025",
+          "pool_hits": 9,
+          "pool_numbers_drawn": [
+            15,
+            16,
+            26,
+            35,
+            42,
+            45,
+            57,
+            67,
+            68
+          ],
+          "gk_potential": "GK9 moeglich"
+        }
+      ],
+      "avg_pool_hits": 4.964285714285714,
+      "daily_results": [
+        {
+          "datum": "04.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.10.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.10.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.10.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.10.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.10.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.10.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.10.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.10.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "17.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.10.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.10.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.10.2025",
+          "pool_hits": 7,
+          "jackpots_6": 1
+        },
+        {
+          "datum": "21.10.2025",
+          "pool_hits": 10,
+          "jackpots_6": 22
+        },
+        {
+          "datum": "22.10.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.10.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.10.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.10.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.10.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.10.2025",
+          "pool_hits": 9,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.10.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.10.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.10.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "31.10.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "11": {
+      "pool_date": "03.11.2025",
+      "pool": [
+        1,
+        6,
+        7,
+        12,
+        13,
+        15,
+        17,
+        21,
+        39,
+        41,
+        45,
+        46,
+        49,
+        57,
+        63,
+        65,
+        66
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          4,
+          6,
+          15,
+          16,
+          19,
+          24,
+          28,
+          30,
+          31,
+          39,
+          45,
+          47,
+          49,
+          52,
+          53,
+          55,
+          62
+        ],
+        "hot_keep": [
+          6,
+          15,
+          39,
+          45,
+          49
+        ],
+        "cold_birthday_keep": [
+          1,
+          7,
+          12,
+          13,
+          17,
+          21
+        ],
+        "cold_nonbd_keep": [
+          41,
+          46,
+          57,
+          63,
+          65,
+          66
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 662,
+      "test_period": {
+        "start": "04.11.2025",
+        "end": "30.11.2025",
+        "days": 27
+      },
+      "total_jackpots_6": 16,
+      "jackpot_days": [
+        {
+          "datum": "04.11.2025",
+          "count": 2
+        },
+        {
+          "datum": "16.11.2025",
+          "count": 2
+        },
+        {
+          "datum": "19.11.2025",
+          "count": 12
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "16.11.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            6,
+            13,
+            17,
+            46,
+            49,
+            57,
+            63,
+            66
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "19.11.2025",
+          "pool_hits": 10,
+          "pool_numbers_drawn": [
+            1,
+            6,
+            15,
+            17,
+            21,
+            39,
+            45,
+            46,
+            49,
+            66
+          ],
+          "gk_potential": "GK10 moeglich"
+        },
+        {
+          "datum": "22.11.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            6,
+            17,
+            41,
+            45,
+            46,
+            57,
+            63,
+            66
+          ],
+          "gk_potential": "GK8 moeglich"
+        }
+      ],
+      "avg_pool_hits": 5.407407407407407,
+      "daily_results": [
+        {
+          "datum": "04.11.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "05.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.11.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.11.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.11.2025",
+          "pool_hits": 8,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "17.11.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.11.2025",
+          "pool_hits": 10,
+          "jackpots_6": 12
+        },
+        {
+          "datum": "20.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.11.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.11.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.11.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.11.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        }
+      ]
+    },
+    "12": {
+      "pool_date": "03.12.2025",
+      "pool": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        18,
+        22,
+        28,
+        40,
+        43,
+        44,
+        46,
+        48,
+        49,
+        55,
+        60,
+        63
+      ],
+      "pool_size": 17,
+      "pool_details": {
+        "hot_all": [
+          6,
+          22,
+          24,
+          29,
+          42,
+          44,
+          46,
+          48,
+          56
+        ],
+        "hot_keep": [
+          6,
+          22,
+          44,
+          46,
+          48
+        ],
+        "cold_birthday_keep": [
+          2,
+          3,
+          5,
+          7,
+          18,
+          28
+        ],
+        "cold_nonbd_keep": [
+          40,
+          43,
+          49,
+          55,
+          60,
+          63
+        ],
+        "pool_size": 17
+      },
+      "filtered_combos_count": 484,
+      "test_period": {
+        "start": "04.12.2025",
+        "end": "31.12.2025",
+        "days": 28
+      },
+      "total_jackpots_6": 4,
+      "jackpot_days": [
+        {
+          "datum": "16.12.2025",
+          "count": 2
+        },
+        {
+          "datum": "30.12.2025",
+          "count": 2
+        }
+      ],
+      "big_hits_8plus": [
+        {
+          "datum": "18.12.2025",
+          "pool_hits": 8,
+          "pool_numbers_drawn": [
+            3,
+            7,
+            43,
+            44,
+            48,
+            49,
+            55,
+            63
+          ],
+          "gk_potential": "GK8 moeglich"
+        },
+        {
+          "datum": "27.12.2025",
+          "pool_hits": 9,
+          "pool_numbers_drawn": [
+            2,
+            3,
+            6,
+            7,
+            40,
+            43,
+            46,
+            48,
+            63
+          ],
+          "gk_potential": "GK9 moeglich"
+        }
+      ],
+      "avg_pool_hits": 4.964285714285714,
+      "daily_results": [
+        {
+          "datum": "04.12.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "05.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "06.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "07.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "08.12.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "09.12.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "10.12.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "11.12.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "12.12.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "13.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "14.12.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "15.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "16.12.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "17.12.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "18.12.2025",
+          "pool_hits": 8,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "19.12.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "20.12.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "21.12.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "22.12.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "23.12.2025",
+          "pool_hits": 4,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "24.12.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "25.12.2025",
+          "pool_hits": 2,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "26.12.2025",
+          "pool_hits": 3,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "27.12.2025",
+          "pool_hits": 9,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "28.12.2025",
+          "pool_hits": 7,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "29.12.2025",
+          "pool_hits": 6,
+          "jackpots_6": 0
+        },
+        {
+          "datum": "30.12.2025",
+          "pool_hits": 7,
+          "jackpots_6": 2
+        },
+        {
+          "datum": "31.12.2025",
+          "pool_hits": 5,
+          "jackpots_6": 0
+        }
+      ]
+    }
+  },
+  "all_jackpots": [
+    {
+      "datum": "04.01.2025",
+      "count": 1
+    },
+    {
+      "datum": "15.01.2025",
+      "count": 2
+    },
+    {
+      "datum": "09.02.2025",
+      "count": 4
+    },
+    {
+      "datum": "28.02.2025",
+      "count": 1
+    },
+    {
+      "datum": "14.03.2025",
+      "count": 2
+    },
+    {
+      "datum": "21.03.2025",
+      "count": 1
+    },
+    {
+      "datum": "15.04.2025",
+      "count": 4
+    },
+    {
+      "datum": "17.04.2025",
+      "count": 1
+    },
+    {
+      "datum": "22.07.2025",
+      "count": 1
+    },
+    {
+      "datum": "25.07.2025",
+      "count": 2
+    },
+    {
+      "datum": "11.08.2025",
+      "count": 2
+    },
+    {
+      "datum": "20.10.2025",
+      "count": 1
+    },
+    {
+      "datum": "21.10.2025",
+      "count": 22
+    },
+    {
+      "datum": "04.11.2025",
+      "count": 2
+    },
+    {
+      "datum": "16.11.2025",
+      "count": 2
+    },
+    {
+      "datum": "19.11.2025",
+      "count": 12
+    },
+    {
+      "datum": "16.12.2025",
+      "count": 2
+    },
+    {
+      "datum": "30.12.2025",
+      "count": 2
+    }
+  ],
+  "all_big_hits": [
+    {
+      "datum": "05.01.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        24,
+        30,
+        33,
+        34,
+        36,
+        54,
+        62,
+        64
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "15.01.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        4,
+        12,
+        24,
+        33,
+        34,
+        36,
+        61,
+        62
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "09.02.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        7,
+        10,
+        12,
+        19,
+        32,
+        44,
+        56,
+        57
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "23.02.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        16,
+        17,
+        20,
+        32,
+        34,
+        38,
+        45,
+        51
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "26.02.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        16,
+        17,
+        19,
+        44,
+        47,
+        51,
+        56,
+        57
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "09.04.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        1,
+        6,
+        7,
+        11,
+        24,
+        35,
+        45,
+        61
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "15.04.2025",
+      "pool_hits": 9,
+      "pool_numbers_drawn": [
+        1,
+        5,
+        8,
+        11,
+        24,
+        45,
+        50,
+        60,
+        61
+      ],
+      "gk_potential": "GK9 moeglich"
+    },
+    {
+      "datum": "04.05.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        3,
+        9,
+        14,
+        19,
+        26,
+        65,
+        66,
+        70
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "06.07.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        1,
+        8,
+        26,
+        29,
+        35,
+        56,
+        63,
+        67
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "17.07.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        1,
+        8,
+        9,
+        10,
+        35,
+        36,
+        44,
+        63
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "19.07.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        6,
+        10,
+        29,
+        36,
+        53,
+        63,
+        67,
+        68
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "30.07.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        6,
+        9,
+        10,
+        26,
+        29,
+        35,
+        36,
+        68
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "21.10.2025",
+      "pool_hits": 10,
+      "pool_numbers_drawn": [
+        8,
+        15,
+        20,
+        26,
+        29,
+        35,
+        42,
+        45,
+        47,
+        57
+      ],
+      "gk_potential": "GK10 moeglich"
+    },
+    {
+      "datum": "27.10.2025",
+      "pool_hits": 9,
+      "pool_numbers_drawn": [
+        15,
+        16,
+        26,
+        35,
+        42,
+        45,
+        57,
+        67,
+        68
+      ],
+      "gk_potential": "GK9 moeglich"
+    },
+    {
+      "datum": "16.11.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        6,
+        13,
+        17,
+        46,
+        49,
+        57,
+        63,
+        66
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "19.11.2025",
+      "pool_hits": 10,
+      "pool_numbers_drawn": [
+        1,
+        6,
+        15,
+        17,
+        21,
+        39,
+        45,
+        46,
+        49,
+        66
+      ],
+      "gk_potential": "GK10 moeglich"
+    },
+    {
+      "datum": "22.11.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        6,
+        17,
+        41,
+        45,
+        46,
+        57,
+        63,
+        66
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "18.12.2025",
+      "pool_hits": 8,
+      "pool_numbers_drawn": [
+        3,
+        7,
+        43,
+        44,
+        48,
+        49,
+        55,
+        63
+      ],
+      "gk_potential": "GK8 moeglich"
+    },
+    {
+      "datum": "27.12.2025",
+      "pool_hits": 9,
+      "pool_numbers_drawn": [
+        2,
+        3,
+        6,
+        7,
+        40,
+        43,
+        46,
+        48,
+        63
+      ],
+      "gk_potential": "GK9 moeglich"
+    }
+  ],
+  "potential_10_jackpots": []
+}

@@ -1,0 +1,10 @@
+﻿[
+    "ML Model KenoPredictor + KenoTrainer exist (`model.py`, `trainer.py`)",
+    "Gap: No EnsemblePredictor class to combine both approaches",
+    "Target F1 \u003e= 0.50 (improvement from 0.4434 baseline)",
+    "New file needed: `kenobase/prediction/ensemble.py`",
+    "kenobase/prediction/ensemble.py (NEW)",
+    "kenobase/prediction/__init__.py (MODIFIED)",
+    "scripts/predict.py (MODIFIED)",
+    "tests/unit/test_ensemble.py (NEW)"
+]

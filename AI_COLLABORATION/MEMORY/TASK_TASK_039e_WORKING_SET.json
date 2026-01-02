@@ -1,0 +1,7 @@
+﻿[
+    "scripts/compare_v1_v2_cycles.py",
+    "results/v1_v2_cycle_comparison.json (erste 100 Zeilen reichen)",
+    "scripts/super_model_synthesis.py (fÃ¼r KENO_QUOTES falls nÃ¶tig)",
+    "scripts/jackknife_v1_v2_loo.py",
+    "results/jackknife_v1_v2_loo.json"
+]

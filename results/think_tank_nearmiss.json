@@ -1,0 +1,1623 @@
+{
+  "hypothesis": "Near-Miss Constraint Model",
+  "description": "Das RNG vermeidet aktiv bestimmte Kombinationen die zu oft gewinnen wuerden",
+  "analysis_date": "2025-12-31T17:29:21.066836",
+  "data_summary": {
+    "total_draws": 1457,
+    "date_range": "03.01.2022 to 29.12.2025",
+    "total_possible_pairs": 2415,
+    "expected_frequency_per_pair": 114.63,
+    "probability_both_drawn": 0.078675
+  },
+  "forbidden_pairs": [
+    {
+      "pair": [
+        22,
+        57
+      ],
+      "observed": 84,
+      "expected": 114.63,
+      "z_score": -2.98,
+      "deficit_percent": 26.7,
+      "significance": {
+        "chi_square": 8.184288868152295,
+        "significance": "very_significant (p<0.01)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        22,
+        69
+      ],
+      "observed": 84,
+      "expected": 114.63,
+      "z_score": -2.98,
+      "deficit_percent": 26.7,
+      "significance": {
+        "chi_square": 8.184288868152295,
+        "significance": "very_significant (p<0.01)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        13,
+        69
+      ],
+      "observed": 86,
+      "expected": 114.63,
+      "z_score": -2.786,
+      "deficit_percent": 25.0,
+      "significance": {
+        "chi_square": 7.150369134019433,
+        "significance": "very_significant (p<0.01)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        19,
+        29
+      ],
+      "observed": 88,
+      "expected": 114.63,
+      "z_score": -2.591,
+      "deficit_percent": 23.2,
+      "significance": {
+        "chi_square": 6.186239523789329,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        22,
+        60
+      ],
+      "observed": 90,
+      "expected": 114.63,
+      "z_score": -2.397,
+      "deficit_percent": 21.5,
+      "significance": {
+        "chi_square": 5.291900037461979,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        53,
+        60
+      ],
+      "observed": 90,
+      "expected": 114.63,
+      "z_score": -2.397,
+      "deficit_percent": 21.5,
+      "significance": {
+        "chi_square": 5.291900037461979,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        1,
+        19
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        5,
+        32
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        29
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        60
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        61
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        11,
+        32
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        15,
+        41
+      ],
+      "observed": 91,
+      "expected": 114.63,
+      "z_score": -2.299,
+      "deficit_percent": 20.6,
+      "significance": {
+        "chi_square": 4.8709015907618385,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        18,
+        56
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        18,
+        69
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        22,
+        66
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        24,
+        53
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        30,
+        53
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        38,
+        46
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        58,
+        60
+      ],
+      "observed": 92,
+      "expected": 114.63,
+      "z_score": -2.202,
+      "deficit_percent": 19.7,
+      "significance": {
+        "chi_square": 4.4673506750373875,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        5,
+        70
+      ],
+      "observed": 93,
+      "expected": 114.63,
+      "z_score": -2.105,
+      "deficit_percent": 18.9,
+      "significance": {
+        "chi_square": 4.0812472902886245,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        11,
+        31
+      ],
+      "observed": 93,
+      "expected": 114.63,
+      "z_score": -2.105,
+      "deficit_percent": 18.9,
+      "significance": {
+        "chi_square": 4.0812472902886245,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        13,
+        18
+      ],
+      "observed": 93,
+      "expected": 114.63,
+      "z_score": -2.105,
+      "deficit_percent": 18.9,
+      "significance": {
+        "chi_square": 4.0812472902886245,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        16,
+        69
+      ],
+      "observed": 93,
+      "expected": 114.63,
+      "z_score": -2.105,
+      "deficit_percent": 18.9,
+      "significance": {
+        "chi_square": 4.0812472902886245,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        30,
+        69
+      ],
+      "observed": 93,
+      "expected": 114.63,
+      "z_score": -2.105,
+      "deficit_percent": 18.9,
+      "significance": {
+        "chi_square": 4.0812472902886245,
+        "significance": "significant (p<0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        36
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        16,
+        24
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        17,
+        22
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        17,
+        60
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        18,
+        65
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        19,
+        22
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        19,
+        32
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        25,
+        60
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        44,
+        52
+      ],
+      "observed": 94,
+      "expected": 114.63,
+      "z_score": -2.007,
+      "deficit_percent": 18.0,
+      "significance": {
+        "chi_square": 3.712591436515551,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        40
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        7,
+        70
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        8,
+        15
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        8,
+        53
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        11,
+        69
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        15,
+        19
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        20,
+        30
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        21,
+        40
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        22,
+        34
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        22,
+        59
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        24,
+        44
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        28,
+        53
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        31,
+        54
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        41,
+        59
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        43,
+        70
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    },
+    {
+      "pair": [
+        53,
+        54
+      ],
+      "observed": 95,
+      "expected": 114.63,
+      "z_score": -1.91,
+      "deficit_percent": 17.1,
+      "significance": {
+        "chi_square": 3.361383113718166,
+        "significance": "not_significant (p>0.05)",
+        "direction": "under-represented"
+      }
+    }
+  ],
+  "favored_pairs": [
+    {
+      "pair": [
+        3,
+        9
+      ],
+      "observed": 150,
+      "expected": 114.63,
+      "z_score": 3.442,
+      "excess_percent": 30.9,
+      "significance": {
+        "chi_square": 10.914123062423153,
+        "significance": "highly_significant (p<0.001)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        36
+      ],
+      "observed": 148,
+      "expected": 114.63,
+      "z_score": 3.247,
+      "excess_percent": 29.1,
+      "significance": {
+        "chi_square": 9.714758831667815,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        39
+      ],
+      "observed": 148,
+      "expected": 114.63,
+      "z_score": 3.247,
+      "excess_percent": 29.1,
+      "significance": {
+        "chi_square": 9.714758831667815,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        49,
+        55
+      ],
+      "observed": 146,
+      "expected": 114.63,
+      "z_score": 3.053,
+      "excess_percent": 27.4,
+      "significance": {
+        "chi_square": 8.585184724815234,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        25
+      ],
+      "observed": 145,
+      "expected": 114.63,
+      "z_score": 2.955,
+      "excess_percent": 26.5,
+      "significance": {
+        "chi_square": 8.046568967852478,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        45
+      ],
+      "observed": 145,
+      "expected": 114.63,
+      "z_score": 2.955,
+      "excess_percent": 26.5,
+      "significance": {
+        "chi_square": 8.046568967852478,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        10,
+        45
+      ],
+      "observed": 145,
+      "expected": 114.63,
+      "z_score": 2.955,
+      "excess_percent": 26.5,
+      "significance": {
+        "chi_square": 8.046568967852478,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        12,
+        45
+      ],
+      "observed": 145,
+      "expected": 114.63,
+      "z_score": 2.955,
+      "excess_percent": 26.5,
+      "significance": {
+        "chi_square": 8.046568967852478,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        36,
+        42
+      ],
+      "observed": 144,
+      "expected": 114.63,
+      "z_score": 2.858,
+      "excess_percent": 25.6,
+      "significance": {
+        "chi_square": 7.525400741865409,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        45,
+        61
+      ],
+      "observed": 144,
+      "expected": 114.63,
+      "z_score": 2.858,
+      "excess_percent": 25.6,
+      "significance": {
+        "chi_square": 7.525400741865409,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        46,
+        61
+      ],
+      "observed": 144,
+      "expected": 114.63,
+      "z_score": 2.858,
+      "excess_percent": 25.6,
+      "significance": {
+        "chi_square": 7.525400741865409,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        49,
+        57
+      ],
+      "observed": 144,
+      "expected": 114.63,
+      "z_score": 2.858,
+      "excess_percent": 25.6,
+      "significance": {
+        "chi_square": 7.525400741865409,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        2,
+        45
+      ],
+      "observed": 143,
+      "expected": 114.63,
+      "z_score": 2.761,
+      "excess_percent": 24.7,
+      "significance": {
+        "chi_square": 7.02168004685403,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        42
+      ],
+      "observed": 143,
+      "expected": 114.63,
+      "z_score": 2.761,
+      "excess_percent": 24.7,
+      "significance": {
+        "chi_square": 7.02168004685403,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        6,
+        35
+      ],
+      "observed": 143,
+      "expected": 114.63,
+      "z_score": 2.761,
+      "excess_percent": 24.7,
+      "significance": {
+        "chi_square": 7.02168004685403,
+        "significance": "very_significant (p<0.01)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        2,
+        23
+      ],
+      "observed": 142,
+      "expected": 114.63,
+      "z_score": 2.663,
+      "excess_percent": 23.9,
+      "significance": {
+        "chi_square": 6.53540688281834,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        38,
+        65
+      ],
+      "observed": 142,
+      "expected": 114.63,
+      "z_score": 2.663,
+      "excess_percent": 23.9,
+      "significance": {
+        "chi_square": 6.53540688281834,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        42,
+        61
+      ],
+      "observed": 142,
+      "expected": 114.63,
+      "z_score": 2.663,
+      "excess_percent": 23.9,
+      "significance": {
+        "chi_square": 6.53540688281834,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        50
+      ],
+      "observed": 141,
+      "expected": 114.63,
+      "z_score": 2.566,
+      "excess_percent": 23.0,
+      "significance": {
+        "chi_square": 6.0665812497583405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        27,
+        38
+      ],
+      "observed": 141,
+      "expected": 114.63,
+      "z_score": 2.566,
+      "excess_percent": 23.0,
+      "significance": {
+        "chi_square": 6.0665812497583405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        39,
+        64
+      ],
+      "observed": 140,
+      "expected": 114.63,
+      "z_score": 2.469,
+      "excess_percent": 22.1,
+      "significance": {
+        "chi_square": 5.615203147674028,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        45,
+        55
+      ],
+      "observed": 140,
+      "expected": 114.63,
+      "z_score": 2.469,
+      "excess_percent": 22.1,
+      "significance": {
+        "chi_square": 5.615203147674028,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        23
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        12,
+        33
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        30,
+        49
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        33,
+        50
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        37,
+        39
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        39,
+        49
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        47,
+        56
+      ],
+      "observed": 139,
+      "expected": 114.63,
+      "z_score": 2.371,
+      "excess_percent": 21.3,
+      "significance": {
+        "chi_square": 5.181272576565405,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        47
+      ],
+      "observed": 137,
+      "expected": 114.63,
+      "z_score": 2.177,
+      "excess_percent": 19.5,
+      "significance": {
+        "chi_square": 4.365754027275226,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        15,
+        49
+      ],
+      "observed": 137,
+      "expected": 114.63,
+      "z_score": 2.177,
+      "excess_percent": 19.5,
+      "significance": {
+        "chi_square": 4.365754027275226,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        20
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        6,
+        33
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        10
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        12
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        9,
+        68
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        12,
+        49
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        23,
+        33
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        27,
+        49
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        33,
+        62
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        35,
+        45
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        42,
+        68
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        47,
+        49
+      ],
+      "observed": 136,
+      "expected": 114.63,
+      "z_score": 2.08,
+      "excess_percent": 18.6,
+      "significance": {
+        "chi_square": 3.9841660490936714,
+        "significance": "significant (p<0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        67
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        3,
+        70
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        6,
+        58
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        12,
+        68
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        15,
+        58
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    },
+    {
+      "pair": [
+        25,
+        31
+      ],
+      "observed": 135,
+      "expected": 114.63,
+      "z_score": 1.982,
+      "excess_percent": 17.8,
+      "significance": {
+        "chi_square": 3.6200256018878045,
+        "significance": "not_significant (p>0.05)",
+        "direction": "over-represented"
+      }
+    }
+  ],
+  "performance_test": {
+    "method": "Monte Carlo simulation with 1000 random 6-number tickets",
+    "test_draws": 100,
+    "with_forbidden_pairs": {
+      "mean_matches": 1.6939,
+      "std_matches": 0.1014
+    },
+    "without_forbidden_pairs": {
+      "mean_matches": 1.7178,
+      "std_matches": 0.1023
+    },
+    "improvement": 0.0239,
+    "improvement_percent": 1.41
+  },
+  "temporal_patterns": {
+    "22-57": {
+      "total_appearances": 84,
+      "first_appearance": 2,
+      "last_appearance": 1449,
+      "avg_gap": 17.433734939759034,
+      "max_gap": 71,
+      "min_gap": 1
+    },
+    "22-69": {
+      "total_appearances": 84,
+      "first_appearance": 2,
+      "last_appearance": 1433,
+      "avg_gap": 17.240963855421686,
+      "max_gap": 83,
+      "min_gap": 1
+    },
+    "13-69": {
+      "total_appearances": 86,
+      "first_appearance": 5,
+      "last_appearance": 1431,
+      "avg_gap": 16.776470588235295,
+      "max_gap": 77,
+      "min_gap": 1
+    },
+    "19-29": {
+      "total_appearances": 88,
+      "first_appearance": 1,
+      "last_appearance": 1452,
+      "avg_gap": 16.67816091954023,
+      "max_gap": 80,
+      "min_gap": 1
+    },
+    "22-60": {
+      "total_appearances": 90,
+      "first_appearance": 9,
+      "last_appearance": 1433,
+      "avg_gap": 16.0,
+      "max_gap": 93,
+      "min_gap": 1
+    },
+    "53-60": {
+      "total_appearances": 90,
+      "first_appearance": 17,
+      "last_appearance": 1455,
+      "avg_gap": 16.15730337078652,
+      "max_gap": 94,
+      "min_gap": 1
+    },
+    "1-19": {
+      "total_appearances": 91,
+      "first_appearance": 1,
+      "last_appearance": 1451,
+      "avg_gap": 16.11111111111111,
+      "max_gap": 87,
+      "min_gap": 1
+    },
+    "5-32": {
+      "total_appearances": 91,
+      "first_appearance": 0,
+      "last_appearance": 1447,
+      "avg_gap": 16.07777777777778,
+      "max_gap": 88,
+      "min_gap": 1
+    },
+    "7-29": {
+      "total_appearances": 91,
+      "first_appearance": 1,
+      "last_appearance": 1454,
+      "avg_gap": 16.144444444444446,
+      "max_gap": 61,
+      "min_gap": 1
+    },
+    "7-60": {
+      "total_appearances": 91,
+      "first_appearance": 5,
+      "last_appearance": 1434,
+      "avg_gap": 15.877777777777778,
+      "max_gap": 109,
+      "min_gap": 1
+    }
+  },
+  "statistical_summary": {
+    "anti_correlated_significant_001": 4,
+    "positively_correlated_significant_001": 18,
+    "interpretation": "WEAK EVIDENCE"
+  },
+  "conclusion": {
+    "hypothesis_supported": true,
+    "effect_size": "MEDIUM",
+    "recommendation": "VERMEIDEN: Die 50 stark anti-korrelierten Paare in Tickets meiden. Bevorzugen: Die 50 positiv korrelierten Paare als Kandidaten.",
+    "caveat": "ACHTUNG: Statistische Anti-Korrelation kann auch durch Zufall entstehen. Bei 2415 Paaren erwarten wir ca. 24 'signifikante' durch Zufall allein. Weitere Validierung mit Out-of-Sample Daten empfohlen."
+  }
+}

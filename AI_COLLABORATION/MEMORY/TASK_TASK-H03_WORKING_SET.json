@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/cluster_reset.py (NEW)",
+    "kenobase/analysis/__init__.py (UPDATED)",
+    "scripts/analyze_hyp003.py (NEW)",
+    "tests/unit/test_cluster_reset.py (NEW)"
+]

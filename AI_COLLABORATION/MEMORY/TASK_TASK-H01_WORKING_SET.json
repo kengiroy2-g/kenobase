@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/recurrence.py",
+    "tests/unit/test_recurrence.py",
+    "kenobase/core/data_loader.py",
+    "config/default.yaml"
+]

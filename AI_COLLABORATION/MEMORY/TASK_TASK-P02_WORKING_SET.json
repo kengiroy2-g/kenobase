@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/prediction/model.py (NEW - 600 lines)",
+    "kenobase/prediction/trainer.py (NEW - 400 lines)",
+    "kenobase/prediction/__init__.py (MODIFIED - exports added)",
+    "tests/unit/test_model.py (NEW - 350 lines)",
+    "config/default.yaml (MODIFIED - ml section added)"
+]

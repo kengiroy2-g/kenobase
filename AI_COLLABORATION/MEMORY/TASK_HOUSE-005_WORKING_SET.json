@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/near_miss_jackpot.py",
+    "kenobase/analysis/house_edge_synthesis.py",
+    "scripts/analyze_house005.py",
+    "results/house004_near_miss_jackpot.json",
+    "results/house005_synthesis_report.json"
+]

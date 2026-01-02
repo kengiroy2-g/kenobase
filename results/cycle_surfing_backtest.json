@@ -1,0 +1,69 @@
+{
+  "strategy_id": "STRAT-004",
+  "strategy_name": "Cycle Surfing",
+  "description": "Combines HMM regime detection with temporal cycle analysis",
+  "timestamp": "2025-12-30T07:02:58.333238",
+  "data_source": "data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+  "config": {
+    "train_split_date": "2024-06-01T00:00:00",
+    "use_weekday_filter": true,
+    "use_holiday_filter": true,
+    "holiday_window_days": 3,
+    "favorable_regimes": [
+      "UNKNOWN",
+      "GROWTH",
+      "NORMAL"
+    ],
+    "avoid_regimes": [
+      "COOLDOWN",
+      "CRISIS"
+    ]
+  },
+  "regime_detection": {
+    "train_size": 880,
+    "accuracy": 1.0,
+    "boundary_f1": 0.0,
+    "mapping": {
+      "0": "NORMAL",
+      "1": "NORMAL",
+      "2": "NORMAL",
+      "3": "NORMAL"
+    }
+  },
+  "backtest_results": {
+    "n_train": 880,
+    "n_test": 577,
+    "n_play_decisions": 536,
+    "n_avoid_decisions": 41,
+    "play_rate": 0.92894280762565,
+    "baseline_hit_rate": 0.44384748700173304,
+    "strategy_hit_rate": 0.44375,
+    "hit_rate_improvement": -9.748700173306535e-05,
+    "mann_whitney_u": 10783.0,
+    "mann_whitney_p": 0.5800759991806741,
+    "is_significant": false,
+    "regime_counts": {
+      "NORMAL": 577
+    },
+    "regime_play_counts": {
+      "NORMAL": 536
+    },
+    "weekday_play_counts": {
+      "Mon": 77,
+      "Tue": 77,
+      "Wed": 76,
+      "Thu": 76,
+      "Fri": 76,
+      "Sat": 77,
+      "Sun": 77
+    },
+    "holiday_avoided": 41
+  },
+  "verdict": "NO_IMPROVEMENT",
+  "confidence": 0.0,
+  "acceptance_criteria": {
+    "roi_improvement": false,
+    "statistical_significance": false,
+    "passed": false
+  }
+}

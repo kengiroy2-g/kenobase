@@ -1,0 +1,158 @@
+﻿AUTONOMOUS LOOP V4 - Plan-Based Execution (Token Hygiene Enabled)
+==================================================================
+TASK: House-Edge Manipulation Synthese
+TASK-ID: HOUSE-005
+PRIORITY: P1
+PHASE: PROXY_PLAN
+
+TASK DESCRIPTION (Plan excerpt, kurz):
+
+
+TASK NOTES (kurz, autoritativ):
+## [2025-12-28 21:13:06] HOUSE-005 - ARCHITECT (ki1)
+
+### Summary
+- HOUSE-005 synthesizes results from HOUSE-001 through HOUSE-004
+- Creates kenobase/analysis/house_edge_synthesis.py module
+- Aggregates 4 hypothesis results into unified HouseEdgeSynthesisReport
+- Calculates overall manipulation evidence score (0.0-1.0)
+- Output: results/house005_synthesis_report.json
+- Test: tests/unit/test_house_edge_synthesis.py
+- Script: scripts/analyze_house005.py
+
+### Handoff
+- File: C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki1_HOUSE-005_ARCHITECT_20251228_211006.md
+
+## [2025-12-28 21:15:06] HOUSE-005 - PROXY_PLAN (ki0)
+
+### Summary
+- HOUSE-005 synthesizes HOUSE-001 through HOUSE-004 results
+- CRITICAL: Missing prerequisite results - house001*.json and house004*.json not found
+- Only house002 and house003 results exist in results/ folder
+- Cannot proceed with synthesis without all 4 input files
+- Architect WORKING_SET_REQUEST mentions hyp015_jackpot_correlation.json (HYP-015) instead of HOUSE-001
+- HOUSE-001 and HOUSE-004 tasks must complete first
+- Plan is architecturally sound but blocked by missing dependencies
+
+### Handoff
+- File: C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki0_HOUSE-005_PROXY_PLAN_20251228_211306.md
+
+## [2025-12-28 21:19:06] HOUSE-005 - ARCHITECT (ki1)
+
+### Summary
+- HOUSE-005 synthesizes results from HOUSE-001/002/003/004 into unified report
+- Dependency mapping: HOUSE-001=hyp015_jackpot_correlation.json (EXISTS)
+- HOUSE-002=house002_stake_popularity.json (EXISTS)
+- HOUSE-003=house003_rolling_stability.json (EXISTS)
+- HOUSE-004=house004_near_miss_jackpot.json (MISSING - run analyze_house004.py first)
+- Creates kenobase/analysis/house_edge_synthesis.py with dataclasses
+- Output: results/house005_synthesis_report.json
+- Overall evidence score 0.0-1.0 based on weighted hypothesis results
+
+### Handoff
+- File: C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki1_HOUSE-005_ARCHITECT_20251228_211506.md
+
+
+
+MANDATORY WORKFLOW (do first, every task incl docs):
+1) Context-sync: read AI_COLLABORATION/SYSTEM_STATUS.json + relevant ADR/Docs; run git status --porcelain.
+2) Data claims must cite artifact path + filter + N + repro command (no placeholders).
+3) Zero != missing: if unclear, mark UNVERIFIED.
+4) Line refs must be verified via: 
+l -ba <file> | sed -n 'a,bp'.
+5) Deliverable must include: changes + summary + repro commands + CURRENT_STATUS update.
+6) No assumptions: verify from current repo snapshot.
+
+RULE CONFIRMATION REQUIRED:
+- Include "Rule Confirmation" block in output (CONFIRMED/UNVERIFIED).
+- State granularity + semantics + target metric before analysis.
+
+WORKING SET (nur relevante Dateien):
+- (leer)
+
+WORKING SET POLICY (enforced in ARCHITECT/PROXY/VALIDATOR):
+- Read() ausserhalb WORKING SET kann technisch geblockt sein.
+- Wenn du eine Datei ausserhalb brauchst: nutze Grep/Glob, dann fordere sie im Handoff an:
+
+WORKING_SET_REQUEST:
+- relative/path/to/file1
+- relative/path/to/file2
+(max 6)
+
+
+WORKDIR:
+- Du bist bereits im Repo-Root: C:\Users\kenfu\Documents\keno_base
+- Vermeide Set-Location/cd auf \\?\\-Pfade (Windows long-path Prefix kann Tools verwirren)
+ROLLE: PROXY (User-Stellvertreter mit Projekt-Kontext)
+AUFGABE: Pruefe den Plan vom ARCHITECT - NICHT nur mechanisch, sondern konzeptionell.
+
+PFLICHTLEKTUERE (vor Review lesen):
+1. AI_COLLABORATION/KI_PROFILES/ki0_proxy.md - Dein vollstaendiges Profil mit Known Bugs
+2. AI_COLLABORATION/SYSTEM_STATUS.json - Aktueller Projektstatus
+3. CLAUDE.md - Projektkontext (bei Architektur-Fragen)
+
+EFFIZIENZ-REGELN:
+- Arbeite mit VORHERIGER OUTPUT + TASK NOTES + Profil-Wissen
+- Maximal 3-4 gezielte Reads (Profil, Status, relevante Dateien)
+- Keine breiten Repo-Scans
+
+VORHERIGER OUTPUT (kurz, no logs):
+- HOUSE-005 synthesizes results from HOUSE-001/002/003/004 into unified report
+- Dependency mapping: HOUSE-001=hyp015_jackpot_correlation.json (EXISTS)
+- HOUSE-002=house002_stake_popularity.json (EXISTS)
+- HOUSE-003=house003_rolling_stability.json (EXISTS)
+- HOUSE-004=house004_near_miss_jackpot.json (MISSING - run analyze_house004.py first)
+- Creates kenobase/analysis/house_edge_synthesis.py with dataclasses
+- Output: results/house005_synthesis_report.json
+- Overall evidence score 0.0-1.0 based on weighted hypothesis results
+
+FULL HANDOFF (nur bei Bedarf oeffnen):
+C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki1_HOUSE-005_ARCHITECT_20251228_211506.md
+
+PRUEFKRITERIEN (4 Dimensionen):
+1. MECHANISCH: Plan vollstaendig? Schritte klar? Acceptance Criteria messbar?
+2. ARCHITEKTUR: Passt zu ADRs? Keine Widersprueche?
+3. INTEGRATION: Werden alle betroffenen Dateien genannt? (siehe Known Integration Points im Profil)
+4. KONZEPTIONELL: Globale Werte wo spezifische noetig? Known Bugs vermieden?
+
+RED FLAGS (sofort REJECTED):
+- Globale Thresholds in team-spezifischem System (BUG-001)
+- Feature ohne Orchestrator-Integration (BUG-003)
+- Cross-File Aenderung ohne alle Dateien (Known Integration Points)
+
+OUTPUT TEMPLATE (muss exakt so starten, dann ausfuellen):
+---
+status: APPROVED
+task: HOUSE-005
+role: PROXY
+phase: PROXY_PLAN
+reviewed_handoff: "<nur filename oder leer>"
+summary:
+  - <max 8 bullets>
+---
+# Rule Confirmation
+- Rule 1 (SYSTEM_STATUS + ADR/Docs + git status): CONFIRMED/UNVERIFIED
+- Rule 2 (granularity stated): <global|per-market|per-league|per-team>
+- Rule 3 (semantics defined): <fields/keys>
+- Rule 4 (target metric): <accuracy|calibration|bet-selection>
+- Rule 5 (helper-only boundaries): CONFIRMED/UNVERIFIED
+- Rule 6 (reproducibility): <command + output path> or UNVERIFIED (no placeholders)
+
+## Task Setup
+- Granularity: <global|per-market|per-league|per-team>
+- Semantics: <key fields/definitions>
+- Target metric: <accuracy|calibration|bet-selection>
+
+## Repro Commands
+- <command> -> <output path> or UNVERIFIED
+
+# Proxy Review
+
+WICHTIG: Erstelle Handoff-Datei mit Ergebnis:
+- Datei: AI_COLLABORATION/HANDOFFS/ki0_HOUSE-005_PROXY_PLAN_20251228_211906.md
+- YAML Frontmatter mit status:
+  - APPROVED: Plan ist gut, weiter zu Executor
+  - REJECTED: Bug gefunden, zurueck zu Architect
+  - ESCALATE: User-Entscheidung noetig (Architektur-Frage, Design-Wahl)
+- Bei ESCALATE: PROBLEM, OPTIONEN, EMPFEHLUNG angeben
+- Kurze Begruendung (max 8 bullets)

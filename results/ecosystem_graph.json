@@ -1,0 +1,132 @@
+{
+  "analysis": "ecosystem_graph",
+  "generated_at": "2025-12-30T05:33:11.087765",
+  "summary": {
+    "n_nodes": 6,
+    "n_edges": 1,
+    "games": [
+      "KENO",
+      "LOTTO",
+      "AUSWAHLWETTE",
+      "GLUECKSSPIRALE",
+      "EUROWETTE",
+      "EUROJACKPOT"
+    ],
+    "methods_used": [
+      "conditional_lift_number"
+    ],
+    "edges_by_method": {
+      "conditional_lift_number": 1
+    },
+    "control_nodes": [
+      "EUROJACKPOT"
+    ]
+  },
+  "graph": {
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+      "generated_at": "2025-12-30T05:33:11.086702",
+      "source_file": "results\\cross_lottery_coupling.json",
+      "q_threshold": 0.05,
+      "lift_threshold": 1.1,
+      "config": {
+        "keno": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+        "lotto": "data/raw/lotto/LOTTO_ab_2022_bereinigt.csv",
+        "auswahlwette": "data/raw/auswahlwette/AW_ab_2022_bereinigt.csv",
+        "gluecksspirale": "data/raw/gluecksspirale/GS_ab_2022_bereinigt.csv",
+        "eurowette": "data/raw/eurowette/EW_ab_2022_bereinigt.csv",
+        "eurojackpot": "data/raw/eurojackpot/EJ_ab_2022_bereinigt.csv",
+        "lags": [
+          0,
+          1,
+          2,
+          7
+        ],
+        "min_support": 30,
+        "min_support_pos": 20,
+        "alpha_fdr": 0.05,
+        "top_k_pairs": 200
+      }
+    },
+    "nodes": [
+      {
+        "id": "KENO",
+        "name": "KENO",
+        "draws": 1457,
+        "start_date": "2022-01-03",
+        "end_date": "2025-12-29",
+        "pool_max": 70,
+        "draw_size": 20,
+        "is_control": false
+      },
+      {
+        "id": "LOTTO",
+        "name": "LOTTO",
+        "draws": 416,
+        "start_date": "2022-01-05",
+        "end_date": "2025-12-27",
+        "pool_max": 49,
+        "draw_size": 6,
+        "is_control": false
+      },
+      {
+        "id": "AUSWAHLWETTE",
+        "name": "AUSWAHLWETTE",
+        "draws": 207,
+        "start_date": "2022-01-08",
+        "end_date": "2025-12-20",
+        "pool_max": 49,
+        "draw_size": 6,
+        "is_control": false
+      },
+      {
+        "id": "GLUECKSSPIRALE",
+        "name": "GLUECKSSPIRALE",
+        "draws": 208,
+        "start_date": "2022-01-08",
+        "end_date": "2025-12-27",
+        "pool_max": 9,
+        "draw_size": 7,
+        "is_control": false
+      },
+      {
+        "id": "EUROWETTE",
+        "name": "EUROWETTE",
+        "draws": 208,
+        "start_date": "2022-01-08",
+        "end_date": "2025-12-27",
+        "pool_max": 2,
+        "draw_size": 13,
+        "is_control": false
+      },
+      {
+        "id": "EUROJACKPOT",
+        "name": "EUROJACKPOT",
+        "draws": 404,
+        "start_date": "2022-01-07",
+        "end_date": "2025-12-26",
+        "pool_max": 50,
+        "draw_size": 5,
+        "is_control": true
+      }
+    ],
+    "links": [
+      {
+        "source": "KENO",
+        "target": "AUSWAHLWETTE",
+        "lag_days": 7,
+        "method": "conditional_lift_number",
+        "statistic": 2.41249186727391,
+        "q_value": 0.026521062409981047,
+        "weight": 2.41249186727391,
+        "trigger": "11",
+        "trigger_kind": "number",
+        "target_number": 25,
+        "support": 53,
+        "base_rate": 0.1407766990291262,
+        "conditional_rate": 0.33962264150943394
+      }
+    ]
+  }
+}

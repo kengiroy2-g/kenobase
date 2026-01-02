@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/popularity_correlation.py",
+    "scripts/analyze_popularity_proxy.py",
+    "tests/unit/test_popularity_correlation.py",
+    "results/popularity_proxy.json"
+]

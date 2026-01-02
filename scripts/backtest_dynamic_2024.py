@@ -45,18 +45,7 @@ from dynamic_recommendation import (
     check_jackpot_warning
 )
 
-# KENO Gewinnquoten
-KENO_QUOTES = {
-    2: {2: 6, 1: 0, 0: 0},
-    3: {3: 16, 2: 1, 1: 0, 0: 0},
-    4: {4: 22, 3: 2, 2: 1, 1: 0, 0: 0},
-    5: {5: 100, 4: 7, 3: 2, 2: 0, 1: 0, 0: 0},
-    6: {6: 500, 5: 15, 4: 5, 3: 1, 2: 0, 1: 0, 0: 0},
-    7: {7: 1000, 6: 100, 5: 12, 4: 4, 3: 1, 2: 0, 1: 0, 0: 0},
-    8: {8: 10000, 7: 1000, 6: 100, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    9: {9: 50000, 8: 5000, 7: 500, 6: 50, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    10: {10: 100000, 9: 10000, 8: 1000, 7: 100, 6: 15, 5: 5, 4: 0, 3: 0, 2: 0, 1: 0, 0: 2}
-}
+from kenobase.core.keno_quotes import get_fixed_quote
 
 
 def load_keno_data(path: str) -> pd.DataFrame:
@@ -74,8 +63,7 @@ def load_keno_data(path: str) -> pd.DataFrame:
 def simulate_ticket(ticket: List[int], keno_type: int, draw_set: set) -> Tuple[int, int]:
     """Simuliert ein Ticket und gibt (Gewinn, Treffer) zurueck."""
     hits = sum(1 for n in ticket if n in draw_set)
-    win = KENO_QUOTES.get(keno_type, {}).get(hits, 0)
-    return win, hits
+    return int(get_fixed_quote(keno_type, hits)), hits
 
 
 def backtest_month(

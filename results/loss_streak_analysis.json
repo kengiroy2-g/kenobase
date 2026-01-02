@@ -1,0 +1,146 @@
+{
+  "analysis": "loss_streak_analysis",
+  "generated_at": "2025-12-30T22:41:45.565776",
+  "draws_path": "data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+  "n_draws": 1457,
+  "keno_types": [
+    2,
+    6,
+    8,
+    10
+  ],
+  "per_type_metrics": [
+    {
+      "keno_type": 2,
+      "n_draws": 1457,
+      "ticket": [
+        9,
+        50
+      ],
+      "total_losses": 1316,
+      "max_loss_streak": 59,
+      "mean_loss_streak": 10.97,
+      "loss_streak_count": 120,
+      "max_drawdown_pct": 0.0,
+      "max_drawdown_draws": 0,
+      "mean_recovery_draws": 0.0,
+      "max_recovery_draws": 0,
+      "win_rate": 0.0968
+    },
+    {
+      "keno_type": 6,
+      "n_draws": 1457,
+      "ticket": [
+        3,
+        24,
+        40,
+        49,
+        51,
+        64
+      ],
+      "total_losses": 942,
+      "max_loss_streak": 23,
+      "mean_loss_streak": 2.86,
+      "loss_streak_count": 329,
+      "max_drawdown_pct": 0.0,
+      "max_drawdown_draws": 0,
+      "mean_recovery_draws": 0.0,
+      "max_recovery_draws": 0,
+      "win_rate": 0.3535
+    },
+    {
+      "keno_type": 8,
+      "n_draws": 1457,
+      "ticket": [
+        2,
+        3,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "total_losses": 742,
+      "max_loss_streak": 8,
+      "mean_loss_streak": 1.98,
+      "loss_streak_count": 374,
+      "max_drawdown_pct": 0.0,
+      "max_drawdown_draws": 0,
+      "mean_recovery_draws": 0.0,
+      "max_recovery_draws": 0,
+      "win_rate": 0.4907
+    },
+    {
+      "keno_type": 10,
+      "n_draws": 1457,
+      "ticket": [
+        2,
+        3,
+        9,
+        24,
+        33,
+        36,
+        49,
+        50,
+        51,
+        64
+      ],
+      "total_losses": 519,
+      "max_loss_streak": 10,
+      "mean_loss_streak": 1.57,
+      "loss_streak_count": 331,
+      "max_drawdown_pct": 0.0,
+      "max_drawdown_draws": 0,
+      "mean_recovery_draws": 0.0,
+      "max_recovery_draws": 0,
+      "win_rate": 0.6438
+    }
+  ],
+  "null_model_comparison": [
+    {
+      "keno_type": 2,
+      "observed_max_loss_streak": 59,
+      "null_mean_max_loss_streak": 62.23,
+      "null_std_max_loss_streak": 14.3,
+      "null_percentile_95": 86.2,
+      "z_score": -0.23,
+      "is_within_null": true,
+      "conclusion": "max_loss_streak=59 within null 95th pct (86.2)"
+    },
+    {
+      "keno_type": 6,
+      "observed_max_loss_streak": 23,
+      "null_mean_max_loss_streak": 16.19,
+      "null_std_max_loss_streak": 3.22,
+      "null_percentile_95": 23.0,
+      "z_score": 2.11,
+      "is_within_null": true,
+      "conclusion": "max_loss_streak=23 within null 95th pct (23.0)"
+    },
+    {
+      "keno_type": 8,
+      "observed_max_loss_streak": 8,
+      "null_mean_max_loss_streak": 10.68,
+      "null_std_max_loss_streak": 1.82,
+      "null_percentile_95": 14.0,
+      "z_score": -1.48,
+      "is_within_null": true,
+      "conclusion": "max_loss_streak=8 within null 95th pct (14.0)"
+    },
+    {
+      "keno_type": 10,
+      "observed_max_loss_streak": 10,
+      "null_mean_max_loss_streak": 7.4,
+      "null_std_max_loss_streak": 1.44,
+      "null_percentile_95": 10.05,
+      "z_score": 1.81,
+      "is_within_null": true,
+      "conclusion": "max_loss_streak=10 within null 95th pct (10.0)"
+    }
+  ],
+  "axiom_notes": {
+    "A1_house_edge": "max_drawdown_pct reflects cumulative house edge impact",
+    "A7_reset_cycles": "mean_recovery_draws indicates system reset behavior after loss streaks"
+  }
+}

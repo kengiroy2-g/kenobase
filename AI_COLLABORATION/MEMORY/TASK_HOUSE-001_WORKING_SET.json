@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "config/default.yaml",
+    "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+    "data/raw/keno/KENO_ab_2018.csv",
+    "kenobase/analysis/jackpot_correlation.py",
+    "tests/unit/test_jackpot_correlation.py",
+    "scripts/analyze_hyp015_jackpot.py",
+    "results/hyp015_jackpot_correlation.json"
+]

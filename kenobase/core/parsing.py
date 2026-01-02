@@ -19,6 +19,34 @@ from typing import Any
 
 _THOUSAND_GROUPS_DOT = re.compile(r"^\d{1,3}(?:\.\d{3})+$")
 _TWO_DECIMALS_DOT = re.compile(r"^\d+\.\d{2}$")
+_NUMERIC_CHARS = re.compile(r"[^0-9,\.\-]+")
+
+
+def _sanitize_numeric_text(text: str) -> str:
+    """Normalize scraped/locale numeric strings to a parseable representation.
+
+    This helper removes common non-numeric artefacts (currency symbols, labels,
+    encoding glitches like ``ÿ?``) while preserving digits, `,`, `.`, and `-`.
+    """
+    cleaned = text.replace("\u00a0", "").strip()
+    if not cleaned:
+        return ""
+
+    # Common currency/labels that appear in scraped lottery exports.
+    cleaned = (
+        cleaned.replace("€", "")
+        .replace("EUR", "")
+        .replace("eur", "")
+        .replace("Gewinnquote", "")
+        .replace("Quote", "")
+    )
+
+    # Some sources leak placeholder characters for the euro symbol.
+    cleaned = cleaned.replace("ÿ?", "").replace("?", "")
+
+    # Keep only numeric/sign/separator chars.
+    cleaned = _NUMERIC_CHARS.sub("", cleaned)
+    return cleaned.strip()
 
 
 def parse_float_mixed_german(value: Any, *, default: float = 0.0) -> float:
@@ -35,7 +63,7 @@ def parse_float_mixed_german(value: Any, *, default: float = 0.0) -> float:
             return default
         return float(value)
 
-    text = str(value).strip().replace("\u00a0", "")
+    text = _sanitize_numeric_text(str(value))
     if not text:
         return default
 
@@ -79,7 +107,7 @@ def parse_int_mixed_german(value: Any, *, default: int = 0) -> int:
             return default
         return int(round(value))
 
-    text = str(value).strip().replace("\u00a0", "")
+    text = _sanitize_numeric_text(str(value))
     if not text:
         return default
 
@@ -110,4 +138,3 @@ __all__ = [
     "parse_float_mixed_german",
     "parse_int_mixed_german",
 ]
-

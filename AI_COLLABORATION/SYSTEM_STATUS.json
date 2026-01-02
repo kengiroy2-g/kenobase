@@ -1,0 +1,90 @@
+{
+  "stand": "2025-12-29",
+  "version": "2.2.2",
+  "version_notes": "Quoten-Fix, ROI korrigiert; Paar-basierte Tickets zeigen Gewinnfrequenz, aber keinen Profit wegen korrigierter Quoten.",
+  "pair_based_tickets": [
+    {
+      "keno_typ": "Typ-2",
+      "portfolio_roi": -43.21,
+      "best_ticket": [9, 50],
+      "best_ticket_roi": -43.21,
+      "winning_months": "72/74"
+    },
+    {
+      "keno_typ": "Typ-6",
+      "portfolio_roi": -56.42,
+      "best_ticket": [3, 24, 40, 49, 51, 64],
+      "best_ticket_roi": -56.42,
+      "winning_months": "74/74"
+    },
+    {
+      "keno_typ": "Typ-8",
+      "portfolio_roi": -66.66,
+      "best_ticket": [2, 3, 20, 24, 36, 49, 51, 64],
+      "best_ticket_roi": -66.66,
+      "winning_months": "74/74"
+    },
+    {
+      "keno_typ": "Typ-10",
+      "portfolio_roi": -56.99,
+      "best_ticket": [2, 3, 9, 24, 33, 36, 49, 50, 51, 64],
+      "best_ticket_roi": -56.99,
+      "winning_months": "74/74"
+    }
+  ],
+  "bestaetigte_hypothesen": [
+    {"id": "WL-001", "hypothese": "Paar-Garantie pro GK", "evidence": "30/30 Paare >90%", "datum": "2025-12-29"},
+    {"id": "WL-005", "hypothese": "Paar-Gewinn-Frequenz", "evidence": "100% >=2x/Monat", "datum": "2025-12-29"},
+    {"id": "WL-006", "hypothese": "Jackpot-Einzigartigkeit", "evidence": "90.9% Uniqueness>=0.5", "datum": "2025-12-29"},
+    {"id": "WL-007", "hypothese": "GK-spezifische Paare", "evidence": "GK_9_9: 4.07x Lift", "datum": "2025-12-29"},
+    {"id": "HOUSE-004", "hypothese": "Near-Miss Constraint", "evidence": "70x Switch", "datum": "2025-12-29"},
+    {"id": "HYP-001", "hypothese": "Gewinnverteilungs-Optimierung", "evidence": "CV=9.09%", "datum": "2025-12-28"},
+    {"id": "HYP-004", "hypothese": "Birthday-Analyse", "evidence": "r=0.39", "datum": "2025-12-28"},
+    {"id": "HYP-006", "hypothese": "Wiederkehrende Gewinnzahlen", "evidence": "100% Recurrence", "datum": "2025-12-28"},
+    {"id": "HYP-010", "hypothese": "Gewinnquoten-Korrelation", "evidence": "1.3x Winner-Ratio", "datum": "2025-12-28"},
+    {"id": "HYP-011", "hypothese": "Zeitliche Zyklen", "evidence": "Feiertags-Effekt", "datum": "2025-12-28"},
+    {"id": "HYP-013", "hypothese": "Multi-Einsatz Strategie", "evidence": "Leipzig-Fall", "datum": "2025-12-28"}
+  ],
+  "recommended_ticket": {
+    "keno_typ": "Typ-10",
+    "numbers": [2, 3, 9, 24, 33, 36, 49, 50, 51, 64],
+    "note": "ROI-bestes Typ-10 Ticket im Pair-Backtest, 100% Monate mit Gewinn (kein Profit)."
+  },
+  "axiome": [
+    {"id": "A1", "axiom": "System hat House-Edge", "begruendung": "50% Redistribution gesetzlich garantiert"},
+    {"id": "A2", "axiom": "Spieler nutzen Dauerscheine", "begruendung": "Bundesland-basierte Spielermuster"},
+    {"id": "A3", "axiom": "Spiel muss attraktiv bleiben", "begruendung": "Kleine Gewinne regelmaessig noetig"},
+    {"id": "A4", "axiom": "Zahlenpaare sichern kleine Gewinne", "begruendung": "Niedrigste GK wird priorisiert"},
+    {"id": "A5", "axiom": "20 Zahlen pseudo-zufaellig", "begruendung": "Jede Zahl muss in Periode erscheinen"},
+    {"id": "A6", "axiom": "Gewinne bundeslandweit verteilt", "begruendung": "Pro Ziehung, pro Bundesland"},
+    {"id": "A7", "axiom": "Reset-Zyklen existieren", "begruendung": "Bis Jackpot oder Monatsende"}
+  ],
+  "top_paare": {
+    "global_cooccurrence_gt_210": [
+      [9, 50],
+      [20, 36],
+      [9, 10],
+      [32, 64],
+      [33, 49],
+      [33, 50],
+      [24, 40],
+      [2, 3]
+    ],
+    "jackpot_indicator": {"pair": [3, 9], "lift": 3.28},
+    "typ2_garantie_gt_93pct": [
+      {"pair": [21, 42], "guarantee_pct": 93.2, "wins_per_month": 2.72},
+      {"pair": [21, 68], "guarantee_pct": 93.2},
+      {"pair": [26, 42], "guarantee_pct": 93.2}
+    ]
+  },
+  "offene_hypothesen": [
+    {"id": "WL-002", "hypothese": "Bundesland-Verteilung", "prioritaet": "HOCH"},
+    {"id": "WL-003", "hypothese": "Reset-Zyklus Erkennung", "prioritaet": "HOCH"},
+    {"id": "WL-004", "hypothese": "Dauerschein-Muster", "prioritaet": "MITTEL"}
+  ],
+  "naechste_schritte": [
+    "Walk-Forward Backtest - Out-of-Sample Validation (gegen Overfitting)",
+    "WL-003: Reset-Zyklus Erkennung - Pre-GK1 Muster finden",
+    "Cross-Game Analyse - KENO-Lotto-EuroJackpot Korrelationen"
+  ]
+}

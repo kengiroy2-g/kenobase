@@ -1,0 +1,105 @@
+{
+  "timestamp": "2025-12-31T17:34:00.835997",
+  "strategy": "Combined Constraint Strategy",
+  "constraints": {
+    "no_consecutive_triplets": true,
+    "min_spread": 55,
+    "min_balance": 0.88,
+    "min_decades": 5,
+    "max_forbidden_pairs": 1
+  },
+  "backtest_results": {
+    "total_draws": 729,
+    "total_stake": 729,
+    "total_win": 355,
+    "netto": -374,
+    "roi": -51.30315500685872,
+    "avg_hits": 2.5294924554183815,
+    "expected_hits": 2.5714285714285716,
+    "lift": 0.9836915104404816,
+    "hit_distribution": {
+      "0": 34,
+      "1": 137,
+      "2": 200,
+      "3": 188,
+      "4": 122,
+      "5": 35,
+      "6": 11,
+      "7": 2
+    },
+    "constraint_stats": {
+      "avg_spread": 59.70919067215363,
+      "avg_balance": 0.8958455418381345,
+      "avg_decades": 6.396433470507545,
+      "avg_forbidden_pairs": 0.07407407407407407,
+      "avg_favored_pairs": 2.0973936899862826,
+      "triplet_violations": 0
+    }
+  },
+  "comparison": {
+    "baseline": {
+      "avg_hits": 2.5541838134430725,
+      "lift": 0.9932937052278614
+    },
+    "combined": {
+      "avg_hits": 2.626886145404664,
+      "lift": 1.021566834324036
+    },
+    "improvement": 0.07270233196159159
+  },
+  "next_ticket": {
+    "numbers": [
+      4,
+      6,
+      16,
+      20,
+      27,
+      42,
+      47,
+      50,
+      61
+    ],
+    "hot_zone": [
+      48,
+      39,
+      17,
+      50,
+      58,
+      32,
+      27,
+      56,
+      46,
+      45,
+      14,
+      33,
+      9,
+      47,
+      42,
+      20,
+      11,
+      16,
+      6,
+      53,
+      54,
+      23,
+      35,
+      4,
+      66,
+      12,
+      61,
+      15,
+      30,
+      41,
+      8,
+      24,
+      57,
+      69,
+      3
+    ]
+  },
+  "think_tank_sources": [
+    "results/think_tank_nearmiss.json",
+    "results/think_tank_consecutive.json",
+    "results/think_tank_entropy.json"
+  ]
+}

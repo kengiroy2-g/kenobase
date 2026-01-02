@@ -1,0 +1,8 @@
+﻿[
+    "scripts/analyze_weekday_roi.py",
+    "scripts/backtest_birthday_cooldown.py",
+    "results/weekday_roi_analysis.json",
+    "kenobase/core/keno_quotes.py",
+    "scripts/compare_v1_v2_weekday.py",
+    "results/v1_v2_weekday_comparison.json"
+]

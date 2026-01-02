@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/temporal_cycles.py (NEW)",
+    "scripts/analyze_hyp011.py (NEW)",
+    "kenobase/analysis/__init__.py (UPDATED)",
+    "tests/unit/test_temporal_cycles.py (NEW)",
+    "results/hyp011_temporal_cycles.json (NEW)"
+]

@@ -60,6 +60,23 @@ from kenobase.prediction.explainability import (
     HAS_SHAP,
     validate_shap_native_correlation,
 )
+from kenobase.prediction.state_aware import (
+    StateAwarePredictor,
+    StateAwarePrediction,
+    StateAwareReport,
+    DEFAULT_STATE_ALPHAS,
+)
+from kenobase.prediction.win_class_calculator import (
+    GK_LABELS_BY_TYPE,
+    WinClassResult,
+    TicketEvaluation,
+    get_gewinnklasse,
+    calculate_hits,
+    evaluate_ticket_single_draw,
+    evaluate_ticket_parallel,
+    evaluate_v1_v2_parallel,
+    format_evaluation_summary,
+)
 
 __all__ = [
     # Synthesizer
@@ -94,4 +111,19 @@ __all__ = [
     "SHAPExplanation",
     "HAS_SHAP",
     "validate_shap_native_correlation",
+    # State-Aware (TASK_004)
+    "StateAwarePredictor",
+    "StateAwarePrediction",
+    "StateAwareReport",
+    "DEFAULT_STATE_ALPHAS",
+    # Win Class Calculator (TASK_005)
+    "GK_LABELS_BY_TYPE",
+    "WinClassResult",
+    "TicketEvaluation",
+    "get_gewinnklasse",
+    "calculate_hits",
+    "evaluate_ticket_single_draw",
+    "evaluate_ticket_parallel",
+    "evaluate_v1_v2_parallel",
+    "format_evaluation_summary",
 ]

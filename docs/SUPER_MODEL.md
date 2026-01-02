@@ -2,21 +2,24 @@
 
 **Erstellt:** 2025-12-29
 **Paradigma:** Multi-KI Synthese (3 parallele KI-Analysen)
-**Status:** BEST MODEL FOUND
+**Status:** HISTORISCH / DEPRECATED (ROI-Claims nicht mehr gueltig)
+
+**WICHTIG (Quoten/ROI):**
+- Single Source of Truth fuer KENO-Auszahlungen ist `kenobase/core/keno_quotes.py`.
+- Diese V1.0 Datei enthaelt ROI-Zahlen aus einer frueheren Phase (teilweise falsche/inkonsistente Quoten-Tabelle).
+- Aktuelle, reproduzierbare Ergebnisse stehen in `results/` (z.B. `results/super_model_test_2025.json` und `results/super_model_comparison_summary.md`).
 
 ---
 
 ## Executive Summary
 
-Das Super-Modell kombiniert die Erkenntnisse von **3 parallel arbeitenden KIs** und erreicht einen ROI von **+467.4%** (Typ 9), eine Verbesserung von +33% gegenueber dem besten Einzel-KI-Modell.
+Das Super-Modell kombiniert die Erkenntnisse von **3 parallel arbeitenden KIs**. Die konkrete ROI-Performance ist *nicht* aus dieser Datei zu entnehmen; nutze dafuer die aktuellen Backtest-Artefakte unter `results/`.
 
 | Metrik | Wert |
 |--------|------|
-| **ROI (Typ 9)** | **+467.4%** |
-| **ROI (Typ 10)** | +256.9% |
-| **ROI (Typ 8)** | +144.5% |
 | Getestete Kombinationen | 256 |
 | Beste Komponenten | 3 von 8 |
+| Backtests (aktuell) | `results/super_model_test_2025.json` |
 
 ---
 
@@ -30,7 +33,7 @@ Das Super-Modell kombiniert die Erkenntnisse von **3 parallel arbeitenden KIs** 
 - Position-Exclusion Regeln (100% Accuracy)
 - Korrelierte Absenzen
 
-**Beste Einzelkomponente:** Jackpot-Warning (+466.6% ROI)
+**Beste Einzelkomponente (historisch):** Jackpot-Warning
 
 ### KI #2: Position Rule Layer
 
@@ -215,26 +218,10 @@ else:
 
 ## Strategische Empfehlungen
 
-### Wann SPIELEN:
+### Anwendung (Hinweis)
 
-1. Mehr als 30 Tage seit letztem GK10_10 Jackpot
-2. Typ 9 mit optimalem Ticket
-3. Exclusion-Regeln beachten
-
-### Wann NICHT SPIELEN:
-
-1. Innerhalb 30 Tage nach GK10_10 Jackpot
-2. EGAL welche anderen Bedingungen!
-
-### Kapital-Empfehlung:
-
-```
-Bei 1 EUR Einsatz pro Tag:
-  - Tage gespielt: ~1581 (ueber 6 Jahre)
-  - Einsatz: 1581 EUR
-  - Gewinn: 8970 EUR
-  - Netto: +7389 EUR
-```
+Dieses Dokument ist historisch und enthaelt keine gueltige Spiel-/Kapital-Empfehlung.
+Nutze die aktuellen Backtests unter `results/` und die Quoten aus `kenobase/core/keno_quotes.py`.
 
 ---
 

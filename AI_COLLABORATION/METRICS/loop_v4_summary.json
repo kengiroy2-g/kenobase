@@ -1,0 +1,32 @@
+﻿{
+    "prompt_chars_total":  3384,
+    "phases_failed":  0,
+    "end_time":  "2026-01-01T14:56:13.9298928+01:00",
+    "backend_switches":  0,
+    "phases_completed":  0,
+    "duration_sec_total":  3069,
+    "phases_approved":  0,
+    "phases_started":  1,
+    "plan_file":  "AI_COLLABORATION/PLANS/cycles_exhaustive_analysis_plan_v3.yaml",
+    "output_chars_total":  0,
+    "default_backend":  "claude",
+    "phases_blocked":  0,
+    "plan_name":  "",
+    "backend_map":  {
+                        "ki2":  "claude",
+                        "ki3":  "claude",
+                        "ki0":  "claude",
+                        "ki1":  "claude"
+                    },
+    "codex_model":  "gpt-5.1-codex-max",
+    "team":  "alpha",
+    "prompt_tokens_est_total":  846,
+    "rate_limit_events":  0,
+    "output_tokens_est_total":  0,
+    "files_changed_total":  0,
+    "run_id":  "loop_v4_20260101_140504_332404",
+    "summary_items_total":  0,
+    "start_time":  "2026-01-01T14:05:04.8764395+01:00",
+    "auto_compact_events":  0,
+    "claude_path":  "C:\\Users\\kenfu\\.local\\bin\\claude.exe"
+}

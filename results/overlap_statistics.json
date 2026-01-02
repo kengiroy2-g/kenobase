@@ -1,0 +1,153 @@
+{
+  "expected_overlap": 5.714285714285714,
+  "expected_birthday_ratio": 0.44285714285714284,
+  "n_tests": 15,
+  "bonferroni_alpha": 0.05,
+  "global_distribution": {
+    "histogram": {
+      "0": 2,
+      "1": 4,
+      "2": 36,
+      "3": 87,
+      "4": 219,
+      "5": 303,
+      "6": 323,
+      "7": 263,
+      "8": 140,
+      "9": 59,
+      "10": 18,
+      "11": 3
+    },
+    "mean": 5.745367192862045,
+    "std": 1.7250042260960772,
+    "median": 6.0,
+    "n": 1457,
+    "z_score": 0.6877669192093601,
+    "p_value": 0.4915995712153709
+  },
+  "by_phase": {
+    "PRE_JACKPOT": {
+      "n": 116,
+      "n_with_overlap": 116,
+      "overlap": {
+        "mean": 5.836206896551724,
+        "std": 1.8127277812720537,
+        "z_score": 0.7243952089953766,
+        "p_value": 0.4688231403392793,
+        "significant_corrected": false
+      },
+      "birthday_ratio": {
+        "mean": 0.45807676518883417,
+        "std": 0.20831020775596962,
+        "z_score": 0.7869050244001186,
+        "p_value": 0.4313374660670577,
+        "significant_corrected": false
+      }
+    },
+    "POST_JACKPOT": {
+      "n": 87,
+      "n_with_overlap": 87,
+      "overlap": {
+        "mean": 5.666666666666667,
+        "std": 1.7432038578211329,
+        "z_score": -0.2547957344731373,
+        "p_value": 0.7988808699661076,
+        "significant_corrected": false
+      },
+      "birthday_ratio": {
+        "mean": 0.4621237000547346,
+        "std": 0.21936653707739598,
+        "z_score": 0.8192064497355467,
+        "p_value": 0.4126686356961806,
+        "significant_corrected": false
+      }
+    },
+    "COOLDOWN": {
+      "n": 121,
+      "n_with_overlap": 121,
+      "overlap": {
+        "mean": 5.793388429752066,
+        "std": 1.8116169360173837,
+        "z_score": 0.4803056611088778,
+        "p_value": 0.6310100640453733,
+        "significant_corrected": false
+      },
+      "birthday_ratio": {
+        "mean": 0.45098863487293234,
+        "std": 0.23084371186251296,
+        "z_score": 0.38747606097651655,
+        "p_value": 0.6984038040596612,
+        "significant_corrected": false
+      }
+    },
+    "NORMAL": {
+      "n": 1133,
+      "n_with_overlap": 1131,
+      "overlap": {
+        "mean": 5.736981465136805,
+        "std": 1.7067783376366619,
+        "z_score": 0.44759207460207173,
+        "p_value": 0.6544476239634935,
+        "significant_corrected": false
+      },
+      "birthday_ratio": {
+        "mean": 0.43528294821398267,
+        "std": 0.20056934183503572,
+        "z_score": -1.269998519277744,
+        "p_value": 0.20408515759477086,
+        "significant_corrected": false
+      }
+    }
+  },
+  "kruskal_wallis_overlap": {
+    "statistic": 0.8230886707767749,
+    "p_value": 0.8439369291825904,
+    "significant_raw": "False",
+    "significant_corrected": false
+  },
+  "kruskal_wallis_birthday": {
+    "statistic": 2.2607375596888697,
+    "p_value": 0.5200842470048954,
+    "significant_raw": "False",
+    "significant_corrected": false
+  },
+  "mann_whitney_tests": [
+    {
+      "comparison": "POST_JACKPOT vs NORMAL",
+      "metric": "overlap_count",
+      "u_statistic": 47616.5,
+      "p_value": 0.5925142826191863,
+      "significant_corrected": false
+    },
+    {
+      "comparison": "COOLDOWN vs NORMAL",
+      "metric": "overlap_count",
+      "u_statistic": 70162.0,
+      "p_value": 0.6648705025871333,
+      "significant_corrected": false
+    },
+    {
+      "comparison": "PRE_JACKPOT vs NORMAL",
+      "metric": "overlap_count",
+      "u_statistic": 67744.5,
+      "p_value": 0.5773544230128311,
+      "significant_corrected": false
+    },
+    {
+      "comparison": "POST_JACKPOT vs COOLDOWN",
+      "metric": "overlap_count",
+      "u_statistic": 4967.0,
+      "p_value": 0.4828242395033955,
+      "significant_corrected": false
+    }
+  ],
+  "bonferroni_corrected_alpha": 0.0033333333333333335,
+  "significant_after_bonferroni": [],
+  "summary": {
+    "observed_mean_overlap": 5.745367192862045,
+    "expected_mean_overlap": 5.714285714285714,
+    "overlap_bias": 0.031081478576330923,
+    "any_significant": false,
+    "conclusion": "KEINE SIGNIFIKANTEN ABWEICHUNGEN"
+  }
+}

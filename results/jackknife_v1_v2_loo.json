@@ -1,0 +1,47 @@
+{
+  "analysis_date": "2025-12-31T02:21:05.991280",
+  "method": "jackknife_leave_one_out",
+  "input_file": "C:\\Users\\kenfu\\Documents\\keno_base\\results\\v1_v2_cycle_comparison.json",
+  "n_cycles": 68,
+  "per_type": {
+    "typ_8": {
+      "mean_delta": 5.6724,
+      "jackknife_se": 9.0168,
+      "ci_95_lower": -12.0006,
+      "ci_95_upper": 23.3453,
+      "significant_at_005": false,
+      "n_loo_samples": 68
+    },
+    "typ_9": {
+      "mean_delta": 3.4669,
+      "jackknife_se": 3.9111,
+      "ci_95_lower": -4.1989,
+      "ci_95_upper": 11.1327,
+      "significant_at_005": false,
+      "n_loo_samples": 68
+    },
+    "typ_10": {
+      "mean_delta": 3.6763,
+      "jackknife_se": 10.1714,
+      "ci_95_lower": -16.2596,
+      "ci_95_upper": 23.6122,
+      "significant_at_005": false,
+      "n_loo_samples": 68
+    }
+  },
+  "combined": {
+    "mean_delta": 4.2719,
+    "jackknife_se": 4.6919,
+    "ci_95_lower": -4.9244,
+    "ci_95_upper": 13.4681,
+    "significant_at_005": false,
+    "n_loo_samples": 204
+  },
+  "interpretation": "V2 zeigt positive Delta (+4.27%), aber NICHT signifikant bei alpha=0.05. 95% CI umfasst 0 -> Differenz kann Zufall sein.",
+  "robustness_check": {
+    "all_types_positive_delta": true,
+    "all_types_negative_delta": false,
+    "any_type_significant": false,
+    "consistency": "CONSISTENT"
+  }
+}

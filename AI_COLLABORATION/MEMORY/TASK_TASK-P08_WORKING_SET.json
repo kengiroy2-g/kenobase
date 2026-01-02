@@ -1,0 +1,4 @@
+﻿[
+    "kenobase/core/config.py",
+    "kenobase/pipeline/runner.py"
+]

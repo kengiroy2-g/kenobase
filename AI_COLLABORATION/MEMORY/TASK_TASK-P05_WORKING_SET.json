@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/core/config.py",
+    "kenobase/core/combination_filter.py",
+    "kenobase/pipeline/runner.py",
+    "tests/unit/test_combination_filter.py"
+]

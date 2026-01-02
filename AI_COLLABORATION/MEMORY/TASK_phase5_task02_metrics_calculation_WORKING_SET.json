@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/pipeline/validation_metrics.py (NEW)",
+    "kenobase/pipeline/__init__.py (MODIFIED)",
+    "scripts/backtest.py (MODIFIED)",
+    "tests/unit/test_validation_metrics.py (NEW)"
+]

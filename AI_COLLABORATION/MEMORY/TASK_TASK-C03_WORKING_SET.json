@@ -1,0 +1,4 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "tests/unit/test_gk1_loader.py"
+]

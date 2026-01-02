@@ -1,0 +1,118 @@
+{
+  "analysis": "cross_game_rule_layer_train_test_backtest",
+  "generated_at": "2025-12-30T06:06:17.077619",
+  "split": {
+    "train_end": "2023-12-31",
+    "test_start": "2024-01-01",
+    "test_end": "2025-12-29",
+    "train_counts": {
+      "KENO": 728,
+      "LOTTO": 208,
+      "AUSWAHLWETTE": 104,
+      "EUROJACKPOT": 196,
+      "EUROWETTE": 104,
+      "GLUECKSSPIRALE": 104
+    },
+    "test_counts": {
+      "KENO_predictions": 729
+    }
+  },
+  "mining": {
+    "selection": "significant",
+    "alpha_fdr": 0.05,
+    "lags": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "min_support": 30,
+    "min_support_pos": 20,
+    "top_n": 50,
+    "only_exclusion": false,
+    "rules_mined": 0,
+    "rules": []
+  },
+  "backtest": {
+    "analysis": "cross_game_rule_layer_backtest",
+    "generated_at": "2025-12-30T06:06:17.077384",
+    "draws": {
+      "keno_count": 1457,
+      "keno_start": "2022-01-03",
+      "keno_end": "2025-12-29"
+    },
+    "config": {
+      "keno_types": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "start_index": 728,
+      "recent_draws": 365,
+      "recent_weight": 0.6,
+      "hard_exclude": true,
+      "include_multiplier": 1.25,
+      "max_exclusions_per_draw": null,
+      "max_inclusions_per_draw": null
+    },
+    "rules": {
+      "count": 0,
+      "by_rule": {}
+    },
+    "rule_accuracy": {
+      "exclusion": {
+        "trials": 0,
+        "correct": 0,
+        "accuracy": 0.0,
+        "baseline": 0.7142857142857143,
+        "lift": -0.7142857142857143
+      },
+      "inclusion": {
+        "trials": 0,
+        "correct": 0,
+        "accuracy": 0.0,
+        "baseline": 0.2857142857142857,
+        "lift": -0.2857142857142857
+      }
+    },
+    "by_type": {
+      "typ_6": {
+        "keno_type": 6,
+        "n_predictions": 729,
+        "mean_hits_baseline": 1.6927297668038408,
+        "mean_hits_with_rules": 1.6927297668038408,
+        "delta_mean_hits": 0.0
+      },
+      "typ_7": {
+        "keno_type": 7,
+        "n_predictions": 729,
+        "mean_hits_baseline": 1.9753086419753085,
+        "mean_hits_with_rules": 1.9753086419753085,
+        "delta_mean_hits": 0.0
+      },
+      "typ_8": {
+        "keno_type": 8,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.270233196159122,
+        "mean_hits_with_rules": 2.270233196159122,
+        "delta_mean_hits": 0.0
+      },
+      "typ_9": {
+        "keno_type": 9,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.5555555555555554,
+        "mean_hits_with_rules": 2.5555555555555554,
+        "delta_mean_hits": 0.0
+      },
+      "typ_10": {
+        "keno_type": 10,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.8559670781893005,
+        "mean_hits_with_rules": 2.8559670781893005,
+        "delta_mean_hits": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/popularity_correlation.py (NEW)",
+    "kenobase/analysis/__init__.py (MODIFIED)",
+    "scripts/analyze_hyp004.py (NEW)",
+    "tests/unit/test_popularity_correlation.py (NEW)",
+    "data/results/hyp004_correlation.json (GENERATED)"
+]

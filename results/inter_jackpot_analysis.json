@@ -1,0 +1,106 @@
+{
+  "analysis_date": "2025-12-31",
+  "periods_analyzed": 15,
+  "avg_wait_days": 20.125,
+  "quartile_progression": {
+    "Q1_avg": 2.710526315789474,
+    "Q4_avg": 2.851063829787234,
+    "trend": "STEIGEND"
+  },
+  "pre_jackpot_signals": {
+    "pct_with_5plus": 20.0,
+    "pct_with_6plus": 6.666666666666667
+  },
+  "indicators": [
+    {
+      "start": "2025-01-16",
+      "end": "2025-01-29",
+      "avg_last_5": 2.6,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-02-02",
+      "end": "2025-02-16",
+      "avg_last_5": 2.2,
+      "max_last_5": 3
+    },
+    {
+      "start": "2025-02-16",
+      "end": "2025-03-09",
+      "avg_last_5": 3.0,
+      "max_last_5": 5
+    },
+    {
+      "start": "2025-03-09",
+      "end": "2025-03-19",
+      "avg_last_5": 1.6,
+      "max_last_5": 3
+    },
+    {
+      "start": "2025-03-19",
+      "end": "2025-03-27",
+      "avg_last_5": 3.2,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-03-27",
+      "end": "2025-04-24",
+      "avg_last_5": 2.4,
+      "max_last_5": 3
+    },
+    {
+      "start": "2025-04-24",
+      "end": "2025-05-28",
+      "avg_last_5": 2.8,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-05-28",
+      "end": "2025-06-18",
+      "avg_last_5": 4.0,
+      "max_last_5": 6
+    },
+    {
+      "start": "2025-06-18",
+      "end": "2025-06-30",
+      "avg_last_5": 3.4,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-06-30",
+      "end": "2025-07-15",
+      "avg_last_5": 2.4,
+      "max_last_5": 3
+    },
+    {
+      "start": "2025-07-15",
+      "end": "2025-07-27",
+      "avg_last_5": 2.2,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-07-27",
+      "end": "2025-08-07",
+      "avg_last_5": 3.2,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-08-07",
+      "end": "2025-09-27",
+      "avg_last_5": 2.0,
+      "max_last_5": 3
+    },
+    {
+      "start": "2025-09-27",
+      "end": "2025-10-25",
+      "avg_last_5": 3.6,
+      "max_last_5": 4
+    },
+    {
+      "start": "2025-10-25",
+      "end": "2025-12-04",
+      "avg_last_5": 2.6,
+      "max_last_5": 5
+    }
+  ]
+}

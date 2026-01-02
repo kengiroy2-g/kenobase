@@ -1,0 +1,696 @@
+{
+  "analysis": "position_rule_layer_nextday_backtest",
+  "generated_at": "2025-12-30T13:59:50.976733",
+  "draws": {
+    "count": 1457,
+    "start_date": "2022-01-03",
+    "end_date": "2025-12-29"
+  },
+  "config": {
+    "keno_types": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "start_index": 1094,
+    "recent_draws": 365,
+    "recent_weight": 0.6,
+    "rule_window": 2000,
+    "rule_min_support": 20,
+    "exclude_max": 3,
+    "include_max": 5,
+    "exclude_lb": 0.78,
+    "include_lb": 0.33,
+    "hard_exclude": true,
+    "hard_exclude_lb": 0.95,
+    "exclude_weight": 1.5,
+    "include_weight": 1.0,
+    "z": 1.959963984540054
+  },
+  "rule_accuracy": {
+    "exclusion": {
+      "trials": 571,
+      "correct": 406,
+      "accuracy": 0.7110332749562172,
+      "baseline": 0.7142857142857143,
+      "lift": -0.0032524393294971476
+    },
+    "inclusion": {
+      "trials": 1565,
+      "correct": 425,
+      "accuracy": 0.2715654952076677,
+      "baseline": 0.2857142857142857,
+      "lift": -0.014148790506617992
+    }
+  },
+  "by_type": {
+    "typ_6": {
+      "baseline": {
+        "model": "weighted_frequency_nextday",
+        "keno_type": 6,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 1.6104972375690607,
+        "expected_mean_hits": 1.7142857142857144,
+        "mean_hits_z": -1.852935903002414,
+        "mean_hits_p_value": 0.0638915463125071,
+        "near_miss_hits": 5,
+        "near_miss_count": 2,
+        "expected_near_miss_count": 2.1402607775093174,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 6,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.10701303887546587,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          49,
+          12,
+          46,
+          45,
+          55,
+          48
+        ],
+        "hit_distribution": {
+          "keno_type": 6,
+          "observed_counts": {
+            "0": 57,
+            "1": 111,
+            "2": 130,
+            "3": 46,
+            "4": 16,
+            "5": 2,
+            "6": 0
+          },
+          "expected_counts": {
+            "0": 43.8728611160569,
+            "1": 116.99429630948507,
+            "2": 120.80932771088132,
+            "3": 61.6898694693862,
+            "4": 16.38637157780571,
+            "5": 2.1402607775093174,
+            "6": 0.10701303887546587
+          },
+          "chi2_statistic": 8.946088448191123,
+          "chi2_p_value": 0.062461230197598194,
+          "bins_used": 5,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "with_rules": {
+        "model": "weighted_frequency_nextday+position_rules",
+        "keno_type": 6,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 1.6077348066298343,
+        "expected_mean_hits": 1.7142857142857144,
+        "mean_hits_z": -1.9022535886336556,
+        "mean_hits_p_value": 0.05713801002708211,
+        "near_miss_hits": 5,
+        "near_miss_count": 1,
+        "expected_near_miss_count": 2.1402607775093174,
+        "near_miss_p_value": 0.7298589683997907,
+        "jackpot_hits": 6,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.10701303887546587,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          9,
+          33,
+          67,
+          37,
+          30,
+          49
+        ],
+        "hit_distribution": {
+          "keno_type": 6,
+          "observed_counts": {
+            "0": 46,
+            "1": 132,
+            "2": 117,
+            "3": 53,
+            "4": 13,
+            "5": 1,
+            "6": 0
+          },
+          "expected_counts": {
+            "0": 43.8728611160569,
+            "1": 116.99429630948507,
+            "2": 120.80932771088132,
+            "3": 61.6898694693862,
+            "4": 16.38637157780571,
+            "5": 2.1402607775093174,
+            "6": 0.10701303887546587
+          },
+          "chi2_statistic": 4.524221584170157,
+          "chi2_p_value": 0.33968508064168484,
+          "bins_used": 5,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "delta": {
+        "mean_hits": -0.0027624309392264568,
+        "near_miss_count": -1,
+        "jackpot_count": 0
+      }
+    },
+    "typ_7": {
+      "baseline": {
+        "model": "weighted_frequency_nextday",
+        "keno_type": 7,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 1.9033149171270718,
+        "expected_mean_hits": 2.0,
+        "mean_hits_z": -1.6107088678871304,
+        "mean_hits_p_value": 0.10724319196688503,
+        "near_miss_hits": 6,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.585227556350204,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 7,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.02340910225400816,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          49,
+          12,
+          46,
+          45,
+          55,
+          48,
+          8
+        ],
+        "hit_distribution": {
+          "keno_type": 7,
+          "observed_counts": {
+            "0": 41,
+            "1": 93,
+            "2": 131,
+            "3": 63,
+            "4": 25,
+            "5": 9,
+            "6": 0,
+            "7": 0
+          },
+          "expected_counts": {
+            "0": 30.162592017289118,
+            "1": 95.97188369137447,
+            "2": 121.56438600907434,
+            "3": 79.28112131026587,
+            "4": 28.676150261159997,
+            "5": 5.735230052231999,
+            "6": 0.585227556350204,
+            "7": 0.02340910225400816
+          },
+          "chi2_statistic": 9.64513138983921,
+          "chi2_p_value": 0.08593786649120895,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "with_rules": {
+        "model": "weighted_frequency_nextday+position_rules",
+        "keno_type": 7,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 1.8895027624309393,
+        "expected_mean_hits": 2.0,
+        "mean_hits_z": -1.8408101347281474,
+        "mean_hits_p_value": 0.06564938711893066,
+        "near_miss_hits": 6,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.585227556350204,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 7,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.02340910225400816,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          9,
+          33,
+          67,
+          37,
+          30,
+          49,
+          36
+        ],
+        "hit_distribution": {
+          "keno_type": 7,
+          "observed_counts": {
+            "0": 24,
+            "1": 110,
+            "2": 137,
+            "3": 69,
+            "4": 17,
+            "5": 5,
+            "6": 0,
+            "7": 0
+          },
+          "expected_counts": {
+            "0": 30.162592017289118,
+            "1": 95.97188369137447,
+            "2": 121.56438600907434,
+            "3": 79.28112131026587,
+            "4": 28.676150261159997,
+            "5": 5.735230052231999,
+            "6": 0.585227556350204,
+            "7": 0.02340910225400816
+          },
+          "chi2_statistic": 11.641645344530744,
+          "chi2_p_value": 0.04004205620881055,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "delta": {
+        "mean_hits": -0.013812154696132506,
+        "near_miss_count": 0,
+        "jackpot_count": 0
+      }
+    },
+    "typ_8": {
+      "baseline": {
+        "model": "weighted_frequency_nextday",
+        "keno_type": 8,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.218232044198895,
+        "expected_mean_hits": 2.2857142857142856,
+        "mean_hits_z": -1.060048003086133,
+        "mean_hits_p_value": 0.28912276139470616,
+        "near_miss_hits": 7,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.14862922066036927,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 8,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.004830449671462001,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          49,
+          12,
+          46,
+          45,
+          55,
+          48,
+          8,
+          9
+        ],
+        "hit_distribution": {
+          "keno_type": 8,
+          "observed_counts": {
+            "0": 29,
+            "1": 62,
+            "2": 134,
+            "3": 91,
+            "4": 34,
+            "5": 8,
+            "6": 4,
+            "7": 0,
+            "8": 0
+          },
+          "expected_counts": {
+            "0": 20.58716598005448,
+            "1": 76.60340829787712,
+            "2": 115.77560572292793,
+            "3": 92.62048457834234,
+            "4": 42.786636897603806,
+            "5": 11.65253089977295,
+            "6": 1.8207079530895236,
+            "7": 0.14862922066036927,
+            "8": 0.004830449671462001
+          },
+          "chi2_statistic": 11.117487427819079,
+          "chi2_p_value": 0.04909967655354018,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "with_rules": {
+        "model": "weighted_frequency_nextday+position_rules",
+        "keno_type": 8,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.1408839779005526,
+        "expected_mean_hits": 2.2857142857142856,
+        "mean_hits_z": -2.2750737844012385,
+        "mean_hits_p_value": 0.022901503994572404,
+        "near_miss_hits": 7,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.14862922066036927,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 8,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.004830449671462001,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          9,
+          33,
+          67,
+          37,
+          30,
+          49,
+          36,
+          12
+        ],
+        "hit_distribution": {
+          "keno_type": 8,
+          "observed_counts": {
+            "0": 19,
+            "1": 82,
+            "2": 133,
+            "3": 91,
+            "4": 32,
+            "5": 4,
+            "6": 1,
+            "7": 0,
+            "8": 0
+          },
+          "expected_counts": {
+            "0": 20.58716598005448,
+            "1": 76.60340829787712,
+            "2": 115.77560572292793,
+            "3": 92.62048457834234,
+            "4": 42.786636897603806,
+            "5": 11.65253089977295,
+            "6": 1.8207079530895236,
+            "7": 0.14862922066036927,
+            "8": 0.004830449671462001
+          },
+          "chi2_statistic": 11.274112168137815,
+          "chi2_p_value": 0.04620800488007582,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "delta": {
+        "mean_hits": -0.07734806629834257,
+        "near_miss_count": 0,
+        "jackpot_count": 0
+      }
+    },
+    "typ_9": {
+      "baseline": {
+        "model": "weighted_frequency_nextday",
+        "keno_type": 9,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.5082872928176796,
+        "expected_mean_hits": 2.571428571428571,
+        "mean_hits_z": -0.9427663447977798,
+        "mean_hits_p_value": 0.3458004297504079,
+        "near_miss_hits": 8,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.03505971535738549,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 9,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.0009349257428636132,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          49,
+          12,
+          46,
+          45,
+          55,
+          48,
+          8,
+          9,
+          58
+        ],
+        "hit_distribution": {
+          "keno_type": 9,
+          "observed_counts": {
+            "0": 21,
+            "1": 53,
+            "2": 111,
+            "3": 103,
+            "4": 52,
+            "5": 17,
+            "6": 4,
+            "7": 1,
+            "8": 0,
+            "9": 0
+          },
+          "expected_counts": {
+            "0": 13.946144696165938,
+            "1": 59.76919155499687,
+            "2": 105.6385711204596,
+            "3": 100.83681788771143,
+            "4": 57.140863469703135,
+            "5": 19.8750829459837,
+            "6": 4.228741052336958,
+            "7": 0.5285926315421198,
+            "8": 0.03505971535738549,
+            "9": 0.0009349257428636132
+          },
+          "chi2_statistic": 5.404106678915691,
+          "chi2_p_value": 0.3685755315111808,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "with_rules": {
+        "model": "weighted_frequency_nextday+position_rules",
+        "keno_type": 9,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.411602209944751,
+        "expected_mean_hits": 2.571428571428571,
+        "mean_hits_z": -2.38637731026939,
+        "mean_hits_p_value": 0.017015283799571016,
+        "near_miss_hits": 8,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.03505971535738549,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 9,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.0009349257428636132,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          9,
+          33,
+          67,
+          37,
+          30,
+          49,
+          36,
+          12,
+          46
+        ],
+        "hit_distribution": {
+          "keno_type": 9,
+          "observed_counts": {
+            "0": 13,
+            "1": 66,
+            "2": 116,
+            "3": 109,
+            "4": 44,
+            "5": 12,
+            "6": 2,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "expected_counts": {
+            "0": 13.946144696165938,
+            "1": 59.76919155499687,
+            "2": 105.6385711204596,
+            "3": 100.83681788771143,
+            "4": 57.140863469703135,
+            "5": 19.8750829459837,
+            "6": 4.228741052336958,
+            "7": 0.5285926315421198,
+            "8": 0.03505971535738549,
+            "9": 0.0009349257428636132
+          },
+          "chi2_statistic": 10.02671143853063,
+          "chi2_p_value": 0.07448191768050628,
+          "bins_used": 6,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "delta": {
+        "mean_hits": -0.09668508287292843,
+        "near_miss_count": 0,
+        "jackpot_count": 0
+      }
+    },
+    "typ_10": {
+      "baseline": {
+        "model": "weighted_frequency_nextday",
+        "keno_type": 10,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.798342541436464,
+        "expected_mean_hits": 2.8571428571428568,
+        "mean_hits_z": -0.8398097324634459,
+        "mean_hits_p_value": 0.40101507569836636,
+        "near_miss_hits": 9,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.007663325761177156,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 10,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.00016859316674589745,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          49,
+          12,
+          46,
+          45,
+          55,
+          48,
+          8,
+          9,
+          58,
+          33
+        ],
+        "hit_distribution": {
+          "keno_type": 10,
+          "observed_counts": {
+            "0": 15,
+            "1": 43,
+            "2": 101,
+            "3": 89,
+            "4": 82,
+            "5": 22,
+            "6": 8,
+            "7": 1,
+            "8": 1,
+            "9": 0,
+            "10": 0
+          },
+          "expected_counts": {
+            "0": 9.373638238406613,
+            "1": 45.72506457759324,
+            "2": 93.0831671758148,
+            "3": 103.90679126602582,
+            "4": 70.25516000373337,
+            "5": 29.975534934926237,
+            "6": 8.145525797534305,
+            "7": 1.3864724761760516,
+            "8": 0.14081361086163025,
+            "9": 0.007663325761177156,
+            "10": 0.00016859316674589745
+          },
+          "chi2_statistic": 10.447443954173687,
+          "chi2_p_value": 0.10703023519127727,
+          "bins_used": 7,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "with_rules": {
+        "model": "weighted_frequency_nextday+position_rules",
+        "keno_type": 10,
+        "n_predictions": 362,
+        "start_index": 1094,
+        "recent_draws": 365,
+        "recent_weight": 0.6,
+        "mean_hits": 2.7430939226519335,
+        "expected_mean_hits": 2.8571428571428568,
+        "mean_hits_z": -1.628892702563333,
+        "mean_hits_p_value": 0.10333573519505333,
+        "near_miss_hits": 9,
+        "near_miss_count": 0,
+        "expected_near_miss_count": 0.007663325761177156,
+        "near_miss_p_value": 1.0,
+        "jackpot_hits": 10,
+        "jackpot_count": 0,
+        "expected_jackpot_count": 0.00016859316674589745,
+        "jackpot_p_value": 1.0,
+        "last_ticket": [
+          9,
+          33,
+          67,
+          37,
+          30,
+          49,
+          36,
+          12,
+          46,
+          45
+        ],
+        "hit_distribution": {
+          "keno_type": 10,
+          "observed_counts": {
+            "0": 9,
+            "1": 43,
+            "2": 101,
+            "3": 113,
+            "4": 75,
+            "5": 17,
+            "6": 4,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "expected_counts": {
+            "0": 9.373638238406613,
+            "1": 45.72506457759324,
+            "2": 93.0831671758148,
+            "3": 103.90679126602582,
+            "4": 70.25516000373337,
+            "5": 29.975534934926237,
+            "6": 8.145525797534305,
+            "7": 1.3864724761760516,
+            "8": 0.14081361086163025,
+            "9": 0.007663325761177156,
+            "10": 0.00016859316674589745
+          },
+          "chi2_statistic": 10.917020039416965,
+          "chi2_p_value": 0.09097513464368534,
+          "bins_used": 7,
+          "note": "chi-square vs exact hypergeometric null (merged bins)"
+        }
+      },
+      "delta": {
+        "mean_hits": -0.05524861878453047,
+        "near_miss_count": 0,
+        "jackpot_count": 0
+      }
+    }
+  },
+  "top_rules": {
+    "min_trials": 25,
+    "top_exclusion": [],
+    "top_inclusion": [
+      {
+        "trigger_number": 6,
+        "trigger_position": 16,
+        "kind": "include",
+        "predicted_numbers": [
+          23,
+          1,
+          5,
+          33,
+          59
+        ],
+        "trials": 33,
+        "correct": 13,
+        "accuracy": 0.3939393939393939
+      }
+    ]
+  }
+}

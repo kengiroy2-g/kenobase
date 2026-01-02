@@ -1,0 +1,80 @@
+{
+  "Kyritz": {
+    "V1 (Original 5)": {
+      "kandidaten": 17376,
+      "reduktion": 90.6,
+      "gewinner_gefunden": true,
+      "gewinner_position": 8419
+    },
+    "V2 (+Keine Endziffer 1)": {
+      "kandidaten": 4632,
+      "reduktion": 97.49,
+      "gewinner_gefunden": true,
+      "gewinner_position": 1182
+    },
+    "V3 (+Digitale Wurzel 3/9)": {
+      "kandidaten": 4326,
+      "reduktion": 97.66,
+      "gewinner_gefunden": true,
+      "gewinner_position": 1119
+    },
+    "V4 (+Ziffer 5)": {
+      "kandidaten": 3066,
+      "reduktion": 98.34,
+      "gewinner_gefunden": true,
+      "gewinner_position": 964
+    }
+  },
+  "Oberbayern": {
+    "V1 (Original 5)": {
+      "kandidaten": 19846,
+      "reduktion": 89.26,
+      "gewinner_gefunden": true,
+      "gewinner_position": 11257
+    },
+    "V2 (+Keine Endziffer 1)": {
+      "kandidaten": 3266,
+      "reduktion": 98.23,
+      "gewinner_gefunden": true,
+      "gewinner_position": 1438
+    },
+    "V3 (+Digitale Wurzel 3/9)": {
+      "kandidaten": 2873,
+      "reduktion": 98.44,
+      "gewinner_gefunden": true,
+      "gewinner_position": 1247
+    },
+    "V4 (+Ziffer 5)": {
+      "kandidaten": 2836,
+      "reduktion": 98.47,
+      "gewinner_gefunden": true,
+      "gewinner_position": 1229
+    }
+  },
+  "Nordsachsen": {
+    "V1 (Original 5)": {
+      "kandidaten": 26645,
+      "reduktion": 85.58,
+      "gewinner_gefunden": true,
+      "gewinner_position": 22168
+    },
+    "V2 (+Keine Endziffer 1)": {
+      "kandidaten": 5698,
+      "reduktion": 96.92,
+      "gewinner_gefunden": true,
+      "gewinner_position": 3832
+    },
+    "V3 (+Digitale Wurzel 3/9)": {
+      "kandidaten": 5488,
+      "reduktion": 97.03,
+      "gewinner_gefunden": true,
+      "gewinner_position": 3666
+    },
+    "V4 (+Ziffer 5)": {
+      "kandidaten": 5300,
+      "reduktion": 97.13,
+      "gewinner_gefunden": true,
+      "gewinner_position": 3506
+    }
+  }
+}

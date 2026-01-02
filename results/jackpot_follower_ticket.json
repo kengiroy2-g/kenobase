@@ -1,0 +1,55 @@
+{
+  "generated_after_jackpot": "2025-12-04",
+  "jackpot_numbers": [
+    7,
+    9,
+    12,
+    13,
+    14,
+    16,
+    26,
+    32,
+    39,
+    43,
+    44,
+    46,
+    48,
+    51,
+    54,
+    55,
+    56,
+    59,
+    66,
+    69
+  ],
+  "recommended_ticket": [
+    1,
+    2,
+    4,
+    12,
+    34,
+    43,
+    49,
+    54,
+    55
+  ],
+  "persistent_numbers": [
+    12,
+    43,
+    54,
+    55
+  ],
+  "fresh_numbers": [
+    1,
+    2,
+    4,
+    34,
+    49
+  ],
+  "backtest_results": {
+    "transitions": 16,
+    "total_wins": 1074.0,
+    "roi_percent": 6612.5,
+    "avg_hits": 5.3125
+  }
+}

@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/core/number_pool.py",
+    "kenobase/core/__init__.py",
+    "tests/unit/test_number_pool.py"
+]

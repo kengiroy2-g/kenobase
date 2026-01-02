@@ -1,0 +1,8 @@
+﻿[
+    "scripts/analyze_high_win_forensik.py",
+    "kenobase/core/keno_quotes.py",
+    "kenobase/core/data_loader.py",
+    "data/raw/keno/KENO_ab_2018.csv",
+    "scripts/backtest_typ8_analysis.py (NEW)",
+    "results/typ8_forensik.json (NEW)"
+]

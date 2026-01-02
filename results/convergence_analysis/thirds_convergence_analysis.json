@@ -1,0 +1,70 @@
+{
+  "analysis_date": "2025-12-31T14:01:00.244812",
+  "total_draws": 1457,
+  "total_jackpots": 17,
+  "static_ranges": {
+    "LOW": {
+      "size": 23,
+      "avg_hits": 6.176470588235294,
+      "pct_12plus": 0.0
+    },
+    "MID": {
+      "size": 23,
+      "avg_hits": 6.9411764705882355,
+      "pct_12plus": 5.88235294117647
+    },
+    "HIGH": {
+      "size": 24,
+      "avg_hits": 6.882352941176471,
+      "pct_12plus": 5.88235294117647
+    },
+    "LOWER_HALF": {
+      "size": 35,
+      "avg_hits": 9.588235294117647,
+      "pct_12plus": 23.52941176470588
+    },
+    "UPPER_HALF": {
+      "size": 35,
+      "avg_hits": 10.411764705882353,
+      "pct_12plus": 29.411764705882355
+    },
+    "BIRTHDAY": {
+      "size": 31,
+      "avg_hits": 8.647058823529411,
+      "pct_12plus": 11.76470588235294
+    },
+    "NON_BIRTHDAY": {
+      "size": 39,
+      "avg_hits": 11.352941176470589,
+      "pct_12plus": 52.94117647058824
+    }
+  },
+  "hottest_third_accuracy": 41.17647058823529,
+  "optimal_range_size": 35,
+  "convergence_results": {
+    "TOP_30_HOT": {
+      "avg_days": 3.95,
+      "min_days": 3,
+      "max_days": 5,
+      "std_days": 0.6689544080129826
+    },
+    "NON_BIRTHDAY": {
+      "avg_days": 3.95,
+      "min_days": 3,
+      "max_days": 5,
+      "std_days": 0.5894913061275798
+    },
+    "UPPER_HALF": {
+      "avg_days": 3.8,
+      "min_days": 2,
+      "max_days": 5,
+      "std_days": 0.6
+    },
+    "HIGH_THIRD": {
+      "avg_days": 3.55,
+      "min_days": 2,
+      "max_days": 6,
+      "std_days": 0.8645808232895292
+    }
+  }
+}

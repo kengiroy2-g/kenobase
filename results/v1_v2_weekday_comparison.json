@@ -1,0 +1,888 @@
+{
+  "task": "TASK_039b",
+  "analysis": "V1 vs V2 Weekday Comparison",
+  "data": {
+    "n_draws": 1457,
+    "date_range": {
+      "start": "2022-01-03",
+      "end": "2025-12-29"
+    }
+  },
+  "v1_tickets": {
+    "6": [
+      3,
+      9,
+      10,
+      32,
+      49,
+      64
+    ],
+    "7": [
+      3,
+      24,
+      30,
+      49,
+      51,
+      59,
+      64
+    ],
+    "8": [
+      3,
+      20,
+      24,
+      27,
+      36,
+      49,
+      51,
+      64
+    ],
+    "9": [
+      3,
+      9,
+      10,
+      20,
+      24,
+      36,
+      49,
+      51,
+      64
+    ],
+    "10": [
+      2,
+      3,
+      9,
+      10,
+      20,
+      24,
+      36,
+      49,
+      51,
+      64
+    ]
+  },
+  "v2_tickets": {
+    "6": [
+      3,
+      36,
+      51,
+      58,
+      61,
+      64
+    ],
+    "7": [
+      3,
+      36,
+      43,
+      51,
+      58,
+      61,
+      64
+    ],
+    "8": [
+      3,
+      36,
+      43,
+      48,
+      51,
+      58,
+      61,
+      64
+    ],
+    "9": [
+      3,
+      7,
+      36,
+      43,
+      48,
+      51,
+      58,
+      61,
+      64
+    ],
+    "10": [
+      3,
+      7,
+      13,
+      36,
+      43,
+      48,
+      51,
+      58,
+      61,
+      64
+    ]
+  },
+  "weekday_labels": [
+    "Mo",
+    "Di",
+    "Mi",
+    "Do",
+    "Fr",
+    "Sa",
+    "So"
+  ],
+  "by_type": {
+    "typ_6": {
+      "v1_ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "v2_ticket": [
+        3,
+        36,
+        51,
+        58,
+        61,
+        64
+      ],
+      "weekday_roi": {
+        "Mo": {
+          "v1": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 98.0,
+            "roi_pct": -53.11
+          },
+          "v2": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 63.0,
+            "roi_pct": -69.86
+          },
+          "diff_pct": -16.75
+        },
+        "Di": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 568.0,
+            "roi_pct": 173.08
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 610.0,
+            "roi_pct": 193.27
+          },
+          "diff_pct": 20.19
+        },
+        "Mi": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 75.0,
+            "roi_pct": -63.94
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 63.0,
+            "roi_pct": -69.71
+          },
+          "diff_pct": -5.77
+        },
+        "Do": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 87.0,
+            "roi_pct": -58.17
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 79.0,
+            "roi_pct": -62.02
+          },
+          "diff_pct": -3.85
+        },
+        "Fr": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 67.0,
+            "roi_pct": -67.79
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 80.0,
+            "roi_pct": -61.54
+          },
+          "diff_pct": 6.25
+        },
+        "Sa": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 572.0,
+            "roi_pct": 175.0
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 71.0,
+            "roi_pct": -65.87
+          },
+          "diff_pct": -240.87
+        },
+        "So": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 50.0,
+            "roi_pct": -75.96
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 75.0,
+            "roi_pct": -63.94
+          },
+          "diff_pct": 12.02
+        }
+      },
+      "summary": {
+        "avg_diff_pct": -32.68,
+        "std_diff_pct": 85.74,
+        "best_day_for_v2": "Di",
+        "best_diff_pct": 20.19,
+        "worst_day_for_v2": "Sa",
+        "worst_diff_pct": -240.87,
+        "v2_better_days": 3,
+        "v1_better_days": 4
+      }
+    },
+    "typ_7": {
+      "v1_ticket": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "v2_ticket": [
+        3,
+        36,
+        43,
+        51,
+        58,
+        61,
+        64
+      ],
+      "weekday_roi": {
+        "Mo": {
+          "v1": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 174.0,
+            "roi_pct": -16.75
+          },
+          "v2": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 94.0,
+            "roi_pct": -55.02
+          },
+          "diff_pct": -38.27
+        },
+        "Di": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 241.0,
+            "roi_pct": 15.87
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 216.0,
+            "roi_pct": 3.85
+          },
+          "diff_pct": -12.02
+        },
+        "Mi": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 132.0,
+            "roi_pct": -36.54
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 163.0,
+            "roi_pct": -21.63
+          },
+          "diff_pct": 14.91
+        },
+        "Do": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 109.0,
+            "roi_pct": -47.6
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 114.0,
+            "roi_pct": -45.19
+          },
+          "diff_pct": 2.41
+        },
+        "Fr": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 97.0,
+            "roi_pct": -53.37
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 214.0,
+            "roi_pct": 2.88
+          },
+          "diff_pct": 56.25
+        },
+        "Sa": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 87.0,
+            "roi_pct": -58.17
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 204.0,
+            "roi_pct": -1.92
+          },
+          "diff_pct": 56.25
+        },
+        "So": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 77.0,
+            "roi_pct": -62.98
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 104.0,
+            "roi_pct": -50.0
+          },
+          "diff_pct": 12.98
+        }
+      },
+      "summary": {
+        "avg_diff_pct": 13.22,
+        "std_diff_pct": 31.87,
+        "best_day_for_v2": "Fr",
+        "best_diff_pct": 56.25,
+        "worst_day_for_v2": "Mo",
+        "worst_diff_pct": -38.27,
+        "v2_better_days": 5,
+        "v1_better_days": 2
+      }
+    },
+    "typ_8": {
+      "v1_ticket": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "v2_ticket": [
+        3,
+        36,
+        43,
+        48,
+        51,
+        58,
+        61,
+        64
+      ],
+      "weekday_roi": {
+        "Mo": {
+          "v1": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 46.0,
+            "roi_pct": -77.99
+          },
+          "v2": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 52.0,
+            "roi_pct": -75.12
+          },
+          "diff_pct": 2.87
+        },
+        "Di": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 88.0,
+            "roi_pct": -57.69
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 155.0,
+            "roi_pct": -25.48
+          },
+          "diff_pct": 32.21
+        },
+        "Mi": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 55.0,
+            "roi_pct": -73.56
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 67.0,
+            "roi_pct": -67.79
+          },
+          "diff_pct": 5.77
+        },
+        "Do": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 59.0,
+            "roi_pct": -71.63
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 75.0,
+            "roi_pct": -63.94
+          },
+          "diff_pct": 7.69
+        },
+        "Fr": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 55.0,
+            "roi_pct": -73.56
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 82.0,
+            "roi_pct": -60.58
+          },
+          "diff_pct": 12.98
+        },
+        "Sa": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 75.0,
+            "roi_pct": -63.94
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 79.0,
+            "roi_pct": -62.02
+          },
+          "diff_pct": 1.92
+        },
+        "So": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 86.0,
+            "roi_pct": -58.65
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 81.0,
+            "roi_pct": -61.06
+          },
+          "diff_pct": -2.41
+        }
+      },
+      "summary": {
+        "avg_diff_pct": 8.72,
+        "std_diff_pct": 10.58,
+        "best_day_for_v2": "Di",
+        "best_diff_pct": 32.21,
+        "worst_day_for_v2": "So",
+        "worst_diff_pct": -2.41,
+        "v2_better_days": 6,
+        "v1_better_days": 1
+      }
+    },
+    "typ_9": {
+      "v1_ticket": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "v2_ticket": [
+        3,
+        7,
+        36,
+        43,
+        48,
+        51,
+        58,
+        61,
+        64
+      ],
+      "weekday_roi": {
+        "Mo": {
+          "v1": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 90.0,
+            "roi_pct": -56.94
+          },
+          "v2": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 69.0,
+            "roi_pct": -66.99
+          },
+          "diff_pct": -10.05
+        },
+        "Di": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 137.0,
+            "roi_pct": -34.13
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 1088.0,
+            "roi_pct": 423.08
+          },
+          "diff_pct": 457.21
+        },
+        "Mi": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 96.0,
+            "roi_pct": -53.85
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 83.0,
+            "roi_pct": -60.1
+          },
+          "diff_pct": -6.25
+        },
+        "Do": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 132.0,
+            "roi_pct": -36.54
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 82.0,
+            "roi_pct": -60.58
+          },
+          "diff_pct": -24.04
+        },
+        "Fr": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 87.0,
+            "roi_pct": -58.17
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 83.0,
+            "roi_pct": -60.1
+          },
+          "diff_pct": -1.93
+        },
+        "Sa": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 76.0,
+            "roi_pct": -63.46
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 105.0,
+            "roi_pct": -49.52
+          },
+          "diff_pct": 13.94
+        },
+        "So": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 81.0,
+            "roi_pct": -61.06
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 101.0,
+            "roi_pct": -51.44
+          },
+          "diff_pct": 9.62
+        }
+      },
+      "summary": {
+        "avg_diff_pct": 62.64,
+        "std_diff_pct": 161.5,
+        "best_day_for_v2": "Di",
+        "best_diff_pct": 457.21,
+        "worst_day_for_v2": "Do",
+        "worst_diff_pct": -24.04,
+        "v2_better_days": 3,
+        "v1_better_days": 4
+      }
+    },
+    "typ_10": {
+      "v1_ticket": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "v2_ticket": [
+        3,
+        7,
+        13,
+        36,
+        43,
+        48,
+        51,
+        58,
+        61,
+        64
+      ],
+      "weekday_roi": {
+        "Mo": {
+          "v1": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 76.0,
+            "roi_pct": -63.64
+          },
+          "v2": {
+            "n": 209,
+            "invested": 209,
+            "winnings": 57.0,
+            "roi_pct": -72.73
+          },
+          "diff_pct": -9.09
+        },
+        "Di": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 206.0,
+            "roi_pct": -0.96
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 191.0,
+            "roi_pct": -8.17
+          },
+          "diff_pct": -7.21
+        },
+        "Mi": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 105.0,
+            "roi_pct": -49.52
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 94.0,
+            "roi_pct": -54.81
+          },
+          "diff_pct": -5.29
+        },
+        "Do": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 202.0,
+            "roi_pct": -2.88
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 71.0,
+            "roi_pct": -65.87
+          },
+          "diff_pct": -62.99
+        },
+        "Fr": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 81.0,
+            "roi_pct": -61.06
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 78.0,
+            "roi_pct": -62.5
+          },
+          "diff_pct": -1.44
+        },
+        "Sa": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 65.0,
+            "roi_pct": -68.75
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 94.0,
+            "roi_pct": -54.81
+          },
+          "diff_pct": 13.94
+        },
+        "So": {
+          "v1": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 66.0,
+            "roi_pct": -68.27
+          },
+          "v2": {
+            "n": 208,
+            "invested": 208,
+            "winnings": 81.0,
+            "roi_pct": -61.06
+          },
+          "diff_pct": 7.21
+        }
+      },
+      "summary": {
+        "avg_diff_pct": -9.27,
+        "std_diff_pct": 23.23,
+        "best_day_for_v2": "Sa",
+        "best_diff_pct": 13.94,
+        "worst_day_for_v2": "Do",
+        "worst_diff_pct": -62.99,
+        "v2_better_days": 2,
+        "v1_better_days": 5
+      }
+    }
+  },
+  "aggregated": {
+    "overall_avg_diff_pct": 8.53,
+    "overall_std_diff_pct": 31.51,
+    "v2_better_types": 3,
+    "v1_better_types": 2,
+    "significant_tests_bh": 0,
+    "total_types": 5
+  },
+  "nullmodell_tests": {
+    "typ_6": {
+      "p_value_spread": 0.826,
+      "p_value_mean_diff": 0.719,
+      "observed_spread": 261.06,
+      "observed_mean_diff": -32.68,
+      "n_permutations": 1000,
+      "null_mean_spread": 455.16,
+      "null_std_spread": 141.98,
+      "bh_significant": false
+    },
+    "typ_7": {
+      "p_value_spread": 0.748,
+      "p_value_mean_diff": 0.095,
+      "observed_spread": 94.52,
+      "observed_mean_diff": 13.22,
+      "n_permutations": 1000,
+      "null_mean_spread": 122.77,
+      "null_std_spread": 38.55,
+      "bh_significant": false
+    },
+    "typ_8": {
+      "p_value_spread": 0.986,
+      "p_value_mean_diff": 0.596,
+      "observed_spread": 34.62,
+      "observed_mean_diff": 8.72,
+      "n_permutations": 1000,
+      "null_mean_spread": 60.77,
+      "null_std_spread": 12.67,
+      "bh_significant": false
+    },
+    "typ_9": {
+      "p_value_spread": 0.824,
+      "p_value_mean_diff": 0.376,
+      "observed_spread": 481.25,
+      "observed_mean_diff": 62.64,
+      "n_permutations": 1000,
+      "null_mean_spread": 492.74,
+      "null_std_spread": 12.51,
+      "bh_significant": false
+    },
+    "typ_10": {
+      "p_value_spread": 0.744,
+      "p_value_mean_diff": 0.547,
+      "observed_spread": 76.93,
+      "observed_mean_diff": -9.27,
+      "n_permutations": 1000,
+      "null_mean_spread": 95.8,
+      "null_std_spread": 27.64,
+      "bh_significant": false
+    }
+  },
+  "statistical_summary": {},
+  "timestamp": "2025-12-31T01:30:55.888489",
+  "verdict": {
+    "status": "V2_TREND_BETTER",
+    "message": "V2 tendenziell besser (Avg: +8.53%), aber nicht signifikant",
+    "interpretation": "Die Weekday-Analyse vergleicht V1 (Original) mit V2 (Birthday-Avoidance) Tickets ueber 7 Wochentage und 5 Keno-Typen. Nullmodell: Weekday-Shuffle-Permutationstest. Multiple-Testing: Benjamini-Hochberg Korrektur."
+  }
+}

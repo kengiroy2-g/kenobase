@@ -1,0 +1,955 @@
+{
+  "analysis": "cross_game_rule_layer_train_test_backtest",
+  "generated_at": "2025-12-30T00:25:38.128086",
+  "split": {
+    "train_end": "2023-12-31",
+    "test_start": "2024-01-01",
+    "test_end": "2025-12-29",
+    "train_counts": {
+      "KENO": 728,
+      "LOTTO": 208,
+      "AUSWAHLWETTE": 104,
+      "EUROJACKPOT": 196,
+      "EUROWETTE": 104,
+      "GLUECKSSPIRALE": 104
+    },
+    "test_counts": {
+      "KENO_predictions": 729
+    }
+  },
+  "mining": {
+    "selection": "top_n",
+    "alpha_fdr": 0.05,
+    "lags": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "min_support": 30,
+    "min_support_pos": 20,
+    "top_n": 50,
+    "only_exclusion": true,
+    "rules_mined": 50,
+    "rules": [
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "41",
+        "target_number": 31,
+        "support": 97,
+        "base_rate": 0.26869806094182824,
+        "conditional_rate": 0.1134020618556701,
+        "lift": 0.42204272505048357,
+        "p_value": 0.00011349779410500203,
+        "q_value": 0.19862113968375356
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "7",
+        "target_number": 16,
+        "support": 62,
+        "base_rate": 0.2853185595567867,
+        "conditional_rate": 0.08064516129032258,
+        "lift": 0.282649545881616,
+        "p_value": 5.740108699538418e-05,
+        "q_value": 0.19862113968375356
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 7,
+        "trigger_kind": "number",
+        "trigger": "8",
+        "target_number": 61,
+        "support": 86,
+        "base_rate": 0.2928870292887029,
+        "conditional_rate": 0.11627906976744186,
+        "lift": 0.39700996677740863,
+        "p_value": 7.09397975763417e-05,
+        "q_value": 0.24828929151719595
+      },
+      {
+        "source": "LOTTO",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "number",
+        "trigger": "30",
+        "target_number": 17,
+        "support": 89,
+        "base_rate": 0.2786206896551724,
+        "conditional_rate": 0.11235955056179775,
+        "lift": 0.40327066414506624,
+        "p_value": 8.066871497189838e-05,
+        "q_value": 0.27669369235361146
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "number",
+        "trigger": "7",
+        "target_number": 51,
+        "support": 175,
+        "base_rate": 0.2863070539419087,
+        "conditional_rate": 0.17714285714285713,
+        "lift": 0.6187163561076604,
+        "p_value": 0.00017629382750630916,
+        "q_value": 0.2776627783224369
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T12=1",
+        "target_number": 66,
+        "support": 287,
+        "base_rate": 0.32038834951456313,
+        "conditional_rate": 0.24738675958188153,
+        "lift": 0.7721465526343574,
+        "p_value": 0.0006197309169592648,
+        "q_value": 0.3383730806597586
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T3=2",
+        "target_number": 12,
+        "support": 259,
+        "base_rate": 0.2912621359223301,
+        "conditional_rate": 0.2084942084942085,
+        "lift": 0.7158301158301159,
+        "p_value": 0.00023441854117093341,
+        "q_value": 0.3383730806597586
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T12=2",
+        "target_number": 9,
+        "support": 217,
+        "base_rate": 0.3106796116504854,
+        "conditional_rate": 0.22119815668202766,
+        "lift": 0.7119815668202766,
+        "p_value": 0.0006138178847922881,
+        "q_value": 0.3383730806597586
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 7,
+        "trigger_kind": "ordered_value",
+        "trigger": "T11=2",
+        "target_number": 62,
+        "support": 219,
+        "base_rate": 0.2737430167597765,
+        "conditional_rate": 0.182648401826484,
+        "lift": 0.66722579442736,
+        "p_value": 0.0002622369117680352,
+        "q_value": 0.35795338456336806
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T4=1",
+        "target_number": 60,
+        "support": 301,
+        "base_rate": 0.26629680998613037,
+        "conditional_rate": 0.2026578073089701,
+        "lift": 0.7610222868217055,
+        "p_value": 0.0011480556079451376,
+        "q_value": 0.39177397621127824
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=2",
+        "target_number": 68,
+        "support": 203,
+        "base_rate": 0.29958391123439665,
+        "conditional_rate": 0.21182266009852216,
+        "lift": 0.7070561941251596,
+        "p_value": 0.0011411854853122455,
+        "q_value": 0.39177397621127824
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T11=2",
+        "target_number": 3,
+        "support": 224,
+        "base_rate": 0.3079056865464632,
+        "conditional_rate": 0.22767857142857142,
+        "lift": 0.7394425675675677,
+        "p_value": 0.0016904622034165082,
+        "q_value": 0.4190324037296067
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "number",
+        "trigger": "32",
+        "target_number": 6,
+        "support": 72,
+        "base_rate": 0.2987551867219917,
+        "conditional_rate": 0.125,
+        "lift": 0.4184027777777778,
+        "p_value": 0.00038322520734445297,
+        "q_value": 0.4470960752351952
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "number",
+        "trigger": "9",
+        "target_number": 31,
+        "support": 86,
+        "base_rate": 0.26832641770401106,
+        "conditional_rate": 0.10465116279069768,
+        "lift": 0.3900143850395589,
+        "p_value": 0.00013918245894309607,
+        "q_value": 0.4470960752351952
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "ordered_value",
+        "trigger": "T1=2",
+        "target_number": 19,
+        "support": 231,
+        "base_rate": 0.24687933425797504,
+        "conditional_rate": 0.1774891774891775,
+        "lift": 0.7189308818522302,
+        "p_value": 0.003019006612833609,
+        "q_value": 0.5151180033147345
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T13=1",
+        "target_number": 43,
+        "support": 373,
+        "base_rate": 0.2752420470262794,
+        "conditional_rate": 0.22788203753351208,
+        "lift": 0.8279332318428604,
+        "p_value": 0.003544866172001187,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T5=1",
+        "target_number": 36,
+        "support": 331,
+        "base_rate": 0.313969571230982,
+        "conditional_rate": 0.2598187311178248,
+        "lift": 0.827528381489812,
+        "p_value": 0.004826070687011357,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T2=1",
+        "target_number": 45,
+        "support": 415,
+        "base_rate": 0.27800829875518673,
+        "conditional_rate": 0.22650602409638554,
+        "lift": 0.8147455493616256,
+        "p_value": 0.00041170333368382994,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T9=1",
+        "target_number": 11,
+        "support": 366,
+        "base_rate": 0.2600276625172891,
+        "conditional_rate": 0.2103825136612022,
+        "lift": 0.8090774328566446,
+        "p_value": 0.00225840469761519,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T3=2",
+        "target_number": 12,
+        "support": 259,
+        "base_rate": 0.2918395573997234,
+        "conditional_rate": 0.2277992277992278,
+        "lift": 0.7805632308001975,
+        "p_value": 0.004858658619414195,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T4=1",
+        "target_number": 60,
+        "support": 303,
+        "base_rate": 0.2669432918395574,
+        "conditional_rate": 0.2079207920792079,
+        "lift": 0.7788949879443903,
+        "p_value": 0.002808575590311341,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=0",
+        "target_number": 51,
+        "support": 217,
+        "base_rate": 0.2863070539419087,
+        "conditional_rate": 0.2119815668202765,
+        "lift": 0.740399385560676,
+        "p_value": 0.004015698513511317,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T1=0",
+        "target_number": 33,
+        "support": 189,
+        "base_rate": 0.3084370677731674,
+        "conditional_rate": 0.2222222222222222,
+        "lift": 0.7204783258594917,
+        "p_value": 0.003279084621996123,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=0",
+        "target_number": 19,
+        "support": 217,
+        "base_rate": 0.2475795297372061,
+        "conditional_rate": 0.17511520737327188,
+        "lift": 0.7073089102283551,
+        "p_value": 0.0034710942053925485,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T4=0",
+        "target_number": 36,
+        "support": 182,
+        "base_rate": 0.313969571230982,
+        "conditional_rate": 0.21978021978021978,
+        "lift": 0.700004840974004,
+        "p_value": 0.0016428116931117005,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T3=0",
+        "target_number": 39,
+        "support": 161,
+        "base_rate": 0.30013831258644535,
+        "conditional_rate": 0.19875776397515527,
+        "lift": 0.6622205684517847,
+        "p_value": 0.001272338126416661,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T2=0",
+        "target_number": 48,
+        "support": 147,
+        "base_rate": 0.28077455048409405,
+        "conditional_rate": 0.1836734693877551,
+        "lift": 0.6541670855534333,
+        "p_value": 0.0028729524395441903,
+        "q_value": 0.5305655212400301
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "number",
+        "trigger": "22",
+        "target_number": 3,
+        "support": 112,
+        "base_rate": 0.3070539419087137,
+        "conditional_rate": 0.17857142857142858,
+        "lift": 0.5815637065637066,
+        "p_value": 0.0011650260210726011,
+        "q_value": 0.532960402049072
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "number",
+        "trigger": "35",
+        "target_number": 35,
+        "support": 58,
+        "base_rate": 0.28077455048409405,
+        "conditional_rate": 0.10344827586206896,
+        "lift": 0.36843893324273824,
+        "p_value": 0.001184356448997938,
+        "q_value": 0.532960402049072
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 7,
+        "trigger_kind": "number",
+        "trigger": "19",
+        "target_number": 51,
+        "support": 84,
+        "base_rate": 0.2849162011173184,
+        "conditional_rate": 0.11904761904761904,
+        "lift": 0.4178338001867414,
+        "p_value": 0.00017000682500034118,
+        "q_value": 0.5355214987510747
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "24",
+        "target_number": 57,
+        "support": 65,
+        "base_rate": 0.3033240997229917,
+        "conditional_rate": 0.12307692307692308,
+        "lift": 0.40576044959606605,
+        "p_value": 0.0005963101269298233,
+        "q_value": 0.5362483497267423
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "33",
+        "target_number": 55,
+        "support": 91,
+        "base_rate": 0.2857142857142857,
+        "conditional_rate": 0.14285714285714285,
+        "lift": 0.5,
+        "p_value": 0.0011251549869668444,
+        "q_value": 0.5647160605336193
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "19",
+        "target_number": 17,
+        "support": 84,
+        "base_rate": 0.2801664355062413,
+        "conditional_rate": 0.13095238095238096,
+        "lift": 0.4674092409240925,
+        "p_value": 0.000745162801509283,
+        "q_value": 0.5647160605336193
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "number",
+        "trigger": "7",
+        "target_number": 51,
+        "support": 175,
+        "base_rate": 0.2853185595567867,
+        "conditional_rate": 0.18857142857142858,
+        "lift": 0.6609153952843274,
+        "p_value": 0.0010429896228520137,
+        "q_value": 0.5860997623170295
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "number",
+        "trigger": "23",
+        "target_number": 16,
+        "support": 49,
+        "base_rate": 0.2853185595567867,
+        "conditional_rate": 0.08163265306122448,
+        "lift": 0.28611056072914604,
+        "p_value": 0.0004934322948831284,
+        "q_value": 0.5860997623170295
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T1=1",
+        "target_number": 35,
+        "support": 301,
+        "base_rate": 0.28077455048409405,
+        "conditional_rate": 0.22591362126245848,
+        "lift": 0.8046086116884605,
+        "p_value": 0.005649655020753126,
+        "q_value": 0.5932137771790782
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T11=2",
+        "target_number": 3,
+        "support": 224,
+        "base_rate": 0.3070539419087137,
+        "conditional_rate": 0.23660714285714285,
+        "lift": 0.7705719111969112,
+        "p_value": 0.006788619122325089,
+        "q_value": 0.6001180621805089
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=0",
+        "target_number": 59,
+        "support": 217,
+        "base_rate": 0.28077455048409405,
+        "conditional_rate": 0.2119815668202765,
+        "lift": 0.7549885360150734,
+        "p_value": 0.006814527446005778,
+        "q_value": 0.6001180621805089
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T9=0",
+        "target_number": 27,
+        "support": 217,
+        "base_rate": 0.2821576763485477,
+        "conditional_rate": 0.2119815668202765,
+        "lift": 0.7512876118189211,
+        "p_value": 0.006738580457163686,
+        "q_value": 0.6001180621805089
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T8=2",
+        "target_number": 59,
+        "support": 210,
+        "base_rate": 0.28077455048409405,
+        "conditional_rate": 0.20952380952380953,
+        "lift": 0.7462350457424349,
+        "p_value": 0.006264303235360671,
+        "q_value": 0.6001180621805089
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T13=2",
+        "target_number": 17,
+        "support": 175,
+        "base_rate": 0.2793914246196404,
+        "conditional_rate": 0.2,
+        "lift": 0.7158415841584158,
+        "p_value": 0.006787474268418424,
+        "q_value": 0.6001180621805089
+      },
+      {
+        "source": "AUSWAHLWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "number",
+        "trigger": "43",
+        "target_number": 70,
+        "support": 49,
+        "base_rate": 0.2946058091286307,
+        "conditional_rate": 0.10204081632653061,
+        "lift": 0.34636389767174475,
+        "p_value": 0.0017196420235231417,
+        "q_value": 0.6018747082330996
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 7,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=1",
+        "target_number": 29,
+        "support": 296,
+        "base_rate": 0.25558659217877094,
+        "conditional_rate": 0.1891891891891892,
+        "lift": 0.7402156254615272,
+        "p_value": 0.0006731094201740282,
+        "q_value": 0.6125295723583657
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "38",
+        "target_number": 29,
+        "support": 69,
+        "base_rate": 0.2548476454293629,
+        "conditional_rate": 0.10144927536231885,
+        "lift": 0.39807813484562066,
+        "p_value": 0.0012942243030350136,
+        "q_value": 0.6319713255076475
+      },
+      {
+        "source": "EUROJACKPOT",
+        "target": "KENO",
+        "lag_days": 2,
+        "trigger_kind": "number",
+        "trigger": "3",
+        "target_number": 8,
+        "support": 51,
+        "base_rate": 0.2590027700831025,
+        "conditional_rate": 0.0784313725490196,
+        "lift": 0.3028205934780329,
+        "p_value": 0.0013798258100240785,
+        "q_value": 0.6319713255076475
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T7=1",
+        "target_number": 18,
+        "support": 303,
+        "base_rate": 0.26556016597510373,
+        "conditional_rate": 0.2145214521452145,
+        "lift": 0.8078073432343233,
+        "p_value": 0.008276557008607119,
+        "q_value": 0.6321730567485032
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T2=2",
+        "target_number": 28,
+        "support": 161,
+        "base_rate": 0.28907330567081607,
+        "conditional_rate": 0.20496894409937888,
+        "lift": 0.7090552468126838,
+        "p_value": 0.007691867478190873,
+        "q_value": 0.6321730567485032
+      },
+      {
+        "source": "EUROWETTE",
+        "target": "KENO",
+        "lag_days": 0,
+        "trigger_kind": "ordered_value",
+        "trigger": "T9=2",
+        "target_number": 38,
+        "support": 140,
+        "base_rate": 0.30013831258644535,
+        "conditional_rate": 0.20714285714285716,
+        "lift": 0.6901579986833444,
+        "p_value": 0.007508885566553102,
+        "q_value": 0.6321730567485032
+      },
+      {
+        "source": "GLUECKSSPIRALE",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "ordered_value",
+        "trigger": "Kl1=4",
+        "target_number": 52,
+        "support": 84,
+        "base_rate": 0.2894736842105263,
+        "conditional_rate": 0.15476190476190477,
+        "lift": 0.5346320346320347,
+        "p_value": 0.0031313048936259576,
+        "q_value": 0.633719936737808
+      },
+      {
+        "source": "GLUECKSSPIRALE",
+        "target": "KENO",
+        "lag_days": 1,
+        "trigger_kind": "ordered_value",
+        "trigger": "Kl1=9",
+        "target_number": 63,
+        "support": 78,
+        "base_rate": 0.2880886426592798,
+        "conditional_rate": 0.15384615384615385,
+        "lift": 0.5340236686390533,
+        "p_value": 0.005176332517215745,
+        "q_value": 0.633719936737808
+      }
+    ]
+  },
+  "backtest": {
+    "analysis": "cross_game_rule_layer_backtest",
+    "generated_at": "2025-12-30T00:25:38.127824",
+    "draws": {
+      "keno_count": 1457,
+      "keno_start": "2022-01-03",
+      "keno_end": "2025-12-29"
+    },
+    "config": {
+      "keno_types": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "start_index": 728,
+      "recent_draws": 365,
+      "recent_weight": 0.6,
+      "hard_exclude": true,
+      "include_multiplier": 1.25,
+      "max_exclusions_per_draw": 3,
+      "max_inclusions_per_draw": null
+    },
+    "rules": {
+      "count": 50,
+      "by_rule": {
+        "EUROWETTE|lag=2|ordered_value|T12=2->9": {
+          "trials": 234,
+          "correct": 167,
+          "accuracy": 0.7136752136752137
+        },
+        "EUROWETTE|lag=7|ordered_value|T11=2->62": {
+          "trials": 183,
+          "correct": 129,
+          "accuracy": 0.7049180327868853
+        },
+        "EUROWETTE|lag=2|ordered_value|T4=1->60": {
+          "trials": 133,
+          "correct": 101,
+          "accuracy": 0.7593984962406015
+        },
+        "EUROJACKPOT|lag=1|number|32->6": {
+          "trials": 11,
+          "correct": 9,
+          "accuracy": 0.8181818181818182
+        },
+        "EUROWETTE|lag=2|ordered_value|T3=2->12": {
+          "trials": 286,
+          "correct": 205,
+          "accuracy": 0.7167832167832168
+        },
+        "EUROWETTE|lag=2|ordered_value|T7=2->68": {
+          "trials": 152,
+          "correct": 107,
+          "accuracy": 0.7039473684210527
+        },
+        "EUROJACKPOT|lag=2|number|41->31": {
+          "trials": 80,
+          "correct": 61,
+          "accuracy": 0.7625
+        },
+        "EUROWETTE|lag=2|ordered_value|T11=2->3": {
+          "trials": 90,
+          "correct": 65,
+          "accuracy": 0.7222222222222222
+        },
+        "EUROWETTE|lag=2|ordered_value|T1=2->19": {
+          "trials": 74,
+          "correct": 49,
+          "accuracy": 0.6621621621621622
+        },
+        "EUROWETTE|lag=0|ordered_value|T2=0->48": {
+          "trials": 64,
+          "correct": 47,
+          "accuracy": 0.734375
+        },
+        "LOTTO|lag=1|number|30->17": {
+          "trials": 124,
+          "correct": 91,
+          "accuracy": 0.7338709677419355
+        },
+        "EUROWETTE|lag=2|ordered_value|T12=1->66": {
+          "trials": 282,
+          "correct": 214,
+          "accuracy": 0.7588652482269503
+        },
+        "AUSWAHLWETTE|lag=0|number|7->51": {
+          "trials": 140,
+          "correct": 100,
+          "accuracy": 0.7142857142857143
+        },
+        "EUROWETTE|lag=0|ordered_value|T3=0->39": {
+          "trials": 13,
+          "correct": 10,
+          "accuracy": 0.7692307692307693
+        },
+        "EUROWETTE|lag=0|ordered_value|T4=0->36": {
+          "trials": 53,
+          "correct": 39,
+          "accuracy": 0.7358490566037735
+        },
+        "EUROJACKPOT|lag=2|number|7->16": {
+          "trials": 75,
+          "correct": 58,
+          "accuracy": 0.7733333333333333
+        },
+        "EUROWETTE|lag=0|ordered_value|T4=1->60": {
+          "trials": 14,
+          "correct": 11,
+          "accuracy": 0.7857142857142857
+        },
+        "EUROJACKPOT|lag=7|number|8->61": {
+          "trials": 85,
+          "correct": 69,
+          "accuracy": 0.8117647058823529
+        },
+        "EUROWETTE|lag=0|ordered_value|T3=2->12": {
+          "trials": 10,
+          "correct": 6,
+          "accuracy": 0.6
+        },
+        "EUROWETTE|lag=0|ordered_value|T1=0->33": {
+          "trials": 18,
+          "correct": 12,
+          "accuracy": 0.6666666666666666
+        },
+        "EUROWETTE|lag=0|ordered_value|T2=1->45": {
+          "trials": 10,
+          "correct": 4,
+          "accuracy": 0.4
+        },
+        "EUROJACKPOT|lag=1|number|9->31": {
+          "trials": 12,
+          "correct": 11,
+          "accuracy": 0.9166666666666666
+        },
+        "EUROWETTE|lag=0|ordered_value|T7=0->19": {
+          "trials": 29,
+          "correct": 18,
+          "accuracy": 0.6206896551724138
+        },
+        "EUROWETTE|lag=0|ordered_value|T5=1->36": {
+          "trials": 9,
+          "correct": 7,
+          "accuracy": 0.7777777777777778
+        },
+        "EUROWETTE|lag=0|ordered_value|T7=0->51": {
+          "trials": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "EUROWETTE|lag=0|ordered_value|T9=1->11": {
+          "trials": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        },
+        "EUROWETTE|lag=0|ordered_value|T1=1->35": {
+          "trials": 2,
+          "correct": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "rule_accuracy": {
+      "exclusion": {
+        "trials": 2187,
+        "correct": 1596,
+        "accuracy": 0.7297668038408779,
+        "baseline": 0.7142857142857143,
+        "lift": 0.015481089555163585
+      },
+      "inclusion": {
+        "trials": 0,
+        "correct": 0,
+        "accuracy": 0.0,
+        "baseline": 0.2857142857142857,
+        "lift": -0.2857142857142857
+      }
+    },
+    "by_type": {
+      "typ_6": {
+        "keno_type": 6,
+        "n_predictions": 729,
+        "mean_hits_baseline": 1.6927297668038408,
+        "mean_hits_with_rules": 1.6776406035665294,
+        "delta_mean_hits": -0.015089163237311354
+      },
+      "typ_7": {
+        "keno_type": 7,
+        "n_predictions": 729,
+        "mean_hits_baseline": 1.9753086419753085,
+        "mean_hits_with_rules": 1.97119341563786,
+        "delta_mean_hits": -0.00411522633744843
+      },
+      "typ_8": {
+        "keno_type": 8,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.270233196159122,
+        "mean_hits_with_rules": 2.2661179698216736,
+        "delta_mean_hits": -0.00411522633744843
+      },
+      "typ_9": {
+        "keno_type": 9,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.5555555555555554,
+        "mean_hits_with_rules": 2.5637860082304527,
+        "delta_mean_hits": 0.008230452674897304
+      },
+      "typ_10": {
+        "keno_type": 10,
+        "n_predictions": 729,
+        "mean_hits_baseline": 2.8559670781893005,
+        "mean_hits_with_rules": 2.840877914951989,
+        "delta_mean_hits": -0.015089163237311354
+      }
+    }
+  }
+}

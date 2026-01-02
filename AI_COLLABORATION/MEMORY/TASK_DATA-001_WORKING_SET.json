@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/data_loader.py (MODIFIED - added Lotto bereinigt + EJ E-format parsers)",
+    "data/processed/timeline_grid.parquet (NEW OUTPUT - 115KB)",
+    "results/timeline_grid_summary.json (NEW OUTPUT)",
+    "kenobase/core/timeline.py (478 LOC)",
+    "tests/unit/test_timeline.py (400 LOC)",
+    "scripts/build_timeline_grid.py (211 LOC)",
+    "data/processed/timeline_grid.parquet (115KB, 1457x45)",
+    "results/timeline_grid_summary.json"
+]

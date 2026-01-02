@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/analysis/number_representations.py",
+    "kenobase/analysis/decade_affinity.py",
+    "kenobase/core/data_loader.py",
+    "kenobase/pipeline/runner.py",
+    "scripts/analyze.py",
+    "tests/unit/test_number_representations.py",
+    "kenobase/analysis/decade_distribution.py",
+    "tests/unit/test_decade_distribution.py"
+]

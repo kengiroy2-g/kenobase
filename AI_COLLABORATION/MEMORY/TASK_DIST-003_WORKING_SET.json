@@ -1,0 +1,10 @@
+﻿[
+    "scripts/analyze_payout_inference.py (NEU)",
+    "tests/unit/test_payout_inference.py (NEU)",
+    "Keno_GPTs/KENO_Quote_details_2023.csv",
+    "data/raw/keno/KENO_ab_2018.csv",
+    "kenobase/analysis/payout_inference.py (NEW)",
+    "scripts/analyze_payout_inference.py (NEW)",
+    "tests/unit/test_payout_inference.py (NEW)",
+    "results/payout_inference.json (OUTPUT)"
+]

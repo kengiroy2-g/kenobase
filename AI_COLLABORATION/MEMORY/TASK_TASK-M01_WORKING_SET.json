@@ -1,0 +1,5 @@
+﻿[
+    "scripts/optimize_pool_size.py",
+    "config/default.yaml",
+    "results/pool_optimization.json"
+]

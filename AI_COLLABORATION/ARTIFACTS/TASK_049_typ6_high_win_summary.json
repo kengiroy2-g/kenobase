@@ -1,0 +1,82 @@
+{
+  "analysis": "TASK_049_typ6_high_win_summary",
+  "generated_at": "2025-12-31T04:51:00",
+  "source_artifact": "results/high_win_forensik.json",
+  "oos_source": "results/high_payout_backtest_2025.json",
+  "training_period": "2018-2024",
+  "oos_period": "2025-01-01 to 2025-12-29",
+  "oos_draws": 363,
+  "typ6_analysis": {
+    "total_events_train": 11,
+    "all_500_eur": true,
+    "unique_dates_train": 11,
+    "strategies": {
+      "pair_focused": 5,
+      "balanced": 2,
+      "near_miss": 2,
+      "jackpot": 2
+    },
+    "top_ticket": {
+      "numbers": [2, 3, 9, 33, 49, 50],
+      "strategy": "pair_focused",
+      "train_events": 5,
+      "train_dates": [
+        "2020-07-21",
+        "2020-10-12",
+        "2021-05-04",
+        "2021-10-21",
+        "2023-10-10"
+      ],
+      "oos_2025_events": 0,
+      "oos_2025_roi": -0.6143,
+      "oos_2025_won": 140.0
+    }
+  },
+  "typ7_analysis": {
+    "total_events_train": 3,
+    "all_1000_eur": true
+  },
+  "v1_v2_comparison": {
+    "v1_strategies": ["balanced", "near_miss", "jackpot"],
+    "v1_events": 8,
+    "v2_strategies": ["pair_focused"],
+    "v2_events": 6
+  },
+  "statistical_tests": {
+    "permutation_test_p": 0.591,
+    "clustering_interpretation": "no significant clustering detected",
+    "birthday_ratio_mean": 0.446,
+    "birthday_ratio_expected": 0.443,
+    "birthday_deviation": "not significant"
+  },
+  "oos_2025_results": {
+    "typ6_tickets_tested": 8,
+    "typ6_high_payout_events": 1,
+    "best_oos_ticket": {
+      "numbers": [2, 3, 4, 9, 20, 36],
+      "strategy": "near_miss",
+      "high_payout_events": 1,
+      "event_date": "2025-12-16",
+      "event_payout": 500.0,
+      "event_hits": 6,
+      "roi": 0.8017
+    },
+    "pair_focused_oos": {
+      "numbers": [2, 3, 9, 33, 49, 50],
+      "high_payout_events": 0,
+      "roi": -0.6143,
+      "conclusion": "Top-Train-Ticket hat KEINEN OOS High-Win in 2025"
+    }
+  },
+  "conclusion": {
+    "train_success": "pair_focused [2,3,9,33,49,50] mit 5x 500 EUR (2018-2024)",
+    "oos_failure": "0 High-Win Events in 2025 OOS",
+    "alternative_success": "near_miss [2,3,4,9,20,36] hat 1x 500 EUR in 2025",
+    "overfitting_risk": "HOCH - Train-Performance nicht auf OOS uebertragbar",
+    "axiom_first_konform": true
+  },
+  "repro_commands": [
+    "python scripts/analyze_high_win_forensik.py",
+    "python scripts/backtest_high_payout_tickets.py --year 2025"
+  ]
+}

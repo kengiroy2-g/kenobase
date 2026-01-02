@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/stake_correlation.py",
+    "tests/unit/test_stake_correlation.py",
+    "scripts/analyze_house002.py",
+    "results/house002_stake_popularity.json"
+]

@@ -1,0 +1,292 @@
+{
+  "hypothesis_id": "HYP_YEAR_001",
+  "hypothesis_name": "Jahres-Zyklen",
+  "orthogonal_to": "HYP_CYC_001 (28-Tage Jackpot-Zyklen)",
+  "acceptance_criteria": {
+    "p_threshold": 0.05,
+    "bonferroni_tests": 8,
+    "roi_diff_threshold_pct": 20.0,
+    "bonferroni_alpha": 0.00625
+  },
+  "data_source": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+  "data_summary": {
+    "n_total": 1457,
+    "date_range": "2022-01-03 to 2025-12-29",
+    "years": [
+      2022,
+      2023,
+      2024,
+      2025
+    ]
+  },
+  "train_test_split": {
+    "train_years": [
+      2022,
+      2023,
+      2024
+    ],
+    "train_n": 1094,
+    "test_year": 2025,
+    "test_n": 363
+  },
+  "by_year": {
+    "typ_8": {
+      "2022": {
+        "n": 363,
+        "total_win": 114.0,
+        "roi": -68.59504132231406
+      },
+      "2023": {
+        "n": 365,
+        "total_win": 152.0,
+        "roi": -58.35616438356165
+      },
+      "2024": {
+        "n": 366,
+        "total_win": 119.0,
+        "roi": -67.4863387978142
+      },
+      "2025": {
+        "n": 363,
+        "total_win": 206.0,
+        "roi": -43.25068870523416
+      }
+    },
+    "typ_9": {
+      "2022": {
+        "n": 363,
+        "total_win": 149.0,
+        "roi": -58.95316804407713
+      },
+      "2023": {
+        "n": 365,
+        "total_win": 148.0,
+        "roi": -59.45205479452055
+      },
+      "2024": {
+        "n": 366,
+        "total_win": 144.0,
+        "roi": -60.65573770491803
+      },
+      "2025": {
+        "n": 363,
+        "total_win": 1170.0,
+        "roi": 222.31404958677686
+      }
+    },
+    "typ_10": {
+      "2022": {
+        "n": 363,
+        "total_win": 149.0,
+        "roi": -58.95316804407713
+      },
+      "2023": {
+        "n": 365,
+        "total_win": 142.0,
+        "roi": -61.09589041095891
+      },
+      "2024": {
+        "n": 366,
+        "total_win": 129.0,
+        "roi": -64.75409836065575
+      },
+      "2025": {
+        "n": 363,
+        "total_win": 246.0,
+        "roi": -32.231404958677686
+      }
+    }
+  },
+  "by_quarter": {
+    "typ_9": {
+      "1": {
+        "n": 359,
+        "total_win": 167.0,
+        "roi": -53.48189415041783
+      },
+      "2": {
+        "n": 364,
+        "total_win": 143.0,
+        "roi": -60.71428571428571
+      },
+      "3": {
+        "n": 368,
+        "total_win": 1161.0,
+        "roi": 215.48913043478262
+      },
+      "4": {
+        "n": 366,
+        "total_win": 140.0,
+        "roi": -61.74863387978142
+      }
+    }
+  },
+  "by_month": {
+    "typ_9": {
+      "1": {
+        "n": 122,
+        "total_win": 43.0,
+        "roi": -64.75409836065575
+      },
+      "2": {
+        "n": 113,
+        "total_win": 49.0,
+        "roi": -56.63716814159292
+      },
+      "3": {
+        "n": 124,
+        "total_win": 75.0,
+        "roi": -39.516129032258064
+      },
+      "4": {
+        "n": 120,
+        "total_win": 45.0,
+        "roi": -62.5
+      },
+      "5": {
+        "n": 124,
+        "total_win": 36.0,
+        "roi": -70.96774193548387
+      },
+      "6": {
+        "n": 120,
+        "total_win": 62.0,
+        "roi": -48.333333333333336
+      },
+      "7": {
+        "n": 124,
+        "total_win": 1053.0,
+        "roi": 749.1935483870968
+      },
+      "8": {
+        "n": 124,
+        "total_win": 56.0,
+        "roi": -54.83870967741935
+      },
+      "9": {
+        "n": 120,
+        "total_win": 52.0,
+        "roi": -56.666666666666664
+      },
+      "10": {
+        "n": 124,
+        "total_win": 49.0,
+        "roi": -60.483870967741936
+      },
+      "11": {
+        "n": 120,
+        "total_win": 47.0,
+        "roi": -60.83333333333333
+      },
+      "12": {
+        "n": 122,
+        "total_win": 44.0,
+        "roi": -63.934426229508205
+      }
+    }
+  },
+  "chi_square_tests": {
+    "year": {
+      "valid": true,
+      "chi2": 16.99200419953092,
+      "p_value": 0.8490028660180495,
+      "dof": 24,
+      "n_periods": 4,
+      "n_hit_classes": 9
+    },
+    "quarter": {
+      "valid": true,
+      "chi2": 18.411368904045727,
+      "p_value": 0.7826093110074546,
+      "dof": 24,
+      "n_periods": 4,
+      "n_hit_classes": 9
+    },
+    "month": {
+      "valid": true,
+      "chi2": 93.84609155929377,
+      "p_value": 0.3151601148470927,
+      "dof": 88,
+      "n_periods": 12,
+      "n_hit_classes": 9
+    }
+  },
+  "kruskal_wallis_tests": {
+    "year": {
+      "valid": true,
+      "statistic": 0.8978413820634504,
+      "p_value": 0.8259487018194107,
+      "n_groups": 4
+    },
+    "quarter": {
+      "valid": true,
+      "statistic": 1.983850627245584,
+      "p_value": 0.5757653244096672,
+      "n_groups": 4
+    },
+    "month": {
+      "valid": true,
+      "statistic": 6.6446345998622345,
+      "p_value": 0.8270885894271538,
+      "n_groups": 12
+    }
+  },
+  "null_model": {
+    "observed_variance": 14911.242643494374,
+    "observed_range": 282.9697872916949,
+    "permuted_variance_mean": 14128.01216564798,
+    "permuted_variance_std": 624.097894345775,
+    "permuted_range_mean": 278.47201628394265,
+    "permuted_range_std": 6.315351933123197,
+    "p_value_variance": 0.11,
+    "p_value_range": 0.237,
+    "n_permutations": 1000
+  },
+  "train_vs_test": {
+    "typ_8": {
+      "train_n": 1094,
+      "train_roi": -64.80804387568556,
+      "test_n": 363,
+      "test_roi": -43.25068870523416,
+      "diff": 21.557355170451395,
+      "significant_diff": "True"
+    },
+    "typ_9": {
+      "train_n": 1094,
+      "train_roi": -59.6892138939671,
+      "test_n": 363,
+      "test_roi": 222.31404958677686,
+      "diff": 282.00326348074395,
+      "significant_diff": "True"
+    },
+    "typ_10": {
+      "train_n": 1094,
+      "train_roi": -61.608775137111515,
+      "test_n": 363,
+      "test_roi": -32.231404958677686,
+      "diff": 29.37737017843383,
+      "significant_diff": "True"
+    }
+  },
+  "significant_tests": [],
+  "roi_diffs_over_20": [
+    "Year_Typ8 (range=25.3%)",
+    "Year_Typ9 (range=283.0%)",
+    "Year_Typ10 (range=32.5%)"
+  ],
+  "conclusion": {
+    "is_significant": false,
+    "verdict": "NICHT SIGNIFIKANT",
+    "summary": "Jahres-Zyklen sind NICHT signifikant (p < 0.00625 nach Bonferroni). ROI-Unterschiede ueber 20% Schwelle."
+  },
+  "recommendations": [
+    "1. Keine systematischen Jahres-Zyklen gefunden",
+    "2. Fokussiere auf HYP_CYC_001 (28-Tage Jackpot-Zyklen) stattdessen",
+    "3. Jahr/Quartal/Monat nicht als Timing-Faktor verwenden"
+  ],
+  "metadata": {
+    "script": "scripts/test_hyp_year_001_cycles.py",
+    "timestamp": "2025-12-30T18:31:40.585099",
+    "repro_command": "python scripts/test_hyp_year_001_cycles.py"
+  }
+}

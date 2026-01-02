@@ -1,0 +1,6 @@
+﻿[
+    "requirements.txt",
+    "config/default.yaml",
+    "scripts/master_update.py",
+    "all_code/00_web_scrapping_V4_+_Datum.py"
+]

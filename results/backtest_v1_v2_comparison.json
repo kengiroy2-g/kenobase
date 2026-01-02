@@ -1,5 +1,5 @@
 {
-  "backtest_date": "2025-12-29T10:35:39.943198",
+  "backtest_date": "2025-12-30T10:48:17.328905",
   "draws_count": 2237,
   "date_range": {
     "start": "2018-01-01T00:00:00",
@@ -28,13 +28,12 @@
         "5": 6
       },
       "gewinnklassen": {
-        "GK4": 443,
         "GK3": 278,
         "GK2": 49,
         "GK1": 6
       },
-      "total_winnings": 4785,
-      "roi_percent": 113.9
+      "total_winnings": 1499,
+      "roi_percent": -32.99
     },
     "V1_typ5_jackpot": {
       "model": "V1",
@@ -58,13 +57,12 @@
         "5": 2
       },
       "gewinnklassen": {
-        "GK4": 410,
         "GK3": 269,
         "GK2": 45,
         "GK1": 2
       },
-      "total_winnings": 2673,
-      "roi_percent": 19.49
+      "total_winnings": 1053,
+      "roi_percent": -52.93
     },
     "V1_typ5_balanced": {
       "model": "V1",
@@ -88,13 +86,12 @@
         "5": 4
       },
       "gewinnklassen": {
-        "GK4": 390,
         "GK3": 246,
         "GK2": 52,
         "GK1": 4
       },
-      "total_winnings": 3636,
-      "roi_percent": 62.54
+      "total_winnings": 1256,
+      "roi_percent": -43.85
     },
     "V1_typ6_near_miss": {
       "model": "V1",
@@ -120,12 +117,11 @@
       },
       "gewinnklassen": {
         "GK4": 376,
-        "GK5": 294,
         "GK3": 109,
         "GK2": 12
       },
-      "total_winnings": 1362,
-      "roi_percent": -39.11
+      "total_winnings": 774,
+      "roi_percent": -65.4
     },
     "V1_typ6_jackpot": {
       "model": "V1",
@@ -152,13 +148,12 @@
       },
       "gewinnklassen": {
         "GK4": 369,
-        "GK5": 258,
         "GK3": 107,
         "GK1": 2,
         "GK2": 13
       },
-      "total_winnings": 3294,
-      "roi_percent": 47.25
+      "total_winnings": 1778,
+      "roi_percent": -20.52
     },
     "V1_typ6_balanced": {
       "model": "V1",
@@ -184,12 +179,11 @@
       },
       "gewinnklassen": {
         "GK4": 374,
-        "GK5": 279,
         "GK3": 106,
         "GK2": 14
       },
-      "total_winnings": 1354,
-      "roi_percent": -39.47
+      "total_winnings": 796,
+      "roi_percent": -64.42
     },
     "V1_typ7_near_miss": {
       "model": "V1",
@@ -218,13 +212,13 @@
       },
       "gewinnklassen": {
         "GK3": 33,
-        "GK5": 208,
+        "GK5": 468,
         "GK4": 169,
         "GK1": 1,
         "GK2": 2
       },
-      "total_winnings": 6181,
-      "roi_percent": 176.31
+      "total_winnings": 2233,
+      "roi_percent": -0.18
     },
     "V1_typ7_jackpot": {
       "model": "V1",
@@ -251,13 +245,13 @@
         "6": 6
       },
       "gewinnklassen": {
-        "GK5": 169,
         "GK4": 191,
+        "GK5": 461,
         "GK3": 46,
         "GK2": 6
       },
-      "total_winnings": 1681,
-      "roi_percent": -24.85
+      "total_winnings": 1804,
+      "roi_percent": -19.36
     },
     "V1_typ7_balanced": {
       "model": "V1",
@@ -283,12 +277,12 @@
         "5": 36
       },
       "gewinnklassen": {
-        "GK5": 194,
+        "GK5": 525,
         "GK4": 178,
         "GK3": 36
       },
-      "total_winnings": 998,
-      "roi_percent": -55.39
+      "total_winnings": 1135,
+      "roi_percent": -49.26
     },
     "V1_typ8_near_miss": {
       "model": "V1",
@@ -323,8 +317,8 @@
         "GK3": 17,
         "GK2": 1
       },
-      "total_winnings": 1075,
-      "roi_percent": -51.94
+      "total_winnings": 921,
+      "roi_percent": -58.83
     },
     "V1_typ8_jackpot": {
       "model": "V1",
@@ -357,8 +351,8 @@
         "GK3": 9,
         "GK4": 71
       },
-      "total_winnings": 840,
-      "roi_percent": -62.45
+      "total_winnings": 706,
+      "roi_percent": -68.44
     },
     "V1_typ8_balanced": {
       "model": "V1",
@@ -391,8 +385,8 @@
         "GK4": 71,
         "GK3": 11
       },
-      "total_winnings": 848,
-      "roi_percent": -62.09
+      "total_winnings": 722,
+      "roi_percent": -67.72
     },
     "V1_typ9_near_miss": {
       "model": "V1",
@@ -424,11 +418,12 @@
       "gewinnklassen": {
         "GK5": 124,
         "GK4": 36,
-        "GK6": 99,
+        "GK6": 320,
+        "GK7": 99,
         "GK3": 4
       },
-      "total_winnings": 706,
-      "roi_percent": -68.44
+      "total_winnings": 1026,
+      "roi_percent": -54.14
     },
     "V1_typ9_jackpot": {
       "model": "V1",
@@ -459,12 +454,13 @@
       },
       "gewinnklassen": {
         "GK5": 117,
-        "GK6": 89,
+        "GK6": 361,
+        "GK7": 89,
         "GK4": 30,
         "GK3": 4
       },
-      "total_winnings": 642,
-      "roi_percent": -71.3
+      "total_winnings": 1003,
+      "roi_percent": -55.16
     },
     "V1_typ9_balanced": {
       "model": "V1",
@@ -494,13 +490,14 @@
         "7": 2
       },
       "gewinnklassen": {
+        "GK6": 406,
         "GK5": 119,
-        "GK6": 85,
+        "GK7": 85,
         "GK4": 21,
         "GK3": 2
       },
-      "total_winnings": 553,
-      "roi_percent": -75.28
+      "total_winnings": 959,
+      "roi_percent": -57.13
     },
     "V1_typ10_near_miss": {
       "model": "V1",
@@ -643,13 +640,12 @@
         "5": 5
       },
       "gewinnklassen": {
-        "GK4": 378,
         "GK3": 307,
         "GK2": 50,
         "GK1": 5
       },
-      "total_winnings": 4220,
-      "roi_percent": 88.65
+      "total_winnings": 1464,
+      "roi_percent": -34.56
     },
     "V2_typ5_near_miss": {
       "model": "V2",
@@ -673,13 +669,12 @@
         "5": 5
       },
       "gewinnklassen": {
-        "GK4": 390,
         "GK3": 281,
         "GK2": 69,
         "GK1": 5
       },
-      "total_winnings": 4325,
-      "roi_percent": 93.34
+      "total_winnings": 1545,
+      "roi_percent": -30.93
     },
     "V2_typ5_jackpot": {
       "model": "V2",
@@ -703,13 +698,12 @@
         "5": 7
       },
       "gewinnklassen": {
-        "GK4": 369,
         "GK3": 281,
         "GK2": 62,
         "GK1": 7
       },
-      "total_winnings": 5234,
-      "roi_percent": 133.97
+      "total_winnings": 1696,
+      "roi_percent": -24.18
     },
     "V2_typ5_predictable": {
       "model": "V2",
@@ -733,13 +727,12 @@
         "5": 1
       },
       "gewinnklassen": {
-        "GK4": 373,
         "GK3": 296,
         "GK2": 56,
         "GK1": 1
       },
-      "total_winnings": 2230,
-      "roi_percent": -0.31
+      "total_winnings": 1084,
+      "roi_percent": -51.54
     },
     "V2_typ5_pair_focused": {
       "model": "V2",
@@ -764,12 +757,11 @@
       },
       "gewinnklassen": {
         "GK3": 279,
-        "GK4": 381,
         "GK2": 63,
         "GK1": 8
       },
-      "total_winnings": 5761,
-      "roi_percent": 157.53
+      "total_winnings": 1799,
+      "roi_percent": -19.58
     },
     "V2_typ6_balanced": {
       "model": "V2",
@@ -795,14 +787,13 @@
         "6": 2
       },
       "gewinnklassen": {
-        "GK5": 257,
         "GK4": 399,
         "GK3": 130,
         "GK2": 17,
         "GK1": 2
       },
-      "total_winnings": 3428,
-      "roi_percent": 53.24
+      "total_winnings": 1914,
+      "roi_percent": -14.44
     },
     "V2_typ6_near_miss": {
       "model": "V2",
@@ -828,14 +819,13 @@
         "6": 2
       },
       "gewinnklassen": {
-        "GK5": 254,
         "GK4": 388,
         "GK3": 128,
         "GK2": 27,
         "GK1": 2
       },
-      "total_winnings": 3557,
-      "roi_percent": 59.01
+      "total_winnings": 2049,
+      "roi_percent": -8.4
     },
     "V2_typ6_jackpot": {
       "model": "V2",
@@ -860,13 +850,12 @@
         "5": 29
       },
       "gewinnklassen": {
-        "GK5": 248,
         "GK4": 406,
         "GK3": 126,
         "GK2": 29
       },
-      "total_winnings": 1589,
-      "roi_percent": -28.97
+      "total_winnings": 1093,
+      "roi_percent": -51.14
     },
     "V2_typ6_predictable": {
       "model": "V2",
@@ -892,12 +881,11 @@
       },
       "gewinnklassen": {
         "GK4": 412,
-        "GK5": 265,
         "GK3": 116,
         "GK2": 10
       },
-      "total_winnings": 1324,
-      "roi_percent": -40.81
+      "total_winnings": 794,
+      "roi_percent": -64.51
     },
     "V2_typ6_pair_focused": {
       "model": "V2",
@@ -924,13 +912,12 @@
       },
       "gewinnklassen": {
         "GK4": 399,
-        "GK5": 254,
         "GK3": 122,
         "GK2": 19,
         "GK1": 5
       },
-      "total_winnings": 6436,
-      "roi_percent": 187.71
+      "total_winnings": 3428,
+      "roi_percent": 53.24
     },
     "V2_typ7_balanced": {
       "model": "V2",
@@ -958,14 +945,14 @@
         "7": 1
       },
       "gewinnklassen": {
+        "GK5": 470,
         "GK4": 217,
-        "GK5": 169,
         "GK3": 51,
         "GK2": 4,
         "GK1": 1
       },
-      "total_winnings": 6567,
-      "roi_percent": 193.56
+      "total_winnings": 2699,
+      "roi_percent": 20.65
     },
     "V2_typ7_near_miss": {
       "model": "V2",
@@ -992,13 +979,13 @@
         "6": 5
       },
       "gewinnklassen": {
-        "GK5": 178,
+        "GK5": 469,
         "GK4": 204,
         "GK3": 56,
         "GK2": 5
       },
-      "total_winnings": 1732,
-      "roi_percent": -22.57
+      "total_winnings": 1845,
+      "roi_percent": -17.52
     },
     "V2_typ7_jackpot": {
       "model": "V2",
@@ -1025,13 +1012,13 @@
         "6": 7
       },
       "gewinnklassen": {
-        "GK5": 154,
+        "GK5": 472,
         "GK3": 62,
         "GK4": 211,
         "GK2": 7
       },
-      "total_winnings": 1963,
-      "roi_percent": -12.25
+      "total_winnings": 2127,
+      "roi_percent": -4.92
     },
     "V2_typ7_predictable": {
       "model": "V2",
@@ -1059,12 +1046,12 @@
       },
       "gewinnklassen": {
         "GK4": 192,
-        "GK5": 178,
+        "GK5": 498,
         "GK3": 36,
         "GK2": 3
       },
-      "total_winnings": 1280,
-      "roi_percent": -42.78
+      "total_winnings": 1422,
+      "roi_percent": -36.43
     },
     "V2_typ7_pair_focused": {
       "model": "V2",
@@ -1092,14 +1079,14 @@
         "7": 1
       },
       "gewinnklassen": {
-        "GK5": 168,
+        "GK5": 510,
         "GK4": 215,
         "GK3": 38,
         "GK1": 1,
         "GK2": 7
       },
-      "total_winnings": 6707,
-      "roi_percent": 199.82
+      "total_winnings": 2881,
+      "roi_percent": 28.79
     },
     "V2_typ8_balanced": {
       "model": "V2",
@@ -1134,8 +1121,8 @@
         "GK3": 14,
         "GK2": 2
       },
-      "total_winnings": 1116,
-      "roi_percent": -50.11
+      "total_winnings": 1002,
+      "roi_percent": -55.21
     },
     "V2_typ8_near_miss": {
       "model": "V2",
@@ -1170,8 +1157,8 @@
         "GK3": 15,
         "GK2": 1
       },
-      "total_winnings": 1067,
-      "roi_percent": -52.3
+      "total_winnings": 937,
+      "roi_percent": -58.11
     },
     "V2_typ8_jackpot": {
       "model": "V2",
@@ -1206,8 +1193,8 @@
         "GK3": 23,
         "GK2": 3
       },
-      "total_winnings": 1304,
-      "roi_percent": -41.71
+      "total_winnings": 1210,
+      "roi_percent": -45.91
     },
     "V2_typ8_predictable": {
       "model": "V2",
@@ -1242,8 +1229,8 @@
         "GK3": 6,
         "GK2": 1
       },
-      "total_winnings": 883,
-      "roi_percent": -60.53
+      "total_winnings": 752,
+      "roi_percent": -66.38
     },
     "V2_typ8_pair_focused": {
       "model": "V2",
@@ -1278,8 +1265,8 @@
         "GK3": 17,
         "GK2": 3
       },
-      "total_winnings": 1238,
-      "roi_percent": -44.66
+      "total_winnings": 1131,
+      "roi_percent": -49.44
     },
     "V2_typ9_balanced": {
       "model": "V2",
@@ -1309,13 +1296,14 @@
         "7": 5
       },
       "gewinnklassen": {
-        "GK6": 76,
+        "GK6": 380,
+        "GK7": 76,
         "GK5": 143,
         "GK4": 28,
         "GK3": 5
       },
-      "total_winnings": 678,
-      "roi_percent": -69.69
+      "total_winnings": 1058,
+      "roi_percent": -52.7
     },
     "V2_typ9_near_miss": {
       "model": "V2",
@@ -1345,13 +1333,14 @@
         "7": 6
       },
       "gewinnklassen": {
+        "GK6": 356,
         "GK5": 138,
         "GK4": 35,
-        "GK6": 89,
+        "GK7": 89,
         "GK3": 6
       },
-      "total_winnings": 749,
-      "roi_percent": -66.52
+      "total_winnings": 1105,
+      "roi_percent": -50.6
     },
     "V2_typ9_jackpot": {
       "model": "V2",
@@ -1381,13 +1370,14 @@
         "7": 6
       },
       "gewinnklassen": {
+        "GK6": 363,
         "GK5": 153,
-        "GK6": 65,
+        "GK7": 65,
         "GK4": 35,
         "GK3": 6
       },
-      "total_winnings": 731,
-      "roi_percent": -67.32
+      "total_winnings": 1094,
+      "roi_percent": -51.1
     },
     "V2_typ9_predictable": {
       "model": "V2",
@@ -1418,12 +1408,13 @@
       },
       "gewinnklassen": {
         "GK5": 137,
-        "GK6": 97,
+        "GK6": 342,
+        "GK7": 97,
         "GK4": 19,
         "GK3": 3
       },
-      "total_winnings": 623,
-      "roi_percent": -72.15
+      "total_winnings": 965,
+      "roi_percent": -56.86
     },
     "V2_typ9_pair_focused": {
       "model": "V2",
@@ -1453,13 +1444,14 @@
         "7": 5
       },
       "gewinnklassen": {
+        "GK6": 361,
         "GK5": 147,
         "GK4": 44,
-        "GK6": 55,
+        "GK7": 55,
         "GK3": 5
       },
-      "total_winnings": 724,
-      "roi_percent": -67.64
+      "total_winnings": 1085,
+      "roi_percent": -51.5
     },
     "V2_typ10_balanced": {
       "model": "V2",
@@ -1655,6 +1647,39 @@
     {
       "rank": 1,
       "model": "V2",
+      "keno_typ": 6,
+      "strategy": "pair_focused",
+      "numbers": [
+        2,
+        3,
+        9,
+        33,
+        49,
+        50
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.785,
+      "hit_distribution": {
+        "0": 254,
+        "1": 694,
+        "2": 744,
+        "3": 399,
+        "4": 122,
+        "5": 19,
+        "6": 5
+      },
+      "gewinnklassen": {
+        "GK4": 399,
+        "GK3": 122,
+        "GK2": 19,
+        "GK1": 5
+      },
+      "total_winnings": 3428,
+      "roi_percent": 53.24
+    },
+    {
+      "rank": 2,
+      "model": "V2",
       "keno_typ": 7,
       "strategy": "pair_focused",
       "numbers": [
@@ -1679,17 +1704,17 @@
         "7": 1
       },
       "gewinnklassen": {
-        "GK5": 168,
+        "GK5": 510,
         "GK4": 215,
         "GK3": 38,
         "GK1": 1,
         "GK2": 7
       },
-      "total_winnings": 6707,
-      "roi_percent": 199.82
+      "total_winnings": 2881,
+      "roi_percent": 28.79
     },
     {
-      "rank": 2,
+      "rank": 3,
       "model": "V2",
       "keno_typ": 7,
       "strategy": "balanced",
@@ -1715,48 +1740,14 @@
         "7": 1
       },
       "gewinnklassen": {
+        "GK5": 470,
         "GK4": 217,
-        "GK5": 169,
         "GK3": 51,
         "GK2": 4,
         "GK1": 1
       },
-      "total_winnings": 6567,
-      "roi_percent": 193.56
-    },
-    {
-      "rank": 3,
-      "model": "V2",
-      "keno_typ": 6,
-      "strategy": "pair_focused",
-      "numbers": [
-        2,
-        3,
-        9,
-        33,
-        49,
-        50
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.785,
-      "hit_distribution": {
-        "0": 254,
-        "1": 694,
-        "2": 744,
-        "3": 399,
-        "4": 122,
-        "5": 19,
-        "6": 5
-      },
-      "gewinnklassen": {
-        "GK4": 399,
-        "GK5": 254,
-        "GK3": 122,
-        "GK2": 19,
-        "GK1": 5
-      },
-      "total_winnings": 6436,
-      "roi_percent": 187.71
+      "total_winnings": 2699,
+      "roi_percent": 20.65
     },
     {
       "rank": 4,
@@ -1786,366 +1777,16 @@
       },
       "gewinnklassen": {
         "GK3": 33,
-        "GK5": 208,
+        "GK5": 468,
         "GK4": 169,
         "GK1": 1,
         "GK2": 2
       },
-      "total_winnings": 6181,
-      "roi_percent": 176.31
+      "total_winnings": 2233,
+      "roi_percent": -0.18
     },
     {
       "rank": 5,
-      "model": "V2",
-      "keno_typ": 5,
-      "strategy": "pair_focused",
-      "numbers": [
-        3,
-        9,
-        33,
-        49,
-        50
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.486,
-      "hit_distribution": {
-        "0": 381,
-        "1": 816,
-        "2": 690,
-        "3": 279,
-        "4": 63,
-        "5": 8
-      },
-      "gewinnklassen": {
-        "GK3": 279,
-        "GK4": 381,
-        "GK2": 63,
-        "GK1": 8
-      },
-      "total_winnings": 5761,
-      "roi_percent": 157.53
-    },
-    {
-      "rank": 6,
-      "model": "V2",
-      "keno_typ": 5,
-      "strategy": "jackpot",
-      "numbers": [
-        3,
-        4,
-        20,
-        36,
-        49
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.487,
-      "hit_distribution": {
-        "0": 369,
-        "1": 836,
-        "2": 682,
-        "3": 281,
-        "4": 62,
-        "5": 7
-      },
-      "gewinnklassen": {
-        "GK4": 369,
-        "GK3": 281,
-        "GK2": 62,
-        "GK1": 7
-      },
-      "total_winnings": 5234,
-      "roi_percent": 133.97
-    },
-    {
-      "rank": 7,
-      "model": "V1",
-      "keno_typ": 5,
-      "strategy": "near_miss",
-      "numbers": [
-        3,
-        18,
-        24,
-        25,
-        31
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.414,
-      "hit_distribution": {
-        "0": 443,
-        "1": 818,
-        "2": 643,
-        "3": 278,
-        "4": 49,
-        "5": 6
-      },
-      "gewinnklassen": {
-        "GK4": 443,
-        "GK3": 278,
-        "GK2": 49,
-        "GK1": 6
-      },
-      "total_winnings": 4785,
-      "roi_percent": 113.9
-    },
-    {
-      "rank": 8,
-      "model": "V2",
-      "keno_typ": 5,
-      "strategy": "near_miss",
-      "numbers": [
-        2,
-        3,
-        4,
-        20,
-        36
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.474,
-      "hit_distribution": {
-        "0": 390,
-        "1": 830,
-        "2": 662,
-        "3": 281,
-        "4": 69,
-        "5": 5
-      },
-      "gewinnklassen": {
-        "GK4": 390,
-        "GK3": 281,
-        "GK2": 69,
-        "GK1": 5
-      },
-      "total_winnings": 4325,
-      "roi_percent": 93.34
-    },
-    {
-      "rank": 9,
-      "model": "V2",
-      "keno_typ": 5,
-      "strategy": "balanced",
-      "numbers": [
-        3,
-        4,
-        42,
-        49,
-        61
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.481,
-      "hit_distribution": {
-        "0": 378,
-        "1": 827,
-        "2": 670,
-        "3": 307,
-        "4": 50,
-        "5": 5
-      },
-      "gewinnklassen": {
-        "GK4": 378,
-        "GK3": 307,
-        "GK2": 50,
-        "GK1": 5
-      },
-      "total_winnings": 4220,
-      "roi_percent": 88.65
-    },
-    {
-      "rank": 10,
-      "model": "V1",
-      "keno_typ": 5,
-      "strategy": "balanced",
-      "numbers": [
-        3,
-        13,
-        24,
-        51,
-        66
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.442,
-      "hit_distribution": {
-        "0": 390,
-        "1": 831,
-        "2": 714,
-        "3": 246,
-        "4": 52,
-        "5": 4
-      },
-      "gewinnklassen": {
-        "GK4": 390,
-        "GK3": 246,
-        "GK2": 52,
-        "GK1": 4
-      },
-      "total_winnings": 3636,
-      "roi_percent": 62.54
-    },
-    {
-      "rank": 11,
-      "model": "V2",
-      "keno_typ": 6,
-      "strategy": "near_miss",
-      "numbers": [
-        2,
-        3,
-        4,
-        9,
-        20,
-        36
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.774,
-      "hit_distribution": {
-        "0": 254,
-        "1": 731,
-        "2": 707,
-        "3": 388,
-        "4": 128,
-        "5": 27,
-        "6": 2
-      },
-      "gewinnklassen": {
-        "GK5": 254,
-        "GK4": 388,
-        "GK3": 128,
-        "GK2": 27,
-        "GK1": 2
-      },
-      "total_winnings": 3557,
-      "roi_percent": 59.01
-    },
-    {
-      "rank": 12,
-      "model": "V2",
-      "keno_typ": 6,
-      "strategy": "balanced",
-      "numbers": [
-        3,
-        4,
-        9,
-        42,
-        49,
-        61
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.781,
-      "hit_distribution": {
-        "0": 257,
-        "1": 695,
-        "2": 737,
-        "3": 399,
-        "4": 130,
-        "5": 17,
-        "6": 2
-      },
-      "gewinnklassen": {
-        "GK5": 257,
-        "GK4": 399,
-        "GK3": 130,
-        "GK2": 17,
-        "GK1": 2
-      },
-      "total_winnings": 3428,
-      "roi_percent": 53.24
-    },
-    {
-      "rank": 13,
-      "model": "V1",
-      "keno_typ": 6,
-      "strategy": "jackpot",
-      "numbers": [
-        9,
-        13,
-        24,
-        37,
-        49,
-        51
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.721,
-      "hit_distribution": {
-        "0": 258,
-        "1": 739,
-        "2": 749,
-        "3": 369,
-        "4": 107,
-        "5": 13,
-        "6": 2
-      },
-      "gewinnklassen": {
-        "GK4": 369,
-        "GK5": 258,
-        "GK3": 107,
-        "GK1": 2,
-        "GK2": 13
-      },
-      "total_winnings": 3294,
-      "roi_percent": 47.25
-    },
-    {
-      "rank": 14,
-      "model": "V1",
-      "keno_typ": 5,
-      "strategy": "jackpot",
-      "numbers": [
-        3,
-        4,
-        36,
-        37,
-        51
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.413,
-      "hit_distribution": {
-        "0": 410,
-        "1": 858,
-        "2": 653,
-        "3": 269,
-        "4": 45,
-        "5": 2
-      },
-      "gewinnklassen": {
-        "GK4": 410,
-        "GK3": 269,
-        "GK2": 45,
-        "GK1": 2
-      },
-      "total_winnings": 2673,
-      "roi_percent": 19.49
-    },
-    {
-      "rank": 15,
-      "model": "V2",
-      "keno_typ": 5,
-      "strategy": "predictable",
-      "numbers": [
-        2,
-        3,
-        4,
-        24,
-        49
-      ],
-      "total_draws": 2237,
-      "avg_hits": 1.48,
-      "hit_distribution": {
-        "0": 373,
-        "1": 828,
-        "2": 683,
-        "3": 296,
-        "4": 56,
-        "5": 1
-      },
-      "gewinnklassen": {
-        "GK4": 373,
-        "GK3": 296,
-        "GK2": 56,
-        "GK1": 1
-      },
-      "total_winnings": 2230,
-      "roi_percent": -0.31
-    },
-    {
-      "rank": 16,
       "model": "V2",
       "keno_typ": 7,
       "strategy": "jackpot",
@@ -2170,16 +1811,82 @@
         "6": 7
       },
       "gewinnklassen": {
-        "GK5": 154,
+        "GK5": 472,
         "GK3": 62,
         "GK4": 211,
         "GK2": 7
       },
-      "total_winnings": 1963,
-      "roi_percent": -12.25
+      "total_winnings": 2127,
+      "roi_percent": -4.92
     },
     {
-      "rank": 17,
+      "rank": 6,
+      "model": "V2",
+      "keno_typ": 6,
+      "strategy": "near_miss",
+      "numbers": [
+        2,
+        3,
+        4,
+        9,
+        20,
+        36
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.774,
+      "hit_distribution": {
+        "0": 254,
+        "1": 731,
+        "2": 707,
+        "3": 388,
+        "4": 128,
+        "5": 27,
+        "6": 2
+      },
+      "gewinnklassen": {
+        "GK4": 388,
+        "GK3": 128,
+        "GK2": 27,
+        "GK1": 2
+      },
+      "total_winnings": 2049,
+      "roi_percent": -8.4
+    },
+    {
+      "rank": 7,
+      "model": "V2",
+      "keno_typ": 6,
+      "strategy": "balanced",
+      "numbers": [
+        3,
+        4,
+        9,
+        42,
+        49,
+        61
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.781,
+      "hit_distribution": {
+        "0": 257,
+        "1": 695,
+        "2": 737,
+        "3": 399,
+        "4": 130,
+        "5": 17,
+        "6": 2
+      },
+      "gewinnklassen": {
+        "GK4": 399,
+        "GK3": 130,
+        "GK2": 17,
+        "GK1": 2
+      },
+      "total_winnings": 1914,
+      "roi_percent": -14.44
+    },
+    {
+      "rank": 8,
       "model": "V2",
       "keno_typ": 7,
       "strategy": "near_miss",
@@ -2204,16 +1911,16 @@
         "6": 5
       },
       "gewinnklassen": {
-        "GK5": 178,
+        "GK5": 469,
         "GK4": 204,
         "GK3": 56,
         "GK2": 5
       },
-      "total_winnings": 1732,
-      "roi_percent": -22.57
+      "total_winnings": 1845,
+      "roi_percent": -17.52
     },
     {
-      "rank": 18,
+      "rank": 9,
       "model": "V1",
       "keno_typ": 7,
       "strategy": "jackpot",
@@ -2238,77 +1945,369 @@
         "6": 6
       },
       "gewinnklassen": {
-        "GK5": 169,
         "GK4": 191,
+        "GK5": 461,
         "GK3": 46,
         "GK2": 6
       },
-      "total_winnings": 1681,
-      "roi_percent": -24.85
+      "total_winnings": 1804,
+      "roi_percent": -19.36
     },
     {
-      "rank": 19,
+      "rank": 10,
       "model": "V2",
+      "keno_typ": 5,
+      "strategy": "pair_focused",
+      "numbers": [
+        3,
+        9,
+        33,
+        49,
+        50
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.486,
+      "hit_distribution": {
+        "0": 381,
+        "1": 816,
+        "2": 690,
+        "3": 279,
+        "4": 63,
+        "5": 8
+      },
+      "gewinnklassen": {
+        "GK3": 279,
+        "GK2": 63,
+        "GK1": 8
+      },
+      "total_winnings": 1799,
+      "roi_percent": -19.58
+    },
+    {
+      "rank": 11,
+      "model": "V1",
       "keno_typ": 6,
+      "strategy": "jackpot",
+      "numbers": [
+        9,
+        13,
+        24,
+        37,
+        49,
+        51
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.721,
+      "hit_distribution": {
+        "0": 258,
+        "1": 739,
+        "2": 749,
+        "3": 369,
+        "4": 107,
+        "5": 13,
+        "6": 2
+      },
+      "gewinnklassen": {
+        "GK4": 369,
+        "GK3": 107,
+        "GK1": 2,
+        "GK2": 13
+      },
+      "total_winnings": 1778,
+      "roi_percent": -20.52
+    },
+    {
+      "rank": 12,
+      "model": "V2",
+      "keno_typ": 5,
       "strategy": "jackpot",
       "numbers": [
         3,
         4,
-        9,
         20,
         36,
         49
       ],
       "total_draws": 2237,
-      "avg_hits": 1.786,
+      "avg_hits": 1.487,
       "hit_distribution": {
-        "0": 248,
-        "1": 727,
-        "2": 701,
-        "3": 406,
-        "4": 126,
-        "5": 29
+        "0": 369,
+        "1": 836,
+        "2": 682,
+        "3": 281,
+        "4": 62,
+        "5": 7
       },
       "gewinnklassen": {
-        "GK5": 248,
-        "GK4": 406,
-        "GK3": 126,
-        "GK2": 29
+        "GK3": 281,
+        "GK2": 62,
+        "GK1": 7
       },
-      "total_winnings": 1589,
-      "roi_percent": -28.97
+      "total_winnings": 1696,
+      "roi_percent": -24.18
     },
     {
-      "rank": 20,
+      "rank": 13,
+      "model": "V2",
+      "keno_typ": 5,
+      "strategy": "near_miss",
+      "numbers": [
+        2,
+        3,
+        4,
+        20,
+        36
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.474,
+      "hit_distribution": {
+        "0": 390,
+        "1": 830,
+        "2": 662,
+        "3": 281,
+        "4": 69,
+        "5": 5
+      },
+      "gewinnklassen": {
+        "GK3": 281,
+        "GK2": 69,
+        "GK1": 5
+      },
+      "total_winnings": 1545,
+      "roi_percent": -30.93
+    },
+    {
+      "rank": 14,
       "model": "V1",
-      "keno_typ": 6,
+      "keno_typ": 5,
       "strategy": "near_miss",
       "numbers": [
         3,
-        11,
-        17,
+        18,
         24,
         25,
         31
       ],
       "total_draws": 2237,
-      "avg_hits": 1.687,
+      "avg_hits": 1.414,
       "hit_distribution": {
-        "0": 294,
-        "1": 743,
-        "2": 703,
-        "3": 376,
-        "4": 109,
-        "5": 12
+        "0": 443,
+        "1": 818,
+        "2": 643,
+        "3": 278,
+        "4": 49,
+        "5": 6
       },
       "gewinnklassen": {
-        "GK4": 376,
-        "GK5": 294,
-        "GK3": 109,
-        "GK2": 12
+        "GK3": 278,
+        "GK2": 49,
+        "GK1": 6
       },
-      "total_winnings": 1362,
-      "roi_percent": -39.11
+      "total_winnings": 1499,
+      "roi_percent": -32.99
+    },
+    {
+      "rank": 15,
+      "model": "V2",
+      "keno_typ": 5,
+      "strategy": "balanced",
+      "numbers": [
+        3,
+        4,
+        42,
+        49,
+        61
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.481,
+      "hit_distribution": {
+        "0": 378,
+        "1": 827,
+        "2": 670,
+        "3": 307,
+        "4": 50,
+        "5": 5
+      },
+      "gewinnklassen": {
+        "GK3": 307,
+        "GK2": 50,
+        "GK1": 5
+      },
+      "total_winnings": 1464,
+      "roi_percent": -34.56
+    },
+    {
+      "rank": 16,
+      "model": "V2",
+      "keno_typ": 7,
+      "strategy": "predictable",
+      "numbers": [
+        2,
+        3,
+        4,
+        24,
+        25,
+        49,
+        51
+      ],
+      "total_draws": 2237,
+      "avg_hits": 2.027,
+      "hit_distribution": {
+        "0": 178,
+        "1": 586,
+        "2": 744,
+        "3": 498,
+        "4": 192,
+        "5": 36,
+        "6": 3
+      },
+      "gewinnklassen": {
+        "GK4": 192,
+        "GK5": 498,
+        "GK3": 36,
+        "GK2": 3
+      },
+      "total_winnings": 1422,
+      "roi_percent": -36.43
+    },
+    {
+      "rank": 17,
+      "model": "V1",
+      "keno_typ": 5,
+      "strategy": "balanced",
+      "numbers": [
+        3,
+        13,
+        24,
+        51,
+        66
+      ],
+      "total_draws": 2237,
+      "avg_hits": 1.442,
+      "hit_distribution": {
+        "0": 390,
+        "1": 831,
+        "2": 714,
+        "3": 246,
+        "4": 52,
+        "5": 4
+      },
+      "gewinnklassen": {
+        "GK3": 246,
+        "GK2": 52,
+        "GK1": 4
+      },
+      "total_winnings": 1256,
+      "roi_percent": -43.85
+    },
+    {
+      "rank": 18,
+      "model": "V2",
+      "keno_typ": 8,
+      "strategy": "jackpot",
+      "numbers": [
+        2,
+        3,
+        4,
+        9,
+        20,
+        24,
+        36,
+        49
+      ],
+      "total_draws": 2237,
+      "avg_hits": 2.376,
+      "hit_distribution": {
+        "0": 94,
+        "1": 486,
+        "2": 693,
+        "3": 553,
+        "4": 299,
+        "5": 86,
+        "6": 23,
+        "7": 3
+      },
+      "gewinnklassen": {
+        "GK6": 94,
+        "GK4": 86,
+        "GK5": 299,
+        "GK3": 23,
+        "GK2": 3
+      },
+      "total_winnings": 1210,
+      "roi_percent": -45.91
+    },
+    {
+      "rank": 19,
+      "model": "V2",
+      "keno_typ": 10,
+      "strategy": "near_miss",
+      "numbers": [
+        2,
+        3,
+        4,
+        9,
+        10,
+        11,
+        13,
+        25,
+        31,
+        59
+      ],
+      "total_draws": 2237,
+      "avg_hits": 2.882,
+      "hit_distribution": {
+        "0": 55,
+        "1": 296,
+        "2": 557,
+        "3": 648,
+        "4": 403,
+        "5": 204,
+        "6": 60,
+        "7": 12,
+        "8": 2
+      },
+      "gewinnklassen": {
+        "GK6": 204,
+        "GK5": 60,
+        "GK7": 55,
+        "GK4": 12,
+        "GK3": 2
+      },
+      "total_winnings": 1198,
+      "roi_percent": -46.45
+    },
+    {
+      "rank": 20,
+      "model": "V1",
+      "keno_typ": 7,
+      "strategy": "balanced",
+      "numbers": [
+        3,
+        4,
+        24,
+        37,
+        49,
+        51,
+        53
+      ],
+      "total_draws": 2237,
+      "avg_hits": 2.008,
+      "hit_distribution": {
+        "0": 194,
+        "1": 584,
+        "2": 720,
+        "3": 525,
+        "4": 178,
+        "5": 36
+      },
+      "gewinnklassen": {
+        "GK5": 525,
+        "GK4": 178,
+        "GK3": 36
+      },
+      "total_winnings": 1135,
+      "roi_percent": -49.26
     }
   ]
 }

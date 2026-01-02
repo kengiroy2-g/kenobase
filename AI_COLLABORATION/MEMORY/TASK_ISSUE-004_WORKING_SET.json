@@ -1,0 +1,6 @@
+﻿[
+    "scripts/backtest_patterns.py (NEU, 450 LOC)",
+    "kenobase/analysis/pattern.py (ERWEITERUNG, +150 LOC)",
+    "docs/adr/ADR-002-PATTERN-BUGFIX.md (NEU)",
+    "AI_COLLABORATION/ARTIFACTS/pattern_backtest_test.json (OUTPUT)"
+]

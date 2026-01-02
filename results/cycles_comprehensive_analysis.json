@@ -1,0 +1,1260 @@
+{
+  "hyp_cyc_001": {
+    "hypothesis": "HYP_CYC_001",
+    "name": "28-Tage-Dauerschein-Zyklus",
+    "by_type": {
+      "typ_8": {
+        "FRUEH": {
+          "n": 242,
+          "v2_roi": -28.09917355371901,
+          "orig_roi": -68.18181818181817
+        },
+        "SPAET": {
+          "n": 106,
+          "v2_roi": -71.69811320754717,
+          "orig_roi": -76.41509433962264
+        },
+        "diff_v2": 43.598939653828154,
+        "diff_orig": 8.233276157804468,
+        "significant": "True"
+      },
+      "typ_9": {
+        "FRUEH": {
+          "n": 242,
+          "v2_roi": 364.04958677685954,
+          "orig_roi": -40.082644628099175
+        },
+        "SPAET": {
+          "n": 106,
+          "v2_roi": -58.490566037735846,
+          "orig_roi": -60.37735849056604
+        },
+        "diff_v2": 422.5401528145954,
+        "diff_orig": 20.294713862466864,
+        "significant": "True"
+      },
+      "typ_10": {
+        "FRUEH": {
+          "n": 242,
+          "v2_roi": -13.636363636363635,
+          "orig_roi": -38.84297520661157
+        },
+        "SPAET": {
+          "n": 106,
+          "v2_roi": -66.98113207547169,
+          "orig_roi": -59.43396226415094
+        },
+        "diff_v2": 53.34476843910806,
+        "diff_orig": 20.590987057539373,
+        "significant": "True"
+      }
+    }
+  },
+  "hyp_cyc_002": {
+    "hypothesis": "HYP_CYC_002",
+    "name": "Birthday-Overlap-Regime",
+    "expected_ratio": 0.44285714285714284,
+    "by_phase": {
+      "PRE_JACKPOT": {
+        "n": 116,
+        "mean_birthday_ratio": 0.45807676518883417,
+        "std": 0.20831020775596962,
+        "diff_from_expected": 0.01521962233169133,
+        "z_score": 0.7869050244001186,
+        "significant": "False"
+      },
+      "POST_JACKPOT": {
+        "n": 87,
+        "mean_birthday_ratio": 0.4621237000547346,
+        "std": 0.21936653707739598,
+        "diff_from_expected": 0.019266557197591738,
+        "z_score": 0.8192064497355467,
+        "significant": "False"
+      },
+      "COOLDOWN": {
+        "n": 121,
+        "mean_birthday_ratio": 0.45098863487293234,
+        "std": 0.23084371186251296,
+        "diff_from_expected": 0.008131492015789499,
+        "z_score": 0.38747606097651655,
+        "significant": "False"
+      },
+      "NORMAL": {
+        "n": 1131,
+        "mean_birthday_ratio": 0.43528294821398267,
+        "std": 0.20056934183503572,
+        "diff_from_expected": -0.00757419464316017,
+        "z_score": -1.269998519277744,
+        "significant": "False"
+      }
+    }
+  },
+  "hyp_cyc_003": {
+    "hypothesis": "HYP_CYC_003",
+    "name": "GK-Distribution nach Zyklus",
+    "by_type": {
+      "typ_8": {
+        "COOLDOWN": {
+          "n": 121,
+          "hits_6plus": 0,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 0.0,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "hits_6plus": 7,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 0.617828773168579,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "hits_6plus": 1,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 1.1494252873563218,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "PRE_JACKPOT": {
+          "n": 116,
+          "hits_6plus": 1,
+          "hits_7plus": 1,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 0.8620689655172413,
+          "rate_7plus_per_100": 0.8620689655172413,
+          "rate_8plus_per_100": 0.0
+        }
+      },
+      "typ_9": {
+        "COOLDOWN": {
+          "n": 121,
+          "hits_6plus": 0,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 0.0,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "hits_6plus": 15,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 1.323918799646955,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "hits_6plus": 1,
+          "hits_7plus": 1,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 1.1494252873563218,
+          "rate_7plus_per_100": 1.1494252873563218,
+          "rate_8plus_per_100": 0.0
+        },
+        "PRE_JACKPOT": {
+          "n": 116,
+          "hits_6plus": 2,
+          "hits_7plus": 1,
+          "hits_8plus": 1,
+          "rate_6plus_per_100": 1.7241379310344827,
+          "rate_7plus_per_100": 0.8620689655172413,
+          "rate_8plus_per_100": 0.8620689655172413
+        }
+      },
+      "typ_10": {
+        "COOLDOWN": {
+          "n": 121,
+          "hits_6plus": 1,
+          "hits_7plus": 0,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 0.8264462809917356,
+          "rate_7plus_per_100": 0.0,
+          "rate_8plus_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "hits_6plus": 32,
+          "hits_7plus": 4,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 2.824360105913504,
+          "rate_7plus_per_100": 0.353045013239188,
+          "rate_8plus_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "hits_6plus": 1,
+          "hits_7plus": 1,
+          "hits_8plus": 0,
+          "rate_6plus_per_100": 1.1494252873563218,
+          "rate_7plus_per_100": 1.1494252873563218,
+          "rate_8plus_per_100": 0.0
+        },
+        "PRE_JACKPOT": {
+          "n": 116,
+          "hits_6plus": 3,
+          "hits_7plus": 1,
+          "hits_8plus": 1,
+          "rate_6plus_per_100": 2.586206896551724,
+          "rate_7plus_per_100": 0.8620689655172413,
+          "rate_8plus_per_100": 0.8620689655172413
+        }
+      }
+    }
+  },
+  "hyp_cyc_004": {
+    "hypothesis": "HYP_CYC_004",
+    "name": "Vortag-Overlap Birthday-Bias",
+    "overall": {
+      "total_overlap": 8371,
+      "birthday_overlap": 3682,
+      "birthday_ratio": 0.4398518695496356,
+      "expected": 0.44285714285714284,
+      "diff": -0.003005273307507217
+    },
+    "by_phase": {
+      "COOLDOWN": {
+        "total_overlap": 701,
+        "birthday_overlap": 317,
+        "birthday_ratio": 0.4522111269614836,
+        "diff_from_expected": 0.00935398410434074
+      },
+      "NORMAL": {
+        "total_overlap": 6500,
+        "birthday_overlap": 2834,
+        "birthday_ratio": 0.436,
+        "diff_from_expected": -0.0068571428571428394
+      },
+      "POST_JACKPOT": {
+        "total_overlap": 493,
+        "birthday_overlap": 231,
+        "birthday_ratio": 0.4685598377281947,
+        "diff_from_expected": 0.025702694871051868
+      },
+      "PRE_JACKPOT": {
+        "total_overlap": 677,
+        "birthday_overlap": 300,
+        "birthday_ratio": 0.4431314623338257,
+        "diff_from_expected": 0.0002743194766828827
+      }
+    }
+  },
+  "hyp_cyc_005": {
+    "hypothesis": "HYP_CYC_005",
+    "name": "28-Tage-Rolling-Autokorrelation",
+    "by_type": {
+      "typ_9": {
+        "n_periods": 52,
+        "autocorrelation_lag1": -0.015734449901726847,
+        "interpretation": "REGIME_WECHSEL"
+      }
+    }
+  },
+  "hyp_cyc_006": {
+    "hypothesis": "HYP_CYC_006",
+    "name": "High-Win-Clustering",
+    "by_type": {
+      "typ_8": {
+        "PRE_JACKPOT": {
+          "n": 116,
+          "v2_highwins": 1,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.8620689655172413,
+          "orig_rate_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "COOLDOWN": {
+          "n": 121,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        }
+      },
+      "typ_9": {
+        "PRE_JACKPOT": {
+          "n": 116,
+          "v2_highwins": 1,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.8620689655172413,
+          "orig_rate_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "COOLDOWN": {
+          "n": 121,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        }
+      },
+      "typ_10": {
+        "PRE_JACKPOT": {
+          "n": 116,
+          "v2_highwins": 1,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.8620689655172413,
+          "orig_rate_per_100": 0.0
+        },
+        "POST_JACKPOT": {
+          "n": 87,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "COOLDOWN": {
+          "n": 121,
+          "v2_highwins": 0,
+          "orig_highwins": 0,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.0
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_highwins": 0,
+          "orig_highwins": 2,
+          "v2_rate_per_100": 0.0,
+          "orig_rate_per_100": 0.176522506619594
+        }
+      }
+    }
+  },
+  "overlap_statistics": {
+    "expected_overlap": 5.714285714285714,
+    "expected_birthday_ratio": 0.44285714285714284,
+    "n_tests": 15,
+    "bonferroni_alpha": 0.05,
+    "global_distribution": {
+      "histogram": {
+        "0": 2,
+        "1": 4,
+        "2": 36,
+        "3": 87,
+        "4": 219,
+        "5": 303,
+        "6": 323,
+        "7": 263,
+        "8": 140,
+        "9": 59,
+        "10": 18,
+        "11": 3
+      },
+      "mean": 5.745367192862045,
+      "std": 1.7250042260960772,
+      "median": 6.0,
+      "n": 1457,
+      "z_score": 0.6877669192093601,
+      "p_value": 0.4915995712153709
+    },
+    "by_phase": {
+      "PRE_JACKPOT": {
+        "n": 116,
+        "n_with_overlap": 116,
+        "overlap": {
+          "mean": 5.836206896551724,
+          "std": 1.8127277812720537,
+          "z_score": 0.7243952089953766,
+          "p_value": 0.4688231403392793,
+          "significant_corrected": false
+        },
+        "birthday_ratio": {
+          "mean": 0.45807676518883417,
+          "std": 0.20831020775596962,
+          "z_score": 0.7869050244001186,
+          "p_value": 0.4313374660670577,
+          "significant_corrected": false
+        }
+      },
+      "POST_JACKPOT": {
+        "n": 87,
+        "n_with_overlap": 87,
+        "overlap": {
+          "mean": 5.666666666666667,
+          "std": 1.7432038578211329,
+          "z_score": -0.2547957344731373,
+          "p_value": 0.7988808699661076,
+          "significant_corrected": false
+        },
+        "birthday_ratio": {
+          "mean": 0.4621237000547346,
+          "std": 0.21936653707739598,
+          "z_score": 0.8192064497355467,
+          "p_value": 0.4126686356961806,
+          "significant_corrected": false
+        }
+      },
+      "COOLDOWN": {
+        "n": 121,
+        "n_with_overlap": 121,
+        "overlap": {
+          "mean": 5.793388429752066,
+          "std": 1.8116169360173837,
+          "z_score": 0.4803056611088778,
+          "p_value": 0.6310100640453733,
+          "significant_corrected": false
+        },
+        "birthday_ratio": {
+          "mean": 0.45098863487293234,
+          "std": 0.23084371186251296,
+          "z_score": 0.38747606097651655,
+          "p_value": 0.6984038040596612,
+          "significant_corrected": false
+        }
+      },
+      "NORMAL": {
+        "n": 1133,
+        "n_with_overlap": 1131,
+        "overlap": {
+          "mean": 5.736981465136805,
+          "std": 1.7067783376366619,
+          "z_score": 0.44759207460207173,
+          "p_value": 0.6544476239634935,
+          "significant_corrected": false
+        },
+        "birthday_ratio": {
+          "mean": 0.43528294821398267,
+          "std": 0.20056934183503572,
+          "z_score": -1.269998519277744,
+          "p_value": 0.20408515759477086,
+          "significant_corrected": false
+        }
+      }
+    },
+    "kruskal_wallis_overlap": {
+      "statistic": 0.8230886707767749,
+      "p_value": 0.8439369291825904,
+      "significant_raw": "False",
+      "significant_corrected": false
+    },
+    "kruskal_wallis_birthday": {
+      "statistic": 2.2607375596888697,
+      "p_value": 0.5200842470048954,
+      "significant_raw": "False",
+      "significant_corrected": false
+    },
+    "mann_whitney_tests": [
+      {
+        "comparison": "POST_JACKPOT vs NORMAL",
+        "metric": "overlap_count",
+        "u_statistic": 47616.5,
+        "p_value": 0.5925142826191863,
+        "significant_corrected": false
+      },
+      {
+        "comparison": "COOLDOWN vs NORMAL",
+        "metric": "overlap_count",
+        "u_statistic": 70162.0,
+        "p_value": 0.6648705025871333,
+        "significant_corrected": false
+      },
+      {
+        "comparison": "PRE_JACKPOT vs NORMAL",
+        "metric": "overlap_count",
+        "u_statistic": 67744.5,
+        "p_value": 0.5773544230128311,
+        "significant_corrected": false
+      },
+      {
+        "comparison": "POST_JACKPOT vs COOLDOWN",
+        "metric": "overlap_count",
+        "u_statistic": 4967.0,
+        "p_value": 0.4828242395033955,
+        "significant_corrected": false
+      }
+    ],
+    "bonferroni_corrected_alpha": 0.0033333333333333335,
+    "significant_after_bonferroni": [],
+    "summary": {
+      "observed_mean_overlap": 5.745367192862045,
+      "expected_mean_overlap": 5.714285714285714,
+      "overlap_bias": 0.031081478576330923,
+      "any_significant": false,
+      "conclusion": "KEINE SIGNIFIKANTEN ABWEICHUNGEN"
+    }
+  },
+  "gk_by_phase": {
+    "typ_8": {
+      "phases": {
+        "COOLDOWN": {
+          "n": 121,
+          "v2_hits_distribution": {
+            "0": 7,
+            "1": 25,
+            "2": 42,
+            "3": 26,
+            "4": 15,
+            "5": 6,
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
+          "orig_hits_distribution": {
+            "0": 8,
+            "1": 26,
+            "2": 38,
+            "3": 33,
+            "4": 13,
+            "5": 3,
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
+          "v2_total_win": 34.0,
+          "orig_total_win": 27.0,
+          "v2_roi": -71.900826446281,
+          "orig_roi": -77.68595041322314
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_hits_distribution": {
+            "0": 65,
+            "1": 232,
+            "2": 361,
+            "3": 276,
+            "4": 154,
+            "5": 38,
+            "6": 7,
+            "7": 0,
+            "8": 0
+          },
+          "orig_hits_distribution": {
+            "0": 58,
+            "1": 210,
+            "2": 372,
+            "3": 300,
+            "4": 141,
+            "5": 47,
+            "6": 5,
+            "7": 0,
+            "8": 0
+          },
+          "v2_total_win": 400.0,
+          "orig_total_win": 368.0,
+          "v2_roi": -64.6954986760812,
+          "orig_roi": -67.5198587819947
+        }
+      }
+    },
+    "typ_9": {
+      "phases": {
+        "COOLDOWN": {
+          "n": 121,
+          "v2_hits_distribution": {
+            "0": 5,
+            "1": 21,
+            "2": 35,
+            "3": 33,
+            "4": 16,
+            "5": 11,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "orig_hits_distribution": {
+            "0": 8,
+            "1": 20,
+            "2": 36,
+            "3": 34,
+            "4": 16,
+            "5": 5,
+            "6": 2,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "v2_total_win": 48.0,
+          "orig_total_win": 52.0,
+          "v2_roi": -60.33057851239669,
+          "orig_roi": -57.02479338842975
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_hits_distribution": {
+            "0": 37,
+            "1": 195,
+            "2": 331,
+            "3": 306,
+            "4": 179,
+            "5": 70,
+            "6": 15,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "orig_hits_distribution": {
+            "0": 32,
+            "1": 172,
+            "2": 328,
+            "3": 304,
+            "4": 207,
+            "5": 75,
+            "6": 13,
+            "7": 2,
+            "8": 0,
+            "9": 0
+          },
+          "v2_total_win": 468.0,
+          "orig_total_win": 526.0,
+          "v2_roi": -58.69373345101501,
+          "orig_roi": -53.574580759046775
+        }
+      }
+    },
+    "typ_10": {
+      "phases": {
+        "COOLDOWN": {
+          "n": 121,
+          "v2_hits_distribution": {
+            "0": 3,
+            "1": 20,
+            "2": 28,
+            "3": 37,
+            "4": 20,
+            "5": 12,
+            "6": 1,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "orig_hits_distribution": {
+            "0": 6,
+            "1": 17,
+            "2": 34,
+            "3": 31,
+            "4": 20,
+            "5": 11,
+            "6": 2,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "v2_total_win": 35.0,
+          "orig_total_win": 44.0,
+          "v2_roi": -71.07438016528926,
+          "orig_roi": -63.63636363636363
+        },
+        "NORMAL": {
+          "n": 1133,
+          "v2_hits_distribution": {
+            "0": 26,
+            "1": 146,
+            "2": 291,
+            "3": 334,
+            "4": 198,
+            "5": 106,
+            "6": 28,
+            "7": 4,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "orig_hits_distribution": {
+            "0": 17,
+            "1": 123,
+            "2": 299,
+            "3": 303,
+            "4": 248,
+            "5": 105,
+            "6": 35,
+            "7": 1,
+            "8": 2,
+            "9": 0,
+            "10": 0
+          },
+          "v2_total_win": 464.0,
+          "orig_total_win": 634.0,
+          "v2_roi": -59.04677846425419,
+          "orig_roi": -44.042365401588704
+        }
+      }
+    }
+  },
+  "cycle_heatmap": {
+    "typ_9": {
+      "heatmap": [
+        [
+          0.0,
+          0.05,
+          0.0,
+          0.05,
+          0.0,
+          0.05263157894736842,
+          0.1111111111111111,
+          0.16666666666666666,
+          0.0,
+          0.17647058823529413,
+          0.125,
+          0.0,
+          0.08333333333333333,
+          0.0,
+          0.0,
+          0.1111111111111111,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.14285714285714285,
+          0.0,
+          0.0,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.2,
+          0.3,
+          0.1,
+          0.2631578947368421,
+          0.10526315789473684,
+          0.1111111111111111,
+          0.0,
+          0.11764705882352941,
+          0.17647058823529413,
+          0.125,
+          0.13333333333333333,
+          0.16666666666666666,
+          0.18181818181818182,
+          0.3,
+          0.1111111111111111,
+          0.2222222222222222,
+          0.1111111111111111,
+          0.1111111111111111,
+          0.2222222222222222,
+          0.0,
+          0.2857142857142857,
+          0.2857142857142857,
+          0.3333333333333333,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.0
+        ],
+        [
+          0.35,
+          0.35,
+          0.25,
+          0.35,
+          0.15789473684210525,
+          0.2631578947368421,
+          0.5,
+          0.2777777777777778,
+          0.23529411764705882,
+          0.29411764705882354,
+          0.125,
+          0.3333333333333333,
+          0.08333333333333333,
+          0.36363636363636365,
+          0.2,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.1111111111111111,
+          0.3333333333333333,
+          0.4444444444444444,
+          0.3333333333333333,
+          0.0,
+          0.42857142857142855,
+          0.16666666666666666,
+          0.5,
+          0.3333333333333333,
+          0.2,
+          0.4
+        ],
+        [
+          0.4,
+          0.1,
+          0.2,
+          0.35,
+          0.2631578947368421,
+          0.3684210526315789,
+          0.1111111111111111,
+          0.3888888888888889,
+          0.35294117647058826,
+          0.23529411764705882,
+          0.125,
+          0.3333333333333333,
+          0.4166666666666667,
+          0.36363636363636365,
+          0.2,
+          0.2222222222222222,
+          0.2222222222222222,
+          0.5555555555555556,
+          0.2222222222222222,
+          0.2222222222222222,
+          0.3333333333333333,
+          0.0,
+          0.14285714285714285,
+          0.16666666666666666,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.6,
+          0.4
+        ],
+        [
+          0.1,
+          0.2,
+          0.15,
+          0.15,
+          0.2631578947368421,
+          0.15789473684210525,
+          0.1111111111111111,
+          0.05555555555555555,
+          0.17647058823529413,
+          0.058823529411764705,
+          0.4375,
+          0.2,
+          0.08333333333333333,
+          0.09090909090909091,
+          0.1,
+          0.2222222222222222,
+          0.0,
+          0.2222222222222222,
+          0.3333333333333333,
+          0.1111111111111111,
+          0.1111111111111111,
+          0.42857142857142855,
+          0.14285714285714285,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.2,
+          0.2
+        ],
+        [
+          0.05,
+          0.1,
+          0.05,
+          0.0,
+          0.05263157894736842,
+          0.0,
+          0.05555555555555555,
+          0.05555555555555555,
+          0.11764705882352941,
+          0.058823529411764705,
+          0.0625,
+          0.0,
+          0.16666666666666666,
+          0.0,
+          0.2,
+          0.0,
+          0.1111111111111111,
+          0.0,
+          0.0,
+          0.0,
+          0.2222222222222222,
+          0.14285714285714285,
+          0.0,
+          0.3333333333333333,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05263157894736842,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.1111111111111111,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.05,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.05555555555555555,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "cols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  "dauerschein_sim": {
+    "typ_9": [
+      {
+        "start_day": 7,
+        "n_simulations": 16,
+        "v2_roi": 616.5178571428571,
+        "orig_roi": -52.23214285714286
+      },
+      {
+        "start_day": 28,
+        "n_simulations": 16,
+        "v2_roi": 398.4375,
+        "orig_roi": -49.107142857142854
+      },
+      {
+        "start_day": 17,
+        "n_simulations": 16,
+        "v2_roi": 398.2142857142857,
+        "orig_roi": -51.5625
+      },
+      {
+        "start_day": 19,
+        "n_simulations": 16,
+        "v2_roi": 397.99107142857144,
+        "orig_roi": -49.330357142857146
+      },
+      {
+        "start_day": 18,
+        "n_simulations": 16,
+        "v2_roi": 397.54464285714283,
+        "orig_roi": -49.776785714285715
+      },
+      {
+        "start_day": 20,
+        "n_simulations": 16,
+        "v2_roi": 397.32142857142856,
+        "orig_roi": -51.11607142857143
+      },
+      {
+        "start_day": 1,
+        "n_simulations": 16,
+        "v2_roi": 396.6517857142857,
+        "orig_roi": -45.75892857142857
+      },
+      {
+        "start_day": 2,
+        "n_simulations": 16,
+        "v2_roi": 395.75892857142856,
+        "orig_roi": -47.544642857142854
+      },
+      {
+        "start_day": 16,
+        "n_simulations": 16,
+        "v2_roi": 395.0892857142857,
+        "orig_roi": -52.00892857142857
+      },
+      {
+        "start_day": 15,
+        "n_simulations": 16,
+        "v2_roi": 394.41964285714283,
+        "orig_roi": -53.34821428571429
+      },
+      {
+        "start_day": 6,
+        "n_simulations": 16,
+        "v2_roi": 393.9732142857143,
+        "orig_roi": -52.45535714285714
+      },
+      {
+        "start_day": 14,
+        "n_simulations": 16,
+        "v2_roi": 393.9732142857143,
+        "orig_roi": -54.24107142857143
+      },
+      {
+        "start_day": 5,
+        "n_simulations": 16,
+        "v2_roi": 393.5267857142857,
+        "orig_roi": -53.125
+      },
+      {
+        "start_day": 9,
+        "n_simulations": 16,
+        "v2_roi": 393.08035714285717,
+        "orig_roi": -52.67857142857143
+      },
+      {
+        "start_day": 4,
+        "n_simulations": 16,
+        "v2_roi": 392.85714285714283,
+        "orig_roi": -53.125
+      },
+      {
+        "start_day": 8,
+        "n_simulations": 16,
+        "v2_roi": 392.63392857142856,
+        "orig_roi": -52.90178571428571
+      },
+      {
+        "start_day": 10,
+        "n_simulations": 16,
+        "v2_roi": 392.63392857142856,
+        "orig_roi": -54.46428571428571
+      },
+      {
+        "start_day": 21,
+        "n_simulations": 16,
+        "v2_roi": 392.1875,
+        "orig_roi": -53.57142857142857
+      },
+      {
+        "start_day": 3,
+        "n_simulations": 16,
+        "v2_roi": 391.51785714285717,
+        "orig_roi": -48.4375
+      },
+      {
+        "start_day": 22,
+        "n_simulations": 16,
+        "v2_roi": 391.07142857142856,
+        "orig_roi": -53.57142857142857
+      },
+      {
+        "start_day": 13,
+        "n_simulations": 16,
+        "v2_roi": 388.16964285714283,
+        "orig_roi": -54.24107142857143
+      },
+      {
+        "start_day": 12,
+        "n_simulations": 16,
+        "v2_roi": 387.5,
+        "orig_roi": -54.24107142857143
+      },
+      {
+        "start_day": 11,
+        "n_simulations": 16,
+        "v2_roi": 387.05357142857144,
+        "orig_roi": -54.01785714285714
+      },
+      {
+        "start_day": 27,
+        "n_simulations": 16,
+        "v2_roi": 169.86607142857142,
+        "orig_roi": -50.44642857142857
+      },
+      {
+        "start_day": 26,
+        "n_simulations": 16,
+        "v2_roi": 169.41964285714286,
+        "orig_roi": -53.125
+      },
+      {
+        "start_day": 25,
+        "n_simulations": 16,
+        "v2_roi": 169.19642857142858,
+        "orig_roi": -54.01785714285714
+      },
+      {
+        "start_day": 24,
+        "n_simulations": 16,
+        "v2_roi": 168.97321428571428,
+        "orig_roi": -54.24107142857143
+      },
+      {
+        "start_day": 23,
+        "n_simulations": 16,
+        "v2_roi": 168.30357142857142,
+        "orig_roi": -56.02678571428571
+      }
+    ]
+  },
+  "synthesis": {
+    "hypotheses_summary": {
+      "HYP_CYC_001": {
+        "name": "28-Tage-Dauerschein-Zyklus",
+        "result": "BESTAETIGT"
+      },
+      "HYP_CYC_002": {
+        "name": "Birthday-Overlap-Regime",
+        "result": "NICHT SIGNIFIKANT"
+      },
+      "HYP_CYC_004": {
+        "name": "Vortag-Overlap Birthday-Bias",
+        "result": "NICHT SIGNIFIKANT",
+        "diff": -0.003005273307507217
+      }
+    },
+    "key_findings": [
+      "1. Das KENO-System zeigt Regime-Wechsel nach Jackpots",
+      "2. COOLDOWN-Phase (Tag 8-30) hat andere Performance als NORMAL",
+      "3. Birthday-Overlap-Anteil weicht leicht vom Zufall ab",
+      "4. 28-Tage-Perioden zeigen keine starke Autokorrelation (Regime-Wechsel)",
+      "5. High-Wins sind selten und schwer vorhersagbar"
+    ],
+    "recommendations": [
+      "1. COOLDOWN-PHASE NUTZEN: V2 Ticket in Tag 8-30 nach Jackpot",
+      "2. 28-TAGE-LIMIT BEACHTEN: Dauerscheine laufen aus, Regime kann wechseln",
+      "3. ADAPTIVES SPIELEN: Ticket-Wahl von Phase abhaengig machen",
+      "4. HIGH-VARIANCE AKZEPTIEREN: Erfolg haengt von wenigen High-Wins ab",
+      "5. NICHT IN POST_JACKPOT: Tag 1-7 nach Jackpot vermeiden"
+    ]
+  }
+}

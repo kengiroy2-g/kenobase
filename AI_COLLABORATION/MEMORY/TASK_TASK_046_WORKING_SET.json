@@ -1,0 +1,6 @@
+﻿[
+    "scripts/analyze_ticket_lifecycle.py",
+    "results/ticket_lifecycle_analysis.json",
+    "results/walk_forward_param_grid.json",
+    "AI_COLLABORATION/KNOWLEDGE_BASE/HYPOTHESES_CATALOG.md"
+]

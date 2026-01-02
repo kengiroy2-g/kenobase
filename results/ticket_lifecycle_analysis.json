@@ -1,0 +1,1747 @@
+{
+  "walk_forward": {
+    "keno_type": 9,
+    "train_days": 365,
+    "test_days": 90,
+    "step_days": 90,
+    "iterations": [
+      {
+        "iteration": 1,
+        "train_period": "2022-01-03 - 2023-01-02",
+        "test_period": "2023-01-03 - 2023-04-02",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              57,
+              36,
+              12,
+              42,
+              66,
+              2,
+              24,
+              10,
+              55
+            ],
+            "invested": 90,
+            "won": 28,
+            "roi": -68.88888888888889,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              57,
+              36,
+              42,
+              66,
+              55,
+              51,
+              70,
+              33,
+              65
+            ],
+            "invested": 90,
+            "won": 36,
+            "roi": -60.0,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              2,
+              10,
+              33,
+              37,
+              44,
+              46,
+              53,
+              65,
+              70
+            ],
+            "invested": 90,
+            "won": 27,
+            "roi": -70.0,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 2,
+        "train_period": "2022-04-03 - 2023-04-02",
+        "test_period": "2023-04-03 - 2023-07-01",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              33,
+              2,
+              9,
+              42,
+              10,
+              66,
+              21,
+              41,
+              25
+            ],
+            "invested": 90,
+            "won": 32,
+            "roi": -64.44444444444444,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              33,
+              42,
+              66,
+              41,
+              34,
+              57,
+              61,
+              56,
+              55
+            ],
+            "invested": 90,
+            "won": 39,
+            "roi": -56.666666666666664,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              5,
+              21,
+              38,
+              39,
+              42,
+              43,
+              49,
+              54,
+              65
+            ],
+            "invested": 90,
+            "won": 37,
+            "roi": -58.88888888888889,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 3,
+        "train_period": "2022-07-02 - 2023-07-01",
+        "test_period": "2023-07-02 - 2023-09-29",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              9,
+              33,
+              2,
+              37,
+              25,
+              38,
+              51,
+              57,
+              14
+            ],
+            "invested": 90,
+            "won": 25,
+            "roi": -72.22222222222221,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              33,
+              37,
+              38,
+              51,
+              57,
+              36,
+              46,
+              66,
+              39
+            ],
+            "invested": 90,
+            "won": 31,
+            "roi": -65.55555555555556,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              6,
+              14,
+              36,
+              38,
+              39,
+              40,
+              48,
+              51,
+              66
+            ],
+            "invested": 90,
+            "won": 34,
+            "roi": -62.22222222222222,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 4,
+        "train_period": "2022-09-30 - 2023-09-29",
+        "test_period": "2023-09-30 - 2023-12-28",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              33,
+              25,
+              39,
+              2,
+              5,
+              3,
+              9,
+              37,
+              14
+            ],
+            "invested": 90,
+            "won": 47,
+            "roi": -47.77777777777778,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              33,
+              39,
+              37,
+              36,
+              54,
+              62,
+              65,
+              50,
+              66
+            ],
+            "invested": 90,
+            "won": 33,
+            "roi": -63.33333333333333,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              2,
+              25,
+              33,
+              39,
+              47,
+              49,
+              62,
+              64,
+              70
+            ],
+            "invested": 90,
+            "won": 51,
+            "roi": -43.333333333333336,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 5,
+        "train_period": "2022-12-29 - 2023-12-28",
+        "test_period": "2023-12-29 - 2024-03-27",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              25,
+              3,
+              50,
+              38,
+              9,
+              14,
+              39,
+              33,
+              6
+            ],
+            "invested": 90,
+            "won": 26,
+            "roi": -71.11111111111111,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              50,
+              38,
+              39,
+              33,
+              40,
+              54,
+              47,
+              68,
+              49
+            ],
+            "invested": 90,
+            "won": 30,
+            "roi": -66.66666666666666,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              9,
+              20,
+              32,
+              40,
+              44,
+              47,
+              50,
+              64,
+              68
+            ],
+            "invested": 90,
+            "won": 33,
+            "roi": -63.33333333333333,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 6,
+        "train_period": "2023-03-29 - 2024-03-27",
+        "test_period": "2024-03-28 - 2024-06-25",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              25,
+              3,
+              66,
+              6,
+              14,
+              16,
+              50,
+              39,
+              2
+            ],
+            "invested": 90,
+            "won": 50,
+            "roi": -44.44444444444444,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              66,
+              50,
+              39,
+              64,
+              47,
+              62,
+              38,
+              49,
+              48
+            ],
+            "invested": 90,
+            "won": 37,
+            "roi": -58.88888888888889,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              8,
+              25,
+              35,
+              45,
+              49,
+              56,
+              57,
+              65,
+              66
+            ],
+            "invested": 90,
+            "won": 71,
+            "roi": -21.11111111111111,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 7,
+        "train_period": "2023-06-27 - 2024-06-25",
+        "test_period": "2024-06-26 - 2024-09-23",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              3,
+              25,
+              6,
+              66,
+              49,
+              20,
+              65,
+              35,
+              59
+            ],
+            "invested": 90,
+            "won": 39,
+            "roi": -56.666666666666664,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              66,
+              49,
+              65,
+              35,
+              59,
+              39,
+              64,
+              50,
+              33
+            ],
+            "invested": 90,
+            "won": 41,
+            "roi": -54.44444444444444,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              3,
+              20,
+              33,
+              35,
+              39,
+              40,
+              59,
+              65,
+              69
+            ],
+            "invested": 90,
+            "won": 42,
+            "roi": -53.333333333333336,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 8,
+        "train_period": "2023-09-25 - 2024-09-23",
+        "test_period": "2024-09-24 - 2024-12-22",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              3,
+              59,
+              35,
+              20,
+              25,
+              68,
+              10,
+              11,
+              33
+            ],
+            "invested": 90,
+            "won": 27,
+            "roi": -70.0,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              59,
+              35,
+              68,
+              33,
+              49,
+              66,
+              56,
+              39,
+              45
+            ],
+            "invested": 90,
+            "won": 38,
+            "roi": -57.77777777777777,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              20,
+              28,
+              36,
+              37,
+              47,
+              56,
+              59,
+              63,
+              68
+            ],
+            "invested": 90,
+            "won": 45,
+            "roi": -50.0,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 9,
+        "train_period": "2023-12-24 - 2024-12-22",
+        "test_period": "2024-12-23 - 2025-03-22",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              3,
+              35,
+              56,
+              20,
+              39,
+              28,
+              29,
+              45,
+              4
+            ],
+            "invested": 90,
+            "won": 39,
+            "roi": -56.666666666666664,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              35,
+              56,
+              39,
+              45,
+              59,
+              53,
+              68,
+              40,
+              33
+            ],
+            "invested": 90,
+            "won": 30,
+            "roi": -66.66666666666666,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              9,
+              23,
+              34,
+              35,
+              40,
+              45,
+              53,
+              62,
+              63
+            ],
+            "invested": 90,
+            "won": 54,
+            "roi": -40.0,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 10,
+        "train_period": "2024-03-23 - 2025-03-22",
+        "test_period": "2025-03-23 - 2025-06-20",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              3,
+              45,
+              20,
+              35,
+              33,
+              28,
+              39,
+              68,
+              29
+            ],
+            "invested": 90,
+            "won": 30,
+            "roi": -66.66666666666666,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              45,
+              35,
+              33,
+              39,
+              68,
+              53,
+              59,
+              67,
+              56
+            ],
+            "invested": 90,
+            "won": 34,
+            "roi": -62.22222222222222,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              8,
+              15,
+              45,
+              46,
+              49,
+              51,
+              55,
+              61,
+              67
+            ],
+            "invested": 90,
+            "won": 39,
+            "roi": -56.666666666666664,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 11,
+        "train_period": "2024-06-21 - 2025-06-20",
+        "test_period": "2025-06-21 - 2025-09-18",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              28,
+              63,
+              62,
+              47,
+              45,
+              23,
+              68,
+              18,
+              9
+            ],
+            "invested": 90,
+            "won": 1024,
+            "roi": 1037.7777777777778,
+            "high_wins": 1,
+            "high_win_details": [
+              {
+                "date": "2025-06-22",
+                "hits": 8,
+                "win": 1000
+              }
+            ]
+          },
+          "frequency_high": {
+            "ticket": [
+              63,
+              62,
+              47,
+              45,
+              68,
+              37,
+              50,
+              56,
+              39
+            ],
+            "invested": 90,
+            "won": 38,
+            "roi": -57.77777777777777,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              12,
+              28,
+              34,
+              41,
+              42,
+              43,
+              47,
+              49,
+              52
+            ],
+            "invested": 90,
+            "won": 43,
+            "roi": -52.22222222222223,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      },
+      {
+        "iteration": 12,
+        "train_period": "2024-09-19 - 2025-09-18",
+        "test_period": "2025-09-19 - 2025-12-17",
+        "strategies": {
+          "frequency": {
+            "ticket": [
+              49,
+              12,
+              55,
+              34,
+              45,
+              15,
+              23,
+              46,
+              18
+            ],
+            "invested": 90,
+            "won": 47,
+            "roi": -47.77777777777778,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "frequency_high": {
+            "ticket": [
+              49,
+              55,
+              34,
+              45,
+              46,
+              62,
+              58,
+              52,
+              51
+            ],
+            "invested": 90,
+            "won": 49,
+            "roi": -45.55555555555556,
+            "high_wins": 0,
+            "high_win_details": []
+          },
+          "v2_style": {
+            "ticket": [
+              12,
+              19,
+              34,
+              46,
+              49,
+              52,
+              55,
+              56,
+              57
+            ],
+            "invested": 90,
+            "won": 45,
+            "roi": -50.0,
+            "high_wins": 0,
+            "high_win_details": []
+          }
+        }
+      }
+    ]
+  },
+  "yearly": {
+    "keno_type": 9,
+    "tickets_by_year": {
+      "2022": {
+        "frequency": [
+          57,
+          36,
+          12,
+          42,
+          66,
+          24,
+          10,
+          55,
+          2
+        ],
+        "frequency_high": [
+          57,
+          36,
+          42,
+          66,
+          55,
+          51,
+          70,
+          64,
+          33
+        ],
+        "v2_style": [
+          2,
+          10,
+          33,
+          37,
+          44,
+          46,
+          53,
+          64,
+          70
+        ]
+      },
+      "2023": {
+        "frequency": [
+          3,
+          25,
+          38,
+          39,
+          50,
+          6,
+          14,
+          9,
+          33
+        ],
+        "frequency_high": [
+          38,
+          39,
+          50,
+          33,
+          49,
+          54,
+          40,
+          66,
+          68
+        ],
+        "v2_style": [
+          3,
+          25,
+          32,
+          38,
+          44,
+          47,
+          49,
+          50,
+          68
+        ]
+      },
+      "2024": {
+        "frequency": [
+          3,
+          35,
+          45,
+          29,
+          20,
+          28,
+          56,
+          59,
+          39
+        ],
+        "frequency_high": [
+          35,
+          45,
+          56,
+          59,
+          39,
+          67,
+          53,
+          68,
+          65
+        ],
+        "v2_style": [
+          23,
+          29,
+          34,
+          35,
+          40,
+          45,
+          53,
+          62,
+          63
+        ]
+      }
+    },
+    "performance_matrix": {
+      "train_2022_test_2023_frequency": {
+        "train_year": 2022,
+        "test_year": 2023,
+        "strategy": "frequency",
+        "ticket": [
+          57,
+          36,
+          12,
+          42,
+          66,
+          24,
+          10,
+          55,
+          2
+        ],
+        "invested": 365,
+        "won": 131,
+        "roi": -64.10958904109589,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2022_test_2023_frequency_high": {
+        "train_year": 2022,
+        "test_year": 2023,
+        "strategy": "frequency_high",
+        "ticket": [
+          57,
+          36,
+          42,
+          66,
+          55,
+          51,
+          70,
+          64,
+          33
+        ],
+        "invested": 365,
+        "won": 133,
+        "roi": -63.561643835616444,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2022_test_2023_v2_style": {
+        "train_year": 2022,
+        "test_year": 2023,
+        "strategy": "v2_style",
+        "ticket": [
+          2,
+          10,
+          33,
+          37,
+          44,
+          46,
+          53,
+          64,
+          70
+        ],
+        "invested": 365,
+        "won": 125,
+        "roi": -65.75342465753424,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2022_test_2024_frequency": {
+        "train_year": 2022,
+        "test_year": 2024,
+        "strategy": "frequency",
+        "ticket": [
+          57,
+          36,
+          12,
+          42,
+          66,
+          24,
+          10,
+          55,
+          2
+        ],
+        "invested": 366,
+        "won": 133,
+        "roi": -63.661202185792355,
+        "high_wins": 0,
+        "years_apart": 2
+      },
+      "train_2022_test_2024_frequency_high": {
+        "train_year": 2022,
+        "test_year": 2024,
+        "strategy": "frequency_high",
+        "ticket": [
+          57,
+          36,
+          42,
+          66,
+          55,
+          51,
+          70,
+          64,
+          33
+        ],
+        "invested": 366,
+        "won": 165,
+        "roi": -54.91803278688525,
+        "high_wins": 0,
+        "years_apart": 2
+      },
+      "train_2022_test_2024_v2_style": {
+        "train_year": 2022,
+        "test_year": 2024,
+        "strategy": "v2_style",
+        "ticket": [
+          2,
+          10,
+          33,
+          37,
+          44,
+          46,
+          53,
+          64,
+          70
+        ],
+        "invested": 366,
+        "won": 144,
+        "roi": -60.65573770491803,
+        "high_wins": 0,
+        "years_apart": 2
+      },
+      "train_2022_test_2025_frequency": {
+        "train_year": 2022,
+        "test_year": 2025,
+        "strategy": "frequency",
+        "ticket": [
+          57,
+          36,
+          12,
+          42,
+          66,
+          24,
+          10,
+          55,
+          2
+        ],
+        "invested": 363,
+        "won": 178,
+        "roi": -50.964187327823694,
+        "high_wins": 0,
+        "years_apart": 3
+      },
+      "train_2022_test_2025_frequency_high": {
+        "train_year": 2022,
+        "test_year": 2025,
+        "strategy": "frequency_high",
+        "ticket": [
+          57,
+          36,
+          42,
+          66,
+          55,
+          51,
+          70,
+          64,
+          33
+        ],
+        "invested": 363,
+        "won": 151,
+        "roi": -58.40220385674931,
+        "high_wins": 0,
+        "years_apart": 3
+      },
+      "train_2022_test_2025_v2_style": {
+        "train_year": 2022,
+        "test_year": 2025,
+        "strategy": "v2_style",
+        "ticket": [
+          2,
+          10,
+          33,
+          37,
+          44,
+          46,
+          53,
+          64,
+          70
+        ],
+        "invested": 363,
+        "won": 142,
+        "roi": -60.88154269972452,
+        "high_wins": 0,
+        "years_apart": 3
+      },
+      "train_2023_test_2024_frequency": {
+        "train_year": 2023,
+        "test_year": 2024,
+        "strategy": "frequency",
+        "ticket": [
+          3,
+          25,
+          38,
+          39,
+          50,
+          6,
+          14,
+          9,
+          33
+        ],
+        "invested": 366,
+        "won": 153,
+        "roi": -58.19672131147541,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2023_test_2024_frequency_high": {
+        "train_year": 2023,
+        "test_year": 2024,
+        "strategy": "frequency_high",
+        "ticket": [
+          38,
+          39,
+          50,
+          33,
+          49,
+          54,
+          40,
+          66,
+          68
+        ],
+        "invested": 366,
+        "won": 158,
+        "roi": -56.830601092896174,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2023_test_2024_v2_style": {
+        "train_year": 2023,
+        "test_year": 2024,
+        "strategy": "v2_style",
+        "ticket": [
+          3,
+          25,
+          32,
+          38,
+          44,
+          47,
+          49,
+          50,
+          68
+        ],
+        "invested": 366,
+        "won": 153,
+        "roi": -58.19672131147541,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2023_test_2025_frequency": {
+        "train_year": 2023,
+        "test_year": 2025,
+        "strategy": "frequency",
+        "ticket": [
+          3,
+          25,
+          38,
+          39,
+          50,
+          6,
+          14,
+          9,
+          33
+        ],
+        "invested": 363,
+        "won": 1125,
+        "roi": 209.91735537190084,
+        "high_wins": 1,
+        "years_apart": 2
+      },
+      "train_2023_test_2025_frequency_high": {
+        "train_year": 2023,
+        "test_year": 2025,
+        "strategy": "frequency_high",
+        "ticket": [
+          38,
+          39,
+          50,
+          33,
+          49,
+          54,
+          40,
+          66,
+          68
+        ],
+        "invested": 363,
+        "won": 133,
+        "roi": -63.36088154269972,
+        "high_wins": 0,
+        "years_apart": 2
+      },
+      "train_2023_test_2025_v2_style": {
+        "train_year": 2023,
+        "test_year": 2025,
+        "strategy": "v2_style",
+        "ticket": [
+          3,
+          25,
+          32,
+          38,
+          44,
+          47,
+          49,
+          50,
+          68
+        ],
+        "invested": 363,
+        "won": 170,
+        "roi": -53.168044077134994,
+        "high_wins": 0,
+        "years_apart": 2
+      },
+      "train_2024_test_2025_frequency": {
+        "train_year": 2024,
+        "test_year": 2025,
+        "strategy": "frequency",
+        "ticket": [
+          3,
+          35,
+          45,
+          29,
+          20,
+          28,
+          56,
+          59,
+          39
+        ],
+        "invested": 363,
+        "won": 155,
+        "roi": -57.30027548209367,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2024_test_2025_frequency_high": {
+        "train_year": 2024,
+        "test_year": 2025,
+        "strategy": "frequency_high",
+        "ticket": [
+          35,
+          45,
+          56,
+          59,
+          39,
+          67,
+          53,
+          68,
+          65
+        ],
+        "invested": 363,
+        "won": 170,
+        "roi": -53.168044077134994,
+        "high_wins": 0,
+        "years_apart": 1
+      },
+      "train_2024_test_2025_v2_style": {
+        "train_year": 2024,
+        "test_year": 2025,
+        "strategy": "v2_style",
+        "ticket": [
+          23,
+          29,
+          34,
+          35,
+          40,
+          45,
+          53,
+          62,
+          63
+        ],
+        "invested": 363,
+        "won": 166,
+        "roi": -54.269972451790636,
+        "high_wins": 0,
+        "years_apart": 1
+      }
+    }
+  },
+  "aging": {
+    "keno_type": 9,
+    "aging_curves": {
+      "start_2022-01-03": {
+        "ticket": [
+          2,
+          10,
+          33,
+          37,
+          44,
+          46,
+          53,
+          65,
+          70
+        ],
+        "train_period": "2022-01-03 - 2023-01-02",
+        "blocks": [
+          {
+            "block": 0,
+            "days_since_creation": 28,
+            "period": "2023-01-03 - 2023-01-30",
+            "roi": -67.85714285714286
+          },
+          {
+            "block": 1,
+            "days_since_creation": 56,
+            "period": "2023-01-31 - 2023-02-27",
+            "roi": -53.57142857142857
+          },
+          {
+            "block": 2,
+            "days_since_creation": 84,
+            "period": "2023-02-28 - 2023-03-27",
+            "roi": -82.14285714285714
+          },
+          {
+            "block": 3,
+            "days_since_creation": 112,
+            "period": "2023-03-28 - 2023-04-24",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 4,
+            "days_since_creation": 140,
+            "period": "2023-04-25 - 2023-05-22",
+            "roi": -75.0
+          },
+          {
+            "block": 5,
+            "days_since_creation": 168,
+            "period": "2023-05-23 - 2023-06-19",
+            "roi": -89.28571428571429
+          },
+          {
+            "block": 6,
+            "days_since_creation": 196,
+            "period": "2023-06-20 - 2023-07-17",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 7,
+            "days_since_creation": 224,
+            "period": "2023-07-18 - 2023-08-14",
+            "roi": -89.28571428571429
+          },
+          {
+            "block": 8,
+            "days_since_creation": 252,
+            "period": "2023-08-15 - 2023-09-11",
+            "roi": -89.28571428571429
+          },
+          {
+            "block": 9,
+            "days_since_creation": 280,
+            "period": "2023-09-12 - 2023-10-09",
+            "roi": 35.714285714285715
+          },
+          {
+            "block": 10,
+            "days_since_creation": 308,
+            "period": "2023-10-10 - 2023-11-06",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 11,
+            "days_since_creation": 336,
+            "period": "2023-11-07 - 2023-12-04",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 12,
+            "days_since_creation": 364,
+            "period": "2023-12-05 - 2024-01-01",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 13,
+            "days_since_creation": 392,
+            "period": "2024-01-02 - 2024-01-29",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 14,
+            "days_since_creation": 420,
+            "period": "2024-01-30 - 2024-02-26",
+            "roi": -35.714285714285715
+          },
+          {
+            "block": 15,
+            "days_since_creation": 448,
+            "period": "2024-02-27 - 2024-03-25",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 16,
+            "days_since_creation": 476,
+            "period": "2024-03-26 - 2024-04-22",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 17,
+            "days_since_creation": 504,
+            "period": "2024-04-23 - 2024-05-20",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 18,
+            "days_since_creation": 532,
+            "period": "2024-05-21 - 2024-06-17",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 19,
+            "days_since_creation": 560,
+            "period": "2024-06-18 - 2024-07-15",
+            "roi": -7.142857142857142
+          },
+          {
+            "block": 20,
+            "days_since_creation": 588,
+            "period": "2024-07-16 - 2024-08-12",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 21,
+            "days_since_creation": 616,
+            "period": "2024-08-13 - 2024-09-09",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 22,
+            "days_since_creation": 644,
+            "period": "2024-09-10 - 2024-10-07",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 23,
+            "days_since_creation": 672,
+            "period": "2024-10-08 - 2024-11-04",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 24,
+            "days_since_creation": 700,
+            "period": "2024-11-05 - 2024-12-02",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 25,
+            "days_since_creation": 728,
+            "period": "2024-12-03 - 2024-12-30",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 26,
+            "days_since_creation": 756,
+            "period": "2024-12-31 - 2025-01-27",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 27,
+            "days_since_creation": 784,
+            "period": "2025-01-28 - 2025-02-24",
+            "roi": -35.714285714285715
+          },
+          {
+            "block": 28,
+            "days_since_creation": 812,
+            "period": "2025-02-25 - 2025-03-24",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 29,
+            "days_since_creation": 840,
+            "period": "2025-03-25 - 2025-04-21",
+            "roi": -92.85714285714286
+          },
+          {
+            "block": 30,
+            "days_since_creation": 868,
+            "period": "2025-04-22 - 2025-05-19",
+            "roi": -67.85714285714286
+          },
+          {
+            "block": 31,
+            "days_since_creation": 896,
+            "period": "2025-05-20 - 2025-06-16",
+            "roi": -53.57142857142857
+          },
+          {
+            "block": 32,
+            "days_since_creation": 924,
+            "period": "2025-06-17 - 2025-07-14",
+            "roi": -50.0
+          },
+          {
+            "block": 33,
+            "days_since_creation": 952,
+            "period": "2025-07-15 - 2025-08-11",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 34,
+            "days_since_creation": 980,
+            "period": "2025-08-12 - 2025-09-08",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 35,
+            "days_since_creation": 1008,
+            "period": "2025-09-09 - 2025-10-06",
+            "roi": -50.0
+          },
+          {
+            "block": 36,
+            "days_since_creation": 1036,
+            "period": "2025-10-07 - 2025-11-03",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 37,
+            "days_since_creation": 1064,
+            "period": "2025-11-04 - 2025-12-01",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 38,
+            "days_since_creation": 1092,
+            "period": "2025-12-02 - 2025-12-29",
+            "roi": -71.42857142857143
+          }
+        ]
+      },
+      "start_2023-01-03": {
+        "ticket": [
+          3,
+          25,
+          36,
+          44,
+          47,
+          49,
+          50,
+          64,
+          68
+        ],
+        "train_period": "2023-01-03 - 2024-01-02",
+        "blocks": [
+          {
+            "block": 0,
+            "days_since_creation": 28,
+            "period": "2024-01-03 - 2024-01-30",
+            "roi": -50.0
+          },
+          {
+            "block": 1,
+            "days_since_creation": 56,
+            "period": "2024-01-31 - 2024-02-27",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 2,
+            "days_since_creation": 84,
+            "period": "2024-02-28 - 2024-03-26",
+            "roi": -46.42857142857143
+          },
+          {
+            "block": 3,
+            "days_since_creation": 112,
+            "period": "2024-03-27 - 2024-04-23",
+            "roi": -75.0
+          },
+          {
+            "block": 4,
+            "days_since_creation": 140,
+            "period": "2024-04-24 - 2024-05-21",
+            "roi": -39.285714285714285
+          },
+          {
+            "block": 5,
+            "days_since_creation": 168,
+            "period": "2024-05-22 - 2024-06-18",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 6,
+            "days_since_creation": 196,
+            "period": "2024-06-19 - 2024-07-16",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 7,
+            "days_since_creation": 224,
+            "period": "2024-07-17 - 2024-08-13",
+            "roi": -42.857142857142854
+          },
+          {
+            "block": 8,
+            "days_since_creation": 252,
+            "period": "2024-08-14 - 2024-09-10",
+            "roi": -46.42857142857143
+          },
+          {
+            "block": 9,
+            "days_since_creation": 280,
+            "period": "2024-09-11 - 2024-10-08",
+            "roi": -14.285714285714285
+          },
+          {
+            "block": 10,
+            "days_since_creation": 308,
+            "period": "2024-10-09 - 2024-11-05",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 11,
+            "days_since_creation": 336,
+            "period": "2024-11-06 - 2024-12-03",
+            "roi": -50.0
+          },
+          {
+            "block": 12,
+            "days_since_creation": 364,
+            "period": "2024-12-04 - 2024-12-31",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 13,
+            "days_since_creation": 392,
+            "period": "2025-01-01 - 2025-01-28",
+            "roi": -28.57142857142857
+          },
+          {
+            "block": 14,
+            "days_since_creation": 420,
+            "period": "2025-01-29 - 2025-02-25",
+            "roi": -75.0
+          },
+          {
+            "block": 15,
+            "days_since_creation": 448,
+            "period": "2025-02-26 - 2025-03-25",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 16,
+            "days_since_creation": 476,
+            "period": "2025-03-26 - 2025-04-22",
+            "roi": -32.142857142857146
+          },
+          {
+            "block": 17,
+            "days_since_creation": 504,
+            "period": "2025-04-23 - 2025-05-20",
+            "roi": 3503.5714285714284
+          },
+          {
+            "block": 18,
+            "days_since_creation": 532,
+            "period": "2025-05-21 - 2025-06-17",
+            "roi": -39.285714285714285
+          },
+          {
+            "block": 19,
+            "days_since_creation": 560,
+            "period": "2025-06-18 - 2025-07-15",
+            "roi": -53.57142857142857
+          },
+          {
+            "block": 20,
+            "days_since_creation": 588,
+            "period": "2025-07-16 - 2025-08-12",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 21,
+            "days_since_creation": 616,
+            "period": "2025-08-13 - 2025-09-09",
+            "roi": -50.0
+          },
+          {
+            "block": 22,
+            "days_since_creation": 644,
+            "period": "2025-09-10 - 2025-10-07",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 23,
+            "days_since_creation": 672,
+            "period": "2025-10-08 - 2025-11-04",
+            "roi": -71.42857142857143
+          },
+          {
+            "block": 24,
+            "days_since_creation": 700,
+            "period": "2025-11-05 - 2025-12-02",
+            "roi": -57.14285714285714
+          }
+        ]
+      },
+      "start_2024-01-03": {
+        "ticket": [
+          23,
+          29,
+          34,
+          35,
+          40,
+          45,
+          53,
+          62,
+          63
+        ],
+        "train_period": "2024-01-03 - 2025-01-01",
+        "blocks": [
+          {
+            "block": 0,
+            "days_since_creation": 28,
+            "period": "2025-01-02 - 2025-01-29",
+            "roi": -21.428571428571427
+          },
+          {
+            "block": 1,
+            "days_since_creation": 56,
+            "period": "2025-01-30 - 2025-02-26",
+            "roi": -32.142857142857146
+          },
+          {
+            "block": 2,
+            "days_since_creation": 84,
+            "period": "2025-02-27 - 2025-03-26",
+            "roi": -64.28571428571429
+          },
+          {
+            "block": 3,
+            "days_since_creation": 112,
+            "period": "2025-03-27 - 2025-04-23",
+            "roi": -57.14285714285714
+          },
+          {
+            "block": 4,
+            "days_since_creation": 140,
+            "period": "2025-04-24 - 2025-05-21",
+            "roi": -21.428571428571427
+          },
+          {
+            "block": 5,
+            "days_since_creation": 168,
+            "period": "2025-05-22 - 2025-06-18",
+            "roi": -78.57142857142857
+          },
+          {
+            "block": 6,
+            "days_since_creation": 196,
+            "period": "2025-06-19 - 2025-07-16",
+            "roi": -67.85714285714286
+          },
+          {
+            "block": 7,
+            "days_since_creation": 224,
+            "period": "2025-07-17 - 2025-08-13",
+            "roi": -53.57142857142857
+          },
+          {
+            "block": 8,
+            "days_since_creation": 252,
+            "period": "2025-08-14 - 2025-09-10",
+            "roi": -67.85714285714286
+          },
+          {
+            "block": 9,
+            "days_since_creation": 280,
+            "period": "2025-09-11 - 2025-10-08",
+            "roi": -53.57142857142857
+          },
+          {
+            "block": 10,
+            "days_since_creation": 308,
+            "period": "2025-10-09 - 2025-11-05",
+            "roi": -60.71428571428571
+          },
+          {
+            "block": 11,
+            "days_since_creation": 336,
+            "period": "2025-11-06 - 2025-12-03",
+            "roi": -60.71428571428571
+          }
+        ]
+      }
+    }
+  }
+}

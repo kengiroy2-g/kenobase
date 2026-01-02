@@ -32,6 +32,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+from kenobase.analysis.distribution import load_gq_data
+
 if TYPE_CHECKING:
     from kenobase.core.data_loader import DrawResult
 
@@ -85,7 +87,7 @@ class RollingCorrelationResult:
 
 def load_gq_popularity(
     path: str | Path,
-    encoding: str = "utf-8",
+    encoding: str = "utf-8-sig",
 ) -> dict[datetime, dict[int, float]]:
     """Load Gewinnquoten data and derive popularity scores.
 
@@ -113,39 +115,14 @@ def load_gq_popularity(
         lambda: defaultdict(float)
     )
 
-    df = pd.read_csv(file_path, encoding=encoding)
+    df = load_gq_data(str(file_path), encoding=encoding)
+    if df.empty:
+        return {}
 
-    # Normalize column names
-    df.columns = df.columns.str.strip()
-
-    # Expected columns: Datum, Keno-Typ, Anzahl richtiger Zahlen, Anzahl der Gewinner
-    required = ["Datum", "Keno-Typ", "Anzahl der Gewinner"]
-    for col in required:
-        if col not in df.columns:
-            logger.warning(f"Missing column: {col} in {file_path}")
-            return {}
-
-    for _, row in df.iterrows():
-        try:
-            date_str = str(row["Datum"]).strip()
-            date = datetime.strptime(date_str, "%d.%m.%Y")
-
-            keno_typ = int(row["Keno-Typ"])
-            winners = row["Anzahl der Gewinner"]
-
-            # Handle German number format (3.462 = 3462)
-            if isinstance(winners, str):
-                winners = winners.replace(".", "").replace(",", ".")
-            winners = float(winners)
-
-            # Weight by Keno-Typ: higher types = more numbers played = better popularity signal
-            # Keno-Typ 10 means player picked 10 numbers, more informative
-            weight = keno_typ / 10.0
-            date_popularity[date][keno_typ] = winners * weight
-
-        except (ValueError, KeyError) as e:
-            logger.debug(f"Skipping row: {e}")
-            continue
+    grouped = df.groupby(["Datum", "Keno-Typ"])["Anzahl der Gewinner"].sum()
+    for (date, keno_typ), winners in grouped.items():
+        weight = int(keno_typ) / 10.0
+        date_popularity[pd.Timestamp(date).to_pydatetime()][int(keno_typ)] = float(winners) * weight
 
     logger.info(f"Loaded GQ data for {len(date_popularity)} dates from {file_path.name}")
     return dict(date_popularity)

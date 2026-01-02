@@ -1,0 +1,305 @@
+{
+  "analysis": "HOUSE-004",
+  "context": "self",
+  "gq_file": "Keno_GPTs\\Keno_GQ_2025.csv",
+  "generated_at": "2025-12-30T10:04:40.481790",
+  "results": [
+    {
+      "keno_type": 2,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 141608,
+        "ratio": 0.0
+      },
+      "in_context": {
+        "days": 362,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 141608,
+        "ratio": 0.0
+      },
+      "out_context": {
+        "days": 0,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": null,
+        "mu_jackpot_per_day": 391.18232044198896,
+        "mu_near_per_day": 0.0,
+        "p0_jackpot": 0.0,
+        "expected_ratio_on_jackpot_days": null,
+        "simulated_p_value_two_sided": null
+      }
+    },
+    {
+      "keno_type": 3,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 1153,
+        "jackpot_winners_total": 132780,
+        "ratio": 0.008683536677210424
+      },
+      "in_context": {
+        "days": 362,
+        "near_winners_total": 1153,
+        "jackpot_winners_total": 132780,
+        "ratio": 0.008683536677210424
+      },
+      "out_context": {
+        "days": 0,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": null,
+        "mu_jackpot_per_day": 366.7955801104972,
+        "mu_near_per_day": 3.185082872928177,
+        "p0_jackpot": 0.0,
+        "expected_ratio_on_jackpot_days": null,
+        "simulated_p_value_two_sided": null
+      }
+    },
+    {
+      "keno_type": 4,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 116866,
+        "jackpot_winners_total": 10135,
+        "ratio": 11.530932412432167
+      },
+      "in_context": {
+        "days": 362,
+        "near_winners_total": 116866,
+        "jackpot_winners_total": 10135,
+        "ratio": 11.530932412432167
+      },
+      "out_context": {
+        "days": 0,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": null,
+        "mu_jackpot_per_day": 27.997237569060772,
+        "mu_near_per_day": 322.83425414364643,
+        "p0_jackpot": 0.0,
+        "expected_ratio_on_jackpot_days": null,
+        "simulated_p_value_two_sided": null
+      }
+    },
+    {
+      "keno_type": 5,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 158713,
+        "jackpot_winners_total": 10383,
+        "ratio": 15.285851873254359
+      },
+      "in_context": {
+        "days": 362,
+        "near_winners_total": 158713,
+        "jackpot_winners_total": 10383,
+        "ratio": 15.285851873254359
+      },
+      "out_context": {
+        "days": 0,
+        "near_winners_total": 0,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": null,
+        "mu_jackpot_per_day": 28.68232044198895,
+        "mu_near_per_day": 438.4337016574586,
+        "p0_jackpot": 0.0,
+        "expected_ratio_on_jackpot_days": null,
+        "simulated_p_value_two_sided": null
+      }
+    },
+    {
+      "keno_type": 6,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 98644,
+        "jackpot_winners_total": 4854,
+        "ratio": 20.322208487845078
+      },
+      "in_context": {
+        "days": 360,
+        "near_winners_total": 98250,
+        "jackpot_winners_total": 4854,
+        "ratio": 20.24103831891224
+      },
+      "out_context": {
+        "days": 2,
+        "near_winners_total": 394,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": 3.1160336758841103,
+        "mu_jackpot_per_day": 13.408839779005525,
+        "mu_near_per_day": 272.49723756906076,
+        "p0_jackpot": 0.0055248618784530384,
+        "expected_ratio_on_jackpot_days": 20.302636987421756,
+        "simulated_p_value_two_sided": 0.005449727513624319
+      }
+    },
+    {
+      "keno_type": 7,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 14995,
+        "jackpot_winners_total": 570,
+        "ratio": 26.30701754385965
+      },
+      "in_context": {
+        "days": 182,
+        "near_winners_total": 8386,
+        "jackpot_winners_total": 570,
+        "ratio": 14.712280701754386
+      },
+      "out_context": {
+        "days": 180,
+        "near_winners_total": 6609,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": 0.4810866699568508,
+        "mu_jackpot_per_day": 1.574585635359116,
+        "mu_near_per_day": 41.42265193370166,
+        "p0_jackpot": 0.4972375690607735,
+        "expected_ratio_on_jackpot_days": 23.254183100901532,
+        "simulated_p_value_two_sided": 4.999750012499375e-05
+      }
+    },
+    {
+      "keno_type": 8,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 6188,
+        "jackpot_winners_total": 260,
+        "ratio": 23.8
+      },
+      "in_context": {
+        "days": 90,
+        "near_winners_total": 1943,
+        "jackpot_winners_total": 260,
+        "ratio": 7.473076923076923
+      },
+      "out_context": {
+        "days": 272,
+        "near_winners_total": 4245,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": 0.17570521091666252,
+        "mu_jackpot_per_day": 0.7182320441988951,
+        "mu_near_per_day": 17.093922651933703,
+        "p0_jackpot": 0.7513812154696132,
+        "expected_ratio_on_jackpot_days": 20.310314186395473,
+        "simulated_p_value_two_sided": 4.999750012499375e-05
+      }
+    },
+    {
+      "keno_type": 9,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 979,
+        "jackpot_winners_total": 45,
+        "ratio": 21.755555555555556
+      },
+      "in_context": {
+        "days": 19,
+        "near_winners_total": 128,
+        "jackpot_winners_total": 45,
+        "ratio": 2.8444444444444446
+      },
+      "out_context": {
+        "days": 343,
+        "near_winners_total": 851,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": 0.03620188263007182,
+        "mu_jackpot_per_day": 0.12430939226519337,
+        "mu_near_per_day": 2.7044198895027622,
+        "p0_jackpot": 0.9475138121546961,
+        "expected_ratio_on_jackpot_days": 17.115370425606567,
+        "simulated_p_value_two_sided": 0.0018499075046247689
+      }
+    },
+    {
+      "keno_type": 10,
+      "date_min": "2025-01-01",
+      "date_max": "2025-12-28",
+      "context": "self",
+      "overall": {
+        "days": 362,
+        "near_winners_total": 1278,
+        "jackpot_winners_total": 40,
+        "ratio": 31.95
+      },
+      "in_context": {
+        "days": 17,
+        "near_winners_total": 60,
+        "jackpot_winners_total": 40,
+        "ratio": 1.5
+      },
+      "out_context": {
+        "days": 345,
+        "near_winners_total": 1218,
+        "jackpot_winners_total": 0,
+        "ratio": null
+      },
+      "diff_in_minus_out": null,
+      "model": {
+        "gamma_shape_r": 0.03242709997521995,
+        "mu_jackpot_per_day": 0.11049723756906077,
+        "mu_near_per_day": 3.5303867403314917,
+        "p0_jackpot": 0.9530386740331491,
+        "expected_ratio_on_jackpot_days": 25.073894494623072,
+        "simulated_p_value_two_sided": 0.00199990000499975
+      }
+    }
+  ]
+}

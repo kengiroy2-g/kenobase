@@ -1,0 +1,137 @@
+{
+  "task": "TASK_013",
+  "analysis": "Weekday-ROI Analysis",
+  "data": {
+    "n_draws": 1457,
+    "date_range": {
+      "start": "2022-01-03",
+      "end": "2025-12-29"
+    },
+    "ticket": [
+      3,
+      7,
+      36,
+      43,
+      48,
+      51,
+      58,
+      61,
+      64
+    ],
+    "keno_type": 9
+  },
+  "chi_square_test": {
+    "dimension": "weekday",
+    "chi2_statistic": 0.004118050789293068,
+    "p_value": 0.9999999985473426,
+    "degrees_of_freedom": 6,
+    "is_significant": false,
+    "interpretation": "Keine signifikante Abweichung von Gleichverteilung (p=1.0000). Ziehungen sind gleichmaessig verteilt.",
+    "observed_counts": [
+      209,
+      208,
+      208,
+      208,
+      208,
+      208,
+      208
+    ],
+    "expected_counts": [
+      208.14,
+      208.14,
+      208.14,
+      208.14,
+      208.14,
+      208.14,
+      208.14
+    ],
+    "labels": [
+      "Montag",
+      "Dienstag",
+      "Mittwoch",
+      "Donnerstag",
+      "Freitag",
+      "Samstag",
+      "Sonntag"
+    ]
+  },
+  "weekday_roi": {
+    "Mo": {
+      "n": 209,
+      "invested": 209,
+      "winnings": 69.0,
+      "roi_pct": -66.99
+    },
+    "Di": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 1088.0,
+      "roi_pct": 423.08
+    },
+    "Mi": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 83.0,
+      "roi_pct": -60.1
+    },
+    "Do": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 82.0,
+      "roi_pct": -60.58
+    },
+    "Fr": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 83.0,
+      "roi_pct": -60.1
+    },
+    "Sa": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 105.0,
+      "roi_pct": -49.52
+    },
+    "So": {
+      "n": 208,
+      "invested": 208,
+      "winnings": 101.0,
+      "roi_pct": -51.44
+    }
+  },
+  "roi_summary": {
+    "best_day": "Di",
+    "worst_day": "Mo",
+    "roi_spread_pct": 490.07
+  },
+  "nullmodell": {
+    "p_value": 0.374,
+    "observed_spread": 490.07,
+    "n_permutations": 1000,
+    "null_mean_spread": 487.87,
+    "null_std_spread": 7.44
+  },
+  "acceptance": {
+    "roi_spread_criterion": {
+      "threshold": 20.0,
+      "observed": 490.07,
+      "passed": true
+    },
+    "chi_square_criterion": {
+      "threshold": 0.05,
+      "observed": 0.9999999985473426,
+      "passed": false
+    },
+    "nullmodell_criterion": {
+      "threshold": 0.05,
+      "observed": 0.374,
+      "passed": false
+    }
+  },
+  "verdict": {
+    "weekday_effect": "CONFIRMED",
+    "confidence": "MEDIUM",
+    "nullmodell_verdict": "NOT_SIGNIFICANT"
+  },
+  "timestamp": "2025-12-30T17:14:45.752884"
+}

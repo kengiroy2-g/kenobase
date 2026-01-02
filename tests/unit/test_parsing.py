@@ -28,3 +28,8 @@ def test_parse_int_mixed_german_handles_two_decimal_group_with_dropped_zero() ->
 def test_parse_float_mixed_german_handles_german_decimal() -> None:
     assert parse_float_mixed_german("1.234,56") == pytest.approx(1234.56)
 
+
+@pytest.mark.unit
+def test_parse_float_mixed_german_strips_currency_and_noise() -> None:
+    assert parse_float_mixed_german("3.187.965,80 ?") == pytest.approx(3187965.80)
+    assert parse_float_mixed_german("Gewinnquote5.000,00ÿ?") == pytest.approx(5000.0)

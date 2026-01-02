@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "analysis_date": "2025-12-29T19:06:19.345613",
+    "analysis_date": "2025-12-30T16:53:43.477773",
     "jackpots_analyzed": 11,
     "days_after_jackpot": 30
   },
@@ -23,8 +23,8 @@
             64
           ],
           "invested": 30,
-          "won": 104,
-          "roi": 246.67,
+          "won": 22,
+          "roi": -26.67,
           "avg_hits": 3.27,
           "max_hits": 6,
           "wins_by_hits": {
@@ -39,8 +39,10 @@
           "best_day": {
             "date": "2022-02-23",
             "hits": 6,
-            "win": 50
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -54,8 +56,8 @@
             64
           ],
           "invested": 30,
-          "won": 154,
-          "roi": 413.33,
+          "won": 28,
+          "roi": -6.67,
           "avg_hits": 3.0,
           "max_hits": 6,
           "wins_by_hits": {
@@ -70,8 +72,10 @@
           "best_day": {
             "date": "2022-02-15",
             "hits": 6,
-            "win": 100
-          }
+            "win": 15
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -87,8 +91,8 @@
             64
           ],
           "invested": 30,
-          "won": 72,
-          "roi": 140.0,
+          "won": 27,
+          "roi": -10.0,
           "avg_hits": 3.53,
           "max_hits": 6,
           "wins_by_hits": {
@@ -102,8 +106,10 @@
           "best_day": {
             "date": "2022-02-08",
             "hits": 6,
-            "win": 15
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -116,8 +122,8 @@
             64
           ],
           "invested": 30,
-          "won": 42,
-          "roi": 40.0,
+          "won": 27,
+          "roi": -10.0,
           "avg_hits": 2.57,
           "max_hits": 5,
           "wins_by_hits": {
@@ -132,7 +138,9 @@
             "date": "2022-03-01",
             "hits": 5,
             "win": 12
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -158,7 +166,9 @@
             "date": "2022-02-04",
             "hits": 3,
             "win": 1
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2022-01-31"
@@ -181,8 +191,8 @@
             64
           ],
           "invested": 30,
-          "won": 52,
-          "roi": 73.33,
+          "won": 14,
+          "roi": -53.33,
           "avg_hits": 2.9,
           "max_hits": 5,
           "wins_by_hits": {
@@ -195,8 +205,10 @@
           "best_day": {
             "date": "2022-06-08",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -210,8 +222,8 @@
             64
           ],
           "invested": 30,
-          "won": 42,
-          "roi": 40.0,
+          "won": 12,
+          "roi": -60.0,
           "avg_hits": 2.77,
           "max_hits": 5,
           "wins_by_hits": {
@@ -224,8 +236,10 @@
           "best_day": {
             "date": "2022-06-01",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -241,8 +255,8 @@
             64
           ],
           "invested": 30,
-          "won": 30,
-          "roi": 0.0,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 3.13,
           "max_hits": 6,
           "wins_by_hits": {
@@ -256,8 +270,10 @@
           "best_day": {
             "date": "2022-06-19",
             "hits": 6,
-            "win": 15
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -270,8 +286,8 @@
             64
           ],
           "invested": 30,
-          "won": 44,
-          "roi": 46.67,
+          "won": 35,
+          "roi": 16.67,
           "avg_hits": 2.57,
           "max_hits": 5,
           "wins_by_hits": {
@@ -285,7 +301,9 @@
             "date": "2022-05-31",
             "hits": 5,
             "win": 12
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -297,8 +315,8 @@
             64
           ],
           "invested": 30,
-          "won": 20,
-          "roi": -33.33,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 1.87,
           "max_hits": 4,
           "wins_by_hits": {
@@ -311,8 +329,10 @@
           "best_day": {
             "date": "2022-06-02",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2022-05-28"
@@ -335,8 +355,8 @@
             64
           ],
           "invested": 30,
-          "won": 42,
-          "roi": 40.0,
+          "won": 14,
+          "roi": -53.33,
           "avg_hits": 2.77,
           "max_hits": 5,
           "wins_by_hits": {
@@ -348,10 +368,12 @@
             "5": 3
           },
           "best_day": {
-            "date": "2022-11-06",
-            "hits": 5,
-            "win": 10
-          }
+            "date": "2022-11-04",
+            "hits": 0,
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -365,8 +387,8 @@
             64
           ],
           "invested": 30,
-          "won": 10,
-          "roi": -66.67,
+          "won": 6,
+          "roi": -80.0,
           "avg_hits": 2.4,
           "max_hits": 4,
           "wins_by_hits": {
@@ -377,10 +399,12 @@
             "4": 5
           },
           "best_day": {
-            "date": "2022-10-29",
-            "hits": 4,
-            "win": 2
-          }
+            "date": "2022-10-25",
+            "hits": 0,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -396,8 +420,8 @@
             64
           ],
           "invested": 30,
-          "won": 27,
-          "roi": -10.0,
+          "won": 12,
+          "roi": -60.0,
           "avg_hits": 3.23,
           "max_hits": 5,
           "wins_by_hits": {
@@ -411,8 +435,10 @@
           "best_day": {
             "date": "2022-10-19",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -425,8 +451,8 @@
             64
           ],
           "invested": 30,
-          "won": 14,
-          "roi": -53.33,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 2.03,
           "max_hits": 4,
           "wins_by_hits": {
@@ -437,10 +463,12 @@
             "4": 1
           },
           "best_day": {
-            "date": "2022-11-06",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2022-10-18",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -452,8 +480,8 @@
             64
           ],
           "invested": 30,
-          "won": 23,
-          "roi": -23.33,
+          "won": 14,
+          "roi": -53.33,
           "avg_hits": 1.83,
           "max_hits": 4,
           "wins_by_hits": {
@@ -466,8 +494,10 @@
           "best_day": {
             "date": "2022-10-30",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2022-10-16"
@@ -490,8 +520,8 @@
             64
           ],
           "invested": 30,
-          "won": 12,
-          "roi": -60.0,
+          "won": 8,
+          "roi": -73.33,
           "avg_hits": 2.6,
           "max_hits": 4,
           "wins_by_hits": {
@@ -502,10 +532,12 @@
             "0": 1
           },
           "best_day": {
-            "date": "2022-12-18",
-            "hits": 4,
+            "date": "2022-12-30",
+            "hits": 0,
             "win": 2
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -519,8 +551,8 @@
             64
           ],
           "invested": 30,
-          "won": 4,
-          "roi": -86.67,
+          "won": 3,
+          "roi": -90.0,
           "avg_hits": 2.13,
           "max_hits": 4,
           "wins_by_hits": {
@@ -531,10 +563,12 @@
             "4": 2
           },
           "best_day": {
-            "date": "2022-12-18",
-            "hits": 4,
-            "win": 2
-          }
+            "date": "2022-12-12",
+            "hits": 0,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -550,8 +584,8 @@
             64
           ],
           "invested": 30,
-          "won": 10,
-          "roi": -66.67,
+          "won": 4,
+          "roi": -86.67,
           "avg_hits": 3.07,
           "max_hits": 5,
           "wins_by_hits": {
@@ -564,8 +598,10 @@
           "best_day": {
             "date": "2022-12-29",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -578,8 +614,8 @@
             64
           ],
           "invested": 30,
-          "won": 10,
-          "roi": -66.67,
+          "won": 7,
+          "roi": -76.67,
           "avg_hits": 1.9,
           "max_hits": 4,
           "wins_by_hits": {
@@ -590,10 +626,12 @@
             "4": 1
           },
           "best_day": {
-            "date": "2022-12-18",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2022-12-13",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -605,8 +643,8 @@
             64
           ],
           "invested": 30,
-          "won": 8,
-          "roi": -73.33,
+          "won": 5,
+          "roi": -83.33,
           "avg_hits": 1.63,
           "max_hits": 4,
           "wins_by_hits": {
@@ -619,8 +657,10 @@
           "best_day": {
             "date": "2023-01-03",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2022-12-10"
@@ -643,8 +683,8 @@
             64
           ],
           "invested": 30,
-          "won": 66,
-          "roi": 120.0,
+          "won": 13,
+          "roi": -56.67,
           "avg_hits": 2.83,
           "max_hits": 6,
           "wins_by_hits": {
@@ -657,8 +697,10 @@
           "best_day": {
             "date": "2023-02-26",
             "hits": 6,
-            "win": 50
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -672,8 +714,8 @@
             64
           ],
           "invested": 30,
-          "won": 20,
-          "roi": -33.33,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 2.37,
           "max_hits": 5,
           "wins_by_hits": {
@@ -687,8 +729,10 @@
           "best_day": {
             "date": "2023-02-21",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -704,8 +748,8 @@
             64
           ],
           "invested": 30,
-          "won": 20,
-          "roi": -33.33,
+          "won": 7,
+          "roi": -76.67,
           "avg_hits": 3.1,
           "max_hits": 6,
           "wins_by_hits": {
@@ -719,8 +763,10 @@
           "best_day": {
             "date": "2023-02-26",
             "hits": 6,
-            "win": 15
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -733,8 +779,8 @@
             64
           ],
           "invested": 30,
-          "won": 37,
-          "roi": 23.33,
+          "won": 31,
+          "roi": 3.33,
           "avg_hits": 2.07,
           "max_hits": 5,
           "wins_by_hits": {
@@ -749,7 +795,9 @@
             "date": "2023-02-16",
             "hits": 5,
             "win": 12
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -761,8 +809,8 @@
             64
           ],
           "invested": 30,
-          "won": 20,
-          "roi": -33.33,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 1.87,
           "max_hits": 4,
           "wins_by_hits": {
@@ -775,8 +823,10 @@
           "best_day": {
             "date": "2023-02-16",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-02-01"
@@ -799,8 +849,8 @@
             64
           ],
           "invested": 30,
-          "won": 36,
-          "roi": 20.0,
+          "won": 12,
+          "roi": -60.0,
           "avg_hits": 2.77,
           "max_hits": 5,
           "wins_by_hits": {
@@ -813,8 +863,10 @@
           "best_day": {
             "date": "2023-04-16",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -828,8 +880,8 @@
             64
           ],
           "invested": 30,
-          "won": 112,
-          "roi": 273.33,
+          "won": 19,
+          "roi": -36.67,
           "avg_hits": 2.33,
           "max_hits": 6,
           "wins_by_hits": {
@@ -844,8 +896,10 @@
           "best_day": {
             "date": "2023-04-29",
             "hits": 6,
-            "win": 100
-          }
+            "win": 15
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -861,8 +915,8 @@
             64
           ],
           "invested": 30,
-          "won": 25,
-          "roi": -16.67,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 3.1,
           "max_hits": 6,
           "wins_by_hits": {
@@ -876,8 +930,10 @@
           "best_day": {
             "date": "2023-04-16",
             "hits": 6,
-            "win": 15
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -890,8 +946,8 @@
             64
           ],
           "invested": 30,
-          "won": 15,
-          "roi": -50.0,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 1.83,
           "max_hits": 4,
           "wins_by_hits": {
@@ -902,10 +958,12 @@
             "4": 2
           },
           "best_day": {
-            "date": "2023-04-21",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2023-04-03",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -917,8 +975,8 @@
             64
           ],
           "invested": 30,
-          "won": 18,
-          "roi": -40.0,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 1.77,
           "max_hits": 4,
           "wins_by_hits": {
@@ -931,8 +989,10 @@
           "best_day": {
             "date": "2023-04-03",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-03-31"
@@ -955,8 +1015,8 @@
             64
           ],
           "invested": 30,
-          "won": 32,
-          "roi": 6.67,
+          "won": 13,
+          "roi": -56.67,
           "avg_hits": 3.0,
           "max_hits": 5,
           "wins_by_hits": {
@@ -969,8 +1029,10 @@
           "best_day": {
             "date": "2023-07-02",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -984,8 +1046,8 @@
             64
           ],
           "invested": 30,
-          "won": 28,
-          "roi": -6.67,
+          "won": 8,
+          "roi": -73.33,
           "avg_hits": 2.8,
           "max_hits": 5,
           "wins_by_hits": {
@@ -998,8 +1060,10 @@
           "best_day": {
             "date": "2023-06-28",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -1015,8 +1079,8 @@
             64
           ],
           "invested": 30,
-          "won": 10,
-          "roi": -66.67,
+          "won": 4,
+          "roi": -86.67,
           "avg_hits": 3.17,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1029,8 +1093,10 @@
           "best_day": {
             "date": "2023-07-02",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -1043,8 +1109,8 @@
             64
           ],
           "invested": 30,
-          "won": 27,
-          "roi": -10.0,
+          "won": 15,
+          "roi": -50.0,
           "avg_hits": 2.43,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1054,10 +1120,12 @@
             "4": 4
           },
           "best_day": {
-            "date": "2023-06-22",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2023-06-14",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -1069,8 +1137,8 @@
             64
           ],
           "invested": 30,
-          "won": 11,
-          "roi": -63.33,
+          "won": 8,
+          "roi": -73.33,
           "avg_hits": 1.77,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1083,8 +1151,10 @@
           "best_day": {
             "date": "2023-06-16",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-06-13"
@@ -1107,8 +1177,8 @@
             64
           ],
           "invested": 30,
-          "won": 36,
-          "roi": 20.0,
+          "won": 12,
+          "roi": -60.0,
           "avg_hits": 2.93,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1121,8 +1191,10 @@
           "best_day": {
             "date": "2023-07-02",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -1136,8 +1208,8 @@
             64
           ],
           "invested": 30,
-          "won": 32,
-          "roi": 6.67,
+          "won": 7,
+          "roi": -76.67,
           "avg_hits": 2.73,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1150,8 +1222,10 @@
           "best_day": {
             "date": "2023-07-02",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -1167,8 +1241,8 @@
             64
           ],
           "invested": 30,
-          "won": 30,
-          "roi": 0.0,
+          "won": 12,
+          "roi": -60.0,
           "avg_hits": 3.23,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1181,8 +1255,10 @@
           "best_day": {
             "date": "2023-07-02",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -1195,8 +1271,8 @@
             64
           ],
           "invested": 30,
-          "won": 15,
-          "roi": -50.0,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 2.03,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1206,10 +1282,12 @@
             "4": 2
           },
           "best_day": {
-            "date": "2023-07-20",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2023-07-02",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -1235,7 +1313,9 @@
             "date": "2023-06-30",
             "hits": 3,
             "win": 1
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-06-28"
@@ -1258,8 +1338,8 @@
             64
           ],
           "invested": 30,
-          "won": 18,
-          "roi": -40.0,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 2.73,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1270,10 +1350,12 @@
             "0": 1
           },
           "best_day": {
-            "date": "2023-07-31",
-            "hits": 4,
+            "date": "2023-08-18",
+            "hits": 0,
             "win": 2
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -1287,8 +1369,8 @@
             64
           ],
           "invested": 30,
-          "won": 4,
-          "roi": -86.67,
+          "won": 3,
+          "roi": -90.0,
           "avg_hits": 2.33,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1301,8 +1383,10 @@
           "best_day": {
             "date": "2023-08-01",
             "hits": 4,
-            "win": 2
-          }
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -1318,8 +1402,8 @@
             64
           ],
           "invested": 30,
-          "won": 12,
-          "roi": -60.0,
+          "won": 6,
+          "roi": -80.0,
           "avg_hits": 3.17,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1333,8 +1417,10 @@
           "best_day": {
             "date": "2023-08-03",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -1347,8 +1433,8 @@
             64
           ],
           "invested": 30,
-          "won": 24,
-          "roi": -20.0,
+          "won": 9,
+          "roi": -70.0,
           "avg_hits": 2.13,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1359,10 +1445,12 @@
             "0": 1
           },
           "best_day": {
-            "date": "2023-08-01",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2023-07-31",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -1374,8 +1462,8 @@
             64
           ],
           "invested": 30,
-          "won": 25,
-          "roi": -16.67,
+          "won": 13,
+          "roi": -56.67,
           "avg_hits": 1.93,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1388,8 +1476,10 @@
           "best_day": {
             "date": "2023-08-01",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-07-25"
@@ -1412,8 +1502,8 @@
             64
           ],
           "invested": 30,
-          "won": 18,
-          "roi": -40.0,
+          "won": 6,
+          "roi": -80.0,
           "avg_hits": 2.5,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1426,8 +1516,10 @@
           "best_day": {
             "date": "2023-10-29",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -1441,8 +1533,8 @@
             64
           ],
           "invested": 30,
-          "won": 10,
-          "roi": -66.67,
+          "won": 5,
+          "roi": -83.33,
           "avg_hits": 2.0,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1455,8 +1547,10 @@
           "best_day": {
             "date": "2023-10-29",
             "hits": 5,
-            "win": 10
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -1472,8 +1566,8 @@
             64
           ],
           "invested": 30,
-          "won": 30,
-          "roi": 0.0,
+          "won": 11,
+          "roi": -63.33,
           "avg_hits": 2.83,
           "max_hits": 6,
           "wins_by_hits": {
@@ -1487,8 +1581,10 @@
           "best_day": {
             "date": "2023-10-29",
             "hits": 6,
-            "win": 15
-          }
+            "win": 5
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -1501,8 +1597,8 @@
             64
           ],
           "invested": 30,
-          "won": 9,
-          "roi": -70.0,
+          "won": 6,
+          "roi": -80.0,
           "avg_hits": 1.73,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1513,10 +1609,12 @@
             "0": 3
           },
           "best_day": {
-            "date": "2023-10-22",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2023-10-11",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -1528,8 +1626,8 @@
             64
           ],
           "invested": 30,
-          "won": 9,
-          "roi": -70.0,
+          "won": 6,
+          "roi": -80.0,
           "avg_hits": 1.73,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1542,8 +1640,10 @@
           "best_day": {
             "date": "2023-10-23",
             "hits": 4,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2023-10-10"
@@ -1566,8 +1666,8 @@
             64
           ],
           "invested": 14,
-          "won": 12,
-          "roi": -14.29,
+          "won": 5,
+          "roi": -64.29,
           "avg_hits": 2.14,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1579,10 +1679,12 @@
             "5": 1
           },
           "best_day": {
-            "date": "2024-02-18",
-            "hits": 5,
-            "win": 10
-          }
+            "date": "2024-02-16",
+            "hits": 0,
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_8": {
           "ticket": [
@@ -1596,8 +1698,8 @@
             64
           ],
           "invested": 14,
-          "won": 4,
-          "roi": -71.43,
+          "won": 3,
+          "roi": -78.57,
           "avg_hits": 2.14,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1610,8 +1712,10 @@
           "best_day": {
             "date": "2024-02-09",
             "hits": 4,
-            "win": 2
-          }
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_10": {
           "ticket": [
@@ -1627,8 +1731,8 @@
             64
           ],
           "invested": 14,
-          "won": 5,
-          "roi": -64.29,
+          "won": 2,
+          "roi": -85.71,
           "avg_hits": 2.36,
           "max_hits": 5,
           "wins_by_hits": {
@@ -1641,8 +1745,10 @@
           "best_day": {
             "date": "2024-02-18",
             "hits": 5,
-            "win": 5
-          }
+            "win": 2
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_7": {
           "ticket": [
@@ -1655,8 +1761,8 @@
             64
           ],
           "invested": 14,
-          "won": 8,
-          "roi": -42.86,
+          "won": 5,
+          "roi": -64.29,
           "avg_hits": 1.93,
           "max_hits": 4,
           "wins_by_hits": {
@@ -1667,10 +1773,12 @@
             "0": 1
           },
           "best_day": {
-            "date": "2024-02-15",
-            "hits": 4,
-            "win": 4
-          }
+            "date": "2024-02-07",
+            "hits": 3,
+            "win": 1
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         },
         "typ_6": {
           "ticket": [
@@ -1696,7 +1804,9 @@
             "date": "2024-02-09",
             "hits": 3,
             "win": 1
-          }
+          },
+          "high_wins_count": 0,
+          "high_wins_rate": 0.0
         }
       },
       "jackpot_date": "2024-02-06"
@@ -1716,16 +1826,22 @@
         64
       ],
       "total_invested": 314,
-      "total_won": 428,
-      "overall_roi": 36.31,
-      "avg_roi_per_period": 33.85,
-      "std_roi": 83.92,
+      "total_won": 130,
+      "overall_roi": -58.6,
+      "avg_roi_per_period": -58.87,
+      "std_roi": 12.85,
       "avg_hits": 2.77,
       "max_hits_ever": 6,
-      "periods_positive": 7,
+      "periods_positive": 0,
       "total_periods": 11,
-      "normal_avg_roi": 90.91,
-      "difference": -57.06
+      "total_high_wins": 0,
+      "avg_high_wins_rate": 0.0,
+      "normal_avg_roi": -54.24,
+      "difference": -4.63,
+      "normal_high_wins": 0,
+      "normal_high_wins_rate": 0.0,
+      "hyp002_chi2": 0.0,
+      "hyp002_p_value": 1.0
     },
     "typ_8": {
       "ticket": [
@@ -1739,16 +1855,22 @@
         64
       ],
       "total_invested": 314,
-      "total_won": 420,
-      "overall_roi": 33.76,
-      "avg_roi_per_period": 28.66,
-      "std_roi": 156.19,
+      "total_won": 103,
+      "overall_roi": -67.2,
+      "avg_roi_per_period": -67.75,
+      "std_roi": 24.07,
       "avg_hits": 2.45,
       "max_hits_ever": 6,
-      "periods_positive": 4,
+      "periods_positive": 0,
       "total_periods": 11,
-      "normal_avg_roi": 58.79,
-      "difference": -30.13
+      "total_high_wins": 0,
+      "avg_high_wins_rate": 0.0,
+      "normal_avg_roi": -57.57,
+      "difference": -10.18,
+      "normal_high_wins": 0,
+      "normal_high_wins_rate": 0.0,
+      "hyp002_chi2": 0.0,
+      "hyp002_p_value": 1.0
     },
     "typ_10": {
       "ticket": [
@@ -1764,16 +1886,22 @@
         64
       ],
       "total_invested": 314,
-      "total_won": 271,
-      "overall_roi": -13.69,
-      "avg_roi_per_period": -16.15,
-      "std_roi": 56.28,
+      "total_won": 105,
+      "overall_roi": -66.56,
+      "avg_roi_per_period": -67.49,
+      "std_roi": 20.82,
       "avg_hits": 3.08,
       "max_hits_ever": 6,
-      "periods_positive": 1,
+      "periods_positive": 0,
       "total_periods": 11,
-      "normal_avg_roi": 58.18,
-      "difference": -74.33
+      "total_high_wins": 0,
+      "avg_high_wins_rate": 0.0,
+      "normal_avg_roi": -54.55,
+      "difference": -12.94,
+      "normal_high_wins": 0,
+      "normal_high_wins_rate": 0.0,
+      "hyp002_chi2": 0.0,
+      "hyp002_p_value": 1.0
     },
     "typ_7": {
       "ticket": [
@@ -1786,16 +1914,22 @@
         64
       ],
       "total_invested": 314,
-      "total_won": 245,
-      "overall_roi": -21.97,
-      "avg_roi_per_period": -22.99,
-      "std_roi": 40.49,
+      "total_won": 164,
+      "overall_roi": -47.77,
+      "avg_roi_per_period": -48.57,
+      "std_roi": 33.11,
       "avg_hits": 2.11,
       "max_hits_ever": 5,
-      "periods_positive": 3,
+      "periods_positive": 2,
       "total_periods": 11,
-      "normal_avg_roi": -10.91,
-      "difference": -12.08
+      "total_high_wins": 0,
+      "avg_high_wins_rate": 0.0,
+      "normal_avg_roi": -40.0,
+      "difference": -8.57,
+      "normal_high_wins": 0,
+      "normal_high_wins_rate": 0.0,
+      "hyp002_chi2": 0.0,
+      "hyp002_p_value": 1.0
     },
     "typ_6": {
       "ticket": [
@@ -1807,16 +1941,102 @@
         64
       ],
       "total_invested": 314,
-      "total_won": 148,
-      "overall_roi": -52.87,
-      "avg_roi_per_period": -54.46,
-      "std_roi": 24.39,
+      "total_won": 91,
+      "overall_roi": -71.02,
+      "avg_roi_per_period": -71.73,
+      "std_roi": 11.02,
       "avg_hits": 1.78,
       "max_hits_ever": 4,
       "periods_positive": 0,
       "total_periods": 11,
-      "normal_avg_roi": 102.12,
-      "difference": -156.58
+      "total_high_wins": 0,
+      "avg_high_wins_rate": 0.0,
+      "normal_avg_roi": 88.48,
+      "difference": -160.21,
+      "normal_high_wins": 1,
+      "normal_high_wins_rate": 0.3,
+      "hyp002_chi2": 0.0,
+      "hyp002_p_value": 1.0
     }
+  },
+  "hyp002": {
+    "hypothesis": "HYP_002",
+    "description": "High-Wins (>=100 EUR) sind im Post-Jackpot Cooldown unterdrueckt",
+    "threshold_eur": 100,
+    "by_type": {
+      "typ_9": {
+        "cooldown_high_wins": 0,
+        "cooldown_draws": 314,
+        "cooldown_rate_pct": 0.0,
+        "normal_high_wins": 0,
+        "normal_draws": 330,
+        "normal_rate_pct": 0.0,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "direction": "NOT_SUPPRESSED"
+      },
+      "typ_8": {
+        "cooldown_high_wins": 0,
+        "cooldown_draws": 314,
+        "cooldown_rate_pct": 0.0,
+        "normal_high_wins": 0,
+        "normal_draws": 330,
+        "normal_rate_pct": 0.0,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "direction": "NOT_SUPPRESSED"
+      },
+      "typ_10": {
+        "cooldown_high_wins": 0,
+        "cooldown_draws": 314,
+        "cooldown_rate_pct": 0.0,
+        "normal_high_wins": 0,
+        "normal_draws": 330,
+        "normal_rate_pct": 0.0,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "direction": "NOT_SUPPRESSED"
+      },
+      "typ_7": {
+        "cooldown_high_wins": 0,
+        "cooldown_draws": 314,
+        "cooldown_rate_pct": 0.0,
+        "normal_high_wins": 0,
+        "normal_draws": 330,
+        "normal_rate_pct": 0.0,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "direction": "NOT_SUPPRESSED"
+      },
+      "typ_6": {
+        "cooldown_high_wins": 0,
+        "cooldown_draws": 314,
+        "cooldown_rate_pct": 0.0,
+        "normal_high_wins": 1,
+        "normal_draws": 330,
+        "normal_rate_pct": 0.3,
+        "chi2": 0.0,
+        "p_value": 1.0,
+        "significant": false,
+        "direction": "SUPPRESSED"
+      }
+    },
+    "overall": {
+      "cooldown_high_wins": 0,
+      "cooldown_draws": 1570,
+      "cooldown_rate_pct": 0.0,
+      "normal_high_wins": 1,
+      "normal_draws": 1650,
+      "normal_rate_pct": 0.06,
+      "chi2": 0.0,
+      "p_value": 1.0,
+      "significant": false,
+      "direction": "SUPPRESSED"
+    },
+    "conclusion": "NOT_SIGNIFICANT"
   }
 }

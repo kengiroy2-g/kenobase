@@ -1,0 +1,71 @@
+{
+  "analysis": "cross_game_timing",
+  "target_game": "KENO",
+  "n_dates": 1457,
+  "signals_tested": 2,
+  "significant_signals": 0,
+  "alpha": 0.05,
+  "permutation_test_used": true,
+  "results": [
+    {
+      "source_game": "LOTTO",
+      "target_game": "KENO",
+      "lag_days": 0,
+      "signal_name": "is_lotto_draw_day",
+      "n_draws_total": 1457,
+      "n_draws_favorable": 416,
+      "n_draws_unfavorable": 1041,
+      "hit_rate_baseline": 0.5531914893617021,
+      "hit_rate_favorable": 0.5600961538461539,
+      "hit_rate_unfavorable": 0.5504322766570605,
+      "hit_rate_improvement_pct": 1.248150887573951,
+      "p_value": 0.770591474360288,
+      "is_significant": false,
+      "null_model": "fisher_exact",
+      "permutation_test": {
+        "observed_stat": 0.00966387718909334,
+        "null_mean": 0.00966387718909334,
+        "null_std": 0.0,
+        "p_value": 1.0,
+        "n_permutations": 500,
+        "is_significant": false
+      },
+      "is_significant_permutation": false
+    },
+    {
+      "source_game": "AUSWAHLWETTE",
+      "target_game": "KENO",
+      "lag_days": 0,
+      "signal_name": "is_auswahlwette_draw_day",
+      "n_draws_total": 1457,
+      "n_draws_favorable": 208,
+      "n_draws_unfavorable": 1249,
+      "hit_rate_baseline": 0.5531914893617021,
+      "hit_rate_favorable": 0.5144230769230769,
+      "hit_rate_unfavorable": 0.5596477181745396,
+      "hit_rate_improvement_pct": -7.008136094674566,
+      "p_value": 0.2290272650214201,
+      "is_significant": false,
+      "null_model": "fisher_exact",
+      "permutation_test": {
+        "observed_stat": -0.04522464125146275,
+        "null_mean": -0.04522464125146275,
+        "null_std": 0.0,
+        "p_value": 1.0,
+        "n_permutations": 500,
+        "is_significant": false
+      },
+      "is_significant_permutation": false
+    }
+  ],
+  "axiom_basis": {
+    "source": "TRANS-005 / Ecosystem Graph",
+    "key_finding": "KENO->AUSWAHLWETTE lag=7, lift=2.41 (only robust edge)",
+    "paradigm": "Pattern->Timing shift - WHEN to play, not WHAT numbers",
+    "null_model": "Schedule-preserving permutation (weekday blocks)"
+  },
+  "generated_at": "2025-12-30T06:08:07.845039",
+  "keno_file": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+  "hit_threshold": 6,
+  "seed": 42
+}

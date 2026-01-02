@@ -1,0 +1,42 @@
+{
+  "hypothesis": "HYP_009 / HYP_CYC_003",
+  "name": "GK-Distribution nach Phase",
+  "test_method": "Chi-Quadrat Kontingenztest",
+  "n_tests": 3,
+  "bonferroni_alpha": 0.016666666666666666,
+  "results_by_type": {
+    "typ_8": {
+      "test": "chi2_contingency (small cells warning)",
+      "chi2": 1.2655762095329988,
+      "p_value": 0.737323117054268,
+      "dof": 3,
+      "min_expected": 0.5374056280027454,
+      "significant_raw": false,
+      "significant_bonferroni": false
+    },
+    "typ_9": {
+      "test": "chi2_contingency (small cells warning)",
+      "chi2": 1.818632069350785,
+      "p_value": 0.6108888066083888,
+      "dof": 3,
+      "min_expected": 1.0748112560054908,
+      "significant_raw": false,
+      "significant_bonferroni": false
+    },
+    "typ_10": {
+      "test": "chi2_contingency (small cells warning)",
+      "chi2": 2.4864175871179923,
+      "p_value": 0.4777507312265733,
+      "dof": 3,
+      "min_expected": 2.209334248455731,
+      "significant_raw": false,
+      "significant_bonferroni": false
+    }
+  },
+  "overall_significant": false,
+  "conclusion": "GK-Distribution ist phasen-unabhaengig",
+  "status": "NICHT_SIGNIFIKANT",
+  "timestamp": "2025-12-30T18:50:00",
+  "repro_command": "python scripts/analyze_cycles_comprehensive.py",
+  "artifact_source": "results/cycles_comprehensive_analysis.json"
+}

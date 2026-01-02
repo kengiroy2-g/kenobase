@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "draws_file": "data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+    "jackpots_file": "data\\processed\\ecosystem\\timeline_2025.csv",
+    "jackpot_source": "timeline",
+    "total_draws": 1457,
+    "date_range": {
+      "start": "2022-01-03",
+      "end": "2025-12-29"
+    },
+    "jackpots_used": 17
+  },
+  "expectation": {
+    "overlap_count": 5.714285714285714,
+    "birthday_ratio": 0.44285714285714284
+  },
+  "phase_stats": {
+    "PRE_JACKPOT": {
+      "overlap": {
+        "n": 24,
+        "mean": 5.791666666666667,
+        "std": 2.021174145771767,
+        "z": 0.18755815726265507,
+        "p": 0.8512230297015652,
+        "verification": "UNVERIFIED",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8512230297015652,
+        "significant": false
+      },
+      "birthday_ratio": {
+        "n": 24,
+        "mean": 0.4758763227513228,
+        "std": 0.22096245812332416,
+        "z": 0.7320713496114829,
+        "p": 0.464125019832312,
+        "verification": "UNVERIFIED",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.6188333597764161,
+        "significant": false
+      }
+    },
+    "POST_JACKPOT": {
+      "overlap": {
+        "n": 38,
+        "mean": 5.921052631578948,
+        "std": 1.5833863633154823,
+        "z": 0.8049815950443286,
+        "p": 0.42083030068453187,
+        "verification": "UNVERIFIED",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8512230297015652,
+        "significant": false
+      },
+      "birthday_ratio": {
+        "n": 38,
+        "mean": 0.4526211361737677,
+        "std": 0.18297514738332205,
+        "z": 0.3289479362998124,
+        "p": 0.7421950407375211,
+        "verification": "UNVERIFIED",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.7421950407375211,
+        "significant": false
+      }
+    },
+    "COOLDOWN": {
+      "overlap": {
+        "n": 274,
+        "mean": 5.7846715328467155,
+        "std": 1.805867137643396,
+        "z": 0.6451707239579954,
+        "p": 0.5188165559578242,
+        "verification": "OK",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8512230297015652,
+        "significant": false
+      },
+      "birthday_ratio": {
+        "n": 274,
+        "mean": 0.4559791080776482,
+        "std": 0.2249237351631289,
+        "z": 0.9656925407057919,
+        "p": 0.3341980531509594,
+        "verification": "OK",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.6188333597764161,
+        "significant": false
+      }
+    },
+    "NORMAL": {
+      "overlap": {
+        "n": 1120,
+        "mean": 5.733928571428572,
+        "std": 1.6965271561859072,
+        "z": 0.38748317864349335,
+        "p": 0.6983985357033453,
+        "verification": "OK",
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8512230297015652,
+        "significant": false
+      },
+      "birthday_ratio": {
+        "n": 1119,
+        "mean": 0.4349038385901656,
+        "std": 0.2001617540058485,
+        "z": -1.3291730977168634,
+        "p": 0.18379086843400194,
+        "verification": "OK",
+        "p_bonferroni": 0.7351634737360078,
+        "p_bh": 0.6188333597764161,
+        "significant": false
+      }
+    }
+  },
+  "global_tests": {
+    "kruskal_overlap": {
+      "stat": 0.44891445781268785,
+      "p": 0.9299624682119221
+    },
+    "kruskal_birthday_ratio": {
+      "stat": 2.208892274537339,
+      "p": 0.5301989949155046
+    }
+  },
+  "pairwise_tests": {
+    "overlap": [
+      {
+        "comparison": "PRE_JACKPOT vs POST_JACKPOT",
+        "n_a": 24,
+        "n_b": 38,
+        "u_stat": 452.5,
+        "p": 0.9647601729768454,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      },
+      {
+        "comparison": "PRE_JACKPOT vs COOLDOWN",
+        "n_a": 24,
+        "n_b": 274,
+        "u_stat": 3355.0,
+        "p": 0.8676396189404744,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      },
+      {
+        "comparison": "PRE_JACKPOT vs NORMAL",
+        "n_a": 24,
+        "n_b": 1120,
+        "u_stat": 13925.0,
+        "p": 0.758585898234279,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      },
+      {
+        "comparison": "POST_JACKPOT vs COOLDOWN",
+        "n_a": 38,
+        "n_b": 274,
+        "u_stat": 5386.0,
+        "p": 0.7266554662711014,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      },
+      {
+        "comparison": "POST_JACKPOT vs NORMAL",
+        "n_a": 38,
+        "n_b": 1120,
+        "u_stat": 22347.5,
+        "p": 0.5928646345632208,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      },
+      {
+        "comparison": "COOLDOWN vs NORMAL",
+        "n_a": 274,
+        "n_b": 1120,
+        "u_stat": 155478.5,
+        "p": 0.7289551959520216,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.9647601729768454,
+        "significant": false
+      }
+    ],
+    "birthday_ratio": [
+      {
+        "comparison": "PRE_JACKPOT vs POST_JACKPOT",
+        "n_a": 24,
+        "n_b": 38,
+        "u_stat": 472.0,
+        "p": 0.8221280741588541,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      },
+      {
+        "comparison": "PRE_JACKPOT vs COOLDOWN",
+        "n_a": 24,
+        "n_b": 274,
+        "u_stat": 3452.5,
+        "p": 0.6844203165584402,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      },
+      {
+        "comparison": "PRE_JACKPOT vs NORMAL",
+        "n_a": 24,
+        "n_b": 1119,
+        "u_stat": 14660.5,
+        "p": 0.43929220465509033,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      },
+      {
+        "comparison": "POST_JACKPOT vs COOLDOWN",
+        "n_a": 38,
+        "n_b": 274,
+        "u_stat": 5288.5,
+        "p": 0.8745601180717214,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      },
+      {
+        "comparison": "POST_JACKPOT vs NORMAL",
+        "n_a": 38,
+        "n_b": 1119,
+        "u_stat": 22741.5,
+        "p": 0.4630047441384242,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      },
+      {
+        "comparison": "COOLDOWN vs NORMAL",
+        "n_a": 274,
+        "n_b": 1119,
+        "u_stat": 160149.0,
+        "p": 0.24938268484987514,
+        "p_bonferroni": 1.0,
+        "p_bh": 0.8745601180717214,
+        "significant": false
+      }
+    ]
+  },
+  "overall": {
+    "overlap": {
+      "n": 1456,
+      "mean": 5.749313186813187,
+      "std": 1.7190062087825224
+    },
+    "birthday_ratio": {
+      "n": 1455,
+      "mean": 0.44001120681533046,
+      "std": 0.20499489523971964
+    }
+  },
+  "decision": {
+    "hypothesis": "HYP_013",
+    "support": false,
+    "reason": "Keine signifikanten Abweichungen nach Korrektur"
+  }
+}

@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/prediction/__init__.py",
+    "kenobase/prediction/synthesizer.py",
+    "kenobase/prediction/recommendation.py",
+    "scripts/predict.py",
+    "tests/unit/test_synthesizer.py",
+    "results/prediction_synthesis.json"
+]

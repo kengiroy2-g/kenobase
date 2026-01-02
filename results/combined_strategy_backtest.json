@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "total_days": 1457,
+    "total_jackpots": 48,
+    "period": "2022-01-03 - 2025-12-29"
+  },
+  "single_filters": {
+    "no_cooldown": {
+      "played": 717,
+      "jackpots": 20
+    },
+    "tag_22_28": {
+      "played": 336,
+      "jackpots": 18
+    },
+    "economic": {
+      "played": 698,
+      "jackpots": 20
+    }
+  },
+  "combined_filters": {
+    "min_1": {
+      "played": 1147,
+      "jackpots": 42
+    },
+    "min_2": {
+      "played": 521,
+      "jackpots": 14
+    },
+    "min_3": {
+      "played": 83,
+      "jackpots": 2
+    }
+  },
+  "jackpot_distribution": {
+    "1": 28,
+    "2": 12,
+    "0": 6,
+    "3": 2
+  }
+}

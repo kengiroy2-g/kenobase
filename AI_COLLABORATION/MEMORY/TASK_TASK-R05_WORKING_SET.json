@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/longterm_balance.py (NEW)",
+    "kenobase/analysis/__init__.py (MODIFIED)",
+    "scripts/analyze_longterm_balance.py (NEW)",
+    "tests/unit/test_longterm_balance.py (NEW)"
+]

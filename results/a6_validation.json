@@ -1,0 +1,96 @@
+{
+  "axiom": {
+    "id": "A6",
+    "name": "Regionale Verteilung",
+    "description": "Wins distributed per federal state"
+  },
+  "data_summary": {
+    "total_records": 2,
+    "min_confidence": 0.3,
+    "bundeslaender_with_data": 1,
+    "wins_by_bundesland": {
+      "saarland": 0,
+      "nordrhein-westfalen": 0,
+      "baden-wuerttemberg": 0,
+      "rheinland-pfalz": 0,
+      "hessen": 0,
+      "bremen": 0,
+      "schleswig-holstein": 0,
+      "thueringen": 0,
+      "niedersachsen": 0,
+      "bayern": 0,
+      "brandenburg": 2,
+      "hamburg": 0,
+      "sachsen-anhalt": 0,
+      "berlin": 0,
+      "mecklenburg-vorpommern": 0,
+      "sachsen": 0
+    }
+  },
+  "predictions": [
+    {
+      "prediction_id": "P6.1",
+      "description": "Wins per Bundesland correlate with population",
+      "metric": "regional_population_correlation",
+      "threshold": 0.5,
+      "direction": "greater",
+      "observed_value": -0.146,
+      "p_value": 0.589623,
+      "passed": "False",
+      "n_bundeslaender": 16,
+      "total_wins": 2,
+      "detail": {
+        "bundesland_wins": {
+          "nordrhein-westfalen": 0,
+          "bayern": 0,
+          "baden-wuerttemberg": 0,
+          "niedersachsen": 0,
+          "hessen": 0,
+          "rheinland-pfalz": 0,
+          "sachsen": 0,
+          "berlin": 0,
+          "schleswig-holstein": 0,
+          "brandenburg": 2,
+          "sachsen-anhalt": 0,
+          "thueringen": 0,
+          "hamburg": 0,
+          "mecklenburg-vorpommern": 0,
+          "saarland": 0,
+          "bremen": 0
+        },
+        "bundesland_population": {
+          "nordrhein-westfalen": 17.9,
+          "bayern": 13.2,
+          "baden-wuerttemberg": 11.1,
+          "niedersachsen": 8.0,
+          "hessen": 6.3,
+          "rheinland-pfalz": 4.1,
+          "sachsen": 4.0,
+          "berlin": 3.8,
+          "schleswig-holstein": 2.9,
+          "brandenburg": 2.5,
+          "sachsen-anhalt": 2.2,
+          "thueringen": 2.1,
+          "hamburg": 1.9,
+          "mecklenburg-vorpommern": 1.6,
+          "saarland": 1.0,
+          "bremen": 0.7
+        }
+      }
+    },
+    {
+      "prediction_id": "P6.2",
+      "description": "No region has significantly more jackpots per capita",
+      "passed": null,
+      "reason": "Insufficient data for chi-square test"
+    },
+    {
+      "prediction_id": "P6.3",
+      "description": "Large wins are evenly distributed over time",
+      "passed": null,
+      "reason": "Insufficient temporal data (n=2)"
+    }
+  ],
+  "timestamp": "2025-12-30T06:26:51.822970",
+  "overall_status": "ALL_FAILED"
+}

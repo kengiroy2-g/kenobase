@@ -1,0 +1,627 @@
+{
+  "meta": {
+    "total_draws": 1457,
+    "total_jackpots": 22,
+    "date_range": "2022-01-03 00:00:00 - 2025-12-29 00:00:00"
+  },
+  "aggregated_invariant_rates": {
+    "inv1_mean": 0.9983,
+    "inv2_mean": 0.4297,
+    "inv3_mean": 0.9495,
+    "inv4_mean": 0.4431,
+    "inv5_mean": 0.4435,
+    "all_mean": 0.15
+  },
+  "position_analysis": {
+    "position_summary": {
+      "pos_1": {
+        "mean": 35.91,
+        "std": 21.2,
+        "min": 2,
+        "max": 67,
+        "count": 22
+      },
+      "pos_2": {
+        "mean": 41.59,
+        "std": 19.03,
+        "min": 5,
+        "max": 70,
+        "count": 22
+      },
+      "pos_3": {
+        "mean": 37.68,
+        "std": 18.08,
+        "min": 3,
+        "max": 70,
+        "count": 22
+      },
+      "pos_4": {
+        "mean": 36.36,
+        "std": 21.5,
+        "min": 3,
+        "max": 70,
+        "count": 22
+      },
+      "pos_5": {
+        "mean": 35.18,
+        "std": 18.91,
+        "min": 1,
+        "max": 69,
+        "count": 22
+      },
+      "pos_6": {
+        "mean": 42.0,
+        "std": 15.93,
+        "min": 13,
+        "max": 65,
+        "count": 22
+      },
+      "pos_7": {
+        "mean": 31.36,
+        "std": 17.51,
+        "min": 2,
+        "max": 59,
+        "count": 22
+      },
+      "pos_8": {
+        "mean": 34.14,
+        "std": 17.52,
+        "min": 4,
+        "max": 70,
+        "count": 22
+      },
+      "pos_9": {
+        "mean": 33.05,
+        "std": 20.1,
+        "min": 1,
+        "max": 63,
+        "count": 22
+      },
+      "pos_10": {
+        "mean": 26.09,
+        "std": 17.67,
+        "min": 1,
+        "max": 69,
+        "count": 22
+      },
+      "pos_11": {
+        "mean": 39.14,
+        "std": 18.24,
+        "min": 8,
+        "max": 70,
+        "count": 22
+      },
+      "pos_12": {
+        "mean": 34.5,
+        "std": 17.39,
+        "min": 1,
+        "max": 64,
+        "count": 22
+      },
+      "pos_13": {
+        "mean": 39.0,
+        "std": 19.98,
+        "min": 8,
+        "max": 70,
+        "count": 22
+      },
+      "pos_14": {
+        "mean": 33.32,
+        "std": 22.7,
+        "min": 1,
+        "max": 68,
+        "count": 22
+      },
+      "pos_15": {
+        "mean": 39.41,
+        "std": 20.86,
+        "min": 2,
+        "max": 67,
+        "count": 22
+      },
+      "pos_16": {
+        "mean": 32.14,
+        "std": 23.09,
+        "min": 3,
+        "max": 68,
+        "count": 22
+      },
+      "pos_17": {
+        "mean": 31.73,
+        "std": 17.42,
+        "min": 1,
+        "max": 62,
+        "count": 22
+      },
+      "pos_18": {
+        "mean": 32.18,
+        "std": 20.72,
+        "min": 1,
+        "max": 67,
+        "count": 22
+      },
+      "pos_19": {
+        "mean": 38.91,
+        "std": 21.32,
+        "min": 5,
+        "max": 70,
+        "count": 22
+      },
+      "pos_20": {
+        "mean": 36.32,
+        "std": 18.83,
+        "min": 4,
+        "max": 67,
+        "count": 22
+      }
+    },
+    "early_positions_mean": 37.35,
+    "late_positions_mean": 34.25,
+    "early_positions_count": 110,
+    "late_positions_count": 110
+  },
+  "group_analysis": {
+    "total_draws": 1457,
+    "total_jackpot_draws": 22,
+    "group_statistics": {
+      "birthday": {
+        "hits": 12840,
+        "expected": 12904.9,
+        "jackpot_hits": 190,
+        "size": 31,
+        "ratio": 0.995,
+        "jackpot_expected": 194.9,
+        "jackpot_ratio": 0.975
+      },
+      "lucky_numbers": {
+        "hits": 3306,
+        "expected": 3330.3,
+        "jackpot_hits": 58,
+        "size": 8,
+        "ratio": 0.993,
+        "jackpot_expected": 50.3,
+        "jackpot_ratio": 1.153
+      },
+      "round_numbers": {
+        "hits": 2861,
+        "expected": 2914.0,
+        "jackpot_hits": 37,
+        "size": 7,
+        "ratio": 0.982,
+        "jackpot_expected": 44.0,
+        "jackpot_ratio": 0.841
+      },
+      "single_digit": {
+        "hits": 3807,
+        "expected": 3746.6,
+        "jackpot_hits": 53,
+        "size": 9,
+        "ratio": 1.016,
+        "jackpot_expected": 56.6,
+        "jackpot_ratio": 0.937
+      },
+      "high_numbers": {
+        "hits": 8711,
+        "expected": 8742.0,
+        "jackpot_hits": 129,
+        "size": 21,
+        "ratio": 0.996,
+        "jackpot_expected": 132.0,
+        "jackpot_ratio": 0.977
+      },
+      "middle_numbers": {
+        "hits": 8397,
+        "expected": 8325.7,
+        "jackpot_hits": 136,
+        "size": 20,
+        "ratio": 1.009,
+        "jackpot_expected": 125.7,
+        "jackpot_ratio": 1.082
+      },
+      "palindromes": {
+        "hits": 2487,
+        "expected": 2497.7,
+        "jackpot_hits": 38,
+        "size": 6,
+        "ratio": 0.996,
+        "jackpot_expected": 37.7,
+        "jackpot_ratio": 1.008
+      },
+      "ascending_digits": {
+        "hits": 2564,
+        "expected": 2497.7,
+        "jackpot_hits": 43,
+        "size": 6,
+        "ratio": 1.027,
+        "jackpot_expected": 37.7,
+        "jackpot_ratio": 1.14
+      },
+      "descending_digits": {
+        "hits": 2042,
+        "expected": 2081.4,
+        "jackpot_hits": 35,
+        "size": 5,
+        "ratio": 0.981,
+        "jackpot_expected": 31.4,
+        "jackpot_ratio": 1.114
+      },
+      "decade_0": {
+        "hits": 3807,
+        "expected": 3746.6,
+        "jackpot_hits": 53,
+        "size": 9,
+        "ratio": 1.016,
+        "jackpot_expected": 56.6,
+        "jackpot_ratio": 0.937
+      },
+      "decade_1": {
+        "hits": 4105,
+        "expected": 4162.9,
+        "jackpot_hits": 70,
+        "size": 10,
+        "ratio": 0.986,
+        "jackpot_expected": 62.9,
+        "jackpot_ratio": 1.114
+      },
+      "decade_2": {
+        "hits": 4120,
+        "expected": 4162.9,
+        "jackpot_hits": 52,
+        "size": 10,
+        "ratio": 0.99,
+        "jackpot_expected": 62.9,
+        "jackpot_ratio": 0.827
+      },
+      "decade_3": {
+        "hits": 4204,
+        "expected": 4162.9,
+        "jackpot_hits": 71,
+        "size": 10,
+        "ratio": 1.01,
+        "jackpot_expected": 62.9,
+        "jackpot_ratio": 1.13
+      },
+      "decade_4": {
+        "hits": 4193,
+        "expected": 4162.9,
+        "jackpot_hits": 65,
+        "size": 10,
+        "ratio": 1.007,
+        "jackpot_expected": 62.9,
+        "jackpot_ratio": 1.034
+      },
+      "decade_5": {
+        "hits": 4188,
+        "expected": 4162.9,
+        "jackpot_hits": 69,
+        "size": 10,
+        "ratio": 1.006,
+        "jackpot_expected": 62.9,
+        "jackpot_ratio": 1.098
+      },
+      "decade_6": {
+        "hits": 4523,
+        "expected": 4579.1,
+        "jackpot_hits": 60,
+        "size": 11,
+        "ratio": 0.988,
+        "jackpot_expected": 69.1,
+        "jackpot_ratio": 0.868
+      }
+    }
+  },
+  "gap_analysis": {
+    "global_max_gap": 37,
+    "numbers_exceeding_28": 5,
+    "hypothesis_holds": false,
+    "avg_max_gap": 20.73
+  },
+  "system_perspective": {
+    "expected_per_number": 416.3,
+    "popular_by_system": [
+      {
+        "number": 49,
+        "count": 453,
+        "ratio": 1.088,
+        "max_gap": 18,
+        "avg_gap": 3.22
+      },
+      {
+        "number": 3,
+        "count": 450,
+        "ratio": 1.081,
+        "max_gap": 20,
+        "avg_gap": 3.24
+      },
+      {
+        "number": 9,
+        "count": 449,
+        "ratio": 1.079,
+        "max_gap": 15,
+        "avg_gap": 3.24
+      },
+      {
+        "number": 33,
+        "count": 443,
+        "ratio": 1.064,
+        "max_gap": 19,
+        "avg_gap": 3.29
+      },
+      {
+        "number": 39,
+        "count": 443,
+        "ratio": 1.064,
+        "max_gap": 24,
+        "avg_gap": 3.29
+      },
+      {
+        "number": 12,
+        "count": 438,
+        "ratio": 1.052,
+        "max_gap": 37,
+        "avg_gap": 3.32
+      },
+      {
+        "number": 45,
+        "count": 438,
+        "ratio": 1.052,
+        "max_gap": 31,
+        "avg_gap": 3.33
+      },
+      {
+        "number": 56,
+        "count": 438,
+        "ratio": 1.052,
+        "max_gap": 19,
+        "avg_gap": 3.33
+      },
+      {
+        "number": 42,
+        "count": 437,
+        "ratio": 1.05,
+        "max_gap": 15,
+        "avg_gap": 3.31
+      },
+      {
+        "number": 2,
+        "count": 434,
+        "ratio": 1.043,
+        "max_gap": 19,
+        "avg_gap": 3.35
+      },
+      {
+        "number": 36,
+        "count": 431,
+        "ratio": 1.035,
+        "max_gap": 19,
+        "avg_gap": 3.36
+      },
+      {
+        "number": 6,
+        "count": 429,
+        "ratio": 1.031,
+        "max_gap": 17,
+        "avg_gap": 3.39
+      },
+      {
+        "number": 25,
+        "count": 429,
+        "ratio": 1.031,
+        "max_gap": 23,
+        "avg_gap": 3.4
+      },
+      {
+        "number": 28,
+        "count": 429,
+        "ratio": 1.031,
+        "max_gap": 19,
+        "avg_gap": 3.4
+      },
+      {
+        "number": 35,
+        "count": 429,
+        "ratio": 1.031,
+        "max_gap": 19,
+        "avg_gap": 3.39
+      }
+    ],
+    "rare_by_system": [
+      {
+        "number": 22,
+        "count": 383,
+        "ratio": 0.92,
+        "max_gap": 18,
+        "avg_gap": 3.79
+      },
+      {
+        "number": 7,
+        "count": 389,
+        "ratio": 0.934,
+        "max_gap": 26,
+        "avg_gap": 3.74
+      },
+      {
+        "number": 60,
+        "count": 390,
+        "ratio": 0.937,
+        "max_gap": 24,
+        "avg_gap": 3.73
+      },
+      {
+        "number": 41,
+        "count": 391,
+        "ratio": 0.939,
+        "max_gap": 25,
+        "avg_gap": 3.72
+      },
+      {
+        "number": 69,
+        "count": 394,
+        "ratio": 0.946,
+        "max_gap": 19,
+        "avg_gap": 3.7
+      },
+      {
+        "number": 70,
+        "count": 394,
+        "ratio": 0.946,
+        "max_gap": 16,
+        "avg_gap": 3.69
+      },
+      {
+        "number": 18,
+        "count": 396,
+        "ratio": 0.951,
+        "max_gap": 20,
+        "avg_gap": 3.68
+      },
+      {
+        "number": 24,
+        "count": 397,
+        "ratio": 0.954,
+        "max_gap": 23,
+        "avg_gap": 3.67
+      },
+      {
+        "number": 29,
+        "count": 397,
+        "ratio": 0.954,
+        "max_gap": 21,
+        "avg_gap": 3.67
+      },
+      {
+        "number": 19,
+        "count": 400,
+        "ratio": 0.961,
+        "max_gap": 18,
+        "avg_gap": 3.65
+      },
+      {
+        "number": 21,
+        "count": 400,
+        "ratio": 0.961,
+        "max_gap": 18,
+        "avg_gap": 3.63
+      },
+      {
+        "number": 32,
+        "count": 400,
+        "ratio": 0.961,
+        "max_gap": 18,
+        "avg_gap": 3.64
+      },
+      {
+        "number": 11,
+        "count": 401,
+        "ratio": 0.963,
+        "max_gap": 21,
+        "avg_gap": 3.63
+      },
+      {
+        "number": 13,
+        "count": 402,
+        "ratio": 0.966,
+        "max_gap": 16,
+        "avg_gap": 3.62
+      },
+      {
+        "number": 30,
+        "count": 403,
+        "ratio": 0.968,
+        "max_gap": 21,
+        "avg_gap": 3.61
+      }
+    ],
+    "birthday_analysis": {
+      "birthday_total": 12840,
+      "non_birthday_total": 16300,
+      "birthday_avg": 414.19,
+      "non_birthday_avg": 417.95,
+      "birthday_ratio": 0.991
+    },
+    "most_drawn": [
+      [
+        49,
+        453
+      ],
+      [
+        3,
+        450
+      ],
+      [
+        9,
+        449
+      ],
+      [
+        33,
+        443
+      ],
+      [
+        39,
+        443
+      ],
+      [
+        45,
+        438
+      ],
+      [
+        56,
+        438
+      ],
+      [
+        12,
+        438
+      ],
+      [
+        42,
+        437
+      ],
+      [
+        2,
+        434
+      ]
+    ],
+    "least_drawn": [
+      [
+        21,
+        400
+      ],
+      [
+        29,
+        397
+      ],
+      [
+        24,
+        397
+      ],
+      [
+        18,
+        396
+      ],
+      [
+        69,
+        394
+      ],
+      [
+        70,
+        394
+      ],
+      [
+        41,
+        391
+      ],
+      [
+        60,
+        390
+      ],
+      [
+        7,
+        389
+      ],
+      [
+        22,
+        383
+      ]
+    ]
+  }
+}

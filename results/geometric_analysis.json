@@ -1,0 +1,965 @@
+{
+  "metadata": {
+    "analysis_type": "Geometrische/Raeumliche Muster-Analyse",
+    "grid_dimensions": "7 Zeilen x 10 Spalten",
+    "total_combinations_analyzed": 3,
+    "keno_layout": {
+      "rows": 7,
+      "cols": 10,
+      "total_numbers": 70
+    }
+  },
+  "individual_analyses": [
+    {
+      "name": "Kyritz",
+      "numbers": [
+        5,
+        12,
+        20,
+        26,
+        34,
+        36,
+        42,
+        45,
+        48,
+        66
+      ],
+      "count": 10,
+      "visualization": "\n=== Kyritz ===\n     1   2   3   4   5   6   7   8   9  10\n   ---------------------------------\nR1 |  1   2   3   4 [ 5]  6   7   8   9  10 \nR2 | 11 [12] 13  14  15  16  17  18  19 [20]\nR3 | 21  22  23  24  25 [26] 27  28  29  30 \nR4 | 31  32  33 [34] 35 [36] 37  38  39  40 \nR5 | 41 [42] 43  44 [45] 46  47 [48] 49  50 \nR6 | 51  52  53  54  55  56  57  58  59  60 \nR7 | 61  62  63  64  65 [66] 67  68  69  70 ",
+      "row_distribution": {
+        "distribution": {
+          "Zeile 1 (1-10)": 1,
+          "Zeile 2 (11-20)": 2,
+          "Zeile 3 (21-30)": 1,
+          "Zeile 4 (31-40)": 2,
+          "Zeile 5 (41-50)": 3,
+          "Zeile 6 (51-60)": 0,
+          "Zeile 7 (61-70)": 1
+        },
+        "max_per_row": 3,
+        "min_per_row": 1,
+        "empty_rows": 1,
+        "rows_used": 6,
+        "spread_ratio": 0.8571428571428571
+      },
+      "column_distribution": {
+        "distribution": {
+          "Spalte 1": 0,
+          "Spalte 2": 2,
+          "Spalte 3": 0,
+          "Spalte 4": 1,
+          "Spalte 5": 2,
+          "Spalte 6": 3,
+          "Spalte 7": 0,
+          "Spalte 8": 1,
+          "Spalte 9": 0,
+          "Spalte 10": 1
+        },
+        "max_per_col": 3,
+        "min_per_col": 1,
+        "empty_cols": 4,
+        "cols_used": 6,
+        "spread_ratio": 0.6
+      },
+      "diagonals": {
+        "main_diagonal_clusters": {
+          "diag_0": [
+            12,
+            34,
+            45
+          ],
+          "diag_-3": [
+            26,
+            48
+          ]
+        },
+        "anti_diagonal_clusters": {
+          "anti_diag_8": [
+            36,
+            45
+          ],
+          "anti_diag_11": [
+            48,
+            66
+          ]
+        },
+        "total_main_diagonal_pairs": 5,
+        "total_anti_diagonal_pairs": 4,
+        "diagonal_score": 4
+      },
+      "clusters": {
+        "direct_neighbors": [
+          [
+            26,
+            36
+          ]
+        ],
+        "neighbor_count": 1,
+        "blocks_2x2": [],
+        "horizontal_sequences": [
+          [
+            34,
+            36
+          ],
+          [
+            42,
+            45
+          ],
+          [
+            45,
+            48
+          ]
+        ],
+        "vertical_sequences": [
+          [
+            12,
+            42
+          ],
+          [
+            26,
+            36
+          ],
+          [
+            36,
+            66
+          ]
+        ],
+        "cluster_density": 0.1
+      },
+      "symmetry": {
+        "horizontal_symmetry_score": 0.2,
+        "vertical_symmetry_score": 0.0,
+        "point_symmetry_score": 0.4,
+        "horizontal_mirror_pairs": 1,
+        "vertical_mirror_pairs": 0,
+        "point_mirror_pairs": 2
+      },
+      "manhattan_distances": {
+        "min_distance": 1,
+        "max_distance": 11,
+        "mean_distance": 4.977777777777778,
+        "median_distance": 5,
+        "std_distance": 2.215991264412073,
+        "closest_pairs": [
+          {
+            "pair": [
+              26,
+              36
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              34,
+              36
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              34,
+              45
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              36,
+              45
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              5,
+              26
+            ],
+            "distance": 3
+          }
+        ],
+        "farthest_pairs": [
+          {
+            "pair": [
+              20,
+              45
+            ],
+            "distance": 8
+          },
+          {
+            "pair": [
+              12,
+              48
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              12,
+              66
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              20,
+              66
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              20,
+              42
+            ],
+            "distance": 11
+          }
+        ],
+        "distance_distribution": {
+          "4": 8,
+          "6": 7,
+          "3": 10,
+          "7": 3,
+          "8": 3,
+          "5": 6,
+          "9": 3,
+          "11": 1,
+          "1": 1,
+          "2": 3
+        }
+      },
+      "convex_hull": {
+        "area": 31.0,
+        "perimeter": 22.17,
+        "hull_points_count": 6,
+        "hull_numbers": [
+          5,
+          12,
+          42,
+          66,
+          48,
+          20
+        ],
+        "bounding_box": {
+          "min_row": 0,
+          "max_row": 6,
+          "min_col": 1,
+          "max_col": 9
+        },
+        "fill_ratio": 0.3225806451612903
+      },
+      "centroid": {
+        "centroid": {
+          "row": 2.8,
+          "col": 4.4,
+          "approx_number": 35
+        },
+        "grid_center": {
+          "row": 3,
+          "col": 4.5
+        },
+        "distance_to_grid_center": 0.22,
+        "quadrant_distribution": {
+          "oben_links": 3,
+          "oben_rechts": 3,
+          "unten_links": 2,
+          "unten_rechts": 2
+        },
+        "balance_score": 0.9552786404500042
+      }
+    },
+    {
+      "name": "Oberbayern",
+      "numbers": [
+        3,
+        15,
+        18,
+        27,
+        47,
+        53,
+        54,
+        55,
+        66,
+        68
+      ],
+      "count": 10,
+      "visualization": "\n=== Oberbayern ===\n     1   2   3   4   5   6   7   8   9  10\n   ---------------------------------\nR1 |  1   2 [ 3]  4   5   6   7   8   9  10 \nR2 | 11  12  13  14 [15] 16  17 [18] 19  20 \nR3 | 21  22  23  24  25  26 [27] 28  29  30 \nR4 | 31  32  33  34  35  36  37  38  39  40 \nR5 | 41  42  43  44  45  46 [47] 48  49  50 \nR6 | 51  52 [53][54][55] 56  57  58  59  60 \nR7 | 61  62  63  64  65 [66] 67 [68] 69  70 ",
+      "row_distribution": {
+        "distribution": {
+          "Zeile 1 (1-10)": 1,
+          "Zeile 2 (11-20)": 2,
+          "Zeile 3 (21-30)": 1,
+          "Zeile 4 (31-40)": 0,
+          "Zeile 5 (41-50)": 1,
+          "Zeile 6 (51-60)": 3,
+          "Zeile 7 (61-70)": 2
+        },
+        "max_per_row": 3,
+        "min_per_row": 1,
+        "empty_rows": 1,
+        "rows_used": 6,
+        "spread_ratio": 0.8571428571428571
+      },
+      "column_distribution": {
+        "distribution": {
+          "Spalte 1": 0,
+          "Spalte 2": 0,
+          "Spalte 3": 2,
+          "Spalte 4": 1,
+          "Spalte 5": 2,
+          "Spalte 6": 1,
+          "Spalte 7": 2,
+          "Spalte 8": 2,
+          "Spalte 9": 0,
+          "Spalte 10": 0
+        },
+        "max_per_col": 2,
+        "min_per_col": 1,
+        "empty_cols": 4,
+        "cols_used": 6,
+        "spread_ratio": 0.6
+      },
+      "diagonals": {
+        "main_diagonal_clusters": {
+          "diag_-2": [
+            3,
+            47
+          ],
+          "diag_1": [
+            55,
+            66
+          ]
+        },
+        "anti_diagonal_clusters": {
+          "anti_diag_8": [
+            18,
+            27,
+            54
+          ]
+        },
+        "total_main_diagonal_pairs": 4,
+        "total_anti_diagonal_pairs": 3,
+        "diagonal_score": 3
+      },
+      "clusters": {
+        "direct_neighbors": [
+          [
+            53,
+            54
+          ],
+          [
+            54,
+            55
+          ]
+        ],
+        "neighbor_count": 2,
+        "blocks_2x2": [],
+        "horizontal_sequences": [
+          [
+            15,
+            18
+          ],
+          [
+            53,
+            54,
+            55
+          ],
+          [
+            54,
+            55
+          ],
+          [
+            66,
+            68
+          ]
+        ],
+        "vertical_sequences": [
+          [
+            27,
+            47
+          ]
+        ],
+        "cluster_density": 0.2
+      },
+      "symmetry": {
+        "horizontal_symmetry_score": 0.4,
+        "vertical_symmetry_score": 0.0,
+        "point_symmetry_score": 0.4,
+        "horizontal_mirror_pairs": 2,
+        "vertical_mirror_pairs": 0,
+        "point_mirror_pairs": 2
+      },
+      "manhattan_distances": {
+        "min_distance": 1,
+        "max_distance": 11,
+        "mean_distance": 4.911111111111111,
+        "median_distance": 5,
+        "std_distance": 2.2491699429119993,
+        "closest_pairs": [
+          {
+            "pair": [
+              53,
+              54
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              54,
+              55
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              18,
+              27
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              27,
+              47
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              53,
+              55
+            ],
+            "distance": 2
+          }
+        ],
+        "farthest_pairs": [
+          {
+            "pair": [
+              15,
+              68
+            ],
+            "distance": 8
+          },
+          {
+            "pair": [
+              18,
+              54
+            ],
+            "distance": 8
+          },
+          {
+            "pair": [
+              3,
+              66
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              18,
+              53
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              3,
+              68
+            ],
+            "distance": 11
+          }
+        ],
+        "distance_distribution": {
+          "3": 7,
+          "6": 7,
+          "8": 3,
+          "5": 9,
+          "7": 4,
+          "9": 2,
+          "11": 1,
+          "4": 5,
+          "2": 5,
+          "1": 2
+        }
+      },
+      "convex_hull": {
+        "area": 26.0,
+        "perimeter": 20.26,
+        "hull_points_count": 5,
+        "hull_numbers": [
+          3,
+          53,
+          66,
+          68,
+          18
+        ],
+        "bounding_box": {
+          "min_row": 0,
+          "max_row": 6,
+          "min_col": 2,
+          "max_col": 7
+        },
+        "fill_ratio": 0.38461538461538464
+      },
+      "centroid": {
+        "centroid": {
+          "row": 3.5,
+          "col": 4.6,
+          "approx_number": 46
+        },
+        "grid_center": {
+          "row": 3,
+          "col": 4.5
+        },
+        "distance_to_grid_center": 0.51,
+        "quadrant_distribution": {
+          "oben_links": 2,
+          "oben_rechts": 2,
+          "unten_links": 3,
+          "unten_rechts": 3
+        },
+        "balance_score": 0.8980196097281443
+      }
+    },
+    {
+      "name": "Nordsachsen",
+      "numbers": [
+        9,
+        19,
+        37,
+        38,
+        43,
+        45,
+        48,
+        57,
+        59,
+        67
+      ],
+      "count": 10,
+      "visualization": "\n=== Nordsachsen ===\n     1   2   3   4   5   6   7   8   9  10\n   ---------------------------------\nR1 |  1   2   3   4   5   6   7   8 [ 9] 10 \nR2 | 11  12  13  14  15  16  17  18 [19] 20 \nR3 | 21  22  23  24  25  26  27  28  29  30 \nR4 | 31  32  33  34  35  36 [37][38] 39  40 \nR5 | 41  42 [43] 44 [45] 46  47 [48] 49  50 \nR6 | 51  52  53  54  55  56 [57] 58 [59] 60 \nR7 | 61  62  63  64  65  66 [67] 68  69  70 ",
+      "row_distribution": {
+        "distribution": {
+          "Zeile 1 (1-10)": 1,
+          "Zeile 2 (11-20)": 1,
+          "Zeile 3 (21-30)": 0,
+          "Zeile 4 (31-40)": 2,
+          "Zeile 5 (41-50)": 3,
+          "Zeile 6 (51-60)": 2,
+          "Zeile 7 (61-70)": 1
+        },
+        "max_per_row": 3,
+        "min_per_row": 1,
+        "empty_rows": 1,
+        "rows_used": 6,
+        "spread_ratio": 0.8571428571428571
+      },
+      "column_distribution": {
+        "distribution": {
+          "Spalte 1": 0,
+          "Spalte 2": 0,
+          "Spalte 3": 1,
+          "Spalte 4": 0,
+          "Spalte 5": 1,
+          "Spalte 6": 0,
+          "Spalte 7": 3,
+          "Spalte 8": 2,
+          "Spalte 9": 3,
+          "Spalte 10": 0
+        },
+        "max_per_col": 3,
+        "min_per_col": 1,
+        "empty_cols": 5,
+        "cols_used": 5,
+        "spread_ratio": 0.5
+      },
+      "diagonals": {
+        "main_diagonal_clusters": {
+          "diag_-3": [
+            37,
+            48,
+            59
+          ],
+          "diag_0": [
+            45,
+            67
+          ]
+        },
+        "anti_diagonal_clusters": {
+          "anti_diag_8": [
+            9,
+            45
+          ],
+          "anti_diag_9": [
+            19,
+            37
+          ],
+          "anti_diag_11": [
+            48,
+            57
+          ]
+        },
+        "total_main_diagonal_pairs": 5,
+        "total_anti_diagonal_pairs": 6,
+        "diagonal_score": 5
+      },
+      "clusters": {
+        "direct_neighbors": [
+          [
+            9,
+            19
+          ],
+          [
+            37,
+            38
+          ],
+          [
+            38,
+            48
+          ],
+          [
+            57,
+            67
+          ]
+        ],
+        "neighbor_count": 4,
+        "blocks_2x2": [
+          [
+            37,
+            38,
+            48
+          ]
+        ],
+        "horizontal_sequences": [
+          [
+            37,
+            38
+          ],
+          [
+            43,
+            45
+          ],
+          [
+            45,
+            48
+          ],
+          [
+            57,
+            59
+          ]
+        ],
+        "vertical_sequences": [
+          [
+            9,
+            19
+          ],
+          [
+            37,
+            57,
+            67
+          ],
+          [
+            38,
+            48
+          ],
+          [
+            57,
+            67
+          ]
+        ],
+        "cluster_density": 0.4
+      },
+      "symmetry": {
+        "horizontal_symmetry_score": 0.4,
+        "vertical_symmetry_score": 0.2,
+        "point_symmetry_score": 0.0,
+        "horizontal_mirror_pairs": 2,
+        "vertical_mirror_pairs": 1,
+        "point_mirror_pairs": 0
+      },
+      "manhattan_distances": {
+        "min_distance": 1,
+        "max_distance": 10,
+        "mean_distance": 4.2444444444444445,
+        "median_distance": 4,
+        "std_distance": 2.182308212833941,
+        "closest_pairs": [
+          {
+            "pair": [
+              9,
+              19
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              37,
+              38
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              38,
+              48
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              57,
+              67
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              37,
+              48
+            ],
+            "distance": 2
+          }
+        ],
+        "farthest_pairs": [
+          {
+            "pair": [
+              43,
+              59
+            ],
+            "distance": 7
+          },
+          {
+            "pair": [
+              9,
+              45
+            ],
+            "distance": 8
+          },
+          {
+            "pair": [
+              9,
+              67
+            ],
+            "distance": 8
+          },
+          {
+            "pair": [
+              19,
+              43
+            ],
+            "distance": 9
+          },
+          {
+            "pair": [
+              9,
+              43
+            ],
+            "distance": 10
+          }
+        ],
+        "distance_distribution": {
+          "1": 4,
+          "5": 7,
+          "4": 8,
+          "10": 1,
+          "8": 2,
+          "7": 4,
+          "3": 9,
+          "9": 1,
+          "6": 3,
+          "2": 6
+        }
+      },
+      "convex_hull": {
+        "area": 19.0,
+        "perimeter": 18.92,
+        "hull_points_count": 4,
+        "hull_numbers": [
+          9,
+          43,
+          67,
+          59
+        ],
+        "bounding_box": {
+          "min_row": 0,
+          "max_row": 6,
+          "min_col": 2,
+          "max_col": 8
+        },
+        "fill_ratio": 0.5263157894736842
+      },
+      "centroid": {
+        "centroid": {
+          "row": 3.5,
+          "col": 6.2,
+          "approx_number": 47
+        },
+        "grid_center": {
+          "row": 3,
+          "col": 4.5
+        },
+        "distance_to_grid_center": 1.77,
+        "quadrant_distribution": {
+          "oben_links": 0,
+          "oben_rechts": 4,
+          "unten_links": 2,
+          "unten_rechts": 4
+        },
+        "balance_score": 0.645599097066613
+      }
+    }
+  ],
+  "cross_combination_invariants": {
+    "potential_anti_patterns": [
+      {
+        "name": "HOHE_ZEILEN_STREUUNG",
+        "description": "Alle Gewinner nutzen mindestens 70% der Zeilen",
+        "threshold": 0.7,
+        "values": [
+          0.8571428571428571,
+          0.8571428571428571,
+          0.8571428571428571
+        ],
+        "engineering_note": "Ein Ingenieur koennte Kombinationen mit zu wenig Zeilen-Streuung als 'unnatuerlich' markieren"
+      },
+      {
+        "name": "ZENTROID_NAHE_MITTE",
+        "description": "Schwerpunkt maximal 2 Einheiten vom Grid-Zentrum",
+        "threshold": 2.0,
+        "values": [
+          0.22,
+          0.51,
+          1.77
+        ],
+        "engineering_note": "Ausgewogene Kombinationen haben Schwerpunkt nahe der Mitte"
+      }
+    ],
+    "common_properties": [
+      {
+        "name": "Kyritz",
+        "property": "DIAGONAL_MUSTER",
+        "detail": "Diagonal-Score: 4"
+      },
+      {
+        "name": "Kyritz",
+        "property": "QUADRANTEN_BALANCE",
+        "detail": "Differenz max-min: 1"
+      },
+      {
+        "name": "Oberbayern",
+        "property": "DIAGONAL_MUSTER",
+        "detail": "Diagonal-Score: 3"
+      },
+      {
+        "name": "Oberbayern",
+        "property": "QUADRANTEN_BALANCE",
+        "detail": "Differenz max-min: 1"
+      },
+      {
+        "name": "Nordsachsen",
+        "property": "DIAGONAL_MUSTER",
+        "detail": "Diagonal-Score: 5"
+      },
+      {
+        "name": "Nordsachsen",
+        "property": "QUADRANTEN_BALANCE",
+        "detail": "Differenz max-min: 4"
+      }
+    ],
+    "statistical_summary": {
+      "row_spread": {
+        "mean": 0.8571428571428571,
+        "min": 0.8571428571428571,
+        "max": 0.8571428571428571,
+        "all_values": [
+          0.8571428571428571,
+          0.8571428571428571,
+          0.8571428571428571
+        ]
+      },
+      "col_spread": {
+        "mean": 0.5666666666666667,
+        "min": 0.5,
+        "max": 0.6,
+        "all_values": [
+          0.6,
+          0.6,
+          0.5
+        ]
+      },
+      "neighbor_count": {
+        "mean": 2.3333333333333335,
+        "min": 1,
+        "max": 4,
+        "all_values": [
+          1,
+          2,
+          4
+        ]
+      },
+      "mean_manhattan_distance": {
+        "mean": 4.711111111111111,
+        "min": 4.2444444444444445,
+        "max": 4.977777777777778,
+        "all_values": [
+          4.977777777777778,
+          4.911111111111111,
+          4.2444444444444445
+        ]
+      },
+      "convex_hull_area": {
+        "mean": 25.333333333333332,
+        "min": 19.0,
+        "max": 31.0,
+        "all_values": [
+          31.0,
+          26.0,
+          19.0
+        ]
+      },
+      "centroid_distance": {
+        "mean": 0.8333333333333334,
+        "min": 0.22,
+        "max": 1.77,
+        "all_values": [
+          0.22,
+          0.51,
+          1.77
+        ]
+      }
+    }
+  },
+  "engineering_hypothesis": {
+    "summary": "Potenzielle Anti-Pattern-Kriterien die ein Ingenieur nutzen koennte",
+    "criteria": [
+      {
+        "criterion": "Zeilen-Streuung",
+        "min_threshold": 0.7,
+        "rationale": "Natuerliche Kombinationen nutzen viele Zeilen"
+      },
+      {
+        "criterion": "Spalten-Streuung",
+        "min_threshold": 0.6,
+        "rationale": "Vermeidung von vertikalen Clustern"
+      },
+      {
+        "criterion": "Nachbar-Limit",
+        "max_threshold": 3,
+        "rationale": "Zu viele Nachbarn wirken kuenstlich"
+      },
+      {
+        "criterion": "Mittlere Distanz",
+        "min_threshold": 4.5,
+        "rationale": "Zahlen muessen verstreut sein"
+      },
+      {
+        "criterion": "Huelle-Flaeche",
+        "min_threshold": 20,
+        "rationale": "Kombination muss Grid aufspannen"
+      },
+      {
+        "criterion": "Zentroid-Distanz",
+        "max_threshold": 2.0,
+        "rationale": "Schwerpunkt nahe der Mitte"
+      }
+    ]
+  }
+}

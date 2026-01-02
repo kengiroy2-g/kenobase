@@ -1,0 +1,192 @@
+{
+  "analysis_date": "2025-12-31T14:20:18.514958",
+  "total_days": 1457,
+  "total_jackpots": 17,
+  "signal_results": [
+    {
+      "signal_name": "count_top5_sum",
+      "threshold": 200,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 997,
+      "signal_pct": 68.47527472527473,
+      "signal_jackpots": 1,
+      "signal_rate": 0.0010030090270812437,
+      "ratio": 0.08590477314295829,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    },
+    {
+      "signal_name": "count_top5_sum",
+      "threshold": 190,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 1005,
+      "signal_pct": 69.02472527472527,
+      "signal_jackpots": 1,
+      "signal_rate": 0.0009950248756218905,
+      "ratio": 0.08522095405326309,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    },
+    {
+      "signal_name": "count_top5_sum",
+      "threshold": 180,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 1013,
+      "signal_pct": 69.57417582417582,
+      "signal_jackpots": 1,
+      "signal_rate": 0.0009871668311944718,
+      "ratio": 0.08454793565995006,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    },
+    {
+      "signal_name": "count_top5_sum",
+      "threshold": 170,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 1018,
+      "signal_pct": 69.91758241758241,
+      "signal_jackpots": 1,
+      "signal_rate": 0.0009823182711198428,
+      "ratio": 0.08413267075002888,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    },
+    {
+      "signal_name": "mcount_mean",
+      "threshold": 9.0,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 92,
+      "signal_pct": 6.318681318681318,
+      "signal_jackpots": 2,
+      "signal_rate": 0.021739130434782608,
+      "ratio": 1.8618925831202044,
+      "jackpot_dates": [
+        "2025-01-29",
+        "2025-06-30"
+      ]
+    },
+    {
+      "signal_name": "mcount_mean",
+      "threshold": 8.5,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 171,
+      "signal_pct": 11.744505494505495,
+      "signal_jackpots": 3,
+      "signal_rate": 0.017543859649122806,
+      "ratio": 1.502579979360165,
+      "jackpot_dates": [
+        "2025-01-29",
+        "2025-06-30",
+        "2025-07-27"
+      ]
+    },
+    {
+      "signal_name": "mcount_mean",
+      "threshold": 8.0,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 252,
+      "signal_pct": 17.307692307692307,
+      "signal_jackpots": 4,
+      "signal_rate": 0.015873015873015872,
+      "ratio": 1.3594771241830064,
+      "jackpot_dates": [
+        "2025-01-29",
+        "2025-06-30",
+        "2025-07-27",
+        "2025-09-27"
+      ]
+    },
+    {
+      "signal_name": "index_ge5",
+      "threshold": 1,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 185,
+      "signal_pct": 12.706043956043956,
+      "signal_jackpots": 3,
+      "signal_rate": 0.016216216216216217,
+      "ratio": 1.3888712241653418,
+      "jackpot_dates": [
+        "2025-01-16",
+        "2025-01-29",
+        "2025-04-24"
+      ]
+    },
+    {
+      "signal_name": "index_ge5",
+      "threshold": 2,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 5,
+      "signal_pct": 0.3434065934065934,
+      "signal_jackpots": 1,
+      "signal_rate": 0.2,
+      "ratio": 17.129411764705882,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    },
+    {
+      "signal_name": "index_ge4",
+      "threshold": 2,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 99,
+      "signal_pct": 6.799450549450549,
+      "signal_jackpots": 2,
+      "signal_rate": 0.020202020202020204,
+      "ratio": 1.730243612596554,
+      "jackpot_dates": [
+        "2025-01-16",
+        "2025-06-30"
+      ]
+    },
+    {
+      "signal_name": "index_ge4",
+      "threshold": 3,
+      "comparison": ">=",
+      "total_days": 1456,
+      "total_jackpots": 17,
+      "baseline_rate": 0.011675824175824176,
+      "signal_days": 14,
+      "signal_pct": 0.9615384615384616,
+      "signal_jackpots": 1,
+      "signal_rate": 0.07142857142857142,
+      "ratio": 6.117647058823529,
+      "jackpot_dates": [
+        "2025-01-16"
+      ]
+    }
+  ]
+}

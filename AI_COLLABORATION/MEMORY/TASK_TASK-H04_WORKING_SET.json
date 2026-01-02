@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/gk1_waiting.py",
+    "kenobase/analysis/__init__.py",
+    "tests/unit/test_gk1_waiting.py",
+    "scripts/analyze_hyp002.py"
+]

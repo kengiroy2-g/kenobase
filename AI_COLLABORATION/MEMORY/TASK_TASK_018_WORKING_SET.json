@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "kenobase/core/keno_quotes.py",
+    "scripts/analyze_cycles_comprehensive.py",
+    "AI_COLLABORATION/KNOWLEDGE_BASE/HYPOTHESES_CATALOG.md",
+    "scripts/test_hyp_year_001_cycles.py (CREATED)",
+    "results/hyp_year_001_cycles.json (CREATED)"
+]

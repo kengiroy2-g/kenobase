@@ -1,0 +1,77 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-30 06:50:54
+
+plan:
+  name: "KENOBASE_AXIOM_FIRST_ECOSYSTEM"
+
+tasks:
+  - id: AXIOM-001
+    name: "Axiome + falsifizierbare Predictions definieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: ECON-001
+    name: "Economic State Variablen/Proxies (Spieleinsatz, Jackpot, Rolling CV)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: DATA-001
+    name: "Multi-Game Timeline (daily grid) bauen"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: NULL-001
+    name: "Nullmodelle: schedule/block permutation"
+    priority: HOCH
+    status: COMPLETE
+    current_phase: null
+  - id: FEAT-001
+    name: "Feature-Layer statt Zahl-Pattern (Summe/Dekaden/Entropy/Uniqueness)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: POP-001
+    name: "Spieler-Popularitaet als Risiko-Proxy modellieren (Birthday/Pattern-Risk)"
+    priority: MITTEL
+    status: COMPLETE
+    current_phase: null
+  - id: STATE-001
+    name: "Regime/State Detection (Change-Points, HMM)"
+    priority: HOCH
+    status: COMPLETE
+    current_phase: null
+  - id: COUPLE-001
+    name: "Directed Coupling (Transfer Entropy / CMI) ueber Lags"
+    priority: HOCH
+    status: COMPLETE
+    current_phase: null
+  - id: COUPLE-002
+    name: "Inverse/periodische Kopplung (Cross-Spectrum, Phase)"
+    priority: MITTEL
+    status: COMPLETE
+    current_phase: null
+  - id: ECO-001
+    name: "Ecosystem-Graph: Knoten=Games, Kanten=robuste Couplings"
+    priority: MITTEL
+    status: COMPLETE
+    current_phase: null
+  - id: EJ-001
+    name: "EuroJackpot separat + als externer Negativ-Kontrollkanal"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: VALID-001
+    name: "Train->Test: frozen Couplings im Test validieren"
+    priority: HOCH
+    status: COMPLETE
+    current_phase: null
+  - id: DATAREQ-001
+    name: "Bundesland-Zyklus: Datenbedarf + Ingestion Plan"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: REPORT-001
+    name: "Report + Repro-Runs (Artefakte in results/)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null

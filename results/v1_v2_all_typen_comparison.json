@@ -1,0 +1,478 @@
+{
+  "analysis_date": "2026-01-01T07:57:45.109500",
+  "source_file": "backtest_v1_v2_comparison.json",
+  "draws_count": 2237,
+  "date_range": {
+    "start": "2018-01-01T00:00:00",
+    "end": "2024-02-15T00:00:00"
+  },
+  "available_typen": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "missing_typen": [
+    2,
+    3,
+    4
+  ],
+  "summary": {
+    "total_typen_compared": 6,
+    "v2_wins": 6,
+    "v1_wins": 0,
+    "ties": 0,
+    "avg_roi_delta_best": 22.81,
+    "conclusion": "V2 wins 6/6 Typen with avg ROI-Delta of +22.81%"
+  },
+  "per_typ_comparison": [
+    {
+      "keno_typ": 5,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -43.26,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -32.99,
+        "best_numbers": [
+          3,
+          18,
+          24,
+          25,
+          31
+        ],
+        "best_avg_hits": 1.414,
+        "best_hit_distribution": {
+          "0": 443,
+          "1": 818,
+          "2": 643,
+          "3": 278,
+          "4": 49,
+          "5": 6
+        },
+        "best_gewinnklassen": {
+          "GK3": 278,
+          "GK2": 49,
+          "GK1": 6
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -32.16,
+        "best_strategy": "pair_focused",
+        "best_roi_percent": -19.58,
+        "best_numbers": [
+          3,
+          9,
+          33,
+          49,
+          50
+        ],
+        "best_avg_hits": 1.486,
+        "best_hit_distribution": {
+          "0": 381,
+          "1": 816,
+          "2": 690,
+          "3": 279,
+          "4": 63,
+          "5": 8
+        },
+        "best_gewinnklassen": {
+          "GK3": 279,
+          "GK2": 63,
+          "GK1": 8
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 13.41,
+        "roi_delta_avg": 11.1,
+        "winner_model": "V2",
+        "v2_advantage_percent": 40.65
+      }
+    },
+    {
+      "keno_typ": 6,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -50.11,
+        "best_strategy": "jackpot",
+        "best_roi_percent": -20.52,
+        "best_numbers": [
+          9,
+          13,
+          24,
+          37,
+          49,
+          51
+        ],
+        "best_avg_hits": 1.721,
+        "best_hit_distribution": {
+          "0": 258,
+          "1": 739,
+          "2": 749,
+          "3": 369,
+          "4": 107,
+          "5": 13,
+          "6": 2
+        },
+        "best_gewinnklassen": {
+          "GK4": 369,
+          "GK3": 107,
+          "GK1": 2,
+          "GK2": 13
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -17.05,
+        "best_strategy": "pair_focused",
+        "best_roi_percent": 53.24,
+        "best_numbers": [
+          2,
+          3,
+          9,
+          33,
+          49,
+          50
+        ],
+        "best_avg_hits": 1.785,
+        "best_hit_distribution": {
+          "0": 254,
+          "1": 694,
+          "2": 744,
+          "3": 399,
+          "4": 122,
+          "5": 19,
+          "6": 5
+        },
+        "best_gewinnklassen": {
+          "GK4": 399,
+          "GK3": 122,
+          "GK2": 19,
+          "GK1": 5
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 73.76,
+        "roi_delta_avg": 33.06,
+        "winner_model": "V2",
+        "v2_advantage_percent": 359.45
+      }
+    },
+    {
+      "keno_typ": 7,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -22.93,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -0.18,
+        "best_numbers": [
+          17,
+          18,
+          25,
+          31,
+          37,
+          49,
+          51
+        ],
+        "best_avg_hits": 1.947,
+        "best_hit_distribution": {
+          "0": 208,
+          "1": 620,
+          "2": 736,
+          "3": 468,
+          "4": 169,
+          "5": 33,
+          "6": 2,
+          "7": 1
+        },
+        "best_gewinnklassen": {
+          "GK3": 33,
+          "GK5": 468,
+          "GK4": 169,
+          "GK1": 1,
+          "GK2": 2
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -1.89,
+        "best_strategy": "pair_focused",
+        "best_roi_percent": 28.79,
+        "best_numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          49,
+          50
+        ],
+        "best_avg_hits": 2.076,
+        "best_hit_distribution": {
+          "0": 168,
+          "1": 580,
+          "2": 718,
+          "3": 510,
+          "4": 215,
+          "5": 38,
+          "6": 7,
+          "7": 1
+        },
+        "best_gewinnklassen": {
+          "GK5": 510,
+          "GK4": 215,
+          "GK3": 38,
+          "GK1": 1,
+          "GK2": 7
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 28.97,
+        "roi_delta_avg": 21.05,
+        "winner_model": "V2",
+        "v2_advantage_percent": 16094.44
+      }
+    },
+    {
+      "keno_typ": 8,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -65.0,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -58.83,
+        "best_numbers": [
+          2,
+          3,
+          11,
+          17,
+          18,
+          24,
+          25,
+          31
+        ],
+        "best_avg_hits": 2.258,
+        "best_hit_distribution": {
+          "0": 154,
+          "1": 481,
+          "2": 702,
+          "3": 545,
+          "4": 262,
+          "5": 75,
+          "6": 17,
+          "7": 1
+        },
+        "best_gewinnklassen": {
+          "GK5": 262,
+          "GK6": 154,
+          "GK4": 75,
+          "GK3": 17,
+          "GK2": 1
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -55.01,
+        "best_strategy": "jackpot",
+        "best_roi_percent": -45.91,
+        "best_numbers": [
+          2,
+          3,
+          4,
+          9,
+          20,
+          24,
+          36,
+          49
+        ],
+        "best_avg_hits": 2.376,
+        "best_hit_distribution": {
+          "0": 94,
+          "1": 486,
+          "2": 693,
+          "3": 553,
+          "4": 299,
+          "5": 86,
+          "6": 23,
+          "7": 3
+        },
+        "best_gewinnklassen": {
+          "GK6": 94,
+          "GK4": 86,
+          "GK5": 299,
+          "GK3": 23,
+          "GK2": 3
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 12.92,
+        "roi_delta_avg": 9.99,
+        "winner_model": "V2",
+        "v2_advantage_percent": 21.96
+      }
+    },
+    {
+      "keno_typ": 9,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -55.48,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -54.14,
+        "best_numbers": [
+          3,
+          11,
+          17,
+          18,
+          25,
+          31,
+          36,
+          37,
+          49
+        ],
+        "best_avg_hits": 2.544,
+        "best_hit_distribution": {
+          "0": 99,
+          "1": 368,
+          "2": 680,
+          "3": 606,
+          "4": 320,
+          "5": 124,
+          "6": 36,
+          "7": 4
+        },
+        "best_gewinnklassen": {
+          "GK5": 124,
+          "GK4": 36,
+          "GK6": 320,
+          "GK7": 99,
+          "GK3": 4
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -52.55,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -50.6,
+        "best_numbers": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          11,
+          25,
+          31,
+          59
+        ],
+        "best_avg_hits": 2.599,
+        "best_hit_distribution": {
+          "0": 89,
+          "1": 380,
+          "2": 632,
+          "3": 601,
+          "4": 356,
+          "5": 138,
+          "6": 35,
+          "7": 6
+        },
+        "best_gewinnklassen": {
+          "GK6": 356,
+          "GK5": 138,
+          "GK4": 35,
+          "GK7": 89,
+          "GK3": 6
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 3.54,
+        "roi_delta_avg": 2.92,
+        "winner_model": "V2",
+        "v2_advantage_percent": 6.54
+      }
+    },
+    {
+      "keno_typ": 10,
+      "v1": {
+        "strategies_count": 3,
+        "avg_roi_percent": -53.22,
+        "best_strategy": "balanced",
+        "best_roi_percent": -50.69,
+        "best_numbers": [
+          3,
+          13,
+          24,
+          31,
+          36,
+          45,
+          49,
+          51,
+          52,
+          66
+        ],
+        "best_avg_hits": 2.88,
+        "best_hit_distribution": {
+          "0": 43,
+          "1": 298,
+          "2": 572,
+          "3": 636,
+          "4": 430,
+          "5": 191,
+          "6": 54,
+          "7": 11,
+          "8": 2
+        },
+        "best_gewinnklassen": {
+          "GK6": 191,
+          "GK7": 43,
+          "GK4": 11,
+          "GK5": 54,
+          "GK3": 2
+        }
+      },
+      "v2": {
+        "strategies_count": 5,
+        "avg_roi_percent": -53.93,
+        "best_strategy": "near_miss",
+        "best_roi_percent": -46.45,
+        "best_numbers": [
+          2,
+          3,
+          4,
+          9,
+          10,
+          11,
+          13,
+          25,
+          31,
+          59
+        ],
+        "best_avg_hits": 2.882,
+        "best_hit_distribution": {
+          "0": 55,
+          "1": 296,
+          "2": 557,
+          "3": 648,
+          "4": 403,
+          "5": 204,
+          "6": 60,
+          "7": 12,
+          "8": 2
+        },
+        "best_gewinnklassen": {
+          "GK6": 204,
+          "GK5": 60,
+          "GK7": 55,
+          "GK4": 12,
+          "GK3": 2
+        }
+      },
+      "comparison": {
+        "roi_delta_best": 4.24,
+        "roi_delta_avg": -0.7,
+        "winner_model": "V2",
+        "v2_advantage_percent": 8.36
+      }
+    }
+  ]
+}

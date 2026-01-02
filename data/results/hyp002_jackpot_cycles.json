@@ -1,0 +1,151 @@
+{
+  "timestamp": "2025-12-27T14:12:00.450738",
+  "results": [
+    {
+      "hypothesis": "HYP-002",
+      "test": "Jackpot-Zyklen Analyse (erweitert)",
+      "n_events": 20,
+      "n_intervals": 17,
+      "mean_interval_days": 43.294117647058826,
+      "median_interval_days": 32.0,
+      "min_interval": 8,
+      "max_interval": 119,
+      "ks_statistic": 0.17875752950133547,
+      "ks_p_value": 0.5878025033520817,
+      "runs_test_z": 0.2662069528248341,
+      "runs_p_value": 0.7900798285930064,
+      "calendar_analysis": {
+        "n_events": 20,
+        "weekday_analysis": {
+          "counts": {
+            "Montag": 2,
+            "Dienstag": 7,
+            "Mittwoch": 3,
+            "Donnerstag": 0,
+            "Freitag": 2,
+            "Samstag": 4,
+            "Sonntag": 2
+          },
+          "chi2_statistic": 10.1,
+          "p_value": 0.1205034804564278,
+          "interpretation": "Keine signifikante Wochentagspraeferenz (p=0.1205)"
+        },
+        "month_analysis": {
+          "counts": {
+            "Januar": 1,
+            "Februar": 4,
+            "Maerz": 1,
+            "April": 0,
+            "Mai": 1,
+            "Juni": 2,
+            "Juli": 2,
+            "August": 2,
+            "September": 2,
+            "Oktober": 3,
+            "November": 0,
+            "Dezember": 2
+          },
+          "chi2_statistic": 8.799999999999999,
+          "p_value": 0.6403472331972063,
+          "interpretation": "Keine signifikante Monatspraeferenz (p=0.6403)"
+        },
+        "holiday_analysis": {
+          "observed_rate": 0.0,
+          "expected_rate": 0.0958904109589041,
+          "ratio": 0.0
+        },
+        "payday_analysis": {
+          "observed_rate": 0.3,
+          "expected_rate": 0.23333333333333334,
+          "ratio": 1.2857142857142856
+        }
+      },
+      "prediction": {
+        "status": "PREDICTED",
+        "last_event_date": "06.02.2024",
+        "mean_interval_days": 43.294117647058826,
+        "std_interval_days": 30.354309134700834,
+        "median_interval_days": 32,
+        "confidence_interval_80": [
+          13,
+          83
+        ],
+        "daily_forecast": [
+          {
+            "day": 1,
+            "probability": 0.0225704308065732,
+            "cumulative": 0.0225704308065732
+          },
+          {
+            "day": 2,
+            "probability": 0.022055077602388888,
+            "cumulative": 0.04462550840896209
+          },
+          {
+            "day": 3,
+            "probability": 0.021551491516313182,
+            "cumulative": 0.06617699992527527
+          },
+          {
+            "day": 4,
+            "probability": 0.021059403868404908,
+            "cumulative": 0.08723640379368018
+          },
+          {
+            "day": 5,
+            "probability": 0.020578552113522445,
+            "cumulative": 0.10781495590720262
+          },
+          {
+            "day": 6,
+            "probability": 0.02010867970124713,
+            "cumulative": 0.12792363560844974
+          },
+          {
+            "day": 7,
+            "probability": 0.019649535939005088,
+            "cumulative": 0.14757317154745483
+          },
+          {
+            "day": 8,
+            "probability": 0.019200875858314384,
+            "cumulative": 0.16677404740576923
+          },
+          {
+            "day": 9,
+            "probability": 0.018762460084086198,
+            "cumulative": 0.18553650748985542
+          },
+          {
+            "day": 10,
+            "probability": 0.01833405470691023,
+            "cumulative": 0.20387056219676566
+          },
+          {
+            "day": 11,
+            "probability": 0.017915431158256254,
+            "cumulative": 0.22178599335502192
+          },
+          {
+            "day": 12,
+            "probability": 0.0175063660885252,
+            "cumulative": 0.23929235944354713
+          },
+          {
+            "day": 13,
+            "probability": 0.017106641247884694,
+            "cumulative": 0.25639900069143184
+          },
+          {
+            "day": 14,
+            "probability": 0.01671604336982552,
+            "cumulative": 0.27311504406125736
+          }
+        ],
+        "interpretation": "Basierend auf 17 historischen Intervallen: Naechster GK1 erwartet in ca. 32 Tagen (80% CI: 13-83 Tage)"
+      },
+      "status": "RANDOM",
+      "interpretation": "Intervalle erscheinen zufaellig (KS p=0.5878). Keine signifikanten Zyklen erkannt."
+    }
+  ]
+}

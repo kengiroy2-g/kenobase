@@ -3,633 +3,213 @@
     "keno_type": 8,
     "ticket_a_only": {
       "invested": 1581,
-      "won": 3856,
+      "won": 740.0,
       "skipped": 296,
       "high_wins": [
         {
-          "date": "2019-08-28",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2019-12-10",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2020-02-08",
-          "hits": 6,
-          "win": 100
-        },
-        {
           "date": "2020-05-14",
           "hits": 7,
-          "win": 1000
+          "win": 100.0
         },
         {
           "date": "2020-12-24",
           "hits": 7,
-          "win": 1000
-        },
-        {
-          "date": "2021-01-07",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2021-03-31",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2022-01-22",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2022-01-23",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2023-08-27",
-          "hits": 6,
-          "win": 100
+          "win": 100.0
         }
       ],
-      "roi": 143.89626818469324
+      "roi": -53.19418089816572
     },
     "ticket_b_only": {
       "invested": 1581,
-      "won": 3174,
+      "won": 684.0,
       "skipped": 296,
       "high_wins": [
-        {
-          "date": "2019-02-05",
-          "hits": 6,
-          "win": 100
-        },
         {
           "date": "2019-02-17",
           "hits": 7,
-          "win": 1000
-        },
-        {
-          "date": "2019-05-04",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2020-07-03",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2021-02-17",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2021-03-05",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2021-04-02",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2021-06-26",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2022-03-18",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2023-01-28",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2023-02-01",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2023-03-31",
-          "hits": 6,
-          "win": 100
-        },
-        {
-          "date": "2024-02-04",
-          "hits": 6,
-          "win": 100
+          "win": 100.0
         }
       ],
-      "roi": 100.75901328273244
+      "roi": -56.73624288425047
     },
     "dual_tickets": {
       "invested": 3162,
-      "won": 7030,
+      "won": 1424.0,
       "skipped": 296,
       "high_wins": [
         {
-          "date": "2019-02-05",
-          "hits_a": 4,
-          "win_a": 2,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
           "date": "2019-02-17",
           "hits_a": 5,
-          "win_a": 10,
+          "win_a": 2.0,
           "hits_b": 7,
-          "win_b": 1000
-        },
-        {
-          "date": "2019-05-04",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2019-08-28",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 3,
-          "win_b": 0
-        },
-        {
-          "date": "2019-12-10",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 2,
-          "win_b": 0
-        },
-        {
-          "date": "2020-02-08",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 4,
-          "win_b": 2
+          "win_b": 100.0
         },
         {
           "date": "2020-05-14",
           "hits_a": 7,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 5,
-          "win_b": 10
-        },
-        {
-          "date": "2020-07-03",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 6,
-          "win_b": 100
+          "win_b": 2.0
         },
         {
           "date": "2020-12-24",
           "hits_a": 7,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 4,
-          "win_b": 2
-        },
-        {
-          "date": "2021-01-07",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 4,
-          "win_b": 2
-        },
-        {
-          "date": "2021-02-17",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2021-03-05",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2021-03-31",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 3,
-          "win_b": 0
-        },
-        {
-          "date": "2021-04-02",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2021-06-26",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2022-01-22",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 4,
-          "win_b": 2
-        },
-        {
-          "date": "2022-01-23",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 4,
-          "win_b": 2
-        },
-        {
-          "date": "2022-03-18",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2023-01-28",
-          "hits_a": 4,
-          "win_a": 2,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2023-02-01",
-          "hits_a": 4,
-          "win_a": 2,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2023-03-31",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 6,
-          "win_b": 100
-        },
-        {
-          "date": "2023-08-27",
-          "hits_a": 6,
-          "win_a": 100,
-          "hits_b": 3,
-          "win_b": 0
-        },
-        {
-          "date": "2024-02-04",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 6,
-          "win_b": 100
+          "win_b": 1.0
         }
       ],
-      "roi": 122.32764073371285
+      "roi": -54.9652118912081
     },
     "correlation": {
-      "both_win": 106,
-      "only_a_wins": 172,
-      "only_b_wins": 158,
-      "neither_wins": 1145
+      "both_win": 123,
+      "only_a_wins": 242,
+      "only_b_wins": 235,
+      "neither_wins": 981
     }
   },
   "typ_9": {
     "keno_type": 9,
     "ticket_a_only": {
       "invested": 1581,
-      "won": 8958,
+      "won": 1737.0,
       "skipped": 296,
       "high_wins": [
         {
           "date": "2020-05-14",
           "hits": 8,
-          "win": 5000
-        },
-        {
-          "date": "2021-10-14",
-          "hits": 7,
-          "win": 500
-        },
-        {
-          "date": "2022-08-25",
-          "hits": 7,
-          "win": 500
-        },
-        {
-          "date": "2023-10-10",
-          "hits": 7,
-          "win": 500
+          "win": 1000.0
         }
       ],
-      "roi": 466.6034155597723
+      "roi": 9.867172675521822
     },
     "ticket_b_only": {
       "invested": 1581,
-      "won": 8950,
+      "won": 1711.0,
       "skipped": 296,
       "high_wins": [
-        {
-          "date": "2019-02-05",
-          "hits": 7,
-          "win": 500
-        },
         {
           "date": "2019-02-17",
           "hits": 8,
-          "win": 5000
-        },
-        {
-          "date": "2020-07-03",
-          "hits": 7,
-          "win": 500
-        },
-        {
-          "date": "2021-02-17",
-          "hits": 7,
-          "win": 500
+          "win": 1000.0
         }
       ],
-      "roi": 466.09740670461736
+      "roi": 8.222643896268185
     },
     "dual_tickets": {
       "invested": 3162,
-      "won": 17908,
+      "won": 3448.0,
       "skipped": 296,
       "high_wins": [
         {
-          "date": "2019-02-05",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 7,
-          "win_b": 500
-        },
-        {
           "date": "2019-02-17",
           "hits_a": 5,
-          "win_a": 10,
+          "win_a": 2.0,
           "hits_b": 8,
-          "win_b": 5000
+          "win_b": 1000.0
         },
         {
           "date": "2020-05-14",
           "hits_a": 8,
-          "win_a": 5000,
+          "win_a": 1000.0,
           "hits_b": 5,
-          "win_b": 10
-        },
-        {
-          "date": "2020-07-03",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 7,
-          "win_b": 500
-        },
-        {
-          "date": "2021-02-17",
-          "hits_a": 5,
-          "win_a": 10,
-          "hits_b": 7,
-          "win_b": 500
-        },
-        {
-          "date": "2021-10-14",
-          "hits_a": 7,
-          "win_a": 500,
-          "hits_b": 4,
-          "win_b": 2
-        },
-        {
-          "date": "2022-08-25",
-          "hits_a": 7,
-          "win_a": 500,
-          "hits_b": 3,
-          "win_b": 0
-        },
-        {
-          "date": "2023-10-10",
-          "hits_a": 7,
-          "win_a": 500,
-          "hits_b": 5,
-          "win_b": 10
+          "win_b": 2.0
         }
       ],
-      "roi": 466.3504111321948
+      "roi": 9.044908285895003
     },
     "correlation": {
-      "both_win": 161,
-      "only_a_wins": 224,
-      "only_b_wins": 204,
-      "neither_wins": 992
+      "both_win": 167,
+      "only_a_wins": 279,
+      "only_b_wins": 254,
+      "neither_wins": 881
     }
   },
   "typ_10": {
     "keno_type": 10,
     "ticket_a_only": {
       "invested": 1581,
-      "won": 5628,
+      "won": 999.0,
       "skipped": 296,
       "high_wins": [
         {
-          "date": "2019-05-19",
-          "hits": 7,
-          "win": 100
-        },
-        {
           "date": "2020-05-14",
           "hits": 8,
-          "win": 1000
+          "win": 100.0
         },
         {
           "date": "2021-10-14",
           "hits": 8,
-          "win": 1000
+          "win": 100.0
         },
         {
           "date": "2022-08-25",
           "hits": 8,
-          "win": 1000
+          "win": 100.0
         },
         {
           "date": "2023-10-10",
           "hits": 8,
-          "win": 1000
-        },
-        {
-          "date": "2023-12-06",
-          "hits": 7,
-          "win": 100
+          "win": 100.0
         }
       ],
-      "roi": 255.97722960151802
+      "roi": -36.81214421252372
     },
     "ticket_b_only": {
       "invested": 1581,
-      "won": 3057,
+      "won": 757.0,
       "skipped": 296,
       "high_wins": [
-        {
-          "date": "2019-02-05",
-          "hits": 7,
-          "win": 100
-        },
         {
           "date": "2019-02-17",
           "hits": 8,
-          "win": 1000
-        },
-        {
-          "date": "2020-07-03",
-          "hits": 7,
-          "win": 100
-        },
-        {
-          "date": "2020-08-06",
-          "hits": 7,
-          "win": 100
-        },
-        {
-          "date": "2021-02-17",
-          "hits": 7,
-          "win": 100
-        },
-        {
-          "date": "2021-04-23",
-          "hits": 7,
-          "win": 100
-        },
-        {
-          "date": "2023-02-01",
-          "hits": 7,
-          "win": 100
-        },
-        {
-          "date": "2023-03-31",
-          "hits": 7,
-          "win": 100
+          "win": 100.0
         }
       ],
-      "roi": 93.35863377609108
+      "roi": -52.11891208096142
     },
     "dual_tickets": {
       "invested": 3162,
-      "won": 8685,
+      "won": 1756.0,
       "skipped": 296,
       "high_wins": [
         {
-          "date": "2019-02-05",
-          "hits_a": 5,
-          "win_a": 5,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
           "date": "2019-02-17",
           "hits_a": 6,
-          "win_a": 15,
+          "win_a": 5.0,
           "hits_b": 8,
-          "win_b": 1000
-        },
-        {
-          "date": "2019-05-19",
-          "hits_a": 7,
-          "win_a": 100,
-          "hits_b": 2,
-          "win_b": 0
+          "win_b": 100.0
         },
         {
           "date": "2020-05-14",
           "hits_a": 8,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 5,
-          "win_b": 5
-        },
-        {
-          "date": "2020-07-03",
-          "hits_a": 5,
-          "win_a": 5,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
-          "date": "2020-08-06",
-          "hits_a": 5,
-          "win_a": 5,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
-          "date": "2021-02-17",
-          "hits_a": 5,
-          "win_a": 5,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
-          "date": "2021-04-23",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 7,
-          "win_b": 100
+          "win_b": 2.0
         },
         {
           "date": "2021-10-14",
           "hits_a": 8,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 4,
           "win_b": 0
         },
         {
           "date": "2022-08-25",
           "hits_a": 8,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 3,
           "win_b": 0
         },
         {
-          "date": "2023-02-01",
-          "hits_a": 4,
-          "win_a": 0,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
-          "date": "2023-03-31",
-          "hits_a": 3,
-          "win_a": 0,
-          "hits_b": 7,
-          "win_b": 100
-        },
-        {
           "date": "2023-10-10",
           "hits_a": 8,
-          "win_a": 1000,
+          "win_a": 100.0,
           "hits_b": 5,
-          "win_b": 5
-        },
-        {
-          "date": "2023-12-06",
-          "hits_a": 7,
-          "win_a": 100,
-          "hits_b": 4,
-          "win_b": 0
+          "win_b": 2.0
         }
       ],
-      "roi": 174.66793168880454
+      "roi": -44.465528146742564
     },
     "correlation": {
       "both_win": 55,

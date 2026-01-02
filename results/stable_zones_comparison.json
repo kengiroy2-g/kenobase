@@ -1,0 +1,66 @@
+{
+  "timestamp": "2025-12-31T17:10:23.291272",
+  "test_period": "2024-01-01 bis 2025-12-29",
+  "strategies": [
+    {
+      "strategy": "W\u00d6CHENTLICH",
+      "zones": 106,
+      "draws": 729,
+      "avg_zone_hits": 6.554183813443073,
+      "zone_lift": 0.997375797697859,
+      "avg_ticket_hits": 2.6145404663923184,
+      "stake": 729,
+      "win": 324,
+      "netto": -405,
+      "roi": -55.55555555555556
+    },
+    {
+      "strategy": "MONATLICH",
+      "zones": 24,
+      "draws": 729,
+      "avg_zone_hits": 6.5294924554183815,
+      "zone_lift": 0.9936184171288842,
+      "avg_ticket_hits": 2.617283950617284,
+      "stake": 729,
+      "win": 318,
+      "netto": -411,
+      "roi": -56.37860082304527
+    },
+    {
+      "strategy": "14-TAGE",
+      "zones": 53,
+      "draws": 729,
+      "avg_zone_hits": 6.500685871056241,
+      "zone_lift": 0.9892348064650802,
+      "avg_ticket_hits": 2.6296296296296298,
+      "stake": 729,
+      "win": 370,
+      "netto": -359,
+      "roi": -49.24554183813443
+    },
+    {
+      "strategy": "30-TAGE",
+      "zones": 25,
+      "draws": 729,
+      "avg_zone_hits": 6.480109739368999,
+      "zone_lift": 0.9861036559909346,
+      "avg_ticket_hits": 2.606310013717421,
+      "stake": 729,
+      "win": 327,
+      "netto": -402,
+      "roi": -55.14403292181069
+    },
+    {
+      "strategy": "60-TAGE",
+      "zones": 13,
+      "draws": 729,
+      "avg_zone_hits": 6.555555555555555,
+      "zone_lift": 0.9975845410628019,
+      "avg_ticket_hits": 2.5843621399176953,
+      "stake": 729,
+      "win": 345,
+      "netto": -384,
+      "roi": -52.674897119341566
+    }
+  ]
+}

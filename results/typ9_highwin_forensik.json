@@ -1,0 +1,43 @@
+{
+  "analysis": "typ9_highwin_forensik_null_result",
+  "generated_at": "2025-12-31T13:56:37.106708",
+  "forensik_source": "results/high_win_forensik.json",
+  "draws_source": "data/raw/keno/KENO_ab_2018.csv",
+  "draws_analyzed": 2237,
+  "typ9_events_observed": 0,
+  "probabilities": {
+    "p_8_of_9": 9.685004242371682e-05,
+    "p_9_of_9": 2.582667797965782e-06,
+    "p_high_combined": 9.94327102216826e-05
+  },
+  "expected_events": {
+    "expected_8_of_9": 0.21665354490185454,
+    "expected_9_of_9": 0.005777427864049454,
+    "expected_high_combined": 0.22243097276590398
+  },
+  "expected_wait_draws": {
+    "wait_8_of_9": 10325,
+    "wait_9_of_9": 387196
+  },
+  "null_hypothesis_test": {
+    "p_zero_events_8_of_9": 0.8052088897104256,
+    "p_zero_events_9_of_9": 0.9942392293782024,
+    "result": "absence_consistent_with_expectation"
+  },
+  "baseline_comparison": {
+    "typ6": {
+      "events_observed": 11,
+      "p_6_of_6": 0.00029561612949023723,
+      "expected_events": 0.6612932816696607,
+      "expected_wait_draws": 3382
+    },
+    "typ7": {
+      "events_observed": 3,
+      "p_7_of_7": 6.466602832598939e-05,
+      "expected_events": 0.14465790536523826,
+      "expected_wait_draws": 15464
+    }
+  },
+  "interpretation": "With 2237 draws, observing 0 high-win Typ-9 events is statistically expected. P(0 events for 8/9) = 80.52%, P(0 events for 9/9) = 99.42%. The expected wait for a single 8/9 hit is ~10,325 draws (~28 years). No anomaly detected; absence is consistent with combinatorial probability.",
+  "caveat": "Typ-9 high-wins are extremely rare events. With current sample size, absence is expected."
+}

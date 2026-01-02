@@ -1,0 +1,66 @@
+{
+  "optimal_window": 30,
+  "results_by_window": {
+    "5": {
+      "total_draws": 667,
+      "total_netto": -375.0,
+      "total_roi": -56.22188905547226,
+      "avg_hits": 2.605697151424288,
+      "vs_zufall_pct": 1.3326669998334095
+    },
+    "8": {
+      "total_draws": 667,
+      "total_netto": -381.0,
+      "total_roi": -57.12143928035982,
+      "avg_hits": 2.523238380809595,
+      "vs_zufall_pct": -1.874062968515755
+    },
+    "10": {
+      "total_draws": 667,
+      "total_netto": -406.0,
+      "total_roi": -60.86956521739131,
+      "avg_hits": 2.5397301349325336,
+      "vs_zufall_pct": -1.2327169748459266
+    },
+    "15": {
+      "total_draws": 667,
+      "total_netto": -367.0,
+      "total_roi": -55.02248875562219,
+      "avg_hits": 2.5907046476761617,
+      "vs_zufall_pct": 0.7496251874062887
+    },
+    "20": {
+      "total_draws": 667,
+      "total_netto": -358.0,
+      "total_roi": -53.67316341829086,
+      "avg_hits": 2.5382308845577213,
+      "vs_zufall_pct": -1.2910211560886231
+    },
+    "30": {
+      "total_draws": 667,
+      "total_netto": -352.0,
+      "total_roi": -52.7736131934033,
+      "avg_hits": 2.598200899550225,
+      "vs_zufall_pct": 1.0411460936198491
+    },
+    "50": {
+      "total_draws": 667,
+      "total_netto": -372.0,
+      "total_roi": -55.77211394302849,
+      "avg_hits": 2.634182908545727,
+      "vs_zufall_pct": 2.4404464434449435
+    }
+  },
+  "recommended_ticket": [
+    4,
+    9,
+    34,
+    36,
+    49,
+    54,
+    56,
+    61,
+    66
+  ],
+  "last_jackpot": "2025-12-04"
+}

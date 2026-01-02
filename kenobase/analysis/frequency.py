@@ -376,10 +376,119 @@ def get_cold_numbers(
     return [r.number for r in classified if r.classification == "cold"]
 
 
+@dataclass(frozen=True)
+class YearlyFrequencyResult:
+    """Ergebnis der Frequenzanalyse pro Jahr.
+
+    Attributes:
+        year: Das analysierte Jahr
+        number: Die analysierte Zahl
+        absolute_frequency: Absolute Anzahl der Vorkommen in diesem Jahr
+        relative_frequency: Relativer Anteil (0.0 - 1.0) bezogen auf Ziehungen im Jahr
+        total_draws: Anzahl Ziehungen in diesem Jahr
+    """
+
+    year: int
+    number: int
+    absolute_frequency: int
+    relative_frequency: float
+    total_draws: int
+
+
+def calculate_frequency_per_year(
+    draws: list[DrawResult],
+    number_range: tuple[int, int] | None = None,
+) -> dict[int, list[YearlyFrequencyResult]]:
+    """Berechnet die Haeufigkeit jeder Zahl pro Jahr.
+
+    Gruppiert Ziehungen nach Jahr (draw.date.year) und berechnet
+    Frequenzen separat fuer jedes Jahr. Ermoeglicht Year-over-Year
+    Stabilitaetsanalyse (Axiom A5).
+
+    Args:
+        draws: Liste von DrawResult-Objekten
+        number_range: Optionaler Zahlenbereich (min, max) fuer KENO: (1, 70).
+                      Wenn None, werden nur vorkommende Zahlen gezaehlt.
+
+    Returns:
+        Dict mit Jahr als Key und Liste von YearlyFrequencyResult als Value.
+        Bei leerer Eingabe: leeres Dict.
+
+    Raises:
+        ValueError: Wenn number_range ungueltig ist (min > max).
+
+    Example:
+        >>> from kenobase.core.data_loader import DrawResult, GameType
+        >>> from datetime import datetime
+        >>> draws = [
+        ...     DrawResult(date=datetime(2023, 1, 1), numbers=[1, 2, 3], game_type=GameType.KENO),
+        ...     DrawResult(date=datetime(2024, 1, 1), numbers=[1, 4, 5], game_type=GameType.KENO),
+        ... ]
+        >>> results = calculate_frequency_per_year(draws)
+        >>> 2023 in results
+        True
+        >>> 2024 in results
+        True
+    """
+    if not draws:
+        return {}
+
+    if number_range is not None:
+        min_num, max_num = number_range
+        if min_num > max_num:
+            raise ValueError(f"Invalid number_range: min ({min_num}) > max ({max_num})")
+
+    # Gruppiere Ziehungen nach Jahr
+    draws_by_year: dict[int, list[DrawResult]] = {}
+    for draw in draws:
+        year = draw.date.year
+        if year not in draws_by_year:
+            draws_by_year[year] = []
+        draws_by_year[year].append(draw)
+
+    # Berechne Frequenzen pro Jahr
+    results: dict[int, list[YearlyFrequencyResult]] = {}
+
+    for year, year_draws in sorted(draws_by_year.items()):
+        counter: Counter[int] = Counter()
+        for draw in year_draws:
+            counter.update(draw.numbers)
+
+        total_draws = len(year_draws)
+
+        # Initialisiere mit Null-Frequenzen wenn Bereich angegeben
+        if number_range is not None:
+            min_num, max_num = number_range
+            for num in range(min_num, max_num + 1):
+                if num not in counter:
+                    counter[num] = 0
+
+        # Erstelle Ergebnisse fuer dieses Jahr
+        year_results = []
+        for number in sorted(counter.keys()):
+            abs_freq = counter[number]
+            rel_freq = abs_freq / total_draws if total_draws > 0 else 0.0
+            year_results.append(
+                YearlyFrequencyResult(
+                    year=year,
+                    number=number,
+                    absolute_frequency=abs_freq,
+                    relative_frequency=rel_freq,
+                    total_draws=total_draws,
+                )
+            )
+
+        results[year] = year_results
+
+    return results
+
+
 __all__ = [
     "FrequencyResult",
     "PairFrequencyResult",
+    "YearlyFrequencyResult",
     "calculate_frequency",
+    "calculate_frequency_per_year",
     "calculate_pair_frequency",
     "classify_numbers",
     "classify_pairs",

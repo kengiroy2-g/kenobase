@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-12-30T13:52:01.191268",
+  "task_id": "TASK_001",
+  "status": "COMPLETE",
+  "datasets": [
+    {
+      "label": "KENO primary",
+      "path": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+      "n_draws": 1457,
+      "date_range": {
+        "start": "2022-01-03",
+        "end": "2025-12-29"
+      },
+      "game_type": "keno",
+      "numbers_per_draw": 20,
+      "has_bonus": true,
+      "validation_errors": 0,
+      "status": "OK"
+    },
+    {
+      "label": "EuroJackpot",
+      "path": "data/raw/eurojackpot/EJ_ab_2022_bereinigt.csv",
+      "n_draws": 404,
+      "date_range": {
+        "start": "2022-01-07",
+        "end": "2025-12-26"
+      },
+      "game_type": "eurojackpot",
+      "numbers_per_draw": 5,
+      "has_bonus": true,
+      "validation_errors": 0,
+      "status": "OK"
+    },
+    {
+      "label": "Lotto",
+      "path": "data/raw/lotto/LOTTO_ab_2022_bereinigt.csv",
+      "n_draws": 416,
+      "date_range": {
+        "start": "2022-01-05",
+        "end": "2025-12-27"
+      },
+      "game_type": "lotto",
+      "numbers_per_draw": 6,
+      "has_bonus": false,
+      "validation_errors": 0,
+      "status": "OK"
+    },
+    {
+      "label": "KENO historical",
+      "path": "data/raw/keno/KENO_ab_2018.csv",
+      "n_draws": 2237,
+      "date_range": {
+        "start": "2018-01-01",
+        "end": "2024-02-15"
+      },
+      "game_type": "keno",
+      "numbers_per_draw": 20,
+      "has_bonus": true,
+      "validation_errors": 0,
+      "status": "OK"
+    }
+  ],
+  "tests": {
+    "unit_tests": "39/39 PASSED",
+    "test_file": "tests/unit/test_data_loader.py"
+  },
+  "repro_commands": [
+    "python -c \"from kenobase.core.data_loader import DataLoader; loader=DataLoader(); r=loader.load(\"data/raw/keno/KENO_ab_2022_bereinigt.csv\"); print(f\"Loaded {len(r)} KENO draws\")\"",
+    "pytest tests/unit/test_data_loader.py -v"
+  ]
+}

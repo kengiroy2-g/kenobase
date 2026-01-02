@@ -1,0 +1,5 @@
+﻿[
+    "scripts/analyze_loss_streaks.py",
+    "tests/unit/test_loss_streaks.py",
+    "results/loss_streak_analysis.json"
+]

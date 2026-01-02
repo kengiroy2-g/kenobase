@@ -1,0 +1,6 @@
+﻿[
+    "scripts/analyze.py",
+    "scripts/backtest.py",
+    "scripts/report.py",
+    "kenobase/core/config.py"
+]

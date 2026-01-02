@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-01T12:35:08.113313",
+    "draws_file": "data/raw/keno/KENO_ab_2018.csv",
+    "threshold_eur": 400.0,
+    "cooldown_window_days": 7,
+    "high_payout_events": 8,
+    "total_draws": 2237,
+    "train_end": null
+  },
+  "high_payout_dates": [
+    "2018-05-12",
+    "2019-03-22",
+    "2019-10-15",
+    "2020-07-08",
+    "2021-02-14",
+    "2022-06-30",
+    "2023-01-18",
+    "2023-10-10"
+  ],
+  "tickets": [
+    {
+      "ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "comparison": {
+        "cooldown_draws": 56,
+        "cooldown_roi_mean": -96.73,
+        "cooldown_roi_std": 8.66,
+        "normal_draws": 2049,
+        "normal_roi_mean": -85.68,
+        "normal_roi_std": 260.67,
+        "roi_delta": -11.04,
+        "effect_direction": "COOLDOWN_WORSE",
+        "mann_whitney_stat": 50780.0,
+        "p_value": 0.054919,
+        "significant": "False"
+      }
+    },
+    {
+      "ticket": [
+        3,
+        9,
+        24,
+        49,
+        51,
+        64
+      ],
+      "comparison": {
+        "cooldown_draws": 56,
+        "cooldown_roi_mean": -95.24,
+        "cooldown_roi_std": 9.91,
+        "normal_draws": 2049,
+        "normal_roi_mean": -94.09,
+        "normal_roi_std": 17.92,
+        "roi_delta": -1.15,
+        "effect_direction": "COOLDOWN_WORSE",
+        "mann_whitney_stat": 55792.0,
+        "p_value": 0.63948,
+        "significant": "False"
+      }
+    },
+    {
+      "ticket": [
+        17,
+        27,
+        32,
+        39,
+        48,
+        50
+      ],
+      "comparison": {
+        "cooldown_draws": 56,
+        "cooldown_roi_mean": -92.86,
+        "cooldown_roi_std": 10.94,
+        "normal_draws": 2049,
+        "normal_roi_mean": -90.19,
+        "normal_roi_std": 185.06,
+        "roi_delta": -2.67,
+        "effect_direction": "COOLDOWN_WORSE",
+        "mann_whitney_stat": 64096.0,
+        "p_value": 0.040118,
+        "significant": "True"
+      }
+    }
+  ],
+  "summary": {
+    "all_cooldown_worse": true,
+    "any_significant": true,
+    "hypothesis_status": "CONFIRMED",
+    "recommendation": "PAUSE_AFTER_HIGH_PAYOUT"
+  }
+}

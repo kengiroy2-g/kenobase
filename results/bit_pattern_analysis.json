@@ -1,0 +1,633 @@
+{
+  "analysis_type": "Binary/Bit Pattern Analysis",
+  "description": "Analysis of bit patterns in verified KENO Typ-10 winner combinations",
+  "methodology": {
+    "binary_representation": "7-bit representation (sufficient for 1-70)",
+    "popcount": "Number of set bits (1s) per number",
+    "xor": "XOR of all 10 numbers reveals bit balance",
+    "and": "AND shows bits common to ALL numbers",
+    "or": "OR shows all bits used by ANY number",
+    "hamming_distance": "Bit differences between consecutive numbers",
+    "checksum_search": "Looking for patterns an engineer might implement"
+  },
+  "combinations_analyzed": [
+    {
+      "name": "Kyritz",
+      "numbers": [
+        5,
+        12,
+        20,
+        26,
+        34,
+        36,
+        42,
+        45,
+        48,
+        66
+      ],
+      "binary_representations": {
+        "5": "0000101",
+        "12": "0001100",
+        "20": "0010100",
+        "26": "0011010",
+        "34": "0100010",
+        "36": "0100100",
+        "42": "0101010",
+        "45": "0101101",
+        "48": "0110000",
+        "66": "1000010"
+      },
+      "popcount_per_number": {
+        "5": 2,
+        "12": 2,
+        "20": 2,
+        "26": 3,
+        "34": 2,
+        "36": 2,
+        "42": 3,
+        "45": 4,
+        "48": 2,
+        "66": 2
+      },
+      "total_popcount": 24,
+      "xor_all": {
+        "value": 116,
+        "binary": "1110100",
+        "popcount": 4,
+        "is_power_of_2": false,
+        "is_mersenne": false,
+        "mod_7": 4,
+        "mod_10": 6,
+        "mod_70": 46
+      },
+      "and_all": {
+        "value": 0,
+        "binary": "0000000",
+        "meaning": "Common bits in ALL numbers"
+      },
+      "or_all": {
+        "value": 127,
+        "binary": "1111111",
+        "meaning": "Bits set in ANY number"
+      },
+      "parity": {
+        "total_bits": 24,
+        "parity": 0,
+        "parity_name": "even"
+      },
+      "hamming_distances": {
+        "consecutive_pairs": [
+          {
+            "pair": [
+              5,
+              12
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              12,
+              20
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              20,
+              26
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              26,
+              34
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              34,
+              36
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              36,
+              42
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              42,
+              45
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              45,
+              48
+            ],
+            "distance": 4
+          },
+          {
+            "pair": [
+              48,
+              66
+            ],
+            "distance": 4
+          }
+        ],
+        "average": 2.889,
+        "min": 2,
+        "max": 4
+      },
+      "bit_position_frequencies": {
+        "bit_0": 2,
+        "bit_1": 4,
+        "bit_2": 5,
+        "bit_3": 4,
+        "bit_4": 3,
+        "bit_5": 5,
+        "bit_6": 1
+      },
+      "sum_analysis": {
+        "total_sum": 334,
+        "sum_mod_70": 54,
+        "sum_binary": "0101001110",
+        "sum_popcount": 5
+      }
+    },
+    {
+      "name": "Oberbayern",
+      "numbers": [
+        3,
+        15,
+        18,
+        27,
+        47,
+        53,
+        54,
+        55,
+        66,
+        68
+      ],
+      "binary_representations": {
+        "3": "0000011",
+        "15": "0001111",
+        "18": "0010010",
+        "27": "0011011",
+        "47": "0101111",
+        "53": "0110101",
+        "54": "0110110",
+        "55": "0110111",
+        "66": "1000010",
+        "68": "1000100"
+      },
+      "popcount_per_number": {
+        "3": 2,
+        "15": 4,
+        "18": 2,
+        "27": 4,
+        "47": 5,
+        "53": 4,
+        "54": 4,
+        "55": 5,
+        "66": 2,
+        "68": 2
+      },
+      "total_popcount": 34,
+      "xor_all": {
+        "value": 24,
+        "binary": "0011000",
+        "popcount": 2,
+        "is_power_of_2": false,
+        "is_mersenne": false,
+        "mod_7": 3,
+        "mod_10": 4,
+        "mod_70": 24
+      },
+      "and_all": {
+        "value": 0,
+        "binary": "0000000",
+        "meaning": "Common bits in ALL numbers"
+      },
+      "or_all": {
+        "value": 127,
+        "binary": "1111111",
+        "meaning": "Bits set in ANY number"
+      },
+      "parity": {
+        "total_bits": 34,
+        "parity": 0,
+        "parity_name": "even"
+      },
+      "hamming_distances": {
+        "consecutive_pairs": [
+          {
+            "pair": [
+              3,
+              15
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              15,
+              18
+            ],
+            "distance": 4
+          },
+          {
+            "pair": [
+              18,
+              27
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              27,
+              47
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              47,
+              53
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              53,
+              54
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              54,
+              55
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              55,
+              66
+            ],
+            "distance": 5
+          },
+          {
+            "pair": [
+              66,
+              68
+            ],
+            "distance": 2
+          }
+        ],
+        "average": 2.667,
+        "min": 1,
+        "max": 5
+      },
+      "bit_position_frequencies": {
+        "bit_0": 6,
+        "bit_1": 8,
+        "bit_2": 6,
+        "bit_3": 3,
+        "bit_4": 5,
+        "bit_5": 4,
+        "bit_6": 2
+      },
+      "sum_analysis": {
+        "total_sum": 406,
+        "sum_mod_70": 56,
+        "sum_binary": "0110010110",
+        "sum_popcount": 5
+      }
+    },
+    {
+      "name": "Nordsachsen",
+      "numbers": [
+        9,
+        19,
+        37,
+        38,
+        43,
+        45,
+        48,
+        57,
+        59,
+        67
+      ],
+      "binary_representations": {
+        "9": "0001001",
+        "19": "0010011",
+        "37": "0100101",
+        "38": "0100110",
+        "43": "0101011",
+        "45": "0101101",
+        "48": "0110000",
+        "57": "0111001",
+        "59": "0111011",
+        "67": "1000011"
+      },
+      "popcount_per_number": {
+        "9": 2,
+        "19": 3,
+        "37": 3,
+        "38": 3,
+        "43": 4,
+        "45": 4,
+        "48": 2,
+        "57": 4,
+        "59": 5,
+        "67": 3
+      },
+      "total_popcount": 33,
+      "xor_all": {
+        "value": 110,
+        "binary": "1101110",
+        "popcount": 5,
+        "is_power_of_2": false,
+        "is_mersenne": false,
+        "mod_7": 5,
+        "mod_10": 0,
+        "mod_70": 40
+      },
+      "and_all": {
+        "value": 0,
+        "binary": "0000000",
+        "meaning": "Common bits in ALL numbers"
+      },
+      "or_all": {
+        "value": 127,
+        "binary": "1111111",
+        "meaning": "Bits set in ANY number"
+      },
+      "parity": {
+        "total_bits": 33,
+        "parity": 1,
+        "parity_name": "odd"
+      },
+      "hamming_distances": {
+        "consecutive_pairs": [
+          {
+            "pair": [
+              9,
+              19
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              19,
+              37
+            ],
+            "distance": 4
+          },
+          {
+            "pair": [
+              37,
+              38
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              38,
+              43
+            ],
+            "distance": 3
+          },
+          {
+            "pair": [
+              43,
+              45
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              45,
+              48
+            ],
+            "distance": 4
+          },
+          {
+            "pair": [
+              48,
+              57
+            ],
+            "distance": 2
+          },
+          {
+            "pair": [
+              57,
+              59
+            ],
+            "distance": 1
+          },
+          {
+            "pair": [
+              59,
+              67
+            ],
+            "distance": 4
+          }
+        ],
+        "average": 2.778,
+        "min": 1,
+        "max": 4
+      },
+      "bit_position_frequencies": {
+        "bit_0": 8,
+        "bit_1": 5,
+        "bit_2": 3,
+        "bit_3": 5,
+        "bit_4": 4,
+        "bit_5": 7,
+        "bit_6": 1
+      },
+      "sum_analysis": {
+        "total_sum": 422,
+        "sum_mod_70": 2,
+        "sum_binary": "0110100110",
+        "sum_popcount": 5
+      }
+    }
+  ],
+  "cross_combination_analysis": {
+    "cross_analysis": {
+      "xor_checksum": {
+        "all_xors": [
+          116,
+          24,
+          110
+        ],
+        "meta_xor": 2,
+        "meta_xor_binary": "0000010",
+        "observation": "XOR of all XORs"
+      },
+      "sum_checksum": {
+        "all_sums": [
+          334,
+          406,
+          422
+        ],
+        "total_sum": 1162,
+        "average_sum": 387.33,
+        "sum_mod_patterns": {
+          "mod_7": [
+            5,
+            0,
+            2
+          ],
+          "mod_10": [
+            4,
+            6,
+            2
+          ],
+          "mod_70": [
+            54,
+            56,
+            2
+          ]
+        }
+      },
+      "popcount_checksum": {
+        "all_popcounts": [
+          24,
+          34,
+          33
+        ],
+        "total_popcount": 91,
+        "average_popcount": 30.33,
+        "popcount_range": 10
+      },
+      "parity_checksum": {
+        "all_parities": [
+          0,
+          0,
+          1
+        ],
+        "all_same": false,
+        "xor_parities": 1
+      }
+    },
+    "aggregate_bit_frequencies": {
+      "bit_0": 16,
+      "bit_1": 17,
+      "bit_2": 14,
+      "bit_3": 12,
+      "bit_4": 12,
+      "bit_5": 16,
+      "bit_6": 4
+    },
+    "most_to_least_common_bits": [
+      [
+        "bit_1",
+        17
+      ],
+      [
+        "bit_0",
+        16
+      ],
+      [
+        "bit_5",
+        16
+      ],
+      [
+        "bit_2",
+        14
+      ],
+      [
+        "bit_3",
+        12
+      ],
+      [
+        "bit_4",
+        12
+      ],
+      [
+        "bit_6",
+        4
+      ]
+    ],
+    "bit_deviation_from_expected": {
+      "bit_0": {
+        "observed": 16,
+        "expected_approx": 15,
+        "deviation": 1
+      },
+      "bit_1": {
+        "observed": 17,
+        "expected_approx": 15,
+        "deviation": 2
+      },
+      "bit_2": {
+        "observed": 14,
+        "expected_approx": 15,
+        "deviation": -1
+      },
+      "bit_3": {
+        "observed": 12,
+        "expected_approx": 15,
+        "deviation": -3
+      },
+      "bit_4": {
+        "observed": 12,
+        "expected_approx": 15,
+        "deviation": -3
+      },
+      "bit_5": {
+        "observed": 16,
+        "expected_approx": 16.7,
+        "deviation": -0.7
+      },
+      "bit_6": {
+        "observed": 4,
+        "expected_approx": 3,
+        "deviation": 1
+      }
+    },
+    "potential_patterns": [
+      "OBSERVATION: Nordsachsen XOR (110) divisible by 10",
+      "OBSERVATION: Kyritz has moderate avg Hamming distance (2.889)",
+      "OBSERVATION: Oberbayern has moderate avg Hamming distance (2.667)",
+      "OBSERVATION: Nordsachsen has moderate avg Hamming distance (2.778)"
+    ]
+  },
+  "potential_engineering_patterns": [
+    "OBSERVATION: Nordsachsen XOR (110) divisible by 10",
+    "OBSERVATION: Kyritz has moderate avg Hamming distance (2.889)",
+    "OBSERVATION: Oberbayern has moderate avg Hamming distance (2.667)",
+    "OBSERVATION: Nordsachsen has moderate avg Hamming distance (2.778)"
+  ],
+  "summary": {
+    "total_numbers_analyzed": 30,
+    "xor_values": [
+      116,
+      24,
+      110
+    ],
+    "popcount_range": [
+      24,
+      34
+    ],
+    "sum_range": [
+      334,
+      422
+    ],
+    "parity_pattern": [
+      "even",
+      "even",
+      "odd"
+    ]
+  }
+}

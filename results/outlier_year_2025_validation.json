@@ -1,0 +1,70 @@
+{
+  "analysis_date": "2025-12-31T03:18:14.460769",
+  "task_id": "TASK_042",
+  "description": "2025 Outlier Validation vs 2018-2024 Baseline",
+  "data_sources": {
+    "2025": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_GQ_2025.csv",
+    "baseline": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Keno_GQ_2022_2023-2024.csv",
+    "historical_draws": "C:\\Users\\kenfu\\Documents\\keno_base\\Keno_GPTs\\Kenogpts_2\\Basis_Tab\\KENO_ab_2018.csv"
+  },
+  "sample_sizes": {
+    "n_days_2025": 362,
+    "n_days_baseline": 769,
+    "total_draws_2018_2024": 2242
+  },
+  "metrics_2025": {
+    "mean_daily_payout": 91003.84,
+    "std_daily_payout": 88438.39,
+    "cv_payout": 0.9718,
+    "jackpot_10_count": 17,
+    "jackpot_10_rate": 0.047
+  },
+  "metrics_baseline": {
+    "mean_daily_payout": 83505.6,
+    "std_daily_payout": 84664.51,
+    "cv_payout": 1.0139,
+    "jackpot_10_count": 31,
+    "jackpot_10_rate": 0.0403
+  },
+  "comparison": {
+    "mean_payout_diff_pct": 8.98,
+    "cv_diff": -0.0421,
+    "jackpot_rate_diff_pct": 0.66
+  },
+  "statistical_tests": {
+    "welch_ttest": {
+      "t_statistic": 1.3483,
+      "p_value": 0.178008,
+      "significant_at_005": false,
+      "interpretation": "No significant difference"
+    },
+    "bootstrap_ci_95": {
+      "mean_difference": 7473.07,
+      "ci_lower": -3133.58,
+      "ci_upper": 18862.34,
+      "ci_excludes_zero": false
+    },
+    "cohens_d": {
+      "effect_size": 0.0873,
+      "interpretation": "negligible"
+    },
+    "chi2_jackpot_rate": {
+      "chi2_statistic": 0.1292,
+      "p_value": 0.719313,
+      "significant_at_005": false,
+      "interpretation": "No significant difference in jackpot rate"
+    },
+    "levene_variance": {
+      "statistic": 1.2326,
+      "p_value": 0.267136,
+      "significant_at_005": false,
+      "interpretation": "No significant variance difference"
+    }
+  },
+  "conclusion": {
+    "is_2025_outlier": false,
+    "evidence_summary": [
+      "No significant differences detected at alpha=0.05"
+    ]
+  }
+}

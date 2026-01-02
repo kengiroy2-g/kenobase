@@ -1,0 +1,5 @@
+﻿[
+    "scripts/validate_ej_negative_control.py",
+    "tests/unit/test_ej_negative_control.py",
+    "results/ej_negative_control.json"
+]

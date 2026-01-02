@@ -1,0 +1,1627 @@
+{
+  "analysis": "prevday_backtest_windows",
+  "generated_at": "2025-12-30T14:32:12.581596",
+  "config": {
+    "draws_path": "C:\\Users\\kenfu\\Documents\\keno_base\\data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+    "start_date": "2024-01-01",
+    "end_date": "2025-12-29",
+    "types": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "windows": [
+      30,
+      90,
+      180,
+      365
+    ],
+    "big_win_threshold": 400.0,
+    "jackpot_file": null,
+    "cooldown_days": 30
+  },
+  "by_type": {
+    "typ_6": {
+      "ticket_baseline": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "overall": {
+        "baseline": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 764.0,
+          "profit_eur": 35.0,
+          "roi_percent": 4.8,
+          "mean_payout_per_eur": 1.048,
+          "mean_hits": 1.7558,
+          "near_miss": {
+            "hits": 5,
+            "count": 4,
+            "expected": 4.31,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 6,
+            "count": 1,
+            "expected": 0.216,
+            "p_value": 0.1938907646507223
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 1,
+            "expected": 0.216,
+            "p_value": 0.1938907646507223,
+            "total_payout_eur": 500.0,
+            "max_payout_eur": 500.0
+          }
+        },
+        "dynamic_prevday": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 765.0,
+          "profit_eur": 36.0,
+          "roi_percent": 4.94,
+          "mean_payout_per_eur": 1.0494,
+          "mean_hits": 1.7586,
+          "near_miss": {
+            "hits": 5,
+            "count": 4,
+            "expected": 4.31,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 6,
+            "count": 1,
+            "expected": 0.216,
+            "p_value": 0.1938907646507223
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 1,
+            "expected": 0.216,
+            "p_value": 0.1938907646507223,
+            "total_payout_eur": 500.0,
+            "max_payout_eur": 500.0
+          }
+        },
+        "delta": {
+          "roi_percent": 0.14,
+          "big_win_count": 0,
+          "jackpot_count": 0
+        }
+      },
+      "windows": {
+        "30": {
+          "baseline": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 7.0,
+            "profit_eur": -23.0,
+            "roi_percent": -76.67,
+            "mean_payout_per_eur": 0.2333,
+            "mean_hits": 1.7333,
+            "near_miss": {
+              "hits": 5,
+              "count": 0,
+              "expected": 0.177,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 1.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 7.0,
+            "profit_eur": -23.0,
+            "roi_percent": -76.67,
+            "mean_payout_per_eur": 0.2333,
+            "mean_hits": 1.7,
+            "near_miss": {
+              "hits": 5,
+              "count": 0,
+              "expected": 0.177,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 1.0
+            }
+          }
+        },
+        "90": {
+          "baseline": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 41.0,
+            "profit_eur": -49.0,
+            "roi_percent": -54.44,
+            "mean_payout_per_eur": 0.4556,
+            "mean_hits": 1.7444,
+            "near_miss": {
+              "hits": 5,
+              "count": 1,
+              "expected": 0.532,
+              "p_value": 0.41356196045272775
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.027,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.027,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 41.0,
+            "profit_eur": -49.0,
+            "roi_percent": -54.44,
+            "mean_payout_per_eur": 0.4556,
+            "mean_hits": 1.7333,
+            "near_miss": {
+              "hits": 5,
+              "count": 1,
+              "expected": 0.532,
+              "p_value": 0.41356196045272775
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.027,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.027,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        },
+        "180": {
+          "baseline": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 85.0,
+            "profit_eur": -95.0,
+            "roi_percent": -52.78,
+            "mean_payout_per_eur": 0.4722,
+            "mean_hits": 1.8,
+            "near_miss": {
+              "hits": 5,
+              "count": 2,
+              "expected": 1.064,
+              "p_value": 0.28791889489245875
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.053,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.053,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 85.0,
+            "profit_eur": -95.0,
+            "roi_percent": -52.78,
+            "mean_payout_per_eur": 0.4722,
+            "mean_hits": 1.7944,
+            "near_miss": {
+              "hits": 5,
+              "count": 2,
+              "expected": 1.064,
+              "p_value": 0.28791889489245875
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.053,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.053,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        },
+        "365": {
+          "baseline": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 146.0,
+            "profit_eur": -219.0,
+            "roi_percent": -60.0,
+            "mean_payout_per_eur": 0.4,
+            "mean_hits": 1.7479,
+            "near_miss": {
+              "hits": 5,
+              "count": 3,
+              "expected": 2.158,
+              "p_value": 0.4809474949901732
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.108,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.108,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 148.0,
+            "profit_eur": -217.0,
+            "roi_percent": -59.45,
+            "mean_payout_per_eur": 0.4055,
+            "mean_hits": 1.7534,
+            "near_miss": {
+              "hits": 5,
+              "count": 3,
+              "expected": 2.158,
+              "p_value": 0.4809474949901732
+            },
+            "jackpot": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.108,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.108,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        }
+      }
+    },
+    "typ_7": {
+      "ticket_baseline": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "overall": {
+        "baseline": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 336.0,
+          "profit_eur": -393.0,
+          "roi_percent": -53.91,
+          "mean_payout_per_eur": 0.4609,
+          "mean_hits": 1.9822,
+          "near_miss": {
+            "hits": 6,
+            "count": 0,
+            "expected": 1.179,
+            "p_value": 0.6370895174762774
+          },
+          "jackpot": {
+            "hits": 7,
+            "count": 0,
+            "expected": 0.047,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.047,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 12.0
+          }
+        },
+        "dynamic_prevday": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 456.0,
+          "profit_eur": -273.0,
+          "roi_percent": -37.45,
+          "mean_payout_per_eur": 0.6255,
+          "mean_hits": 1.9863,
+          "near_miss": {
+            "hits": 6,
+            "count": 1,
+            "expected": 1.179,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 7,
+            "count": 0,
+            "expected": 0.047,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.047,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 100.0
+          }
+        },
+        "delta": {
+          "roi_percent": 16.46,
+          "big_win_count": 0,
+          "jackpot_count": 0
+        }
+      },
+      "windows": {
+        "30": {
+          "baseline": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 6.0,
+            "profit_eur": -24.0,
+            "roi_percent": -80.0,
+            "mean_payout_per_eur": 0.2,
+            "mean_hits": 1.5333,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.048,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 1.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 5.0,
+            "profit_eur": -25.0,
+            "roi_percent": -83.33,
+            "mean_payout_per_eur": 0.1667,
+            "mean_hits": 1.5,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.048,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 1.0
+            }
+          }
+        },
+        "90": {
+          "baseline": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 38.0,
+            "profit_eur": -52.0,
+            "roi_percent": -57.78,
+            "mean_payout_per_eur": 0.4222,
+            "mean_hits": 1.9,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.145,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.006,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.006,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 47.0,
+            "profit_eur": -43.0,
+            "roi_percent": -47.78,
+            "mean_payout_per_eur": 0.5222,
+            "mean_hits": 1.8667,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.145,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.006,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.006,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          }
+        },
+        "180": {
+          "baseline": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 84.0,
+            "profit_eur": -96.0,
+            "roi_percent": -53.33,
+            "mean_payout_per_eur": 0.4667,
+            "mean_hits": 1.9,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.291,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 85.0,
+            "profit_eur": -95.0,
+            "roi_percent": -52.78,
+            "mean_payout_per_eur": 0.4722,
+            "mean_hits": 1.8889,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.291,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          }
+        },
+        "365": {
+          "baseline": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 167.0,
+            "profit_eur": -198.0,
+            "roi_percent": -54.25,
+            "mean_payout_per_eur": 0.4575,
+            "mean_hits": 1.9671,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.59,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.024,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.024,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 182.0,
+            "profit_eur": -183.0,
+            "roi_percent": -50.14,
+            "mean_payout_per_eur": 0.4986,
+            "mean_hits": 1.9562,
+            "near_miss": {
+              "hits": 6,
+              "count": 0,
+              "expected": 0.59,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.024,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.024,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 12.0
+            }
+          }
+        }
+      }
+    },
+    "typ_8": {
+      "ticket_baseline": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "overall": {
+        "baseline": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 208.0,
+          "profit_eur": -521.0,
+          "roi_percent": -71.47,
+          "mean_payout_per_eur": 0.2853,
+          "mean_hits": 2.2963,
+          "near_miss": {
+            "hits": 7,
+            "count": 0,
+            "expected": 0.299,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 8,
+            "count": 0,
+            "expected": 0.01,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.01,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 15.0
+          }
+        },
+        "dynamic_prevday": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 223.0,
+          "profit_eur": -506.0,
+          "roi_percent": -69.41,
+          "mean_payout_per_eur": 0.3059,
+          "mean_hits": 2.3032,
+          "near_miss": {
+            "hits": 7,
+            "count": 0,
+            "expected": 0.299,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 8,
+            "count": 0,
+            "expected": 0.01,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.01,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 15.0
+          }
+        },
+        "delta": {
+          "roi_percent": 2.06,
+          "big_win_count": 0,
+          "jackpot_count": 0
+        }
+      },
+      "windows": {
+        "30": {
+          "baseline": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 9.0,
+            "profit_eur": -21.0,
+            "roi_percent": -70.0,
+            "mean_payout_per_eur": 0.3,
+            "mean_hits": 1.9667,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 8.0,
+            "profit_eur": -22.0,
+            "roi_percent": -73.33,
+            "mean_payout_per_eur": 0.2667,
+            "mean_hits": 1.9,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.012,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          }
+        },
+        "90": {
+          "baseline": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 25.0,
+            "profit_eur": -65.0,
+            "roi_percent": -72.22,
+            "mean_payout_per_eur": 0.2778,
+            "mean_hits": 2.2444,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.037,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 27.0,
+            "profit_eur": -63.0,
+            "roi_percent": -70.0,
+            "mean_payout_per_eur": 0.3,
+            "mean_hits": 2.2111,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.037,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          }
+        },
+        "180": {
+          "baseline": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 64.0,
+            "profit_eur": -116.0,
+            "roi_percent": -64.44,
+            "mean_payout_per_eur": 0.3556,
+            "mean_hits": 2.2,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.074,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 64.0,
+            "profit_eur": -116.0,
+            "roi_percent": -64.44,
+            "mean_payout_per_eur": 0.3556,
+            "mean_hits": 2.1944,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.074,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        },
+        "365": {
+          "baseline": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 108.0,
+            "profit_eur": -257.0,
+            "roi_percent": -70.41,
+            "mean_payout_per_eur": 0.2959,
+            "mean_hits": 2.2521,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.15,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.005,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.005,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 108.0,
+            "profit_eur": -257.0,
+            "roi_percent": -70.41,
+            "mean_payout_per_eur": 0.2959,
+            "mean_hits": 2.2438,
+            "near_miss": {
+              "hits": 7,
+              "count": 0,
+              "expected": 0.15,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.005,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.005,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        }
+      }
+    },
+    "typ_9": {
+      "ticket_baseline": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "overall": {
+        "baseline": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 363.0,
+          "profit_eur": -366.0,
+          "roi_percent": -50.21,
+          "mean_payout_per_eur": 0.4979,
+          "mean_hits": 2.5885,
+          "near_miss": {
+            "hits": 8,
+            "count": 0,
+            "expected": 0.071,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 9,
+            "count": 0,
+            "expected": 0.002,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.072,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 20.0
+          }
+        },
+        "dynamic_prevday": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 354.0,
+          "profit_eur": -375.0,
+          "roi_percent": -51.44,
+          "mean_payout_per_eur": 0.4856,
+          "mean_hits": 2.5981,
+          "near_miss": {
+            "hits": 8,
+            "count": 0,
+            "expected": 0.071,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 9,
+            "count": 0,
+            "expected": 0.002,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.072,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 20.0
+          }
+        },
+        "delta": {
+          "roi_percent": -1.23,
+          "big_win_count": 0,
+          "jackpot_count": 0
+        }
+      },
+      "windows": {
+        "30": {
+          "baseline": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 15.0,
+            "profit_eur": -15.0,
+            "roi_percent": -50.0,
+            "mean_payout_per_eur": 0.5,
+            "mean_hits": 2.2667,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.003,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.003,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 16.0,
+            "profit_eur": -14.0,
+            "roi_percent": -46.67,
+            "mean_payout_per_eur": 0.5333,
+            "mean_hits": 2.2333,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.003,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.003,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          }
+        },
+        "90": {
+          "baseline": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 41.0,
+            "profit_eur": -49.0,
+            "roi_percent": -54.44,
+            "mean_payout_per_eur": 0.4556,
+            "mean_hits": 2.5444,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 5.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 45.0,
+            "profit_eur": -45.0,
+            "roi_percent": -50.0,
+            "mean_payout_per_eur": 0.5,
+            "mean_hits": 2.5222,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.009,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 5.0
+            }
+          }
+        },
+        "180": {
+          "baseline": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 97.0,
+            "profit_eur": -83.0,
+            "roi_percent": -46.11,
+            "mean_payout_per_eur": 0.5389,
+            "mean_hits": 2.5444,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.017,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.018,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 20.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 97.0,
+            "profit_eur": -83.0,
+            "roi_percent": -46.11,
+            "mean_payout_per_eur": 0.5389,
+            "mean_hits": 2.5444,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.017,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.018,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 20.0
+            }
+          }
+        },
+        "365": {
+          "baseline": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 193.0,
+            "profit_eur": -172.0,
+            "roi_percent": -47.12,
+            "mean_payout_per_eur": 0.5288,
+            "mean_hits": 2.5342,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.035,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.036,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 20.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 186.0,
+            "profit_eur": -179.0,
+            "roi_percent": -49.04,
+            "mean_payout_per_eur": 0.5096,
+            "mean_hits": 2.5288,
+            "near_miss": {
+              "hits": 8,
+              "count": 0,
+              "expected": 0.035,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.036,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 20.0
+            }
+          }
+        }
+      }
+    },
+    "typ_10": {
+      "ticket_baseline": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "overall": {
+        "baseline": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 341.0,
+          "profit_eur": -388.0,
+          "roi_percent": -53.22,
+          "mean_payout_per_eur": 0.4678,
+          "mean_hits": 2.8724,
+          "near_miss": {
+            "hits": 9,
+            "count": 0,
+            "expected": 0.015,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 10,
+            "count": 0,
+            "expected": 0.0,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.016,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 15.0
+          }
+        },
+        "dynamic_prevday": {
+          "n_days": 729,
+          "invested_eur": 729,
+          "won_eur": 377.0,
+          "profit_eur": -352.0,
+          "roi_percent": -48.29,
+          "mean_payout_per_eur": 0.5171,
+          "mean_hits": 2.8834,
+          "near_miss": {
+            "hits": 9,
+            "count": 0,
+            "expected": 0.015,
+            "p_value": 1.0
+          },
+          "jackpot": {
+            "hits": 10,
+            "count": 0,
+            "expected": 0.0,
+            "p_value": 1.0
+          },
+          "big_win": {
+            "threshold_eur": 400.0,
+            "count": 0,
+            "expected": 0.016,
+            "p_value": 1.0,
+            "total_payout_eur": 0.0,
+            "max_payout_eur": 15.0
+          }
+        },
+        "delta": {
+          "roi_percent": 4.93,
+          "big_win_count": 0,
+          "jackpot_count": 0
+        }
+      },
+      "windows": {
+        "30": {
+          "baseline": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 14.0,
+            "profit_eur": -16.0,
+            "roi_percent": -53.33,
+            "mean_payout_per_eur": 0.4667,
+            "mean_hits": 2.4333,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 30,
+            "invested_eur": 30,
+            "won_eur": 12.0,
+            "profit_eur": -18.0,
+            "roi_percent": -60.0,
+            "mean_payout_per_eur": 0.4,
+            "mean_hits": 2.5333,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.001,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 2.0
+            }
+          }
+        },
+        "90": {
+          "baseline": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 53.0,
+            "profit_eur": -37.0,
+            "roi_percent": -41.11,
+            "mean_payout_per_eur": 0.5889,
+            "mean_hits": 2.8,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 90,
+            "invested_eur": 90,
+            "won_eur": 41.0,
+            "profit_eur": -49.0,
+            "roi_percent": -54.44,
+            "mean_payout_per_eur": 0.4556,
+            "mean_hits": 2.8222,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.002,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 5.0
+            }
+          }
+        },
+        "180": {
+          "baseline": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 108.0,
+            "profit_eur": -72.0,
+            "roi_percent": -40.0,
+            "mean_payout_per_eur": 0.6,
+            "mean_hits": 2.8222,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.004,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.004,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 180,
+            "invested_eur": 180,
+            "won_eur": 94.0,
+            "profit_eur": -86.0,
+            "roi_percent": -47.78,
+            "mean_payout_per_eur": 0.5222,
+            "mean_hits": 2.8278,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.004,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.004,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        },
+        "365": {
+          "baseline": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 193.0,
+            "profit_eur": -172.0,
+            "roi_percent": -47.12,
+            "mean_payout_per_eur": 0.5288,
+            "mean_hits": 2.8247,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.008,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.008,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          },
+          "dynamic_prevday": {
+            "n_days": 365,
+            "invested_eur": 365,
+            "won_eur": 172.0,
+            "profit_eur": -193.0,
+            "roi_percent": -52.88,
+            "mean_payout_per_eur": 0.4712,
+            "mean_hits": 2.7918,
+            "near_miss": {
+              "hits": 9,
+              "count": 0,
+              "expected": 0.008,
+              "p_value": 1.0
+            },
+            "jackpot": {
+              "hits": 10,
+              "count": 0,
+              "expected": 0.0,
+              "p_value": 1.0
+            },
+            "big_win": {
+              "threshold_eur": 400.0,
+              "count": 0,
+              "expected": 0.008,
+              "p_value": 1.0,
+              "total_payout_eur": 0.0,
+              "max_payout_eur": 15.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "notes": {
+    "quotes": "Fixed quotes per 1 EUR from kenobase/core/keno_quotes.py",
+    "baseline": "Static OPTIMAL_TICKETS from scripts/dynamic_recommendation.py",
+    "dynamic_prevday": "Same base ticket + prev-day exclusion/inclusion/absence rules"
+  }
+}

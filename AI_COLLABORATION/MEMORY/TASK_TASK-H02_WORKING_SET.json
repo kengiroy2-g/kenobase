@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/stable_numbers.py (NEW)",
+    "kenobase/analysis/__init__.py (MODIFIED)",
+    "scripts/analyze.py (MODIFIED)",
+    "tests/unit/test_stable_numbers.py (NEW)"
+]

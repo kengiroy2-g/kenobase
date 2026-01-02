@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/popularity_risk.py",
+    "kenobase/analysis/__init__.py",
+    "tests/unit/test_popularity_risk.py",
+    "scripts/backtest_popularity_risk.py"
+]

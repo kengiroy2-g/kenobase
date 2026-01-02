@@ -1,0 +1,86 @@
+{
+  "datum": "2026-01-01T22:52:21.039057",
+  "methode": "Jackpot-Optimierte Ticket-Generierung",
+  "erkenntnisse": {
+    "jackpot_favorites": [
+      43,
+      51,
+      52,
+      36,
+      40,
+      19,
+      38,
+      4,
+      61,
+      69,
+      62,
+      13,
+      8,
+      35,
+      45,
+      17,
+      46,
+      58,
+      64,
+      30
+    ],
+    "jackpot_avoid": [
+      1,
+      16,
+      21,
+      27,
+      29,
+      37,
+      67,
+      25,
+      68,
+      28
+    ],
+    "constraints": [
+      "Ziffernprodukt mod 9 = 0",
+      "Genau 1 einstellige Zahl",
+      "Alle 3 Drittel besetzt",
+      "Keine Endziffer 1"
+    ]
+  },
+  "empfehlungen": {
+    "typ_10": [
+      [
+        4,
+        36,
+        38,
+        40,
+        45,
+        52,
+        58,
+        62,
+        64,
+        69
+      ],
+      [
+        4,
+        35,
+        36,
+        38,
+        40,
+        43,
+        45,
+        52,
+        64,
+        69
+      ],
+      [
+        4,
+        35,
+        36,
+        40,
+        46,
+        52,
+        58,
+        62,
+        64,
+        69
+      ]
+    ]
+  }
+}

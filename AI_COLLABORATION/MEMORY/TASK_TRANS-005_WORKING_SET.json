@@ -1,0 +1,5 @@
+﻿[
+    "scripts/strategy_from_ecosystem.py",
+    "tests/unit/test_strategy_from_ecosystem.py",
+    "results/strategy_from_ecosystem.json"
+]

@@ -1,0 +1,47 @@
+Datum: 01.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {9, 10, 46, 53, 25, 63}
+Datum: 02.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {33, 36, 44, 48, 17, 18, 24, 30}
+Datum: 03.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {64, 34, 36, 6, 10, 21, 24}
+Datum: 04.01.2024, Anzahl Treffer: 11, Treffer-Zahlen: {3, 38, 12, 44, 48, 17, 18, 52, 24, 26, 30}
+Datum: 05.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {34, 36, 39, 10, 44, 25, 63}
+Datum: 06.01.2024, Anzahl Treffer: 12, Treffer-Zahlen: {36, 39, 9, 10, 12, 45, 17, 18, 52, 21, 53, 29}
+Datum: 07.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {1, 34, 36, 38, 42, 44, 45, 48}
+Datum: 08.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {64, 36, 39, 9, 12, 45, 18, 53, 24}
+Datum: 09.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {1, 42, 14, 46, 52, 25, 26, 30, 63}
+Datum: 10.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {38, 46, 48, 17, 18, 52, 21, 24, 30}
+Datum: 11.01.2024, Anzahl Treffer: 10, Treffer-Zahlen: {64, 3, 9, 42, 14, 46, 20, 21, 24, 25}
+Datum: 13.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {36, 39, 44, 45, 46, 17, 18, 25, 29}
+Datum: 14.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {33, 3, 39, 46, 48, 17, 21, 25, 29}
+Datum: 15.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {40, 9, 12, 52, 24, 26}
+Datum: 16.01.2024, Anzahl Treffer: 10, Treffer-Zahlen: {64, 6, 10, 42, 12, 45, 21, 24, 25, 29}
+Datum: 17.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {38, 6, 42, 12, 52, 25}
+Datum: 19.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {1, 34, 38, 39, 10, 14, 21, 24, 63}
+Datum: 20.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {64, 3, 6, 38, 44, 17, 20, 21, 63}
+Datum: 21.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {64, 40, 42, 14, 53, 25, 26}
+Datum: 22.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {64, 33, 34, 36, 39, 10, 12, 46, 52}
+Datum: 23.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 3, 36, 38, 39, 10, 21}
+Datum: 24.01.2024, Anzahl Treffer: 10, Treffer-Zahlen: {3, 36, 38, 9, 12, 45, 48, 17, 52, 21}
+Datum: 25.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {9, 42, 17, 53, 25, 29, 63}
+Datum: 26.01.2024, Anzahl Treffer: 11, Treffer-Zahlen: {64, 38, 39, 12, 46, 18, 20, 52, 53, 25, 26}
+Datum: 27.01.2024, Anzahl Treffer: 11, Treffer-Zahlen: {64, 39, 9, 44, 45, 14, 17, 21, 24, 29, 63}
+Datum: 28.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {1, 40, 9, 12, 45, 17, 53, 29}
+Datum: 30.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {33, 39, 46, 48, 18, 20, 53, 63}
+Datum: 31.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {64, 1, 38, 9, 45, 14, 46, 52, 30}
+Datum: 01.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 6, 39, 42, 44, 26, 29}
+Datum: 02.02.2024, Anzahl Treffer: 10, Treffer-Zahlen: {64, 3, 6, 10, 12, 44, 45, 46, 17, 18}
+Datum: 03.02.2024, Anzahl Treffer: 10, Treffer-Zahlen: {64, 1, 34, 42, 14, 48, 20, 21, 30, 63}
+Datum: 04.02.2024, Anzahl Treffer: 12, Treffer-Zahlen: {33, 34, 3, 36, 6, 44, 45, 48, 18, 21, 25, 29}
+Datum: 05.02.2024, Anzahl Treffer: 8, Treffer-Zahlen: {64, 33, 34, 36, 6, 39, 44, 18}
+Datum: 06.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {64, 3, 36, 39, 9, 29, 63}
+Datum: 07.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {1, 40, 9, 14, 48, 26, 30}
+Datum: 08.02.2024, Anzahl Treffer: 11, Treffer-Zahlen: {34, 3, 10, 42, 14, 46, 17, 21, 53, 25, 63}
+Datum: 09.02.2024, Anzahl Treffer: 11, Treffer-Zahlen: {1, 3, 36, 38, 39, 9, 17, 20, 53, 29, 63}
+Datum: 10.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 3, 12, 48, 52, 21, 30}
+Datum: 11.02.2024, Anzahl Treffer: 9, Treffer-Zahlen: {33, 3, 6, 10, 42, 14, 17, 25, 30}
+Datum: 12.02.2024, Anzahl Treffer: 8, Treffer-Zahlen: {1, 3, 20, 21, 25, 26, 29, 30}
+Datum: 13.02.2024, Anzahl Treffer: 9, Treffer-Zahlen: {34, 45, 14, 46, 52, 21, 25, 26, 29}
+Datum: 14.02.2024, Anzahl Treffer: 10, Treffer-Zahlen: {64, 34, 6, 40, 14, 46, 17, 20, 52, 29}
+Datum: 15.02.2024, Anzahl Treffer: 12, Treffer-Zahlen: {1, 34, 3, 38, 39, 40, 14, 46, 48, 18, 52, 25}
+Datum: 17.02.2024, Anzahl Treffer: 9, Treffer-Zahlen: {64, 34, 6, 40, 10, 14, 17, 25, 29}
+Datum: 18.02.2024, Anzahl Treffer: 10, Treffer-Zahlen: {36, 40, 9, 10, 12, 44, 21, 53, 24, 25}
+Datum: 19.02.2024, Anzahl Treffer: 10, Treffer-Zahlen: {1, 34, 38, 39, 12, 14, 17, 18, 29, 63}
+Datum: 20.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {3, 36, 38, 42, 52, 29, 63}

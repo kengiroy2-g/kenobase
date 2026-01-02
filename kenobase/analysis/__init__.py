@@ -10,7 +10,9 @@ from kenobase.analysis.calendar_features import (
 from kenobase.analysis.frequency import (
     FrequencyResult,
     PairFrequencyResult,
+    YearlyFrequencyResult,
     calculate_frequency,
+    calculate_frequency_per_year,
     calculate_pair_frequency,
     calculate_rolling_frequency,
     classify_numbers,
@@ -256,6 +258,98 @@ from kenobase.analysis.house_edge_stability import (
     run_house003_analysis,
     result_to_dict as house003_result_to_dict,
 )
+from kenobase.analysis.null_models import (
+    PermutationResult,
+    FDRResult,
+    NullModelTestResult,
+    NullModelRunner,
+    schedule_permutation,
+    block_permutation,
+    iid_permutation,
+    calculate_empirical_p_value,
+    benjamini_hochberg_fdr,
+    run_axiom_prediction_test,
+)
+from kenobase.analysis.draw_features import (
+    DrawFeatures,
+    FeatureStatistics,
+    DrawFeatureExtractor,
+    extract_draw_features,
+    compute_feature_matrix,
+)
+from kenobase.analysis.popularity_risk import (
+    PopularityRiskScore,
+    PopularityRiskLevel,
+    calculate_birthday_score,
+    calculate_pattern_score,
+    estimate_competition_factor,
+    calculate_popularity_risk_score,
+    should_play,
+    adjust_recommendation_by_popularity,
+    analyze_draw_popularity,
+)
+from kenobase.analysis.summen_signatur import (
+    SummenSignaturRecord,
+    aggregate_bucket_counts,
+    compute_summen_signatur,
+    export_signatures as export_summen_signatur,
+    split_signatures_by_date,
+)
+from kenobase.analysis.regime_detection import (
+    RegimeDetectionConfig,
+    RegimeDetectionResult,
+    detect_regimes,
+)
+from kenobase.analysis.cross_spectrum_coupling import (
+    FrequencyBand,
+    CoherenceResult,
+    PhaseResult,
+    SpectralCouplingResult,
+    CrossSpectrumSummary,
+    DEFAULT_BANDS,
+    analyze_spectral_coupling,
+    run_cross_spectrum_analysis,
+)
+from kenobase.analysis.parity_ratio import (
+    ParityBin,
+    ParityRatioResult,
+    analyze_parity_ratio,
+    count_parity,
+    is_even,
+)
+from kenobase.analysis.spread_index import (
+    SpreadBin,
+    SpreadIndexResult,
+    analyze_spread_index,
+    calculate_spread_index,
+    calculate_spread_for_draws,
+    create_spread_bins,
+)
+from kenobase.analysis.cycle_phases import (
+    Phase,
+    PhaseLabel,
+    COOLDOWN_MAX_DAYS,
+    GROWTH_MAX_DAYS,
+    get_phase_for_days,
+    get_phase_for_date,
+    label_phases,
+    filter_draws_by_phase,
+    get_phase_statistics,
+)
+from kenobase.analysis.ticket_correlation import (
+    TicketPair,
+    OverlapResult,
+    SyncResult,
+    TimingResult,
+    PairCorrelation,
+    TicketCorrelationResult,
+    calculate_overlap,
+    calculate_roi_sync,
+    calculate_timing,
+    calculate_diversification_score,
+    analyze_ticket_pair,
+    analyze_ticket_correlation,
+)
 
 __all__ = [
     # Calendar Features (HYP-002)
@@ -267,7 +361,9 @@ __all__ = [
     # Frequency
     "FrequencyResult",
     "PairFrequencyResult",
+    "YearlyFrequencyResult",
     "calculate_frequency",
+    "calculate_frequency_per_year",
     "calculate_pair_frequency",
     "calculate_rolling_frequency",
     "classify_numbers",
@@ -490,4 +586,86 @@ __all__ = [
     "analyze_house_edge_stability",
     "run_house003_analysis",
     "house003_result_to_dict",
+    # Null Models (NULL-001)
+    "PermutationResult",
+    "FDRResult",
+    "NullModelTestResult",
+    "NullModelRunner",
+    "schedule_permutation",
+    "block_permutation",
+    "iid_permutation",
+    "calculate_empirical_p_value",
+    "benjamini_hochberg_fdr",
+    "run_axiom_prediction_test",
+    # Draw Features (FEAT-001)
+    "DrawFeatures",
+    "FeatureStatistics",
+    "DrawFeatureExtractor",
+    "extract_draw_features",
+    "compute_feature_matrix",
+    # Popularity Risk (POP-001)
+    "PopularityRiskScore",
+    "PopularityRiskLevel",
+    "calculate_birthday_score",
+    "calculate_pattern_score",
+    "estimate_competition_factor",
+    "calculate_popularity_risk_score",
+    "should_play",
+    "adjust_recommendation_by_popularity",
+    "analyze_draw_popularity",
+    # Summen Signatur (TRANS-001)
+    "SummenSignaturRecord",
+    "compute_summen_signatur",
+    "export_summen_signatur",
+    "split_signatures_by_date",
+    "aggregate_bucket_counts",
+    # Regime Detection (STATE-001)
+    "RegimeDetectionConfig",
+    "RegimeDetectionResult",
+    "detect_regimes",
+    # Cross-Spectrum Coupling (COUPLE-002)
+    "FrequencyBand",
+    "CoherenceResult",
+    "PhaseResult",
+    "SpectralCouplingResult",
+    "CrossSpectrumSummary",
+    "DEFAULT_BANDS",
+    "analyze_spectral_coupling",
+    "run_cross_spectrum_analysis",
+    # Parity Ratio (TRANS-003)
+    "ParityBin",
+    "ParityRatioResult",
+    "analyze_parity_ratio",
+    "count_parity",
+    "is_even",
+    # Spread Index (TRANS-004)
+    "SpreadBin",
+    "SpreadIndexResult",
+    "analyze_spread_index",
+    "calculate_spread_index",
+    "calculate_spread_for_draws",
+    "create_spread_bins",
+    # Cycle Phases (TASK_003)
+    "Phase",
+    "PhaseLabel",
+    "COOLDOWN_MAX_DAYS",
+    "GROWTH_MAX_DAYS",
+    "get_phase_for_days",
+    "get_phase_for_date",
+    "label_phases",
+    "filter_draws_by_phase",
+    "get_phase_statistics",
+    # Ticket Correlation (TASK_034)
+    "TicketPair",
+    "OverlapResult",
+    "SyncResult",
+    "TimingResult",
+    "PairCorrelation",
+    "TicketCorrelationResult",
+    "calculate_overlap",
+    "calculate_roi_sync",
+    "calculate_timing",
+    "calculate_diversification_score",
+    "analyze_ticket_pair",
+    "analyze_ticket_correlation",
 ]

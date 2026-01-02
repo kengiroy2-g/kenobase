@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-01-02T19:52:51.004652",
+  "last_draw": "01.01.2026",
+  "pool_v1": [
+    1,
+    2,
+    6,
+    23,
+    25,
+    28,
+    29,
+    30,
+    31,
+    34,
+    36,
+    40,
+    43,
+    51,
+    52,
+    66,
+    68
+  ],
+  "pool_v2": [
+    2,
+    6,
+    7,
+    13,
+    25,
+    28,
+    29,
+    30,
+    31,
+    34,
+    36,
+    40,
+    52,
+    57,
+    66,
+    67,
+    68
+  ],
+  "only_v1": [
+    1,
+    23,
+    43,
+    51
+  ],
+  "only_v2": [
+    7,
+    13,
+    57,
+    67
+  ],
+  "details_v2": {
+    "hot_keep": [
+      7,
+      25,
+      28,
+      40,
+      57
+    ],
+    "cold_bd_keep": [
+      2,
+      6,
+      13,
+      29,
+      30,
+      31
+    ],
+    "cold_nbd_keep": [
+      34,
+      36,
+      52,
+      66,
+      67,
+      68
+    ],
+    "pool_size": 17,
+    "filtered_by_pattern": 9
+  },
+  "improvements": {
+    "pattern_filter": "Filtert Zahlen mit >75% Miss-Rate Patterns",
+    "score_based": "Beruecksichtigt Streak, Gap, Aktivitaet"
+  }
+}

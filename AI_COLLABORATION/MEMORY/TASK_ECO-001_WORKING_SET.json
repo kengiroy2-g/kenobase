@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/ecosystem_graph.py",
+    "scripts/build_ecosystem_graph.py",
+    "tests/unit/test_ecosystem_graph.py",
+    "results/ecosystem_graph.json"
+]

@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-12-30T09:59:02.683633",
+  "analysis_date": "2025-12-30T10:53:15.688091",
   "models_compared": [
     "Original",
     "V1.1"
@@ -7,46 +7,46 @@
   "results": {
     "typ_8": {
       "original": {
-        "roi": 115.81277672359266,
+        "roi": -55.597722960151806,
         "played": 1581,
-        "won": 3412,
-        "high_wins": 15
+        "won": 702.0,
+        "high_wins": 1
       },
       "v1_1": {
-        "roi": 115.81277672359266,
+        "roi": -55.597722960151806,
         "played": 1581,
-        "won": 3412,
-        "high_wins": 15,
+        "won": 702.0,
+        "high_wins": 1,
         "jackpot_mode_activations": 454
       }
     },
     "typ_9": {
       "original": {
-        "roi": 228.39974699557243,
+        "roi": -50.60088551549652,
         "played": 1581,
-        "won": 5192,
-        "high_wins": 5
+        "won": 781.0,
+        "high_wins": 0
       },
       "v1_1": {
-        "roi": 228.39974699557243,
+        "roi": -50.60088551549652,
         "played": 1581,
-        "won": 5192,
-        "high_wins": 5,
+        "won": 781.0,
+        "high_wins": 0,
         "jackpot_mode_activations": 454
       }
     },
     "typ_10": {
       "original": {
-        "roi": 224.7311827956989,
+        "roi": -38.45667299177736,
         "played": 1581,
-        "won": 5134,
-        "high_wins": 10
+        "won": 973.0,
+        "high_wins": 3
       },
       "v1_1": {
-        "roi": 224.7311827956989,
+        "roi": -38.45667299177736,
         "played": 1581,
-        "won": 5134,
-        "high_wins": 10,
+        "won": 973.0,
+        "high_wins": 3,
         "jackpot_mode_activations": 454
       }
     }

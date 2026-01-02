@@ -1,0 +1,147 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-27 02:03:33
+
+plan:
+  name: "Kenobase V2.0 - Complete Modernization"
+
+tasks:
+  - id: phase1_task01_project_structure
+    name: "P1-01: Projektstruktur anlegen"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: phase1_task02_config_system
+    name: "P1-02: Config-System implementieren (YAML)"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: phase1_task03_data_loader
+    name: "P1-03: Data Loader refactoren"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: phase1_task04_test_setup
+    name: "P1-04: Test-Infrastruktur einrichten"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase1_task05_ci_optional
+    name: "P1-05: CI/CD Setup (optional)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase2_task01_number_pool
+    name: "P2-01: Zahlenpool-Generator migrieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase2_task02_combination_engine
+    name: "P2-02: Kombinations-Engine implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase2_task03_zehnergruppen_filter
+    name: "P2-03: Zehnergruppen-Filter validieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase2_task04_frequency_analysis
+    name: "P2-04: Haeufigkeitsanalyse implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase2_task05_duo_trio_quatro_fix
+    name: "P2-05: Duo/Trio/Quatro BUG-FIX"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: phase3_task01_model_laws
+    name: "P3-01: Model Laws A/B/C implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase3_task02_avalanche
+    name: "P3-02: Avalanche-Theorie implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase3_task03_metrics
+    name: "P3-03: Statistische Metriken implementieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase3_task04_physics_integration
+    name: "P3-04: Physics-Layer in Pipeline integrieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase4_task01_pipeline_runner
+    name: "P4-01: Haupt-Pipeline implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase4_task02_least_action_selector
+    name: "P4-02: Least-Action Pipeline-Auswahl"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase4_task03_cli
+    name: "P4-03: CLI implementieren (click/argparse)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase4_task04_output_formats
+    name: "P4-04: Output-Formate implementieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase5_task01_backtest_script
+    name: "P5-01: Backtest-Script implementieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase5_task02_metrics_calculation
+    name: "P5-02: Metriken-Berechnung"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase5_task03_report_generator
+    name: "P5-03: Report-Generator"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase6_task01_readme
+    name: "P6-01: README.md vervollstaendigen"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: phase6_task02_adr001
+    name: "P6-02: ADR-001 schreiben (Physics Integration)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase6_task03_docstrings_review
+    name: "P6-03: Docstrings Review"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: phase6_task04_final_testing
+    name: "P6-04: Final Testing & Smoke Tests"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: data_migration_keno
+    name: "DATA-01: KENO-Daten migrieren"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: data_migration_eurojackpot
+    name: "DATA-02: EuroJackpot-Daten migrieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: data_migration_lotto
+    name: "DATA-03: Lotto-Daten migrieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null

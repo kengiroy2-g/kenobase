@@ -1,0 +1,47 @@
+import pandas as pd
+
+
+def check_keno_numbers(csv_path, numbers_to_check, start_date, end_date):
+    # Einlesen der CSV-Datei
+    keno_data = pd.read_csv(csv_path, sep=';')
+
+    # Konvertierung der Datumsspalte in ein datetime-Format
+    keno_data['Datum'] = pd.to_datetime(keno_data['Datum'], format='%d.%m.%Y')
+
+    # Filtern der Daten für den gewünschten Zeitraum
+    filtered_data = keno_data[(keno_data['Datum'] >= pd.to_datetime(start_date, format='%d.%m.%Y')) & 
+                              (keno_data['Datum'] <= pd.to_datetime(end_date, format='%d.%m.%Y'))]
+
+    # Ergebnisliste
+    results = []
+
+    # Durchlaufen jeder Ziehung im gefilterten Zeitraum
+    for index, row in filtered_data.iterrows():
+        # Extrahieren der gezogenen Zahlen
+        drawn_numbers = set(row.loc['z1':'z20'])
+
+        # Vergleichen mit den zu prüfenden Zahlen
+        matches = drawn_numbers.intersection(numbers_to_check)
+
+        # Wenn mindestens 5 Treffer, füge zum Ergebnis hinzu                              /////////////////////////////////
+        if len(matches) >= 6:
+            results.append((row['Datum'].strftime('%d.%m.%Y'), len(matches), matches))
+
+    return results
+
+# Pfad zur CSV-Datei (anpassen für den tatsächlichen Pfad)
+csv_path = "C:\\Users\\Admin1\\Documents\\01_PROJECT\\Keno_GPTs\\KENO_ab_2018 - Kopie.csv"
+
+# Liste der zu prüfenden Zahlen (Beispiel)
+numbers_to_check = {1, 3, 6, 9, 10, 12, 14, 17, 18, 20, 21, 24, 25, 26, 29, 30, 33, 34, 36, 38, 39, 40, 42, 44, 45, 48, 52, 53, 46, 63, 64}
+
+# Zeitraum für die Suche definieren (Beispiel)
+start_date = '01.01.2023'
+end_date = '20.02.2024'
+
+# Ausführen der Funktion
+keno_results = check_keno_numbers(csv_path, numbers_to_check, start_date, end_date)
+
+# Ausgabe der Ergebnisse
+for date, count, numbers in keno_results:
+    print(f"Datum: {date}, Anzahl Treffer: {count}, Treffer-Zahlen: {numbers}")

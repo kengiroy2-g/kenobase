@@ -1,0 +1,676 @@
+{
+  "analysis_date": "2025-12-31T17:29:07.922621",
+  "hypothesis": "Consecutive Number Avoidance",
+  "description": "Das KENO-System vermeidet zu viele aufeinanderfolgende Zahlen um zufällig auszusehen.",
+  "data_source": "C:\\Users\\kenfu\\Documents\\keno_base\\data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+  "total_draws": 1457,
+  "theoretical_expectation": {
+    "expected_pairs_per_draw": 5.428571428571429,
+    "expected_triplets_per_draw": 1.4161490683229814,
+    "probability_specific_pair": 0.07867494824016563,
+    "probability_specific_triplet": 0.02082572159298502
+  },
+  "monte_carlo_simulation": {
+    "n_simulations": 100000,
+    "mean_pairs_per_draw": 5.42333,
+    "std_pairs_per_draw": 1.6995945725672343,
+    "mean_triplets_per_draw": 1.06089,
+    "mean_quadruplets_per_draw": 0.26875,
+    "mean_max_sequence_length": 3.06706,
+    "max_length_distribution": {
+      "0": 62,
+      "2": 26533,
+      "3": 48235,
+      "4": 18784,
+      "5": 4914,
+      "6": 1150,
+      "7": 260,
+      "8": 50,
+      "9": 11,
+      "10": 1
+    },
+    "pair_count_distribution": {
+      "6": 21397,
+      "7": 14867,
+      "8": 7481,
+      "5": 22840,
+      "3": 8970,
+      "4": 17177,
+      "9": 2724,
+      "10": 734,
+      "1": 547,
+      "2": 3047,
+      "11": 131,
+      "0": 62,
+      "12": 21,
+      "13": 2
+    }
+  },
+  "observed_data": {
+    "mean_pairs_per_draw": 5.427590940288264,
+    "std_pairs_per_draw": 1.703605696973957,
+    "total_consecutive_pairs": 7908,
+    "mean_triplets_per_draw": 0.785175017158545,
+    "total_triplets": 1144,
+    "total_quadruplets_or_longer": 374,
+    "max_sequence_length_ever": 7,
+    "mean_max_sequence_length": 3.0329444063143445,
+    "max_length_distribution": {
+      "0": 1,
+      "2": 407,
+      "3": 702,
+      "4": 258,
+      "5": 70,
+      "6": 16,
+      "7": 3
+    },
+    "pair_count_distribution": {
+      "0": 1,
+      "1": 9,
+      "2": 44,
+      "3": 121,
+      "4": 267,
+      "5": 329,
+      "6": 310,
+      "7": 200,
+      "8": 117,
+      "9": 51,
+      "10": 8
+    },
+    "top_20_consecutive_pairs": [
+      [
+        "9-10",
+        136
+      ],
+      [
+        "33-34",
+        134
+      ],
+      [
+        "56-57",
+        132
+      ],
+      [
+        "51-52",
+        128
+      ],
+      [
+        "57-58",
+        128
+      ],
+      [
+        "48-49",
+        128
+      ],
+      [
+        "65-66",
+        127
+      ],
+      [
+        "62-63",
+        126
+      ],
+      [
+        "3-4",
+        126
+      ],
+      [
+        "2-3",
+        125
+      ],
+      [
+        "35-36",
+        124
+      ],
+      [
+        "46-47",
+        124
+      ],
+      [
+        "38-39",
+        123
+      ],
+      [
+        "45-46",
+        123
+      ],
+      [
+        "37-38",
+        122
+      ],
+      [
+        "5-6",
+        122
+      ],
+      [
+        "66-67",
+        121
+      ],
+      [
+        "27-28",
+        120
+      ],
+      [
+        "8-9",
+        120
+      ],
+      [
+        "11-12",
+        120
+      ]
+    ],
+    "exceptional_draws_with_long_sequences": [
+      {
+        "draw_index": 10,
+        "max_length": 4,
+        "sequences": [
+          [
+            18,
+            19
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            35,
+            36,
+            37,
+            38
+          ],
+          [
+            52,
+            53
+          ]
+        ]
+      },
+      {
+        "draw_index": 11,
+        "max_length": 5,
+        "sequences": [
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          [
+            42,
+            43
+          ],
+          [
+            57,
+            58
+          ]
+        ]
+      },
+      {
+        "draw_index": 12,
+        "max_length": 4,
+        "sequences": [
+          [
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            58,
+            59
+          ]
+        ]
+      },
+      {
+        "draw_index": 16,
+        "max_length": 4,
+        "sequences": [
+          [
+            20,
+            21
+          ],
+          [
+            52,
+            53,
+            54,
+            55
+          ],
+          [
+            66,
+            67
+          ]
+        ]
+      },
+      {
+        "draw_index": 22,
+        "max_length": 7,
+        "sequences": [
+          [
+            23,
+            24
+          ],
+          [
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68
+          ]
+        ]
+      },
+      {
+        "draw_index": 24,
+        "max_length": 5,
+        "sequences": [
+          [
+            23,
+            24
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            32,
+            33,
+            34,
+            35,
+            36
+          ],
+          [
+            59,
+            60
+          ],
+          [
+            67,
+            68
+          ]
+        ]
+      },
+      {
+        "draw_index": 30,
+        "max_length": 5,
+        "sequences": [
+          [
+            7,
+            8
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            38,
+            39,
+            40,
+            41,
+            42
+          ],
+          [
+            65,
+            66,
+            67
+          ]
+        ]
+      },
+      {
+        "draw_index": 36,
+        "max_length": 4,
+        "sequences": [
+          [
+            2,
+            3,
+            4,
+            5
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            50,
+            51,
+            52
+          ]
+        ]
+      },
+      {
+        "draw_index": 45,
+        "max_length": 4,
+        "sequences": [
+          [
+            6,
+            7
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            63,
+            64
+          ]
+        ]
+      },
+      {
+        "draw_index": 47,
+        "max_length": 4,
+        "sequences": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            20,
+            21,
+            22
+          ],
+          [
+            38,
+            39,
+            40
+          ]
+        ]
+      },
+      {
+        "draw_index": 50,
+        "max_length": 4,
+        "sequences": [
+          [
+            14,
+            15
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            30,
+            31,
+            32
+          ],
+          [
+            47,
+            48
+          ],
+          [
+            63,
+            64,
+            65,
+            66
+          ],
+          [
+            69,
+            70
+          ]
+        ]
+      },
+      {
+        "draw_index": 57,
+        "max_length": 4,
+        "sequences": [
+          [
+            13,
+            14
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            27,
+            28,
+            29,
+            30
+          ],
+          [
+            46,
+            47,
+            48,
+            49
+          ]
+        ]
+      },
+      {
+        "draw_index": 61,
+        "max_length": 4,
+        "sequences": [
+          [
+            2,
+            3
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            60,
+            61,
+            62,
+            63
+          ]
+        ]
+      },
+      {
+        "draw_index": 62,
+        "max_length": 4,
+        "sequences": [
+          [
+            20,
+            21
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            40,
+            41,
+            42
+          ],
+          [
+            55,
+            56,
+            57,
+            58
+          ]
+        ]
+      },
+      {
+        "draw_index": 63,
+        "max_length": 4,
+        "sequences": [
+          [
+            13,
+            14,
+            15
+          ],
+          [
+            21,
+            22,
+            23,
+            24
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            65,
+            66
+          ]
+        ]
+      },
+      {
+        "draw_index": 66,
+        "max_length": 5,
+        "sequences": [
+          [
+            24,
+            25
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            49,
+            50,
+            51,
+            52,
+            53
+          ],
+          [
+            55,
+            56
+          ],
+          [
+            64,
+            65
+          ]
+        ]
+      },
+      {
+        "draw_index": 74,
+        "max_length": 4,
+        "sequences": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            42,
+            43,
+            44,
+            45
+          ]
+        ]
+      },
+      {
+        "draw_index": 90,
+        "max_length": 5,
+        "sequences": [
+          [
+            4,
+            5
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            66,
+            67,
+            68,
+            69,
+            70
+          ]
+        ]
+      },
+      {
+        "draw_index": 92,
+        "max_length": 4,
+        "sequences": [
+          [
+            30,
+            31,
+            32,
+            33
+          ],
+          [
+            45,
+            46
+          ]
+        ]
+      },
+      {
+        "draw_index": 93,
+        "max_length": 5,
+        "sequences": [
+          [
+            3,
+            4
+          ],
+          [
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          [
+            62,
+            63
+          ]
+        ]
+      }
+    ]
+  },
+  "statistical_comparison": {
+    "pairs": {
+      "observed": 5.427590940288264,
+      "expected": 5.42333,
+      "deviation_percent": 0.07856686368455591,
+      "z_score": 0.09569514139737698,
+      "interpretation": "NORMAL"
+    },
+    "triplets": {
+      "observed": 0.785175017158545,
+      "expected": 1.06089,
+      "deviation_percent": -25.98902646282415
+    },
+    "max_sequence_length": {
+      "observed_max": 7,
+      "observed_mean": 3.0329444063143445,
+      "expected_mean": 3.06706
+    }
+  },
+  "hypothesis_evaluation": {
+    "avoidance_score": 2,
+    "max_possible_score": 6,
+    "criteria_results": [
+      "✗ 2er-Sequenzen im Normalbereich (+0.08%)",
+      "✓ Deutlich weniger 3er-Sequenzen (-25.99%)",
+      "✗ Max. Sequenzlänge 7 (normal)"
+    ],
+    "verdict": "HYPOTHESE TEILWEISE BESTÄTIGT: Leichte Tendenz zur Vermeidung erkennbar.",
+    "recommendation": "EMPFEHLUNG: Konsekutive Zahlen vorsichtig einsetzen."
+  },
+  "strategic_implications": {
+    "should_play_consecutive_pairs": false,
+    "max_consecutive_to_play": 3,
+    "reasoning": "Wenn das System Sequenzen vermeidet, sollten wir auch keine spielen."
+  }
+}

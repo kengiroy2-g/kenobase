@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/number_index.py (NEW)",
+    "kenobase/analysis/__init__.py",
+    "scripts/validate_hypotheses.py",
+    "data/results/hyp005_index_table.json (NEW)"
+]

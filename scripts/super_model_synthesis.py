@@ -30,13 +30,13 @@ from kenobase.core.keno_quotes import KENO_FIXED_QUOTES_BY_TYPE
 # KOMPONENTEN AUS KI #1 (Dynamic Recommendation)
 # ============================================================================
 
-# Optimale Tickets (6-Jahres-Backtest)
+# Optimale Tickets (historische Baseline; Backtests siehe `results/`)
 OPTIMAL_TICKETS_KI1 = {
-    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],      # ROI +351%
-    8: [3, 20, 24, 27, 36, 49, 51, 64],         # ROI +115%
-    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],  # ROI +189%
-    7: [3, 24, 30, 49, 51, 59, 64],             # ROI +41%
-    6: [3, 9, 10, 32, 49, 64],                  # ROI ~0%
+    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],
+    8: [3, 20, 24, 27, 36, 49, 51, 64],
+    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],
+    7: [3, 24, 30, 49, 51, 59, 64],
+    6: [3, 9, 10, 32, 49, 64],
 }
 
 # Kern-Zahlen KI #1
@@ -155,12 +155,11 @@ ANTI_BIRTHDAY = [33, 35, 36, 37, 40, 41, 42, 49, 51, 52, 53, 56, 57, 59, 64, 66,
 
 
 # ============================================================================
-# V2 BIRTHDAY-AVOIDANCE TICKETS (2025 Out-of-Sample validiert)
+# V2 BIRTHDAY-AVOIDANCE TICKETS (Heuristik)
 # ============================================================================
-# Diese Tickets haben im 2025 Test dramatisch besser performt als die Originale:
-# - Typ 9: +1545.7% ROI (vs +209.6% Original)
-# - Typ 10: +305.5% ROI (vs +77.7% Original)
-# - Typ 8: +261.4% ROI (vs -14.6% Original)
+# Hinweis:
+# - Quoten/ROI werden zentral ueber `kenobase/core/keno_quotes.py` berechnet.
+# - Aktuelle Backtest-Ergebnisse stehen unter `results/` (z.B. `results/super_model_test_2025.json`).
 
 BIRTHDAY_AVOIDANCE_TICKETS_V2 = {
     8: [3, 36, 43, 48, 51, 58, 61, 64],
@@ -397,9 +396,7 @@ class BirthdayAvoidanceV2Component(ModelComponent):
     - Spezifische Zahlen wie 51, 58, 61 sind bei Jackpots ueberrepraesentiert
 
     2025 Out-of-Sample Performance:
-    - Typ 9: +1545.7% ROI (vs +209.6% Original)
-    - Typ 10: +305.5% ROI (vs +77.7% Original)
-    - Typ 8: +261.4% ROI (vs -14.6% Original)
+    - Siehe `results/super_model_test_2025.json` (Quoten-korrigiert).
     """
 
     def __init__(self):

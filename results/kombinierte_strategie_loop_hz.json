@@ -1,0 +1,119 @@
+{
+  "strategies": [
+    {
+      "name": "HZ7 Basis (keine Regeln)",
+      "jackpots": 2,
+      "unique_days": 2,
+      "params": {
+        "use_frueh_phase": false,
+        "use_cooldown": false,
+        "hz_delay": 0,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ7 + 48d Delay",
+      "jackpots": 1,
+      "unique_days": 1,
+      "params": {
+        "use_frueh_phase": false,
+        "use_cooldown": false,
+        "hz_delay": 48,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ7 + FR\u00dcH-Phase",
+      "jackpots": 2,
+      "unique_days": 2,
+      "params": {
+        "use_frueh_phase": true,
+        "use_cooldown": false,
+        "hz_delay": 0,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ7 + Cooldown",
+      "jackpots": 1,
+      "unique_days": 1,
+      "params": {
+        "use_frueh_phase": false,
+        "use_cooldown": true,
+        "hz_delay": 0,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ7 + FR\u00dcH + Cooldown",
+      "jackpots": 1,
+      "unique_days": 1,
+      "params": {
+        "use_frueh_phase": true,
+        "use_cooldown": true,
+        "hz_delay": 0,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ7 KOMPLETT (alle Regeln)",
+      "jackpots": 0,
+      "unique_days": 0,
+      "params": {
+        "use_frueh_phase": true,
+        "use_cooldown": true,
+        "hz_delay": 48,
+        "window": 50
+      }
+    },
+    {
+      "name": "Loop Kern-Zahlen + alle Regeln",
+      "jackpots": 0,
+      "unique_days": 0,
+      "params": {
+        "use_frueh_phase": true,
+        "use_cooldown": true,
+        "hz_delay": 0,
+        "window": 50
+      }
+    },
+    {
+      "name": "HZ6 + FR\u00dcH + Cooldown",
+      "jackpots": 1,
+      "unique_days": 1,
+      "params": {
+        "use_frueh_phase": true,
+        "use_cooldown": true,
+        "hz_delay": 0,
+        "window": 50
+      }
+    }
+  ],
+  "best_strategy": "HZ7 Basis (keine Regeln)",
+  "current_hz7": [
+    48,
+    39,
+    17,
+    50,
+    58,
+    32,
+    27
+  ],
+  "loop_kern": [
+    3,
+    9,
+    24,
+    49,
+    51,
+    64
+  ],
+  "combined_recommendation": [
+    32,
+    64,
+    3,
+    39,
+    9,
+    48,
+    17
+  ]
+}

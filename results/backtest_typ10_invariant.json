@@ -1,0 +1,23 @@
+{
+  "datum": "2026-01-02T01:17:53.879555",
+  "typ": 10,
+  "timing": "boost_phase",
+  "n_simulations": 1000,
+  "results": {
+    "random": {
+      "cost": 14000,
+      "win": 5948,
+      "roi": -57.51428571428572
+    },
+    "anti_momentum": {
+      "cost": 14000,
+      "win": 8155,
+      "roi": -41.75
+    },
+    "invariant": {
+      "cost": 14000,
+      "win": 7582,
+      "roi": -45.84285714285714
+    }
+  }
+}

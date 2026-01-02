@@ -1,0 +1,106 @@
+{
+  "hypothesis": "HYP_007",
+  "name": "Regime-Wechsel (28-Tage-Rolling-Autokorrelation)",
+  "prediction": "|autocorrelation(lag=1)| < 0.3 => REGIME_WECHSEL",
+  "nullmodel": "Block-Permutation (28-Tage-Bloecke)",
+  "n_permutations": 1000,
+  "block_size_days": 28,
+  "data_source": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+  "n_draws": 1457,
+  "run_timestamp": "2025-12-31T03:47:14.152953",
+  "by_type": {
+    "typ_6": {
+      "n_periods": 52,
+      "autocorrelation_lag1": -0.084776,
+      "p_value": 0.532,
+      "nullmodel_mean": -0.020681,
+      "nullmodel_std": 0.134964,
+      "interpretation": "REGIME_WECHSEL",
+      "confirmed": true,
+      "roi_stats": {
+        "mean": -60.92,
+        "std": 29.32,
+        "min": -92.86,
+        "max": 46.43
+      }
+    },
+    "typ_7": {
+      "n_periods": 52,
+      "autocorrelation_lag1": 0.091553,
+      "p_value": 0.529,
+      "nullmodel_mean": -0.019312,
+      "nullmodel_std": 0.125816,
+      "interpretation": "REGIME_WECHSEL",
+      "confirmed": true,
+      "roi_stats": {
+        "mean": -23.9,
+        "std": 98.54,
+        "min": -85.71,
+        "max": 342.86
+      }
+    },
+    "typ_8": {
+      "n_periods": 52,
+      "autocorrelation_lag1": -0.026537,
+      "p_value": 0.889,
+      "nullmodel_mean": -0.019403,
+      "nullmodel_std": 0.079678,
+      "interpretation": "REGIME_WECHSEL",
+      "confirmed": true,
+      "roi_stats": {
+        "mean": -59.41,
+        "std": 51.76,
+        "min": -89.29,
+        "max": 278.57
+      }
+    },
+    "typ_9": {
+      "n_periods": 52,
+      "autocorrelation_lag1": -0.015734,
+      "p_value": 0.813,
+      "nullmodel_mean": -0.019021,
+      "nullmodel_std": 0.029194,
+      "interpretation": "REGIME_WECHSEL",
+      "confirmed": true,
+      "roi_stats": {
+        "mean": 10.65,
+        "std": 489.88,
+        "min": -78.57,
+        "max": 3507.14
+      }
+    },
+    "typ_10": {
+      "n_periods": 52,
+      "autocorrelation_lag1": -0.046886,
+      "p_value": 0.632,
+      "nullmodel_mean": -0.019866,
+      "nullmodel_std": 0.085781,
+      "interpretation": "REGIME_WECHSEL",
+      "confirmed": true,
+      "roi_stats": {
+        "mean": -54.26,
+        "std": 52.77,
+        "min": -92.86,
+        "max": 285.71
+      }
+    }
+  },
+  "summary": {
+    "tested_types": [
+      "typ_6",
+      "typ_7",
+      "typ_8",
+      "typ_9",
+      "typ_10"
+    ],
+    "confirmed_types": [
+      "typ_6",
+      "typ_7",
+      "typ_8",
+      "typ_9",
+      "typ_10"
+    ],
+    "confirmation_rate": 1.0,
+    "overall_status": "BESTAETIGT"
+  }
+}

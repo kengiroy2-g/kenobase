@@ -34,6 +34,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+from kenobase.analysis.distribution import load_gq_data
+
 if TYPE_CHECKING:
     from kenobase.core.data_loader import DrawResult
 
@@ -103,7 +105,7 @@ class OddsAnalysisSummary:
 
 def load_gq_winner_data(
     path: str | Path,
-    encoding: str = "utf-8",
+    encoding: str = "utf-8-sig",
 ) -> dict[datetime, dict[int, float]]:
     """Load Gewinnquoten data and extract winner counts per date per Keno-Typ.
 
@@ -131,36 +133,13 @@ def load_gq_winner_data(
         lambda: defaultdict(float)
     )
 
-    df = pd.read_csv(file_path, encoding=encoding)
+    df = load_gq_data(str(file_path), encoding=encoding)
+    if df.empty:
+        return {}
 
-    # Normalize column names
-    df.columns = df.columns.str.strip()
-
-    # Expected columns: Datum, Keno-Typ, Anzahl richtiger Zahlen, Anzahl der Gewinner
-    required = ["Datum", "Keno-Typ", "Anzahl der Gewinner"]
-    for col in required:
-        if col not in df.columns:
-            logger.warning(f"Missing column: {col} in {file_path}")
-            return {}
-
-    for _, row in df.iterrows():
-        try:
-            date_str = str(row["Datum"]).strip()
-            date = datetime.strptime(date_str, "%d.%m.%Y")
-
-            keno_typ = int(row["Keno-Typ"])
-            winners = row["Anzahl der Gewinner"]
-
-            # Handle German number format (3.462 = 3462, 1.443 = 1443)
-            if isinstance(winners, str):
-                winners = winners.replace(".", "").replace(",", ".")
-            winners = float(winners)
-
-            date_winners[date][keno_typ] = winners
-
-        except (ValueError, KeyError) as e:
-            logger.debug(f"Skipping row: {e}")
-            continue
+    grouped = df.groupby(["Datum", "Keno-Typ"])["Anzahl der Gewinner"].sum()
+    for (date, keno_typ), winners in grouped.items():
+        date_winners[pd.Timestamp(date).to_pydatetime()][int(keno_typ)] = float(winners)
 
     logger.info(f"Loaded GQ winner data for {len(date_winners)} dates from {file_path.name}")
     return dict(date_winners)

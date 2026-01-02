@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/distribution_synthesis.py",
+    "scripts/analyze_dist005.py",
+    "results/dist005_synthesis.json"
+]

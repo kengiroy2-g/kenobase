@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/normalizer.py",
+    "scripts/analyze_cross_lottery_coupling.py",
+    "requirements.txt",
+    "kenobase/analysis/number_representations.py",
+    "kenobase/analysis/alternative_coupling.py",
+    "scripts/analyze_alternative_methods.py",
+    "tests/unit/test_number_representations.py",
+    "tests/unit/test_alternative_coupling.py"
+]

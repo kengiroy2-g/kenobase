@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/odds_correlation.py",
+    "kenobase/analysis/__init__.py",
+    "scripts/analyze_hyp010.py",
+    "tests/unit/test_odds_correlation.py",
+    "results/hyp010_odds_correlation.json"
+]

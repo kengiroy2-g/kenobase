@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/analysis/regional_affinity.py",
+    "kenobase/analysis/__init__.py",
+    "kenobase/pipeline/runner.py",
+    "scripts/analyze.py",
+    "tests/unit/test_regional_affinity.py",
+    "docs/regional_affinity.md",
+    "results/regional_affinity.json",
+    "results/analyze_pipeline.json"
+]

@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "draws_file": "data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+    "date_range": {
+      "start": "2022-01-04",
+      "end": "2025-12-29"
+    },
+    "max_lag": 7,
+    "n_permutations": 1000,
+    "seed": 42,
+    "alpha": 0.05
+  },
+  "basic_stats": {
+    "n": 1456,
+    "mean": 5.749313186813187,
+    "std": 1.7190062087825224,
+    "min": 0,
+    "max": 11,
+    "expected_mean": 5.714285714285714
+  },
+  "autocorrelations": {
+    "1": -0.02313169493830581,
+    "2": 0.007079564960903705,
+    "3": 0.037082866838322744,
+    "4": -0.06844697527103272,
+    "5": -0.009226290964905608,
+    "6": -0.0021285297724073773,
+    "7": 0.05039721401320347
+  },
+  "permutation_tests": {
+    "1": {
+      "observed_r": -0.02313169493830581,
+      "null_mean": -0.017694216346043495,
+      "null_std": 0.010013099158636034,
+      "null_min": -0.05464508706123867,
+      "null_max": 0.013368545119139713,
+      "p_value": 0.283,
+      "significant": false
+    },
+    "2": {
+      "observed_r": 0.007079564960903705,
+      "null_mean": -0.013803823746534102,
+      "null_std": 0.013949032163620657,
+      "null_min": -0.05826510088716967,
+      "null_max": 0.040181788223459,
+      "p_value": 0.753,
+      "significant": false
+    },
+    "3": {
+      "observed_r": 0.037082866838322744,
+      "null_mean": 0.02308804267331485,
+      "null_std": 0.017193910794284086,
+      "null_min": -0.026127657936597746,
+      "null_max": 0.0900008210078227,
+      "p_value": 0.211,
+      "significant": false
+    },
+    "4": {
+      "observed_r": -0.06844697527103272,
+      "null_mean": -0.01902542111009768,
+      "null_std": 0.020113314382307006,
+      "null_min": -0.08231333526897812,
+      "null_max": 0.04312824383853721,
+      "p_value": 0.009,
+      "significant": true
+    },
+    "5": {
+      "observed_r": -0.009226290964905608,
+      "null_mean": -0.0017642334132757578,
+      "null_std": 0.021612827013778372,
+      "null_min": -0.05817406284650304,
+      "null_max": 0.06678741819497734,
+      "p_value": 0.656,
+      "significant": false
+    },
+    "6": {
+      "observed_r": -0.0021285297724073773,
+      "null_mean": -0.016689861818441967,
+      "null_std": 0.023995403517501974,
+      "null_min": -0.10120430007172637,
+      "null_max": 0.054774133031190594,
+      "p_value": 0.938,
+      "significant": false
+    },
+    "7": {
+      "observed_r": 0.05039721401320347,
+      "null_mean": 0.0045167976573455585,
+      "null_std": 0.025277045549610987,
+      "null_min": -0.06878514639950684,
+      "null_max": 0.08483994812540364,
+      "p_value": 0.044,
+      "significant": true
+    }
+  },
+  "ljung_box_test": {
+    "q_statistic": 13.564680165703026,
+    "df": 7,
+    "p_value": 0.05948828065684375,
+    "significant": false
+  },
+  "decision": {
+    "hypothesis": "HYP_014",
+    "support": true,
+    "max_abs_r": 0.06844697527103272,
+    "max_r_lag": 4,
+    "threshold": 0.1,
+    "reason": "Temporal dependency detected: max |r|=0.0684 at lag=4; permutation test significant"
+  },
+  "interpretation": {
+    "if_random": "Overlap-count should show |r| < 0.1 for all lags if draws are independent",
+    "if_dependent": "Significant autocorrelation would suggest temporal structure in overlap patterns"
+  }
+}

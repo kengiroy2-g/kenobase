@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/analysis/frequency.py",
+    "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+    "data/raw/keno/KENO_ab_2018.csv",
+    "requirements.txt",
+    "scripts/validate_hypotheses.py",
+    "AI_COLLABORATION/ARTIFACTS/hypotheses_validation_results.json"
+]

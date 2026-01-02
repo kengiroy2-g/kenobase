@@ -1,0 +1,540 @@
+{
+  "jackpot_results": [
+    {
+      "id": "KYRITZ_2025_10_25",
+      "date": "2025-10-25",
+      "characteristics": {
+        "birthday_count": {
+          "winner_value": 4,
+          "percentile": 50.0,
+          "mean": 3.5,
+          "std": 1.09,
+          "min": 0,
+          "max": 7,
+          "z_score": 0.46,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "lucky_count": {
+          "winner_value": 0,
+          "percentile": 0.0,
+          "mean": 1.0,
+          "std": 0.69,
+          "min": 0,
+          "max": 2,
+          "z_score": -1.45,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "high_count": {
+          "winner_value": 1,
+          "percentile": 1.6,
+          "mean": 2.5,
+          "std": 0.99,
+          "min": 0,
+          "max": 5,
+          "z_score": -1.51,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "even_count": {
+          "winner_value": 8,
+          "percentile": 91.5,
+          "mean": 6.0,
+          "std": 1.12,
+          "min": 2,
+          "max": 10,
+          "z_score": 1.78,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "consecutive_pairs": {
+          "winner_value": 0,
+          "percentile": 0.0,
+          "mean": 1.18,
+          "std": 0.88,
+          "min": 0,
+          "max": 5,
+          "z_score": -1.35,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "min_gap": {
+          "winner_value": 2,
+          "percentile": 77.0,
+          "mean": 1.31,
+          "std": 0.62,
+          "min": 1,
+          "max": 4,
+          "z_score": 1.11,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "max_gap": {
+          "winner_value": 18,
+          "percentile": 76.3,
+          "mean": 16.05,
+          "std": 4.31,
+          "min": 5,
+          "max": 40,
+          "z_score": 0.45,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "avg_gap": {
+          "winner_value": 6.777777777777778,
+          "percentile": 50.0,
+          "mean": 6.5,
+          "std": 0.62,
+          "min": 2.3333333333333335,
+          "max": 7.111111111111111,
+          "z_score": 0.44,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "decades_used": {
+          "winner_value": 6,
+          "percentile": 29.9,
+          "mean": 5.86,
+          "std": 0.74,
+          "min": 3,
+          "max": 7,
+          "z_score": 0.19,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "max_per_decade": {
+          "winner_value": 3,
+          "percentile": 26.9,
+          "mean": 2.82,
+          "std": 0.57,
+          "min": 2,
+          "max": 4,
+          "z_score": 0.32,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "sum": {
+          "winner_value": 334,
+          "percentile": 27.3,
+          "mean": 361.0,
+          "std": 44.59,
+          "min": 198,
+          "max": 524,
+          "z_score": -0.61,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "std_dev": {
+          "winner_value": 17.29277305697383,
+          "percentile": 25.3,
+          "mean": 18.77,
+          "std": 2.37,
+          "min": 7.321885003194191,
+          "max": 25.96459127350169,
+          "z_score": -0.62,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        }
+      }
+    },
+    {
+      "id": "OBERBAYERN_2023_06_28",
+      "date": "2023-06-28",
+      "characteristics": {
+        "birthday_count": {
+          "winner_value": 4,
+          "percentile": 50.0,
+          "mean": 3.5,
+          "std": 1.09,
+          "min": 0,
+          "max": 7,
+          "z_score": 0.46,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "lucky_count": {
+          "winner_value": 1,
+          "percentile": 50.0,
+          "mean": 0.5,
+          "std": 0.5,
+          "min": 0,
+          "max": 1,
+          "z_score": 1.0,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "high_count": {
+          "winner_value": 5,
+          "percentile": 67.5,
+          "mean": 4.0,
+          "std": 1.12,
+          "min": 0,
+          "max": 8,
+          "z_score": 0.89,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "even_count": {
+          "winner_value": 4,
+          "percentile": 8.9,
+          "mean": 5.0,
+          "std": 1.15,
+          "min": 0,
+          "max": 10,
+          "z_score": -0.87,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "consecutive_pairs": {
+          "winner_value": 2,
+          "percentile": 83.3,
+          "mean": 0.71,
+          "std": 0.84,
+          "min": 0,
+          "max": 3,
+          "z_score": 1.53,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "min_gap": {
+          "winner_value": 1,
+          "percentile": 0.0,
+          "mean": 1.56,
+          "std": 0.61,
+          "min": 1,
+          "max": 5,
+          "z_score": -0.92,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "max_gap": {
+          "winner_value": 20,
+          "percentile": 75.1,
+          "mean": 16.21,
+          "std": 4.73,
+          "min": 4,
+          "max": 45,
+          "z_score": 0.8,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "avg_gap": {
+          "winner_value": 7.222222222222222,
+          "percentile": 76.3,
+          "mean": 6.54,
+          "std": 0.68,
+          "min": 2.2222222222222223,
+          "max": 7.222222222222222,
+          "z_score": 1.01,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "decades_used": {
+          "winner_value": 6,
+          "percentile": 25.3,
+          "mean": 5.96,
+          "std": 0.74,
+          "min": 3,
+          "max": 7,
+          "z_score": 0.06,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "max_per_decade": {
+          "winner_value": 3,
+          "percentile": 29.8,
+          "mean": 2.87,
+          "std": 0.69,
+          "min": 2,
+          "max": 5,
+          "z_score": 0.19,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "sum": {
+          "winner_value": 406,
+          "percentile": 64.7,
+          "mean": 388.0,
+          "std": 45.29,
+          "min": 220,
+          "max": 556,
+          "z_score": 0.4,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "std_dev": {
+          "winner_value": 21.77705214210592,
+          "percentile": 88.2,
+          "mean": 19.07,
+          "std": 2.38,
+          "min": 7.156116265125937,
+          "max": 25.876823607235877,
+          "z_score": 1.14,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        }
+      }
+    },
+    {
+      "id": "NORDSACHSEN_2024_01_24",
+      "date": "2024-01-24",
+      "characteristics": {
+        "birthday_count": {
+          "winner_value": 2,
+          "percentile": 0.3,
+          "mean": 4.5,
+          "std": 1.14,
+          "min": 0,
+          "max": 9,
+          "z_score": -2.19,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "lucky_count": {
+          "winner_value": 2,
+          "percentile": 29.1,
+          "mean": 2.0,
+          "std": 0.92,
+          "min": 0,
+          "max": 4,
+          "z_score": 0.0,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "high_count": {
+          "winner_value": 3,
+          "percentile": 50.0,
+          "mean": 2.5,
+          "std": 0.99,
+          "min": 0,
+          "max": 5,
+          "z_score": 0.5,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "even_count": {
+          "winner_value": 2,
+          "percentile": 2.9,
+          "mean": 3.5,
+          "std": 1.09,
+          "min": 0,
+          "max": 7,
+          "z_score": -1.37,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "consecutive_pairs": {
+          "winner_value": 1,
+          "percentile": 33.3,
+          "mean": 0.95,
+          "std": 0.83,
+          "min": 0,
+          "max": 4,
+          "z_score": 0.06,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "min_gap": {
+          "winner_value": 1,
+          "percentile": 0.0,
+          "mean": 1.35,
+          "std": 0.51,
+          "min": 1,
+          "max": 5,
+          "z_score": -0.68,
+          "is_extreme_low": true,
+          "is_extreme_high": false
+        },
+        "max_gap": {
+          "winner_value": 18,
+          "percentile": 53.5,
+          "mean": 18.36,
+          "std": 3.34,
+          "min": 5,
+          "max": 46,
+          "z_score": -0.11,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "avg_gap": {
+          "winner_value": 6.444444444444445,
+          "percentile": 56.2,
+          "mean": 6.24,
+          "std": 0.67,
+          "min": 2.5555555555555554,
+          "max": 7.111111111111111,
+          "z_score": 0.31,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "decades_used": {
+          "winner_value": 6,
+          "percentile": 43.1,
+          "mean": 5.62,
+          "std": 0.78,
+          "min": 3,
+          "max": 7,
+          "z_score": 0.48,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "max_per_decade": {
+          "winner_value": 3,
+          "percentile": 15.3,
+          "mean": 3.06,
+          "std": 0.63,
+          "min": 2,
+          "max": 5,
+          "z_score": -0.09,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        },
+        "sum": {
+          "winner_value": 422,
+          "percentile": 98.4,
+          "mean": 326.5,
+          "std": 44.73,
+          "min": 153,
+          "max": 500,
+          "z_score": 2.13,
+          "is_extreme_low": false,
+          "is_extreme_high": true
+        },
+        "std_dev": {
+          "winner_value": 16.86297719858507,
+          "percentile": 16.1,
+          "mean": 18.87,
+          "std": 1.99,
+          "min": 8.005623023850173,
+          "max": 24.90401574043833,
+          "z_score": -1.01,
+          "is_extreme_low": false,
+          "is_extreme_high": false
+        }
+      }
+    }
+  ],
+  "consistency_analysis": {
+    "birthday_count": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        50.0,
+        50.0,
+        0.3
+      ],
+      "low_count": 1,
+      "high_count": 0
+    },
+    "lucky_count": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        0.0,
+        50.0,
+        29.1
+      ],
+      "low_count": 1,
+      "high_count": 0
+    },
+    "high_count": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        1.6,
+        67.5,
+        50.0
+      ],
+      "low_count": 1,
+      "high_count": 0
+    },
+    "even_count": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        91.5,
+        8.9,
+        2.9
+      ],
+      "low_count": 1,
+      "high_count": 0
+    },
+    "consecutive_pairs": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        0.0,
+        83.3,
+        33.3
+      ],
+      "low_count": 1,
+      "high_count": 0
+    },
+    "min_gap": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        77.0,
+        0.0,
+        0.0
+      ],
+      "low_count": 2,
+      "high_count": 0
+    },
+    "max_gap": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        76.3,
+        75.1,
+        53.5
+      ],
+      "low_count": 0,
+      "high_count": 0
+    },
+    "avg_gap": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        50.0,
+        76.3,
+        56.2
+      ],
+      "low_count": 0,
+      "high_count": 0
+    },
+    "decades_used": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        29.9,
+        25.3,
+        43.1
+      ],
+      "low_count": 0,
+      "high_count": 0
+    },
+    "max_per_decade": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        26.9,
+        29.8,
+        15.3
+      ],
+      "low_count": 0,
+      "high_count": 0
+    },
+    "sum": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        27.3,
+        64.7,
+        98.4
+      ],
+      "low_count": 0,
+      "high_count": 1
+    },
+    "std_dev": {
+      "direction": "NICHT_KONSISTENT",
+      "percentiles": [
+        25.3,
+        88.2,
+        16.1
+      ],
+      "low_count": 0,
+      "high_count": 0
+    }
+  }
+}

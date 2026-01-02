@@ -186,6 +186,28 @@ class TestDistributionAnalysis:
         # Alle gefilterten Ergebnisse sollten Typ 10 sein
         assert all(r.keno_type == 10 for r in results_type10)
 
+    def test_load_gq_data_parses_scraped_2025_dates_and_filters_noise(self, tmp_path: Path) -> None:
+        """load_gq_data supports scraped 'So, 28.12.' date format and filters non-hit rows."""
+        csv_path = tmp_path / "Keno_GQ_2025.csv"
+        csv_path.write_text(
+            "\n".join(
+                [
+                    "Datum,Keno-Typ,Anzahl richtiger Zahlen,Anzahl der Gewinner,1 Euro Gewinn",
+                    "\"So, 28.12.\",2,2,320,6ÿ?",
+                    "\"So, 28.12.\",2,Gewinnklasse1(5-stellige Gewinnzahl),0,\"Gewinnquote5.000,00ÿ?\"",
+                ]
+            ),
+            encoding="utf-8",
+        )
+
+        df = load_gq_data(str(csv_path))
+        assert len(df) == 1
+        assert df.iloc[0]["Keno-Typ"] == 2
+        assert df.iloc[0]["Anzahl richtiger Zahlen"] == 2
+        assert df.iloc[0]["Anzahl der Gewinner"] == 320
+        assert float(df.iloc[0]["1 Euro Gewinn"]) == pytest.approx(6.0)
+        assert df.iloc[0]["Datum"].year == 2025
+
 
 class TestNearMissAnalysis:
     """Tests fuer Near-Miss Analyse."""

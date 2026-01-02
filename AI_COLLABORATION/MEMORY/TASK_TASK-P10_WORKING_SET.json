@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/prediction/storage.py",
+    "kenobase/prediction/__init__.py",
+    "scripts/track_predictions.py",
+    "tests/unit/test_prediction_storage.py"
+]

@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/core/normalizer.py",
+    "kenobase/core/__init__.py",
+    "tests/unit/test_normalizer.py"
+]

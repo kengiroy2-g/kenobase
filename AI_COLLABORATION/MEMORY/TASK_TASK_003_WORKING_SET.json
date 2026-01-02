@@ -1,0 +1,9 @@
+﻿[
+    "kenobase/analysis/__init__.py",
+    "Keno_GPTs/10-9_KGDaten_gefiltert.csv",
+    "kenobase/core/data_loader.py",
+    "tests/unit/test_distribution.py (als Template fuer Test-Struktur)",
+    "kenobase/analysis/cycle_phases.py (NEW)",
+    "tests/unit/test_cycle_phases.py (NEW)",
+    "kenobase/analysis/__init__.py (UPDATED)"
+]

@@ -27,8 +27,8 @@ param(
     [ValidateSet("alpha", "beta")]
     [string]$Team = "alpha",
     [int]$CompletionCheckInterval = 60,    # Sekunden zwischen Completion-Checks
-    [int]$MaxPhaseTimeMinutes = 120,       # Max Zeit pro Phase (erhoeht auf 120 min 2025-12-25)
-    [int]$MaxProxyTimeMinutes = 30,        # Max Zeit fuer Proxy-Checks (erhoeht 2025-12-25)
+    [int]$MaxPhaseTimeMinutes = 480,       # Max Zeit pro Phase (erhoeht auf 8h 2026-01-01)
+    [int]$MaxProxyTimeMinutes = 120,       # Max Zeit fuer Proxy-Checks (erhoeht auf 2h 2026-01-01)
     [switch]$SkipProxy,                    # Proxy-Checks ueberspringen (schneller, weniger sicher)
 
     # === V4 EFFICIENCY PARAMETERS (Token Hygiene) ===

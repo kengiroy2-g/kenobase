@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/prediction/synthesizer.py",
+    "kenobase/prediction/recommendation.py",
+    "scripts/predict.py",
+    "tests/unit/test_synthesizer.py",
+    "kenobase/physics/model_laws.py",
+    "kenobase/physics/avalanche.py",
+    "AI_COLLABORATION/ARCHITECTURE/ADR_PREDICTION_MODEL.md (NEU)",
+    "AI_COLLABORATION/HANDOFFS/ki2_TASK-S02_EXECUTOR_20251227_184820.md (NEU)"
+]

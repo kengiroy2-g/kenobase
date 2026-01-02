@@ -1,0 +1,129 @@
+{
+  "analyse": "Regionale Praeferenzen aus Jackpot-Daten",
+  "datum": "2026-01-01T22:39:03.426916",
+  "verifizierte_jackpots": {
+    "Kyritz": {
+      "region": "Brandenburg",
+      "andere_10": [
+        2,
+        9,
+        19,
+        35,
+        39,
+        49,
+        54,
+        55,
+        62,
+        64
+      ],
+      "metriken": {
+        "birthday": 3,
+        "gerade": 4,
+        "niedrig": 4,
+        "hoch": 4,
+        "summe": 388,
+        "avg": 38.8,
+        "einstellig": 2,
+        "endziffer_7": 0,
+        "endziffer_3": 0,
+        "dekade_0": 2,
+        "dekade_1": 1,
+        "dekade_2": 0,
+        "dekade_3": 2,
+        "dekade_4": 1,
+        "dekade_5": 2,
+        "dekade_6": 2,
+        "dekade_7": 0
+      }
+    },
+    "Oberbayern": {
+      "region": "Bayern",
+      "andere_10": [
+        6,
+        13,
+        24,
+        36,
+        38,
+        40,
+        43,
+        51,
+        56,
+        63
+      ],
+      "metriken": {
+        "birthday": 3,
+        "gerade": 6,
+        "niedrig": 3,
+        "hoch": 3,
+        "summe": 370,
+        "avg": 37.0,
+        "einstellig": 1,
+        "endziffer_7": 0,
+        "endziffer_3": 3,
+        "dekade_0": 1,
+        "dekade_1": 1,
+        "dekade_2": 1,
+        "dekade_3": 2,
+        "dekade_4": 2,
+        "dekade_5": 2,
+        "dekade_6": 1,
+        "dekade_7": 0
+      }
+    },
+    "Nordsachsen": {
+      "region": "Sachsen",
+      "andere_10": [
+        3,
+        7,
+        12,
+        13,
+        16,
+        17,
+        21,
+        36,
+        52,
+        54
+      ],
+      "metriken": {
+        "birthday": 7,
+        "gerade": 5,
+        "niedrig": 7,
+        "hoch": 2,
+        "summe": 231,
+        "avg": 23.1,
+        "einstellig": 2,
+        "endziffer_7": 2,
+        "endziffer_3": 2,
+        "dekade_0": 2,
+        "dekade_1": 4,
+        "dekade_2": 1,
+        "dekade_3": 1,
+        "dekade_4": 0,
+        "dekade_5": 2,
+        "dekade_6": 0,
+        "dekade_7": 0
+      }
+    }
+  },
+  "jackpot_tage_2023": {
+    "anzahl": 14,
+    "normale_tage": 351
+  },
+  "abgeleitete_praeferenzen": {
+    "Brandenburg": {
+      "birthday_praeferenz": "NIEDRIG",
+      "gerade_praeferenz": "UNGERADE",
+      "zahlen_niveau": "MITTEL"
+    },
+    "Bayern": {
+      "birthday_praeferenz": "NIEDRIG",
+      "gerade_praeferenz": "GERADE",
+      "zahlen_niveau": "MITTEL"
+    },
+    "Sachsen": {
+      "birthday_praeferenz": "HOCH",
+      "gerade_praeferenz": "AUSGEGLICHEN",
+      "zahlen_niveau": "NIEDRIG"
+    }
+  }
+}

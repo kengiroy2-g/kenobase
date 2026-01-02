@@ -1,0 +1,300 @@
+{
+  "datum": "2026-01-02T01:16:08.265638",
+  "zeitraum": "2023-2024",
+  "n_simulations": 500,
+  "results": [
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 365500,
+      "roi": -15.0593707250342,
+      "invariant_rate": 74.50807113543092
+    },
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 365500,
+      "roi": -19.14199726402189,
+      "invariant_rate": 66.85718194254446
+    },
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "invariant",
+      "games": 365500,
+      "roi": -4.501778385772914,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 36000,
+      "roi": -29.90555555555556,
+      "invariant_rate": 74.275
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 36000,
+      "roi": 66.64444444444445,
+      "invariant_rate": 66.54444444444444
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "invariant",
+      "games": 36000,
+      "roi": -4.588888888888889,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 10000,
+      "roi": 14.63,
+      "invariant_rate": 73.96000000000001
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": -36.25,
+      "invariant_rate": 68.35
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "invariant",
+      "games": 10000,
+      "roi": -44.57,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 8,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 365500,
+      "roi": -44.51162790697674,
+      "invariant_rate": 85.16689466484269
+    },
+    {
+      "typ": 8,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 365500,
+      "roi": -28.878522571819428,
+      "invariant_rate": 78.1920656634747
+    },
+    {
+      "typ": 8,
+      "timing_filter": "none",
+      "strategy": "invariant",
+      "games": 365500,
+      "roi": -31.841860465116277,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 8,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 36000,
+      "roi": -53.63055555555556,
+      "invariant_rate": 84.69166666666666
+    },
+    {
+      "typ": 8,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 36000,
+      "roi": -18.59166666666667,
+      "invariant_rate": 77.35833333333333
+    },
+    {
+      "typ": 8,
+      "timing_filter": "boost_only",
+      "strategy": "invariant",
+      "games": 36000,
+      "roi": -47.68611111111111,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 8,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 10000,
+      "roi": -41.8,
+      "invariant_rate": 84.98
+    },
+    {
+      "typ": 8,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": -39.6,
+      "invariant_rate": 79.07
+    },
+    {
+      "typ": 8,
+      "timing_filter": "any_combo",
+      "strategy": "invariant",
+      "games": 10000,
+      "roi": -51.21,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 9,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 365500,
+      "roi": -29.68344733242134,
+      "invariant_rate": 91.73461012311903
+    },
+    {
+      "typ": 9,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 365500,
+      "roi": -16.161422708618332,
+      "invariant_rate": 85.78002735978112
+    },
+    {
+      "typ": 9,
+      "timing_filter": "none",
+      "strategy": "invariant",
+      "games": 365500,
+      "roi": -42.596169630642954,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 9,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 36000,
+      "roi": -50.13333333333333,
+      "invariant_rate": 91.71944444444445
+    },
+    {
+      "typ": 9,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 36000,
+      "roi": -50.041666666666664,
+      "invariant_rate": 85.50555555555556
+    },
+    {
+      "typ": 9,
+      "timing_filter": "boost_only",
+      "strategy": "invariant",
+      "games": 36000,
+      "roi": -54.76111111111111,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 9,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 10000,
+      "roi": -41.31,
+      "invariant_rate": 91.99000000000001
+    },
+    {
+      "typ": 9,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": -46.93,
+      "invariant_rate": 86.32
+    },
+    {
+      "typ": 9,
+      "timing_filter": "any_combo",
+      "strategy": "invariant",
+      "games": 10000,
+      "roi": -28.43,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 10,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 365500,
+      "roi": -54.857181942544464,
+      "invariant_rate": 95.49658002735978
+    },
+    {
+      "typ": 10,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 365500,
+      "roi": -54.684268125855,
+      "invariant_rate": 90.81231190150478
+    },
+    {
+      "typ": 10,
+      "timing_filter": "none",
+      "strategy": "invariant",
+      "games": 365500,
+      "roi": -54.02900136798906,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 10,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 36000,
+      "roi": -57.09166666666666,
+      "invariant_rate": 95.37222222222222
+    },
+    {
+      "typ": 10,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 36000,
+      "roi": -58.54166666666667,
+      "invariant_rate": 90.71111111111111
+    },
+    {
+      "typ": 10,
+      "timing_filter": "boost_only",
+      "strategy": "invariant",
+      "games": 36000,
+      "roi": -58.12777777777778,
+      "invariant_rate": 100.0
+    },
+    {
+      "typ": 10,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 10000,
+      "roi": -57.17,
+      "invariant_rate": 95.43
+    },
+    {
+      "typ": 10,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": -54.6,
+      "invariant_rate": 91.74
+    },
+    {
+      "typ": 10,
+      "timing_filter": "any_combo",
+      "strategy": "invariant",
+      "games": 10000,
+      "roi": -43.71,
+      "invariant_rate": 100.0
+    }
+  ],
+  "summary": {
+    "avg_improvement": -9.106327709378325,
+    "positive_improvements": 5,
+    "total_comparisons": 12
+  }
+}

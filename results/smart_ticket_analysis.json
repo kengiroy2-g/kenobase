@@ -1,0 +1,274 @@
+{
+  "datum": "2026-01-02T12:58:30.275869",
+  "top_20_zahlen": [
+    {
+      "zahl": 36,
+      "favorability": 0.64,
+      "kdi": 0.2,
+      "gas": 0.8,
+      "pop": 0.0,
+      "risk": "LOW"
+    },
+    {
+      "zahl": 44,
+      "favorability": 0.52,
+      "kdi": 0.2,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "LOW"
+    },
+    {
+      "zahl": 52,
+      "favorability": 0.47,
+      "kdi": 0.30000000000000004,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "LOW"
+    },
+    {
+      "zahl": 66,
+      "favorability": 0.47,
+      "kdi": 0.30000000000000004,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "LOW"
+    },
+    {
+      "zahl": 15,
+      "favorability": 0.45199999999999996,
+      "kdi": 0.6000000000000001,
+      "gas": 0.8400000000000001,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 38,
+      "favorability": 0.37999999999999995,
+      "kdi": 0.6000000000000001,
+      "gas": 0.6,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 68,
+      "favorability": 0.37999999999999995,
+      "kdi": 0.6000000000000001,
+      "gas": 0.6,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 59,
+      "favorability": 0.33,
+      "kdi": 0.7,
+      "gas": 0.6,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 34,
+      "favorability": 0.31999999999999995,
+      "kdi": 0.6000000000000001,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 67,
+      "favorability": 0.31999999999999995,
+      "kdi": 0.6000000000000001,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 62,
+      "favorability": 0.27,
+      "kdi": 0.7,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 22,
+      "favorability": 0.21999999999999997,
+      "kdi": 0.8,
+      "gas": 0.4,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 51,
+      "favorability": 0.19999999999999996,
+      "kdi": 0.6000000000000001,
+      "gas": 0.0,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 31,
+      "favorability": 0.17000000000000004,
+      "kdi": 0.5,
+      "gas": 0.2,
+      "pop": 0.4,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 42,
+      "favorability": 0.16000000000000003,
+      "kdi": 0.7999999999999999,
+      "gas": 0.2,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 57,
+      "favorability": 0.16000000000000003,
+      "kdi": 0.7999999999999999,
+      "gas": 0.2,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 69,
+      "favorability": 0.16000000000000003,
+      "kdi": 0.7999999999999999,
+      "gas": 0.2,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 30,
+      "favorability": 0.15749999999999997,
+      "kdi": 0.7000000000000001,
+      "gas": 0.2,
+      "pop": 0.15,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 60,
+      "favorability": 0.14749999999999996,
+      "kdi": 0.6000000000000001,
+      "gas": 0.0,
+      "pop": 0.15,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 37,
+      "favorability": 0.10999999999999999,
+      "kdi": 0.9,
+      "gas": 0.2,
+      "pop": 0.0,
+      "risk": "MEDIUM"
+    }
+  ],
+  "vermeiden_zahlen": [
+    {
+      "zahl": 41,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 43,
+      "kdi": 1.0,
+      "risk": "HIGH"
+    },
+    {
+      "zahl": 45,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 46,
+      "kdi": 1.0,
+      "risk": "HIGH"
+    },
+    {
+      "zahl": 47,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 48,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 50,
+      "kdi": 1.0,
+      "risk": "HIGH"
+    },
+    {
+      "zahl": 53,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 54,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 55,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 56,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 58,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 61,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    },
+    {
+      "zahl": 63,
+      "kdi": 1.0,
+      "risk": "HIGH"
+    },
+    {
+      "zahl": 65,
+      "kdi": 1.0,
+      "risk": "MEDIUM"
+    }
+  ],
+  "timing_backtest": {
+    "smart_boost": {
+      "roi": -30.555555555555557,
+      "games": 36000
+    },
+    "random_boost": {
+      "roi": 10.977777777777778,
+      "games": 36000
+    },
+    "anti_momentum_boost": {
+      "roi": 25.511111111111113,
+      "games": 36000
+    },
+    "random_immer": {
+      "roi": -7.894151212553495,
+      "games": 350500
+    }
+  },
+  "simple_backtest": {
+    "smart_balanced": {
+      "roi": -45.714285714285715,
+      "games": 7000
+    },
+    "smart_conservative": {
+      "roi": -51.42857142857142,
+      "games": 7000
+    },
+    "random": {
+      "roi": 25.514285714285712,
+      "games": 7000
+    }
+  }
+}

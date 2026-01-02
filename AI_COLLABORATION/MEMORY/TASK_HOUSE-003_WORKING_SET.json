@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/house_edge_stability.py",
+    "kenobase/analysis/__init__.py",
+    "scripts/analyze_house003.py",
+    "tests/unit/test_house_edge_stability.py",
+    "results/house003_rolling_stability.json"
+]

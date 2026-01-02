@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/regions.py",
+    "scripts/scrape_press.py",
+    "AI_COLLABORATION/KNOWLEDGE_BASE/REGIONAL_DATA_RESEARCH.md",
+    "kenobase/scraper/converters.py (NEW)",
+    "kenobase/scraper/__init__.py",
+    "scripts/analyze_hyp003_regional.py (NEW)",
+    "tests/unit/test_regional_affinity.py",
+    "tests/unit/test_converters.py (NEW)"
+]

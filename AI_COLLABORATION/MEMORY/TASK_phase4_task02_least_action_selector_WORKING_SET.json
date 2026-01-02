@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/pipeline/least_action.py (NEW - 267 lines)",
+    "kenobase/pipeline/__init__.py (MODIFIED - added least_action exports)",
+    "kenobase/pipeline/runner.py (MODIFIED - integrated PipelineSelector)",
+    "tests/unit/test_least_action.py (NEW - 25 unit tests)"
+]

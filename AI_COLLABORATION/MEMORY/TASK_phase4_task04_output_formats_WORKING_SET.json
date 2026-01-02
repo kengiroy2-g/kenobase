@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/pipeline/output_formats.py (NEW - 450 lines)",
+    "kenobase/pipeline/__init__.py (MODIFIED - exports added)",
+    "scripts/analyze.py (MODIFIED - CLI extended, legacy code removed)",
+    "tests/unit/test_output_formats.py (NEW - 40 tests)"
+]

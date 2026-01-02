@@ -3,10 +3,11 @@
 Backtest: 1 Monat nach Jackpot (GK10_10)
 
 Testet Performance der optimalen Tickets im Monat nach einem Jackpot.
-Hypothese: Nach Reset-Zyklus (Jackpot) aendert sich das Systemverhalten.
+Hypothese WL-003: Nach Reset-Zyklus (Jackpot) aendert sich das Systemverhalten.
+Hypothese HYP_002: High-Wins (>=100 EUR) sind im Cooldown unterdrueckt.
 
 Autor: Kenobase V2.2
-Datum: 2025-12-29
+Datum: 2025-12-30
 """
 
 import json
@@ -17,20 +18,15 @@ from typing import Dict, List, Tuple
 
 import pandas as pd
 import numpy as np
+from scipy import stats
+
+from kenobase.core.keno_quotes import get_fixed_quote
+
+# High-Win threshold (EUR)
+HIGH_WIN_THRESHOLD = 100
 
 
-# KENO Gewinnquoten
-KENO_QUOTES = {
-    2: {2: 6, 1: 0, 0: 0},
-    3: {3: 16, 2: 1, 1: 0, 0: 0},
-    4: {4: 22, 3: 2, 2: 1, 1: 0, 0: 0},
-    5: {5: 100, 4: 7, 3: 2, 2: 0, 1: 0, 0: 0},
-    6: {6: 500, 5: 15, 4: 5, 3: 1, 2: 0, 1: 0, 0: 0},
-    7: {7: 1000, 6: 100, 5: 12, 4: 4, 3: 1, 2: 0, 1: 0, 0: 0},
-    8: {8: 10000, 7: 1000, 6: 100, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    9: {9: 50000, 8: 5000, 7: 500, 6: 50, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    10: {10: 100000, 9: 10000, 8: 1000, 7: 100, 6: 15, 5: 5, 4: 0, 3: 0, 2: 0, 1: 0, 0: 2}
-}
+# KENO Gewinnquoten (fixed per 1 EUR Einsatz): `kenobase.core.keno_quotes.get_fixed_quote`
 
 # Optimale Tickets
 OPTIMAL_TICKETS = {
@@ -65,7 +61,7 @@ def load_data(keno_path: str, gk1_path: str) -> Tuple[pd.DataFrame, pd.DataFrame
 def simulate_ticket(ticket: List[int], keno_type: int, draw_set: set) -> int:
     """Simuliert ein Ticket und gibt Gewinn zurueck."""
     hits = sum(1 for n in ticket if n in draw_set)
-    return KENO_QUOTES.get(keno_type, {}).get(hits, 0)
+    return int(get_fixed_quote(keno_type, hits))
 
 
 def backtest_period(
@@ -94,6 +90,7 @@ def backtest_period(
         won = 0
         wins_by_hits = defaultdict(int)
         daily_results = []
+        high_wins_count = 0  # HYP_002: Count wins >= HIGH_WIN_THRESHOLD
 
         for _, row in period_df.iterrows():
             draw_set = row["numbers_set"]
@@ -103,6 +100,8 @@ def backtest_period(
             invested += 1
             won += win
             wins_by_hits[hits] += 1
+            if win >= HIGH_WIN_THRESHOLD:
+                high_wins_count += 1
             daily_results.append({
                 "date": str(row["Datum"].date()),
                 "hits": hits,
@@ -119,7 +118,9 @@ def backtest_period(
             "avg_hits": round(np.mean([d["hits"] for d in daily_results]), 2) if daily_results else 0,
             "max_hits": max([d["hits"] for d in daily_results]) if daily_results else 0,
             "wins_by_hits": dict(wins_by_hits),
-            "best_day": max(daily_results, key=lambda x: x["win"]) if daily_results else None
+            "best_day": max(daily_results, key=lambda x: x["win"]) if daily_results else None,
+            "high_wins_count": high_wins_count,  # HYP_002
+            "high_wins_rate": round(high_wins_count / len(period_df) * 100, 2) if len(period_df) > 0 else 0
         }
 
     return results
@@ -177,6 +178,16 @@ def analyze_post_jackpot(
 
         overall_roi = (total_won - total_invested) / total_invested * 100 if total_invested > 0 else 0
 
+        # HYP_002: High-Wins aggregation
+        total_high_wins = sum(
+            p["by_type"][typ_key]["high_wins_count"]
+            for p in all_results["jackpot_periods"]
+        )
+        high_wins_rates = [
+            p["by_type"][typ_key]["high_wins_rate"]
+            for p in all_results["jackpot_periods"]
+        ]
+
         all_results["aggregated"][typ_key] = {
             "ticket": OPTIMAL_TICKETS[keno_type],
             "total_invested": total_invested,
@@ -187,7 +198,10 @@ def analyze_post_jackpot(
             "avg_hits": round(np.mean(avg_hits), 2),
             "max_hits_ever": max(max_hits),
             "periods_positive": sum(1 for r in rois if r > 0),
-            "total_periods": len(rois)
+            "total_periods": len(rois),
+            # HYP_002 fields
+            "total_high_wins": total_high_wins,
+            "avg_high_wins_rate": round(np.mean(high_wins_rates), 2),
         }
 
         print(f"\nTYP {keno_type}:")
@@ -253,9 +267,24 @@ def compare_to_normal_periods(
         # Normal
         normal_rois = [r["by_type"][typ_key]["roi"] for r in normal_results]
 
+        # HYP_002: High-Wins comparison
+        normal_high_wins = sum(
+            r["by_type"][typ_key]["high_wins_count"]
+            for r in normal_results
+        )
+        normal_draws = sum(r["draws"] for r in normal_results)
+        normal_high_wins_rate = (
+            round(normal_high_wins / normal_draws * 100, 2)
+            if normal_draws > 0 else 0
+        )
+
         comparison[typ_key] = {
             "normal_avg_roi": round(np.mean(normal_rois), 2),
-            "normal_std": round(np.std(normal_rois), 2)
+            "normal_std": round(np.std(normal_rois), 2),
+            # HYP_002 fields
+            "normal_high_wins": normal_high_wins,
+            "normal_draws": normal_draws,
+            "normal_high_wins_rate": normal_high_wins_rate,
         }
 
     return comparison, normal_results
@@ -326,6 +355,136 @@ def main():
 
         results["aggregated"][typ_key]["normal_avg_roi"] = normal_roi
         results["aggregated"][typ_key]["difference"] = round(diff, 2)
+
+    # =========================================================================
+    # HYP_002: HIGH-WINS COOLDOWN ANALYSIS
+    # =========================================================================
+    print("\n" + "=" * 70)
+    print("HYP_002: HIGH-WINS (>=100 EUR) COOLDOWN ANALYSE")
+    print("=" * 70)
+
+    hyp002_results = {
+        "hypothesis": "HYP_002",
+        "description": "High-Wins (>=100 EUR) sind im Post-Jackpot Cooldown unterdrueckt",
+        "threshold_eur": HIGH_WIN_THRESHOLD,
+        "by_type": {},
+        "overall": {}
+    }
+
+    print(f"\nHigh-Win Schwelle: >= {HIGH_WIN_THRESHOLD} EUR")
+    print("\n" + "-" * 70)
+    print(f"{'Typ':<8} {'Cooldown HW':>12} {'Normal HW':>12} {'CD Rate':>10} {'N Rate':>10} {'Chi2':>8} {'p-Wert':>10}")
+    print("-" * 70)
+
+    total_cooldown_hw = 0
+    total_normal_hw = 0
+    total_cooldown_draws = 0
+    total_normal_draws = 0
+
+    for keno_type in OPTIMAL_TICKETS.keys():
+        typ_key = f"typ_{keno_type}"
+
+        # Cooldown (post-jackpot) high-wins
+        cooldown_hw = results["aggregated"][typ_key]["total_high_wins"]
+        cooldown_draws = results["aggregated"][typ_key]["total_invested"]
+        cooldown_rate = cooldown_hw / cooldown_draws * 100 if cooldown_draws > 0 else 0
+
+        # Normal period high-wins
+        normal_hw = comparison[typ_key]["normal_high_wins"]
+        normal_draws = comparison[typ_key]["normal_draws"]
+        normal_rate = normal_hw / normal_draws * 100 if normal_draws > 0 else 0
+
+        # Chi-square test: 2x2 contingency table
+        # [cooldown_hw, cooldown_no_hw], [normal_hw, normal_no_hw]
+        contingency = [
+            [cooldown_hw, cooldown_draws - cooldown_hw],
+            [normal_hw, normal_draws - normal_hw]
+        ]
+
+        # Only run chi-square if we have sufficient data
+        if cooldown_hw + normal_hw >= 5:
+            chi2, p_value, dof, expected = stats.chi2_contingency(contingency)
+        else:
+            chi2, p_value = 0.0, 1.0  # Insufficient data
+
+        print(f"Typ {keno_type:<4} {cooldown_hw:>12} {normal_hw:>12} {cooldown_rate:>9.2f}% {normal_rate:>9.2f}% {chi2:>8.2f} {p_value:>10.4f}")
+
+        # Store results
+        hyp002_results["by_type"][typ_key] = {
+            "cooldown_high_wins": cooldown_hw,
+            "cooldown_draws": cooldown_draws,
+            "cooldown_rate_pct": round(cooldown_rate, 2),
+            "normal_high_wins": normal_hw,
+            "normal_draws": normal_draws,
+            "normal_rate_pct": round(normal_rate, 2),
+            "chi2": round(chi2, 4),
+            "p_value": round(p_value, 4),
+            "significant": p_value < 0.05,
+            "direction": "SUPPRESSED" if cooldown_rate < normal_rate else "NOT_SUPPRESSED"
+        }
+
+        # Update in aggregated results
+        results["aggregated"][typ_key]["normal_high_wins"] = normal_hw
+        results["aggregated"][typ_key]["normal_high_wins_rate"] = round(normal_rate, 2)
+        results["aggregated"][typ_key]["hyp002_chi2"] = round(chi2, 4)
+        results["aggregated"][typ_key]["hyp002_p_value"] = round(p_value, 4)
+
+        # Accumulate totals
+        total_cooldown_hw += cooldown_hw
+        total_normal_hw += normal_hw
+        total_cooldown_draws += cooldown_draws
+        total_normal_draws += normal_draws
+
+    # Overall chi-square test
+    overall_contingency = [
+        [total_cooldown_hw, total_cooldown_draws - total_cooldown_hw],
+        [total_normal_hw, total_normal_draws - total_normal_hw]
+    ]
+
+    if total_cooldown_hw + total_normal_hw >= 5:
+        overall_chi2, overall_p, _, _ = stats.chi2_contingency(overall_contingency)
+    else:
+        overall_chi2, overall_p = 0.0, 1.0
+
+    overall_cooldown_rate = total_cooldown_hw / total_cooldown_draws * 100 if total_cooldown_draws > 0 else 0
+    overall_normal_rate = total_normal_hw / total_normal_draws * 100 if total_normal_draws > 0 else 0
+
+    print("-" * 70)
+    print(f"{'GESAMT':<8} {total_cooldown_hw:>12} {total_normal_hw:>12} {overall_cooldown_rate:>9.2f}% {overall_normal_rate:>9.2f}% {overall_chi2:>8.2f} {overall_p:>10.4f}")
+
+    hyp002_results["overall"] = {
+        "cooldown_high_wins": total_cooldown_hw,
+        "cooldown_draws": total_cooldown_draws,
+        "cooldown_rate_pct": round(overall_cooldown_rate, 2),
+        "normal_high_wins": total_normal_hw,
+        "normal_draws": total_normal_draws,
+        "normal_rate_pct": round(overall_normal_rate, 2),
+        "chi2": round(overall_chi2, 4),
+        "p_value": round(overall_p, 4),
+        "significant": overall_p < 0.05,
+        "direction": "SUPPRESSED" if overall_cooldown_rate < overall_normal_rate else "NOT_SUPPRESSED"
+    }
+
+    # Add HYP_002 to results
+    results["hyp002"] = hyp002_results
+
+    # HYP_002 Conclusion
+    print("\n" + "-" * 70)
+    print("HYP_002 ERGEBNIS:")
+    if overall_p < 0.05:
+        if overall_cooldown_rate < overall_normal_rate:
+            print(f"  BESTAETIGT: High-Wins im Cooldown signifikant UNTERDRUECKT")
+            print(f"  Cooldown: {overall_cooldown_rate:.2f}% vs Normal: {overall_normal_rate:.2f}%")
+            print(f"  Chi2={overall_chi2:.2f}, p={overall_p:.4f}")
+            hyp002_results["conclusion"] = "CONFIRMED"
+        else:
+            print(f"  WIDERLEGT: High-Wins im Cooldown signifikant ERHOET")
+            hyp002_results["conclusion"] = "FALSIFIED_INVERSE"
+    else:
+        print(f"  NICHT SIGNIFIKANT: p={overall_p:.4f} > 0.05")
+        print(f"  Cooldown: {overall_cooldown_rate:.2f}% vs Normal: {overall_normal_rate:.2f}%")
+        print(f"  Hinweis: Geringe Sample Size (HW={total_cooldown_hw + total_normal_hw})")
+        hyp002_results["conclusion"] = "NOT_SIGNIFICANT"
 
     # Speichern
     output_path = base_path / "results" / "post_jackpot_backtest.json"

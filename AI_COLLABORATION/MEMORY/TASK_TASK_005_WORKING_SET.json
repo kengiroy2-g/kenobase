@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/prediction/win_class_calculator.py",
+    "kenobase/prediction/__init__.py",
+    "tests/unit/test_win_class_calculator.py"
+]

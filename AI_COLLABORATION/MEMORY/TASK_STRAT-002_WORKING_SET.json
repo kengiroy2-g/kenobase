@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/normalizer.py",
+    "results/ecosystem_graph.json",
+    "scripts/analyze_cross_lottery_coupling.py",
+    "tests/unit/test_cross_lottery_coupling.py",
+    "kenobase/analysis/number_arbitrage.py",
+    "scripts/backtest_number_arbitrage.py",
+    "tests/unit/test_number_arbitrage.py",
+    "results/number_arbitrage_backtest.json"
+]

@@ -1,0 +1,84 @@
+{
+  "task": "TASK_041b",
+  "analysis": "Dienstag x Cooldown Interaction",
+  "data": {
+    "n_draws": 2242,
+    "n_jackpots": 11,
+    "date_range": {
+      "start": "2018-01-01",
+      "end": "2024-02-20"
+    },
+    "ticket": [
+      3,
+      7,
+      36,
+      43,
+      48,
+      51,
+      58,
+      61,
+      64
+    ],
+    "keno_type": 9
+  },
+  "semantics": {
+    "dienstag": "weekday == 1 (0=Mo, 1=Di, ...)",
+    "cooldown": "0-30 days post-jackpot (WL-003)",
+    "normal": ">30 days post-jackpot"
+  },
+  "cells_2x2": {
+    "di_cooldown": {
+      "n": 42,
+      "invested": 42,
+      "winnings": 26.0,
+      "roi_pct": -38.1
+    },
+    "di_normal": {
+      "n": 279,
+      "invested": 279,
+      "winnings": 112.0,
+      "roi_pct": -59.86
+    },
+    "other_cooldown": {
+      "n": 254,
+      "invested": 254,
+      "winnings": 104.0,
+      "roi_pct": -59.06
+    },
+    "other_normal": {
+      "n": 1667,
+      "invested": 1667,
+      "winnings": 1737.0,
+      "roi_pct": 4.2
+    }
+  },
+  "effects": {
+    "main_effect_dienstag": -21.55,
+    "main_effect_cooldown": -20.75,
+    "interaction_effect": 85.02,
+    "best_cell": "other_normal",
+    "best_roi": 4.2,
+    "worst_cell": "di_normal",
+    "worst_roi": -59.86,
+    "roi_spread_pct": 64.06
+  },
+  "permutation_test": {
+    "p_value": 0.19,
+    "observed_interaction": 85.02,
+    "null_mean": 0.24,
+    "null_std": 146.97,
+    "n_permutations": 1000
+  },
+  "acceptance": {
+    "interaction_significant": false,
+    "p_value_threshold": 0.05,
+    "sample_size_di_cooldown": 42,
+    "sample_size_warning": true
+  },
+  "verdict": {
+    "interaction_present": false,
+    "interpretation": "POSITIVE Interaktion: Dienstag-Effekt ist in Cooldown-Phase STAERKER",
+    "best_strategy": "Play other normal for best ROI"
+  },
+  "timestamp": "2025-12-31T02:57:58.063121"
+}

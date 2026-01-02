@@ -1,0 +1,130 @@
+﻿AUTONOMOUS LOOP V4 - Plan-Based Execution (Token Hygiene Enabled)
+==================================================================
+TASK: Summen-Signatur
+TASK-ID: TRANS-001
+PRIORITY: P2
+PHASE: VALIDATOR
+
+TASK DESCRIPTION (Plan excerpt, kurz):
+
+
+TASK NOTES (kurz, autoritativ):
+## [2025-12-30 04:09:20] TRANS-001 - EXECUTOR (ki2)
+
+### Summary
+- Initialized Summen-Signatur outputs to None before the feature toggle to keep disabled runs from raising UnboundLocalError (kenobase/pipeline/runner.py:277).
+- Added regression coverage to ensure PipelineRunner returns None Summen-Signatur outputs when the flag is disabled (tests/unit/test_summen_signatur.py:77).
+- Checks: python -m py_compile kenobase/analysis/summen_signatur.py scripts/compute_summen_signatur.py kenobase/pipeline/runner.py; python -m pytest tests/unit/test_summen_signatur.py -q (PASS).
+
+### Handoff
+- File: C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki2_TRANS-001_EXECUTOR_20251230_040220.md
+
+## [2025-12-30 04:12:30] TRANS-001 - PROXY_IMPL (ki0)
+
+### Summary
+- Summen-Signatur outputs pre-initialized to None so disabled runs no longer raise UnboundLocalError and PipelineResult always carries defined fields (kenobase/pipeline/runner.py:277,325).
+- Regression coverage verifies disabled flag yields None outputs without execution (tests/unit/test_summen_signatur.py:77-90).
+- Sanity checks reproduced: python -m py_compile kenobase/analysis/summen_signatur.py scripts/compute_summen_signatur.py kenobase/pipeline/runner.py (PASS); python -m pytest tests/unit/test_summen_signatur.py -q (PASS).
+- New proxy handoff recorded at AI_COLLABORATION/HANDOFFS/ki0_TRANS-001_PROXY_IMPL_20251230_041030.md; CURRENT_STATUS unchanged.
+- KI profile AI_COLLABORATION/KI_PROFILES/ki0_proxy.md missing; proceeded with available artifacts only.
+
+### Handoff
+- File: C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki0_TRANS-001_PROXY_IMPL_20251230_041030.md
+
+
+
+
+MANDATORY WORKFLOW (do first, every task incl docs):
+1) Context-sync: read AI_COLLABORATION/SYSTEM_STATUS.json + relevant ADR/Docs; run git status --porcelain.
+2) Data claims must cite artifact path + filter + N + repro command (no placeholders).
+3) Zero != missing: if unclear, mark UNVERIFIED.
+4) Line refs must be verified via: 
+l -ba <file> | sed -n 'a,bp'.
+5) Deliverable must include: changes + summary + repro commands + CURRENT_STATUS update.
+6) No assumptions: verify from current repo snapshot.
+
+RULE CONFIRMATION REQUIRED:
+- Include "Rule Confirmation" block in output (CONFIRMED/UNVERIFIED).
+- State granularity + semantics + target metric before analysis.
+
+WORKING SET (nur relevante Dateien):
+- kenobase/analysis/__init__.py
+- kenobase/core/config.py
+- kenobase/core/__init__.py
+- kenobase/pipeline/runner.py
+- scripts/analyze.py
+- scripts/compute_summen_signatur.py
+- tests/unit/test_summen_signatur.py
+- AI_COLLABORATION/HANDOFFS/ki2_TRANS-001_EXECUTOR_20251230_040220.md
+
+WORKING SET POLICY (enforced in ARCHITECT/PROXY/VALIDATOR):
+- Read() ausserhalb WORKING SET kann technisch geblockt sein.
+- Wenn du eine Datei ausserhalb brauchst: nutze Grep/Glob, dann fordere sie im Handoff an:
+
+WORKING_SET_REQUEST:
+- relative/path/to/file1
+- relative/path/to/file2
+(max 6)
+
+
+WORKDIR:
+- Du bist bereits im Repo-Root: C:\Users\kenfu\Documents\keno_base
+- Vermeide Set-Location/cd auf \\?\\-Pfade (Windows long-path Prefix kann Tools verwirren)
+ROLLE: VALIDATOR
+AUFGABE: Validiere die Implementation.
+
+EFFIZIENZ-REGELN:
+- Tests nur zielgerichtet (klein starten). Keine riesigen Logs in die Antwort; speichere nach AI_COLLABORATION/ARTIFACTS/ und verlinke.
+- Vermeide Repo-weite Scans; nutze WORKING SET + gezielte Reads.
+
+VORHERIGER OUTPUT (kurz):
+- Summen-Signatur outputs pre-initialized to None so disabled runs no longer raise UnboundLocalError and PipelineResult always carries defined fields (kenobase/pipeline/runner.py:277,325).
+- Regression coverage verifies disabled flag yields None outputs without execution (tests/unit/test_summen_signatur.py:77-90).
+- Sanity checks reproduced: python -m py_compile kenobase/analysis/summen_signatur.py scripts/compute_summen_signatur.py kenobase/pipeline/runner.py (PASS); python -m pytest tests/unit/test_summen_signatur.py -q (PASS).
+- New proxy handoff recorded at AI_COLLABORATION/HANDOFFS/ki0_TRANS-001_PROXY_IMPL_20251230_041030.md; CURRENT_STATUS unchanged.
+- KI profile AI_COLLABORATION/KI_PROFILES/ki0_proxy.md missing; proceeded with available artifacts only.
+
+FULL HANDOFF:
+C:\Users\kenfu\Documents\keno_base\AI_COLLABORATION\HANDOFFS\ki0_TRANS-001_PROXY_IMPL_20251230_041030.md
+
+VALIDIERUNG:
+1. Fuehre minimale Tests aus (zielgerichtet)
+2. Pruefe Code-Qualitaet
+3. Verifiziere Acceptance Criteria
+
+TOKEN HYGIENE:
+- Bei Test FAIL: nur Command + kurze Fehlermeldung (max 20 Zeilen)
+- Mehr Log noetig? Speichere in AI_COLLABORATION/ARTIFACTS/ und referenziere Pfad
+
+OUTPUT TEMPLATE (muss exakt so starten, dann ausfuellen):
+---
+status: APPROVED
+task: TRANS-001
+role: VALIDATOR
+phase: VALIDATOR
+validated_handoff: "<nur filename oder leer>"
+summary:
+  - <max 8 bullets>
+---
+# Rule Confirmation
+- Rule 1 (SYSTEM_STATUS + ADR/Docs + git status): CONFIRMED/UNVERIFIED
+- Rule 2 (granularity stated): <global|per-market|per-league|per-team>
+- Rule 3 (semantics defined): <fields/keys>
+- Rule 4 (target metric): <accuracy|calibration|bet-selection>
+- Rule 5 (helper-only boundaries): CONFIRMED/UNVERIFIED
+- Rule 6 (reproducibility): <command + output path> or UNVERIFIED (no placeholders)
+
+## Task Setup
+- Granularity: <global|per-market|per-league|per-team>
+- Semantics: <key fields/definitions>
+- Target metric: <accuracy|calibration|bet-selection>
+
+## Repro Commands
+- <command> -> <output path> or UNVERIFIED
+
+# Validation
+
+WICHTIG: Erstelle Handoff-Datei mit Ergebnis:
+- Datei: AI_COLLABORATION/HANDOFFS/ki3_TRANS-001_VALIDATOR_20251230_041230.md
+- YAML mit status: APPROVED oder REJECTED
+- Test-Ergebnisse (kurz)

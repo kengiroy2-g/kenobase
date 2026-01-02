@@ -1,0 +1,192 @@
+{
+  "analysis": "ticket_correlation",
+  "description": "Correlation analysis for portfolio diversification",
+  "note": "All tickets have negative ROI (-43% to -67%). Diversification only.",
+  "generated_at": "2025-12-30T23:44:03.060993",
+  "n_tickets": 4,
+  "n_pairs": 6,
+  "best_diversification_pair": [
+    2,
+    6
+  ],
+  "worst_diversification_pair": [
+    8,
+    10
+  ],
+  "pair_correlations": [
+    {
+      "pair": {
+        "ticket_a_type": 2,
+        "ticket_b_type": 6,
+        "ticket_a_numbers": [
+          9,
+          50
+        ],
+        "ticket_b_numbers": [
+          3,
+          24,
+          40,
+          49,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.0,
+        "overlap_count": 0,
+        "union_count": 8
+      },
+      "diversification_score": 0.65
+    },
+    {
+      "pair": {
+        "ticket_a_type": 2,
+        "ticket_b_type": 8,
+        "ticket_a_numbers": [
+          9,
+          50
+        ],
+        "ticket_b_numbers": [
+          2,
+          3,
+          20,
+          24,
+          36,
+          49,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.0,
+        "overlap_count": 0,
+        "union_count": 10
+      },
+      "diversification_score": 0.65
+    },
+    {
+      "pair": {
+        "ticket_a_type": 2,
+        "ticket_b_type": 10,
+        "ticket_a_numbers": [
+          9,
+          50
+        ],
+        "ticket_b_numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          36,
+          49,
+          50,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.2,
+        "overlap_count": 2,
+        "union_count": 10
+      },
+      "diversification_score": 0.59
+    },
+    {
+      "pair": {
+        "ticket_a_type": 6,
+        "ticket_b_type": 8,
+        "ticket_a_numbers": [
+          3,
+          24,
+          40,
+          49,
+          51,
+          64
+        ],
+        "ticket_b_numbers": [
+          2,
+          3,
+          20,
+          24,
+          36,
+          49,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.5555555555555556,
+        "overlap_count": 5,
+        "union_count": 9
+      },
+      "diversification_score": 0.4833333333333334
+    },
+    {
+      "pair": {
+        "ticket_a_type": 6,
+        "ticket_b_type": 10,
+        "ticket_a_numbers": [
+          3,
+          24,
+          40,
+          49,
+          51,
+          64
+        ],
+        "ticket_b_numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          36,
+          49,
+          50,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.45454545454545453,
+        "overlap_count": 5,
+        "union_count": 11
+      },
+      "diversification_score": 0.5136363636363637
+    },
+    {
+      "pair": {
+        "ticket_a_type": 8,
+        "ticket_b_type": 10,
+        "ticket_a_numbers": [
+          2,
+          3,
+          20,
+          24,
+          36,
+          49,
+          51,
+          64
+        ],
+        "ticket_b_numbers": [
+          2,
+          3,
+          9,
+          24,
+          33,
+          36,
+          49,
+          50,
+          51,
+          64
+        ]
+      },
+      "overlap": {
+        "jaccard_index": 0.6363636363636364,
+        "overlap_count": 7,
+        "union_count": 11
+      },
+      "diversification_score": 0.4590909090909091
+    }
+  ]
+}

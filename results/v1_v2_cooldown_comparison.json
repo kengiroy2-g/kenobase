@@ -1,0 +1,185 @@
+{
+  "analysis_date": "2025-12-31T02:42:33.451606",
+  "cooldown_semantics": {
+    "cooldown": "0-30 Tage nach Jackpot (WL-003: System spart)",
+    "normal": ">30 Tage nach Jackpot (normaler Betrieb)"
+  },
+  "jackpot_count": 11,
+  "results": {
+    "typ_8": {
+      "v1": {
+        "roi_gesamt": -61.69419286094833,
+        "played": 1877,
+        "won": 719.0,
+        "high_wins": 1,
+        "cooldown": {
+          "draws": 296,
+          "roi": -62.5
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -61.54332700822265
+        }
+      },
+      "v2": {
+        "roi_gesamt": -57.37879595098562,
+        "played": 1877,
+        "won": 800.0,
+        "high_wins": 1,
+        "cooldown": {
+          "draws": 296,
+          "roi": -58.78378378378378
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -57.1157495256167
+        },
+        "v2_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_mode_roi": {
+          "normal": -51.69491525423729,
+          "conservative": -62.67806267806267,
+          "jackpot": -66.37931034482759
+        }
+      },
+      "cooldown_comparison": {
+        "v1_roi": -62.5,
+        "v2_roi": -58.78378378378378,
+        "delta_v2_minus_v1": 3.7162162162162176,
+        "draws": 296,
+        "winner": "V2"
+      },
+      "normal_comparison": {
+        "v1_roi": -61.54332700822265,
+        "v2_roi": -57.1157495256167,
+        "delta_v2_minus_v1": 4.4275774826059475,
+        "draws": 1581,
+        "winner": "V2"
+      }
+    },
+    "typ_9": {
+      "v1": {
+        "roi_gesamt": -53.862546616941934,
+        "played": 1877,
+        "won": 866.0,
+        "high_wins": 0,
+        "cooldown": {
+          "draws": 296,
+          "roi": -55.067567567567565
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -53.636938646426316
+        }
+      },
+      "v2": {
+        "roi_gesamt": -51.78476291955248,
+        "played": 1877,
+        "won": 905.0,
+        "high_wins": 0,
+        "cooldown": {
+          "draws": 296,
+          "roi": -56.08108108108109
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -50.98039215686274
+        },
+        "v2_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_mode_roi": {
+          "normal": -51.41242937853108,
+          "conservative": -49.85754985754986,
+          "jackpot": -54.0948275862069
+        }
+      },
+      "cooldown_comparison": {
+        "v1_roi": -55.067567567567565,
+        "v2_roi": -56.08108108108109,
+        "delta_v2_minus_v1": -1.013513513513523,
+        "draws": 296,
+        "winner": "V1"
+      },
+      "normal_comparison": {
+        "v1_roi": -53.636938646426316,
+        "v2_roi": -50.98039215686274,
+        "delta_v2_minus_v1": 2.656546489563574,
+        "draws": 1581,
+        "winner": "V2"
+      }
+    },
+    "typ_10": {
+      "v1": {
+        "roi_gesamt": -52.9035695258391,
+        "played": 1877,
+        "won": 884.0,
+        "high_wins": 1,
+        "cooldown": {
+          "draws": 296,
+          "roi": -50.33783783783784
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -53.38393421884883
+        }
+      },
+      "v2": {
+        "roi_gesamt": -49.17421417155035,
+        "played": 1877,
+        "won": 954.0,
+        "high_wins": 2,
+        "cooldown": {
+          "draws": 296,
+          "roi": -56.08108108108109
+        },
+        "normal": {
+          "draws": 1581,
+          "roi": -47.881087919038585
+        },
+        "v2_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_mode_roi": {
+          "normal": -41.14877589453861,
+          "conservative": -63.24786324786324,
+          "jackpot": -56.896551724137936
+        }
+      },
+      "cooldown_comparison": {
+        "v1_roi": -50.33783783783784,
+        "v2_roi": -56.08108108108109,
+        "delta_v2_minus_v1": -5.743243243243249,
+        "draws": 296,
+        "winner": "V1"
+      },
+      "normal_comparison": {
+        "v1_roi": -53.38393421884883,
+        "v2_roi": -47.881087919038585,
+        "delta_v2_minus_v1": 5.502846299810244,
+        "draws": 1581,
+        "winner": "V2"
+      }
+    }
+  },
+  "summary": {
+    "cooldown_phase": {
+      "v1_wins": 2,
+      "v2_wins": 1,
+      "dominant_model": "V1"
+    },
+    "normal_phase": {
+      "v1_wins": 0,
+      "v2_wins": 3,
+      "dominant_model": "V2"
+    },
+    "wl003_hypothesis": "BESTAETIGT"
+  }
+}

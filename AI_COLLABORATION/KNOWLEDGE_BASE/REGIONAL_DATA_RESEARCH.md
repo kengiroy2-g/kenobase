@@ -55,8 +55,9 @@ Die 16 Landeslotteriegesellschaften veroeffentlichen Pressemitteilungen mit:
 
 | Datum | Region | Bundesland | Zahlen | Typ | Betrag |
 |-------|--------|------------|--------|-----|--------|
-| 27.10.2025 | Kyritz | Brandenburg | 5,12,20,26,34,36,42,45,48,66 | 10 | 100.000 EUR |
-| 29.06.2023 | Oberbayern | Bayern | 3,15,18,27,47,53,54,55,66,68 | 10 | 1.000.000 EUR |
+| 25.10.2025 | Kyritz | Brandenburg | 5,12,20,26,34,36,42,45,48,66 | 10 | 100.000 EUR |
+| 28.06.2023 | Oberbayern | Bayern | 3,15,18,27,47,53,54,55,66,68 | 10 | 1.000.000 EUR |
+| 24.01.2024 | Nordsachsen | Sachsen | 9,19,37,38,43,45,48,57,59,67 | 10 | 100.000 EUR |
 | 30.07.2025 | Leipzig | Sachsen | (nicht genannt) | 8 | 180.000 EUR |
 | 24.04.2025 | Goettingen | Niedersachsen | (nicht genannt) | 10 | 500.000 EUR |
 | 27.03.2025 | Rhein-Main | Hessen | (nicht genannt) | ? | 200.000 EUR |

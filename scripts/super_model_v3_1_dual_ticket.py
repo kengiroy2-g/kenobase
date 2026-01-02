@@ -3,9 +3,8 @@
 SUPER-MODELL V3.1 - DUAL TICKET STRATEGY
 
 ERKENNTNIS AUS V3:
-- Original (Typ 8-10): ROI +288.8%
-- Jackpot (Typ 8-10): ROI +220.1%
-- Small/Medium (Typ 2-7): NEGATIV!
+- Unterschiedliche Tickets haben unterschiedliche Trefferprofile
+- Zwei Tickets am gleichen Tag koennen diversifizieren
 
 NEUER ANSATZ:
 Statt Budget aufzuteilen, spielen wir ZWEI verschiedene Tickets

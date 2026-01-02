@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "total_drawings": 1457,
+    "date_range": {
+      "start": "2022-01-03",
+      "end": "2025-12-29"
+    },
+    "jackpots": 17
+  },
+  "jackpot_cycles": {
+    "phase_counts": {
+      "NORMAL": 1121,
+      "COOLDOWN": 274,
+      "POST_JACKPOT": 38,
+      "PRE_JACKPOT": 24
+    },
+    "by_type": {
+      "typ_8": {
+        "PRE_JACKPOT": {
+          "days": 24,
+          "v2_roi": -79.16666666666666,
+          "orig_roi": -70.83333333333334,
+          "v2_wins": 5,
+          "orig_wins": 7
+        },
+        "POST_JACKPOT": {
+          "days": 38,
+          "v2_roi": -65.78947368421053,
+          "orig_roi": -31.57894736842105,
+          "v2_wins": 13,
+          "orig_wins": 26
+        },
+        "COOLDOWN": {
+          "days": 274,
+          "v2_roi": -35.4014598540146,
+          "orig_roi": -76.64233576642336,
+          "v2_wins": 177,
+          "orig_wins": 64
+        },
+        "NORMAL": {
+          "days": 1121,
+          "v2_roi": -64.67439785905441,
+          "orig_roi": -67.2613737734166,
+          "v2_wins": 396,
+          "orig_wins": 367
+        }
+      },
+      "typ_9": {
+        "PRE_JACKPOT": {
+          "days": 24,
+          "v2_roi": -50.0,
+          "orig_roi": -54.166666666666664,
+          "v2_wins": 12,
+          "orig_wins": 11
+        },
+        "POST_JACKPOT": {
+          "days": 38,
+          "v2_roi": -50.0,
+          "orig_roi": 0.0,
+          "v2_wins": 19,
+          "orig_wins": 38
+        },
+        "COOLDOWN": {
+          "days": 274,
+          "v2_roi": 308.39416058394164,
+          "orig_roi": -52.55474452554745,
+          "v2_wins": 1119,
+          "orig_wins": 130
+        },
+        "NORMAL": {
+          "days": 1121,
+          "v2_roi": -58.87600356824264,
+          "orig_roi": -53.612845673505795,
+          "v2_wins": 461,
+          "orig_wins": 520
+        }
+      },
+      "typ_10": {
+        "PRE_JACKPOT": {
+          "days": 24,
+          "v2_roi": -41.66666666666667,
+          "orig_roi": -75.0,
+          "v2_wins": 14,
+          "orig_wins": 6
+        },
+        "POST_JACKPOT": {
+          "days": 38,
+          "v2_roi": -57.89473684210527,
+          "orig_roi": 7.894736842105263,
+          "v2_wins": 16,
+          "orig_wins": 41
+        },
+        "COOLDOWN": {
+          "days": 274,
+          "v2_roi": -31.02189781021898,
+          "orig_roi": -51.82481751824818,
+          "v2_wins": 189,
+          "orig_wins": 132
+        },
+        "NORMAL": {
+          "days": 1121,
+          "v2_roi": -60.12488849241748,
+          "orig_roi": -44.51382694023194,
+          "v2_wins": 447,
+          "orig_wins": 622
+        }
+      }
+    }
+  },
+  "weekday_cycles": {
+    "by_type": {
+      "typ_8": {
+        "Montag": {
+          "days": 209,
+          "v2_roi": -75.11961722488039,
+          "orig_roi": -77.99043062200957
+        },
+        "Dienstag": {
+          "days": 208,
+          "v2_roi": -25.48076923076923,
+          "orig_roi": -57.692307692307686
+        },
+        "Mittwoch": {
+          "days": 208,
+          "v2_roi": -67.78846153846155,
+          "orig_roi": -73.5576923076923
+        },
+        "Donnerstag": {
+          "days": 208,
+          "v2_roi": -63.942307692307686,
+          "orig_roi": -71.63461538461539
+        },
+        "Freitag": {
+          "days": 208,
+          "v2_roi": -60.57692307692307,
+          "orig_roi": -73.5576923076923
+        },
+        "Samstag": {
+          "days": 208,
+          "v2_roi": -62.019230769230774,
+          "orig_roi": -63.942307692307686
+        },
+        "Sonntag": {
+          "days": 208,
+          "v2_roi": -61.057692307692314,
+          "orig_roi": -58.65384615384615
+        }
+      },
+      "typ_9": {
+        "Montag": {
+          "days": 209,
+          "v2_roi": -66.98564593301435,
+          "orig_roi": -56.9377990430622
+        },
+        "Dienstag": {
+          "days": 208,
+          "v2_roi": 423.0769230769231,
+          "orig_roi": -34.13461538461539
+        },
+        "Mittwoch": {
+          "days": 208,
+          "v2_roi": -60.09615384615385,
+          "orig_roi": -53.84615384615385
+        },
+        "Donnerstag": {
+          "days": 208,
+          "v2_roi": -60.57692307692307,
+          "orig_roi": -36.53846153846153
+        },
+        "Freitag": {
+          "days": 208,
+          "v2_roi": -60.09615384615385,
+          "orig_roi": -58.17307692307693
+        },
+        "Samstag": {
+          "days": 208,
+          "v2_roi": -49.519230769230774,
+          "orig_roi": -63.46153846153846
+        },
+        "Sonntag": {
+          "days": 208,
+          "v2_roi": -51.442307692307686,
+          "orig_roi": -61.057692307692314
+        }
+      },
+      "typ_10": {
+        "Montag": {
+          "days": 209,
+          "v2_roi": -72.72727272727273,
+          "orig_roi": -63.63636363636363
+        },
+        "Dienstag": {
+          "days": 208,
+          "v2_roi": -8.173076923076923,
+          "orig_roi": -0.9615384615384616
+        },
+        "Mittwoch": {
+          "days": 208,
+          "v2_roi": -54.807692307692314,
+          "orig_roi": -49.519230769230774
+        },
+        "Donnerstag": {
+          "days": 208,
+          "v2_roi": -65.86538461538461,
+          "orig_roi": -2.8846153846153846
+        },
+        "Freitag": {
+          "days": 208,
+          "v2_roi": -62.5,
+          "orig_roi": -61.057692307692314
+        },
+        "Samstag": {
+          "days": 208,
+          "v2_roi": -54.807692307692314,
+          "orig_roi": -68.75
+        },
+        "Sonntag": {
+          "days": 208,
+          "v2_roi": -61.057692307692314,
+          "orig_roi": -68.26923076923077
+        }
+      }
+    }
+  },
+  "longevity": {
+    "by_type": {
+      "typ_8": {
+        "yearly": {

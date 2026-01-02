@@ -1,0 +1,10 @@
+﻿[
+    "Acceptance: State-aware F1 \u003e= EnsemblePredictor baseline F1; state labels match economic_state",
+    "Tests: `tests/unit/test_state_aware.py` with unit + integration coverage",
+    "Export: Update `kenobase/prediction/__init__.py` with new exports",
+    "Repro: `python scripts/test_state_aware_predictor.py` -\u003e `results/state_aware_validation.json`",
+    "kenobase/prediction/state_aware.py (NEW)",
+    "kenobase/prediction/__init__.py (UPDATED)",
+    "tests/unit/test_state_aware.py (NEW)",
+    "scripts/test_state_aware_predictor.py (NEW)"
+]

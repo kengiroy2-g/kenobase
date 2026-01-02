@@ -1,0 +1,5 @@
+﻿[
+    "scripts/analyze_high_win_forensik.py",
+    "results/high_win_forensik.json",
+    "results/high_win_forensik_v1v2.json"
+]

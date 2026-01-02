@@ -1,0 +1,1160 @@
+{
+  "position_analysis": {
+    "1": {
+      "many_winners_mean_number": 35.2,
+      "few_winners_mean_number": 0,
+      "delta": -35.2,
+      "many_winners_birthday_pct": 45.1,
+      "few_winners_birthday_pct": 0.0
+    },
+    "2": {
+      "many_winners_mean_number": 35.7,
+      "few_winners_mean_number": 0,
+      "delta": -35.7,
+      "many_winners_birthday_pct": 43.8,
+      "few_winners_birthday_pct": 0.0
+    },
+    "3": {
+      "many_winners_mean_number": 35.7,
+      "few_winners_mean_number": 0,
+      "delta": -35.7,
+      "many_winners_birthday_pct": 43.7,
+      "few_winners_birthday_pct": 0.0
+    },
+    "4": {
+      "many_winners_mean_number": 35.1,
+      "few_winners_mean_number": 0,
+      "delta": -35.1,
+      "many_winners_birthday_pct": 46.0,
+      "few_winners_birthday_pct": 0.0
+    },
+    "5": {
+      "many_winners_mean_number": 35.5,
+      "few_winners_mean_number": 0,
+      "delta": -35.5,
+      "many_winners_birthday_pct": 43.7,
+      "few_winners_birthday_pct": 0.0
+    },
+    "6": {
+      "many_winners_mean_number": 35.6,
+      "few_winners_mean_number": 0,
+      "delta": -35.6,
+      "many_winners_birthday_pct": 43.7,
+      "few_winners_birthday_pct": 0.0
+    },
+    "7": {
+      "many_winners_mean_number": 35.5,
+      "few_winners_mean_number": 0,
+      "delta": -35.5,
+      "many_winners_birthday_pct": 44.2,
+      "few_winners_birthday_pct": 0.0
+    },
+    "8": {
+      "many_winners_mean_number": 36.0,
+      "few_winners_mean_number": 0,
+      "delta": -36.0,
+      "many_winners_birthday_pct": 42.3,
+      "few_winners_birthday_pct": 0.0
+    },
+    "9": {
+      "many_winners_mean_number": 34.9,
+      "few_winners_mean_number": 0,
+      "delta": -34.9,
+      "many_winners_birthday_pct": 44.1,
+      "few_winners_birthday_pct": 0.0
+    },
+    "10": {
+      "many_winners_mean_number": 35.5,
+      "few_winners_mean_number": 0,
+      "delta": -35.5,
+      "many_winners_birthday_pct": 44.1,
+      "few_winners_birthday_pct": 0.0
+    },
+    "11": {
+      "many_winners_mean_number": 36.4,
+      "few_winners_mean_number": 0,
+      "delta": -36.4,
+      "many_winners_birthday_pct": 42.9,
+      "few_winners_birthday_pct": 0.0
+    },
+    "12": {
+      "many_winners_mean_number": 35.1,
+      "few_winners_mean_number": 0,
+      "delta": -35.1,
+      "many_winners_birthday_pct": 44.6,
+      "few_winners_birthday_pct": 0.0
+    },
+    "13": {
+      "many_winners_mean_number": 35.9,
+      "few_winners_mean_number": 0,
+      "delta": -35.9,
+      "many_winners_birthday_pct": 41.9,
+      "few_winners_birthday_pct": 0.0
+    },
+    "14": {
+      "many_winners_mean_number": 35.3,
+      "few_winners_mean_number": 0,
+      "delta": -35.3,
+      "many_winners_birthday_pct": 44.5,
+      "few_winners_birthday_pct": 0.0
+    },
+    "15": {
+      "many_winners_mean_number": 35.8,
+      "few_winners_mean_number": 0,
+      "delta": -35.8,
+      "many_winners_birthday_pct": 43.1,
+      "few_winners_birthday_pct": 0.0
+    },
+    "16": {
+      "many_winners_mean_number": 35.8,
+      "few_winners_mean_number": 0,
+      "delta": -35.8,
+      "many_winners_birthday_pct": 44.0,
+      "few_winners_birthday_pct": 0.0
+    },
+    "17": {
+      "many_winners_mean_number": 35.1,
+      "few_winners_mean_number": 0,
+      "delta": -35.1,
+      "many_winners_birthday_pct": 44.5,
+      "few_winners_birthday_pct": 0.0
+    },
+    "18": {
+      "many_winners_mean_number": 35.6,
+      "few_winners_mean_number": 0,
+      "delta": -35.6,
+      "many_winners_birthday_pct": 44.5,
+      "few_winners_birthday_pct": 0.0
+    },
+    "19": {
+      "many_winners_mean_number": 35.5,
+      "few_winners_mean_number": 0,
+      "delta": -35.5,
+      "many_winners_birthday_pct": 44.1,
+      "few_winners_birthday_pct": 0.0
+    },
+    "20": {
+      "many_winners_mean_number": 34.9,
+      "few_winners_mean_number": 0,
+      "delta": -34.9,
+      "many_winners_birthday_pct": 44.7,
+      "few_winners_birthday_pct": 0.0
+    }
+  },
+  "number_winner_correlation": {
+    "1": {
+      "mean_winners": 26364.754,
+      "count": 309
+    },
+    "2": {
+      "mean_winners": 27933.173,
+      "count": 346
+    },
+    "3": {
+      "mean_winners": 27940.311,
+      "count": 331
+    },
+    "4": {
+      "mean_winners": 27927.701,
+      "count": 324
+    },
+    "5": {
+      "mean_winners": 28215.0,
+      "count": 328
+    },
+    "6": {
+      "mean_winners": 27343.347,
+      "count": 326
+    },
+    "7": {
+      "mean_winners": 27881.872,
+      "count": 304
+    },
+    "8": {
+      "mean_winners": 27692.522,
+      "count": 320
+    },
+    "9": {
+      "mean_winners": 28027.372,
+      "count": 347
+    },
+    "10": {
+      "mean_winners": 27940.455,
+      "count": 334
+    },
+    "11": {
+      "mean_winners": 27770.53,
+      "count": 304
+    },
+    "12": {
+      "mean_winners": 27457.049,
+      "count": 345
+    },
+    "13": {
+      "mean_winners": 27483.023,
+      "count": 307
+    },
+    "14": {
+      "mean_winners": 26424.527,
+      "count": 332
+    },
+    "15": {
+      "mean_winners": 26673.703,
+      "count": 320
+    },
+    "16": {
+      "mean_winners": 26342.216,
+      "count": 320
+    },
+    "17": {
+      "mean_winners": 27419.947,
+      "count": 320
+    },
+    "18": {
+      "mean_winners": 27528.481,
+      "count": 312
+    },
+    "19": {
+      "mean_winners": 28643.531,
+      "count": 307
+    },
+    "20": {
+      "mean_winners": 27113.621,
+      "count": 306
+    },
+    "21": {
+      "mean_winners": 27728.434,
+      "count": 320
+    },
+    "22": {
+      "mean_winners": 26924.711,
+      "count": 294
+    },
+    "23": {
+      "mean_winners": 27858.284,
+      "count": 331
+    },
+    "24": {
+      "mean_winners": 27592.223,
+      "count": 318
+    },
+    "25": {
+      "mean_winners": 27150.596,
+      "count": 339
+    },
+    "26": {
+      "mean_winners": 27057.83,
+      "count": 318
+    },
+    "27": {
+      "mean_winners": 27861.25,
+      "count": 332
+    },
+    "28": {
+      "mean_winners": 27021.789,
+      "count": 323
+    },
+    "29": {
+      "mean_winners": 26543.111,
+      "count": 289
+    },
+    "30": {
+      "mean_winners": 26607.545,
+      "count": 321
+    },
+    "31": {
+      "mean_winners": 27920.284,
+      "count": 313
+    },
+    "32": {
+      "mean_winners": 26381.207,
+      "count": 314
+    },
+    "33": {
+      "mean_winners": 27177.009,
+      "count": 344
+    },
+    "34": {
+      "mean_winners": 26933.788,
+      "count": 325
+    },
+    "35": {
+      "mean_winners": 27298.619,
+      "count": 315
+    },
+    "36": {
+      "mean_winners": 26672.286,
+      "count": 336
+    },
+    "37": {
+      "mean_winners": 26494.263,
+      "count": 323
+    },
+    "38": {
+      "mean_winners": 27405.808,
+      "count": 328
+    },
+    "39": {
+      "mean_winners": 27688.684,
+      "count": 342
+    },
+    "40": {
+      "mean_winners": 26261.046,
+      "count": 305
+    },
+    "41": {
+      "mean_winners": 27299.505,
+      "count": 307
+    },
+    "42": {
+      "mean_winners": 26634.951,
+      "count": 345
+    },
+    "43": {
+      "mean_winners": 26283.508,
+      "count": 323
+    },
+    "44": {
+      "mean_winners": 27151.85,
+      "count": 321
+    },
+    "45": {
+      "mean_winners": 27370.906,
+      "count": 331
+    },
+    "46": {
+      "mean_winners": 27115.832,
+      "count": 333
+    },
+    "47": {
+      "mean_winners": 27223.091,
+      "count": 328
+    },
+    "48": {
+      "mean_winners": 26638.441,
+      "count": 329
+    },
+    "49": {
+      "mean_winners": 27653.862,
+      "count": 362
+    },
+    "50": {
+      "mean_winners": 26633.674,
+      "count": 328
+    },
+    "51": {
+      "mean_winners": 26470.098,
+      "count": 327
+    },
+    "52": {
+      "mean_winners": 27079.227,
+      "count": 331
+    },
+    "53": {
+      "mean_winners": 27197.93,
+      "count": 302
+    },
+    "54": {
+      "mean_winners": 26539.43,
+      "count": 323
+    },
+    "55": {
+      "mean_winners": 26967.386,
+      "count": 337
+    },
+    "56": {
+      "mean_winners": 26314.316,
+      "count": 332
+    },
+    "57": {
+      "mean_winners": 26480.538,
+      "count": 338
+    },
+    "58": {
+      "mean_winners": 26518.413,
+      "count": 327
+    },
+    "59": {
+      "mean_winners": 26856.472,
+      "count": 301
+    },
+    "60": {
+      "mean_winners": 27327.129,
+      "count": 302
+    },
+    "61": {
+      "mean_winners": 27092.682,
+      "count": 336
+    },
+    "62": {
+      "mean_winners": 26902.649,
+      "count": 313
+    },
+    "63": {
+      "mean_winners": 27058.495,
+      "count": 321
+    },
+    "64": {
+      "mean_winners": 27300.535,
+      "count": 325
+    },
+    "65": {
+      "mean_winners": 26853.577,
+      "count": 333
+    },
+    "66": {
+      "mean_winners": 26785.113,
+      "count": 327
+    },
+    "67": {
+      "mean_winners": 27359.081,
+      "count": 307
+    },
+    "68": {
+      "mean_winners": 27228.584,
+      "count": 327
+    },
+    "69": {
+      "mean_winners": 27736.946,
+      "count": 299
+    },
+    "70": {
+      "mean_winners": 27599.323,
+      "count": 313
+    }
+  },
+  "jackpot_positions": {
+    "1": {
+      "jackpot_mean": 35.23716814159292,
+      "normal_mean": 0,
+      "delta": 35.23716814159292
+    },
+    "2": {
+      "jackpot_mean": 35.66548672566372,
+      "normal_mean": 0,
+      "delta": 35.66548672566372
+    },
+    "3": {
+      "jackpot_mean": 35.653982300884955,
+      "normal_mean": 0,
+      "delta": 35.653982300884955
+    },
+    "4": {
+      "jackpot_mean": 35.05663716814159,
+      "normal_mean": 0,
+      "delta": 35.05663716814159
+    },
+    "5": {
+      "jackpot_mean": 35.52035398230088,
+      "normal_mean": 0,
+      "delta": 35.52035398230088
+    },
+    "6": {
+      "jackpot_mean": 35.59557522123894,
+      "normal_mean": 0,
+      "delta": 35.59557522123894
+    },
+    "7": {
+      "jackpot_mean": 35.534513274336284,
+      "normal_mean": 0,
+      "delta": 35.534513274336284
+    },
+    "8": {
+      "jackpot_mean": 36.04955752212389,
+      "normal_mean": 0,
+      "delta": 36.04955752212389
+    },
+    "9": {
+      "jackpot_mean": 34.86283185840708,
+      "normal_mean": 0,
+      "delta": 34.86283185840708
+    },
+    "10": {
+      "jackpot_mean": 35.45309734513275,
+      "normal_mean": 0,
+      "delta": 35.45309734513275
+    },
+    "11": {
+      "jackpot_mean": 36.38672566371682,
+      "normal_mean": 0,
+      "delta": 36.38672566371682
+    },
+    "12": {
+      "jackpot_mean": 35.12300884955752,
+      "normal_mean": 0,
+      "delta": 35.12300884955752
+    },
+    "13": {
+      "jackpot_mean": 35.882300884955754,
+      "normal_mean": 0,
+      "delta": 35.882300884955754
+    },
+    "14": {
+      "jackpot_mean": 35.28141592920354,
+      "normal_mean": 0,
+      "delta": 35.28141592920354
+    },
+    "15": {
+      "jackpot_mean": 35.819469026548674,
+      "normal_mean": 0,
+      "delta": 35.819469026548674
+    },
+    "16": {
+      "jackpot_mean": 35.75398230088496,
+      "normal_mean": 0,
+      "delta": 35.75398230088496
+    },
+    "17": {
+      "jackpot_mean": 35.07610619469027,
+      "normal_mean": 0,
+      "delta": 35.07610619469027
+    },
+    "18": {
+      "jackpot_mean": 35.568141592920355,
+      "normal_mean": 0,
+      "delta": 35.568141592920355
+    },
+    "19": {
+      "jackpot_mean": 35.53362831858407,
+      "normal_mean": 0,
+      "delta": 35.53362831858407
+    },
+    "20": {
+      "jackpot_mean": 34.88672566371682,
+      "normal_mean": 0,
+      "delta": 34.88672566371682
+    }
+  },
+  "count_curves": {
+    "1": {
+      "mean": 8.320728291316527,
+      "std": 2.2340480966539613,
+      "min": 3.0,
+      "max": 14.0,
+      "range": 11.0,
+      "trend": -4.0,
+      "volatility": 0.6364257166619013
+    },
+    "2": {
+      "mean": 8.981092436974789,
+      "std": 2.5668225646293004,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": -3.0,
+      "volatility": 0.6358776293746706
+    },
+    "3": {
+      "mean": 9.253501400560225,
+      "std": 2.515252142914307,
+      "min": 4.0,
+      "max": 17.0,
+      "range": 13.0,
+      "trend": 1.0,
+      "volatility": 0.6489705606017787
+    },
+    "4": {
+      "mean": 8.647058823529411,
+      "std": 2.315173074196953,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": 3.0,
+      "volatility": 0.641364224149179
+    },
+    "5": {
+      "mean": 8.506302521008404,
+      "std": 2.4344261883376612,
+      "min": 3.0,
+      "max": 17.0,
+      "range": 14.0,
+      "trend": -1.0,
+      "volatility": 0.6236403847754582
+    },
+    "6": {
+      "mean": 8.830532212885155,
+      "std": 2.460754819679477,
+      "min": 4.0,
+      "max": 16.0,
+      "range": 12.0,
+      "trend": 3.0,
+      "volatility": 0.641364224149179
+    },
+    "7": {
+      "mean": 7.951680672268908,
+      "std": 2.5849253203981353,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": 0.0,
+      "volatility": 0.6375320319803399
+    },
+    "8": {
+      "mean": 8.588235294117647,
+      "std": 2.610027307151489,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": 4.0,
+      "volatility": 0.6484247461989207
+    },
+    "9": {
+      "mean": 9.22689075630252,
+      "std": 2.4572660497077248,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": 4.0,
+      "volatility": 0.6696905893025851
+    },
+    "10": {
+      "mean": 8.82843137254902,
+      "std": 2.741292004353679,
+      "min": 2.0,
+      "max": 18.0,
+      "range": 16.0,
+      "trend": 4.0,
+      "volatility": 0.6451744154843234
+    },
+    "11": {
+      "mean": 8.261904761904763,
+      "std": 2.576565312360018,
+      "min": 2.0,
+      "max": 14.0,
+      "range": 12.0,
+      "trend": 1.0,
+      "volatility": 0.6303463965932338
+    },
+    "12": {
+      "mean": 9.019607843137255,
+      "std": 2.6206798490893695,
+      "min": 0.0,
+      "max": 15.0,
+      "range": 15.0,
+      "trend": 2.0,
+      "volatility": 0.6353282963083927
+    },
+    "13": {
+      "mean": 8.32703081232493,
+      "std": 2.1860707192418984,
+      "min": 3.0,
+      "max": 14.0,
+      "range": 11.0,
+      "trend": 2.0,
+      "volatility": 0.6353282963083927
+    },
+    "14": {
+      "mean": 8.468487394957982,
+      "std": 2.5740547111519554,
+      "min": 3.0,
+      "max": 19.0,
+      "range": 16.0,
+      "trend": 6.0,
+      "volatility": 0.6462520765891414
+    },
+    "15": {
+      "mean": 8.486694677871148,
+      "std": 2.5256037909813354,
+      "min": 2.0,
+      "max": 18.0,
+      "range": 16.0,
+      "trend": -1.0,
+      "volatility": 0.6336727899994371
+    },
+    "16": {
+      "mean": 8.354341736694678,
+      "std": 2.9919011925464933,
+      "min": 1.0,
+      "max": 17.0,
+      "range": 16.0,
+      "trend": 3.0,
+      "volatility": 0.6413642241491789
+    },
+    "17": {
+      "mean": 8.49719887955182,
+      "std": 2.580223862174427,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": 7.0,
+      "volatility": 0.6303276987952944
+    },
+    "18": {
+      "mean": 8.13515406162465,
+      "std": 2.2327639329285542,
+      "min": 3.0,
+      "max": 14.0,
+      "range": 11.0,
+      "trend": -3.0,
+      "volatility": 0.6369787290286988
+    },
+    "19": {
+      "mean": 8.197478991596638,
+      "std": 2.3769892044622494,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": 1.0,
+      "volatility": 0.6369818128277032
+    },
+    "20": {
+      "mean": 8.574929971988796,
+      "std": 2.7616550183674695,
+      "min": 1.0,
+      "max": 17.0,
+      "range": 16.0,
+      "trend": 2.0,
+      "volatility": 0.6342243312852791
+    },
+    "21": {
+      "mean": 8.256302521008404,
+      "std": 2.93512883646226,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": -5.0,
+      "volatility": 0.6380717715542517
+    },
+    "22": {
+      "mean": 7.883753501400561,
+      "std": 2.4700875875034716,
+      "min": 3.0,
+      "max": 17.0,
+      "range": 14.0,
+      "trend": 2.0,
+      "volatility": 0.6185619764034507
+    },
+    "23": {
+      "mean": 8.77310924369748,
+      "std": 2.6306861044645133,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": -1.0,
+      "volatility": 0.6413672868620045
+    },
+    "24": {
+      "mean": 8.17717086834734,
+      "std": 2.609530014767961,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": -2.0,
+      "volatility": 0.6196938440455969
+    },
+    "25": {
+      "mean": 8.854341736694678,
+      "std": 2.5240722123338655,
+      "min": 4.0,
+      "max": 15.0,
+      "range": 11.0,
+      "trend": 1.0,
+      "volatility": 0.6380810070587687
+    },
+    "26": {
+      "mean": 8.580532212885155,
+      "std": 2.51796608756949,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": 4.0,
+      "volatility": 0.6408149964007369
+    },
+    "27": {
+      "mean": 8.691176470588236,
+      "std": 2.414186715121425,
+      "min": 1.0,
+      "max": 15.0,
+      "range": 14.0,
+      "trend": 0.0,
+      "volatility": 0.6484308049126256
+    },
+    "28": {
+      "mean": 8.827731092436975,
+      "std": 2.448005798006303,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": -2.0,
+      "volatility": 0.6484292902395067
+    },
+    "29": {
+      "mean": 8.193977591036415,
+      "std": 2.643536089846584,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": -2.0,
+      "volatility": 0.6331184412875634
+    },
+    "30": {
+      "mean": 8.359243697478991,
+      "std": 2.4692376236425893,
+      "min": 3.0,
+      "max": 15.0,
+      "range": 12.0,
+      "trend": -2.0,
+      "volatility": 0.6309008458598412
+    },
+    "31": {
+      "mean": 8.412464985994397,
+      "std": 2.4400455354686668,
+      "min": 1.0,
+      "max": 15.0,
+      "range": 14.0,
+      "trend": 3.0,
+      "volatility": 0.6413642241491789
+    },
+    "32": {
+      "mean": 8.200980392156863,
+      "std": 2.2830698636740516,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": -2.0,
+      "volatility": 0.6375304914134349
+    },
+    "33": {
+      "mean": 9.10014005602241,
+      "std": 2.347696882617775,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": 4.0,
+      "volatility": 0.639720499840525
+    },
+    "34": {
+      "mean": 8.598039215686274,
+      "std": 2.443374754092855,
+      "min": 3.0,
+      "max": 17.0,
+      "range": 14.0,
+      "trend": -1.0,
+      "volatility": 0.6564857808047674
+    },
+    "35": {
+      "mean": 8.821428571428571,
+      "std": 2.60110193812488,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": 1.0,
+      "volatility": 0.6457229773209179
+    },
+    "36": {
+      "mean": 8.887254901960784,
+      "std": 2.3993533266289444,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": -12.0,
+      "volatility": 0.6429495196294958
+    },
+    "37": {
+      "mean": 8.663165266106443,
+      "std": 2.6323486564050724,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": 0.0,
+      "volatility": 0.6451805047209961
+    },
+    "38": {
+      "mean": 8.566526610644258,
+      "std": 2.2210919116741206,
+      "min": 3.0,
+      "max": 15.0,
+      "range": 12.0,
+      "trend": -1.0,
+      "volatility": 0.6413672868620045
+    },
+    "39": {
+      "mean": 9.1015406162465,
+      "std": 2.347934996321184,
+      "min": 3.0,
+      "max": 15.0,
+      "range": 12.0,
+      "trend": -4.0,
+      "volatility": 0.649504575179421
+    },
+    "40": {
+      "mean": 8.408963585434174,
+      "std": 2.327398203839258,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": -4.0,
+      "volatility": 0.6275550647247546
+    },
+    "41": {
+      "mean": 8.058823529411764,
+      "std": 2.752012101120283,
+      "min": 2.0,
+      "max": 20.0,
+      "range": 18.0,
+      "trend": 3.0,
+      "volatility": 0.6269992232628582
+    },
+    "42": {
+      "mean": 9.007703081232494,
+      "std": 2.655647128468481,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": -2.0,
+      "volatility": 0.6462642346972168
+    },
+    "43": {
+      "mean": 8.27310924369748,
+      "std": 2.557940265102084,
+      "min": 3.0,
+      "max": 17.0,
+      "range": 14.0,
+      "trend": 1.0,
+      "volatility": 0.6380810070587687
+    },
+    "44": {
+      "mean": 8.38935574229692,
+      "std": 2.050401034641561,
+      "min": 2.0,
+      "max": 13.0,
+      "range": 11.0,
+      "trend": -1.0,
+      "volatility": 0.6446368138295587
+    },
+    "45": {
+      "mean": 9.009103641456583,
+      "std": 2.610161361639595,
+      "min": 0.0,
+      "max": 15.0,
+      "range": 15.0,
+      "trend": 1.0,
+      "volatility": 0.6554174537674289
+    },
+    "46": {
+      "mean": 8.551120448179272,
+      "std": 2.181098489602562,
+      "min": 3.0,
+      "max": 15.0,
+      "range": 12.0,
+      "trend": 7.0,
+      "volatility": 0.6402553265154148
+    },
+    "47": {
+      "mean": 8.669467787114845,
+      "std": 2.574654092172477,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": 0.0,
+      "volatility": 0.6375320319803399
+    },
+    "48": {
+      "mean": 8.582633053221288,
+      "std": 2.272298361954745,
+      "min": 1.0,
+      "max": 18.0,
+      "range": 17.0,
+      "trend": 16.0,
+      "volatility": 0.6429067458475547
+    },
+    "49": {
+      "mean": 9.357142857142858,
+      "std": 2.6156522426847695,
+      "min": 3.0,
+      "max": 18.0,
+      "range": 15.0,
+      "trend": -5.0,
+      "volatility": 0.6681158231464166
+    },
+    "50": {
+      "mean": 8.586134453781513,
+      "std": 2.5197268568046365,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": 6.0,
+      "volatility": 0.6297766437855533
+    },
+    "51": {
+      "mean": 8.551820728291316,
+      "std": 2.8900443991271274,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": -6.0,
+      "volatility": 0.637518166744175
+    },
+    "52": {
+      "mean": 8.57563025210084,
+      "std": 2.184236871134829,
+      "min": 0.0,
+      "max": 16.0,
+      "range": 16.0,
+      "trend": 0.0,
+      "volatility": 0.6516648938275192
+    },
+    "53": {
+      "mean": 8.277310924369749,
+      "std": 2.1541089772709014,
+      "min": 3.0,
+      "max": 17.0,
+      "range": 14.0,
+      "trend": 3.0,
+      "volatility": 0.6336696900968359
+    },
+    "54": {
+      "mean": 8.38655462184874,
+      "std": 2.008494190602283,
+      "min": 2.0,
+      "max": 14.0,
+      "range": 12.0,
+      "trend": 1.0,
+      "volatility": 0.6325659357646484
+    },
+    "55": {
+      "mean": 8.865546218487395,
+      "std": 2.683618850697512,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": -2.0,
+      "volatility": 0.6408195944019285
+    },
+    "56": {
+      "mean": 9.027310924369749,
+      "std": 2.735022221186669,
+      "min": 2.0,
+      "max": 18.0,
+      "range": 16.0,
+      "trend": 5.0,
+      "volatility": 0.6511175669606577
+    },
+    "57": {
+      "mean": 8.691176470588236,
+      "std": 2.5019332613977503,
+      "min": 1.0,
+      "max": 15.0,
+      "range": 14.0,
+      "trend": -9.0,
+      "volatility": 0.6510964487209348
+    },
+    "58": {
+      "mean": 8.630952380952381,
+      "std": 2.372890763934227,
+      "min": 1.0,
+      "max": 16.0,
+      "range": 15.0,
+      "trend": -2.0,
+      "volatility": 0.6364303463742048
+    },
+    "59": {
+      "mean": 8.480392156862745,
+      "std": 2.458115664349877,
+      "min": 3.0,
+      "max": 16.0,
+      "range": 13.0,
+      "trend": -1.0,
+      "volatility": 0.6586172361778699
+    },
+    "60": {
+      "mean": 8.055322128851541,
+      "std": 2.3191791916804876,
+      "min": 2.0,
+      "max": 14.0,
+      "range": 12.0,
+      "trend": -3.0,
+      "volatility": 0.6236372350049595
+    },
+    "61": {
+      "mean": 8.68767507002801,
+      "std": 2.345312847746387,
+      "min": 4.0,
+      "max": 18.0,
+      "range": 14.0,
+      "trend": 5.0,
+      "volatility": 0.6391690913602178
+    },
+    "62": {
+      "mean": 8.480392156862745,
+      "std": 2.5963844420930746,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": -3.0,
+      "volatility": 0.6281158871323769
+    },
+    "63": {
+      "mean": 8.482492997198879,
+      "std": 2.3052373576621226,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": 1.0,
+      "volatility": 0.6347777142287969
+    },
+    "64": {
+      "mean": 8.518907563025211,
+      "std": 2.3622393437045286,
+      "min": 2.0,
+      "max": 15.0,
+      "range": 13.0,
+      "trend": -3.0,
+      "volatility": 0.6402706664549086
+    },
+    "65": {
+      "mean": 8.730392156862745,
+      "std": 2.5192815241718667,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": -3.0,
+      "volatility": 0.6511236006176303
+    },
+    "66": {
+      "mean": 8.822128851540617,
+      "std": 2.2499331966882363,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": -4.0,
+      "volatility": 0.6538060568413709
+    },
+    "67": {
+      "mean": 8.446778711484594,
+      "std": 2.3010403173494827,
+      "min": 2.0,
+      "max": 14.0,
+      "range": 12.0,
+      "trend": -2.0,
+      "volatility": 0.6430029828555877
+    },
+    "68": {
+      "mean": 8.84733893557423,
+      "std": 2.1237485832335574,
+      "min": 3.0,
+      "max": 14.0,
+      "range": 11.0,
+      "trend": -6.0,
+      "volatility": 0.6451668038576629
+    },
+    "69": {
+      "mean": 8.079831932773109,
+      "std": 2.233702124688393,
+      "min": 2.0,
+      "max": 17.0,
+      "range": 15.0,
+      "trend": -1.0,
+      "volatility": 0.6168614750069005
+    },
+    "70": {
+      "mean": 8.06232492997199,
+      "std": 2.336150722222674,
+      "min": 2.0,
+      "max": 16.0,
+      "range": 14.0,
+      "trend": -4.0,
+      "volatility": 0.6286707412927347
+    }
+  }
+}

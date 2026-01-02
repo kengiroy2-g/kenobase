@@ -131,6 +131,40 @@ class RegionalAffinityConfig(BaseModel):
     numbers_per_draw_override: Optional[int] = None
 
 
+class SummenSignaturConfig(BaseModel):
+    """Konfiguration fuer Summen-Signatur Analyse (TRANS-001)."""
+
+    enabled: bool = True
+    keno_types: list[int] = Field(default_factory=lambda: [2, 4, 6, 8, 9, 10])
+    split_date: str = "2024-01-01"
+    output_dir: str = "results"
+    train_output: str = "results/summen_signatur_train.json"
+    test_output: str = "results/summen_signatur_test.json"
+    latest_output: str = "results/summen_signatur_latest.json"
+    bucket_std_low: float = Field(default=0.5, ge=0.0)
+    bucket_std_high: float = Field(default=1.5, ge=0.0)
+    checksum_algorithm: str = "sha256"
+
+    @field_validator("keno_types")
+    @classmethod
+    def validate_keno_types(cls, v: list[int]) -> list[int]:
+        """Stellt sicher, dass Keno-Typen im gueltigen Bereich liegen."""
+        types = sorted(set(int(t) for t in v if 2 <= int(t) <= 10))
+        if not types:
+            raise ValueError("At least one valid keno_type between 2 and 10 is required")
+        return types
+
+    @field_validator("bucket_std_high")
+    @classmethod
+    def validate_std_window(cls, v: float, info) -> float:
+        """Stellt sicher, dass high-Window groesser als low ist."""
+        # Access to other fields via info.data
+        low = info.data.get("bucket_std_low", 0.0)
+        if v <= low:
+            raise ValueError("bucket_std_high must be greater than bucket_std_low")
+        return v
+
+
 class AnalysisConfig(BaseModel):
     """Analyse-Einstellungen."""
 
@@ -144,6 +178,7 @@ class AnalysisConfig(BaseModel):
     windows: list[int] = Field(default_factory=lambda: [5, 10, 20, 50])
     sum_windows: SumWindowsConfig = Field(default_factory=SumWindowsConfig)
     regional_affinity: RegionalAffinityConfig = Field(default_factory=RegionalAffinityConfig)
+    summen_signatur: SummenSignaturConfig = Field(default_factory=SummenSignaturConfig)
 
 
 class PipelineConfig(BaseModel):
@@ -321,6 +356,10 @@ def _parse_yaml_to_config(data: dict) -> KenobaseConfig:
             analysis_data["regional_affinity"] = RegionalAffinityConfig(
                 **analysis_data["regional_affinity"]
             )
+        if "summen_signatur" in analysis_data:
+            analysis_data["summen_signatur"] = SummenSignaturConfig(
+                **analysis_data["summen_signatur"]
+            )
         config_data["analysis"] = AnalysisConfig(**analysis_data)
 
     # Pipeline
@@ -441,6 +480,7 @@ __all__ = [
     "AnalysisConfig",
     "SumWindowsConfig",
     "RegionalAffinityConfig",
+    "SummenSignaturConfig",
     "PipelineConfig",
     "PathsConfig",
     "LegacyConfig",

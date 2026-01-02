@@ -1,0 +1,4 @@
+﻿[
+    "tests/conftest.py",
+    "pytest.ini"
+]

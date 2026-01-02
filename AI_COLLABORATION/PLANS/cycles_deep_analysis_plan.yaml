@@ -1,0 +1,326 @@
+# =============================================================================
+# ZYKLEN-TIEFENANALYSE: Event-basierte KENO-Zyklen
+# =============================================================================
+#
+# PARADIGMA: AXIOM-FIRST (nicht Pattern-First!)
+#
+# Wir suchen NICHT nach Mustern in Daten.
+# Wir leiten VORHERSAGEN aus Wirtschaftslogik ab und TESTEN diese.
+#
+# =============================================================================
+
+meta:
+  plan_name: "Zyklen-Tiefenanalyse"
+  version: "1.0"
+  created: "2025-12-30"
+  paradigm: "AXIOM-FIRST"
+  estimated_tasks: 12
+
+# =============================================================================
+# RELEVANTE AXIOME
+# =============================================================================
+
+axioms:
+  A1_HOUSE_EDGE:
+    statement: "50% Redistribution gesetzlich garantiert"
+    implication: "System MUSS langfristig 50% behalten"
+
+  A2_DAUERSCHEINE:
+    statement: "Spieler nutzen feste Kombinationen bis 28 Tage"
+    implication: |
+      - System kennt welche Kombis aktiv sind
+      - Nach 28 Tagen: Dauerscheine laufen aus
+      - Moeglicher Regime-Wechsel alle ~28 Tage?
+
+  A3_ATTRAKTIVITAET:
+    statement: "Kleine Gewinne MUESSEN regelmaessig sein"
+    implication: |
+      - GK5-GK8 (2-15 EUR) muessen haeufig kommen
+      - Sonst verlieren Spieler Interesse
+
+  A7_RESET_ZYKLEN:
+    statement: "System spart nach Jackpots"
+    implication: |
+      - Nach GK1 (10/10): Weniger hohe Gewinne
+      - Cooldown-Phase 8-30 Tage
+      - Dann Reset auf Normal
+
+# =============================================================================
+# NEUE HYPOTHESEN (abgeleitet aus Axiomen)
+# =============================================================================
+
+hypotheses:
+
+  HYP_CYC_001:
+    name: "28-Tage-Dauerschein-Zyklus"
+    derived_from: "A2_DAUERSCHEINE"
+    prediction: |
+      Wenn Dauerscheine nach 28 Tagen auslaufen, koennte das System
+      sein Verhalten aendern weil neue Dauerschein-Kombis gestartet werden.
+
+      VORHERSAGE: Performance-Unterschied zwischen Tag 1-14 und Tag 15-28
+      eines 28-Tage-Fensters nach Jackpot.
+    test: "Segmentiere Daten in 28-Tage-Bloecke, vergleiche Haelften"
+    acceptance: "Signifikanter ROI-Unterschied (>20%) zwischen Haelften"
+
+  HYP_CYC_002:
+    name: "Birthday-Overlap-Regime"
+    derived_from: "Beobachtung: Spieler waehlen Birthday-Zahlen (1-31)"
+    prediction: |
+      Wenn das System auf Spielerverhalten reagiert:
+      - In NORMAL-Phase: Birthday-Overlap hoeher (System vermeidet Spieler-Zahlen)
+      - In COOLDOWN-Phase: Birthday-Overlap niedriger (System gibt mehr aus)
+
+      VORHERSAGE: Birthday-Overlap-Anteil unterscheidet sich nach Phase.
+    test: "Miss (Birthday-Overlap / Total-Overlap) pro Phase"
+    acceptance: ">5% Unterschied zwischen Phasen"
+
+  HYP_CYC_003:
+    name: "GK-Distribution nach Zyklus"
+    derived_from: "A3_ATTRAKTIVITAET + A7_RESET_ZYKLEN"
+    prediction: |
+      Hohe Gewinnklassen (GK1-GK3 = 6+ Treffer) sollten:
+      - Seltener in COOLDOWN (System spart)
+      - Haeufiger in NORMAL (System zahlt aus)
+
+      VORHERSAGE: GK1-GK3 Frequenz in COOLDOWN < NORMAL
+    test: "Zaehle 6+, 7+, 8+ Treffer-Events pro Phase"
+    acceptance: ">20% Frequenz-Unterschied"
+
+  HYP_CYC_004:
+    name: "Vortag-Overlap Birthday-Bias"
+    derived_from: "Beobachtung + A2_DAUERSCHEINE"
+    prediction: |
+      Die Zahlen die sich vom Vortag wiederholen:
+      - Koennten systematisch Birthday oder Non-Birthday sein
+      - Abhaengig von Phase (Cooldown vs Normal)
+
+      VORHERSAGE: Wiederhol-Zahlen haben Birthday-Bias je nach Phase
+    test: "Miss Birthday-Anteil der Vortag-Overlap-Zahlen pro Phase"
+    acceptance: ">3% Unterschied vom Erwartungswert (44.3% = 31/70)"
+
+  HYP_CYC_005:
+    name: "28-Tage-Rolling-Performance"
+    derived_from: "A2_DAUERSCHEINE"
+    prediction: |
+      Ein Ticket sollte innerhalb 28 Tagen konsistente Performance zeigen.
+      Nach 28 Tagen: Regime-Wechsel moeglich.
+
+      VORHERSAGE: 28-Tage-ROI korreliert NICHT mit naechsten 28 Tagen
+    test: "Autokorrelation der 28-Tage-ROIs (lag=1)"
+    acceptance: "Korrelation < 0.3 (kein Zusammenhang)"
+
+  HYP_CYC_006:
+    name: "High-Win-Clustering nach Jackpot"
+    derived_from: "A7_RESET_ZYKLEN"
+    prediction: |
+      High-Wins (>=100 EUR, also 7+ oder 8+ Treffer) sollten:
+      - Geclustert VOR Jackpots auftreten (System baut auf)
+      - Selten NACH Jackpots (System spart)
+
+      VORHERSAGE: High-Win-Rate in PRE_JACKPOT > POST_JACKPOT
+    test: "Zaehle High-Wins pro Phase, normalisiert"
+    acceptance: ">50% mehr High-Wins in PRE vs POST"
+
+# =============================================================================
+# TASKS
+# =============================================================================
+
+tasks:
+
+  # ---------------------------------------------------------------------------
+  # PHASE 1: DATEN-VORBEREITUNG
+  # ---------------------------------------------------------------------------
+
+  - id: TASK_001
+    name: "Daten laden und 28-Tage-Zyklen markieren"
+    description: |
+      Lade KENO-Daten und markiere:
+      1. Jackpot-Events
+      2. Phase (PRE/POST/COOLDOWN/NORMAL)
+      3. Position im 28-Tage-Zyklus (Tag 1-28 seit letztem Jackpot)
+      4. Vortag-Overlap-Zahlen
+    output: "DataFrame mit allen Markierungen"
+    dependencies: []
+
+  - id: TASK_002
+    name: "Gewinnklassen-Mapping erstellen"
+    description: |
+      Fuer jeden Ziehungstag und jeden Typ (8,9,10):
+      - Berechne Treffer fuer V2 und Original Tickets
+      - Ordne Gewinnklasse zu (GK10=0 Treffer bis GK1=alle Treffer)
+      - Markiere High-Wins (>=100 EUR)
+    output: "DataFrame mit GK-Spalten pro Ticket/Typ"
+    dependencies: [TASK_001]
+
+  # ---------------------------------------------------------------------------
+  # PHASE 2: HYPOTHESEN-TESTS
+  # ---------------------------------------------------------------------------
+
+  - id: TASK_003
+    name: "Test HYP_CYC_001: 28-Tage-Dauerschein-Zyklus"
+    description: |
+      Segmentiere in 28-Tage-Bloecke ab Jackpot.
+      Vergleiche:
+      - Tag 1-14: "Fruehe Phase"
+      - Tag 15-28: "Spaete Phase"
+      Miss ROI fuer beide Haelften.
+    test_hypothesis: "HYP_CYC_001"
+    output: "ROI-Vergleich Frueh vs Spaet"
+    dependencies: [TASK_002]
+
+  - id: TASK_004
+    name: "Test HYP_CYC_002: Birthday-Overlap-Regime"
+    description: |
+      Fuer jede Ziehung:
+      1. Berechne Overlap mit Vortag
+      2. Klassifiziere Overlap-Zahlen: Birthday (1-31) vs Non-Birthday (32-70)
+      3. Berechne Birthday-Anteil
+      4. Gruppiere nach Phase, vergleiche
+    test_hypothesis: "HYP_CYC_002"
+    output: "Birthday-Overlap-Anteil pro Phase"
+    dependencies: [TASK_001]
+
+  - id: TASK_005
+    name: "Test HYP_CYC_003: GK-Distribution nach Zyklus"
+    description: |
+      Zaehle pro Phase:
+      - Anzahl 6+ Treffer Events (beide Tickets)
+      - Anzahl 7+ Treffer Events
+      - Anzahl 8+ Treffer Events
+      Normalisiere auf Tage pro Phase.
+    test_hypothesis: "HYP_CYC_003"
+    output: "GK-Frequenz-Tabelle pro Phase"
+    dependencies: [TASK_002]
+
+  - id: TASK_006
+    name: "Test HYP_CYC_004: Vortag-Overlap Birthday-Bias"
+    description: |
+      Fuer die Zahlen die sich vom Vortag wiederholen:
+      - Miss Birthday-Anteil (sollte ~44.3% sein bei Zufall)
+      - Segmentiere nach Phase
+      - Teste auf systematische Abweichung
+    test_hypothesis: "HYP_CYC_004"
+    output: "Birthday-Anteil der Overlap-Zahlen pro Phase"
+    dependencies: [TASK_001]
+
+  - id: TASK_007
+    name: "Test HYP_CYC_005: 28-Tage-Rolling-Autokorrelation"
+    description: |
+      Berechne 28-Tage-Rolling-ROI fuer V2 Ticket.
+      Miss Autokorrelation mit Lag=1 (naechste 28 Tage).
+      Hohe Korrelation = Ticket bleibt profitabel
+      Niedrige Korrelation = Regime-Wechsel
+    test_hypothesis: "HYP_CYC_005"
+    output: "Autokorrelations-Koeffizient"
+    dependencies: [TASK_002]
+
+  - id: TASK_008
+    name: "Test HYP_CYC_006: High-Win-Clustering"
+    description: |
+      Identifiziere alle High-Wins (>=100 EUR):
+      - Fuer V2 Tickets: 7+ Treffer bei Typ 8, 8+ bei Typ 9, etc.
+      Zaehle pro Phase (PRE/POST/COOLDOWN/NORMAL).
+      Berechne Rate (High-Wins pro 100 Tage).
+    test_hypothesis: "HYP_CYC_006"
+    output: "High-Win-Rate pro Phase"
+    dependencies: [TASK_002]
+
+  # ---------------------------------------------------------------------------
+  # PHASE 3: TIEFENANALYSE
+  # ---------------------------------------------------------------------------
+
+  - id: TASK_009
+    name: "Alle Gewinnklassen ROI nach Phase"
+    description: |
+      Berechne fuer JEDEN Typ (8,9,10) und JEDE Gewinnklasse:
+      - Erwarteter Gewinn pro GK (Quote * Haeufigkeit)
+      - Tatsaechlicher Gewinn pro Phase
+      - Vergleich V2 vs Original
+    output: "Detaillierte GK-Performance-Matrix"
+    dependencies: [TASK_002]
+
+  - id: TASK_010
+    name: "28-Tage-Zyklus-Heatmap"
+    description: |
+      Erstelle Heatmap:
+      - X-Achse: Tag im 28-Tage-Zyklus (1-28)
+      - Y-Achse: Gewinnklasse (GK1-GK10)
+      - Wert: Haeufigkeit
+      Zeigt ob bestimmte Tage im Zyklus mehr/weniger Gewinne haben.
+    output: "Heatmap-Daten als Matrix"
+    dependencies: [TASK_002]
+
+  - id: TASK_011
+    name: "Ticket-Lebenszyklus-Simulation"
+    description: |
+      Simuliere 28-Tage-Dauerschein:
+      - Starte an verschiedenen Tagen im Jackpot-Zyklus
+      - Miss ROI nach 28 Tagen
+      - Finde optimalen Starttag
+    output: "Optimaler Starttag im Zyklus"
+    dependencies: [TASK_002]
+
+  # ---------------------------------------------------------------------------
+  # PHASE 4: SYNTHESE
+  # ---------------------------------------------------------------------------
+
+  - id: TASK_012
+    name: "Synthese und Empfehlung"
+    description: |
+      Fasse alle Hypothesen-Tests zusammen:
+      - Welche wurden bestaetigt?
+      - Welche falsifiziert?
+      - Welche Implikationen fuer Strategie?
+
+      Erstelle adaptives Empfehlungs-Framework:
+      - Wann spielen (Phase + Tag im Zyklus)
+      - Welches Ticket (V2 vs Original)
+      - Welcher Typ (8/9/10)
+    output: "Finaler Report + Adaptives Framework"
+    dependencies: [TASK_003, TASK_004, TASK_005, TASK_006, TASK_007, TASK_008, TASK_009, TASK_010, TASK_011]
+
+# =============================================================================
+# NULLMODELLE (fuer statistische Validierung)
+# =============================================================================
+
+null_models:
+
+  SHUFFLE_NULL:
+    description: |
+      Permutiere Ziehungsdaten zufaellig.
+      Wenn Muster auch in permutierten Daten erscheint = kein echtes Signal.
+    application: "Alle Hypothesen-Tests"
+
+  BLOCK_PERMUTATION:
+    description: |
+      Permutiere 28-Tage-Bloecke statt einzelne Tage.
+      Erhaelt lokale Struktur, zerstoert Zyklus-Muster.
+    application: "HYP_CYC_001, HYP_CYC_005"
+
+  BIRTHDAY_RANDOM:
+    description: |
+      Erwartungswert fuer Birthday-Anteil bei Zufall:
+      31/70 = 44.3%
+      Signifikanz wenn Abweichung > 2*Standardfehler
+    application: "HYP_CYC_002, HYP_CYC_004"
+
+# =============================================================================
+# AKZEPTANZ-KRITERIEN
+# =============================================================================
+
+acceptance_criteria:
+  statistical_significance: "p < 0.05 oder >2 Standardfehler"
+  practical_significance: ">20% ROI-Unterschied"
+  sample_size: ">50 Beobachtungen pro Gruppe"
+  out_of_sample: "Validierung auf 2025 Daten nach Training auf 2022-2024"
+
+# =============================================================================
+# OUTPUT-ARTEFAKTE
+# =============================================================================
+
+outputs:
+  - "results/cycles_deep_analysis.json"
+  - "results/cycles_hypotheses_results.md"
+  - "results/cycles_adaptive_framework.yaml"
+  - "scripts/adaptive_recommendation.py"

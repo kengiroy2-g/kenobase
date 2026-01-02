@@ -1,0 +1,446 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-01T01:34:45.022297",
+    "cooldown_semantics": {
+      "cooldown": "0-30 Tage nach 10/10 Jackpot",
+      "normal": ">30 Tage nach Jackpot"
+    },
+    "train_period": "2022-2023",
+    "test_period": "2024",
+    "train_jackpots": 10,
+    "test_jackpots": 1,
+    "total_jackpots": 11
+  },
+  "by_type": {
+    "typ_6": {
+      "ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "train": {
+        "cooldown_draws": 282,
+        "cooldown_roi": -69.50354609929079,
+        "normal_draws": 447,
+        "normal_roi": 49.21700223713646,
+        "delta_roi": -118.72054833642724,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 282,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 1,
+          "normal_total": 447,
+          "normal_rate": 0.22371364653243847,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": "False"
+        },
+        "mann_whitney": {
+          "statistic": 61716.5,
+          "p_value": 0.5327330019337875,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "test": {
+        "cooldown_draws": 14,
+        "cooldown_roi": -85.71428571428571,
+        "normal_draws": 37,
+        "normal_roi": -64.86486486486487,
+        "delta_roi": -20.849420849420838,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 14,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 37,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 223.0,
+          "p_value": 0.31115126704363716,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 11,
+        "total_draws": 341,
+        "avg_roi": 85.63049853372434,
+        "cooldown_vs_control": {
+          "statistic": 47708.5,
+          "p_value": 0.1219244564496565,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      }
+    },
+    "typ_7": {
+      "ticket": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "train": {
+        "cooldown_draws": 282,
+        "cooldown_roi": -45.39007092198582,
+        "normal_draws": 447,
+        "normal_roi": -4.47427293064877,
+        "delta_roi": -40.915797991337044,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 282,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 2,
+          "normal_total": 447,
+          "normal_rate": 0.44742729306487694,
+          "chi2": 0.15830414642496513,
+          "p_value": 0.690722671092262,
+          "significant": "False"
+        },
+        "mann_whitney": {
+          "statistic": 65125.0,
+          "p_value": 0.35433390678612353,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "test": {
+        "cooldown_draws": 14,
+        "cooldown_roi": -64.28571428571429,
+        "normal_draws": 37,
+        "normal_roi": -64.86486486486487,
+        "delta_roi": 0.5791505791505784,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 14,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 37,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 260.5,
+          "p_value": 0.979660048624082,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 11,
+        "total_draws": 341,
+        "avg_roi": -57.478005865102645,
+        "cooldown_vs_control": {
+          "statistic": 51748.0,
+          "p_value": 0.5018836918907428,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      }
+    },
+    "typ_8": {
+      "ticket": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "cooldown_draws": 282,
+        "cooldown_roi": -65.60283687943263,
+        "normal_draws": 447,
+        "normal_roi": -64.20581655480984,
+        "delta_roi": -1.3970203246227868,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 282,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 447,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 60955.0,
+          "p_value": 0.2959021557221586,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "test": {
+        "cooldown_draws": 14,
+        "cooldown_roi": -78.57142857142857,
+        "normal_draws": 37,
+        "normal_roi": -70.27027027027027,
+        "delta_roi": -8.301158301158296,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 14,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 37,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 254.0,
+          "p_value": 0.8945693597218956,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 11,
+        "total_draws": 341,
+        "avg_roi": -70.96774193548387,
+        "cooldown_vs_control": {
+          "statistic": 49637.0,
+          "p_value": 0.6092205788979417,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      }
+    },
+    "typ_9": {
+      "ticket": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "cooldown_draws": 282,
+        "cooldown_roi": -57.801418439716315,
+        "normal_draws": 447,
+        "normal_roi": -51.45413870246085,
+        "delta_roi": -6.347279737255462,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 282,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 447,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 65346.0,
+          "p_value": 0.29419601718796806,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "test": {
+        "cooldown_draws": 14,
+        "cooldown_roi": -64.28571428571429,
+        "normal_draws": 37,
+        "normal_roi": -43.24324324324324,
+        "delta_roi": -21.04247104247105,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 14,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 37,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 224.5,
+          "p_value": 0.3798763207963215,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 11,
+        "total_draws": 341,
+        "avg_roi": -52.785923753665685,
+        "cooldown_vs_control": {
+          "statistic": 51678.0,
+          "p_value": 0.5163245162160492,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      }
+    },
+    "typ_10": {
+      "ticket": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "cooldown_draws": 282,
+        "cooldown_roi": -64.8936170212766,
+        "normal_draws": 447,
+        "normal_roi": -19.23937360178971,
+        "delta_roi": -45.65424341948689,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 282,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 2,
+          "normal_total": 447,
+          "normal_rate": 0.44742729306487694,
+          "chi2": 0.15830414642496513,
+          "p_value": 0.690722671092262,
+          "significant": "False"
+        },
+        "mann_whitney": {
+          "statistic": 63465.5,
+          "p_value": 0.7883999135468578,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "test": {
+        "cooldown_draws": 14,
+        "cooldown_roi": -85.71428571428571,
+        "normal_draws": 37,
+        "normal_roi": -24.324324324324326,
+        "delta_roi": -61.389961389961385,
+        "chi2_test": {
+          "cooldown_high_wins": 0,
+          "cooldown_total": 14,
+          "cooldown_rate": 0.0,
+          "normal_high_wins": 0,
+          "normal_total": 37,
+          "normal_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney": {
+          "statistic": 199.5,
+          "p_value": 0.0917591220004547,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 11,
+        "total_draws": 341,
+        "avg_roi": -31.964809384164223,
+        "cooldown_vs_control": {
+          "statistic": 51056.5,
+          "p_value": 0.6606121724945695,
+          "significant": "False",
+          "cooldown_median": -100.0,
+          "normal_median": -100.0
+        }
+      }
+    }
+  },
+  "negative_control": {
+    "typ_6": {
+      "window_rois": [
+        1538.7096774193549,
+        -80.64516129032258,
+        -61.29032258064516,
+        -51.61290322580645,
+        -61.29032258064516
+      ],
+      "avg_roi": 85.63049853372434
+    },
+    "typ_7": {
+      "window_rois": [
+        -74.19354838709677,
+        -77.41935483870968,
+        -54.83870967741935,
+        -64.51612903225806,
+        -61.29032258064516
+      ],
+      "avg_roi": -57.478005865102645
+    },
+    "typ_8": {
+      "window_rois": [
+        -67.74193548387096,
+        -87.09677419354838,
+        -19.35483870967742,
+        -87.09677419354838,
+        -87.09677419354838
+      ],
+      "avg_roi": -70.96774193548387
+    },
+    "typ_9": {
+      "window_rois": [
+        -64.51612903225806,
+        -74.19354838709677,
+        -32.25806451612903,
+        -61.29032258064516,
+        -58.06451612903226
+      ],
+      "avg_roi": -52.785923753665685
+    },
+    "typ_10": {
+      "window_rois": [
+        -54.83870967741935,
+        -93.54838709677419,
+        -29.03225806451613,
+        -74.19354838709677,
+        -38.70967741935484
+      ],
+      "avg_roi": -31.964809384164223
+    }
+  },
+  "summary": {
+    "total_types_tested": 5,
+    "train_cooldown_worse": 5,
+    "test_cooldown_worse": 4,
+    "significant_effects": 0,
+    "hypothesis_status": "CONFIRMED",
+    "statistical_power_warning": "LOW - Only 11 jackpots in total, Chi2 test may lack power"
+  }
+}

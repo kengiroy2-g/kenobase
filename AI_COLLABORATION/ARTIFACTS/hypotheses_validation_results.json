@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-12-27T13:23:32.600590",
+  "results": [
+    {
+      "hypothesis": "HYP-009",
+      "test": "Chi-Quadrat Gleichverteilungstest",
+      "n_draws": 2237,
+      "n_numbers": 44740,
+      "chi2_statistic": 52.26776933392937,
+      "p_value": 0.9333359904914897,
+      "threshold": 0.05,
+      "status": "ACCEPTED",
+      "interpretation": "Gleichverteilung kann nicht abgelehnt werden (p=0.9333 >= 0.05). Zahlen erscheinen zufaellig verteilt.",
+      "observed_min": 591,
+      "observed_max": 695,
+      "expected_per_number": 639.1428571428571
+    },
+    {
+      "hypothesis": "HYP-005",
+      "test": "Zahlenpool-Index Vorhersagekraft",
+      "n_predictions": 2227,
+      "window_size": 10,
+      "mean_hits": 3.1486304445442297,
+      "std_hits": 1.422729613190013,
+      "expected_random": 3.142857142857143,
+      "t_statistic": 0.19145400742624716,
+      "p_value": 0.8481873717108581,
+      "cohens_d": 0.0040579050534712115,
+      "status": "REJECTED",
+      "interpretation": "Zahlenpool-Index nicht signifikant besser als Zufall. Durchschnitt: 3.15 Treffer vs. erwartet: 3.14."
+    },
+    {
+      "hypothesis": "HYP-002",
+      "test": "Jackpot-Zyklen Analyse",
+      "n_events": 20,
+      "n_intervals": 17,
+      "mean_interval_days": 43.294117647058826,
+      "median_interval_days": 32.0,
+      "min_interval": 8,
+      "max_interval": 119,
+      "ks_statistic": 0.17875752950133547,
+      "ks_p_value": 0.5878025033520817,
+      "runs_test_z": 0.2662069528248341,
+      "runs_p_value": 0.7900798285930064,
+      "status": "RANDOM",
+      "interpretation": "Intervalle erscheinen zufaellig (KS p=0.5878). Keine signifikanten Zyklen erkannt."
+    }
+  ]
+}

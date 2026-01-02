@@ -1,0 +1,3921 @@
+{
+  "generated_at": "2026-01-02T20:17:22.956435+00:00",
+  "record_count": 156,
+  "metadata": {
+    "source": "",
+    "keno_types": [
+      2,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "numbers_per_draw": 20,
+    "bucket_std_low": 0.5,
+    "bucket_std_high": 1.5,
+    "generated_by": "pipeline_runner"
+  },
+  "records": [
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "75f7049db0aebd1226edd348d87c12f2e5370b45b0e178bde0d93c230b75e2c9",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "d70f9120db70ea33db6f17b58adbd38bce8082ecaa0bd9461c8024493797a237",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "f6c3bf0e3f628378459cfbe0702324cf4e1f441b9161ad002a094b412ba9d539",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "14f81ca2868f0b234eb7c12ea471f57763da851d959083c12e6865f32bdcde52",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "dc7cc0c0f403e99270c9131bdd28d9f3df74e9888fabc44bc5e9c63582e4b8fe",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-24T00:00:00",
+      "draw_index": 0,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "969671eb6d33f61b88b2fc22ddb1b529d98c2ac2c50d66160874e175fc227080",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "688872e43abbbe8eb7fe45a06a74bdb1c0d459f08532eac324495120d6ddcb20",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "2c4201d1c6990c752ccf94b40d0a605aefd6761256cc739c3b4014052da1dc24",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "15047b070a4ce9a4c81e4b67f981fa9a3416b699abf7fae81347c04a4b889707",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "773ee3859b270c5896a419589dc2552a831231c78e55218e94cb0c054b0b100c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "a763f98d4ae47e1546e8479c456fab9c77959ba2b5b256d60e29ac31c04266bf",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 1,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "4b4b8deef97a6fc767597a7181906221dff854b3dcbe61c5f3efa1e18e1447c8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "ede926a013e1bb6527cc3451c8fdbe1baadee83072374bdf052c7cbd02827f27",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "6182b7f8c62659e184485a507bf0b6782d64346499022d890169142778ee363a",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "b2ea6b25223d4898847e7b692b2dcc576fb783d682ba2a62a7343fc4d8340310",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "0435b1c4b5c30c9357d72fb4182a3ac0a3cf43ab5ccdaae15a20bfbc13cfbad9",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "262c7897d41a13857a5bd4ed2452169923b4c7e9857e6f7db37fb2cf34ec06db",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-25T00:00:00",
+      "draw_index": 2,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "523ad3d6fb75eeec09067b6dea2e67d520bb0cd534c7436b8a8b96b043f2dc1e",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "a813f80c96155790b57777391db45c86f8c25b6f6ddf2991e80228a269a5c1e8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "9f3787e6cf45d88f84bae7bf43257049b21864c0d28171f24930d6b31adaddfa",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "9edcdc10317862a4dbab92597fa4dc8c26f9fa34f42b90f947af5f02849df374",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "fa9ac21dcad8638a0f54f98d1ece72d666bacf7df0e0d368f113f782ea108ac6",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "45c5ace25deaa79eb28669e68b34610fe1227e35fb76a16f17439700dfe9eb9f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 3,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "b79ea7af9db9dfc108178d87aa08b90e417c396e8c3c553c526d25b3d4a07084",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "d89856c4cae5699e1ff832d870bcd4b28a37b6095210eb646343767da19bb543",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "f5e4203626c7e0c9168ea399e40a473fc75f5f88b8c040fba327b65b204b287e",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "c43cffb9a864bba7e889d3ec8606ea3fbc6ad83300864f66902d329fd0b57ccd",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "3623960965e137b5978a6558478292f9bbacb46522096f8dcd3c6feaef0c4ec4",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "3a50a0abe1e08998ee01b62d569e25df6820646c1a8f2192e26abead265fc21e",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-26T00:00:00",
+      "draw_index": 4,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "2c4256d5e265042a8a82d32cf471a6ede974d25d19158b8c12794e15644fa6be",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "e3e153ccdad3c2f27f121a17a2a67b2034c7b78930f9bc17699310a9d43502f5",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "526c84c0dbd9bca6f7da1f1e23c73247315e8d5ca0ea922082d4b08bc18000d6",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "58377cc5282d18176910b544adc862a74d4863d60adbb0f135b9d5f59a828163",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "add8f900f8852400a0ad66e0c33a43924fdd04171c50d139bf9f079a8a061a47",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "38dbd29acd484c057b8c6501c5a1ef8fbe97d674fb37f5a37e047a3b9d8ad959",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 5,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "7f3c4ccbbefb2f01f7b3f294185926adfda0b1856c92745f62addf09cb978d19",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "aeff77c15329f7be6fa7a0de646850b453f01a4b4fca7a2e178036e272ce48d5",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "9ff5a063969587a08cff47c6fd982631ddd9c0f279b96042dc2349c3370ebff0",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "ec3709abe2c51147981dabf154fd1fb81a8c0fbcbd6565b228f3e2477939fc67",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "6c2ba6b67e3885fde9e2edae85107fcfb4f9524da5b41426af86213a31f9ffd4",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "d8c3434bca222d6be709b9708fe1ed6f0bb585f9d7a59833b94f6d14460a37f7",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-27T00:00:00",
+      "draw_index": 6,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "d0f4e0807037b58d9cf0b75fa2a6da1160a2ead691631ac6df5b7cf58653bad1",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "5049d875d529a103ae89411b2194f7ec3eb5122d93d2460abb1ab2e48757b7f0",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "596735991084de3ae4c9e1ef9562d3a3d57da1b8a9aa360caba19615b4eacb2f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "93b25f402db6a5f49b0accc2082d5b6018031e308c433256b2b8799dc685b3b9",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "856b3521ec5ad78244bc575620b9b7011dd46837748d7d8a0932266b448815bf",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "7c77f13548a27bcf582d2074685db9af1460584c3862890e2764e8123e0436a8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 7,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "81d61fe4d2848f3f96f1ddc088d5e9f996a8e18eeca167b4fb5e697a347e539d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "d1928eb962f3ef17695fe5c31ecf38d408300a15a8f2a3b42debbbee82d9529c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "22f7aa7829f9ba6782c3a91c71db7f9e701e1794e58bd1e385684b9e2750ab5a",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "93247758db9c065816d9b1179e701b9d32e2d8479282a888d230b4d43a4aaa9c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "aebd0d09b4496c1718286d1a8e3321d83206b5d722a7339b9cc69ee6300ad5c1",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "3d92abfb03fed0ea1b7cf0384cd8cd71cf1fad1ebd3970617f892c6a75271080",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-28T00:00:00",
+      "draw_index": 8,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "23fbc7a01a0e2bbf506a188006b9e30b7c937c1fe2c4fd409834172445201839",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "09eabbe8774d48fe5d3ee4c219f9173a9c9789b82829a82d144053c8fda56a1d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "7ef5bb3819930ccbba6aa8bfeebcacfd933ab398960528186dd1f8676e7b5ae5",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "b46e541553e4f227f9db5a95b7d90d25c79d6548fdc744e3525153b5c0e3d623",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "ab8daf1d2197715fc8b1f7a462fa8f47d8c8f08f01aade9ca1405ea71a542c9c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "4d6a22c1ef004c4d8078b3d9e14c63d734b910912510f13d8fe3ac8ddfe2f6e5",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 9,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "8a57c78b586c65a1e54005584d6f217d631819943f524f32a2827a857646cc1f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "4551d3cb6a992b75407cddbea1cb718de18ebb794d3af001e79415207ae734da",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "8731fc60badd06412f38bb7f120c4f3e518d5585b92399078da7c92ab88dcb21",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "2fa1fe8a4e6eefe1f5191b29c936ac7df3ed82b86db897191482dce8362686eb",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "bece5e7f457d60692ab43ee62134447e349695cc558b0a55652484f91c7816ad",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "47970a4a8b43cfc1b99212d4f8313e646cdafdcd2c7e5673cb6b193fc5546693",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-29T00:00:00",
+      "draw_index": 10,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "1963e2844f9d3fdf888ce2f22e3ef7d75a6662b37ae5095482d8a74181d84437",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "650c756e21fbc0fa96880062b7cf37a945679b3e7d1858a1aa7d9596fd064981",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "abe193a321f034f96d48b88813b6ad6a07eaa0a26672f56a0efa2186994a90f7",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "9c79072c816fcf1cc1f2557989d3149cae782f9b0831dfc6c0d81a1f7a42fb72",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "bf454e7dd33f188d3e91bebf0b9a67189b0f87fd4b1e08260b507ebc31930edd",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "9bac59f8139b09b62f55f62769e5021a72249faaf3c29369475e66fbb31991af",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 11,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "4aa80b7a9b46b5bdf3d303db8c8e09b00d9b267ec4d8a41f1a6518269af088fa",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "9cb758329870308ce660783dde4b5b531553b9d08f97cc14154242a7fb0c63e0",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "418e23569bb067d0de642c8b1c9121dfd8f2873f7a4ec0f935af7bdc3d0bf774",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "197b76827b1b9c5a6129ef3694e82fc91a65432c7f8302e1471995eb5a93a575",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "0fd9e7533fd61b9c460b7df5c53cbd899c5963b8ed82da6fadcbe0cfd23c922f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "7a2d7ab4ce2446234e3176f0f1a98dee893b4e6875a2c027406f1d008368ff82",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-30T00:00:00",
+      "draw_index": 12,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "7f8e90132a24ccbd09f5984ed281b1e3e4ffbfb6a93a6779e5a621ab31d6584d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "f76fd07178d2f4ec8666179ba0beba29900ade0c65c81d4b59a0487e6f3cc14b",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "6d37fc1fac521d4f6c5fe1ef50f800b5404ffb3ce6dc4caf5dfc6de26fee4c34",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "f56a05cb1621052ed3cea2d95ef108b1f1028bd3c6baf5824df60bfa8febc3d7",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "ebbe628fb83b916da18ad02644b904cded841b1c90a71c81277851759a06bbbc",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "306ea96436413dbf4e59b542a01bbb6c43de40b5f642eb464f8fdc68ed064fe2",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 13,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "8f2e29405384072a2f7f0c35d2b759b9cef023ac1672f4a64d5a41277eab98b0",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 1,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 1,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "493de5873044df93e81f3b6375c6c14fc8ed60847b05e8ba89ee42f845515c91",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 2,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 2,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "7772b429cb39ea48271f37ad1c8ecbd30122845b4a6343256d82dbde0d6aadee",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 3,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 3,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "d26bcd4f9677502d1b3fc0753e9fb4a92251e3f9e4513cd1d7d1bcdeaccf11a6",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 4,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "c865ad278a9632602e3d22472c3a465959ea30c28bc3e27573b59d289ce9896a",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 4,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "517eba3f072e2ec51ac0ce1681e6aa2f9e5e291f71b0ef12c7e4b79a8d6a9b5c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-03-31T00:00:00",
+      "draw_index": 14,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 0,
+        "11-20": 5,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 5,
+        "51-60": 0,
+        "61-70": 0
+      },
+      "checksum": "a2e2012380c40a36d722905e829a39394434808c5e1b0fee69421ac77681b3ae",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "ed2364bf2ed7e948f0441533c0c347908e82728372864b59fdb30872d8cc4813",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "bbdb90bb48ebb13e990dd53d06f02c774880b6fd1c05527f4ece7d1a73571ae8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "376fb18415034c278001f7a364044109d1f65a86a84484394eefed4f31f9c8fa",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "44285d2c8ac185dd7d8309a96e09466b9168ba5409813f2b0931cbc8a8488a37",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "6613a7b9ef752275dcbc267225d32202b9e9e29ccdf44929a07189d62775174d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 15,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "2bb87567e9c3db432ecb1752e2e0691f2a675dc55ebb8995842bf8ee2c90b424",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "0a0aa89ea50a6fe2bb4cb405a017081550be4b3a6bd4b5012fae719b6b90bfd9",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "8c592f128d3313ccf37f1cd4e1e8d609c96482f27d7260530fd7d45441bc5c21",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "72a6300affe72df397c81124b79435c01e956f66c6eadd1564b57f54d4757d2d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "515df1eaee4a6a14ac8d8e29d0ccfe29a510cda6500f11389d254bf2ea6bd0e8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "e19bb9912f4a61286b4a8e03540f242ebca453ee32dd17bebac384a91af4a9b1",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-01T00:00:00",
+      "draw_index": 16,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "40f9ddbd152a42d0660dd3ef062ee1cf47e726e905c820fc94ba23fd4cf37778",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "7864e8178bb674452e32d909420b269589613d4b0be1c9fb68ae87ae36bac20b",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "1ba59e687789c139f45ce7c212dfff2116b2fb4d32aa317a9ff6359bf0876245",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "044f460daedae67663681417a30905cdcdb53a35ebd858a465bd846a1f0296f8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "f95d668a9faac73317c98b74591255d0e7d3d34ad82210620a8adac51f8660e8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "f089a0eef6930d4f01ee9a9fedee129a7e19c3d947dee07f83cb0303f51555d4",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 17,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "a72fbbd993bacfa1818335eda743dc054339c7066b0b4d3de15a58bf3db1df15",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "c9e8af9b2afd5a3f64a6c9a4aa87c3de76a2baf69439158d9b2691716c9e9d79",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "cb9da7156d9c3691e3f889f0c85487f7e3ae17b6cabcccffa4878e2fa3c10bdd",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "cc0c244fa5f06e118512c52c0e6a7e700423bc9d2288c7f6c312f88169b503e6",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "a4f1896d5b6db0bfbe21247e1919d0efa2878d6b8ff879006c6016714329914c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "9889315a5056b090c02e5459753df1284122d83a819a530159bb47b98ee07334",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-02T00:00:00",
+      "draw_index": 18,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "ff61f1ed725fe5c9186ac5b124a97b2a4256609dc52f2cab9a0f8b1191a0f2d4",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "a44740a2fc7e41f5db442359a325fd2e344b1c4f858ca839dfc5e1238248abac",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "813791c65468222fd3784e241b5b6f7ebd06902304ca93988d1a813ef1eae6c1",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "d66646628acb02a1142be10da78dc32bb60cef23bb3a68b45150b1cb966ee246",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "acdb7f234820215b67922e01ab43f63d56ef6a529bfff723cafc4a8a8abfb7c9",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "e70f16f370a3faf294ecf4845ef7d2345598fd19a3d56f22e64d98fdd18474b4",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 19,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "0932a95ad926995782ce1a1786bbd68a09e24c8d57f75a54078fdf4fcf930137",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "0b1a624e0f0b9dfe3717f037eb7159f88b5266515edf29413f4efd5a01c29d54",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "9519e4ce84f8a387c2d385fdb236c4b60b7174bc788af3808cf41fe9c66635bb",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "94b392a55b5a84f0bebade388f393a709e9921ffba9c8e4fd151c1bcde20b028",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "8e0798dd9f235f6227f2b848ba5d06b82d18cb9c780ab85cd54b60cf34952320",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "d6d5c1f2a21e29f5329ad9dbdc86bde3d77aa143ced8ce4e2faa9c9bc6e1e7c1",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-03T00:00:00",
+      "draw_index": 20,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "b01381d3d72704686896023702a4bf17094a9b1014748fec35b22878c3a98286",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "55800e0de6a876fa9c6b3a1adf4937fc90c442b5d0833a3c6648b5b19798f9d0",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "dcdc3acb4f485fc93f628e04364ac2154294c544c431afae7b35ef5532201859",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "1f43e3e139cd24103888aac898640a4a0b818ad2cdeb7d50ee8fdd366b3247ec",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "d70f18bcd41590d5ef2c11832292166e164e71640f216c0ae55cf3e7e062940f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "b9d828bece5b42497774e7e8e2c3158f71b25741cb9f32cd06f39998babdc073",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 21,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "7598eb6030e4339236dcacd0033f41beb9a50a859658f3a741c16616b0901cd3",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "35c2b3d5c9e6d94638080bf542a77d1c897774eb98c9758fd08417d95a32f9e2",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "e28b8c418cc22365c5246b01431d17214eae807801654e5aedb004fed6b2d43d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "6f85545f4685a419ce6cd2a4db834caa542566874f28b085f578245ff55104ca",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "e870b7b621ccda64c7e3cb1ea47ef9c40f0b0ebfd2c418a1ef13f3cd3c67a813",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "a5fb0da79d35f88d7a639e2f88333c8fbd5ffa4a797f73c464f0b7b3685b2dfc",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-04T00:00:00",
+      "draw_index": 22,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "5d377f171b523e9f4c8fdbf4328cf43674c3540077a64004ff1ea9ac3fffbdc5",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "3f1bab304be2fa5a665220cd8b2b05700fc818d47e6f9a309ecf1a38fe06185c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "f95d3e3e35b36d94fd5d6b80f88a173288769153424df759304a72d3277b3257",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "ebd0eb5e9220ab335a25874dc6ae48d6482297fa22146eb8a72108c67cee3892",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "39a258d5005cfdde1c5559d9d9d7947a5fd14ef46a54ccb40d421ff18470d0ca",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "7d9ac7a40ca0ab0d1e1f5c6a61f116e22ec05de2be4f9aa271d8d2bdc3275ecf",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 23,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "b454e1c50063ea4bb69e370db830c97c302e1137e91b4e90c31a478e3936654f",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "8cae6f93e19892ae5ee5256dca2386deff7c3d61f3e8167012145b49e79bcbd2",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "cf7705ed079b57ccc50cf074097e0105e241b68ab687d3068825545ffc56afa8",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "6757985f17cceb5a8a6f2a6d5987f5f443c0c68dc879a58d8d92bed6ed224893",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "2725f5b46a0dfc91a43ee78a3f8a3f9920c17f37502faade07059a3650fcaa41",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "727e74b112f41b9258834854b4b770bca2c5c2931ee3189a85cf3fef29f321db",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-05T00:00:00",
+      "draw_index": 24,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "6612025aaabd4af70c566a5dddbc47a4205bbf12174d7c3cb9e8cb98e423316e",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 2,
+      "sum_total": 610,
+      "sum_scaled": 61.0,
+      "sum_bucket": "mid",
+      "parity_vector": {
+        "even": 1,
+        "odd": 1
+      },
+      "decade_hist": {
+        "01-10": 1,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 1,
+        "61-70": 0
+      },
+      "checksum": "c1d4613405021e2bb9862713b1876f532b49e0030ab5201899eef1e68d0e428a",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 4,
+      "sum_total": 610,
+      "sum_scaled": 122.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 2,
+        "odd": 2
+      },
+      "decade_hist": {
+        "01-10": 2,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 2,
+        "61-70": 0
+      },
+      "checksum": "aea6142769c1faef27a6dfd548e0b1407b878b6880908d51b6ed49b34cee237d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 6,
+      "sum_total": 610,
+      "sum_scaled": 183.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 3,
+        "odd": 3
+      },
+      "decade_hist": {
+        "01-10": 3,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 3,
+        "61-70": 0
+      },
+      "checksum": "e33855338bdde60ff1c81f3319cd2cad9cd026001fd32f5879dafc71e5b1756d",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 8,
+      "sum_total": 610,
+      "sum_scaled": 244.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 4,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 4,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "a0e9fc189e7c19cc4c42cd12030c6c6cfe9def62cd30cb93948d0cca34b6e328",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 9,
+      "sum_total": 610,
+      "sum_scaled": 274.5,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 4
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 4,
+        "61-70": 0
+      },
+      "checksum": "d924be6a7d297865367c292a826fe2c62677dede064b012e3c89c1bcb29a00b7",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    },
+    {
+      "draw_date": "2023-04-06T00:00:00",
+      "draw_index": 25,
+      "keno_type": 10,
+      "sum_total": 610,
+      "sum_scaled": 305.0,
+      "sum_bucket": "low",
+      "parity_vector": {
+        "even": 5,
+        "odd": 5
+      },
+      "decade_hist": {
+        "01-10": 5,
+        "11-20": 0,
+        "21-30": 0,
+        "31-40": 0,
+        "41-50": 0,
+        "51-60": 5,
+        "61-70": 0
+      },
+      "checksum": "4f56dc76ccc4a9f4cb8678570d8d882b30a2464fc2b0ebe8ef142ca3e5add77c",
+      "source": "",
+      "version": "1.0",
+      "metadata": {}
+    }
+  ]
+}

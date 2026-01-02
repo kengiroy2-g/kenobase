@@ -1,0 +1,135 @@
+{
+  "hypothese": "Nicht-Gewinner-Zahlen sind populaerer (Birthday, niedrig) als Gewinner-Zahlen",
+  "methode": "Popularitaets-Score basierend auf Birthday/Glueckszahlen-Proxies",
+  "ergebnisse": [
+    {
+      "name": "Kyritz",
+      "gewinner_10": [
+        5,
+        12,
+        20,
+        26,
+        34,
+        36,
+        42,
+        45,
+        48,
+        66
+      ],
+      "other_10": [
+        1,
+        7,
+        14,
+        23,
+        31,
+        39,
+        52,
+        58,
+        63,
+        70
+      ],
+      "gewinner_avg_popularity": 0.3741,
+      "other_avg_popularity": 0.4133,
+      "popularity_diff": 0.0391,
+      "t_statistic": 0.2405,
+      "p_value_onesided": 0.4063,
+      "birthday_in_gewinner": 4,
+      "birthday_in_other": 5,
+      "hypothesis_result": "INCONCLUSIVE",
+      "null_model": {
+        "mean": 0.0114,
+        "std": 0.0995,
+        "z_score": 0.278,
+        "percentile": 61.1
+      }
+    },
+    {
+      "name": "Oberbayern",
+      "gewinner_10": [
+        3,
+        15,
+        18,
+        27,
+        47,
+        53,
+        54,
+        55,
+        66,
+        68
+      ],
+      "other_10": [
+        2,
+        8,
+        11,
+        24,
+        32,
+        41,
+        49,
+        57,
+        62,
+        70
+      ],
+      "gewinner_avg_popularity": 0.3178,
+      "other_avg_popularity": 0.3811,
+      "popularity_diff": 0.0633,
+      "t_statistic": 0.3845,
+      "p_value_onesided": 0.3526,
+      "birthday_in_gewinner": 4,
+      "birthday_in_other": 4,
+      "hypothesis_result": "INCONCLUSIVE",
+      "null_model": {
+        "mean": 0.0776,
+        "std": 0.0986,
+        "z_score": -0.145,
+        "percentile": 45.4
+      }
+    },
+    {
+      "name": "Nordsachsen",
+      "gewinner_10": [
+        9,
+        19,
+        37,
+        38,
+        43,
+        45,
+        48,
+        57,
+        59,
+        67
+      ],
+      "other_10": [
+        3,
+        11,
+        22,
+        28,
+        35,
+        51,
+        54,
+        62,
+        66,
+        70
+      ],
+      "gewinner_avg_popularity": 0.233,
+      "other_avg_popularity": 0.352,
+      "popularity_diff": 0.1189,
+      "t_statistic": 0.763,
+      "p_value_onesided": 0.2277,
+      "birthday_in_gewinner": 2,
+      "birthday_in_other": 4,
+      "hypothesis_result": "INCONCLUSIVE",
+      "null_model": {
+        "mean": 0.1757,
+        "std": 0.0996,
+        "z_score": -0.571,
+        "percentile": 27.9
+      }
+    }
+  ],
+  "aggregiert": {
+    "avg_popularity_diff": 0.0738,
+    "birthday_in_gewinner_total": 10,
+    "birthday_in_other_total": 13,
+    "confirmed_count": 0
+  }
+}

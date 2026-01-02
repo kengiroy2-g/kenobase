@@ -20,6 +20,8 @@ from typing import Dict, List, Tuple
 import pandas as pd
 import numpy as np
 
+from kenobase.core.keno_quotes import get_fixed_quote
+
 
 # ============================================================================
 # TICKETS
@@ -35,12 +37,6 @@ TICKET_B = {
     8: [3, 36, 43, 48, 51, 58, 61, 64],
     9: [3, 7, 36, 43, 48, 51, 58, 61, 64],
     10: [3, 7, 13, 36, 43, 48, 51, 58, 61, 64],
-}
-
-KENO_QUOTES = {
-    8: {8: 10000, 7: 1000, 6: 100, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    9: {9: 50000, 8: 5000, 7: 500, 6: 50, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    10: {10: 100000, 9: 10000, 8: 1000, 7: 100, 6: 15, 5: 5, 4: 0, 3: 0, 2: 0, 1: 0, 0: 2}
 }
 
 
@@ -69,8 +65,7 @@ def load_2025_data(base_path: Path) -> pd.DataFrame:
 def simulate_ticket(ticket: List[int], keno_type: int, draw_set: set) -> Tuple[int, int]:
     """Simuliert ein Ticket."""
     hits = sum(1 for n in ticket if n in draw_set)
-    win = KENO_QUOTES.get(keno_type, {}).get(hits, 0)
-    return win, hits
+    return int(get_fixed_quote(keno_type, hits)), hits
 
 
 def test_2025(df: pd.DataFrame) -> Dict:

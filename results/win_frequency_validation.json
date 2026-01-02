@@ -1,0 +1,893 @@
+{
+  "analysis": "a3_axiom_win_frequency_validation",
+  "generated_at": "2025-12-31T03:32:17.970458",
+  "data_source": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+  "n_draws": 1457,
+  "date_range": {
+    "start": "2022-01-03",
+    "end": "2025-12-29"
+  },
+  "acceptance_threshold": 0.95,
+  "per_type_results": [
+    {
+      "keno_type": 2,
+      "ticket": [
+        9,
+        50
+      ],
+      "total_months": 48,
+      "months_with_win": 44,
+      "win_frequency": 0.9166666666666666,
+      "passes_threshold": false,
+      "monthly_details": {
+        "2022-01": {
+          "draws": 29,
+          "wins": 4
+        },
+        "2022-02": {
+          "draws": 28,
+          "wins": 0
+        },
+        "2022-03": {
+          "draws": 31,
+          "wins": 1
+        },
+        "2022-04": {
+          "draws": 30,
+          "wins": 1
+        },
+        "2022-05": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2022-06": {
+          "draws": 30,
+          "wins": 4
+        },
+        "2022-07": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2022-08": {
+          "draws": 31,
+          "wins": 6
+        },
+        "2022-09": {
+          "draws": 30,
+          "wins": 2
+        },
+        "2022-10": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2022-11": {
+          "draws": 30,
+          "wins": 2
+        },
+        "2022-12": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2023-01": {
+          "draws": 31,
+          "wins": 4
+        },
+        "2023-02": {
+          "draws": 28,
+          "wins": 1
+        },
+        "2023-03": {
+          "draws": 31,
+          "wins": 7
+        },
+        "2023-04": {
+          "draws": 30,
+          "wins": 5
+        },
+        "2023-05": {
+          "draws": 31,
+          "wins": 7
+        },
+        "2023-06": {
+          "draws": 30,
+          "wins": 0
+        },
+        "2023-07": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2023-08": {
+          "draws": 31,
+          "wins": 6
+        },
+        "2023-09": {
+          "draws": 30,
+          "wins": 1
+        },
+        "2023-10": {
+          "draws": 31,
+          "wins": 8
+        },
+        "2023-11": {
+          "draws": 30,
+          "wins": 4
+        },
+        "2023-12": {
+          "draws": 31,
+          "wins": 5
+        },
+        "2024-01": {
+          "draws": 31,
+          "wins": 1
+        },
+        "2024-02": {
+          "draws": 29,
+          "wins": 4
+        },
+        "2024-03": {
+          "draws": 31,
+          "wins": 1
+        },
+        "2024-04": {
+          "draws": 30,
+          "wins": 3
+        },
+        "2024-05": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2024-06": {
+          "draws": 30,
+          "wins": 3
+        },
+        "2024-07": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2024-08": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2024-09": {
+          "draws": 30,
+          "wins": 1
+        },
+        "2024-10": {
+          "draws": 31,
+          "wins": 5
+        },
+        "2024-11": {
+          "draws": 30,
+          "wins": 2
+        },
+        "2024-12": {
+          "draws": 31,
+          "wins": 4
+        },
+        "2025-01": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2025-02": {
+          "draws": 28,
+          "wins": 0
+        },
+        "2025-03": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2025-04": {
+          "draws": 30,
+          "wins": 5
+        },
+        "2025-05": {
+          "draws": 31,
+          "wins": 2
+        },
+        "2025-06": {
+          "draws": 30,
+          "wins": 2
+        },
+        "2025-07": {
+          "draws": 31,
+          "wins": 0
+        },
+        "2025-08": {
+          "draws": 31,
+          "wins": 1
+        },
+        "2025-09": {
+          "draws": 30,
+          "wins": 3
+        },
+        "2025-10": {
+          "draws": 31,
+          "wins": 3
+        },
+        "2025-11": {
+          "draws": 30,
+          "wins": 3
+        },
+        "2025-12": {
+          "draws": 29,
+          "wins": 5
+        }
+      }
+    },
+    {
+      "keno_type": 6,
+      "ticket": [
+        3,
+        24,
+        40,
+        49,
+        51,
+        64
+      ],
+      "total_months": 48,
+      "months_with_win": 48,
+      "win_frequency": 1.0,
+      "passes_threshold": true,
+      "monthly_details": {
+        "2022-01": {
+          "draws": 29,
+          "wins": 18
+        },
+        "2022-02": {
+          "draws": 28,
+          "wins": 23
+        },
+        "2022-03": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2022-04": {
+          "draws": 30,
+          "wins": 16
+        },
+        "2022-05": {
+          "draws": 31,
+          "wins": 14
+        },
+        "2022-06": {
+          "draws": 30,
+          "wins": 18
+        },
+        "2022-07": {
+          "draws": 31,
+          "wins": 21
+        },
+        "2022-08": {
+          "draws": 31,
+          "wins": 14
+        },
+        "2022-09": {
+          "draws": 30,
+          "wins": 19
+        },
+        "2022-10": {
+          "draws": 31,
+          "wins": 18
+        },
+        "2022-11": {
+          "draws": 30,
+          "wins": 20
+        },
+        "2022-12": {
+          "draws": 31,
+          "wins": 17
+        },
+        "2023-01": {
+          "draws": 31,
+          "wins": 17
+        },
+        "2023-02": {
+          "draws": 28,
+          "wins": 12
+        },
+        "2023-03": {
+          "draws": 31,
+          "wins": 13
+        },
+        "2023-04": {
+          "draws": 30,
+          "wins": 17
+        },
+        "2023-05": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2023-06": {
+          "draws": 30,
+          "wins": 22
+        },
+        "2023-07": {
+          "draws": 31,
+          "wins": 19
+        },
+        "2023-08": {
+          "draws": 31,
+          "wins": 17
+        },
+        "2023-09": {
+          "draws": 30,
+          "wins": 20
+        },
+        "2023-10": {
+          "draws": 31,
+          "wins": 14
+        },
+        "2023-11": {
+          "draws": 30,
+          "wins": 13
+        },
+        "2023-12": {
+          "draws": 31,
+          "wins": 19
+        },
+        "2024-01": {
+          "draws": 31,
+          "wins": 16
+        },
+        "2024-02": {
+          "draws": 29,
+          "wins": 15
+        },
+        "2024-03": {
+          "draws": 31,
+          "wins": 15
+        },
+        "2024-04": {
+          "draws": 30,
+          "wins": 19
+        },
+        "2024-05": {
+          "draws": 31,
+          "wins": 17
+        },
+        "2024-06": {
+          "draws": 30,
+          "wins": 20
+        },
+        "2024-07": {
+          "draws": 31,
+          "wins": 16
+        },
+        "2024-08": {
+          "draws": 31,
+          "wins": 14
+        },
+        "2024-09": {
+          "draws": 30,
+          "wins": 17
+        },
+        "2024-10": {
+          "draws": 31,
+          "wins": 16
+        },
+        "2024-11": {
+          "draws": 30,
+          "wins": 17
+        },
+        "2024-12": {
+          "draws": 31,
+          "wins": 16
+        },
+        "2025-01": {
+          "draws": 31,
+          "wins": 19
+        },
+        "2025-02": {
+          "draws": 28,
+          "wins": 15
+        },
+        "2025-03": {
+          "draws": 31,
+          "wins": 15
+        },
+        "2025-04": {
+          "draws": 30,
+          "wins": 17
+        },
+        "2025-05": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2025-06": {
+          "draws": 30,
+          "wins": 16
+        },
+        "2025-07": {
+          "draws": 31,
+          "wins": 13
+        },
+        "2025-08": {
+          "draws": 31,
+          "wins": 19
+        },
+        "2025-09": {
+          "draws": 30,
+          "wins": 16
+        },
+        "2025-10": {
+          "draws": 31,
+          "wins": 17
+        },
+        "2025-11": {
+          "draws": 30,
+          "wins": 13
+        },
+        "2025-12": {
+          "draws": 29,
+          "wins": 12
+        }
+      }
+    },
+    {
+      "keno_type": 8,
+      "ticket": [
+        2,
+        3,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "total_months": 48,
+      "months_with_win": 48,
+      "win_frequency": 1.0,
+      "passes_threshold": true,
+      "monthly_details": {
+        "2022-01": {
+          "draws": 29,
+          "wins": 24
+        },
+        "2022-02": {
+          "draws": 28,
+          "wins": 25
+        },
+        "2022-03": {
+          "draws": 31,
+          "wins": 25
+        },
+        "2022-04": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2022-05": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2022-06": {
+          "draws": 30,
+          "wins": 24
+        },
+        "2022-07": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2022-08": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2022-09": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2022-10": {
+          "draws": 31,
+          "wins": 25
+        },
+        "2022-11": {
+          "draws": 30,
+          "wins": 22
+        },
+        "2022-12": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2023-01": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2023-02": {
+          "draws": 28,
+          "wins": 20
+        },
+        "2023-03": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2023-04": {
+          "draws": 30,
+          "wins": 24
+        },
+        "2023-05": {
+          "draws": 31,
+          "wins": 24
+        },
+        "2023-06": {
+          "draws": 30,
+          "wins": 24
+        },
+        "2023-07": {
+          "draws": 31,
+          "wins": 28
+        },
+        "2023-08": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2023-09": {
+          "draws": 30,
+          "wins": 24
+        },
+        "2023-10": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2023-11": {
+          "draws": 30,
+          "wins": 22
+        },
+        "2023-12": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2024-01": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2024-02": {
+          "draws": 29,
+          "wins": 21
+        },
+        "2024-03": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2024-04": {
+          "draws": 30,
+          "wins": 26
+        },
+        "2024-05": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2024-06": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2024-07": {
+          "draws": 31,
+          "wins": 24
+        },
+        "2024-08": {
+          "draws": 31,
+          "wins": 24
+        },
+        "2024-09": {
+          "draws": 30,
+          "wins": 21
+        },
+        "2024-10": {
+          "draws": 31,
+          "wins": 24
+        },
+        "2024-11": {
+          "draws": 30,
+          "wins": 18
+        },
+        "2024-12": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2025-01": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2025-02": {
+          "draws": 28,
+          "wins": 20
+        },
+        "2025-03": {
+          "draws": 31,
+          "wins": 18
+        },
+        "2025-04": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2025-05": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2025-06": {
+          "draws": 30,
+          "wins": 23
+        },
+        "2025-07": {
+          "draws": 31,
+          "wins": 18
+        },
+        "2025-08": {
+          "draws": 31,
+          "wins": 20
+        },
+        "2025-09": {
+          "draws": 30,
+          "wins": 22
+        },
+        "2025-10": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2025-11": {
+          "draws": 30,
+          "wins": 20
+        },
+        "2025-12": {
+          "draws": 29,
+          "wins": 14
+        }
+      }
+    },
+    {
+      "keno_type": 10,
+      "ticket": [
+        2,
+        3,
+        9,
+        24,
+        33,
+        36,
+        49,
+        50,
+        51,
+        64
+      ],
+      "total_months": 48,
+      "months_with_win": 48,
+      "win_frequency": 1.0,
+      "passes_threshold": true,
+      "monthly_details": {
+        "2022-01": {
+          "draws": 29,
+          "wins": 24
+        },
+        "2022-02": {
+          "draws": 28,
+          "wins": 26
+        },
+        "2022-03": {
+          "draws": 31,
+          "wins": 27
+        },
+        "2022-04": {
+          "draws": 30,
+          "wins": 28
+        },
+        "2022-05": {
+          "draws": 31,
+          "wins": 24
+        },
+        "2022-06": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2022-07": {
+          "draws": 31,
+          "wins": 25
+        },
+        "2022-08": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2022-09": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2022-10": {
+          "draws": 31,
+          "wins": 28
+        },
+        "2022-11": {
+          "draws": 30,
+          "wins": 26
+        },
+        "2022-12": {
+          "draws": 31,
+          "wins": 25
+        },
+        "2023-01": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2023-02": {
+          "draws": 28,
+          "wins": 22
+        },
+        "2023-03": {
+          "draws": 31,
+          "wins": 27
+        },
+        "2023-04": {
+          "draws": 30,
+          "wins": 28
+        },
+        "2023-05": {
+          "draws": 31,
+          "wins": 27
+        },
+        "2023-06": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2023-07": {
+          "draws": 31,
+          "wins": 30
+        },
+        "2023-08": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2023-09": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2023-10": {
+          "draws": 31,
+          "wins": 30
+        },
+        "2023-11": {
+          "draws": 30,
+          "wins": 26
+        },
+        "2023-12": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2024-01": {
+          "draws": 31,
+          "wins": 28
+        },
+        "2024-02": {
+          "draws": 29,
+          "wins": 20
+        },
+        "2024-03": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2024-04": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2024-05": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2024-06": {
+          "draws": 30,
+          "wins": 28
+        },
+        "2024-07": {
+          "draws": 31,
+          "wins": 27
+        },
+        "2024-08": {
+          "draws": 31,
+          "wins": 30
+        },
+        "2024-09": {
+          "draws": 30,
+          "wins": 27
+        },
+        "2024-10": {
+          "draws": 31,
+          "wins": 28
+        },
+        "2024-11": {
+          "draws": 30,
+          "wins": 23
+        },
+        "2024-12": {
+          "draws": 31,
+          "wins": 22
+        },
+        "2025-01": {
+          "draws": 31,
+          "wins": 28
+        },
+        "2025-02": {
+          "draws": 28,
+          "wins": 25
+        },
+        "2025-03": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2025-04": {
+          "draws": 30,
+          "wins": 29
+        },
+        "2025-05": {
+          "draws": 31,
+          "wins": 25
+        },
+        "2025-06": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2025-07": {
+          "draws": 31,
+          "wins": 27
+        },
+        "2025-08": {
+          "draws": 31,
+          "wins": 23
+        },
+        "2025-09": {
+          "draws": 30,
+          "wins": 25
+        },
+        "2025-10": {
+          "draws": 31,
+          "wins": 26
+        },
+        "2025-11": {
+          "draws": 30,
+          "wins": 24
+        },
+        "2025-12": {
+          "draws": 29,
+          "wins": 23
+        }
+      }
+    }
+  ],
+  "random_baseline": [
+    {
+      "keno_type": 2,
+      "n_seeds": 100,
+      "mean_win_frequency": 0.911875,
+      "min_win_frequency": 0.8125,
+      "max_win_frequency": 1.0,
+      "passes_threshold_count": 18,
+      "passes_threshold_pct": 0.18
+    },
+    {
+      "keno_type": 6,
+      "n_seeds": 100,
+      "mean_win_frequency": 1.0,
+      "min_win_frequency": 1.0,
+      "max_win_frequency": 1.0,
+      "passes_threshold_count": 100,
+      "passes_threshold_pct": 1.0
+    },
+    {
+      "keno_type": 8,
+      "n_seeds": 100,
+      "mean_win_frequency": 1.0,
+      "min_win_frequency": 1.0,
+      "max_win_frequency": 1.0,
+      "passes_threshold_count": 100,
+      "passes_threshold_pct": 1.0
+    },
+    {
+      "keno_type": 10,
+      "n_seeds": 100,
+      "mean_win_frequency": 1.0,
+      "min_win_frequency": 1.0,
+      "max_win_frequency": 1.0,
+      "passes_threshold_count": 100,
+      "passes_threshold_pct": 1.0
+    }
+  ],
+  "conclusion": {
+    "a3_axiom_validated": false,
+    "summary": "A3 PARTIAL: Some ticket types below threshold"
+  }
+}

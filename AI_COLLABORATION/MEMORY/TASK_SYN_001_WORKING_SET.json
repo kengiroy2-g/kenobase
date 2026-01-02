@@ -1,0 +1,4 @@
+﻿[
+    "scripts/test_cooldown_rule_isolated.py",
+    "results/cooldown_rule_isolated_test.json"
+]

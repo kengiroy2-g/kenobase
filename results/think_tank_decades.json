@@ -1,0 +1,1005 @@
+{
+  "metadata": {
+    "file": "C:\\Users\\kenfu\\Documents\\keno_base\\data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+    "total_draws": 1457,
+    "numbers_per_draw": 20,
+    "decades": [
+      "1-10",
+      "11-20",
+      "21-30",
+      "31-40",
+      "41-50",
+      "51-60",
+      "61-70"
+    ],
+    "expected_per_decade": 2.8571
+  },
+  "decade_statistics": {
+    "1-10": {
+      "mean": 2.9052848318462594,
+      "std": 1.3143339706508588,
+      "min": 0,
+      "max": 8,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": 0.0481419747034022
+    },
+    "11-20": {
+      "mean": 2.8126286890871652,
+      "std": 1.2876712344556247,
+      "min": 0,
+      "max": 7,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": -0.04451416805569197
+    },
+    "21-30": {
+      "mean": 2.8167467398764585,
+      "std": 1.3409938486403632,
+      "min": 0,
+      "max": 7,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": -0.04039611726639869
+    },
+    "31-40": {
+      "mean": 2.888812628689087,
+      "std": 1.330696569554783,
+      "min": 0,
+      "max": 7,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": 0.03166977154622996
+    },
+    "41-50": {
+      "mean": 2.8867536032944408,
+      "std": 1.3235407121978857,
+      "min": 0,
+      "max": 8,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": 0.029610746151583545
+    },
+    "51-60": {
+      "mean": 2.8531228551818804,
+      "std": 1.306382697465308,
+      "min": 0,
+      "max": 7,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": -0.004020001960976849
+    },
+    "61-70": {
+      "mean": 2.836650652024708,
+      "std": 1.3376761149823562,
+      "min": 0,
+      "max": 8,
+      "expected": 2.857142857142857,
+      "deviation_from_expected": -0.020492205118149087
+    }
+  },
+  "distribution_patterns": {
+    "top_30_sorted_patterns": {
+      "5-4-3-3-2-2-1": {
+        "count": 173,
+        "frequency": 0.11873713109128346,
+        "percentage": 11.87
+      },
+      "4-4-3-3-3-2-1": {
+        "count": 143,
+        "frequency": 0.09814687714481812,
+        "percentage": 9.81
+      },
+      "4-4-3-3-2-2-2": {
+        "count": 120,
+        "frequency": 0.08236101578586136,
+        "percentage": 8.24
+      },
+      "4-3-3-3-3-2-2": {
+        "count": 91,
+        "frequency": 0.06245710363761153,
+        "percentage": 6.25
+      },
+      "4-4-4-3-2-2-1": {
+        "count": 78,
+        "frequency": 0.053534660260809885,
+        "percentage": 5.35
+      },
+      "5-4-4-3-2-1-1": {
+        "count": 68,
+        "frequency": 0.04667124227865477,
+        "percentage": 4.67
+      },
+      "5-4-3-2-2-2-2": {
+        "count": 50,
+        "frequency": 0.03431708991077557,
+        "percentage": 3.43
+      },
+      "5-3-3-3-3-2-1": {
+        "count": 46,
+        "frequency": 0.031571722717913524,
+        "percentage": 3.16
+      },
+      "5-3-3-3-2-2-2": {
+        "count": 42,
+        "frequency": 0.028826355525051476,
+        "percentage": 2.88
+      },
+      "6-4-3-2-2-2-1": {
+        "count": 41,
+        "frequency": 0.028140013726835965,
+        "percentage": 2.81
+      },
+      "5-4-4-2-2-2-1": {
+        "count": 38,
+        "frequency": 0.02608098833218943,
+        "percentage": 2.61
+      },
+      "4-4-4-3-3-2-0": {
+        "count": 33,
+        "frequency": 0.022649279341111873,
+        "percentage": 2.26
+      },
+      "5-5-3-2-2-2-1": {
+        "count": 32,
+        "frequency": 0.02196293754289636,
+        "percentage": 2.2
+      },
+      "5-4-3-3-3-2-0": {
+        "count": 31,
+        "frequency": 0.02127659574468085,
+        "percentage": 2.13
+      },
+      "6-3-3-3-2-2-1": {
+        "count": 30,
+        "frequency": 0.02059025394646534,
+        "percentage": 2.06
+      },
+      "6-4-3-3-2-1-1": {
+        "count": 30,
+        "frequency": 0.02059025394646534,
+        "percentage": 2.06
+      },
+      "5-4-4-3-2-2-0": {
+        "count": 29,
+        "frequency": 0.01990391214824983,
+        "percentage": 1.99
+      },
+      "4-4-4-3-3-1-1": {
+        "count": 27,
+        "frequency": 0.018531228551818806,
+        "percentage": 1.85
+      },
+      "5-4-3-3-3-1-1": {
+        "count": 23,
+        "frequency": 0.015785861358956762,
+        "percentage": 1.58
+      },
+      "5-5-3-3-2-2-0": {
+        "count": 20,
+        "frequency": 0.013726835964310227,
+        "percentage": 1.37
+      },
+      "4-3-3-3-3-3-1": {
+        "count": 19,
+        "frequency": 0.013040494166094716,
+        "percentage": 1.3
+      },
+      "5-5-3-3-2-1-1": {
+        "count": 18,
+        "frequency": 0.012354152367879203,
+        "percentage": 1.24
+      },
+      "5-4-4-3-3-1-0": {
+        "count": 16,
+        "frequency": 0.01098146877144818,
+        "percentage": 1.1
+      },
+      "5-5-4-3-2-1-0": {
+        "count": 16,
+        "frequency": 0.01098146877144818,
+        "percentage": 1.1
+      },
+      "6-5-3-2-2-1-1": {
+        "count": 14,
+        "frequency": 0.009608785175017159,
+        "percentage": 0.96
+      },
+      "6-4-4-3-2-1-0": {
+        "count": 13,
+        "frequency": 0.008922443376801648,
+        "percentage": 0.89
+      },
+      "4-4-4-2-2-2-2": {
+        "count": 12,
+        "frequency": 0.008236101578586136,
+        "percentage": 0.82
+      },
+      "6-4-4-2-2-1-1": {
+        "count": 11,
+        "frequency": 0.0075497597803706245,
+        "percentage": 0.75
+      },
+      "5-5-4-2-2-1-1": {
+        "count": 11,
+        "frequency": 0.0075497597803706245,
+        "percentage": 0.75
+      },
+      "4-4-4-4-2-1-1": {
+        "count": 11,
+        "frequency": 0.0075497597803706245,
+        "percentage": 0.75
+      }
+    },
+    "top_50_exact_distributions": {
+      "4-2-2-3-3-3-3": {
+        "count": 4,
+        "frequency": 0.002745367192862045,
+        "percentage": 0.27
+      },
+      "3-3-2-3-4-3-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-3-4-3-2-2-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-3-1-3-4-2-4": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "2-2-3-3-3-4-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-2-4-3-2-2-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "2-3-3-3-3-4-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-2-4-2-3-3-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-3-3-3-2-3-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-2-3-2-4-2-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-3-2-3-2-4-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "2-2-1-3-4-3-5": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-4-4-1-3-3-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-3-1-3-3-4-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-2-3-2-3-3-4": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "5-2-2-4-3-2-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-2-2-5-1-3-3": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "4-3-3-3-4-1-2": {
+        "count": 3,
+        "frequency": 0.002059025394646534,
+        "percentage": 0.21
+      },
+      "3-3-3-4-2-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "5-4-2-2-2-4-1": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "1-2-3-3-3-5-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-3-3-3-3-3-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-3-2-3-4-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-5-4-3-0-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-3-4-1-3-4-2": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-2-2-4-3-4-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-4-2-2-3-4-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-3-2-3-5-2": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-2-3-4-4-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-2-6-3-1-2-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "4-2-3-4-2-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-2-4-2-3-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-4-2-4-4-1": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "4-2-1-3-3-3-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-3-2-4-4-3-2": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-3-3-4-2-4-1": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-3-2-4-3-2-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-2-3-3-4-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-4-4-2-1-3-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "1-3-4-2-4-3-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-2-3-1-5-2-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "4-3-2-2-5-3-1": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "4-1-4-2-5-1-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-3-2-4-3-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-3-3-1-2-5-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-1-2-4-3-4-4": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "3-1-3-4-4-2-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "4-2-3-3-2-3-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-5-2-3-2-3-3": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      },
+      "2-3-3-2-4-4-2": {
+        "count": 2,
+        "frequency": 0.0013726835964310226,
+        "percentage": 0.14
+      }
+    }
+  },
+  "zero_decade_analysis": {
+    "per_decade": {
+      "1-10": {
+        "count": 30,
+        "frequency": 0.02059025394646534,
+        "percentage": 2.06
+      },
+      "11-20": {
+        "count": 37,
+        "frequency": 0.02539464653397392,
+        "percentage": 2.54
+      },
+      "21-30": {
+        "count": 42,
+        "frequency": 0.028826355525051476,
+        "percentage": 2.88
+      },
+      "31-40": {
+        "count": 28,
+        "frequency": 0.019217570350034317,
+        "percentage": 1.92
+      },
+      "41-50": {
+        "count": 35,
+        "frequency": 0.024021962937542895,
+        "percentage": 2.4
+      },
+      "51-60": {
+        "count": 43,
+        "frequency": 0.029512697323266987,
+        "percentage": 2.95
+      },
+      "61-70": {
+        "count": 42,
+        "frequency": 0.028826355525051476,
+        "percentage": 2.88
+      }
+    },
+    "multiple_empty_decades": {
+      "0_decades_empty": {
+        "count": 1206,
+        "frequency": 0.8277282086479066,
+        "percentage": 82.77
+      },
+      "1_decades_empty": {
+        "count": 245,
+        "frequency": 0.16815374056280027,
+        "percentage": 16.82
+      },
+      "2_decades_empty": {
+        "count": 6,
+        "frequency": 0.004118050789293068,
+        "percentage": 0.41
+      }
+    }
+  },
+  "correlation_between_decades": {
+    "1-10": {
+      "11-20": -0.1585,
+      "21-30": -0.1516,
+      "31-40": -0.1587,
+      "41-50": -0.1407,
+      "51-60": -0.1792,
+      "61-70": -0.2059
+    },
+    "11-20": {
+      "1-10": -0.1585,
+      "21-30": -0.1566,
+      "31-40": -0.1948,
+      "41-50": -0.1578,
+      "51-60": -0.1351,
+      "61-70": -0.168
+    },
+    "21-30": {
+      "1-10": -0.1516,
+      "11-20": -0.1566,
+      "31-40": -0.1849,
+      "41-50": -0.1714,
+      "51-60": -0.1944,
+      "61-70": -0.1594
+    },
+    "31-40": {
+      "1-10": -0.1587,
+      "11-20": -0.1948,
+      "21-30": -0.1849,
+      "41-50": -0.1767,
+      "51-60": -0.1725,
+      "61-70": -0.1228
+    },
+    "41-50": {
+      "1-10": -0.1407,
+      "11-20": -0.1578,
+      "21-30": -0.1714,
+      "31-40": -0.1767,
+      "51-60": -0.1505,
+      "61-70": -0.2047
+    },
+    "51-60": {
+      "1-10": -0.1792,
+      "11-20": -0.1351,
+      "21-30": -0.1944,
+      "31-40": -0.1725,
+      "41-50": -0.1505,
+      "61-70": -0.1551
+    },
+    "61-70": {
+      "1-10": -0.2059,
+      "11-20": -0.168,
+      "21-30": -0.1594,
+      "31-40": -0.1228,
+      "41-50": -0.2047,
+      "51-60": -0.1551
+    }
+  },
+  "uniformity_test": {
+    "chi2_statistic": 4.205490734385724,
+    "p_value": 0.6488901065245034,
+    "is_uniform_alpha_005": "True",
+    "total_per_decade": {
+      "1-10": 4233,
+      "11-20": 4098,
+      "21-30": 4104,
+      "31-40": 4209,
+      "41-50": 4206,
+      "51-60": 4157,
+      "61-70": 4133
+    },
+    "expected_per_decade": 4162.857142857143
+  },
+  "theoretical_vs_observed": {
+    "counts_0_to_10": {
+      "0": {
+        "theoretical": 0.025894,
+        "observed": 0.025199,
+        "ratio": 0.9731
+      },
+      "1": {
+        "theoretical": 0.126312,
+        "observed": 0.123443,
+        "ratio": 0.9773
+      },
+      "2": {
+        "theoretical": 0.257136,
+        "observed": 0.259829,
+        "ratio": 1.0105
+      },
+      "3": {
+        "theoretical": 0.287035,
+        "observed": 0.289342,
+        "ratio": 1.008
+      },
+      "4": {
+        "theoretical": 0.194075,
+        "observed": 0.195411,
+        "ratio": 1.0069
+      },
+      "5": {
+        "theoretical": 0.082805,
+        "observed": 0.080596,
+        "ratio": 0.9733
+      },
+      "6": {
+        "theoretical": 0.022501,
+        "observed": 0.022257,
+        "ratio": 0.9891
+      },
+      "7": {
+        "theoretical": 0.00383,
+        "observed": 0.00353,
+        "ratio": 0.9216
+      },
+      "8": {
+        "theoretical": 0.000389,
+        "observed": 0.000392,
+        "ratio": 1.0082
+      },
+      "9": {
+        "theoretical": 2.1e-05,
+        "observed": 0.0,
+        "ratio": 0.0
+      },
+      "10": {
+        "theoretical": 0.0,
+        "observed": 0.0,
+        "ratio": 0.0
+      }
+    }
+  },
+  "extreme_draws_count": 437,
+  "extreme_draws_sample": [
+    {
+      "draw_index": 9,
+      "date": "12.01.2022",
+      "distribution": [
+        5,
+        0,
+        3,
+        4,
+        4,
+        3,
+        1
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 11,
+      "date": "14.01.2022",
+      "distribution": [
+        7,
+        3,
+        1,
+        1,
+        4,
+        3,
+        1
+      ],
+      "max_in_decade": 7,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 13,
+      "date": "16.01.2022",
+      "distribution": [
+        0,
+        3,
+        5,
+        2,
+        3,
+        3,
+        4
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 14,
+      "date": "17.01.2022",
+      "distribution": [
+        1,
+        2,
+        1,
+        6,
+        2,
+        4,
+        4
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 15,
+      "date": "18.01.2022",
+      "distribution": [
+        2,
+        0,
+        5,
+        4,
+        4,
+        3,
+        2
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 17,
+      "date": "20.01.2022",
+      "distribution": [
+        2,
+        5,
+        0,
+        3,
+        3,
+        3,
+        4
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 22,
+      "date": "25.01.2022",
+      "distribution": [
+        3,
+        0,
+        2,
+        2,
+        3,
+        2,
+        8
+      ],
+      "max_in_decade": 8,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 24,
+      "date": "27.01.2022",
+      "distribution": [
+        1,
+        0,
+        5,
+        5,
+        1,
+        4,
+        4
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 32,
+      "date": "04.02.2022",
+      "distribution": [
+        3,
+        2,
+        1,
+        5,
+        6,
+        2,
+        1
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 36,
+      "date": "08.02.2022",
+      "distribution": [
+        6,
+        3,
+        2,
+        2,
+        1,
+        4,
+        2
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 38,
+      "date": "10.02.2022",
+      "distribution": [
+        3,
+        2,
+        5,
+        4,
+        3,
+        0,
+        3
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 43,
+      "date": "15.02.2022",
+      "distribution": [
+        0,
+        2,
+        3,
+        5,
+        4,
+        5,
+        1
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 44,
+      "date": "16.02.2022",
+      "distribution": [
+        4,
+        5,
+        0,
+        1,
+        2,
+        2,
+        6
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 45,
+      "date": "17.02.2022",
+      "distribution": [
+        5,
+        3,
+        5,
+        2,
+        0,
+        2,
+        3
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 49,
+      "date": "21.02.2022",
+      "distribution": [
+        2,
+        4,
+        1,
+        1,
+        6,
+        4,
+        2
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 50,
+      "date": "22.02.2022",
+      "distribution": [
+        2,
+        2,
+        4,
+        2,
+        2,
+        2,
+        6
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 2
+    },
+    {
+      "draw_index": 51,
+      "date": "23.02.2022",
+      "distribution": [
+        2,
+        3,
+        3,
+        3,
+        1,
+        2,
+        6
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 57,
+      "date": "01.03.2022",
+      "distribution": [
+        1,
+        3,
+        6,
+        1,
+        4,
+        4,
+        1
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    },
+    {
+      "draw_index": 63,
+      "date": "07.03.2022",
+      "distribution": [
+        3,
+        4,
+        5,
+        3,
+        1,
+        0,
+        4
+      ],
+      "max_in_decade": 5,
+      "min_in_decade": 0
+    },
+    {
+      "draw_index": 70,
+      "date": "14.03.2022",
+      "distribution": [
+        3,
+        3,
+        6,
+        3,
+        2,
+        1,
+        2
+      ],
+      "max_in_decade": 6,
+      "min_in_decade": 1
+    }
+  ],
+  "recommendation": {
+    "most_common_pattern": "5-4-3-3-2-2-1",
+    "pattern_frequency": 0.11873713109128346,
+    "strategy": "Erstelle Tickets mit Dekaden-Verteilung, die dem haeufigsten Muster entspricht",
+    "suggested_distribution": {
+      "1-10": 3,
+      "11-20": 3,
+      "21-30": 3,
+      "31-40": 3,
+      "41-50": 3,
+      "51-60": 3,
+      "61-70": 3
+    },
+    "optimal_ranges": {
+      "1-10": "1-3",
+      "11-20": "1-3",
+      "21-30": "1-3",
+      "31-40": "1-3",
+      "41-50": "1-3",
+      "51-60": "1-3",
+      "61-70": "1-3"
+    }
+  },
+  "hypothesis_assessment": {
+    "hypothesis": "Decade Distribution Constraint - Das System stellt sicher dass jede Dekade fair vertreten ist",
+    "evidence_for": [],
+    "evidence_against": [
+      "Chi-Quadrat-Test zeigt gleichmaessige Verteilung (p=0.6489) - entspricht Zufallserwartung",
+      "Leere Dekaden im erwarteten Bereich: beobachtet=0.0252, erwartet=0.0259",
+      "Schwache Korrelation zwischen Dekaden (avg=-0.1666) - kein Anti-Clustering"
+    ],
+    "conclusion": "UNWAHRSCHEINLICH: Die Verteilung entspricht dem Zufallsmodell"
+  }
+}

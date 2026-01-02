@@ -1,0 +1,237 @@
+{
+  "analysis_date": "2025-12-31T01:15:16.661179",
+  "phase_semantics": {
+    "normal": ">30 Tage seit letztem Jackpot (kein Cooldown)",
+    "conservative": "7-30 Tage seit Jackpot (leichter Cooldown)",
+    "jackpot": "<7 Tage seit Jackpot (starker Cooldown)"
+  },
+  "results": {
+    "typ_8": {
+      "v1": {
+        "roi_gesamt": -61.69419286094833,
+        "played": 1877,
+        "won": 719.0,
+        "high_wins": 1,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -61.61107614852108,
+          "jackpot": -72.72727272727273,
+          "conservative": -59.009009009009006
+        }
+      },
+      "v2": {
+        "roi_gesamt": -57.37879595098562,
+        "played": 1877,
+        "won": 800.0,
+        "high_wins": 1,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -57.20578980490875,
+          "jackpot": -54.54545454545454,
+          "conservative": -59.45945945945946
+        },
+        "v2_internal_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_internal_mode_roi": {
+          "normal": -51.69491525423729,
+          "conservative": -62.67806267806267,
+          "jackpot": -66.37931034482759
+        }
+      },
+      "per_phase_comparison": {
+        "normal": {
+          "v1_roi": -61.61107614852108,
+          "v2_roi": -57.20578980490875,
+          "delta": 4.405286343612332,
+          "v1_games": 1589,
+          "v2_games": 1589,
+          "winner": "V2"
+        },
+        "conservative": {
+          "v1_roi": -59.009009009009006,
+          "v2_roi": -59.45945945945946,
+          "delta": -0.45045045045045384,
+          "v1_games": 222,
+          "v2_games": 222,
+          "winner": "V1"
+        },
+        "jackpot": {
+          "v1_roi": -72.72727272727273,
+          "v2_roi": -54.54545454545454,
+          "delta": 18.181818181818194,
+          "v1_games": 66,
+          "v2_games": 66,
+          "winner": "V2"
+        }
+      }
+    },
+    "typ_9": {
+      "v1": {
+        "roi_gesamt": -53.862546616941934,
+        "played": 1877,
+        "won": 866.0,
+        "high_wins": 0,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -53.68156073001889,
+          "jackpot": -60.60606060606061,
+          "conservative": -53.153153153153156
+        }
+      },
+      "v2": {
+        "roi_gesamt": -51.78476291955248,
+        "played": 1877,
+        "won": 905.0,
+        "high_wins": 0,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -51.03838892385147,
+          "jackpot": -65.15151515151516,
+          "conservative": -53.153153153153156
+        },
+        "v2_internal_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_internal_mode_roi": {
+          "normal": -51.41242937853108,
+          "conservative": -49.85754985754986,
+          "jackpot": -54.0948275862069
+        }
+      },
+      "per_phase_comparison": {
+        "normal": {
+          "v1_roi": -53.68156073001889,
+          "v2_roi": -51.03838892385147,
+          "delta": 2.643171806167416,
+          "v1_games": 1589,
+          "v2_games": 1589,
+          "winner": "V2"
+        },
+        "conservative": {
+          "v1_roi": -53.153153153153156,
+          "v2_roi": -53.153153153153156,
+          "delta": 0.0,
+          "v1_games": 222,
+          "v2_games": 222,
+          "winner": "TIE"
+        },
+        "jackpot": {
+          "v1_roi": -60.60606060606061,
+          "v2_roi": -65.15151515151516,
+          "delta": -4.545454545454547,
+          "v1_games": 66,
+          "v2_games": 66,
+          "winner": "V1"
+        }
+      }
+    },
+    "typ_10": {
+      "v1": {
+        "roi_gesamt": -52.9035695258391,
+        "played": 1877,
+        "won": 884.0,
+        "high_wins": 1,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -53.49276274386406,
+          "jackpot": -57.57575757575758,
+          "conservative": -47.2972972972973
+        }
+      },
+      "v2": {
+        "roi_gesamt": -49.17421417155035,
+        "played": 1877,
+        "won": 954.0,
+        "high_wins": 2,
+        "mode_distribution": {
+          "normal": 1589,
+          "jackpot": 66,
+          "conservative": 222
+        },
+        "mode_roi": {
+          "normal": -47.89175582127124,
+          "jackpot": -56.060606060606055,
+          "conservative": -56.30630630630631
+        },
+        "v2_internal_mode_distribution": {
+          "normal": 1062,
+          "conservative": 351,
+          "jackpot": 464
+        },
+        "v2_internal_mode_roi": {
+          "normal": -41.14877589453861,
+          "conservative": -63.24786324786324,
+          "jackpot": -56.896551724137936
+        }
+      },
+      "per_phase_comparison": {
+        "normal": {
+          "v1_roi": -53.49276274386406,
+          "v2_roi": -47.89175582127124,
+          "delta": 5.601006922592823,
+          "v1_games": 1589,
+          "v2_games": 1589,
+          "winner": "V2"
+        },
+        "conservative": {
+          "v1_roi": -47.2972972972973,
+          "v2_roi": -56.30630630630631,
+          "delta": -9.009009009009013,
+          "v1_games": 222,
+          "v2_games": 222,
+          "winner": "V1"
+        },
+        "jackpot": {
+          "v1_roi": -57.57575757575758,
+          "v2_roi": -56.060606060606055,
+          "delta": 1.5151515151515227,
+          "v1_games": 66,
+          "v2_games": 66,
+          "winner": "V2"
+        }
+      }
+    }
+  },
+  "summary": {
+    "total_comparisons": 9,
+    "v1_wins": 3,
+    "v2_wins": 5,
+    "ties": 1,
+    "best_per_scenario": {
+      "typ_8_normal": "V2",
+      "typ_8_conservative": "V1",
+      "typ_8_jackpot": "V2",
+      "typ_9_normal": "V2",
+      "typ_9_conservative": "TIE",
+      "typ_9_jackpot": "V1",
+      "typ_10_normal": "V2",
+      "typ_10_conservative": "V1",
+      "typ_10_jackpot": "V2"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "generated": "2026-01-02T12:19:57.305870",
+  "prediction": {
+    "date": "30.12.2025",
+    "jackpot_phase": "COOLDOWN",
+    "hochrisiko": [
+      63,
+      17
+    ],
+    "favoriten": [
+      15,
+      36,
+      38,
+      59,
+      68
+    ],
+    "vermeiden": [
+      14,
+      18,
+      35,
+      43,
+      45,
+      49,
+      50,
+      51,
+      54,
+      56,
+      58,
+      28,
+      16,
+      4,
+      6,
+      10,
+      12,
+      8,
+      9,
+      29,
+      31,
+      13,
+      19,
+      1,
+      2,
+      3,
+      5,
+      11,
+      21,
+      7,
+      23,
+      27,
+      63,
+      17
+    ],
+    "stark_vermeiden": [
+      13,
+      19,
+      1,
+      2,
+      3,
+      5,
+      11,
+      21,
+      7,
+      23,
+      27,
+      63,
+      17
+    ]
+  },
+  "backtest": {
+    "n_tests": 121,
+    "avg_vermeiden_accuracy": 70.98447874048075,
+    "avg_stark_vermeiden_accuracy": 72.26968511813669,
+    "avg_hochrisiko_accuracy": 70.0314465408805,
+    "avg_hochrisiko_n": 2.2169811320754715,
+    "hochrisiko_tests": 106,
+    "avg_favoriten_coverage": 13.388429752066116,
+    "target_80_erreicht": false
+  },
+  "roi_test": {
+    "typ": 7,
+    "roi_random": -39.917355371900825,
+    "roi_filtered": -44.132231404958674,
+    "improvement": -4.214876033057848
+  }
+}

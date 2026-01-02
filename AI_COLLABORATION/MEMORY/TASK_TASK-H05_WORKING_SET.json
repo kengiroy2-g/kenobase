@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/decade_affinity.py",
+    "kenobase/analysis/__init__.py",
+    "scripts/analyze_hyp005.py",
+    "tests/unit/test_decade_affinity.py"
+]

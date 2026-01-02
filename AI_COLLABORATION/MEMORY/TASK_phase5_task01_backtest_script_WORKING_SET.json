@@ -1,0 +1,4 @@
+﻿[
+    "scripts/backtest.py",
+    "tests/unit/test_backtest.py"
+]

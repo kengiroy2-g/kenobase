@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "Keno_GPTs/eurojackpot_archiv_bereinigt.csv",
+    "config/default.yaml",
+    "tests/fixtures/eurojackpot_sample.csv",
+    "data/raw/eurojackpot/eurojackpot_archiv_bereinigt.csv (new)"
+]

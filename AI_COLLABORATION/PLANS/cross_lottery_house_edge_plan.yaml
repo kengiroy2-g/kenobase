@@ -1,0 +1,52 @@
+# Autonomous Loop Plan
+# Updated: 2025-12-29
+
+plan:
+  name: "CROSS_LOTTERY_HOUSE_EDGE"
+
+tasks:
+  - id: CROSS-001
+    name: "Game-Daten inventarisieren + vereinheitlichen"
+    priority: P1
+    status: PENDING
+    current_phase: null
+  - id: CROSS-002
+    name: "Pair-Nullmodell verbessern (Marginals statt uniform)"
+    priority: P1
+    status: PENDING
+    current_phase: null
+  - id: CROSS-003
+    name: "Feature-Level Coupling Tests (Summe/Dekaden/Parity/Uniqueness)"
+    priority: P1
+    status: PENDING
+    current_phase: null
+  - id: CROSS-004
+    name: "Regime/State-Modell (Jackpot-Phasen, Change-Points, Rolling Windows)"
+    priority: HOCH
+    status: PENDING
+    current_phase: null
+  - id: CROSS-005
+    name: "Walk-forward Validierung + Multiple-Testing Guardrails"
+    priority: HOCH
+    status: PENDING
+    current_phase: null
+  - id: CROSS-006
+    name: "Cross-Game Trigger-Rules als Predictor-Layer (Exclude/Include)"
+    priority: MITTEL
+    status: PENDING
+    current_phase: null
+  - id: CROSS-007
+    name: "Ereignisfenster-Analyse (±1/±7/±14 Tage um Jackpot/High Stakes)"
+    priority: MITTEL
+    status: PENDING
+    current_phase: null
+  - id: CROSS-008
+    name: "Bundesland-Zyklus Hypothese: Datenbedarf + Ingestion Plan"
+    priority: P1
+    status: PENDING
+    current_phase: null
+  - id: CROSS-009
+    name: "Report/Artefakte: reproduzierbare Runs + Ergebnis-Synthese"
+    priority: P2
+    status: PENDING
+    current_phase: null

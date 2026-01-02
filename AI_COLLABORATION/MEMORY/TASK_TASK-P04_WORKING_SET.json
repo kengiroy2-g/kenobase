@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/pipeline/strategy.py",
+    "kenobase/pipeline/__init__.py",
+    "tests/unit/test_strategy.py"
+]

@@ -29,6 +29,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional
 
+import argparse
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -496,7 +497,25 @@ def print_summary(result: HYP001CompleteResult) -> None:
 def main() -> int:
     """Hauptfunktion."""
     try:
-        result = run_hyp001_complete()
+        parser = argparse.ArgumentParser(
+            description="HYP-001: Vollstaendige Gewinnklassen-Verteilungsmuster Analyse",
+        )
+        parser.add_argument(
+            "--data",
+            type=str,
+            default=None,
+            help="Pfad zur GQ-CSV (default: Keno_GPTs/Keno_GQ_2022_2023-2024.csv)",
+        )
+        parser.add_argument(
+            "--output",
+            "-o",
+            type=str,
+            default=None,
+            help="Output JSON (default: results/hyp001_distribution_complete.json)",
+        )
+        args = parser.parse_args()
+
+        result = run_hyp001_complete(data_path=args.data, output_path=args.output)
         print_summary(result)
 
         # AC Checklist

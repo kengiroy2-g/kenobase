@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/draw_features.py (NEW - 297 lines)",
+    "kenobase/analysis/__init__.py (MODIFIED - added exports)",
+    "tests/unit/test_draw_features.py (NEW - 28 tests)"
+]

@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/pattern.py",
+    "kenobase/analysis/__init__.py",
+    "tests/unit/test_pattern.py"
+]

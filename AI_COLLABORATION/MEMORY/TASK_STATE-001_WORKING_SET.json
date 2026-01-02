@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "kenobase/analysis/__init__.py",
+    "config/default.yaml",
+    "requirements.txt",
+    "AI_COLLABORATION/HANDOFFS/ki5_STATE-001_ARCHITECT_20251230_033518.md",
+    "AI_COLLABORATION/HANDOFFS/ki6_STATE-001_EXECUTOR_20251230_033918.md",
+    "kenobase/analysis/regime_detection.py",
+    "tests/unit/test_regime_detection.py"
+]

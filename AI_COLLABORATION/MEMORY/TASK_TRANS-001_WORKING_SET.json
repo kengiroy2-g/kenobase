@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/analysis/__init__.py",
+    "kenobase/core/config.py",
+    "kenobase/core/__init__.py",
+    "kenobase/pipeline/runner.py",
+    "scripts/analyze.py",
+    "scripts/compute_summen_signatur.py",
+    "tests/unit/test_summen_signatur.py",
+    "AI_COLLABORATION/HANDOFFS/ki2_TRANS-001_EXECUTOR_20251230_040220.md"
+]

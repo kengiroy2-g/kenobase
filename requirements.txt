@@ -14,6 +14,8 @@ tqdm>=4.65.0
 
 # Statistics & Metrics
 scipy>=1.11.0
+ruptures>=1.1.9
+hmmlearn>=0.3.0
 
 # Testing
 pytest>=7.4.0
@@ -47,3 +49,8 @@ schedule>=1.2.0
 
 # Model Explainability (TASK-P14)
 shap>=0.44.0
+
+# Alternative Coupling Analysis (DATA-003)
+# Granger causality tests (METHOD-001)
+statsmodels>=0.14.0
+# dtw-python>=1.3.0

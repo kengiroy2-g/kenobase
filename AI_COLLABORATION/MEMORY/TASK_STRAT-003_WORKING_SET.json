@@ -1,0 +1,10 @@
+﻿[
+    "results/hyp011_temporal_cycles.json",
+    "scripts/strategy_from_ecosystem.py",
+    "scripts/analyze_cross_game_timing.py",
+    "results/ecosystem_graph.json",
+    "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+    "data/raw/auswahlwette/AW_ab_2022_bereinigt.csv",
+    "scripts/backtest_lag_exploitation.py",
+    "results/lag_exploitation_backtest.json"
+]

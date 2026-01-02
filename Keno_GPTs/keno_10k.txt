@@ -1,0 +1,33 @@
+Datum: 02.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 4, 7, 44, 47, 18, 19}
+Datum: 05.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {34, 4, 39, 44, 15, 19, 25}
+Datum: 07.01.2024, Anzahl Treffer: 9, Treffer-Zahlen: {1, 34, 37, 38, 42, 43, 44, 45, 19}
+Datum: 08.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {4, 39, 12, 45, 18, 19}
+Datum: 13.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {39, 43, 44, 45, 18, 25}
+Datum: 16.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {4, 5, 37, 7, 42, 12, 45, 25}
+Datum: 17.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {4, 37, 38, 42, 12, 47, 25}
+Datum: 19.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {1, 34, 4, 37, 38, 39, 19}
+Datum: 20.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {4, 5, 38, 43, 44, 47, 20}
+Datum: 21.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {4, 7, 40, 42, 47, 25}
+Datum: 22.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {33, 34, 5, 39, 12, 15}
+Datum: 23.01.2024, Anzahl Treffer: 6, Treffer-Zahlen: {33, 4, 38, 7, 39, 15}
+Datum: 24.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {37, 38, 7, 43, 12, 45, 19}
+Datum: 26.01.2024, Anzahl Treffer: 8, Treffer-Zahlen: {5, 38, 39, 12, 18, 19, 20, 25}
+Datum: 29.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 37, 38, 12, 45, 15, 47}
+Datum: 30.01.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 37, 7, 39, 43, 18, 20}
+Datum: 01.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {33, 4, 5, 39, 42, 44}
+Datum: 02.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {4, 5, 12, 44, 45, 18, 19}
+Datum: 03.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {1, 34, 42, 43, 15, 20}
+Datum: 04.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {33, 34, 4, 44, 45, 18, 25}
+Datum: 05.02.2024, Anzahl Treffer: 8, Treffer-Zahlen: {33, 34, 5, 39, 44, 15, 18, 19}
+Datum: 11.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {33, 42, 43, 15, 19, 25}
+Datum: 12.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {1, 5, 43, 47, 20, 25}
+Datum: 14.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {34, 4, 40, 43, 47, 19, 20}
+Datum: 15.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {1, 34, 38, 39, 40, 18, 25}
+Datum: 18.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {4, 40, 43, 12, 44, 19, 25}
+Datum: 19.02.2024, Anzahl Treffer: 8, Treffer-Zahlen: {1, 34, 5, 38, 39, 12, 15, 18}
+Datum: 20.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {4, 37, 38, 7, 42, 47}
+Datum: 21.02.2024, Anzahl Treffer: 9, Treffer-Zahlen: {34, 5, 7, 42, 43, 12, 44, 19, 20}
+Datum: 24.02.2024, Anzahl Treffer: 7, Treffer-Zahlen: {37, 39, 40, 44, 45, 18, 19}
+Datum: 25.02.2024, Anzahl Treffer: 6, Treffer-Zahlen: {33, 34, 37, 7, 39, 18}
+Datum: 28.02.2024, Anzahl Treffer: 8, Treffer-Zahlen: {39, 7, 42, 43, 44, 45, 15, 25}
+Datum: 29.02.2024, Anzahl Treffer: 9, Treffer-Zahlen: {1, 33, 34, 4, 5, 38, 39, 40, 15}

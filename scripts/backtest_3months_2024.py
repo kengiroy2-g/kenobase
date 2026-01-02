@@ -17,16 +17,10 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 import json
 
+from kenobase.core.keno_quotes import get_fixed_quote
 
-# KENO Gewinnplan
-KENO_GEWINNPLAN = {
-    10: {10: 100000, 9: 1000, 8: 100, 7: 15, 6: 5, 5: 2, 0: 2},
-    9: {9: 50000, 8: 1000, 7: 20, 6: 5, 5: 2, 0: 2},
-    8: {8: 10000, 7: 100, 6: 15, 5: 2, 4: 1, 0: 2},
-    7: {7: 5000, 6: 100, 5: 12, 4: 1, 0: 2},
-    6: {6: 1000, 5: 15, 4: 2, 3: 1, 0: 2},
-    5: {5: 500, 4: 7, 3: 2, 0: 2},
-}
+
+# KENO Gewinnplan (fixed per 1 EUR Einsatz): `kenobase.core.keno_quotes.get_fixed_quote`
 
 
 def load_data(path: Path) -> pd.DataFrame:
@@ -170,8 +164,7 @@ class PredictionModel:
 
 def calculate_winnings(hits: int, keno_typ: int) -> int:
     """Berechnet Gewinn für gegebene Treffer."""
-    plan = KENO_GEWINNPLAN.get(keno_typ, {})
-    return plan.get(hits, 0)
+    return int(get_fixed_quote(keno_typ, hits))
 
 
 def run_backtest(df: pd.DataFrame, start_date: datetime, end_date: datetime) -> dict:

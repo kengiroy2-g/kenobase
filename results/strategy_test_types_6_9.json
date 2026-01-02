@@ -1,0 +1,246 @@
+{
+  "metadata": {
+    "date": "2026-01-01T21:16:55.447472",
+    "types_tested": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "tickets_per_day": 50
+  },
+  "results": {
+    "6": [
+      {
+        "strategy": "Timing+Cooldown",
+        "roi": 80.0,
+        "spiele": 2250,
+        "gewinn": 4050,
+        "kosten": 2250
+      },
+      {
+        "strategy": "Timing+mod7",
+        "roi": 55.82,
+        "spiele": 2370,
+        "gewinn": 3693,
+        "kosten": 2370
+      },
+      {
+        "strategy": "Nur Timing",
+        "roi": 31.45,
+        "spiele": 16800,
+        "gewinn": 22083,
+        "kosten": 16800
+      },
+      {
+        "strategy": "Nur mod7",
+        "roi": 29.8,
+        "spiele": 10465,
+        "gewinn": 13584,
+        "kosten": 10465
+      },
+      {
+        "strategy": "Nur Cooldown",
+        "roi": 19.0,
+        "spiele": 12900,
+        "gewinn": 15351,
+        "kosten": 12900
+      },
+      {
+        "strategy": "Baseline",
+        "roi": 2.67,
+        "spiele": 72850,
+        "gewinn": 74796,
+        "kosten": 72850
+      },
+      {
+        "strategy": "Alle Filter",
+        "roi": -23.91,
+        "spiele": 322,
+        "gewinn": 245,
+        "kosten": 322
+      },
+      {
+        "strategy": "Cooldown+mod7",
+        "roi": -34.29,
+        "spiele": 1849,
+        "gewinn": 1215,
+        "kosten": 1849
+      }
+    ],
+    "7": [
+      {
+        "strategy": "Nur Cooldown",
+        "roi": 23.33,
+        "spiele": 12900,
+        "gewinn": 15910,
+        "kosten": 12900
+      },
+      {
+        "strategy": "Nur Timing",
+        "roi": -16.92,
+        "spiele": 16800,
+        "gewinn": 13958,
+        "kosten": 16800
+      },
+      {
+        "strategy": "Baseline",
+        "roi": -22.61,
+        "spiele": 72850,
+        "gewinn": 56376,
+        "kosten": 72850
+      },
+      {
+        "strategy": "Alle Filter",
+        "roi": -43.37,
+        "spiele": 309,
+        "gewinn": 175,
+        "kosten": 309
+      },
+      {
+        "strategy": "Nur mod7",
+        "roi": -45.05,
+        "spiele": 10537,
+        "gewinn": 5790,
+        "kosten": 10537
+      },
+      {
+        "strategy": "Timing+mod7",
+        "roi": -47.75,
+        "spiele": 2396,
+        "gewinn": 1252,
+        "kosten": 2396
+      },
+      {
+        "strategy": "Timing+Cooldown",
+        "roi": -53.78,
+        "spiele": 2250,
+        "gewinn": 1040,
+        "kosten": 2250
+      },
+      {
+        "strategy": "Cooldown+mod7",
+        "roi": -57.42,
+        "spiele": 1853,
+        "gewinn": 789,
+        "kosten": 1853
+      }
+    ],
+    "8": [
+      {
+        "strategy": "Nur mod7",
+        "roi": 35.24,
+        "spiele": 10496,
+        "gewinn": 14195,
+        "kosten": 10496
+      },
+      {
+        "strategy": "Nur Cooldown",
+        "roi": 20.47,
+        "spiele": 12900,
+        "gewinn": 15541,
+        "kosten": 12900
+      },
+      {
+        "strategy": "Alle Filter",
+        "roi": -53.25,
+        "spiele": 338,
+        "gewinn": 158,
+        "kosten": 338
+      },
+      {
+        "strategy": "Timing+mod7",
+        "roi": -54.38,
+        "spiele": 2361,
+        "gewinn": 1077,
+        "kosten": 2361
+      },
+      {
+        "strategy": "Timing+Cooldown",
+        "roi": -56.8,
+        "spiele": 2250,
+        "gewinn": 972,
+        "kosten": 2250
+      },
+      {
+        "strategy": "Baseline",
+        "roi": -58.43,
+        "spiele": 72850,
+        "gewinn": 30284,
+        "kosten": 72850
+      },
+      {
+        "strategy": "Cooldown+mod7",
+        "roi": -58.64,
+        "spiele": 1823,
+        "gewinn": 754,
+        "kosten": 1823
+      },
+      {
+        "strategy": "Nur Timing",
+        "roi": -61.39,
+        "spiele": 16800,
+        "gewinn": 6486,
+        "kosten": 16800
+      }
+    ],
+    "9": [
+      {
+        "strategy": "Timing+mod7",
+        "roi": -32.58,
+        "spiele": 2376,
+        "gewinn": 1602,
+        "kosten": 2376
+      },
+      {
+        "strategy": "Baseline",
+        "roi": -54.99,
+        "spiele": 72850,
+        "gewinn": 32792,
+        "kosten": 72850
+      },
+      {
+        "strategy": "Nur Cooldown",
+        "roi": -66.01,
+        "spiele": 12900,
+        "gewinn": 4385,
+        "kosten": 12900
+      },
+      {
+        "strategy": "Nur mod7",
+        "roi": -71.38,
+        "spiele": 10580,
+        "gewinn": 3028,
+        "kosten": 10580
+      },
+      {
+        "strategy": "Nur Timing",
+        "roi": -73.25,
+        "spiele": 16800,
+        "gewinn": 4494,
+        "kosten": 16800
+      },
+      {
+        "strategy": "Cooldown+mod7",
+        "roi": -73.59,
+        "spiele": 1859,
+        "gewinn": 491,
+        "kosten": 1859
+      },
+      {
+        "strategy": "Timing+Cooldown",
+        "roi": -74.22,
+        "spiele": 2250,
+        "gewinn": 580,
+        "kosten": 2250
+      },
+      {
+        "strategy": "Alle Filter",
+        "roi": -76.61,
+        "spiele": 342,
+        "gewinn": 80,
+        "kosten": 342
+      }
+    ]
+  }
+}

@@ -192,6 +192,7 @@ class DataLoader:
     EUROJACKPOT_HEADERS = {"Datum", "5 aus 50", "EZ", "Spieleinsatz"}
     LOTTO_OLD_HEADERS = {"Datum", "z1", "z2", "z3", "z4", "z5", "z6"}
     LOTTO_NEW_HEADERS = {"Datum", "Gewinnzahlen", "ZZ", "Spiel77", "Super6"}
+    LOTTO_BEREINIGT_HEADERS = {"Datum", "L1", "L2", "L3", "L4", "L5", "L6"}
     GK1_SUMMARY_HEADERS = {"Datum", "Keno-Typ", "Anzahl der Gewinner"}
     GK1_HIT_HEADERS = {"Datum", "Keno-Typ", "Date_Check", "z1", "z2"}
 
@@ -297,6 +298,12 @@ class DataLoader:
         elif "S1" in header_parts and "S2" in header_parts and "z1" in header_parts:
             # Bereinigt EuroJackpot format: Datum;S1;S2;z1;z2;z3;z4;z5
             game_type = GameType.EUROJACKPOT
+        elif "E1" in header_parts and "Euro1" in header_parts:
+            # EuroJackpot E-format: Datum;E1;E2;E3;E4;E5;Euro1;Euro2;...
+            game_type = GameType.EUROJACKPOT
+        elif self.LOTTO_BEREINIGT_HEADERS.issubset(header_parts):
+            # Bereinigt Lotto format: Datum;L1;L2;L3;L4;L5;L6;...
+            game_type = GameType.LOTTO
         elif self.LOTTO_OLD_HEADERS.issubset(header_parts):
             game_type = GameType.LOTTO
         elif "Gewinnzahlen" in first_line:
@@ -377,6 +384,16 @@ class DataLoader:
                     if spieleinsatz:
                         metadata["spieleinsatz"] = spieleinsatz
 
+                    jackpot_candidates = [
+                        row.get("Keno_Jackpot", ""),
+                        row.get("Jackpot", ""),
+                        row.get("Jackpot_Kl1", ""),
+                    ]
+                    for candidate in jackpot_candidates:
+                        if candidate:
+                            metadata["jackpot"] = candidate
+                            break
+
                     # Preserve original draw order for position-based analyses.
                     metadata["numbers_ordered"] = list(numbers)
 
@@ -406,9 +423,10 @@ class DataLoader:
     ) -> list[DrawResult]:
         """Parst EuroJackpot CSV-Format.
 
-        Zwei Formate werden unterstuetzt:
+        Drei Formate werden unterstuetzt:
         - Standard: Datum;Z1;Z2;Z3;Z4;Z5;EZ1;EZ2;... (cols 1-5=main, 6-7=euro)
-        - Bereinigt: Datum;S1;S2;z1;z2;z3;z4;z5 (cols 1-2=euro, 3-7=main)
+        - Bereinigt S: Datum;S1;S2;z1;z2;z3;z4;z5 (cols 1-2=euro, 3-7=main)
+        - Bereinigt E: Datum;E1;E2;E3;E4;E5;Euro1;Euro2;... (cols 1-5=main, 6-7=euro)
 
         Args:
             path: Pfad zur CSV-Datei
@@ -430,16 +448,17 @@ class DataLoader:
         header_line = lines[0].strip()
         headers = [h.strip() for h in header_line.split(format_info.delimiter)]
 
-        # Detect bereinigt format: Datum;S1;S2;z1;z2;z3;z4;z5
-        # S1,S2 = EuroZahlen (bonus), z1-z5 = Hauptzahlen
-        is_bereinigt = "S1" in headers and "z1" in headers
+        # Detect format variant
+        # S-bereinigt: Datum;S1;S2;z1;z2;z3;z4;z5 (S1,S2 = EuroZahlen, z1-z5 = Hauptzahlen)
+        is_s_bereinigt = "S1" in headers and "z1" in headers
+        # E-bereinigt: Datum;E1;E2;E3;E4;E5;Euro1;Euro2;... (E1-E5 = Hauptzahlen, Euro1-2 = EuroZahlen)
+        is_e_bereinigt = "E1" in headers and "Euro1" in headers
 
         for row_num, line in enumerate(lines[1:], start=2):
             try:
                 values = [v.strip() for v in line.strip().split(format_info.delimiter)]
 
-                min_cols = 8 if not is_bereinigt else 8
-                if len(values) < min_cols:
+                if len(values) < 8:
                     continue
 
                 # Parse date (first column)
@@ -448,8 +467,8 @@ class DataLoader:
                     continue
                 date = datetime.strptime(date_str, format_info.date_format)
 
-                if is_bereinigt:
-                    # Bereinigt format: S1,S2 are EuroZahlen (cols 1-2), z1-z5 are main (cols 3-7)
+                if is_s_bereinigt:
+                    # S-Bereinigt format: S1,S2 are EuroZahlen (cols 1-2), z1-z5 are main (cols 3-7)
                     bonus = []
                     for i in range(1, 3):
                         if values[i]:
@@ -459,6 +478,27 @@ class DataLoader:
                     for i in range(3, 8):
                         if values[i]:
                             numbers.append(int(values[i]))
+                    metadata = {"format": "bereinigt_s"}
+
+                elif is_e_bereinigt:
+                    # E-Bereinigt format: E1-E5 are main (cols 1-5), Euro1-Euro2 are euro (cols 6-7)
+                    numbers = []
+                    for i in range(1, 6):
+                        if values[i]:
+                            numbers.append(int(values[i]))
+
+                    bonus = []
+                    for i in range(6, 8):
+                        if i < len(values) and values[i]:
+                            bonus.append(int(values[i]))
+                    metadata = {"format": "bereinigt_e"}
+
+                    # Capture additional metadata
+                    if len(values) > 8 and values[8]:
+                        metadata["spieleinsatz"] = values[8]
+                    if len(values) > 9 and values[9]:
+                        metadata["jackpot"] = values[9]
+
                 else:
                     # Standard format: cols 1-5 main, 6-7 euro
                     numbers = []
@@ -471,6 +511,10 @@ class DataLoader:
                         if i < len(values) and values[i]:
                             bonus.append(int(values[i]))
 
+                    metadata = {}
+                    if len(values) > 8 and values[8]:
+                        metadata["spieleinsatz"] = values[8]
+
                 if len(numbers) != 5:
                     logger.warning(
                         f"Row {row_num}: Expected 5 main numbers, got {len(numbers)}"
@@ -481,14 +525,6 @@ class DataLoader:
                     logger.warning(
                         f"Row {row_num}: Expected 2 euro numbers, got {len(bonus)}"
                     )
-
-                # Parse metadata
-                metadata = {}
-                if is_bereinigt:
-                    metadata["format"] = "bereinigt"
-                else:
-                    if len(values) > 8 and values[8]:
-                        metadata["spieleinsatz"] = values[8]
 
                 results.append(
                     DrawResult(
@@ -508,11 +544,12 @@ class DataLoader:
         return results
 
     def _parse_lotto(self, path: Path, format_info: FormatInfo) -> list[DrawResult]:
-        """Parst Lotto CSV-Format (alt, neu, und archiv).
+        """Parst Lotto CSV-Format (alt, neu, bereinigt, und archiv).
 
-        Drei Formate werden unterstuetzt:
+        Vier Formate werden unterstuetzt:
         - Alt (ab-1955): Datum,z1,z2,z3,z4,z5,z6 (Komma, 7 Spalten)
         - Neu (ab-2018): Datum;;Z1;Z2;Z3;Z4;Z5;Z6;ZZ;... (Semikolon, Gewinnzahlen separiert)
+        - Bereinigt: Datum;L1;L2;L3;L4;L5;L6;Zusatzzahl;Superzahl;... (Semikolon)
         - Archiv (bereinigt): "ISO8601,1-2-3-4-5-6" (Quoted, dash-separated numbers)
 
         Args:
@@ -530,6 +567,9 @@ class DataLoader:
         # Example: "2024-02-07T00:00:00Z,1-8-15-19-26-31"
         if first_line.startswith('"') and "T00:00:00Z" in first_line and "-" in first_line:
             return self._parse_lotto_archiv(path, format_info)
+        elif "L1" in first_line and "L6" in first_line:
+            # Bereinigt format: Datum;L1;L2;L3;L4;L5;L6;...
+            return self._parse_lotto_bereinigt(path, format_info)
         elif "z1" in first_line.lower() and format_info.delimiter == ",":
             return self._parse_lotto_old(path, format_info)
         else:
@@ -589,6 +629,85 @@ class DataLoader:
                     continue
 
         logger.info(f"Loaded {len(results)} Lotto draws (old format) from {path.name}")
+        return results
+
+    def _parse_lotto_bereinigt(
+        self, path: Path, format_info: FormatInfo
+    ) -> list[DrawResult]:
+        """Parst Lotto Bereinigt-Format (LOTTO_ab_2022_bereinigt.csv).
+
+        Format: Datum;L1;L2;L3;L4;L5;L6;Zusatzzahl;Superzahl;Spiel77;Super6;Spieleinsatz;Jackpot_Kl1
+        L1-L6 sind die Hauptzahlen, Semikolon-Delimiter
+
+        Args:
+            path: Pfad zur CSV-Datei
+            format_info: Format-Informationen
+
+        Returns:
+            Liste von DrawResult-Objekten
+        """
+        results: list[DrawResult] = []
+
+        with open(path, "r", encoding=format_info.encoding) as f:
+            reader = csv.DictReader(f, delimiter=format_info.delimiter)
+
+            for row_num, row in enumerate(reader, start=2):
+                try:
+                    row = {k.strip(): v.strip() if v else "" for k, v in row.items() if k}
+
+                    date_str = row.get("Datum", "")
+                    if not date_str:
+                        continue
+                    date = datetime.strptime(date_str, format_info.date_format)
+
+                    # Parse L1-L6
+                    numbers = []
+                    for i in range(1, 7):
+                        key = f"L{i}"
+                        if key in row and row[key]:
+                            numbers.append(int(row[key]))
+
+                    if len(numbers) != 6:
+                        logger.warning(
+                            f"Row {row_num}: Expected 6 numbers, got {len(numbers)}"
+                        )
+                        continue
+
+                    # Parse Zusatzzahl and Superzahl as bonus
+                    bonus = []
+                    zusatzzahl = row.get("Zusatzzahl", "")
+                    if zusatzzahl and zusatzzahl.isdigit():
+                        zz = int(zusatzzahl)
+                        if zz > 0:  # Only add if non-zero
+                            bonus.append(zz)
+
+                    superzahl = row.get("Superzahl", "")
+                    if superzahl and superzahl.isdigit():
+                        sz = int(superzahl)
+                        if sz > 0:  # Only add if non-zero
+                            bonus.append(sz)
+
+                    # Parse metadata
+                    metadata = {"format": "bereinigt"}
+                    for key in ["Spieleinsatz", "Jackpot_Kl1", "Spiel77", "Super6"]:
+                        if key in row and row[key]:
+                            metadata[key.lower()] = row[key]
+
+                    results.append(
+                        DrawResult(
+                            date=date,
+                            numbers=numbers,
+                            bonus=bonus,
+                            game_type=GameType.LOTTO,
+                            metadata=metadata,
+                        )
+                    )
+
+                except (ValueError, KeyError) as e:
+                    logger.warning(f"Row {row_num}: Parse error - {e}")
+                    continue
+
+        logger.info(f"Loaded {len(results)} Lotto draws (bereinigt format) from {path.name}")
         return results
 
     def _parse_lotto_new(self, path: Path, format_info: FormatInfo) -> list[DrawResult]:

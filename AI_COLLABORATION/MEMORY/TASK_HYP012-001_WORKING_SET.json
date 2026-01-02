@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/analysis/press_hypotheses.py",
+    "kenobase/analysis/__init__.py",
+    "scripts/generate_press_hypotheses.py",
+    "data/scraped/test_press_data.json",
+    "results/press_hypotheses.json",
+    "results/press_hypotheses.md"
+]

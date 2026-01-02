@@ -1,0 +1,6 @@
+﻿[
+    ".github/workflows/ci.yml",
+    ".pre-commit-config.yaml",
+    "pyproject.toml",
+    ".gitignore"
+]

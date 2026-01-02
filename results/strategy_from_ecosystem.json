@@ -1,0 +1,285 @@
+{
+  "analysis_date": "2025-12-30T05:48:52.643753",
+  "keno_file": "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+  "total_draws": 1457,
+  "state_distribution": {
+    "total": 1457,
+    "counts": {
+      "NORMAL": 1457
+    },
+    "percentages": {
+      "NORMAL": 100.0
+    }
+  },
+  "current_state": "NORMAL",
+  "current_recommendation": {
+    "action": "NEUTRAL",
+    "confidence": 0.5,
+    "reason": "Standard operating conditions"
+  },
+  "decisions": [
+    {
+      "date": "2025-11-30T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-01T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-02T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-03T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-04T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-05T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-06T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-07T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-08T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-09T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-10T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-11T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-12T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-13T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-14T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-15T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-16T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-17T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-18T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-19T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-20T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-21T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-22T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-23T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-24T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-25T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-26T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-27T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-28T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    },
+    {
+      "date": "2025-12-29T00:00:00",
+      "state": "NORMAL",
+      "action": "PLAY",
+      "ev_multiplier": 1.0,
+      "confidence": 0.5,
+      "reason": "Normal operating conditions"
+    }
+  ],
+  "ev_summary": {
+    "n_decisions": 1457,
+    "mean_ev_multiplier": 1.0,
+    "std_ev_multiplier": 0.0,
+    "action_counts": {
+      "PLAY": 1457
+    },
+    "state_counts": {
+      "NORMAL": 1457
+    },
+    "play_days": 1457,
+    "avoid_days": 0,
+    "avg_ev_on_play_days": 1.0,
+    "avg_ev_on_avoid_days": 0.0,
+    "relative_improvement_pct": 0.0
+  },
+  "axiom_basis": {
+    "A1_house_edge": "50% redistribution guaranteed by law",
+    "A7_reset_cycles": "System saves after jackpot hits (COOLDOWN)",
+    "WL003_finding": "30-day cooldown shows -66% ROI",
+    "strategy": "AVOID playing during COOLDOWN periods",
+    "expected_improvement": "0.0%"
+  }
+}

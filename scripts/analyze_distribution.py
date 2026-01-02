@@ -28,6 +28,7 @@ import pandas as pd
 import numpy as np
 
 from kenobase.analysis.distribution import (
+    load_gq_data,
     load_quote_details_data,
     analyze_payout_ratio,
     detect_payout_ratio_anomalies,
@@ -37,6 +38,16 @@ from kenobase.analysis.distribution import (
 
 def load_gewinnquoten(filepath: Path) -> pd.DataFrame:
     """Lade Gewinnquoten-Daten."""
+    df = load_gq_data(str(filepath))
+    if df.empty:
+        return df
+
+    df["Gewinner"] = df["Anzahl der Gewinner"].astype(float)
+    df["Quote"] = df["1 Euro Gewinn"].astype(float)
+    df["Auszahlung"] = df["Gewinner"] * df["Quote"]
+    return df
+
+    # Legacy parsing fallback (kept for reference)
     df = pd.read_csv(filepath, encoding='utf-8-sig')
 
     # Parse date
@@ -182,16 +193,20 @@ def simulate_distribution_target(df: pd.DataFrame) -> dict:
     return payout_stats
 
 
-def main():
+def main(data_path: Path | None = None, output_path: Path | None = None) -> dict:
     """Hauptanalyse."""
     print("=" * 60)
     print("KENO Gewinnverteilungs-Analyse")
     print("=" * 60)
 
     # Lade Daten
-    data_path = Path("Keno_GPTs/Keno_GQ_2022_2023-2024.csv")
+    if data_path is None:
+        data_path = Path("Keno_GPTs/Keno_GQ_2022_2023-2024.csv")
+
     if not data_path.exists():
-        data_path = Path("C:/Users/kenfu/Documents/keno_base/Keno_GPTs/Keno_GQ_2022_2023-2024.csv")
+        alt = Path(__file__).parent.parent / data_path
+        if alt.exists():
+            data_path = alt
 
     print(f"\nLade: {data_path}")
     df = load_gewinnquoten(data_path)
@@ -263,7 +278,8 @@ def main():
         'distribution_target': sim,
     }
 
-    output_path = Path("results/distribution_analysis.json")
+    if output_path is None:
+        output_path = Path("results/distribution_analysis.json")
     output_path.parent.mkdir(exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False, indent=2, default=str)
@@ -418,4 +434,6 @@ if __name__ == "__main__":
         analyze_payout_ratio_mode(data_path, output_path)
     else:
         # Standard-Analyse
-        main()
+        data_path = args.data or Path("Keno_GPTs/Keno_GQ_2022_2023-2024.csv")
+        output_path = args.output or Path("results/distribution_analysis.json")
+        main(data_path=data_path, output_path=output_path)

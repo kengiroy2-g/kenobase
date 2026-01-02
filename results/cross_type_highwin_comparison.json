@@ -1,0 +1,107 @@
+{
+  "analysis": "cross_type_highwin_comparison",
+  "generated_at": "2025-12-31T14:30:30.730111",
+  "sources": {
+    "forensik": "results/high_win_forensik.json",
+    "typ7": "results/typ7_highwin_forensik.json",
+    "typ8": "results/typ8_forensik.json",
+    "typ9": "results/typ9_highwin_forensik.json",
+    "typ10": "results/typ10_highwin_forensik.json"
+  },
+  "total_events": 16,
+  "draws_analyzed": 2237,
+  "date_range": {
+    "start": "2018-05-12",
+    "end": "2023-10-10"
+  },
+  "types": {
+    "6": {
+      "keno_type": 6,
+      "events_count": 11,
+      "unique_dates": 11,
+      "payout_per_hit_eur": 500.0,
+      "birthday_ratio_mean": 0.4454545454545455,
+      "weekday_distribution": {
+        "Dienstag": 5,
+        "Sonntag": 2,
+        "Donnerstag": 2,
+        "Montag": 1,
+        "Samstag": 1
+      },
+      "strategy_distribution": {
+        "balanced": 2,
+        "near_miss": 2,
+        "pair_focused": 5,
+        "jackpot": 2
+      },
+      "null_hypothesis": null,
+      "caveat": "N=11 events",
+      "events_count_in_detail": 11
+    },
+    "7": {
+      "keno_type": 7,
+      "events_count": 3,
+      "unique_dates": 3,
+      "payout_per_hit_eur": 1000.0,
+      "birthday_ratio_mean": 0.45,
+      "weekday_distribution": {
+        "Sonntag": 1,
+        "Dienstag": 1,
+        "Montag": 1
+      },
+      "strategy_distribution": {
+        "balanced": 1,
+        "pair_focused": 1,
+        "near_miss": 1
+      },
+      "null_hypothesis": null,
+      "caveat": "N=3 is very small for statistical conclusions",
+      "events_count_in_detail": 3
+    },
+    "8": {
+      "keno_type": 8,
+      "events_count": 2,
+      "unique_dates": 2,
+      "payout_per_hit_eur": 10000.0,
+      "birthday_ratio_mean": 0.42410714285714285,
+      "weekday_distribution": {
+        "Freitag": 6,
+        "Donnerstag": 10,
+        "Sonntag": 7,
+        "Dienstag": 11,
+        "Montag": 11,
+        "Samstag": 6,
+        "Mittwoch": 5
+      },
+      "strategy_distribution": {},
+      "null_hypothesis": null,
+      "caveat": "N=56 (8/8: 2, 7/8: 54)",
+      "events_count_in_detail": 2
+    },
+    "9": {
+      "keno_type": 9,
+      "events_count": 0,
+      "unique_dates": 0,
+      "payout_per_hit_eur": 50000.0,
+      "birthday_ratio_mean": null,
+      "weekday_distribution": {},
+      "strategy_distribution": {},
+      "null_hypothesis": "absence_consistent_with_expectation",
+      "caveat": "Typ-9 high-wins are extremely rare events. With current sample size, absence is expected.",
+      "events_count_in_detail": 0
+    },
+    "10": {
+      "keno_type": 10,
+      "events_count": 0,
+      "unique_dates": 0,
+      "payout_per_hit_eur": 100000.0,
+      "birthday_ratio_mean": null,
+      "weekday_distribution": {},
+      "strategy_distribution": {},
+      "null_hypothesis": "absence_consistent_with_expectation",
+      "caveat": "Typ-10 10/10 hits are extremely rare events (~89M draws for 1 expected). Absence is expected.",
+      "events_count_in_detail": 0
+    }
+  },
+  "interpretation": "Cross-type comparison of 16 high-win events across Typ-6 to Typ-10. Typ-6 (6/6=500 EUR): 11 events observed. Typ-7 (7/7=1000 EUR): 3 events observed. Typ-8 (8/8=10000 EUR): 2 events observed. Typ-9 (9/9=50000 EUR): 0 events (statistically expected, P(0)>80%). Typ-10 (10/10=100000 EUR): 0 events (statistically expected, P(0)>95%). Birthday ratios (expected ~0.443): Typ-6: 0.445, Typ-7: 0.450, Typ-8: 0.424."
+}

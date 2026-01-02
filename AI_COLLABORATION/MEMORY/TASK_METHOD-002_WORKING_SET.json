@@ -1,0 +1,4 @@
+﻿[
+    "kenobase/analysis/alternative_coupling.py",
+    "tests/unit/test_alternative_coupling.py"
+]

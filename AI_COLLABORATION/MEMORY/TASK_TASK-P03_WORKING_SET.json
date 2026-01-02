@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/analysis/frequency.py",
+    "config/default.yaml",
+    "kenobase/core/data_loader.py",
+    "kenobase/core/config.py",
+    "kenobase/pipeline/strategy.py (NEW - 270 lines)",
+    "kenobase/pipeline/__init__.py (MODIFIED - exports added)",
+    "scripts/backtest.py (MODIFIED - Strategy pattern integration)",
+    "tests/unit/test_strategy.py (NEW - 27 tests)"
+]

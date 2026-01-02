@@ -1,0 +1,490 @@
+{
+  "timestamp": "2025-12-30T01:46:06.203950",
+  "train_test_split": {
+    "train_end": "2023-12-31",
+    "test_start": "2024-01-01",
+    "rule": "Rules are mined in train and FROZEN for test evaluation"
+  },
+  "eurojackpot_control": {
+    "is_german_ecosystem": false,
+    "rationale": "EuroJackpot is NOT part of the German lottery ecosystem. It has international control, different player base, and own economics. Use as negative control: German axioms A2, A4, A6 should NOT apply.",
+    "excluded_axioms": [
+      "A2",
+      "A4",
+      "A6"
+    ]
+  },
+  "axioms_validated": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7"
+  ],
+  "results": [
+    {
+      "axiom_id": "A1",
+      "axiom_name": "House-Edge",
+      "description": "50% redistribution is legally guaranteed",
+      "predictions": [
+        {
+          "prediction_id": "P1.1",
+          "description": "12-month ROI between -45% and -55% (median ~-50%)",
+          "metric": "roi_12m",
+          "threshold": -0.55,
+          "threshold_high": -0.45,
+          "direction": "between",
+          "null_model": "binomial",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P1.2",
+          "description": "No player-type achieves sustained > 0% ROI",
+          "metric": "max_roi_by_type",
+          "threshold": 0.0,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "permutation",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P1.3",
+          "description": "House-Edge variance < 5% between quarters",
+          "metric": "roi_quarterly_std",
+          "threshold": 0.05,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "block_permutation",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    },
+    {
+      "axiom_id": "A2",
+      "axiom_name": "Dauerscheine",
+      "description": "Players use fixed combinations (subscription tickets)",
+      "predictions": [
+        {
+          "prediction_id": "P2.1",
+          "description": "Certain combinations appear more frequently in tickets",
+          "metric": "combination_frequency_variance",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "iid",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P2.2",
+          "description": "Birthday numbers (1-31) are overrepresented in tips",
+          "metric": "birthday_ratio",
+          "threshold": 0.44,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "binomial",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P2.3",
+          "description": "Win quotes for popular combinations are lower",
+          "metric": "popular_vs_unpopular_quote_ratio",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "permutation",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    },
+    {
+      "axiom_id": "A3",
+      "axiom_name": "Attraktivitaet",
+      "description": "Small wins MUST occur regularly",
+      "predictions": [
+        {
+          "prediction_id": "P3.1",
+          "description": "Small wins (Type 6-8) occur regularly",
+          "metric": "small_win_frequency",
+          "threshold": 0.1,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "poisson",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P3.2",
+          "description": "Near-misses (5 of 6) more frequent than IID predicts",
+          "metric": "near_miss_ratio_vs_iid",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "iid",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P3.3",
+          "description": "At least 1 winner per week in each prize class",
+          "metric": "weekly_winner_coverage",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "poisson",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    },
+    {
+      "axiom_id": "A4",
+      "axiom_name": "Paar-Garantie",
+      "description": "Number pairs ensure player retention",
+      "predictions": [
+        {
+          "prediction_id": "P4.1",
+          "description": "Certain number pairs appear significantly more often together",
+          "metric": "pair_coupling_chi2",
+          "threshold": 0.05,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "iid",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P4.2",
+          "description": "Popular pairs (7-11, 3-7) have increased coupling",
+          "metric": "popular_pair_coupling_ratio",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "permutation",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P4.3",
+          "description": "Pair frequency correlates with Dauerschein popularity",
+          "metric": "pair_dauerschein_correlation",
+          "threshold": 0.1,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "schedule_preserving",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    },
+    {
+      "axiom_id": "A5",
+      "axiom_name": "Pseudo-Zufall",
+      "description": "Every number must appear within a period",
+      "predictions": [
+        {
+          "prediction_id": "P5.1",
+          "description": "Every number appears at least once in N drawings (N~20)",
+          "metric": "max_absence_period",
+          "threshold": 20,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "poisson",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P5.2",
+          "description": "Maximum gap of a number is bounded (< 50 drawings)",
+          "metric": "max_gap",
+          "threshold": 50,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "iid",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P5.3",
+          "description": "Frequency distribution is tighter than IID Poisson",
+          "metric": "frequency_variance_ratio",
+          "threshold": 1.0,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "poisson",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    },
+    {
+      "axiom_id": "A6",
+      "axiom_name": "Regionale Verteilung",
+      "description": "Wins distributed per federal state",
+      "predictions": [
+        {
+          "prediction_id": "P6.1",
+          "description": "Wins per Bundesland correlate with population",
+          "metric": "regional_population_correlation",
+          "threshold": 0.5,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "permutation",
+          "requires_data": "DATAREQ-001",
+          "status": "BLOCKED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "Requires external data: DATAREQ-001"
+          ]
+        },
+        {
+          "prediction_id": "P6.2",
+          "description": "No region has significantly more jackpots per capita",
+          "metric": "regional_jackpot_per_capita_chi2",
+          "threshold": 0.05,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "binomial",
+          "requires_data": "DATAREQ-001",
+          "status": "BLOCKED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "Requires external data: DATAREQ-001"
+          ]
+        },
+        {
+          "prediction_id": "P6.3",
+          "description": "Large wins are evenly distributed over time",
+          "metric": "regional_temporal_uniformity",
+          "threshold": 0.1,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "schedule_preserving",
+          "requires_data": "DATAREQ-001",
+          "status": "BLOCKED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "Requires external data: DATAREQ-001"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 3,
+        "not_tested": 0
+      }
+    },
+    {
+      "axiom_id": "A7",
+      "axiom_name": "Reset-Zyklen",
+      "description": "System 'saves' after jackpots",
+      "predictions": [
+        {
+          "prediction_id": "P7.1",
+          "description": "ROI drops by > 20% in 30 days after jackpot",
+          "metric": "post_jackpot_roi_change",
+          "threshold": -0.2,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "fake_lag",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P7.2",
+          "description": "Hot numbers before jackpot become cold after",
+          "metric": "hot_cold_transition_rate",
+          "threshold": 0.5,
+          "threshold_high": null,
+          "direction": "greater",
+          "null_model": "permutation",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        },
+        {
+          "prediction_id": "P7.3",
+          "description": "System-wide win quote drops post-jackpot",
+          "metric": "post_jackpot_quote_change",
+          "threshold": 0.0,
+          "threshold_high": null,
+          "direction": "less",
+          "null_model": "schedule_preserving",
+          "requires_data": null,
+          "status": "NOT_TESTED",
+          "observed_value": null,
+          "p_value": null,
+          "is_falsified": null,
+          "notes": [
+            "No data provided for validation"
+          ]
+        }
+      ],
+      "summary": {
+        "total": 3,
+        "supported": 0,
+        "falsified": 0,
+        "blocked": 0,
+        "not_tested": 3
+      }
+    }
+  ],
+  "overall_summary": {
+    "total_predictions": 21,
+    "supported": 0,
+    "falsified": 0,
+    "blocked": 3,
+    "not_tested": 18
+  }
+}

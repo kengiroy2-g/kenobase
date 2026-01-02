@@ -1,0 +1,7 @@
+﻿[
+    "kenobase/analysis/frequency.py",
+    "scripts/analyze_frequency_per_year.py",
+    "tests/unit/test_frequency_per_year.py",
+    "results/frequency_per_year.json",
+    "kenobase/analysis/__init__.py"
+]

@@ -1,0 +1,5 @@
+﻿[
+    "tests/smoke_test.py",
+    "tests/integration/test_pipeline_integration.py",
+    "tests/unit/test_edge_cases.py"
+]

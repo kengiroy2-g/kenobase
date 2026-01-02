@@ -1,0 +1,92 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-30 07:10:48
+
+plan:
+  name: ""
+
+tasks:
+  - id: DATA-001
+    name: "Zeitachsen-Alignment"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: DATA-002
+    name: "Zahlenraum-Normalisierung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: DATA-003
+    name: "Alternative Analysemethoden"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: METHOD-001
+    name: "Granger-Kausalitaet"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: METHOD-002
+    name: "Dynamic Time Warping"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: METHOD-003
+    name: "Mutual Information"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: METHOD-004
+    name: "Transfer-Entropie"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: METHOD-005
+    name: "Zahlen-Repraesentationen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TRANS-001
+    name: "Summen-Signatur"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TRANS-002
+    name: "Dekaden-Verteilung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TRANS-003
+    name: "Gerade/Ungerade Ratio"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TRANS-004
+    name: "Spread-Index"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TRANS-005
+    name: "Strategie aus Oekosystem-Erkenntnissen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: STRAT-001
+    name: "Cross-Game Timing"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: STRAT-002
+    name: "Zahlen-Arbitrage"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: STRAT-003
+    name: "Lag-Exploitation"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: STRAT-004
+    name: "Zyklus-Surfen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null

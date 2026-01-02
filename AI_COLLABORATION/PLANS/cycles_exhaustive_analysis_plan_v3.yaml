@@ -1,0 +1,367 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2026-01-01 14:05:04
+
+plan:
+  name: ""
+
+tasks:
+  - id: TASK_001
+    name: "Daten laden und validieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_002
+    name: "Jackpot-Events identifizieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_003
+    name: "Zyklus-Phasen markieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_004
+    name: "Overlap-Metriken berechnen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_005
+    name: "Gewinnklassen für V1 und V2 parallel berechnen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_006
+    name: "Phasen-Verteilung analysieren"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_007
+    name: "Zahlenfrequenz pro Jahr"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_008
+    name: "Zahlenfrequenz pro Phase"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_009
+    name: "Overlap-Statistik"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_010
+    name: "Gewinnklassen-Verteilung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_011
+    name: "Test HYP_001: 28-Tage-Zyklus"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_012
+    name: "Test HYP_002: Cooldown High-Wins"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_013
+    name: "Test HYP_003: Wochentag-Effekt"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_014
+    name: "Test HYP_004: Birthday-Bias im Overlap"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_015
+    name: "Test HYP_005: Birthday-Avoidance in Cooldown"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_016
+    name: "Test HYP_006: Ticket-Alterung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_017
+    name: "Test HYP_007: Regime-Wechsel"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_018
+    name: "Test HYP_008: Jahres-Zyklen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_019
+    name: "Test HYP_009: GK-Distribution nach Phase"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_020
+    name: "Test HYP_010: High-Win-Clustering"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_021
+    name: "Test HYP_011: Regularität kleiner Gewinne"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_022
+    name: "Test HYP_012: Overlap-Menge"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_023
+    name: "Test HYP_013: Overlap-Birthday-Anteil nach Phase"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_024
+    name: "Test HYP_014: Overlap-Autokorrelation"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_025
+    name: "Walk-Forward: Parameter-Grid"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_026
+    name: "Walk-Forward: Jahres-Transfer-Matrix"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_027
+    name: "Walk-Forward: Optimale Lookback-Periode"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_028
+    name: "Nullmodell: Zufällige Tickets"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_029
+    name: "Nullmodell: Permutationstest"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_030
+    name: "Nullmodell: Block-Permutation"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_031
+    name: "Multiple Testing Korrektur"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_032
+    name: "High-Win Forensik"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_033
+    name: "Verlust-Serien Analyse"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_034
+    name: "Korrelation zwischen Tickets"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_035
+    name: "Synthese: Hypothesen-Zusammenfassung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_036
+    name: "Synthese: Strategie-Empfehlung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_037
+    name: "Synthese: Finaler Report"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_038
+    name: "V1 vs V2 PARALLEL: Gesamt-Performance"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_039
+    name: "V1 vs V2 PARALLEL: Per Phase Vergleich"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_039b
+    name: "V1 vs V2 PARALLEL: Per Wochentag Vergleich"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_039c
+    name: "V1 vs V2 PARALLEL: Per 28-Tage-Zyklus"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_039d
+    name: "V1 vs V2 PARALLEL: High-Win Forensik"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_039e
+    name: "V1 vs V2 PARALLEL: Jackknife Leave-One-Out"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_040
+    name: "V1 vs V2: Typ 6, 7, 8, 9, 10 Vergleich"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_041
+    name: "V1 vs V2: Cooldown-Phase Test"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_041b
+    name: "Validierung: Dienstag + Cooldown Effekt"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_042
+    name: "Validierung: 2025 Ausreißer-Jahr"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_043
+    name: "Validierung: Ein Gewinn treibt alles"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_044
+    name: "Validierung: Regime-Wechsel nach Jackpot"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_045
+    name: "Validierung: 28-Tage-Zyklus-Unterschied"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_046
+    name: "Validierung: Walk-Forward Aussagen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_047
+    name: "Validierung: Ticket-Alterung"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_048
+    name: "Meta-Validierung: Alle Aussagen zusammen"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_049
+    name: "High-Win Analyse: Typ 6 (500 EUR)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_050
+    name: "High-Win Analyse: Typ 7 (1.000 EUR)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_051
+    name: "High-Win Analyse: Typ 8 (10.000 EUR)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_052
+    name: "High-Win Analyse: Typ 9 (1.000 + 50.000 EUR)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_053
+    name: "High-Win Analyse: Typ 10 (1.000 + 100.000 EUR)"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_054
+    name: "Cross-Type High-Win Vergleich"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_055
+    name: "High-Win Forensik: Alle >450 EUR Events"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: TASK_056
+    name: "V1 vs V2: Alle Typen Parallel-Vergleich"
+    priority: P2
+    status: COMPLETE
+    current_phase: null
+  - id: 1
+    name: "Daten-Vorbereitung"
+    priority: P2
+    status: IN_PROGRESS
+    current_phase: ARCHITECT
+  - id: 2
+    name: "Deskriptive Statistik"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 3
+    name: "Zyklen-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 4
+    name: "GK-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 5
+    name: "Overlap-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 6
+    name: "Walk-Forward"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 7
+    name: "Nullmodelle"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 8
+    name: "Tiefenanalyse"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 9
+    name: "Synthese"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 10
+    name: "Validierung Voreiliger Aussagen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 11
+    name: "High-Win Gewinnklassen Analyse"
+    priority: P2
+    status: PENDING
+    current_phase: null

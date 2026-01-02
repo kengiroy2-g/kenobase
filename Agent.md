@@ -2,9 +2,17 @@
 
 Kurzleitfaden, um in diesem Ordner schnell produktiv zu werden (Navigation, Entry-Points, Runs/Tests, Stolperfallen).
 
+## 0) MUSS: Axiom-First Paradigma (Anti-Pattern Systeme)
+
+- **MUSS:** Vor jeder "Pattern"-Arbeit zuerst Axiome/Annahmen (A0..An) explizit formulieren und daraus testbare Predictions ableiten.
+- **MUSS:** Nullmodell + Negative Controls + Train->Test (frozen rules) nutzen; keine in-sample Regel-Auswahl als "Backtest".
+- **MUSS:** EuroJackpot getrennt behandeln (externer Kontrollkanal), nicht als Teil des deutschen Spiel-Oekosystems modellieren.
+- Referenz: `CLAUDE.md` -> Abschnitt "3.0 AXIOM-FIRST (MUSS)".
+
 ## 1) Erste Orientierung
 
 - `CLAUDE.md`: Arbeits-/Umsetzungsleitfaden (LOOP v4 Quick Start, Backlog-Workflow).
+- `AI_COLLABORATION/PLANS/kenobase_axiom_first_ecosystem_plan.yaml`: neuer Plan fuer "Ecosystem" / Cross-Game Hypothese (Axiom-First).
 - `README.md`: Quickstart + CLI-Referenz.
 - `AI_COLLABORATION/ARCHITECTURE/MODULE_MAP.md`: Architektur-/Modulkarte.
 - `AI_COLLABORATION/BACKLOG/KENOBASE_ISSUES.md`: priorisierte Issues + Acceptance Criteria.
@@ -59,6 +67,10 @@ pytest -q
   - `python scripts/suggest_tickets.py --types 6 7 8 9`
 - Walk-Forward Backtest (ohne Lookahead):
   - `python scripts/backtest_tickets.py --types 6 7 8 9 --start-index 365`
+- Prev-Day Backtest (Vortag->Heute, Baseline vs dynamische Regeln, inkl. 30/90/180/365 Fenster):
+  - `python scripts/backtest_prevday_windows.py --start-date 2025-01-01 --output results/prevday_backtest_windows_2025.json`
+- Frozen Position Rules (Train->Val->Test, kein Leakage) + Paytable-aware Selection:
+  - `python scripts/backtest_frozen_position_rules.py --selection ev --output results/frozen_position_rules_backtest_2025_ev.json`
 
 ## 8) Dev-Standards (kurz)
 
@@ -71,4 +83,3 @@ pytest -q
 ```powershell
 .\scripts\autonomous_loop_v4.ps1 -Team alpha -PlanFile "AI_COLLABORATION/PLANS/kenobase_v2_complete_plan.yaml"
 ```
-

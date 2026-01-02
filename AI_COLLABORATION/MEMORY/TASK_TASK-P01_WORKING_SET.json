@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/features/__init__.py",
+    "kenobase/features/registry.py",
+    "kenobase/features/extractor.py",
+    "kenobase/features/store.py",
+    "kenobase/features/pipeline.py",
+    "tests/unit/test_features.py"
+]

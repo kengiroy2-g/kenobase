@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-01T07:20:58.866873",
+    "hz_delay_semantics": {
+      "early": "0-47 Tage nach 1. HZ-Jackpot",
+      "optimal": "48-60 Tage nach 1. HZ-Jackpot",
+      "late": "61-120 Tage nach 1. HZ-Jackpot",
+      "expired": ">120 Tage nach 1. HZ-Jackpot"
+    },
+    "train_period": "2022-2023",
+    "test_period": "2024",
+    "total_hotzones": 44,
+    "train_hz_with_1_jackpot": 2,
+    "test_hz_with_1_jackpot": 17
+  },
+  "by_type": {
+    "typ_6": {
+      "ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "train": {
+        "early_draws": 205,
+        "early_roi": 190.2439024390244,
+        "optimal_draws": 42,
+        "optimal_roi": -71.42857142857143,
+        "late_draws": 126,
+        "late_roi": -71.42857142857143,
+        "expired_draws": 121,
+        "expired_roi": -65.28925619834712,
+        "delta_optimal_vs_early": -261.67247386759584,
+        "delta_optimal_vs_late": 0.0,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 42,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 1,
+          "phase_b_total": 205,
+          "phase_b_rate": 0.4878048780487805,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": "False"
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 4087.0,
+          "p_value": 0.5107408216442125,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 2676.0,
+          "p_value": 0.8822058256933109,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "early_draws": 493,
+        "early_roi": -65.51724137931035,
+        "optimal_draws": 61,
+        "optimal_roi": 737.7049180327868,
+        "late_draws": 161,
+        "late_roi": -51.5527950310559,
+        "expired_draws": 14,
+        "expired_roi": -64.28571428571429,
+        "delta_optimal_vs_early": 803.2221594120972,
+        "delta_optimal_vs_late": 789.2577130638427,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 1,
+          "phase_a_total": 61,
+          "phase_a_rate": 1.639344262295082,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 493,
+          "phase_b_rate": 0.0,
+          "chi2": 1.5542303360797345,
+          "p_value": 0.2125120137043837,
+          "significant": "False"
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 14111.5,
+          "p_value": 0.28838832311901197,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 4481.5,
+          "p_value": 0.17986687586936723,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 38,
+        "total_draws": 532,
+        "avg_roi": 32.89473684210527,
+        "optimal_vs_control": {
+          "statistic": 25550.0,
+          "p_value": 0.1570734399413412,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_7": {
+      "ticket": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "train": {
+        "early_draws": 205,
+        "early_roi": -52.19512195121951,
+        "optimal_draws": 42,
+        "optimal_roi": -64.28571428571429,
+        "late_draws": 126,
+        "late_roi": -61.111111111111114,
+        "expired_draws": 121,
+        "expired_roi": 148.7603305785124,
+        "delta_optimal_vs_early": -12.09059233449478,
+        "delta_optimal_vs_late": -3.1746031746031775,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 42,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 205,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 4455.0,
+          "p_value": 0.6628113908930886,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 2785.5,
+          "p_value": 0.527571793402025,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "early_draws": 493,
+        "early_roi": -53.7525354969574,
+        "optimal_draws": 61,
+        "optimal_roi": -72.1311475409836,
+        "late_draws": 161,
+        "late_roi": -52.79503105590062,
+        "expired_draws": 14,
+        "expired_roi": 7.142857142857142,
+        "delta_optimal_vs_early": -18.378612044026205,
+        "delta_optimal_vs_late": -19.336116485082982,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 61,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 493,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 14235.0,
+          "p_value": 0.40293177993689744,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 4615.0,
+          "p_value": 0.39364675786874304,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 38,
+        "total_draws": 532,
+        "avg_roi": -55.45112781954887,
+        "optimal_vs_control": {
+          "statistic": 27558.0,
+          "p_value": 0.9065553024029311,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_8": {
+      "ticket": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "early_draws": 205,
+        "early_roi": -70.73170731707317,
+        "optimal_draws": 42,
+        "optimal_roi": -71.42857142857143,
+        "late_draws": 126,
+        "late_roi": -63.49206349206349,
+        "expired_draws": 121,
+        "expired_roi": -81.81818181818183,
+        "delta_optimal_vs_early": -0.6968641114982574,
+        "delta_optimal_vs_late": -7.936507936507944,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 42,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 205,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 4429.5,
+          "p_value": 0.6692776581313897,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 2628.0,
+          "p_value": 0.9298585671077801,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "early_draws": 493,
+        "early_roi": -68.76267748478702,
+        "optimal_draws": 61,
+        "optimal_roi": -83.60655737704919,
+        "late_draws": 161,
+        "late_roi": -75.77639751552795,
+        "expired_draws": 14,
+        "expired_roi": -64.28571428571429,
+        "delta_optimal_vs_early": -14.843879892262166,
+        "delta_optimal_vs_late": -7.830159861521238,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 61,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 493,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 13585.5,
+          "p_value": 0.0937202262577158,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 4618.0,
+          "p_value": 0.3151454755806772,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 38,
+        "total_draws": 532,
+        "avg_roi": -63.90977443609023,
+        "optimal_vs_control": {
+          "statistic": 25659.5,
+          "p_value": 0.16302775774104628,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_9": {
+      "ticket": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "early_draws": 205,
+        "early_roi": -51.707317073170735,
+        "optimal_draws": 42,
+        "optimal_roi": -66.66666666666666,
+        "late_draws": 126,
+        "late_roi": -58.730158730158735,
+        "expired_draws": 121,
+        "expired_roi": -44.62809917355372,
+        "delta_optimal_vs_early": -14.959349593495922,
+        "delta_optimal_vs_late": -7.9365079365079225,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 42,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 205,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 4500.5,
+          "p_value": 0.5421058140280093,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 2567.0,
+          "p_value": 0.724442186444864,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "early_draws": 493,
+        "early_roi": -50.30425963488844,
+        "optimal_draws": 61,
+        "optimal_roi": -70.49180327868852,
+        "late_draws": 161,
+        "late_roi": -41.61490683229814,
+        "expired_draws": 14,
+        "expired_roi": -57.14285714285714,
+        "delta_optimal_vs_early": -20.187543643800083,
+        "delta_optimal_vs_late": -28.876896446390383,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 61,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 493,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 13829.0,
+          "p_value": 0.19416007326789975,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 4351.5,
+          "p_value": 0.1007863203222538,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 38,
+        "total_draws": 532,
+        "avg_roi": -47.93233082706767,
+        "optimal_vs_control": {
+          "statistic": 26083.0,
+          "p_value": 0.3292896279834676,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_10": {
+      "ticket": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "early_draws": 205,
+        "early_roi": -9.268292682926829,
+        "optimal_draws": 42,
+        "optimal_roi": -95.23809523809523,
+        "late_draws": 126,
+        "late_roi": -67.46031746031747,
+        "expired_draws": 121,
+        "expired_roi": 16.528925619834713,
+        "delta_optimal_vs_early": -85.9698025551684,
+        "delta_optimal_vs_late": -27.777777777777757,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 42,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 205,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 3836.0,
+          "p_value": 0.043456052852636935,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 2309.5,
+          "p_value": 0.028282926208853528,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "early_draws": 493,
+        "early_roi": -50.50709939148072,
+        "optimal_draws": 61,
+        "optimal_roi": -83.60655737704919,
+        "late_draws": 161,
+        "late_roi": -50.31055900621118,
+        "expired_draws": 14,
+        "expired_roi": -50.0,
+        "delta_optimal_vs_early": -33.09945798556846,
+        "delta_optimal_vs_late": -33.29599837083801,
+        "chi2_optimal_vs_early": {
+          "phase_a_jackpots": 0,
+          "phase_a_total": 61,
+          "phase_a_rate": 0.0,
+          "phase_b_jackpots": 0,
+          "phase_b_total": 493,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_optimal_vs_early": {
+          "statistic": 13631.5,
+          "p_value": 0.06298535910799571,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_optimal_vs_late": {
+          "statistic": 4505.0,
+          "p_value": 0.11496074678356366,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 38,
+        "total_draws": 532,
+        "avg_roi": -6.390977443609022,
+        "optimal_vs_control": {
+          "statistic": 24920.0,
+          "p_value": 0.013397888239606581,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    }
+  },
+  "negative_control": {
+    "typ_6": {
+      "window_rois": [
+        -78.57142857142857,
+        -42.857142857142854,
+        -78.57142857142857,
+        -64.28571428571429,
+        35.714285714285715
+      ],
+      "avg_roi": 32.89473684210527
+    },
+    "typ_7": {
+      "window_rois": [
+        -78.57142857142857,
+        -50.0,
+        -85.71428571428571,
+        -57.14285714285714,
+        7.142857142857142
+      ],
+      "avg_roi": -55.45112781954887
+    },
+    "typ_8": {
+      "window_rois": [
+        -92.85714285714286,
+        -64.28571428571429,
+        -92.85714285714286,
+        -92.85714285714286,
+        -57.14285714285714
+      ],
+      "avg_roi": -63.90977443609023
+    },
+    "typ_9": {
+      "window_rois": [
+        -71.42857142857143,
+        -50.0,
+        -57.14285714285714,
+        -71.42857142857143,
+        64.28571428571429
+      ],
+      "avg_roi": -47.93233082706767
+    },
+    "typ_10": {
+      "window_rois": [
+        -85.71428571428571,
+        -35.714285714285715,
+        -71.42857142857143,
+        -28.57142857142857,
+        628.5714285714286
+      ],
+      "avg_roi": -6.390977443609022
+    }
+  },
+  "summary": {
+    "total_types_tested": 5,
+    "train_optimal_better_vs_early": 0,
+    "train_optimal_better_vs_late": 0,
+    "test_optimal_better_vs_early": 1,
+    "test_optimal_better_vs_late": 1,
+    "significant_effects": 1,
+    "hypothesis_status": "NOT_CONFIRMED",
+    "statistical_power_warning": "LOW - Only 19 Hot-Zones with exactly 1 jackpot, tests may lack power"
+  }
+}

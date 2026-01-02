@@ -1,0 +1,63 @@
+{
+  "analysis": "typ10_highwin_forensik_null_result",
+  "generated_at": "2025-12-31T14:15:41.791580",
+  "forensik_source": "results/high_win_forensik.json",
+  "draws_source": "data/raw/keno/KENO_ab_2018.csv",
+  "draws_analyzed": 2237,
+  "typ10_events_observed": 0,
+  "payouts_eur": {
+    "9_of_10": 1000,
+    "10_of_10": 100000
+  },
+  "probabilities": {
+    "p_9_of_10": 2.1169408180047393e-05,
+    "p_10_of_10": 4.6572697996104266e-07,
+    "p_high_combined": 2.1635135160008435e-05
+  },
+  "expected_events": {
+    "expected_9_of_10": 0.047355966098766016,
+    "expected_10_of_10": 0.0010418312541728525,
+    "expected_high_combined": 0.04839779735293887
+  },
+  "expected_wait_draws": {
+    "wait_9_of_10": 47237,
+    "wait_10_of_10": 2147180
+  },
+  "null_hypothesis_test": {
+    "p_zero_events_9_of_10": 0.9537478352614934,
+    "p_zero_events_10_of_10": 0.9989587112635879,
+    "result": "absence_consistent_with_expectation"
+  },
+  "baseline_comparison": {
+    "typ6": {
+      "events_observed": 11,
+      "p_6_of_6": 0.00029561612949023723,
+      "expected_events": 0.6612932816696607,
+      "expected_wait_draws": 3382,
+      "payout_eur": 500
+    },
+    "typ7": {
+      "events_observed": 3,
+      "p_7_of_7": 6.466602832598939e-05,
+      "expected_events": 0.14465790536523826,
+      "expected_wait_draws": 15464,
+      "payout_eur": 1000
+    },
+    "typ8": {
+      "events_observed": 0,
+      "p_8_of_8": 1.3343783622823207e-05,
+      "expected_events": 0.029850043964255515,
+      "expected_wait_draws": 74941,
+      "payout_eur": 10000
+    },
+    "typ9": {
+      "events_observed": 0,
+      "p_9_of_9": 2.582667797965782e-06,
+      "expected_events": 0.005777427864049454,
+      "expected_wait_draws": 387196,
+      "payout_eur": 50000
+    }
+  },
+  "interpretation": "With 2237 draws, observing 0 high-win Typ-10 (10/10) events is statistically expected. P(0 events for 9/10) = 95.37%, P(0 events for 10/10) = 99.90%. The expected wait for a single 10/10 hit is ~2,147,180 draws (~5,882 years). For 9/10, expected ~0.05 events in 2237 draws. No anomaly detected; absence/rarity is consistent with combinatorial probability.",
+  "caveat": "Typ-10 10/10 hits are extremely rare events (~89M draws for 1 expected). Absence is expected."
+}

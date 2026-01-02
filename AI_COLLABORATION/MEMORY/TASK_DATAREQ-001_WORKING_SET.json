@@ -1,0 +1,7 @@
+﻿[
+    "scripts/validate_a6_regional.py",
+    "kenobase/scraper/lotto_hessen_api.py",
+    "kenobase/scraper/__init__.py",
+    "tests/unit/test_a6_validation.py",
+    "results/a6_validation.json"
+]

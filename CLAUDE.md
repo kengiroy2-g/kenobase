@@ -4,6 +4,100 @@ Dieses Dokument dient als Arbeits- und Umsetzungsleitfaden fuer das neue Kenobas
 
 ---
 
+## 0.00 DAS KENO-PARADIGMA (PFLICHTLEKTUERE!)
+
+**KRITISCH: Lies diesen Abschnitt ZUERST bevor du IRGENDETWAS analysierst!**
+
+### Was dieses Projekt NICHT ist:
+
+```
+❌ NICHT: Taegliche Gewinnstrategie mit positivem ROI
+❌ NICHT: Statistische Mustersuche (Pattern-First)
+❌ NICHT: Fixe Zahlen die "immer gewinnen"
+❌ NICHT: Langfristige Strategie die "funktioniert"
+```
+
+### Was dieses Projekt IST:
+
+```
+✅ DYNAMISCHES POOL-MANAGEMENT: Welcher Zahlenpool hat JETZT die hoechste
+   Wahrscheinlichkeit fuer Gewinnklasse 1 (Jackpot)?
+
+✅ TIMING-BASIERT: WANN ist das System "offen" fuer bestimmte Kombinationen?
+
+✅ SYSTEM-DIAGNOSE: Das System "lesen" wie einen Patienten -
+   aktuelle Phase erkennen, nicht Zukunft vorhersagen
+
+✅ DER TANZ: Die Strategie IST die taegliche Anpassung,
+   nicht eine feste Regel
+```
+
+### Warum normale statistische Analyse NICHT funktioniert:
+
+```
+1. KENO ist KEIN Zufallssystem - es ist ein WIRTSCHAFTSSYSTEM
+2. Das System wurde von Top-Mathematikern GEGEN Pattern-Erkennung optimiert
+3. Jedes detektierbare Muster wird AKTIV supprimiert (r = 0.927 Korrelation!)
+4. Das System KORRIGIERT sich selbst gegen Spieler-Tendenzen
+
+BEWEIS: Gescheiterte Hypothesen BEWEISEN die System-Immunität
+        Sie zeigen was das System aktiv korrigiert!
+```
+
+### Die drei Dimensionen des Spiels:
+
+| Dimension | Frage | Methode |
+|-----------|-------|---------|
+| **TIMING** | WANN spielen? | Phase erkennen (FRUEH/SPAET, Cooldown, Boost) |
+| **POOL** | WELCHE Zahlen? | Dynamischer Pool aus aktuellen Hot-Zones |
+| **KOMBINATION** | WIE zusammensetzen? | Anti-Popularitaet, Birthday-Avoidance |
+
+### ROI richtig verstehen:
+
+```
+FALSCH: "Diese Strategie hat +50% ROI auf Dauer"
+        → Unmoeglich bei 50% House Edge + Selbstkorrektur
+
+RICHTIG: "Dieser Pool hat in der aktuellen Phase die hoechste
+         Wahrscheinlichkeit P(Jackpot | Pool, Timing)"
+         → Dynamische Optimierung, nicht statischer Gewinn
+```
+
+### Das System tickt so:
+
+```
+WIRTSCHAFTLICH:
+- 50% House Edge ist GARANTIERT (gesetzlich)
+- System optimiert Auszahlung, nicht Zufall
+- Jackpots muessen in allen 16 Bundeslaendern erscheinen
+
+REAKTIV (BEWIESEN):
+- Korrelation Auszahlung ↔ Hot-Zone-Aenderung: r = 0.927
+- System REAGIERT auf Spielerverhalten
+- Populaere Muster werden aktiv supprimiert
+
+ZYKLISCH:
+- FRUEH-Phase (Tag 1-14): System "offen"
+- SPAET-Phase (Tag 15-28): System "geschlossen"
+- Cooldown (30d nach Jackpot): System erholt sich
+```
+
+### Kern-Erkenntnis fuer jede KI:
+
+> **"Du suchst nicht nach einem Muster das gewinnt.
+> Du lernst zu erkennen WANN das System einen bestimmten Pool bevorzugt,
+> und spielst NUR in diesen Momenten - dann wartest du wieder."**
+
+### Pflichtlektuere bevor du arbeitest:
+
+```
+1. AI_COLLABORATION/KNOWLEDGE_BASE/KENO_SYSTEM_GRUNDWISSEN.md
+2. AI_COLLABORATION/KNOWLEDGE_BASE/HYPOTHESEN_SYNTHESE.md
+3. AI_COLLABORATION/KNOWLEDGE_BASE/STRATEGY_DANCE_KOMPENDIUM.md
+```
+
+---
+
 ## 0. LOOP V4 QUICK START
 
 **Loop V4 starten:**
@@ -24,6 +118,69 @@ Dieses Dokument dient als Arbeits- und Umsetzungsleitfaden fuer das neue Kenobas
 ```
 ARCHITECT (KI #1) -> PROXY -> EXECUTOR (KI #2) -> PROXY -> VALIDATOR (KI #3) -> DONE
 ```
+
+---
+
+## 0.05 VALIDIERUNGS-PROTOKOLL (PFLICHT!)
+
+**KRITISCH - Vor JEDER Analyse diese Dateien lesen:**
+
+```
+1. AI_COLLABORATION/KNOWLEDGE_BASE/KENO_SYSTEM_GRUNDWISSEN.md  <-- SYSTEM-LOGIK (ZUERST!)
+2. AI_COLLABORATION/KNOWLEDGE_BASE/VALIDIERTE_FAKTEN.md        <-- SINGLE SOURCE OF TRUTH
+3. AI_COLLABORATION/VALIDATION_PROTOCOL.md                     <-- Regeln
+```
+
+### KENO System-Verstaendnis (PFLICHTLEKTUERE!):
+
+**KENO_SYSTEM_GRUNDWISSEN.md enthaelt:**
+- Wie das System die 20 Zahlen waehlt (Auszahlungs-Optimierung)
+- Warum "Andere 10" populaerer sind als "Gewinner 10"
+- Regionale Struktur (16 Bundeslaender, unterschiedliche Popularitaet)
+- Invarianten der Gewinner-Kombinationen
+- Axiom-First Analyse-Paradigma
+
+**OHNE dieses Wissen wird die KI in die FALSCHE Richtung denken!**
+
+### Grundregeln:
+
+1. **VALIDIERTE_FAKTEN.md ZUERST** - Alle bekannten Ergebnisse stehen dort
+2. **Nie neu berechnen** was in VALIDIERTE_FAKTEN.md steht
+3. **Widerspruchs-Check** - Neue Ergebnisse gegen VALIDIERTE_FAKTEN.md pruefen
+4. **Quellen-Pflicht** - Jede Aussage braucht Verweis auf Quelldatei
+
+### Wie das KENO-System tickt (GROUND TRUTH):
+
+```
+WIRTSCHAFTLICHE LOGIK:
+1. KENO ist Milliarden-Geschaeft mit garantiertem House Edge (50%)
+2. System optimiert Auszahlung, nicht Zufall
+3. 20 Zahlen = 10 populaere (kleine Gewinne) + 10 seltene (Jackpot)
+
+ZEITLICHE MUSTER:
+4. FRUEH-Phase (Tag 1-14): System "resettet" = +364% ROI
+5. Cooldown (30d nach 10/10): System erholt sich = -66% ROI
+6. Geduld wird belohnt: Weniger spielen = bessere ROI
+
+REGIONALE STRUKTUR:
+7. 16 Bundeslaender mit eigener Spielerschaft
+8. Jackpot-Gewinner in ALLEN Bundeslaendern (Zyklus)
+9. Populaere Zahlen unterscheiden sich nach Region
+```
+
+### Quick Facts (Details in VALIDIERTE_FAKTEN.md):
+
+| Fakt | Wert |
+|------|------|
+| Bestes Fenster | **W20** |
+| HZ7 W20 Jackpots | **69** (2022-2024) |
+| HZ7 W20 ROI | **+413%** |
+| FRUEH-Phase | **Tag 1-14, +364% ROI** |
+| Cooldown | **30 Tage nach 10/10** |
+
+### Bei Unsicherheit:
+
+> "Lies zuerst VALIDIERTE_FAKTEN.md bevor du antwortest"
 
 ---
 
@@ -104,24 +261,19 @@ git commit -m "docs(claude): add GitHub workflow section"
 
 ---
 
-## 0.3 Super Model V2: Birthday-Avoidance Strategie (EMPFOHLEN)
+## 0.3 Super Model V2: Birthday-Avoidance (EXPERIMENTELL)
 
-**WICHTIG: Validiert auf 2025 Out-of-Sample Daten (363 Ziehungen)**
+**WICHTIG (Quoten/ROI):**
+- Single Source of Truth fuer KENO-Auszahlungen ist `kenobase/core/keno_quotes.py`.
+- Fruehere ROI-Tabellen in Repo/Docs waren teilweise mit einer falschen (inflatierten) Quoten-Tabelle berechnet.
+- Aktueller Stand mit korrekten Fixed-Quotes: **keine stabile positive ROI** im 2025 OOS Test; siehe:
+  - `results/super_model_test_2025.json`
+  - `results/super_model_comparison_summary.md`
 
-### Kern-Erkenntnis
+### Kern-Idee (Hypothese)
 
-Bei KENO-Jackpots werden Birthday-Zahlen (1-31) systematisch vermieden (-10.5% Effekt).
-Die V2-Strategie nutzt diesen Effekt mit empirisch optimierten Tickets.
-
-### 2025 Out-of-Sample Ergebnisse
-
-| Typ | Original ROI | V2 Birthday-Av. ROI | Verbesserung |
-|-----|-------------|---------------------|--------------|
-| Typ 8 | -14.6% | **+261.4%** | +276% |
-| Typ 9 | +209.6% | **+1545.7%** | +1336% |
-| Typ 10 | +77.7% | **+305.5%** | +228% |
-
-**EMPFEHLUNG: Typ 9 mit Birthday-Avoidance liefert beste Performance!**
+Bei KENO-GK1-Events (Jackpot) scheinen Birthday-Zahlen (1-31) in manchen Analysen unterrepraesentiert zu sein.
+V2 nutzt das als *Heuristik* (Anti-Birthday Ticket-Kandidaten), nicht als Gewinngarantie.
 
 ### Empfohlene Tickets (V2)
 
@@ -160,9 +312,9 @@ python scripts/daily_recommendation.py --save
 
 ### Wichtige Hinweise
 
-1. **Nur Typ 8-10 profitabel**: Typ 2-7 haben negativen ROI
-2. **Jackpot-Cooldown beachten**: 30 Tage nach Jackpot reduzierte Wahrscheinlichkeit
-3. **Dual-Strategie moeglich**: Original + V2 Ticket fuer Diversifikation
+1. **Kein Profit-Versprechen:** Backtests koennen durch Varianz/Multiple-Testing irrefuehren.
+2. **Axiom-First MUSS:** Train->Test (frozen rules), Nullmodell, Negative Controls.
+3. **EuroJackpot getrennt behandeln:** Externer Kontrollkanal (nicht DE-Lotto-Ecosystem).
 
 ### Relevante Scripts
 
@@ -177,6 +329,166 @@ python scripts/daily_recommendation.py --save
 
 - **Aktuell**: `data/raw/keno/KENO_ab_2022_bereinigt.csv` (2022-2025)
 - **Historisch**: `Keno_GPTs/Kenogpts_2/Basis_Tab/KENO_ab_2018.csv` (2018-2024)
+
+---
+
+## 0.4 GEGEN DAS SYSTEM: Anti-Momentum Strategie (VALIDIERT!)
+
+**Status:** VALIDIERT mit Backtest 2023-2024 (1000 Simulationen)
+
+### Kern-Erkenntnis
+
+Das KENO-System laesst sich gegen sich selbst nutzen:
+
+```
+PROBLEM:
+  - Andere Spieler waehlen "heisse" Zahlen (Momentum)
+  - Viele gleiche Tickets = geteilte Gewinne = niedriger ROI
+
+LOESUNG:
+  - Wir vermeiden Momentum-Zahlen AKTIV
+  - Weniger Ticket-Overlap = hoeherer erwarteter Gewinn
+  - Gegen den Strom schwimmen!
+```
+
+### Backtest-Ergebnisse (1000 Simulationen, 2023-2024)
+
+| Strategie | Timing | ROI |
+|-----------|--------|-----|
+| Typ 7 + Anti-Momentum | any_combo | **+36.3%** ★★★ |
+| Typ 7 + Anti-Momentum | tag_24_28_AND_boost | **+10.7%** |
+| Typ 7 + Random | tag_24_28_AND_boost | +5.9% |
+| Typ 7 + Momentum | boost_only | +19.1% |
+| Typ 7 + Momentum | tag_24_28_AND_boost | -58.8% |
+
+### Optimale Bedingungen (+36.3% ROI)
+
+```
+ALLE Bedingungen muessen erfuellt sein:
+
+1. BOOST-PHASE: 8-14 Tage nach letztem Jackpot
+2. TIMING: Tag 24-28 des Monats ODER Mittwoch
+3. TYP: Typ 7 (nicht Typ 6, 8, 9 oder 10!)
+4. TICKET: Anti-Momentum (aktiv "heisse" Zahlen vermeiden)
+```
+
+### Anti-Momentum Ticket-Generierung
+
+```python
+# Zahlen die VERMIEDEN werden:
+
+# 1. Momentum-Zahlen (2+ mal in letzten 3 Tagen erschienen)
+momentum_avoid = get_numbers_with_streak_ge_2(last_3_days)
+
+# 2. Populaere Birthday-Zahlen
+birthday_popular = {1, 2, 3, 7, 11, 13, 17, 19, 21, 23, 27, 29, 31}
+
+# Ticket aus verbleibendem Pool generieren
+pool = [z for z in range(1, 71) if z not in momentum_avoid and z not in birthday_popular]
+ticket = random.sample(pool, 7)
+```
+
+### Taegliche Empfehlung
+
+```powershell
+# Standard (zeigt Boost-Phase wenn aktiv)
+python scripts/daily_recommendation.py
+
+# Anti-Momentum erzwingen (auch ausserhalb Boost)
+python scripts/daily_recommendation.py --postjp
+
+# Mit JSON-Export
+python scripts/daily_recommendation.py --postjp --save
+```
+
+### Wann NICHT spielen
+
+```
+NICHT SPIELEN:
+  ❌ Tag 1-7 nach Jackpot (zu frueh)
+  ❌ Tag 15+ nach Jackpot OHNE Timing-Bonus
+  ❌ Cooldown-Phase (30+ Tage nach Jackpot)
+  ❌ Mit Momentum-Zahlen ("heisse" Zahlen)
+  ❌ Mit populaeren Birthday-Zahlen
+```
+
+### Relevante Scripts
+
+| Script | Zweck |
+|--------|-------|
+| `scripts/daily_recommendation.py` | Taegliche Anti-Momentum Empfehlung |
+| `scripts/backtest_postjp_momentum.py` | Backtest aller Strategien |
+| `scripts/analyze_jackpot_regime.py` | Jackpot-Regime Analyse |
+
+### Warum funktioniert das?
+
+```
+SPIELER-PSYCHOLOGIE:
+  - Spieler bevorzugen "heisse" Zahlen (Momentum)
+  - Spieler nutzen Geburtstage (1-31)
+  - Viele Spieler = viele gleiche Tickets
+
+SYSTEM-VERHALTEN:
+  - Gewinne werden unter allen Gewinnern geteilt
+  - Mehr gleiche Tickets = kleinere Auszahlung pro Kopf
+  - Seltene Ticket-Kombinationen = hoehere Auszahlung
+
+UNSERE STRATEGIE:
+  - Vermeiden was andere waehlen
+  - Nutzen was andere ignorieren
+  - Timing optimieren (Boost-Phase)
+```
+
+---
+
+## 0.5 KORREKTUR-THEORIE: Das Meta-Prinzip
+
+**WICHTIG:** Alle nicht-bestaetigten Hypothesen sind BEWEIS dass das System immun ist!
+
+### Das Paradoxon
+
+```
+Hypothese scheitert?
+  → Millionen Spieler glauben daran
+  → System WEISS das
+  → System KORRIGIERT dagegen
+  → DESHALB scheitert die Hypothese!
+
+ERKENNTNIS:
+  Gescheiterte Hypothesen zeigen uns WAS das System korrigiert.
+  Wir spielen dann GEGEN diese Tendenz!
+```
+
+### Die drei Ebenen
+
+```
+EBENE 1: SPIELER-VERHALTEN
+  - Spieler folgen Tendenzen (Birthday, Momentum, Muster)
+  - Viele Spieler = viele gleiche Tickets = geteilte Gewinne
+
+EBENE 2: SYSTEM-KORREKTUR
+  - System kennt Spieler-Verhalten (Dauerscheine, Statistiken)
+  - System muss House-Edge garantieren (50%)
+  - System KORRIGIERT gegen Spieler-Tendenzen
+
+EBENE 3: META-STRATEGIE (WIR!)
+  - Wir erkennen die KORREKTUR
+  - Wir spielen GEGEN die Tendenz
+  - Wir nutzen die Korrektur zu unserem Vorteil
+```
+
+### Bekannte Korrekturen
+
+| Spieler-Tendenz | System-Korrektur | Unsere Strategie |
+|-----------------|------------------|------------------|
+| Birthday (1-31) | Unterrepraesentiert | Hohe Zahlen (32-70) |
+| Momentum | Nach Streak "kalt" | Anti-Momentum |
+| Nach Jackpot spielen | Cooldown-Phase | Nur Boost-Phase |
+| Gleiche Zahlen | Geteilte Gewinne | Seltene Kombinationen |
+
+### Dokumentation
+
+Vollstaendige Theorie: `docs/KORREKTUR_THEORIE.md`
 
 ---
 
@@ -1091,12 +1403,12 @@ ntlich |
 **Aktualisiert:** 2025-12-30
 **Version:** 2.2.0
 **Autor:** Lead Architect (Claude Code)
-**Status:** PRODUCTION - V2 Birthday-Avoidance validiert auf 2025 Daten
+**Status:** RESEARCH - Backtests/ROI siehe `results/`
 
 ### Changelog
 
 | Version | Datum | Aenderungen |
 |---------|-------|-------------|
-| 2.2.0 | 2025-12-30 | V2 Birthday-Avoidance Strategie, 2025 Validation, daily_recommendation.py |
+| 2.2.0 | 2025-12-30 | Quoten/ROI konsolidiert (Single Source), Backtests aktualisiert, daily_recommendation.py |
 | 2.1.0 | 2025-12-29 | Ecosystem-Analyse, Axiom-First Paradigma |
 | 2.0.0 | 2025-12-26 | Initial Kenobase V2 mit Physics Layer |

@@ -1,0 +1,35 @@
+{
+  "datum": "2026-01-01T23:05:20.009213",
+  "strategie_1_jackpot_zahlen": {
+    "simulationen": 1000,
+    "spiele_total": 731000,
+    "optimiert_8plus": 354,
+    "random_8plus": 332,
+    "optimiert_9plus": 31,
+    "random_9plus": 22,
+    "optimiert_10": 1,
+    "random_10": 0
+  },
+  "strategie_2_timing": {
+    "UNKNOWN": {
+      "games": 3200,
+      "roi": -57.6875
+    },
+    "EARLY": {
+      "games": 9100,
+      "roi": -54.285714285714285
+    },
+    "BOOST": {
+      "games": 7200,
+      "roi": -54.513888888888886
+    },
+    "NEUTRAL": {
+      "games": 6300,
+      "roi": -51.25396825396825
+    },
+    "COOLDOWN": {
+      "games": 47300,
+      "roi": -55.15644820295983
+    }
+  }
+}

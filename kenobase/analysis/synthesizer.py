@@ -261,8 +261,9 @@ class KenoSynthesizer:
         df = self.combined_df[self.combined_df['total_gewinner'] > 0].copy()
 
         # Weekly aggregation
-        df['week'] = df['datum'].dt.isocalendar().week
-        df['year'] = df['datum'].dt.year
+        iso = df["datum"].dt.isocalendar()
+        df["week"] = iso.week
+        df["year"] = iso.year
 
         weekly = df.groupby(['year', 'week']).agg({
             'total_gewinner': 'sum',

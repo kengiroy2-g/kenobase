@@ -1,0 +1,22 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-30 13:34:48
+
+plan:
+  name: "ADR-020 Remaining Tasks"
+
+tasks:
+  - id: task_004
+    name: "NEW_ML O1.5/O2.5 State-Awareness"
+    priority: P2
+    status: IN_PROGRESS
+    current_phase: PROXY_PLAN
+  - id: task_005
+    name: "ADR-015 Cross-Market Divergenz Detection"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: task_006
+    name: "ADR-017 Ecosystem Phase-Detection"
+    priority: P3
+    status: PENDING
+    current_phase: null

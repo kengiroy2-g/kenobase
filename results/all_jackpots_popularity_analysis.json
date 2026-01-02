@@ -1,0 +1,148 @@
+{
+  "analyse_typ": "Popularity-Split alle Jackpots",
+  "anzahl_events": 3,
+  "hypothese": "Andere 10 sind populaerer als Gewinner 10",
+  "ergebnisse": [
+    {
+      "id": "KYRITZ_2025_10_25",
+      "name": "Kyritz",
+      "date": "2025-10-25",
+      "region": "Brandenburg",
+      "winner_10": [
+        5,
+        12,
+        20,
+        26,
+        34,
+        36,
+        42,
+        45,
+        48,
+        66
+      ],
+      "other_10": [
+        2,
+        9,
+        19,
+        35,
+        39,
+        49,
+        54,
+        55,
+        62,
+        64
+      ],
+      "winner_avg_popularity": 0.3741,
+      "other_avg_popularity": 0.303,
+      "popularity_diff": -0.0711,
+      "popularity_diff_pct": -19.0,
+      "t_statistic": -0.4304,
+      "p_value": 0.672,
+      "birthday_in_winner": 4,
+      "birthday_in_other": 3,
+      "hypothesis_result": "WIDERLEGT"
+    },
+    {
+      "id": "OBERBAYERN_2023_06_28",
+      "name": "Oberbayern",
+      "date": "2023-06-28",
+      "region": "Bayern",
+      "winner_10": [
+        3,
+        15,
+        18,
+        27,
+        47,
+        53,
+        54,
+        55,
+        66,
+        68
+      ],
+      "other_10": [
+        6,
+        13,
+        24,
+        36,
+        38,
+        40,
+        43,
+        51,
+        56,
+        63
+      ],
+      "winner_avg_popularity": 0.3178,
+      "other_avg_popularity": 0.3254,
+      "popularity_diff": 0.0076,
+      "popularity_diff_pct": 2.39,
+      "t_statistic": 0.0479,
+      "p_value": 0.9624,
+      "birthday_in_winner": 4,
+      "birthday_in_other": 3,
+      "hypothesis_result": "NEUTRAL"
+    },
+    {
+      "id": "NORDSACHSEN_2024_01_24",
+      "name": "Nordsachsen",
+      "date": "2024-01-24",
+      "region": "Sachsen",
+      "winner_10": [
+        9,
+        19,
+        37,
+        38,
+        43,
+        45,
+        48,
+        57,
+        59,
+        67
+      ],
+      "other_10": [
+        3,
+        7,
+        12,
+        13,
+        16,
+        17,
+        21,
+        36,
+        52,
+        54
+      ],
+      "winner_avg_popularity": 0.233,
+      "other_avg_popularity": 0.6274,
+      "popularity_diff": 0.3943,
+      "popularity_diff_pct": 169.22,
+      "t_statistic": 2.4782,
+      "p_value": 0.0233,
+      "birthday_in_winner": 2,
+      "birthday_in_other": 7,
+      "hypothesis_result": "BESTAETIGT"
+    }
+  ],
+  "aggregiert": {
+    "avg_popularity_diff": 0.1103,
+    "birthday_in_winner_total": 10,
+    "birthday_in_other_total": 13,
+    "confirmed_count": 1
+  },
+  "fazit": "UNENTSCHIEDEN",
+  "regionale_analyse": {
+    "Brandenburg": {
+      "count": 1,
+      "avg_winner_pop": 0.3741,
+      "avg_other_pop": 0.303
+    },
+    "Bayern": {
+      "count": 1,
+      "avg_winner_pop": 0.3178,
+      "avg_other_pop": 0.3254
+    },
+    "Sachsen": {
+      "count": 1,
+      "avg_winner_pop": 0.233,
+      "avg_other_pop": 0.6274
+    }
+  }
+}

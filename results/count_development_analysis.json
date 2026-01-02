@@ -1,0 +1,1785 @@
+{
+  "gap_correlation": {
+    "0": {
+      "appeared": 8391,
+      "total": 29190,
+      "probability": 0.2875
+    },
+    "1": {
+      "appeared": 5978,
+      "total": 20782,
+      "probability": 0.2877
+    },
+    "2": {
+      "appeared": 4280,
+      "total": 14793,
+      "probability": 0.2893
+    },
+    "3": {
+      "appeared": 2953,
+      "total": 10506,
+      "probability": 0.2811
+    },
+    "4": {
+      "appeared": 2137,
+      "total": 7552,
+      "probability": 0.283
+    },
+    "5": {
+      "appeared": 1507,
+      "total": 5410,
+      "probability": 0.2786
+    },
+    "6": {
+      "appeared": 1068,
+      "total": 3900,
+      "probability": 0.2738
+    },
+    "7": {
+      "appeared": 817,
+      "total": 2831,
+      "probability": 0.2886
+    },
+    "8": {
+      "appeared": 582,
+      "total": 2012,
+      "probability": 0.2893
+    },
+    "9": {
+      "appeared": 397,
+      "total": 1429,
+      "probability": 0.2778
+    },
+    "10": {
+      "appeared": 295,
+      "total": 1031,
+      "probability": 0.2861
+    },
+    "11": {
+      "appeared": 229,
+      "total": 736,
+      "probability": 0.3111
+    },
+    "12": {
+      "appeared": 138,
+      "total": 506,
+      "probability": 0.2727
+    },
+    "13": {
+      "appeared": 98,
+      "total": 368,
+      "probability": 0.2663
+    },
+    "14": {
+      "appeared": 89,
+      "total": 270,
+      "probability": 0.3296
+    },
+    "15": {
+      "appeared": 47,
+      "total": 181,
+      "probability": 0.2597
+    },
+    "16": {
+      "appeared": 41,
+      "total": 134,
+      "probability": 0.306
+    },
+    "17": {
+      "appeared": 20,
+      "total": 93,
+      "probability": 0.2151
+    },
+    "18": {
+      "appeared": 20,
+      "total": 73,
+      "probability": 0.274
+    },
+    "19": {
+      "appeared": 20,
+      "total": 53,
+      "probability": 0.3774
+    },
+    "20": {
+      "appeared": 9,
+      "total": 33,
+      "probability": 0.2727
+    },
+    "21": {
+      "appeared": 4,
+      "total": 24,
+      "probability": 0.1667
+    },
+    "22": {
+      "appeared": 6,
+      "total": 20,
+      "probability": 0.3
+    },
+    "23": {
+      "appeared": 3,
+      "total": 14,
+      "probability": 0.2143
+    },
+    "24": {
+      "appeared": 3,
+      "total": 11,
+      "probability": 0.2727
+    },
+    "25": {
+      "appeared": 2,
+      "total": 8,
+      "probability": 0.25
+    },
+    "26": {
+      "appeared": 0,
+      "total": 6,
+      "probability": 0.0
+    },
+    "27": {
+      "appeared": 1,
+      "total": 6,
+      "probability": 0.1667
+    },
+    "28": {
+      "appeared": 1,
+      "total": 5,
+      "probability": 0.2
+    },
+    "29": {
+      "appeared": 1,
+      "total": 4,
+      "probability": 0.25
+    },
+    "30": {
+      "appeared": 2,
+      "total": 3,
+      "probability": 0.6667
+    }
+  },
+  "current_overdue": [
+    {
+      "number": 15,
+      "current_gap": 12,
+      "avg_gap": 3.52,
+      "std_gap": 2.97,
+      "z_score": 2.85,
+      "is_overdue": "True"
+    },
+    {
+      "number": 36,
+      "current_gap": 10,
+      "avg_gap": 3.36,
+      "std_gap": 2.86,
+      "z_score": 2.33,
+      "is_overdue": "True"
+    },
+    {
+      "number": 21,
+      "current_gap": 9,
+      "avg_gap": 3.63,
+      "std_gap": 3.08,
+      "z_score": 1.75,
+      "is_overdue": "True"
+    },
+    {
+      "number": 38,
+      "current_gap": 8,
+      "avg_gap": 3.5,
+      "std_gap": 2.76,
+      "z_score": 1.63,
+      "is_overdue": "True"
+    },
+    {
+      "number": 59,
+      "current_gap": 8,
+      "avg_gap": 3.52,
+      "std_gap": 2.86,
+      "z_score": 1.57,
+      "is_overdue": "True"
+    },
+    {
+      "number": 68,
+      "current_gap": 7,
+      "avg_gap": 3.39,
+      "std_gap": 2.66,
+      "z_score": 1.36,
+      "is_overdue": "False"
+    },
+    {
+      "number": 34,
+      "current_gap": 6,
+      "avg_gap": 3.5,
+      "std_gap": 2.84,
+      "z_score": 0.88,
+      "is_overdue": "False"
+    },
+    {
+      "number": 67,
+      "current_gap": 6,
+      "avg_gap": 3.55,
+      "std_gap": 2.94,
+      "z_score": 0.83,
+      "is_overdue": "False"
+    },
+    {
+      "number": 22,
+      "current_gap": 6,
+      "avg_gap": 3.79,
+      "std_gap": 3.02,
+      "z_score": 0.73,
+      "is_overdue": "False"
+    },
+    {
+      "number": 66,
+      "current_gap": 5,
+      "avg_gap": 3.4,
+      "std_gap": 2.83,
+      "z_score": 0.57,
+      "is_overdue": "False"
+    },
+    {
+      "number": 1,
+      "current_gap": 5,
+      "avg_gap": 3.6,
+      "std_gap": 2.77,
+      "z_score": 0.51,
+      "is_overdue": "False"
+    },
+    {
+      "number": 52,
+      "current_gap": 5,
+      "avg_gap": 3.5,
+      "std_gap": 2.98,
+      "z_score": 0.5,
+      "is_overdue": "False"
+    },
+    {
+      "number": 62,
+      "current_gap": 5,
+      "avg_gap": 3.53,
+      "std_gap": 3.26,
+      "z_score": 0.45,
+      "is_overdue": "False"
+    },
+    {
+      "number": 44,
+      "current_gap": 5,
+      "avg_gap": 3.57,
+      "std_gap": 3.25,
+      "z_score": 0.44,
+      "is_overdue": "False"
+    },
+    {
+      "number": 31,
+      "current_gap": 4,
+      "avg_gap": 3.59,
+      "std_gap": 3.06,
+      "z_score": 0.13,
+      "is_overdue": "False"
+    },
+    {
+      "number": 42,
+      "current_gap": 3,
+      "avg_gap": 3.31,
+      "std_gap": 2.74,
+      "z_score": -0.11,
+      "is_overdue": "False"
+    },
+    {
+      "number": 57,
+      "current_gap": 3,
+      "avg_gap": 3.42,
+      "std_gap": 3.07,
+      "z_score": -0.14,
+      "is_overdue": "False"
+    },
+    {
+      "number": 37,
+      "current_gap": 3,
+      "avg_gap": 3.46,
+      "std_gap": 3.03,
+      "z_score": -0.15,
+      "is_overdue": "False"
+    },
+    {
+      "number": 30,
+      "current_gap": 3,
+      "avg_gap": 3.61,
+      "std_gap": 3.09,
+      "z_score": -0.2,
+      "is_overdue": "False"
+    },
+    {
+      "number": 32,
+      "current_gap": 3,
+      "avg_gap": 3.64,
+      "std_gap": 3.08,
+      "z_score": -0.21,
+      "is_overdue": "False"
+    }
+  ],
+  "group_development": {
+    "expected_per_draw": {
+      "birthday": 8.86,
+      "non_birthday": 11.14,
+      "low": 6.57,
+      "middle": 6.86,
+      "high": 6.57,
+      "even": 10.0,
+      "odd": 10.0,
+      "decade_0": 2.57,
+      "decade_6": 3.14
+    },
+    "development": {
+      "birthday": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 8.5,
+          "ratio_to_expected": 0.9597
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 8.65,
+          "ratio_to_expected": 0.9766
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 8.6,
+          "ratio_to_expected": 0.971
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 8.65,
+          "ratio_to_expected": 0.9766
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 8.688,
+          "ratio_to_expected": 0.9809
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 8.71,
+          "ratio_to_expected": 0.9834
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 8.706,
+          "ratio_to_expected": 0.9829
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 8.707,
+          "ratio_to_expected": 0.9831
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 8.7,
+          "ratio_to_expected": 0.9823
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 8.702,
+          "ratio_to_expected": 0.9825
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 8.693,
+          "ratio_to_expected": 0.9814
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 8.697,
+          "ratio_to_expected": 0.9819
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 8.728,
+          "ratio_to_expected": 0.9854
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 8.751,
+          "ratio_to_expected": 0.9881
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 8.765,
+          "ratio_to_expected": 0.9896
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 8.784,
+          "ratio_to_expected": 0.9917
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 8.782,
+          "ratio_to_expected": 0.9916
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 8.779,
+          "ratio_to_expected": 0.9912
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 8.786,
+          "ratio_to_expected": 0.992
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 8.793,
+          "ratio_to_expected": 0.9928
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 8.786,
+          "ratio_to_expected": 0.9919
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 8.798,
+          "ratio_to_expected": 0.9933
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 8.796,
+          "ratio_to_expected": 0.9931
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 8.795,
+          "ratio_to_expected": 0.993
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 8.79,
+          "ratio_to_expected": 0.9925
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 8.802,
+          "ratio_to_expected": 0.9938
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 8.814,
+          "ratio_to_expected": 0.9951
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 8.816,
+          "ratio_to_expected": 0.9953
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 8.81,
+          "ratio_to_expected": 0.9946
+        }
+      ],
+      "non_birthday": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 11.5,
+          "ratio_to_expected": 1.0321
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 11.35,
+          "ratio_to_expected": 1.0186
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 11.4,
+          "ratio_to_expected": 1.0231
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 11.35,
+          "ratio_to_expected": 1.0186
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 11.312,
+          "ratio_to_expected": 1.0152
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 11.29,
+          "ratio_to_expected": 1.0132
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 11.294,
+          "ratio_to_expected": 1.0136
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 11.293,
+          "ratio_to_expected": 1.0134
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 11.3,
+          "ratio_to_expected": 1.0141
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 11.298,
+          "ratio_to_expected": 1.0139
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 11.307,
+          "ratio_to_expected": 1.0148
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 11.303,
+          "ratio_to_expected": 1.0144
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 11.272,
+          "ratio_to_expected": 1.0116
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 11.249,
+          "ratio_to_expected": 1.0095
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 11.235,
+          "ratio_to_expected": 1.0082
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 11.216,
+          "ratio_to_expected": 1.0066
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 11.218,
+          "ratio_to_expected": 1.0067
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 11.221,
+          "ratio_to_expected": 1.007
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 11.214,
+          "ratio_to_expected": 1.0064
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 11.207,
+          "ratio_to_expected": 1.0058
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 11.214,
+          "ratio_to_expected": 1.0064
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 11.202,
+          "ratio_to_expected": 1.0053
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 11.204,
+          "ratio_to_expected": 1.0055
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 11.205,
+          "ratio_to_expected": 1.0056
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 11.21,
+          "ratio_to_expected": 1.006
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 11.198,
+          "ratio_to_expected": 1.0049
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 11.186,
+          "ratio_to_expected": 1.0039
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 11.184,
+          "ratio_to_expected": 1.0037
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 11.19,
+          "ratio_to_expected": 1.0043
+        }
+      ],
+      "low": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 6.54,
+          "ratio_to_expected": 0.9952
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 6.43,
+          "ratio_to_expected": 0.9785
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 6.367,
+          "ratio_to_expected": 0.9688
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 6.37,
+          "ratio_to_expected": 0.9693
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 6.352,
+          "ratio_to_expected": 0.9666
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 6.407,
+          "ratio_to_expected": 0.9749
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 6.406,
+          "ratio_to_expected": 0.9748
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 6.42,
+          "ratio_to_expected": 0.977
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 6.447,
+          "ratio_to_expected": 0.981
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 6.454,
+          "ratio_to_expected": 0.9821
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 6.431,
+          "ratio_to_expected": 0.9786
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 6.448,
+          "ratio_to_expected": 0.9813
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 6.454,
+          "ratio_to_expected": 0.9821
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 6.494,
+          "ratio_to_expected": 0.9883
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 6.499,
+          "ratio_to_expected": 0.9889
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 6.518,
+          "ratio_to_expected": 0.9918
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 6.515,
+          "ratio_to_expected": 0.9915
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 6.508,
+          "ratio_to_expected": 0.9903
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 6.52,
+          "ratio_to_expected": 0.9922
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 6.526,
+          "ratio_to_expected": 0.9931
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 6.513,
+          "ratio_to_expected": 0.9912
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 6.527,
+          "ratio_to_expected": 0.9933
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 6.53,
+          "ratio_to_expected": 0.9936
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 6.532,
+          "ratio_to_expected": 0.9941
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 6.521,
+          "ratio_to_expected": 0.9923
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 6.531,
+          "ratio_to_expected": 0.9938
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 6.544,
+          "ratio_to_expected": 0.9958
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 6.544,
+          "ratio_to_expected": 0.9958
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 6.543,
+          "ratio_to_expected": 0.9957
+        }
+      ],
+      "middle": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 6.82,
+          "ratio_to_expected": 0.9946
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 6.86,
+          "ratio_to_expected": 1.0004
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 6.927,
+          "ratio_to_expected": 1.0101
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 6.805,
+          "ratio_to_expected": 0.9924
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 6.956,
+          "ratio_to_expected": 1.0144
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 6.907,
+          "ratio_to_expected": 1.0072
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 6.909,
+          "ratio_to_expected": 1.0075
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 6.933,
+          "ratio_to_expected": 1.011
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 6.916,
+          "ratio_to_expected": 1.0085
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 6.912,
+          "ratio_to_expected": 1.008
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 6.927,
+          "ratio_to_expected": 1.0102
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 6.923,
+          "ratio_to_expected": 1.0097
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 6.9,
+          "ratio_to_expected": 1.0062
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 6.9,
+          "ratio_to_expected": 1.0062
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 6.891,
+          "ratio_to_expected": 1.0049
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 6.871,
+          "ratio_to_expected": 1.0021
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 6.867,
+          "ratio_to_expected": 1.0014
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 6.879,
+          "ratio_to_expected": 1.0032
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 6.886,
+          "ratio_to_expected": 1.0043
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 6.886,
+          "ratio_to_expected": 1.0042
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 6.894,
+          "ratio_to_expected": 1.0054
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 6.884,
+          "ratio_to_expected": 1.0039
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 6.874,
+          "ratio_to_expected": 1.0024
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 6.871,
+          "ratio_to_expected": 1.002
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 6.884,
+          "ratio_to_expected": 1.0039
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 6.882,
+          "ratio_to_expected": 1.0036
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 6.872,
+          "ratio_to_expected": 1.0021
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 6.88,
+          "ratio_to_expected": 1.0033
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 6.878,
+          "ratio_to_expected": 1.003
+        }
+      ],
+      "high": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 6.64,
+          "ratio_to_expected": 1.0104
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 6.71,
+          "ratio_to_expected": 1.0211
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 6.707,
+          "ratio_to_expected": 1.0206
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 6.825,
+          "ratio_to_expected": 1.0386
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 6.692,
+          "ratio_to_expected": 1.0183
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 6.687,
+          "ratio_to_expected": 1.0175
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 6.686,
+          "ratio_to_expected": 1.0174
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 6.647,
+          "ratio_to_expected": 1.0116
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 6.638,
+          "ratio_to_expected": 1.0101
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 6.634,
+          "ratio_to_expected": 1.0095
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 6.642,
+          "ratio_to_expected": 1.0107
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 6.628,
+          "ratio_to_expected": 1.0087
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 6.646,
+          "ratio_to_expected": 1.0114
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 6.606,
+          "ratio_to_expected": 1.0052
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 6.611,
+          "ratio_to_expected": 1.006
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 6.611,
+          "ratio_to_expected": 1.0061
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 6.618,
+          "ratio_to_expected": 1.007
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 6.613,
+          "ratio_to_expected": 1.0064
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 6.594,
+          "ratio_to_expected": 1.0034
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 6.588,
+          "ratio_to_expected": 1.0025
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 6.592,
+          "ratio_to_expected": 1.0032
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 6.589,
+          "ratio_to_expected": 1.0027
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 6.597,
+          "ratio_to_expected": 1.0038
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 6.597,
+          "ratio_to_expected": 1.0038
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 6.595,
+          "ratio_to_expected": 1.0036
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 6.588,
+          "ratio_to_expected": 1.0025
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 6.584,
+          "ratio_to_expected": 1.002
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 6.576,
+          "ratio_to_expected": 1.0008
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 6.579,
+          "ratio_to_expected": 1.0011
+        }
+      ],
+      "even": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 9.78,
+          "ratio_to_expected": 0.978
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 10.08,
+          "ratio_to_expected": 1.008
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 10.227,
+          "ratio_to_expected": 1.0227
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 10.14,
+          "ratio_to_expected": 1.014
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 10.052,
+          "ratio_to_expected": 1.0052
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 10.09,
+          "ratio_to_expected": 1.009
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 10.043,
+          "ratio_to_expected": 1.0043
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 10.015,
+          "ratio_to_expected": 1.0015
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 9.973,
+          "ratio_to_expected": 0.9973
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 9.986,
+          "ratio_to_expected": 0.9986
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 10.031,
+          "ratio_to_expected": 1.0031
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 10.02,
+          "ratio_to_expected": 1.002
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 10.069,
+          "ratio_to_expected": 1.0069
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 10.081,
+          "ratio_to_expected": 1.0081
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 10.085,
+          "ratio_to_expected": 1.0085
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 10.053,
+          "ratio_to_expected": 1.0052
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 10.038,
+          "ratio_to_expected": 1.0038
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 10.029,
+          "ratio_to_expected": 1.0029
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 10.015,
+          "ratio_to_expected": 1.0015
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 10.0,
+          "ratio_to_expected": 1.0
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 10.009,
+          "ratio_to_expected": 1.0009
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 9.989,
+          "ratio_to_expected": 0.9989
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 9.968,
+          "ratio_to_expected": 0.9968
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 9.965,
+          "ratio_to_expected": 0.9965
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 9.966,
+          "ratio_to_expected": 0.9966
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 9.958,
+          "ratio_to_expected": 0.9958
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 9.959,
+          "ratio_to_expected": 0.9959
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 9.973,
+          "ratio_to_expected": 0.9973
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 9.975,
+          "ratio_to_expected": 0.9975
+        }
+      ],
+      "odd": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 10.22,
+          "ratio_to_expected": 1.022
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 9.92,
+          "ratio_to_expected": 0.992
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 9.773,
+          "ratio_to_expected": 0.9773
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 9.86,
+          "ratio_to_expected": 0.986
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 9.948,
+          "ratio_to_expected": 0.9948
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 9.91,
+          "ratio_to_expected": 0.991
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 9.957,
+          "ratio_to_expected": 0.9957
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 9.985,
+          "ratio_to_expected": 0.9985
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 10.027,
+          "ratio_to_expected": 1.0027
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 10.014,
+          "ratio_to_expected": 1.0014
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 9.969,
+          "ratio_to_expected": 0.9969
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 9.98,
+          "ratio_to_expected": 0.998
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 9.931,
+          "ratio_to_expected": 0.9931
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 9.919,
+          "ratio_to_expected": 0.9919
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 9.915,
+          "ratio_to_expected": 0.9915
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 9.947,
+          "ratio_to_expected": 0.9948
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 9.962,
+          "ratio_to_expected": 0.9962
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 9.971,
+          "ratio_to_expected": 0.9971
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 9.985,
+          "ratio_to_expected": 0.9985
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 10.0,
+          "ratio_to_expected": 1.0
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 9.991,
+          "ratio_to_expected": 0.9991
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 10.011,
+          "ratio_to_expected": 1.0011
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 10.032,
+          "ratio_to_expected": 1.0032
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 10.035,
+          "ratio_to_expected": 1.0035
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 10.034,
+          "ratio_to_expected": 1.0034
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 10.042,
+          "ratio_to_expected": 1.0042
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 10.041,
+          "ratio_to_expected": 1.0041
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 10.027,
+          "ratio_to_expected": 1.0027
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 10.025,
+          "ratio_to_expected": 1.0025
+        }
+      ],
+      "decade_0": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 2.66,
+          "ratio_to_expected": 1.0344
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 2.55,
+          "ratio_to_expected": 0.9917
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 2.467,
+          "ratio_to_expected": 0.9593
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 2.445,
+          "ratio_to_expected": 0.9508
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 2.452,
+          "ratio_to_expected": 0.9536
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 2.533,
+          "ratio_to_expected": 0.9852
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 2.534,
+          "ratio_to_expected": 0.9856
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 2.567,
+          "ratio_to_expected": 0.9985
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 2.547,
+          "ratio_to_expected": 0.9904
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 2.568,
+          "ratio_to_expected": 0.9987
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 2.564,
+          "ratio_to_expected": 0.997
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 2.585,
+          "ratio_to_expected": 1.0053
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 2.608,
+          "ratio_to_expected": 1.0141
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 2.629,
+          "ratio_to_expected": 1.0222
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 2.613,
+          "ratio_to_expected": 1.0163
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 2.612,
+          "ratio_to_expected": 1.016
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 2.625,
+          "ratio_to_expected": 1.0207
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 2.63,
+          "ratio_to_expected": 1.0228
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 2.627,
+          "ratio_to_expected": 1.0218
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 2.623,
+          "ratio_to_expected": 1.0201
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 2.63,
+          "ratio_to_expected": 1.0226
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 2.63,
+          "ratio_to_expected": 1.0228
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 2.633,
+          "ratio_to_expected": 1.024
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 2.626,
+          "ratio_to_expected": 1.0212
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 2.626,
+          "ratio_to_expected": 1.0214
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 2.621,
+          "ratio_to_expected": 1.0192
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 2.618,
+          "ratio_to_expected": 1.018
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 2.619,
+          "ratio_to_expected": 1.0183
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 2.61,
+          "ratio_to_expected": 1.0151
+        }
+      ],
+      "decade_6": [
+        {
+          "draw_num": 50,
+          "avg_per_draw": 3.16,
+          "ratio_to_expected": 1.0055
+        },
+        {
+          "draw_num": 100,
+          "avg_per_draw": 3.3,
+          "ratio_to_expected": 1.05
+        },
+        {
+          "draw_num": 150,
+          "avg_per_draw": 3.293,
+          "ratio_to_expected": 1.0479
+        },
+        {
+          "draw_num": 200,
+          "avg_per_draw": 3.325,
+          "ratio_to_expected": 1.058
+        },
+        {
+          "draw_num": 250,
+          "avg_per_draw": 3.244,
+          "ratio_to_expected": 1.0322
+        },
+        {
+          "draw_num": 300,
+          "avg_per_draw": 3.217,
+          "ratio_to_expected": 1.0235
+        },
+        {
+          "draw_num": 350,
+          "avg_per_draw": 3.24,
+          "ratio_to_expected": 1.0309
+        },
+        {
+          "draw_num": 400,
+          "avg_per_draw": 3.215,
+          "ratio_to_expected": 1.023
+        },
+        {
+          "draw_num": 450,
+          "avg_per_draw": 3.204,
+          "ratio_to_expected": 1.0196
+        },
+        {
+          "draw_num": 500,
+          "avg_per_draw": 3.182,
+          "ratio_to_expected": 1.0125
+        },
+        {
+          "draw_num": 550,
+          "avg_per_draw": 3.173,
+          "ratio_to_expected": 1.0095
+        },
+        {
+          "draw_num": 600,
+          "avg_per_draw": 3.173,
+          "ratio_to_expected": 1.0097
+        },
+        {
+          "draw_num": 650,
+          "avg_per_draw": 3.182,
+          "ratio_to_expected": 1.0123
+        },
+        {
+          "draw_num": 700,
+          "avg_per_draw": 3.156,
+          "ratio_to_expected": 1.0041
+        },
+        {
+          "draw_num": 750,
+          "avg_per_draw": 3.157,
+          "ratio_to_expected": 1.0046
+        },
+        {
+          "draw_num": 800,
+          "avg_per_draw": 3.164,
+          "ratio_to_expected": 1.0066
+        },
+        {
+          "draw_num": 850,
+          "avg_per_draw": 3.161,
+          "ratio_to_expected": 1.0058
+        },
+        {
+          "draw_num": 900,
+          "avg_per_draw": 3.168,
+          "ratio_to_expected": 1.0079
+        },
+        {
+          "draw_num": 950,
+          "avg_per_draw": 3.157,
+          "ratio_to_expected": 1.0044
+        },
+        {
+          "draw_num": 1000,
+          "avg_per_draw": 3.156,
+          "ratio_to_expected": 1.0042
+        },
+        {
+          "draw_num": 1050,
+          "avg_per_draw": 3.162,
+          "ratio_to_expected": 1.0061
+        },
+        {
+          "draw_num": 1100,
+          "avg_per_draw": 3.152,
+          "ratio_to_expected": 1.0029
+        },
+        {
+          "draw_num": 1150,
+          "avg_per_draw": 3.153,
+          "ratio_to_expected": 1.0032
+        },
+        {
+          "draw_num": 1200,
+          "avg_per_draw": 3.142,
+          "ratio_to_expected": 0.9996
+        },
+        {
+          "draw_num": 1250,
+          "avg_per_draw": 3.144,
+          "ratio_to_expected": 1.0004
+        },
+        {
+          "draw_num": 1300,
+          "avg_per_draw": 3.128,
+          "ratio_to_expected": 0.9954
+        },
+        {
+          "draw_num": 1350,
+          "avg_per_draw": 3.121,
+          "ratio_to_expected": 0.993
+        },
+        {
+          "draw_num": 1400,
+          "avg_per_draw": 3.116,
+          "ratio_to_expected": 0.9916
+        },
+        {
+          "draw_num": 1450,
+          "avg_per_draw": 3.108,
+          "ratio_to_expected": 0.9888
+        }
+      ]
+    }
+  },
+  "balance_tendency": {
+    "catch_up_events": 58,
+    "cool_down_events": 67,
+    "total_events": 125,
+    "balance_ratio": 0.866,
+    "sample_events": [
+      {
+        "number": 3,
+        "window_start": 0,
+        "first_half": 39,
+        "second_half": 24,
+        "type": "cool_down"
+      },
+      {
+        "number": 5,
+        "window_start": 0,
+        "first_half": 23,
+        "second_half": 31,
+        "type": "catch_up"
+      },
+      {
+        "number": 12,
+        "window_start": 0,
+        "first_half": 36,
+        "second_half": 28,
+        "type": "cool_down"
+      },
+      {
+        "number": 25,
+        "window_start": 0,
+        "first_half": 21,
+        "second_half": 32,
+        "type": "catch_up"
+      },
+      {
+        "number": 27,
+        "window_start": 0,
+        "first_half": 37,
+        "second_half": 28,
+        "type": "cool_down"
+      },
+      {
+        "number": 36,
+        "window_start": 0,
+        "first_half": 41,
+        "second_half": 25,
+        "type": "cool_down"
+      },
+      {
+        "number": 48,
+        "window_start": 0,
+        "first_half": 23,
+        "second_half": 29,
+        "type": "catch_up"
+      },
+      {
+        "number": 50,
+        "window_start": 0,
+        "first_half": 21,
+        "second_half": 31,
+        "type": "catch_up"
+      },
+      {
+        "number": 56,
+        "window_start": 0,
+        "first_half": 17,
+        "second_half": 35,
+        "type": "catch_up"
+      },
+      {
+        "number": 57,
+        "window_start": 0,
+        "first_half": 42,
+        "second_half": 28,
+        "type": "cool_down"
+      }
+    ]
+  },
+  "predictions": {
+    "strategy_1_overdue": [
+      15,
+      36,
+      21,
+      38,
+      59,
+      68
+    ],
+    "strategy_2_high_prob": [],
+    "strategy_3_rare": [
+      {
+        "number": 22,
+        "count": 383,
+        "deficit": 33.3
+      },
+      {
+        "number": 7,
+        "count": 389,
+        "deficit": 27.3
+      },
+      {
+        "number": 60,
+        "count": 390,
+        "deficit": 26.3
+      },
+      {
+        "number": 41,
+        "count": 391,
+        "deficit": 25.3
+      },
+      {
+        "number": 69,
+        "count": 394,
+        "deficit": 22.3
+      },
+      {
+        "number": 70,
+        "count": 394,
+        "deficit": 22.3
+      },
+      {
+        "number": 18,
+        "count": 396,
+        "deficit": 20.3
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-30 13:35:33
+
+plan:
+  name: ""
+
+tasks:
+  - id: 1
+    name: "Daten-Vorbereitung"
+    priority: P2
+    status: IN_PROGRESS
+    current_phase: ARCHITECT
+  - id: 2
+    name: "Deskriptive Statistik"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 3
+    name: "Zyklen-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 4
+    name: "GK-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 5
+    name: "Overlap-Hypothesen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 6
+    name: "Walk-Forward"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 7
+    name: "Nullmodelle"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 8
+    name: "Tiefenanalyse"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 9
+    name: "Synthese"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 10
+    name: "Validierung Voreiliger Aussagen"
+    priority: P2
+    status: PENDING
+    current_phase: null
+  - id: 11
+    name: "High-Win Gewinnklassen Analyse (>450 EUR)"
+    priority: P2
+    status: PENDING
+    current_phase: null

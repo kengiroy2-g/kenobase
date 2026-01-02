@@ -1,0 +1,9 @@
+﻿[
+    "all_code/Iteration111_V4.py",
+    "AI_COLLABORATION/KNOWLEDGE_BASE/HYPOTHESES_CATALOG.md",
+    "config/default.yaml",
+    "kenobase/core/data_loader.py",
+    "scripts/analyze_hyp007.py (als Template)",
+    "scripts/falsify_hyp008_111.py",
+    "results/hyp008_111_falsification.json"
+]

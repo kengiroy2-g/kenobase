@@ -1,0 +1,382 @@
+{
+  "metadata": {
+    "date": "2026-01-01T21:32:11.969516",
+    "definitions": {
+      "JP_10_10": "Typ 10, 10/10 richtig, \u22651 Gewinner (100.000\u20ac)",
+      "JP_9_9": "Typ 9, 9/9 richtig, \u22651 Gewinner (50.000\u20ac)",
+      "JP_10_9": "Typ 10, 9/10 richtig, \u22651 Gewinner (1.000\u20ac)"
+    },
+    "jp_counts": {
+      "JP_10_10": 48,
+      "JP_9_9": 44,
+      "JP_10_9": 848
+    }
+  },
+  "results": {
+    "6": {
+      "JP_10_10": {
+        "1-7": {
+          "spiele": 5820,
+          "gewinn": 6825,
+          "kosten": 5820,
+          "roi": 17.3
+        },
+        "8-14": {
+          "spiele": 4500,
+          "gewinn": 3306,
+          "kosten": 4500,
+          "roi": -26.5
+        },
+        "15-21": {
+          "spiele": 3240,
+          "gewinn": 3764,
+          "kosten": 3240,
+          "roi": 16.2
+        },
+        "22-30": {
+          "spiele": 3000,
+          "gewinn": 2208,
+          "kosten": 3000,
+          "roi": -26.4
+        },
+        "31-60": {
+          "spiele": 5060,
+          "gewinn": 5963,
+          "kosten": 5060,
+          "roi": 17.8
+        },
+        "61+": {
+          "spiele": 6000,
+          "gewinn": 4429,
+          "kosten": 6000,
+          "roi": -26.2
+        }
+      },
+      "JP_9_9": {
+        "1-7": {
+          "spiele": 5060,
+          "gewinn": 6085,
+          "kosten": 5060,
+          "roi": 20.3
+        },
+        "8-14": {
+          "spiele": 3380,
+          "gewinn": 3972,
+          "kosten": 3380,
+          "roi": 17.5
+        },
+        "15-21": {
+          "spiele": 2440,
+          "gewinn": 1931,
+          "kosten": 2440,
+          "roi": -20.9
+        },
+        "22-30": {
+          "spiele": 2380,
+          "gewinn": 1910,
+          "kosten": 2380,
+          "roi": -19.7
+        },
+        "31-60": {
+          "spiele": 4860,
+          "gewinn": 7798,
+          "kosten": 4860,
+          "roi": 60.5
+        },
+        "61+": {
+          "spiele": 10120,
+          "gewinn": 10650,
+          "kosten": 10120,
+          "roi": 5.2
+        }
+      },
+      "JP_10_9": {
+        "1-7": {
+          "spiele": 5760,
+          "gewinn": 4280,
+          "kosten": 5760,
+          "roi": -25.7
+        },
+        "8-14": {
+          "spiele": 140,
+          "gewinn": 70,
+          "kosten": 140,
+          "roi": -50.0
+        },
+        "15-21": {
+          "spiele": 140,
+          "gewinn": 78,
+          "kosten": 140,
+          "roi": -44.3
+        },
+        "22-30": {
+          "spiele": 180,
+          "gewinn": 70,
+          "kosten": 180,
+          "roi": -61.1
+        },
+        "31-60": {
+          "spiele": 600,
+          "gewinn": 302,
+          "kosten": 600,
+          "roi": -49.7
+        },
+        "61+": {
+          "spiele": 5360,
+          "gewinn": 6065,
+          "kosten": 5360,
+          "roi": 13.2
+        }
+      }
+    },
+    "7": {
+      "JP_10_10": {
+        "1-7": {
+          "spiele": 5820,
+          "gewinn": 3222,
+          "kosten": 5820,
+          "roi": -44.6
+        },
+        "8-14": {
+          "spiele": 4500,
+          "gewinn": 2245,
+          "kosten": 4500,
+          "roi": -50.1
+        },
+        "15-21": {
+          "spiele": 3240,
+          "gewinn": 1732,
+          "kosten": 3240,
+          "roi": -46.5
+        },
+        "22-30": {
+          "spiele": 3000,
+          "gewinn": 1568,
+          "kosten": 3000,
+          "roi": -47.7
+        },
+        "31-60": {
+          "spiele": 5060,
+          "gewinn": 2778,
+          "kosten": 5060,
+          "roi": -45.1
+        },
+        "61+": {
+          "spiele": 6000,
+          "gewinn": 3196,
+          "kosten": 6000,
+          "roi": -46.7
+        }
+      },
+      "JP_9_9": {
+        "1-7": {
+          "spiele": 5060,
+          "gewinn": 2340,
+          "kosten": 5060,
+          "roi": -53.8
+        },
+        "8-14": {
+          "spiele": 3380,
+          "gewinn": 1505,
+          "kosten": 3380,
+          "roi": -55.5
+        },
+        "15-21": {
+          "spiele": 2440,
+          "gewinn": 829,
+          "kosten": 2440,
+          "roi": -66.0
+        },
+        "22-30": {
+          "spiele": 2380,
+          "gewinn": 1193,
+          "kosten": 2380,
+          "roi": -49.9
+        },
+        "31-60": {
+          "spiele": 4860,
+          "gewinn": 2679,
+          "kosten": 4860,
+          "roi": -44.9
+        },
+        "61+": {
+          "spiele": 10120,
+          "gewinn": 5245,
+          "kosten": 10120,
+          "roi": -48.2
+        }
+      },
+      "JP_10_9": {
+        "1-7": {
+          "spiele": 5760,
+          "gewinn": 3383,
+          "kosten": 5760,
+          "roi": -41.3
+        },
+        "8-14": {
+          "spiele": 140,
+          "gewinn": 65,
+          "kosten": 140,
+          "roi": -53.6
+        },
+        "15-21": {
+          "spiele": 140,
+          "gewinn": 59,
+          "kosten": 140,
+          "roi": -57.9
+        },
+        "22-30": {
+          "spiele": 180,
+          "gewinn": 57,
+          "kosten": 180,
+          "roi": -68.3
+        },
+        "31-60": {
+          "spiele": 600,
+          "gewinn": 293,
+          "kosten": 600,
+          "roi": -51.2
+        },
+        "61+": {
+          "spiele": 5360,
+          "gewinn": 2277,
+          "kosten": 5360,
+          "roi": -57.5
+        }
+      }
+    },
+    "8": {
+      "JP_10_10": {
+        "1-7": {
+          "spiele": 5820,
+          "gewinn": 2380,
+          "kosten": 5820,
+          "roi": -59.1
+        },
+        "8-14": {
+          "spiele": 4500,
+          "gewinn": 1659,
+          "kosten": 4500,
+          "roi": -63.1
+        },
+        "15-21": {
+          "spiele": 3240,
+          "gewinn": 1295,
+          "kosten": 3240,
+          "roi": -60.0
+        },
+        "22-30": {
+          "spiele": 3000,
+          "gewinn": 1087,
+          "kosten": 3000,
+          "roi": -63.8
+        },
+        "31-60": {
+          "spiele": 5060,
+          "gewinn": 2090,
+          "kosten": 5060,
+          "roi": -58.7
+        },
+        "61+": {
+          "spiele": 6000,
+          "gewinn": 2587,
+          "kosten": 6000,
+          "roi": -56.9
+        }
+      },
+      "JP_9_9": {
+        "1-7": {
+          "spiele": 5060,
+          "gewinn": 1989,
+          "kosten": 5060,
+          "roi": -60.7
+        },
+        "8-14": {
+          "spiele": 3380,
+          "gewinn": 1291,
+          "kosten": 3380,
+          "roi": -61.8
+        },
+        "15-21": {
+          "spiele": 2440,
+          "gewinn": 878,
+          "kosten": 2440,
+          "roi": -64.0
+        },
+        "22-30": {
+          "spiele": 2380,
+          "gewinn": 1233,
+          "kosten": 2380,
+          "roi": -48.2
+        },
+        "31-60": {
+          "spiele": 4860,
+          "gewinn": 2010,
+          "kosten": 4860,
+          "roi": -58.6
+        },
+        "61+": {
+          "spiele": 10120,
+          "gewinn": 4333,
+          "kosten": 10120,
+          "roi": -57.2
+        }
+      },
+      "JP_10_9": {
+        "1-7": {
+          "spiele": 5760,
+          "gewinn": 2242,
+          "kosten": 5760,
+          "roi": -61.1
+        },
+        "8-14": {
+          "spiele": 140,
+          "gewinn": 44,
+          "kosten": 140,
+          "roi": -68.6
+        },
+        "15-21": {
+          "spiele": 140,
+          "gewinn": 152,
+          "kosten": 140,
+          "roi": 8.6
+        },
+        "22-30": {
+          "spiele": 180,
+          "gewinn": 57,
+          "kosten": 180,
+          "roi": -68.3
+        },
+        "31-60": {
+          "spiele": 600,
+          "gewinn": 300,
+          "kosten": 600,
+          "roi": -50.0
+        },
+        "61+": {
+          "spiele": 5360,
+          "gewinn": 2291,
+          "kosten": 5360,
+          "roi": -57.3
+        }
+      }
+    }
+  },
+  "summary": {
+    "6": {
+      "best_definition": "JP_9_9",
+      "best_period": "31-60",
+      "best_roi": 60.5
+    },
+    "7": {
+      "best_definition": "JP_10_9",
+      "best_period": "1-7",
+      "best_roi": -41.3
+    },
+    "8": {
+      "best_definition": "JP_10_9",
+      "best_period": "15-21",
+      "best_roi": 8.6
+    }
+  }
+}

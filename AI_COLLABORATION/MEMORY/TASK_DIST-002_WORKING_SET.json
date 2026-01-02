@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/analysis/distribution.py",
+    "scripts/analyze_distribution.py",
+    "tests/unit/test_distribution.py",
+    "Keno_GPTs/KENO_Quote_details_2023.csv",
+    "config/default.yaml",
+    "results/dist002_payout_ratio.json"
+]

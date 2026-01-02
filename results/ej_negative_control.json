@@ -1,0 +1,196 @@
+{
+  "analysis": "ej_negative_control",
+  "generated_at": "2025-12-30T05:55:30.198887",
+  "config": {
+    "train_ratio": 0.8,
+    "lags": [
+      0,
+      1,
+      2,
+      7
+    ],
+    "min_support": 20,
+    "alpha_fdr": 0.05
+  },
+  "data": {
+    "keno_total": 1457,
+    "lotto_total": 416,
+    "aw_total": 207,
+    "ej_total": 404
+  },
+  "de_internal": {
+    "keno_lotto": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "lotto_keno": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "keno_aw": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "aw_keno": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "lotto_aw": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "total_significant": 0
+  },
+  "ej_external": {
+    "ej_keno": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "keno_ej": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "ej_lotto": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "lotto_ej": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "ej_aw": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "aw_ej": {
+      "train_significant": 0,
+      "top_rules": []
+    },
+    "total_significant": 0
+  },
+  "test_validation": {
+    "de_internal": {
+      "keno_lotto": {
+        "train_significant_count": 0,
+        "test_evaluated_count": 0,
+        "test_survived_count": 0,
+        "survival_rate": 0.0,
+        "survived_rules": []
+      },
+      "lotto_keno": {
+        "train_significant_count": 0,
+        "test_evaluated_count": 0,
+        "test_survived_count": 0,
+        "survival_rate": 0.0,
+        "survived_rules": []
+      }
+    },
+    "ej_external": {
+      "ej_keno": {
+        "train_significant_count": 0,
+        "test_evaluated_count": 0,
+        "test_survived_count": 0,
+        "survival_rate": 0.0,
+        "survived_rules": []
+      },
+      "keno_ej": {
+        "train_significant_count": 0,
+        "test_evaluated_count": 0,
+        "test_survived_count": 0,
+        "survival_rate": 0.0,
+        "survived_rules": []
+      }
+    }
+  },
+  "pair_overlap": {
+    "de_internal": {
+      "keno_lotto": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 7,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.7677295315507542,
+        "games": [
+          "KENO",
+          "LOTTO"
+        ]
+      },
+      "keno_aw": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 9,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.48307735251316214,
+        "games": [
+          "KENO",
+          "AUSWAHLWETTE"
+        ]
+      },
+      "lotto_aw": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 8,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.6320971876621322,
+        "games": [
+          "LOTTO",
+          "AUSWAHLWETTE"
+        ]
+      }
+    },
+    "ej_external": {
+      "keno_ej": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 8,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.6320971876621322,
+        "games": [
+          "KENO",
+          "EUROJACKPOT"
+        ]
+      },
+      "lotto_ej": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 5,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.9423090924170344,
+        "games": [
+          "LOTTO",
+          "EUROJACKPOT"
+        ]
+      },
+      "aw_ej": {
+        "range_max": 49,
+        "top_k": 100,
+        "universe_pairs": 1176,
+        "overlap": 15,
+        "expected_overlap": 8.503401360544217,
+        "p_value": 0.01712650056003422,
+        "games": [
+          "AUSWAHLWETTE",
+          "EUROJACKPOT"
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "status": "WEAKENED",
+    "explanation": "EJ (external) shows unexpected correlations with DE games - ecosystem hypothesis is weakened",
+    "de_internal_significant": 0,
+    "ej_external_significant": 0,
+    "de_pair_overlap_significant": false,
+    "ej_pair_overlap_significant": true,
+    "acceptance_criteria": {
+      "ej_triggers_q_gt_alpha": true,
+      "train_test_split_applied": true,
+      "nullmodel_comparison": "FDR/BH correction applied"
+    }
+  }
+}

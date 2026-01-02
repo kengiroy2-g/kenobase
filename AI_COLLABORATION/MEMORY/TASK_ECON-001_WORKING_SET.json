@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/core/economic_state.py (neu zu erstellen)",
+    "kenobase/core/__init__.py",
+    "config/default.yaml",
+    "tests/unit/test_economic_state.py (neu zu erstellen)",
+    "kenobase/core/economic_state.py (new)",
+    "tests/unit/test_economic_state.py (new)"
+]

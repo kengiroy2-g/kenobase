@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/multiweek_timing.py",
+    "kenobase/analysis/__init__.py",
+    "scripts/analyze_hyp014.py",
+    "tests/unit/test_multiweek_timing.py"
+]

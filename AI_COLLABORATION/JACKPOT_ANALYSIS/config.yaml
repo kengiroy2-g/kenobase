@@ -1,0 +1,58 @@
+# Jackpot Selection Analysis Configuration
+
+version: "1.0"
+
+# Analyse-Parameter
+analysis:
+  # Anzahl der Kombinationen für Stichprobe (null = alle 184756)
+  sample_size: null
+
+  # Mindest-Percentile für "unterscheidend"
+  distinguishing_threshold: 5  # Top/Bottom 5%
+
+  # Features die berechnet werden sollen
+  features:
+    statistical:
+      - sum
+      - mean
+      - std
+      - range
+
+    structural:
+      - even_count
+      - odd_count
+      - prime_count
+      - consecutive_pairs
+      - decades_used
+      - max_per_decade
+      - gaps
+      - avg_gap
+      - min_gap
+      - max_gap
+
+    historical:
+      - historical_10_10
+      - avg_historical_hits
+      - max_historical_hits
+      - days_6plus_hits
+      - days_7plus_hits
+      - days_8plus_hits
+
+    temporal:
+      - weekday
+      - day_of_month
+      - month
+      - days_since_last_jackpot
+
+# Daten-Pfade
+data:
+  drawings: "data/raw/keno/KENO_ab_2022_bereinigt.csv"
+  jackpot_events: "AI_COLLABORATION/JACKPOT_ANALYSIS/data/jackpot_events.json"
+
+# Output-Pfade
+output:
+  features: "AI_COLLABORATION/JACKPOT_ANALYSIS/results/layer1_features"
+  combinations: "AI_COLLABORATION/JACKPOT_ANALYSIS/results/layer2_combinations"
+  patterns: "AI_COLLABORATION/JACKPOT_ANALYSIS/results/layer3_patterns"
+  rules: "AI_COLLABORATION/JACKPOT_ANALYSIS/results/layer4_rules"
+  strategy: "AI_COLLABORATION/JACKPOT_ANALYSIS/results/layer5_strategy"

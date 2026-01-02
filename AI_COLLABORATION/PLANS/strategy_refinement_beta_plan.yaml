@@ -1,0 +1,157 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2026-01-01 07:59:02
+
+plan:
+  name: "Strategie-Verfeinerung: Synthese + HZ6/HZ7"
+
+tasks:
+  - id: SYN_001
+    name: "A1-01: Cooldown-Regel isoliert testen (30d nach 10/10)"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_002
+    name: "A1-02: FRUEH-Phase isoliert testen (Tag 1-14)"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_003
+    name: "A1-03: HZ-Delay isoliert testen (48-60d Wartezeit)"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_004
+    name: "A1-04: Payout-Correlation Regel testen (7d nach hoher Auszahlung)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_005
+    name: "A2-01: Cooldown + FRUEH kombiniert"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_006
+    name: "A2-02: Cooldown + HZ-Delay kombiniert"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_007
+    name: "A2-03: Optimale 2er-Kombination finden"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_008
+    name: "A3-01: Aktuelle HZ7 vs Loop-Kern Backtest"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_009
+    name: "A3-02: Reife HZ7 vs Aktuelle HZ7"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_010
+    name: "A3-03: Hybrid-Zahlen testen (HZ + Loop-Kern)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_011
+    name: "A4-01: Walk-Forward 2018-2025 mit bester Regel-Kombi"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: SYN_012
+    name: "A4-02: Stabilitaetstest ueber verschiedene Zeitraeume"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: HZ6_001
+    name: "B1-01: HZ6 Window-Size Optimierung"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: HZ6_002
+    name: "B1-02: HZ6 Delay-Optimierung"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: HZ6_003
+    name: "B1-03: HZ6 mit Cooldown-Regel"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: HZ6_004
+    name: "B1-04: HZ6 Langzeit-Performance (2018-2025)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: HZ7_001
+    name: "B2-01: HZ7 Window-Size Optimierung"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: HZ7_002
+    name: "B2-02: HZ7 Delay-Optimierung"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: HZ7_003
+    name: "B2-03: HZ7 Abkuehlungs-Theorie validieren"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: HZ7_004
+    name: "B2-04: HZ7 mit allen Einzel-Regeln testen"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: COMP_001
+    name: "B3-01: Effizienz-Vergleich pro Window-Size"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: COMP_002
+    name: "B3-02: Jackpot-Verteilung HZ6 vs HZ7"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: COMP_003
+    name: "B3-03: Budget-Szenarien (30/100/200 EUR/Monat)"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: REF_001
+    name: "C1-01: Grid-Search alle Parameter"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: REF_002
+    name: "C1-02: Sensitivitaets-Analyse"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: REF_003
+    name: "C2-01: Maximum Drawdown Analyse"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: REF_004
+    name: "C2-02: Worst-Case Szenarien"
+    priority: P1
+    status: COMPLETE
+    current_phase: null
+  - id: REF_005
+    name: "C3-01: Optimale Strategie pro Ziel dokumentieren"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: REF_006
+    name: "C3-02: Entscheidungs-Matrix erstellen"
+    priority: P0
+    status: COMPLETE
+    current_phase: null
+  - id: REF_007
+    name: "C3-03: Finaler Strategie-Report"
+    priority: P0
+    status: COMPLETE
+    current_phase: null

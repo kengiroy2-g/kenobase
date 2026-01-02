@@ -1,0 +1,9 @@
+﻿[
+    "kenobase/physics/__init__.py",
+    "kenobase/physics/model_laws.py",
+    "kenobase/physics/avalanche.py",
+    "kenobase/physics/metrics.py",
+    "tests/unit/test_model_laws.py",
+    "tests/unit/test_avalanche.py",
+    "tests/unit/test_metrics.py"
+]

@@ -1,0 +1,55 @@
+{
+  "analysis": "random_ticket_null_model",
+  "generated_at": "2025-12-30T21:25:32.231968",
+  "n_seeds": 100,
+  "draws_path": "data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+  "n_draws": 1457,
+  "start_index": 365,
+  "conclusion": "Typ-2: weighted-freq ~ random; Typ-6: weighted-freq -0.0216 vs random; Typ-8: weighted-freq -0.0160 vs random; Typ-10: weighted-freq ~ random",
+  "per_type_results": [
+    {
+      "keno_type": 2,
+      "n_predictions": 1092,
+      "n_seeds": 100,
+      "mean_hits_random": 0.573434,
+      "std_hits_random": 0.020423,
+      "expected_mean_hits": 0.571429,
+      "mean_hits_weighted_freq": 0.57967,
+      "random_vs_expected_diff": 0.002005,
+      "random_vs_weighted_diff": 0.006236
+    },
+    {
+      "keno_type": 6,
+      "n_predictions": 1092,
+      "n_seeds": 100,
+      "mean_hits_random": 1.716612,
+      "std_hits_random": 0.030323,
+      "expected_mean_hits": 1.714286,
+      "mean_hits_weighted_freq": 1.695055,
+      "random_vs_expected_diff": 0.002326,
+      "random_vs_weighted_diff": -0.021557
+    },
+    {
+      "keno_type": 8,
+      "n_predictions": 1092,
+      "n_seeds": 100,
+      "mean_hits_random": 2.282473,
+      "std_hits_random": 0.034229,
+      "expected_mean_hits": 2.285714,
+      "mean_hits_weighted_freq": 2.266484,
+      "random_vs_expected_diff": -0.003242,
+      "random_vs_weighted_diff": -0.015989
+    },
+    {
+      "keno_type": 10,
+      "n_predictions": 1092,
+      "n_seeds": 100,
+      "mean_hits_random": 2.857317,
+      "std_hits_random": 0.040285,
+      "expected_mean_hits": 2.857143,
+      "mean_hits_weighted_freq": 2.8663,
+      "random_vs_expected_diff": 0.000174,
+      "random_vs_weighted_diff": 0.008984
+    }
+  ]
+}

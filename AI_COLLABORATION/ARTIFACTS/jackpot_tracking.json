@@ -1,0 +1,55 @@
+{
+  "description": "Tracking aller bekannten 10/10 KENO Jackpots mit Analyse",
+  "last_updated": "2026-01-02",
+  "jackpots": [
+    {
+      "id": "JP-2025-06-30",
+      "date": "2025-06-30",
+      "weekday": "Montag",
+      "location": "Rhein-Neckar-Kreis",
+      "bundesland": "Baden-Wuerttemberg",
+      "type": 10,
+      "bet_amount": 10,
+      "prize": 1000000,
+      "numbers": [3, 10, 17, 31, 34, 39, 41, 55, 58, 69],
+      "analysis": {
+        "birthday_count": 4,
+        "birthday_pct": 40.0,
+        "non_birthday_count": 6,
+        "non_birthday_pct": 60.0,
+        "consecutive_pairs": 0,
+        "decades_covered": 6,
+        "decades_total": 7,
+        "decade_distribution": {
+          "D1_01_10": [3, 10],
+          "D2_11_20": [17],
+          "D3_21_30": [],
+          "D4_31_40": [31, 34, 39],
+          "D5_41_50": [41],
+          "D6_51_60": [55, 58],
+          "D7_61_70": [69]
+        },
+        "uniqueness_score": 0.65,
+        "sum": 357,
+        "source": "Pressemitteilung Lotto Baden-Wuerttemberg, 01.07.2025"
+      },
+      "hypotheses_validated": [
+        "WL-006: Jackpot-Uniqueness (0.65 > 0.5)",
+        "DANCE-007: Mehr Non-Birthday (60% > 44%)"
+      ]
+    }
+  ],
+  "statistics": {
+    "total_jackpots_tracked": 1,
+    "avg_birthday_pct": 40.0,
+    "avg_non_birthday_pct": 60.0,
+    "avg_uniqueness_score": 0.65,
+    "jackpots_with_uniqueness_above_05": 1,
+    "jackpots_with_more_non_birthday": 1
+  },
+  "notes": [
+    "Sammlung von echten Jackpot-Daten zur Hypothesen-Validierung",
+    "Quelle: Pressemitteilungen der Lottogesellschaften",
+    "Fokus auf WL-006 (Uniqueness) und DANCE-007 (Non-Birthday)"
+  ]
+}

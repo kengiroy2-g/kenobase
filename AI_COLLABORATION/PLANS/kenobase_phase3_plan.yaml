@@ -1,0 +1,107 @@
+﻿# Autonomous Loop V4 Plan
+# Updated: 2025-12-28 10:20:47
+
+plan:
+  name: "Kenobase V2.0 - Phase 3: Reverse Engineering Verteilung"
+
+tasks:
+  - id: TASK-R00
+    name: "Regionale Verteilungs-Framework"
+    priority: CRITICAL
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P01
+    name: "Feature Engineering Pipeline"
+    priority: CRITICAL
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P02
+    name: "ML Model Selection"
+    priority: CRITICAL
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P03
+    name: "Walk-Forward Backtest Framework"
+    priority: CRITICAL
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P04
+    name: "Anti-Cluster Trading Signal"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P05
+    name: "Summen-Filter Integration"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P06
+    name: "Ensemble Prediction Model"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P07
+    name: "Prediction CLI"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P08
+    name: "EuroJackpot Model Transfer"
+    priority: MEDIUM
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P09
+    name: "Lotto 6aus49 Model Transfer"
+    priority: MEDIUM
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P10
+    name: "Live Prediction Tracking"
+    priority: MEDIUM
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P11
+    name: "Confidence Intervals"
+    priority: MEDIUM
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-R01
+    name: "Near-Miss Analyse"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-R02
+    name: "Jackpot-Timing Analyse"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-R03
+    name: "Regionale Zahlen-Affinitaet (Bundesland)"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-R04
+    name: "EuroJackpot Laender-Rotation"
+    priority: HIGH
+    status: BLOCKED
+    current_phase: null
+  - id: TASK-R05
+    name: "Langzeit-Zahlen-Balance mit Trigger-Analyse"
+    priority: HIGH
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P12
+    name: "Web Dashboard (Streamlit)"
+    priority: LOW
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P13
+    name: "Telegram/Discord Bot"
+    priority: LOW
+    status: COMPLETE
+    current_phase: null
+  - id: TASK-P14
+    name: "Model Explainability (SHAP)"
+    priority: LOW
+    status: COMPLETE
+    current_phase: null

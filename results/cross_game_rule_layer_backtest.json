@@ -1,0 +1,91 @@
+{
+  "analysis": "cross_game_rule_layer_backtest",
+  "generated_at": "2025-12-30T00:08:51.831987",
+  "draws": {
+    "keno_count": 1457,
+    "keno_start": "2022-01-03",
+    "keno_end": "2025-12-29"
+  },
+  "config": {
+    "keno_types": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "start_index": 365,
+    "recent_draws": 365,
+    "recent_weight": 0.6,
+    "hard_exclude": true,
+    "include_multiplier": 1.25
+  },
+  "rules": {
+    "count": 2,
+    "by_rule": {
+      "EUROWETTE|lag=2|ordered_value|T6=1->57": {
+        "trials": 462,
+        "correct": 364,
+        "accuracy": 0.7878787878787878
+      },
+      "EUROJACKPOT|lag=7|number|8->61": {
+        "trials": 130,
+        "correct": 107,
+        "accuracy": 0.823076923076923
+      }
+    }
+  },
+  "rule_accuracy": {
+    "exclusion": {
+      "trials": 592,
+      "correct": 471,
+      "accuracy": 0.7956081081081081,
+      "baseline": 0.7142857142857143,
+      "lift": 0.08132239382239381
+    },
+    "inclusion": {
+      "trials": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "baseline": 0.2857142857142857,
+      "lift": -0.2857142857142857
+    }
+  },
+  "by_type": {
+    "typ_6": {
+      "keno_type": 6,
+      "n_predictions": 1092,
+      "mean_hits_baseline": 1.695054945054945,
+      "mean_hits_with_rules": 1.6923076923076923,
+      "delta_mean_hits": -0.0027472527472527375
+    },
+    "typ_7": {
+      "keno_type": 7,
+      "n_predictions": 1092,
+      "mean_hits_baseline": 1.978937728937729,
+      "mean_hits_with_rules": 1.97985347985348,
+      "delta_mean_hits": 0.0009157509157509125
+    },
+    "typ_8": {
+      "keno_type": 8,
+      "n_predictions": 1092,
+      "mean_hits_baseline": 2.2664835164835164,
+      "mean_hits_with_rules": 2.2738095238095237,
+      "delta_mean_hits": 0.0073260073260073
+    },
+    "typ_9": {
+      "keno_type": 9,
+      "n_predictions": 1092,
+      "mean_hits_baseline": 2.5650183150183152,
+      "mean_hits_with_rules": 2.56959706959707,
+      "delta_mean_hits": 0.0045787545787545625
+    },
+    "typ_10": {
+      "keno_type": 10,
+      "n_predictions": 1092,
+      "mean_hits_baseline": 2.8663003663003663,
+      "mean_hits_with_rules": 2.8644688644688645,
+      "delta_mean_hits": -0.001831501831501825
+    }
+  }
+}

@@ -22,21 +22,13 @@ from typing import Optional
 
 import pandas as pd
 
-# KENO Gewinnplan: Treffer -> Gewinnklasse
-# Format: keno_typ -> {treffer: (gewinnklasse, quote_bei_1euro)}
-KENO_GEWINNPLAN = {
-    10: {10: ("GK1", 100000), 9: ("GK2", 1000), 8: ("GK3", 100), 7: ("GK4", 15),
-         6: ("GK5", 5), 5: ("GK6", 2), 0: ("GK7", 2)},
-    9: {9: ("GK1", 50000), 8: ("GK2", 1000), 7: ("GK3", 20), 6: ("GK4", 5),
-        5: ("GK5", 2), 0: ("GK6", 2)},
-    8: {8: ("GK1", 10000), 7: ("GK2", 100), 6: ("GK3", 15), 5: ("GK4", 2),
-        4: ("GK5", 1), 0: ("GK6", 2)},
-    7: {7: ("GK1", 5000), 6: ("GK2", 100), 5: ("GK3", 12), 4: ("GK4", 1),
-        0: ("GK5", 2)},
-    6: {6: ("GK1", 1000), 5: ("GK2", 15), 4: ("GK3", 2), 3: ("GK4", 1),
-        0: ("GK5", 2)},
-    5: {5: ("GK1", 500), 4: ("GK2", 7), 3: ("GK3", 2), 0: ("GK4", 2)},
-}
+from kenobase.core.keno_quotes import KENO_FIXED_QUOTES_BY_TYPE, get_fixed_quote
+
+# Gewinnklassen-Labels aus dem offiziellen Fixed-Quote-Table ableiten.
+_GK_LABELS_BY_TYPE: dict[int, dict[int, str]] = {}
+for _keno_type, _hits_to_quote in KENO_FIXED_QUOTES_BY_TYPE.items():
+    ordered = sorted(_hits_to_quote.keys(), reverse=True)
+    _GK_LABELS_BY_TYPE[int(_keno_type)] = {int(h): f"GK{i+1}" for i, h in enumerate(ordered)}
 
 
 @dataclass
@@ -118,13 +110,18 @@ def calculate_hits(group: set[int], drawn: set[int]) -> int:
 
 def get_gewinnklasse(keno_typ: int, hits: int) -> tuple[Optional[str], int]:
     """Bestimmt Gewinnklasse und Quote."""
-    if keno_typ not in KENO_GEWINNPLAN:
+    if int(keno_typ) not in _GK_LABELS_BY_TYPE:
         return None, 0
 
-    plan = KENO_GEWINNPLAN[keno_typ]
-    if hits in plan:
-        return plan[hits]
-    return None, 0
+    quote = get_fixed_quote(keno_typ, hits)
+    if quote <= 0:
+        return None, 0
+
+    gk = _GK_LABELS_BY_TYPE[int(keno_typ)].get(int(hits))
+    if not gk:
+        return None, 0
+
+    return gk, int(quote)
 
 
 def backtest_group(

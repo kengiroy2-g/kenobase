@@ -13,6 +13,11 @@ from kenobase.scraper.lotto_de import (
     LottoDeScraper,
     analyze_birthday_correlation,
 )
+from kenobase.scraper.lotto_hessen_api import (
+    LottoHessenAPI,
+    LottoHessenConfig,
+    fetch_hessen_winners,
+)
 from kenobase.scraper.parsers import KenoWinnerParser, KenoWinnerRecord
 
 __all__ = [
@@ -30,4 +35,8 @@ __all__ = [
     "LottoDeScraper",
     "KenoDrawResult",
     "analyze_birthday_correlation",
+    # Lotto Hessen API
+    "LottoHessenAPI",
+    "LottoHessenConfig",
+    "fetch_hessen_winners",
 ]

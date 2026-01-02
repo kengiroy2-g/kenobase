@@ -1,0 +1,544 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-01T02:24:25.199102",
+    "sub_cooldown_semantics": {
+      "frueh": "1-14 Tage nach 10/10 Jackpot",
+      "spaet": "15-30 Tage nach Jackpot",
+      "normal": ">30 Tage nach Jackpot"
+    },
+    "train_period": "2022-2023",
+    "test_period": "2024",
+    "train_jackpots": 10,
+    "test_jackpots": 1,
+    "total_jackpots": 11
+  },
+  "by_type": {
+    "typ_6": {
+      "ticket": [
+        3,
+        9,
+        10,
+        32,
+        49,
+        64
+      ],
+      "train": {
+        "frueh_draws": 140,
+        "frueh_roi": -72.14285714285714,
+        "spaet_draws": 142,
+        "spaet_roi": -66.90140845070422,
+        "normal_draws": 417,
+        "normal_roi": 57.793764988009585,
+        "delta_frueh_vs_spaet": -5.241448692152915,
+        "delta_frueh_vs_normal": -129.93662213086674,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 140,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 142,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 9496.5,
+          "p_value": 0.38368638244521225,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 27866.5,
+          "p_value": 0.2888543216338123,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "frueh_draws": 14,
+        "frueh_roi": -85.71428571428571,
+        "spaet_draws": 0,
+        "spaet_roi": 0.0,
+        "normal_draws": 37,
+        "normal_roi": -64.86486486486487,
+        "delta_frueh_vs_spaet": -85.71428571428571,
+        "delta_frueh_vs_normal": -20.849420849420838,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 14,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 0,
+          "phase_b_rate": 0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "note": "Insufficient samples"
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 223.0,
+          "p_value": 0.31115126704363716,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 22,
+        "total_draws": 330,
+        "avg_roi": -65.15151515151516,
+        "frueh_vs_control": {
+          "statistic": 23652.0,
+          "p_value": 0.10775806883986055,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_7": {
+      "ticket": [
+        3,
+        24,
+        30,
+        49,
+        51,
+        59,
+        64
+      ],
+      "train": {
+        "frueh_draws": 140,
+        "frueh_roi": -49.28571428571429,
+        "spaet_draws": 142,
+        "spaet_roi": -41.54929577464789,
+        "normal_draws": 417,
+        "normal_roi": 0.0,
+        "delta_frueh_vs_spaet": -7.736418511066404,
+        "delta_frueh_vs_normal": -49.28571428571429,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 140,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 142,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 9895.5,
+          "p_value": 0.9383230841925028,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 30120.5,
+          "p_value": 0.4880070887886543,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "frueh_draws": 14,
+        "frueh_roi": -64.28571428571429,
+        "spaet_draws": 0,
+        "spaet_roi": 0.0,
+        "normal_draws": 37,
+        "normal_roi": -64.86486486486487,
+        "delta_frueh_vs_spaet": -64.28571428571429,
+        "delta_frueh_vs_normal": 0.5791505791505784,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 14,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 0,
+          "phase_b_rate": 0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "note": "Insufficient samples"
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 260.5,
+          "p_value": 0.979660048624082,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 22,
+        "total_draws": 330,
+        "avg_roi": -36.96969696969697,
+        "frueh_vs_control": {
+          "statistic": 24984.0,
+          "p_value": 0.7223804918016137,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_8": {
+      "ticket": [
+        3,
+        20,
+        24,
+        27,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "frueh_draws": 140,
+        "frueh_roi": -82.85714285714286,
+        "spaet_draws": 142,
+        "spaet_roi": -48.59154929577465,
+        "normal_draws": 417,
+        "normal_roi": -70.50359712230215,
+        "delta_frueh_vs_spaet": -34.26559356136821,
+        "delta_frueh_vs_normal": -12.353545734840708,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 140,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 142,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 8914.0,
+          "p_value": 0.0287601891724431,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 26748.0,
+          "p_value": 0.03521775699639078,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "frueh_draws": 14,
+        "frueh_roi": -78.57142857142857,
+        "spaet_draws": 0,
+        "spaet_roi": 0.0,
+        "normal_draws": 37,
+        "normal_roi": -70.27027027027027,
+        "delta_frueh_vs_spaet": -78.57142857142857,
+        "delta_frueh_vs_normal": -8.301158301158296,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 14,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 0,
+          "phase_b_rate": 0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "note": "Insufficient samples"
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 254.0,
+          "p_value": 0.8945693597218956,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 22,
+        "total_draws": 330,
+        "avg_roi": -49.3939393939394,
+        "frueh_vs_control": {
+          "statistic": 23724.5,
+          "p_value": 0.08625555807322309,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_9": {
+      "ticket": [
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "frueh_draws": 140,
+        "frueh_roi": -68.57142857142857,
+        "spaet_draws": 142,
+        "spaet_roi": -47.183098591549296,
+        "normal_draws": 417,
+        "normal_roi": -50.59952038369304,
+        "delta_frueh_vs_spaet": -21.388329979879273,
+        "delta_frueh_vs_normal": -17.97190818773553,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 140,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 142,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 8948.0,
+          "p_value": 0.07782872793860444,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 28934.0,
+          "p_value": 0.842800988089468,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "frueh_draws": 14,
+        "frueh_roi": -64.28571428571429,
+        "spaet_draws": 0,
+        "spaet_roi": 0.0,
+        "normal_draws": 37,
+        "normal_roi": -43.24324324324324,
+        "delta_frueh_vs_spaet": -64.28571428571429,
+        "delta_frueh_vs_normal": -21.04247104247105,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 14,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 0,
+          "phase_b_rate": 0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "note": "Insufficient samples"
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 224.5,
+          "p_value": 0.3798763207963215,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 22,
+        "total_draws": 330,
+        "avg_roi": -48.484848484848484,
+        "frueh_vs_control": {
+          "statistic": 24534.5,
+          "p_value": 0.4433312424564747,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    },
+    "typ_10": {
+      "ticket": [
+        2,
+        3,
+        9,
+        10,
+        20,
+        24,
+        36,
+        49,
+        51,
+        64
+      ],
+      "train": {
+        "frueh_draws": 140,
+        "frueh_roi": -79.28571428571428,
+        "spaet_draws": 142,
+        "spaet_roi": -50.70422535211267,
+        "normal_draws": 417,
+        "normal_roi": -15.347721822541965,
+        "delta_frueh_vs_spaet": -28.581488933601605,
+        "delta_frueh_vs_normal": -63.937992463172314,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 140,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 142,
+          "phase_b_rate": 0.0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 9017.0,
+          "p_value": 0.02447700236586266,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 28048.5,
+          "p_value": 0.21973204357297693,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "test": {
+        "frueh_draws": 14,
+        "frueh_roi": -85.71428571428571,
+        "spaet_draws": 0,
+        "spaet_roi": 0.0,
+        "normal_draws": 37,
+        "normal_roi": -24.324324324324326,
+        "delta_frueh_vs_spaet": -85.71428571428571,
+        "delta_frueh_vs_normal": -61.389961389961385,
+        "chi2_frueh_vs_spaet": {
+          "phase_a_high_wins": 0,
+          "phase_a_total": 14,
+          "phase_a_rate": 0.0,
+          "phase_b_high_wins": 0,
+          "phase_b_total": 0,
+          "phase_b_rate": 0,
+          "chi2": 0.0,
+          "p_value": 1.0,
+          "significant": false
+        },
+        "mann_whitney_frueh_vs_spaet": {
+          "statistic": 0.0,
+          "p_value": 1.0,
+          "significant": false,
+          "note": "Insufficient samples"
+        },
+        "mann_whitney_frueh_vs_normal": {
+          "statistic": 199.5,
+          "p_value": 0.0917591220004547,
+          "significant": "False",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      },
+      "negative_control": {
+        "n_windows": 22,
+        "total_draws": 330,
+        "avg_roi": -2.4242424242424243,
+        "frueh_vs_control": {
+          "statistic": 23747.5,
+          "p_value": 0.049911893094589425,
+          "significant": "True",
+          "median_a": -100.0,
+          "median_b": -100.0
+        }
+      }
+    }
+  },
+  "negative_control": {
+    "typ_6": {
+      "window_rois": [
+        -80.0,
+        -73.33333333333333,
+        -80.0,
+        -60.0,
+        -80.0
+      ],
+      "avg_roi": -65.15151515151516
+    },
+    "typ_7": {
+      "window_rois": [
+        -73.33333333333333,
+        -73.33333333333333,
+        -66.66666666666666,
+        -60.0,
+        -80.0
+      ],
+      "avg_roi": -36.96969696969697
+    },
+    "typ_8": {
+      "window_rois": [
+        -86.66666666666667,
+        -73.33333333333333,
+        106.66666666666667,
+        -80.0,
+        -80.0
+      ],
+      "avg_roi": -49.3939393939394
+    },
+    "typ_9": {
+      "window_rois": [
+        -80.0,
+        -80.0,
+        -53.333333333333336,
+        60.0,
+        -80.0
+      ],
+      "avg_roi": -48.484848484848484
+    },
+    "typ_10": {
+      "window_rois": [
+        -86.66666666666667,
+        -86.66666666666667,
+        -60.0,
+        606.6666666666666,
+        -86.66666666666667
+      ],
+      "avg_roi": -2.4242424242424243
+    }
+  },
+  "summary": {
+    "total_types_tested": 5,
+    "train_frueh_worse_vs_spaet": 5,
+    "train_frueh_worse_vs_normal": 5,
+    "test_frueh_worse_vs_spaet": 5,
+    "test_frueh_worse_vs_normal": 4,
+    "significant_effects": 2,
+    "hypothesis_status": "CONFIRMED",
+    "statistical_power_warning": "LOW - Only 11 jackpots in total, tests may lack power"
+  }
+}

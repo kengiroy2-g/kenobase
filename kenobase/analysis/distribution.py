@@ -94,13 +94,17 @@ class DistributionSummary:
 
 def load_gq_data(
     path: str,
-    encoding: str = "utf-8",
+    encoding: str = "utf-8-sig",
+    default_year: int | None = None,
 ) -> pd.DataFrame:
     """Laedt Keno GQ (Gewinnquoten) Daten.
 
     Args:
         path: Pfad zur CSV-Datei
         encoding: Encoding der Datei
+        default_year: Fallback-Jahr, falls in ``Datum`` nur Tag/Monat steht
+            (z.B. ``So, 28.12.`` aus gescrapten 2025-Dateien). Wenn nicht gesetzt,
+            wird versucht das Jahr aus dem Dateinamen zu inferieren.
 
     Returns:
         DataFrame mit Spalten: Datum, Keno-Typ, Anzahl richtiger Zahlen,
@@ -111,12 +115,54 @@ def load_gq_data(
     # Bereinige Spaltennamen
     df.columns = df.columns.str.strip()
 
-    # Parse Datum
-    df["Datum"] = pd.to_datetime(df["Datum"], format="%d.%m.%Y")
+    # Infer default year from filename if needed (e.g. "Keno_GQ_2025.csv").
+    if default_year is None:
+        name = str(path)
+        year_match = pd.Series([name]).str.extract(r"(20\d{2})", expand=False).iloc[0]
+        if isinstance(year_match, str) and year_match.isdigit():
+            default_year = int(year_match)
+
+    # Parse Datum (supports both "08.02.2024" and "So, 28.12.")
+    date_text = df["Datum"].astype(str).str.strip()
+    parsed_full = pd.to_datetime(date_text, format="%d.%m.%Y", errors="coerce")
+    if default_year is not None:
+        # Fill missing with day/month + inferred/default year.
+        dm = date_text.str.extract(r"(?P<day>\d{1,2})\.(?P<month>\d{1,2})\.?", expand=True)
+        has_dm = dm["day"].notna() & dm["month"].notna()
+        needs_fill = parsed_full.isna() & has_dm
+        if needs_fill.any():
+            reconstructed = (
+                dm.loc[needs_fill, "day"].astype(str).str.zfill(2)
+                + "."
+                + dm.loc[needs_fill, "month"].astype(str).str.zfill(2)
+                + f".{default_year}"
+            )
+            parsed_full.loc[needs_fill] = pd.to_datetime(
+                reconstructed, format="%d.%m.%Y", errors="coerce"
+            )
+
+    df["Datum"] = parsed_full
+    df = df.dropna(subset=["Datum"]).copy()
 
     # Bereinige Gewinner-Spalte (mixed formats: 275.0, 3.462, 2.91, ...)
     if "Anzahl der Gewinner" in df.columns:
         df["Anzahl der Gewinner"] = df["Anzahl der Gewinner"].apply(parse_int_mixed_german)
+
+    # Filter rows: some scraped files contain non-hit "Gewinnklasse..." rows.
+    if "Anzahl richtiger Zahlen" in df.columns:
+        matches_text = df["Anzahl richtiger Zahlen"].astype(str).str.strip()
+        is_numeric_match = matches_text.str.fullmatch(r"\d+").fillna(False)
+        df = df[is_numeric_match].copy()
+        df["Anzahl richtiger Zahlen"] = matches_text[is_numeric_match].astype(int)
+
+    if "Keno-Typ" in df.columns:
+        keno_type_text = df["Keno-Typ"].astype(str).str.strip()
+        is_numeric_type = keno_type_text.str.fullmatch(r"\d+").fillna(False)
+        df = df[is_numeric_type].copy()
+        df["Keno-Typ"] = keno_type_text[is_numeric_type].astype(int)
+
+    if "1 Euro Gewinn" in df.columns:
+        df["1 Euro Gewinn"] = df["1 Euro Gewinn"].apply(parse_float_mixed_german)
 
     logger.info(f"Loaded {len(df)} rows from {path}")
     return df

@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/stake_correlation.py",
+    "scripts/analyze_hyp012.py",
+    "tests/unit/test_stake_correlation.py",
+    "kenobase/analysis/__init__.py"
+]

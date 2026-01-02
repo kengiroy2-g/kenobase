@@ -1,0 +1,8 @@
+﻿[
+    "scripts/super_model_v1_birthday.py",
+    "scripts/super_model_v2_birthday_signal.py",
+    "scripts/super_model_synthesis.py",
+    "scripts/backtest_post_jackpot.py",
+    "scripts/backtest_v1_v2_cooldown.py",
+    "results/v1_v2_cooldown_comparison.json"
+]

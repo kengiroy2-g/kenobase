@@ -1,0 +1,37 @@
+{
+  "start_date": "2022-01-03",
+  "end_date": "2025-12-29",
+  "total_days": 1457,
+  "games": [
+    "keno",
+    "lotto",
+    "eurojackpot"
+  ],
+  "fill_strategy": "nan",
+  "coverage": [
+    {
+      "game": "keno",
+      "total_days": 1457,
+      "draw_days": 1457,
+      "coverage": 1.0,
+      "expected_weekly": 7,
+      "actual_weekly": 7.0
+    },
+    {
+      "game": "lotto",
+      "total_days": 1457,
+      "draw_days": 416,
+      "coverage": 0.2855181880576527,
+      "expected_weekly": 2,
+      "actual_weekly": 1.998627316403569
+    },
+    {
+      "game": "eurojackpot",
+      "total_days": 1457,
+      "draw_days": 404,
+      "coverage": 0.2772820864790666,
+      "expected_weekly": 2,
+      "actual_weekly": 1.940974605353466
+    }
+  ]
+}

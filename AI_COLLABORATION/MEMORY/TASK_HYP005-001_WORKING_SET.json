@@ -1,0 +1,10 @@
+﻿[
+    "kenobase/analysis/number_index.py",
+    "kenobase/core/data_loader.py",
+    "kenobase/analysis/gk1_waiting.py",
+    "scripts/analyze_hyp005.py",
+    "Keno_GPTs/10-9_KGDaten_gefiltert.csv (Schema)",
+    "data/raw/keno/KENO_ab_2018.csv (Schema)",
+    "scripts/analyze_index_reset.py (NEW)",
+    "tests/unit/test_number_index.py (NEW)"
+]

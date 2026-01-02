@@ -18,18 +18,12 @@
           51,
           64
         ],
-        "roi": -14.600550964187327,
+        "roi": -70.79889807162535,
         "invested": 363,
-        "won": 310,
-        "win_days": 54,
-        "high_wins": 1,
-        "high_win_details": [
-          {
-            "date": "2025-09-30",
-            "hits": 6,
-            "win": 100
-          }
-        ]
+        "won": 106,
+        "win_days": 79,
+        "high_wins": 0,
+        "high_win_details": []
       },
       "ticket_b": {
         "ticket": [
@@ -42,37 +36,32 @@
           61,
           64
         ],
-        "roi": 261.43250688705234,
+        "roi": -43.25068870523416,
         "invested": 363,
-        "won": 1312,
-        "win_days": 56,
-        "high_wins": 2,
+        "won": 206,
+        "win_days": 80,
+        "high_wins": 1,
         "high_win_details": [
-          {
-            "date": "2025-03-29",
-            "hits": 6,
-            "win": 100
-          },
           {
             "date": "2025-07-22",
             "hits": 7,
-            "win": 1000
+            "win": 100
           }
         ]
       },
       "dual": {
-        "roi": 123.4159779614325,
+        "roi": -57.02479338842975,
         "invested": 726,
-        "won": 1622,
-        "win_days": 90
+        "won": 312,
+        "win_days": 132
       },
       "correlation": {
-        "both": 20,
-        "only_a": 34,
-        "only_b": 36,
-        "neither": 273
+        "both": 27,
+        "only_a": 52,
+        "only_b": 53,
+        "neither": 231
       },
-      "diversification_days": 70
+      "diversification_days": 105
     },
     "typ_9": {
       "ticket_a": {
@@ -87,18 +76,12 @@
           51,
           64
         ],
-        "roi": 209.64187327823694,
+        "roi": -47.38292011019284,
         "invested": 363,
-        "won": 1124,
-        "win_days": 85,
-        "high_wins": 1,
-        "high_win_details": [
-          {
-            "date": "2025-09-30",
-            "hits": 7,
-            "win": 500
-          }
-        ]
+        "won": 191,
+        "win_days": 106,
+        "high_wins": 0,
+        "high_win_details": []
       },
       "ticket_b": {
         "ticket": [
@@ -112,37 +95,32 @@
           61,
           64
         ],
-        "roi": 1545.7300275482094,
+        "roi": 222.31404958677686,
         "invested": 363,
-        "won": 5974,
-        "win_days": 83,
-        "high_wins": 2,
+        "won": 1170,
+        "win_days": 101,
+        "high_wins": 1,
         "high_win_details": [
-          {
-            "date": "2025-03-29",
-            "hits": 7,
-            "win": 500
-          },
           {
             "date": "2025-07-22",
             "hits": 8,
-            "win": 5000
+            "win": 1000
           }
         ]
       },
       "dual": {
-        "roi": 877.685950413223,
+        "roi": 87.46556473829202,
         "invested": 726,
-        "won": 7098,
-        "win_days": 132
+        "won": 1361,
+        "win_days": 167
       },
       "correlation": {
-        "both": 36,
-        "only_a": 49,
-        "only_b": 47,
-        "neither": 231
+        "both": 40,
+        "only_a": 66,
+        "only_b": 61,
+        "neither": 196
       },
-      "diversification_days": 96
+      "diversification_days": 127
     },
     "typ_10": {
       "ticket_a": {
@@ -158,28 +136,12 @@
           51,
           64
         ],
-        "roi": 77.68595041322314,
+        "roi": -47.38292011019284,
         "invested": 363,
-        "won": 645,
+        "won": 191,
         "win_days": 61,
-        "high_wins": 3,
-        "high_win_details": [
-          {
-            "date": "2025-02-04",
-            "hits": 7,
-            "win": 100
-          },
-          {
-            "date": "2025-09-30",
-            "hits": 7,
-            "win": 100
-          },
-          {
-            "date": "2025-10-29",
-            "hits": 7,
-            "win": 100
-          }
-        ]
+        "high_wins": 0,
+        "high_win_details": []
       },
       "ticket_b": {
         "ticket": [
@@ -194,33 +156,23 @@
           61,
           64
         ],
-        "roi": 305.50964187327827,
+        "roi": -32.231404958677686,
         "invested": 363,
-        "won": 1472,
+        "won": 246,
         "win_days": 52,
-        "high_wins": 3,
+        "high_wins": 1,
         "high_win_details": [
-          {
-            "date": "2025-03-29",
-            "hits": 7,
-            "win": 100
-          },
-          {
-            "date": "2025-06-18",
-            "hits": 7,
-            "win": 100
-          },
           {
             "date": "2025-07-22",
             "hits": 8,
-            "win": 1000
+            "win": 100
           }
         ]
       },
       "dual": {
-        "roi": 191.5977961432507,
+        "roi": -39.807162534435264,
         "invested": 726,
-        "won": 2117,
+        "won": 437,
         "win_days": 104
       },
       "correlation": {

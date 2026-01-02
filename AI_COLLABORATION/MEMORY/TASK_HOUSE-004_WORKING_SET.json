@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/near_miss_jackpot.py",
+    "scripts/analyze_house004.py",
+    "tests/unit/test_near_miss_jackpot.py"
+]

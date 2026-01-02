@@ -1,75 +1,75 @@
 {
-  "analysis_date": "2025-12-30T10:00:39.159235",
+  "analysis_date": "2025-12-30T10:53:23.002509",
   "results": {
     "typ_8": {
       "original": {
-        "roi": 115.81277672359266,
+        "roi": -55.597722960151806,
         "played": 1581,
-        "won": 3412,
-        "high_wins": 15
+        "won": 702.0,
+        "high_wins": 1
       },
       "v2": {
-        "roi": 98.86148007590133,
+        "roi": -57.1157495256167,
         "played": 1581,
-        "won": 3144,
-        "high_wins": 13,
+        "won": 678.0,
+        "high_wins": 1,
         "mode_distribution": {
           "normal": 904,
           "conservative": 298,
           "jackpot": 379
         },
         "mode_roi": {
-          "normal": 173.00884955752213,
-          "conservative": 14.093959731543624,
-          "jackpot": -11.345646437994723
+          "normal": -49.336283185840706,
+          "conservative": -64.09395973154362,
+          "jackpot": -70.18469656992085
         }
       }
     },
     "typ_9": {
       "original": {
-        "roi": 228.39974699557243,
+        "roi": -50.60088551549652,
         "played": 1581,
-        "won": 5192,
-        "high_wins": 5
+        "won": 781.0,
+        "high_wins": 0
       },
       "v2": {
-        "roi": 156.2934851359899,
+        "roi": -50.98039215686274,
         "played": 1581,
-        "won": 4052,
-        "high_wins": 3,
+        "won": 775.0,
+        "high_wins": 0,
         "mode_distribution": {
           "normal": 904,
           "conservative": 298,
           "jackpot": 379
         },
         "mode_roi": {
-          "normal": 184.73451327433628,
-          "conservative": 195.97315436241612,
-          "jackpot": 57.25593667546174
+          "normal": -50.22123893805309,
+          "conservative": -47.651006711409394,
+          "jackpot": -55.4089709762533
         }
       }
     },
     "typ_10": {
       "original": {
-        "roi": 224.7311827956989,
+        "roi": -38.45667299177736,
         "played": 1581,
-        "won": 5134,
-        "high_wins": 10
+        "won": 973.0,
+        "high_wins": 3
       },
       "v2": {
-        "roi": 135.6103731815307,
+        "roi": -47.881087919038585,
         "played": 1581,
-        "won": 3725,
-        "high_wins": 5,
+        "won": 824.0,
+        "high_wins": 2,
         "mode_distribution": {
           "normal": 904,
           "conservative": 298,
           "jackpot": 379
         },
         "mode_roi": {
-          "normal": 237.0575221238938,
-          "conservative": 10.738255033557047,
-          "jackpot": -8.179419525065963
+          "normal": -37.16814159292036,
+          "conservative": -62.41610738255034,
+          "jackpot": -62.00527704485488
         }
       }
     }

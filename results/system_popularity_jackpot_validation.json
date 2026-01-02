@@ -1,0 +1,9 @@
+{
+  "hypothesis": "Jackpot-Gewinner enthalten Zahlen mit niedrigerer System-Beliebtheit",
+  "results": [
+    {
+      "id": "KYRITZ_2025_10_25",
+      "winner_mean_pop": 27087.8985,
+      "not_chosen_mean_pop": 27495.5241,
+      "delta": -407.6255999999994,
+      "winner_has_lower_pop": 

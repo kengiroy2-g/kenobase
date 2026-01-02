@@ -31,6 +31,10 @@ from kenobase.analysis.frequency import (
     classify_numbers,
     classify_pairs,
 )
+from kenobase.analysis.decade_distribution import (
+    DecadeDistributionResult,
+    analyze_decade_distribution,
+)
 from kenobase.analysis.pattern import (
     PatternResult,
     aggregate_patterns,
@@ -40,6 +44,11 @@ from kenobase.analysis.pattern import (
 from kenobase.analysis.sum_distribution import (
     SumDistributionResult,
     analyze_sum_distribution,
+)
+from kenobase.analysis.summen_signatur import (
+    aggregate_bucket_counts,
+    compute_summen_signatur,
+    export_signatures as export_summen_signatur,
 )
 from kenobase.analysis.regional_affinity import (
     RegionalAffinityAnalysis,
@@ -132,6 +141,9 @@ class PipelineResult:
     physics_result: Optional[PhysicsResult] = None
     pipeline_selection: Optional[SelectionResult] = None
     regional_affinity: Optional[RegionalAffinityAnalysis] = None
+    decade_distribution: Optional[DecadeDistributionResult] = None
+    summen_signatur_buckets: Optional[dict[int, dict[str, int]]] = None
+    summen_signatur_path: Optional[str] = None
     warnings: list[str] = field(default_factory=list)
     config_snapshot: dict = field(default_factory=dict)
 
@@ -180,6 +192,7 @@ class PipelineRunner:
         draws: list[DrawResult],
         combination: Optional[list[int]] = None,
         precision_estimate: float = 0.7,
+        source_path: Optional[str] = None,
     ) -> PipelineResult:
         """Fuehrt die vollstaendige Analyse-Pipeline aus.
 
@@ -187,6 +200,7 @@ class PipelineRunner:
             draws: Liste von DrawResult-Objekten.
             combination: Optionale Spielkombination fuer Pattern-Analyse.
             precision_estimate: Geschaetzte Einzelzahl-Precision fuer Avalanche.
+            source_path: Optionaler Pfad zur Datenquelle (fuer Artefakt-Metadaten).
 
         Returns:
             PipelineResult mit allen Analyse-Ergebnissen.
@@ -220,6 +234,22 @@ class PipelineRunner:
 
         pair_frequency_results = calculate_pair_frequency(draws)
         pair_frequency_results = classify_pairs(pair_frequency_results)
+
+        # Step 1.5: Dekaden-Verteilung (TRANS-002)
+        max_number = max(number_range) if number_range else 70
+        decade_distribution = analyze_decade_distribution(
+            draws,
+            max_number=max_number,
+            numbers_per_draw=game_config.numbers_to_draw,
+            guardrail_ratio=0.20,
+        )
+        if decade_distribution.guardrail_breached:
+            warnings.append(
+                f"decade_distribution guardrail exceeded (max deviation "
+                f"{decade_distribution.max_deviation_ratio:.2f} > 0.20)"
+            )
+        if decade_distribution.warnings:
+            warnings.extend(f"decade_distribution: {w}" for w in decade_distribution.warnings)
 
         # Step 2: Pattern-Analyse (optional)
         logger.debug("Step 2: Pattern analysis")
@@ -263,6 +293,16 @@ class PipelineRunner:
                 warnings.extend(
                     f"regional_affinity: {w}" for w in regional_affinity.warnings
                 )
+
+        # Step 2.7: Summen-Signatur (TRANS-001)
+        summen_signatur_buckets: Optional[dict[int, dict[str, int]]] = None
+        summen_signatur_path: Optional[str] = None
+        summen_cfg = self.config.analysis.summen_signatur
+        if summen_cfg.enabled:
+            summen_signatur_buckets, summen_signatur_path = self._run_summen_signatur(
+                draws=draws,
+                source_path=source_path,
+            )
 
         # Step 3: Physics Layer
         logger.debug("Step 3: Physics layer")
@@ -314,6 +354,9 @@ class PipelineRunner:
             physics_result=physics_result,
             pipeline_selection=pipeline_selection,
             regional_affinity=regional_affinity,
+            decade_distribution=decade_distribution,
+            summen_signatur_buckets=summen_signatur_buckets,
+            summen_signatur_path=summen_signatur_path,
             warnings=warnings,
             config_snapshot=self._get_config_snapshot(),
         )
@@ -453,6 +496,40 @@ class PipelineRunner:
 
         return result, sum_bounds
 
+    def _run_summen_signatur(
+        self,
+        draws: list[DrawResult],
+        source_path: Optional[str],
+    ) -> tuple[Optional[dict[int, dict[str, int]]], Optional[str]]:
+        """Berechnet Summen-Signatur und exportiert optional Artefakt."""
+        cfg = self.config.analysis.summen_signatur
+        if not draws:
+            return None, None
+
+        records = compute_summen_signatur(
+            draws=draws,
+            keno_types=cfg.keno_types,
+            bucket_std_low=cfg.bucket_std_low,
+            bucket_std_high=cfg.bucket_std_high,
+            checksum_algorithm=cfg.checksum_algorithm,
+            number_range=self.config.get_active_game().numbers_range,
+            source=source_path or "",
+        )
+        if not records:
+            return None, None
+
+        bucket_counts = aggregate_bucket_counts(records)
+        metadata = {
+            "source": source_path or "",
+            "keno_types": cfg.keno_types,
+            "numbers_per_draw": len(draws[0].numbers) if draws and draws[0].numbers else 0,
+            "bucket_std_low": cfg.bucket_std_low,
+            "bucket_std_high": cfg.bucket_std_high,
+            "generated_by": "pipeline_runner",
+        }
+        export_summen_signatur(records, cfg.latest_output, metadata)
+        return bucket_counts, cfg.latest_output
+
     def _run_least_action_selection(
         self,
         performance_overrides: Optional[dict[str, float]] = None,
@@ -482,6 +559,7 @@ class PipelineRunner:
         """Erstellt einen Snapshot der relevanten Config-Werte."""
         sum_cfg = self.config.analysis.sum_windows
         regional_cfg = self.config.analysis.regional_affinity
+        summen_cfg = self.config.analysis.summen_signatur
         game_config = self.config.get_active_game()
         return {
             "version": self.config.version,
@@ -517,6 +595,16 @@ class PipelineRunner:
                     "smoothing_alpha": regional_cfg.smoothing_alpha,
                     "z_threshold": regional_cfg.z_threshold,
                     "numbers_per_draw_override": regional_cfg.numbers_per_draw_override,
+                },
+                "summen_signatur": {
+                    "enabled": summen_cfg.enabled,
+                    "keno_types": summen_cfg.keno_types,
+                    "split_date": summen_cfg.split_date,
+                    "bucket_std_low": summen_cfg.bucket_std_low,
+                    "bucket_std_high": summen_cfg.bucket_std_high,
+                    "latest_output": summen_cfg.latest_output,
+                    "train_output": summen_cfg.train_output,
+                    "test_output": summen_cfg.test_output,
                 },
             },
         }
@@ -562,6 +650,7 @@ def run_pipeline(
     draws: list[DrawResult],
     config: KenobaseConfig,
     combination: Optional[list[int]] = None,
+    source_path: Optional[str] = None,
 ) -> PipelineResult:
     """Convenience-Funktion fuer Pipeline-Ausfuehrung.
 
@@ -569,12 +658,13 @@ def run_pipeline(
         draws: Liste von DrawResult-Objekten.
         config: Kenobase-Konfiguration.
         combination: Optionale Spielkombination.
+        source_path: Optionale Quelle fuer Artefakt-Metadaten.
 
     Returns:
         PipelineResult.
     """
     runner = PipelineRunner(config)
-    return runner.run(draws, combination)
+    return runner.run(draws, combination, source_path=source_path)
 
 
 __all__ = [

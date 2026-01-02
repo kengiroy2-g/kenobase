@@ -1,0 +1,19 @@
+{
+  "timestamp": "2025-12-27T13:35:25.949772",
+  "results": [
+    {
+      "hypothesis": "HYP-009",
+      "test": "Chi-Quadrat Gleichverteilungstest",
+      "n_draws": 2237,
+      "n_numbers": 44740,
+      "chi2_statistic": 52.26776933392937,
+      "p_value": 0.9333359904914897,
+      "threshold": 0.05,
+      "status": "ACCEPTED",
+      "interpretation": "Gleichverteilung kann nicht abgelehnt werden (p=0.9333 >= 0.05). Zahlen erscheinen zufaellig verteilt.",
+      "observed_min": 591,
+      "observed_max": 695,
+      "expected_per_number": 639.1428571428571
+    }
+  ]
+}

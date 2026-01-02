@@ -33,11 +33,11 @@ BEST_MODEL = {
 
 ## OPTIMALE TICKETS
 
-| Typ | Ticket | ROI (2025) |
-|-----|--------|------------|
-| **9** | **[3, 9, 10, 20, 24, 36, 49, 51, 64]** | **+211%** |
-| 10 | [2, 3, 9, 10, 20, 24, 36, 49, 51, 64] | +79.6% |
-| 8 | [3, 20, 24, 27, 36, 49, 51, 64] | -14.4% |
+| Typ | Ticket | Hinweis |
+|-----|--------|---------|
+| 9 | [3, 9, 10, 20, 24, 36, 49, 51, 64] | Backtests/ROI: `results/super_model_test_2025.json` |
+| 10 | [2, 3, 9, 10, 20, 24, 36, 49, 51, 64] | Quoten: `kenobase/core/keno_quotes.py` |
+| 8 | [3, 20, 24, 27, 36, 49, 51, 64] | Keine Gewinngarantie |
 
 **Kern-Zahlen:** 3, 24, 49, 51, 64
 
@@ -46,12 +46,11 @@ BEST_MODEL = {
 ## REGELN
 
 ### WANN SPIELEN
-- Mehr als 30 Tage seit letztem GK10_10 Jackpot
-- Typ 9 bevorzugen
+- Heuristiken (z.B. Jackpot-Cooldown) sind *nicht* als Profit-Regel zu verstehen.
+- Axiom-First: erst Train->Test (frozen rules) + Nullmodell/Negative Controls.
 
 ### WANN NICHT SPIELEN
-- Innerhalb 30 Tage nach GK10_10 Jackpot
-- Typ 8 (performt schlechter in 2025)
+- Keine "immer/nie" Regeln ohne reproduzierbare OOS-Validierung.
 
 ---
 

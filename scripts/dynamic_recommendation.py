@@ -3,7 +3,7 @@
 Dynamisches Empfehlungssystem mit Exclusion-Filter und Jackpot-Warnung
 
 Kombiniert:
-1. Optimale Basis-Tickets (Typ 9: +351% ROI)
+1. Optimale Basis-Tickets (Baseline)
 2. Multi-Exclusion Regeln (96%+ Accuracy)
 3. Inclusion-Boost basierend auf heutiger Ziehung
 4. Korrelierte Absenzen
@@ -25,16 +25,16 @@ import numpy as np
 
 # Jackpot-Warnung Konfiguration
 JACKPOT_COOLDOWN_DAYS = 30  # Tage nach Jackpot ohne Spiel
-JACKPOT_ROI_PENALTY = 0.66  # 66% schlechtere Performance nach Jackpot
+JACKPOT_ROI_PENALTY = 0.66  # Heuristik: Post-Jackpot Performance-Penalty
 
 
 # Optimale Basis-Tickets aus Analyse
 OPTIMAL_TICKETS = {
-    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],      # ROI +351%
-    8: [3, 20, 24, 27, 36, 49, 51, 64],         # ROI +115%
-    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],  # ROI +189%
-    7: [3, 24, 30, 49, 51, 59, 64],             # ROI +41%
-    6: [3, 9, 10, 32, 49, 64],                  # ROI ±0%
+    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],
+    8: [3, 20, 24, 27, 36, 49, 51, 64],
+    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],
+    7: [3, 24, 30, 49, 51, 59, 64],
+    6: [3, 9, 10, 32, 49, 64],
 }
 
 # Multi-Exclusion Regeln (Trigger -> [Exclude Zahlen], Accuracy)
@@ -134,13 +134,13 @@ def check_jackpot_warning(
 
         # Warning Level basierend auf Tagen seit Jackpot
         if days_since <= 7:
-            result["warning_level"] = "CRITICAL"  # Erste Woche: -80% ROI
+            result["warning_level"] = "CRITICAL"
         elif days_since <= 14:
-            result["warning_level"] = "HIGH"      # Zweite Woche: -70% ROI
+            result["warning_level"] = "HIGH"
         elif days_since <= 21:
-            result["warning_level"] = "MEDIUM"    # Dritte Woche: -50% ROI
+            result["warning_level"] = "MEDIUM"
         else:
-            result["warning_level"] = "LOW"       # Vierte Woche: -30% ROI
+            result["warning_level"] = "LOW"
 
     return result
 
@@ -164,7 +164,7 @@ def load_latest_draw(path: str) -> Optional[Dict]:
     }
 
 
-def apply_exclusion_rules(today_positions: List[int]) -> Set[int]:
+def apply_exclusion_rules(today_positions: List[int], *, verbose: bool = True) -> Set[int]:
     """Wendet Exclusion-Regeln auf heutige Ziehung an."""
     exclude = set()
 
@@ -173,12 +173,15 @@ def apply_exclusion_rules(today_positions: List[int]) -> Set[int]:
         if trigger_pos <= len(today_positions):
             if today_positions[trigger_pos - 1] == trigger_zahl:
                 exclude.update(exclude_zahlen)
-                print(f"  REGEL: Zahl {trigger_zahl} an Pos {trigger_pos} -> Exclude {exclude_zahlen} ({accuracy}%)")
+                if verbose:
+                    print(
+                        f"  REGEL: Zahl {trigger_zahl} an Pos {trigger_pos} -> Exclude {exclude_zahlen} ({accuracy}%)"
+                    )
 
     return exclude
 
 
-def apply_inclusion_boost(today_positions: List[int]) -> List[int]:
+def apply_inclusion_boost(today_positions: List[int], *, verbose: bool = True) -> List[int]:
     """Wendet Inclusion-Boost auf heutige Ziehung an."""
     boost = []
 
@@ -186,7 +189,8 @@ def apply_inclusion_boost(today_positions: List[int]) -> List[int]:
         if trigger_pos <= len(today_positions):
             if today_positions[trigger_pos - 1] == trigger_zahl:
                 boost.extend(boost_zahlen)
-                print(f"  BOOST: Zahl {trigger_zahl} an Pos {trigger_pos} -> Boost {boost_zahlen}")
+                if verbose:
+                    print(f"  BOOST: Zahl {trigger_zahl} an Pos {trigger_pos} -> Boost {boost_zahlen}")
 
     return boost
 
@@ -237,9 +241,8 @@ def generate_dynamic_ticket(
             filtered.append(z)
 
     # Falls immer noch zu wenig, fuelle mit verbleibenden Zahlen
-    all_numbers = list(range(1, 71))
-    np.random.shuffle(all_numbers)
-    for z in all_numbers:
+    # Wichtig: deterministisch halten (Backtests muessen reproduzierbar sein).
+    for z in range(1, 71):
         if len(filtered) >= keno_type:
             break
         if z not in exclude and z not in likely_absent and z not in filtered:
@@ -276,7 +279,7 @@ def generate_recommendations(
             print(f"  Verbleibende Cooldown-Tage: {jackpot_warning['days_remaining']}")
             print()
             print("  EMPFEHLUNG: NICHT SPIELEN!")
-            print("  Grund: Post-Jackpot Perioden haben -66% ROI vs normal")
+            print("  Grund: Post-Jackpot Perioden haben deutlich schlechtere Performance")
             print("!" * 70)
         else:
             print(f"\n  ✓ Kein Jackpot-Cooldown aktiv")
@@ -428,11 +431,11 @@ JACKPOT-STATUS: {jp_status}
 
     if jp_info.get("in_cooldown"):
         print(f"""  ⚠️ ACHTUNG: Noch {jp_info.get('days_remaining')} Tage Cooldown!
-  Post-Jackpot Perioden haben -66% ROI vs normal.
+  Post-Jackpot Perioden haben deutlich schlechtere Performance.
   Empfehlung: Warten bis Cooldown abgelaufen.
 """)
     else:
-        print(f"""BESTE EMPFEHLUNG (Typ 9, ROI +351%):
+        print(f"""BESTE EMPFEHLUNG (Typ 9):
   {recommendations['tickets']['typ_9']['zahlen']}
 
 AUSGESCHLOSSEN (basierend auf heute):

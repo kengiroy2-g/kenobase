@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/core/data_loader.py",
+    "tests/unit/test_data_loader.py",
+    "tests/fixtures/lotto_archiv_sample.csv",
+    "data/raw/lotto/Lotto_Archiv_ab-1955.csv",
+    "data/raw/lotto/lotto_Stats_ab-2018.csv",
+    "data/raw/lotto/Lotto_archiv_bereinigt.csv"
+]

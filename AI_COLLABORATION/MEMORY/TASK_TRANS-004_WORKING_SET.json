@@ -1,0 +1,5 @@
+﻿[
+    "kenobase/analysis/spread_index.py",
+    "tests/unit/test_spread_index.py",
+    "kenobase/analysis/__init__.py"
+]

@@ -1,0 +1,146 @@
+{
+  "hypothesis": "HYP_CYC_001",
+  "description": "28-Tage-Zyklus FRUEH (Tag 1-14) vs SPAET (Tag 15-28)",
+  "frozen_rule": "Investiere nur in FRUEH-Phase (Tag 1-14 nach Jackpot)",
+  "validation_date": "2025-12-31T03:57:48.879681",
+  "data": {
+    "total": 1457,
+    "train": 1094,
+    "test": 363,
+    "jackpots": 17
+  },
+  "by_type": {
+    "typ_8": {
+      "train": {
+        "frueh": {
+          "n": 548,
+          "roi": -60.94890510948905
+        },
+        "spaet": {
+          "n": 546,
+          "roi": -68.68131868131869
+        },
+        "diff": 7.732413571829639
+      },
+      "permutation_test": {
+        "observed_diff": 7.732413571829639,
+        "n_permutations": 1000,
+        "perm_mean": 0.20588019036924032,
+        "perm_std": 7.817111366157732,
+        "perm_5th": -13.492520253469158,
+        "perm_95th": 12.50391032325337,
+        "p_value": 0.336,
+        "significant_005": "False",
+        "significant_001": "False"
+      },
+      "test_oos": {
+        "frueh": {
+          "n": 256,
+          "roi": -31.25
+        },
+        "spaet": {
+          "n": 107,
+          "roi": -71.96261682242991
+        },
+        "diff": 40.71261682242991
+      },
+      "consistency": {
+        "train_direction": "FRUEH_BESSER",
+        "test_direction": "FRUEH_BESSER",
+        "consistent": true
+      },
+      "strategy_valid": "False"
+    },
+    "typ_9": {
+      "train": {
+        "frueh": {
+          "n": 548,
+          "roi": -53.46715328467153
+        },
+        "spaet": {
+          "n": 546,
+          "roi": -65.93406593406593
+        },
+        "diff": 12.466912649394395
+      },
+      "permutation_test": {
+        "observed_diff": 12.466912649394395,
+        "n_permutations": 1000,
+        "perm_mean": 0.11513462206892906,
+        "perm_std": 5.064054781174169,
+        "perm_5th": -8.37410764418064,
+        "perm_95th": 8.444961364669389,
+        "p_value": 0.015,
+        "significant_005": "True",
+        "significant_001": "False"
+      },
+      "test_oos": {
+        "frueh": {
+          "n": 256,
+          "roi": 339.84375
+        },
+        "spaet": {
+          "n": 107,
+          "roi": -58.87850467289719
+        },
+        "diff": 398.7222546728972
+      },
+      "consistency": {
+        "train_direction": "FRUEH_BESSER",
+        "test_direction": "FRUEH_BESSER",
+        "consistent": true
+      },
+      "strategy_valid": true
+    },
+    "typ_10": {
+      "train": {
+        "frueh": {
+          "n": 548,
+          "roi": -52.18978102189781
+        },
+        "spaet": {
+          "n": 546,
+          "roi": -71.06227106227107
+        },
+        "diff": 18.872490040373258
+      },
+      "permutation_test": {
+        "observed_diff": 18.872490040373258,
+        "n_permutations": 1000,
+        "perm_mean": 0.3312946177909675,
+        "perm_std": 7.516950646283138,
+        "perm_5th": -11.85887409427555,
+        "perm_95th": 13.022379080773234,
+        "p_value": 0.01,
+        "significant_005": "True",
+        "significant_001": "False"
+      },
+      "test_oos": {
+        "frueh": {
+          "n": 256,
+          "roi": -17.578125
+        },
+        "spaet": {
+          "n": 107,
+          "roi": -67.28971962616822
+        },
+        "diff": 49.71159462616822
+      },
+      "consistency": {
+        "train_direction": "FRUEH_BESSER",
+        "test_direction": "FRUEH_BESSER",
+        "consistent": true
+      },
+      "strategy_valid": true
+    }
+  },
+  "summary": {
+    "validated_types": [
+      "typ_9",
+      "typ_10"
+    ],
+    "not_validated_types": [
+      "typ_8"
+    ]
+  }
+}

@@ -1,0 +1,371 @@
+{
+  "metadata": {
+    "analysis_date": "2026-01-01T14:04:07.439907",
+    "draws": 2237,
+    "period": "2018-01-01 bis 2024-02-15"
+  },
+  "rule_combinations": {
+    "combinations": [
+      {
+        "ticket": "loop_kern",
+        "rule": "keine_regel",
+        "draws": 2237,
+        "roi": -94.2,
+        "jackpots": 0,
+        "reduction": 0.0
+      },
+      {
+        "ticket": "loop_kern",
+        "rule": "nur_cooldown",
+        "draws": 1727,
+        "roi": -94.09,
+        "jackpots": 0,
+        "reduction": 22.8
+      },
+      {
+        "ticket": "loop_kern",
+        "rule": "nur_frueh",
+        "draws": 1036,
+        "roi": -94.96,
+        "jackpots": 0,
+        "reduction": 53.7
+      },
+      {
+        "ticket": "loop_kern",
+        "rule": "cooldown_AND_frueh",
+        "draws": 802,
+        "roi": -95.2,
+        "jackpots": 0,
+        "reduction": 64.1
+      },
+      {
+        "ticket": "loop_kern",
+        "rule": "cooldown_OR_frueh",
+        "draws": 1961,
+        "roi": -94.1,
+        "jackpots": 0,
+        "reduction": 12.3
+      },
+      {
+        "ticket": "hz7_current",
+        "rule": "keine_regel",
+        "draws": 2237,
+        "roi": -90.58,
+        "jackpots": 1,
+        "reduction": 0.0
+      },
+      {
+        "ticket": "hz7_current",
+        "rule": "nur_cooldown",
+        "draws": 1727,
+        "roi": -93.8,
+        "jackpots": 0,
+        "reduction": 22.8
+      },
+      {
+        "ticket": "hz7_current",
+        "rule": "nur_frueh",
+        "draws": 1036,
+        "roi": -86.31,
+        "jackpots": 1,
+        "reduction": 53.7
+      },
+      {
+        "ticket": "hz7_current",
+        "rule": "cooldown_AND_frueh",
+        "draws": 802,
+        "roi": -93.93,
+        "jackpots": 0,
+        "reduction": 64.1
+      },
+      {
+        "ticket": "hz7_current",
+        "rule": "cooldown_OR_frueh",
+        "draws": 1961,
+        "roi": -89.79,
+        "jackpots": 1,
+        "reduction": 12.3
+      }
+    ],
+    "optimal": {
+      "ticket": "hz7_current",
+      "rule": "nur_frueh",
+      "draws": 1036,
+      "roi": -86.31,
+      "jackpots": 1,
+      "reduction": 53.7
+    }
+  },
+  "number_comparisons": {
+    "comparisons": [
+      {
+        "source": "loop_kern",
+        "ticket": [
+          3,
+          9,
+          24,
+          49,
+          51,
+          64
+        ],
+        "roi": -94.2,
+        "jackpots": 0,
+        "draws": 2237
+      },
+      {
+        "source": "loop_erweitert",
+        "ticket": [
+          2,
+          3,
+          9,
+          10,
+          20,
+          24
+        ],
+        "roi": -78.66,
+        "jackpots": 4,
+        "draws": 2237
+      },
+      {
+        "source": "hz7_current",
+        "ticket": [
+          17,
+          27,
+          32,
+          39,
+          48,
+          50
+        ],
+        "roi": -90.58,
+        "jackpots": 1,
+        "draws": 2237
+      },
+      {
+        "source": "hz7_reif",
+        "ticket": [
+          9,
+          15,
+          30,
+          33,
+          42,
+          51
+        ],
+        "roi": -87.2,
+        "jackpots": 2,
+        "draws": 2237
+      },
+      {
+        "source": "hybrid_4hz_2loop",
+        "ticket": [
+          17,
+          27,
+          32,
+          39,
+          3,
+          9
+        ],
+        "roi": -90.4,
+        "jackpots": 1,
+        "draws": 2237
+      },
+      {
+        "source": "hybrid_3hz_3loop",
+        "ticket": [
+          17,
+          27,
+          32,
+          3,
+          9,
+          24
+        ],
+        "roi": -93.94,
+        "jackpots": 0,
+        "draws": 2237
+      }
+    ],
+    "best_source": "loop_erweitert"
+  },
+  "hz_optimization": {
+    "hz6": [
+      {
+        "window": 20,
+        "roi": -94.47,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 30,
+        "roi": -93.64,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 50,
+        "roi": -94.82,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 70,
+        "roi": -94.91,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 100,
+        "roi": -83.91,
+        "jackpots": 1,
+        "efficiency": 0.0222
+      }
+    ],
+    "hz7": [
+      {
+        "window": 20,
+        "roi": -92.11,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 30,
+        "roi": -89.45,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 50,
+        "roi": -91.71,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 70,
+        "roi": -91.26,
+        "jackpots": 0,
+        "efficiency": 0.0
+      },
+      {
+        "window": 100,
+        "roi": -69.1,
+        "jackpots": 1,
+        "efficiency": 0.019
+      }
+    ],
+    "hz6_optimal_window": 100,
+    "hz7_optimal_window": 100
+  },
+  "hz_comparison": {
+    "budget_scenarios": [
+      {
+        "budget": "klein",
+        "monthly_eur": 30,
+        "hz6": {
+          "draws": 360,
+          "cost": 360,
+          "expected_jp": 4.86,
+          "expected_roi": 575.55
+        },
+        "hz7": {
+          "draws": 51,
+          "cost": 357,
+          "expected_jp": 0.47,
+          "expected_roi": -34.38
+        },
+        "recommendation": "HZ6"
+      },
+      {
+        "budget": "mittel",
+        "monthly_eur": 100,
+        "hz6": {
+          "draws": 1200,
+          "cost": 1200,
+          "expected_jp": 54.04,
+          "expected_roi": 2151.83
+        },
+        "hz7": {
+          "draws": 171,
+          "cost": 1197,
+          "expected_jp": 5.27,
+          "expected_roi": 120.04
+        },
+        "recommendation": "HZ6"
+      },
+      {
+        "budget": "gross",
+        "monthly_eur": 200,
+        "hz6": {
+          "draws": 2400,
+          "cost": 2400,
+          "expected_jp": 216.18,
+          "expected_roi": 4403.66
+        },
+        "hz7": {
+          "draws": 342,
+          "cost": 2394,
+          "expected_jp": 21.07,
+          "expected_roi": 340.07
+        },
+        "recommendation": "HZ6"
+      }
+    ]
+  },
+  "final_analysis": {
+    "analysis_date": "2026-01-01T14:04:13.549106",
+    "summary": {
+      "best_rule_combo": {
+        "rule": "nur_frueh",
+        "roi": -86.31,
+        "reduction": 53.7
+      },
+      "best_number_source": "loop_erweitert",
+      "hz6_optimal_window": 100,
+      "hz7_optimal_window": 100
+    },
+    "recommendations": {
+      "gelegenheitsspieler": {
+        "strategy": "HZ7 + nur Cooldown",
+        "description": "Einfach, gute Balance",
+        "cost": "~150 EUR/Monat"
+      },
+      "langzeit_spieler": {
+        "strategy": "HZ6 + Cooldown + FRUEH",
+        "description": "Beste ROI, Geduld erforderlich",
+        "cost": "~15 EUR/Monat"
+      },
+      "budget_bewusst": {
+        "strategy": "HZ6 nur FRUEH-Phase",
+        "description": "Minimale Kosten",
+        "cost": "~14 EUR/Monat"
+      }
+    },
+    "decision_matrix": [
+      {
+        "goal": "ROI maximieren",
+        "strategy": "HZ6 + Cooldown + FRUEH",
+        "numbers": "Loop-Kern [3,9,24,49,51,64]",
+        "play_days": "~100/Jahr",
+        "cost": "~100 EUR/Jahr"
+      },
+      {
+        "goal": "Jackpots maximieren",
+        "strategy": "HZ7 ohne Regeln",
+        "numbers": "Aktuelle HZ7",
+        "play_days": "~365/Jahr",
+        "cost": "~2555 EUR/Jahr"
+      },
+      {
+        "goal": "Risiko minimieren",
+        "strategy": "HZ6 + alle Regeln",
+        "numbers": "Reife HZ6",
+        "play_days": "~50/Jahr",
+        "cost": "~50 EUR/Jahr"
+      },
+      {
+        "goal": "Budget minimieren",
+        "strategy": "HZ6 nur FRUEH",
+        "numbers": "Loop-Kern",
+        "play_days": "~168/Jahr (nur Tag 1-14)",
+        "cost": "~168 EUR/Jahr"
+      }
+    ]
+  }
+}

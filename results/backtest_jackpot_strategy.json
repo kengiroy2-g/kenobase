@@ -1,0 +1,17 @@
+{
+  "datum": "2026-01-01T23:01:27.202668",
+  "zeitraum": "2023-2024",
+  "ziehungen": 731,
+  "jackpot_tage": 16,
+  "ergebnisse": {
+    "optimiert_vs_random": {
+      "optimiert_roi": -50.13953488372093,
+      "random_roi": -52.94801641586867,
+      "differenz": 2.808481532147745
+    },
+    "boost_phase": {
+      "optimiert_roi": -54.01388888888889,
+      "random_roi": -58.361111111111114
+    }
+  }
+}

@@ -26,15 +26,20 @@
 
 ### Was ist das Super-Modell?
 
-Das Super-Modell ist ein datengetriebenes Vorhersagesystem fuer KENO, das durch die Synthese von **3 parallel arbeitenden KI-Analysen** entstanden ist. Es erreicht einen **ROI von +467.4%** (Typ 9) im Backtest und **+211%** out-of-sample (2025).
+Das Super-Modell ist ein datengetriebenes Vorhersagesystem fuer KENO, das durch die Synthese von **3 parallel arbeitenden KI-Analysen** entstanden ist.
+
+**WICHTIG (Quoten/ROI):**
+- Single Source of Truth fuer KENO-Auszahlungen ist `kenobase/core/keno_quotes.py`.
+- ROI-Zahlen aus frueheren Iterationen koennen auf inkonsistenten Quoten-Tabellen basieren und sind daher nicht als Ergebnis-Quelle zu verwenden.
+- Verwende fuer den aktuellen Stand die reproduzierbaren Artefakte unter `results/` (z.B. `results/super_model_test_2025.json`, `results/super_model_comparison_summary.md`).
 
 ### Kernerkenntnisse
 
-| Komponente | ROI-Beitrag | Beschreibung |
-|------------|-------------|--------------|
-| Jackpot-Warnung | +466.6% | 30 Tage Cooldown nach GK10_10 |
-| Exclusion-Regeln | +0.3% | Position-basierte Ausschlussregeln |
-| Anti-Birthday | +0.5% | Zahlen >31 bevorzugen |
+| Komponente | Rolle | Beschreibung |
+|------------|-------|--------------|
+| Jackpot-Warnung | Regime/Skip | 30 Tage Cooldown nach GK10_10 |
+| Exclusion-Regeln | Filter | Position-basierte Ausschlussregeln |
+| Anti-Birthday | Heuristik | Zahlen >31 bevorzugen (Uniqueness/Sharing) |
 
 ### Entwicklungsprozess
 
@@ -453,11 +458,6 @@ Periode 2: 2018-2024 Training, 2025 Test (Out-of-Sample)
 def calculate_roi(invested: int, won: int) -> float:
     """
     ROI = (Gewinn - Einsatz) / Einsatz * 100
-
-    Beispiel:
-        Einsatz: 362 EUR (362 Tage, 1 EUR/Tag)
-        Gewinn:  1126 EUR
-        ROI:     (1126 - 362) / 362 * 100 = +211%
     """
     return (won - invested) / invested * 100
 ```
@@ -465,17 +465,8 @@ def calculate_roi(invested: int, won: int) -> float:
 ### 7.3 KENO Gewinnquoten
 
 ```python
-KENO_QUOTES = {
-    2: {2: 6, 1: 0, 0: 0},
-    3: {3: 16, 2: 1, 1: 0, 0: 0},
-    4: {4: 22, 3: 2, 2: 1, 1: 0, 0: 0},
-    5: {5: 100, 4: 7, 3: 2, 2: 0, 1: 0, 0: 0},
-    6: {6: 500, 5: 15, 4: 5, 3: 1, 2: 0, 1: 0, 0: 0},
-    7: {7: 1000, 6: 100, 5: 12, 4: 4, 3: 1, 2: 0, 1: 0, 0: 0},
-    8: {8: 10000, 7: 1000, 6: 100, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    9: {9: 50000, 8: 5000, 7: 500, 6: 50, 5: 10, 4: 2, 3: 0, 2: 0, 1: 0, 0: 0},
-    10: {10: 100000, 9: 10000, 8: 1000, 7: 100, 6: 15, 5: 5, 4: 0, 3: 0, 2: 0, 1: 0, 0: 2}
-}
+# Single Source of Truth (per 1 EUR Einsatz):
+from kenobase.core.keno_quotes import KENO_FIXED_QUOTES_BY_TYPE, get_fixed_quote
 ```
 
 ### 7.4 Simulationslogik
@@ -494,7 +485,7 @@ def simulate_ticket(ticket: List[int], keno_type: int, draw: set) -> Tuple[int, 
         (gewinn, treffer)
     """
     hits = sum(1 for n in ticket if n in draw)
-    win = KENO_QUOTES[keno_type].get(hits, 0)
+    win = get_fixed_quote(keno_type, hits)
     return win, hits
 ```
 
@@ -570,15 +561,12 @@ cat results/super_model_test_2025.json
 
 ```
 Nach Schritt 4 (Super-Modell Synthese):
-  - Beste Konfiguration: jackpot_warning + exclusion_rules + anti_birthday
-  - Typ 9 ROI: +467.4%
-  - Typ 8 ROI: +144.5%
-  - Typ 10 ROI: +256.9%
+  - Ergebnis-Artefakt: `results/super_model_synthesis.json`
+  - Optional: Kurzsummary unter `results/` (z.B. `results/super_model_comparison_summary.md`)
 
 Nach Schritt 5 (2025 Validierung):
-  - Typ 9 ROI: +211.0% (Out-of-Sample!)
-  - Typ 10 ROI: +79.6%
-  - Typ 8 ROI: -14.4%
+  - Ergebnis-Artefakt: `results/super_model_test_2025.json`
+  - Interpretation: OOS-Performance gegen Nullmodell/Negative Controls pruefen (kein Profit-Versprechen)
 ```
 
 ---
@@ -748,25 +736,21 @@ class Lotto6aus49Analyzer(LotteryAnalyzer):
 
 ### 10.1 Finale Performance
 
-| Periode | Typ 9 ROI | Typ 8 ROI | Typ 10 ROI |
-|---------|-----------|-----------|------------|
-| 2018-2024 (Training) | +467.4% | +144.5% | +256.9% |
-| 2025 (Out-of-Sample) | **+211.0%** | -14.4% | +79.6% |
+**Hinweis:** Konkrete ROI-/Profit-Zahlen werden *nicht* mehr in dieser Methodik-Datei gepflegt.
+Nutze stattdessen die reproduzierbaren Backtest-Artefakte unter `results/`.
+
+| Artefakt | Zweck |
+|---------|------|
+| `results/super_model_synthesis.json` | Komponenten-Kombinationen + Ranking |
+| `results/super_model_test_2025.json` | OOS-Backtest (2025) |
+| `results/super_model_comparison_summary.md` | Kurzuebersicht der Varianten |
 
 ### 10.2 Statistische Signifikanz
 
-```
-Typ 9 (2025):
-  Gespielt: 362 Tage
-  Einsatz: 362 EUR
-  Gewinn: 1126 EUR
-  Profit: +764 EUR
-  Big-Wins (>=50 EUR): 7
-
-  Binomial-Test:
-    H0: ROI = 0 (kein Vorteil)
-    p < 0.001 (SIGNIFIKANT)
-```
+Statt p-Werte auf "ROI > 0" sollte die Validierung folgendes enthalten:
+- Nullmodell (Hypergeometrisch: 20 aus 70) + Negative Controls (z.B. EuroJackpot getrennt)
+- Train->Val->Test (frozen rules) und strikte Leakage-Checks
+- Multiple-Testing Kontrolle (FDR) falls viele Regeln/Hypothesen gescannt werden
 
 ### 10.3 Limitationen
 
@@ -797,14 +781,14 @@ DON'T:
 
 ```python
 OPTIMAL_TICKETS = {
-    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],      # +211% (2025)
+    9: [3, 9, 10, 20, 24, 36, 49, 51, 64],
     8: [3, 20, 24, 27, 36, 49, 51, 64],
-    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],  # +79.6% (2025)
+    10: [2, 3, 9, 10, 20, 24, 36, 49, 51, 64],
     7: [3, 24, 30, 49, 51, 59, 64],
     6: [3, 9, 10, 32, 49, 64],
 }
 
-KERN_ZAHLEN = [3, 24, 49, 51, 64]  # In allen profitablen Tickets
+KERN_ZAHLEN = [3, 24, 49, 51, 64]  # Kern-Set (haeufig in Kandidaten-Tickets)
 ```
 
 ## ANHANG B: Exclusion-Regeln (100% Accuracy)

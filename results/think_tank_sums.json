@@ -1,0 +1,570 @@
+{
+  "metadata": {
+    "analysis": "Sum-Clustering Model Hypothesis",
+    "analyst": "Think Tank AI",
+    "timestamp": "2025-12-31T17:29:08.424507",
+    "data_source": "C:\\Users\\kenfu\\Documents\\keno_base\\data\\raw\\keno\\KENO_ab_2022_bereinigt.csv",
+    "total_draws": 1457
+  },
+  "theoretical_values": {
+    "expected_mean": 710.0,
+    "expected_variance": 5916.666666666667,
+    "expected_std": 76.91987172809552,
+    "theoretical_min": 210,
+    "theoretical_max": 1210,
+    "method": "Hypergeometric (without replacement from 1-70, k=20)"
+  },
+  "observed_statistics": {
+    "count": 1457,
+    "mean": 709.58,
+    "std": 77.06,
+    "variance": 5938.59,
+    "min": 402,
+    "max": 980,
+    "range": 578,
+    "q1": 657,
+    "median": 710,
+    "q3": 759,
+    "iqr": 102
+  },
+  "forbidden_zones": {
+    "observed_min": 402,
+    "observed_max": 980,
+    "theoretical_min": 210,
+    "theoretical_max": 1210,
+    "lower_forbidden_zone": {
+      "range": "210-401",
+      "count": 192
+    },
+    "upper_forbidden_zone": {
+      "range": "981-1210",
+      "count": 230
+    },
+    "missing_in_observed_range": [
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422
+    ],
+    "missing_count": 231,
+    "rare_sums_count": 139,
+    "frequency_by_bucket": {
+      "402-411": 1,
+      "412-421": 0,
+      "422-431": 0,
+      "432-441": 0,
+      "442-451": 0,
+      "452-461": 0,
+      "462-471": 0,
+      "472-481": 2,
+      "482-491": 1,
+      "492-501": 1,
+      "502-511": 3,
+      "512-521": 1,
+      "522-531": 7,
+      "532-541": 2,
+      "542-551": 14,
+      "552-561": 16,
+      "562-571": 11,
+      "572-581": 15,
+      "582-591": 17,
+      "592-601": 21,
+      "602-611": 33,
+      "612-621": 35,
+      "622-631": 37,
+      "632-641": 45,
+      "642-651": 53,
+      "652-661": 63,
+      "662-671": 57,
+      "672-681": 66,
+      "682-691": 89,
+      "692-701": 86,
+      "702-711": 70,
+      "712-721": 73,
+      "722-731": 70,
+      "732-741": 83,
+      "742-751": 73,
+      "752-761": 66,
+      "762-771": 50,
+      "772-781": 58,
+      "782-791": 43,
+      "792-801": 31,
+      "802-811": 34,
+      "812-821": 25,
+      "822-831": 14,
+      "832-841": 18,
+      "842-851": 20,
+      "852-861": 11,
+      "862-871": 11,
+      "872-881": 9,
+      "882-891": 8,
+      "892-901": 6,
+      "902-911": 1,
+      "912-921": 2,
+      "922-931": 1,
+      "932-941": 1,
+      "942-951": 1,
+      "952-961": 0,
+      "962-971": 0,
+      "972-981": 2
+    }
+  },
+  "zone_analysis": {
+    "zones": {
+      "extreme_low": {
+        "range": "<556",
+        "count": 41,
+        "percentage": 2.81
+      },
+      "low": {
+        "range": "556-633",
+        "count": 181,
+        "percentage": 12.42
+      },
+      "normal_low": {
+        "range": "633-710",
+        "count": 505,
+        "percentage": 34.66
+      },
+      "normal_high": {
+        "range": "710-786",
+        "count": 512,
+        "percentage": 35.14
+      },
+      "high": {
+        "range": "786-863",
+        "count": 177,
+        "percentage": 12.15
+      },
+      "extreme_high": {
+        "range": ">863",
+        "count": 41,
+        "percentage": 2.81
+      }
+    },
+    "normality_test": {
+      "within_1_std_observed": 69.6,
+      "within_1_std_expected": 68.27,
+      "within_2_std_observed": 94.44,
+      "within_2_std_expected": 95.45,
+      "beyond_2_std_observed": 5.56,
+      "beyond_2_std_expected": 4.55
+    }
+  },
+  "optimal_ticket_range": {
+    "peak_sum": 683,
+    "peak_frequency": 15,
+    "optimal_range": {
+      "lower": 612,
+      "upper": 807,
+      "description": "Contains 80% of all draws"
+    },
+    "tight_range": {
+      "lower": 632,
+      "upper": 786,
+      "description": "Contains ~68% of all draws (1 std)"
+    },
+    "concentration_ratio": 2.165,
+    "recommendation": "Target ticket sums between 612 and 807 for best hit rate"
+  },
+  "hypothesis_test": {
+    "hypothesis": "Sum-Clustering Model: RNG keeps sum within specific range",
+    "test_results": {
+      "std_ratio": 1.0018,
+      "std_interpretation": "MORE spread than expected (anti-clustering)",
+      "mean_deviation": 0.42,
+      "mean_interpretation": "Mean is close to expected",
+      "chi_square_statistic": 1595.95,
+      "bucket_distribution": [
+        1,
+        8,
+        57,
+        161,
+        359,
+        438,
+        287,
+        106,
+        35,
+        5
+      ]
+    },
+    "verdict": "INCONCLUSIVE: Distribution is consistent with random draws",
+    "confidence": "N/A",
+    "practical_implication": "Sum targeting may not improve hit rate"
+  },
+  "temporal_analysis": {
+    "monthly_breakdown": {
+      "2022-01": {
+        "count": 29,
+        "mean": 731.9,
+        "std": 83.3,
+        "min": 557,
+        "max": 909
+      },
+      "2022-02": {
+        "count": 28,
+        "mean": 700.4,
+        "std": 77.9,
+        "min": 514,
+        "max": 816
+      },
+      "2022-03": {
+        "count": 31,
+        "mean": 721.3,
+        "std": 67.5,
+        "min": 585,
+        "max": 845
+      },
+      "2022-04": {
+        "count": 30,
+        "mean": 716.1,
+        "std": 64.8,
+        "min": 569,
+        "max": 857
+      },
+      "2022-05": {
+        "count": 31,
+        "mean": 732.1,
+        "std": 81.6,
+        "min": 551,
+        "max": 867
+      },
+      "2022-06": {
+        "count": 30,
+        "mean": 732.9,
+        "std": 72.3,
+        "min": 527,
+        "max": 866
+      },
+      "2022-07": {
+        "count": 31,
+        "mean": 699.2,
+        "std": 70.3,
+        "min": 481,
+        "max": 788
+      },
+      "2022-08": {
+        "count": 31,
+        "mean": 710.8,
+        "std": 65.8,
+        "min": 592,
+        "max": 846
+      },
+      "2022-09": {
+        "count": 30,
+        "mean": 711.1,
+        "std": 88.3,
+        "min": 552,
+        "max": 887
+      },
+      "2022-10": {
+        "count": 31,
+        "mean": 704.2,
+        "std": 64.5,
+        "min": 550,
+        "max": 851
+      },
+      "2022-11": {
+        "count": 30,
+        "mean": 721.9,
+        "std": 82.2,
+        "min": 543,
+        "max": 901
+      },
+      "2022-12": {
+        "count": 31,
+        "mean": 714.2,
+        "std": 69.0,
+        "min": 554,
+        "max": 871
+      },
+      "2023-01": {
+        "count": 31,
+        "mean": 701.9,
+        "std": 53.2,
+        "min": 594,
+        "max": 844
+      },
+      "2023-02": {
+        "count": 28,
+        "mean": 719.2,
+        "std": 75.4,
+        "min": 600,
+        "max": 878
+      },
+      "2023-03": {
+        "count": 31,
+        "mean": 704.1,
+        "std": 86.4,
+        "min": 492,
+        "max": 898
+      },
+      "2023-04": {
+        "count": 30,
+        "mean": 717.2,
+        "std": 76.7,
+        "min": 607,
+        "max": 862
+      },
+      "2023-05": {
+        "count": 31,
+        "mean": 695.2,
+        "std": 69.7,
+        "min": 583,
+        "max": 849
+      },
+      "2023-06": {
+        "count": 30,
+        "mean": 721.9,
+        "std": 80.5,
+        "min": 585,
+        "max": 890
+      },
+      "2023-07": {
+        "count": 31,
+        "mean": 715.6,
+        "std": 80.8,
+        "min": 531,
+        "max": 867
+      },
+      "2023-08": {
+        "count": 31,
+        "mean": 706.7,
+        "std": 85.3,
+        "min": 548,
+        "max": 892
+      },
+      "2023-09": {
+        "count": 30,
+        "mean": 712.9,
+        "std": 69.8,
+        "min": 549,
+        "max": 837
+      },
+      "2023-10": {
+        "count": 31,
+        "mean": 706.5,
+        "std": 81.3,
+        "min": 547,
+        "max": 897
+      },
+      "2023-11": {
+        "count": 30,
+        "mean": 667.2,
+        "std": 61.8,
+        "min": 581,
+        "max": 826
+      },
+      "2023-12": {
+        "count": 31,
+        "mean": 705.8,
+        "std": 69.3,
+        "min": 554,
+        "max": 835
+      },
+      "2024-01": {
+        "count": 31,
+        "mean": 715.9,
+        "std": 53.8,
+        "min": 614,
+        "max": 819
+      },
+      "2024-02": {
+        "count": 29,
+        "mean": 707.3,
+        "std": 83.0,
+        "min": 525,
+        "max": 872
+      },
+      "2024-03": {
+        "count": 31,
+        "mean": 716.6,
+        "std": 70.0,
+        "min": 555,
+        "max": 880
+      },
+      "2024-04": {
+        "count": 30,
+        "mean": 701.7,
+        "std": 75.2,
+        "min": 604,
+        "max": 980
+      },
+      "2024-05": {
+        "count": 31,
+        "mean": 715.6,
+        "std": 73.3,
+        "min": 542,
+        "max": 882
+      },
+      "2024-06": {
+        "count": 30,
+        "mean": 706.5,
+        "std": 84.7,
+        "min": 545,
+        "max": 943
+      },
+      "2024-07": {
+        "count": 31,
+        "mean": 705.3,
+        "std": 88.2,
+        "min": 484,
+        "max": 914
+      },
+      "2024-08": {
+        "count": 31,
+        "mean": 708.5,
+        "std": 68.5,
+        "min": 567,
+        "max": 892
+      },
+      "2024-09": {
+        "count": 30,
+        "mean": 702.0,
+        "std": 63.4,
+        "min": 594,
+        "max": 875
+      },
+      "2024-10": {
+        "count": 31,
+        "mean": 717.5,
+        "std": 82.1,
+        "min": 564,
+        "max": 889
+      },
+      "2024-11": {
+        "count": 30,
+        "mean": 704.2,
+        "std": 90.4,
+        "min": 511,
+        "max": 877
+      },
+      "2024-12": {
+        "count": 31,
+        "mean": 701.8,
+        "std": 77.4,
+        "min": 546,
+        "max": 876
+      },
+      "2025-01": {
+        "count": 31,
+        "mean": 701.7,
+        "std": 87.6,
+        "min": 526,
+        "max": 834
+      },
+      "2025-02": {
+        "count": 28,
+        "mean": 726.0,
+        "std": 77.9,
+        "min": 595,
+        "max": 939
+      },
+      "2025-03": {
+        "count": 31,
+        "mean": 732.5,
+        "std": 84.0,
+        "min": 529,
+        "max": 889
+      },
+      "2025-04": {
+        "count": 30,
+        "mean": 694.1,
+        "std": 65.7,
+        "min": 542,
+        "max": 847
+      },
+      "2025-05": {
+        "count": 31,
+        "mean": 709.6,
+        "std": 85.3,
+        "min": 566,
+        "max": 978
+      },
+      "2025-06": {
+        "count": 30,
+        "mean": 707.4,
+        "std": 80.7,
+        "min": 479,
+        "max": 888
+      },
+      "2025-07": {
+        "count": 31,
+        "mean": 697.7,
+        "std": 64.7,
+        "min": 533,
+        "max": 823
+      },
+      "2025-08": {
+        "count": 31,
+        "mean": 689.6,
+        "std": 70.3,
+        "min": 561,
+        "max": 836
+      },
+      "2025-09": {
+        "count": 30,
+        "mean": 695.0,
+        "std": 73.6,
+        "min": 523,
+        "max": 869
+      },
+      "2025-10": {
+        "count": 31,
+        "mean": 720.2,
+        "std": 69.0,
+        "min": 554,
+        "max": 877
+      },
+      "2025-11": {
+        "count": 30,
+        "mean": 726.1,
+        "std": 82.5,
+        "min": 573,
+        "max": 929
+      },
+      "2025-12": {
+        "count": 29,
+        "mean": 687.4,
+        "std": 95.0,
+        "min": 402,
+        "max": 881
+      }
+    },
+    "trend": {
+      "direction": "decreasing",
+      "magnitude": 44.5,
+      "interpretation": "Possible time-dependent pattern"
+    }
+  },
+  "conclusions": {
+    "summary": "INCONCLUSIVE: Distribution is consistent with random draws",
+    "key_findings": [
+      "Observed std (77.06) vs expected std (76.92)",
+      "Sum range in practice: 402 - 980",
+      "Optimal target range: 612 - 807",
+      "69.6% of draws within 1 std (expected: 68.27%)"
+    ],
+    "recommendations": [
+      "Target ticket sums between 612 and 807 for best hit rate",
+      "Avoid extreme sums (below 402 or above 980)",
+      "Consider temporal patterns for timing-based strategies"
+    ]
+  }
+}

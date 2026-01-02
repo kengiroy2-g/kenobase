@@ -1,0 +1,6 @@
+﻿[
+    "kenobase/analysis/parity_ratio.py",
+    "kenobase/analysis/__init__.py",
+    "tests/unit/test_parity_ratio.py",
+    "scripts/analyze_parity.py"
+]

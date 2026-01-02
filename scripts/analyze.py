@@ -168,6 +168,38 @@ def result_to_dict(result: PipelineResult) -> dict:
     if result.regional_affinity:
         output["regional_affinity"] = result.regional_affinity.to_dict()
 
+    if result.decade_distribution:
+        dd = result.decade_distribution
+        output["decade_distribution"] = {
+            "chi_square": dd.chi_square,
+            "p_value": dd.p_value,
+            "max_deviation_ratio": dd.max_deviation_ratio,
+            "guardrail_breached": dd.guardrail_breached,
+            "total_numbers": dd.total_numbers,
+            "numbers_per_draw": dd.numbers_per_draw,
+            "max_number": dd.max_number,
+            "decades": [
+                {
+                    "decade": b.decade,
+                    "range": [b.start, b.end],
+                    "count": b.count,
+                    "expected_count": b.expected_count,
+                    "relative_frequency": b.relative_frequency,
+                    "deviation_ratio": b.deviation_ratio,
+                    "within_guardrail": b.within_guardrail,
+                }
+                for b in dd.bins
+            ],
+            "warnings": dd.warnings,
+        }
+
+    # Summen-Signatur summary
+    if result.summen_signatur_buckets:
+        output["summen_signatur"] = {
+            "bucket_counts": result.summen_signatur_buckets,
+            "artifact_path": result.summen_signatur_path,
+        }
+
     return output
 
 
@@ -301,7 +333,7 @@ def analyze(
     # Run pipeline
     logger.info("Running pipeline...")
     runner = PipelineRunner(cfg)
-    result = runner.run(draws, combination=combo)
+    result = runner.run(draws, combination=combo, source_path=str(data))
 
     # Format output using new output_formats module
     result_dict = result_to_dict(result)

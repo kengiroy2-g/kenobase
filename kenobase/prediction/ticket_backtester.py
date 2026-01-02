@@ -301,9 +301,210 @@ def save_backtest_json(
     out.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+@dataclass(frozen=True)
+class RandomTicketBacktestResult:
+    """Result for a single keno_type from random ticket Monte-Carlo backtest."""
+
+    keno_type: int
+    n_predictions: int
+    n_seeds: int
+    mean_hits_random: float
+    std_hits_random: float
+    expected_mean_hits: float
+    mean_hits_weighted_freq: float | None  # for comparison
+    random_vs_expected_diff: float
+    random_vs_weighted_diff: float | None
+
+
+@dataclass(frozen=True)
+class RandomNullModelResult:
+    """Aggregated null model comparison result."""
+
+    generated_at: str
+    n_seeds: int
+    draws_path: str | None
+    n_draws: int
+    start_index: int
+    per_type_results: list[RandomTicketBacktestResult]
+    conclusion: str
+
+
+def _run_single_seed_random(
+    seed: int,
+    sorted_draws: list[DrawResult],
+    keno_types: list[int],
+    start_index: int,
+    numbers_range: tuple[int, int],
+) -> dict[int, list[int]]:
+    """Run a single-seed random ticket backtest and return hits per keno_type."""
+    import random as rnd
+
+    rnd.seed(seed)
+    min_n, max_n = numbers_range
+    numbers = list(range(min_n, max_n + 1))
+
+    hits_by_k: dict[int, list[int]] = {k: [] for k in keno_types}
+
+    for i in range(start_index, len(sorted_draws)):
+        draw_set = set(sorted_draws[i].numbers)
+        for k in keno_types:
+            ticket = rnd.sample(numbers, k)
+            hits = len(draw_set.intersection(ticket))
+            hits_by_k[k].append(hits)
+
+    return hits_by_k
+
+
+def walk_forward_backtest_random_tickets(
+    draws: list[DrawResult],
+    *,
+    keno_types: list[int],
+    start_index: int = 365,
+    n_seeds: int = 100,
+    numbers_range: tuple[int, int] = (1, 70),
+    numbers_drawn: int = 20,
+    weighted_freq_results: list[TicketBacktestResult] | None = None,
+    n_jobs: int = -1,
+) -> RandomNullModelResult:
+    """Monte-Carlo random ticket baseline backtest.
+
+    For each seed, generate random tickets for each draw >= start_index
+    and record the hits. Average across seeds to get null model baseline.
+
+    Args:
+        draws: List of draw results
+        keno_types: List of keno types to test (e.g., [2, 6, 8, 10])
+        start_index: Start index for walk-forward (same as weighted-freq)
+        n_seeds: Number of random seeds for Monte-Carlo
+        numbers_range: Range of numbers (1, 70) for KENO
+        numbers_drawn: Numbers drawn per draw (20 for KENO)
+        weighted_freq_results: Optional results from weighted-frequency for comparison
+        n_jobs: Number of parallel jobs (-1 = all CPUs)
+
+    Returns:
+        RandomNullModelResult with per-type statistics
+    """
+    from datetime import datetime
+
+    from joblib import Parallel, delayed
+
+    if not draws:
+        raise ValueError("draws must not be empty")
+    if start_index < 1:
+        raise ValueError("start_index must be >= 1")
+
+    min_n, max_n = numbers_range
+    if min_n != 1 or max_n != 70:
+        raise ValueError("Only numbers_range (1, 70) is supported for KENO backtest")
+
+    sorted_draws = sorted(draws, key=lambda d: d.date)
+    if start_index >= len(sorted_draws):
+        raise ValueError(f"start_index={start_index} must be < number of draws ({len(sorted_draws)})")
+
+    n_predictions = len(sorted_draws) - start_index
+
+    # Run Monte-Carlo in parallel
+    all_seed_results = Parallel(n_jobs=n_jobs)(
+        delayed(_run_single_seed_random)(
+            seed, sorted_draws, keno_types, start_index, numbers_range
+        )
+        for seed in range(n_seeds)
+    )
+
+    # Aggregate results per keno_type
+    per_type_results: list[RandomTicketBacktestResult] = []
+
+    # Build lookup for weighted-freq results
+    wf_lookup: dict[int, float] = {}
+    if weighted_freq_results:
+        for r in weighted_freq_results:
+            wf_lookup[r.keno_type] = r.mean_hits
+
+    for k in sorted(set(keno_types)):
+        # Collect mean_hits across all seeds
+        seed_means = []
+        for seed_result in all_seed_results:
+            hits_list = seed_result.get(k, [])
+            if hits_list:
+                seed_means.append(float(np.mean(hits_list)))
+
+        mean_random = float(np.mean(seed_means)) if seed_means else 0.0
+        std_random = float(np.std(seed_means)) if len(seed_means) > 1 else 0.0
+
+        # Expected from hypergeometric
+        expected_mean, _ = _hypergeom_mean_var(keno_type=k, numbers_range=max_n, numbers_drawn=numbers_drawn)
+
+        # Comparison with weighted-frequency
+        mean_wf = wf_lookup.get(k)
+        diff_wf = (mean_wf - mean_random) if mean_wf is not None else None
+
+        per_type_results.append(
+            RandomTicketBacktestResult(
+                keno_type=k,
+                n_predictions=n_predictions,
+                n_seeds=n_seeds,
+                mean_hits_random=round(mean_random, 6),
+                std_hits_random=round(std_random, 6),
+                expected_mean_hits=round(expected_mean, 6),
+                mean_hits_weighted_freq=round(mean_wf, 6) if mean_wf is not None else None,
+                random_vs_expected_diff=round(mean_random - expected_mean, 6),
+                random_vs_weighted_diff=round(diff_wf, 6) if diff_wf is not None else None,
+            )
+        )
+
+    # Generate conclusion
+    conclusion_parts = []
+    for r in per_type_results:
+        if r.random_vs_weighted_diff is not None:
+            if abs(r.random_vs_weighted_diff) < 0.01:
+                conclusion_parts.append(f"Typ-{r.keno_type}: weighted-freq ~ random")
+            elif r.random_vs_weighted_diff > 0:
+                conclusion_parts.append(f"Typ-{r.keno_type}: weighted-freq +{r.random_vs_weighted_diff:.4f} vs random")
+            else:
+                conclusion_parts.append(f"Typ-{r.keno_type}: weighted-freq {r.random_vs_weighted_diff:.4f} vs random")
+
+    conclusion = "; ".join(conclusion_parts) if conclusion_parts else "No weighted-freq comparison available"
+
+    return RandomNullModelResult(
+        generated_at=datetime.now().isoformat(),
+        n_seeds=n_seeds,
+        draws_path=None,
+        n_draws=len(draws),
+        start_index=start_index,
+        per_type_results=per_type_results,
+        conclusion=conclusion,
+    )
+
+
+def save_random_null_model_json(
+    result: RandomNullModelResult,
+    *,
+    output_path: str | Path,
+    draws_path: str | None = None,
+) -> None:
+    """Save RandomNullModelResult to JSON."""
+    payload = {
+        "analysis": "random_ticket_null_model",
+        "generated_at": result.generated_at,
+        "n_seeds": result.n_seeds,
+        "draws_path": draws_path or result.draws_path,
+        "n_draws": result.n_draws,
+        "start_index": result.start_index,
+        "conclusion": result.conclusion,
+        "per_type_results": [asdict(r) for r in result.per_type_results],
+    }
+    out = Path(output_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 __all__ = [
     "HitDistribution",
     "TicketBacktestResult",
+    "RandomTicketBacktestResult",
+    "RandomNullModelResult",
     "walk_forward_backtest_weighted_frequency",
+    "walk_forward_backtest_random_tickets",
     "save_backtest_json",
+    "save_random_null_model_json",
 ]

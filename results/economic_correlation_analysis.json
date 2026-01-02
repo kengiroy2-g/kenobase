@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "keno_draws": 1457,
+    "jackpots": 22,
+    "months_analyzed": 48,
+    "date_range": "2022-01 - 2025-12"
+  },
+  "correlations": {
+    "jackpots": {
+      "arbeitslos": {
+        "pearson_r": 0.5407,
+        "pearson_p": 0.0001,
+        "spearman_r": 0.6181,
+        "spearman_p": 0.0,
+        "n": 48,
+        "significant": "True"
+      },
+      "inflation": {
+        "pearson_r": -0.4545,
+        "pearson_p": 0.0012,
+        "spearman_r": -0.5056,
+        "spearman_p": 0.0002,
+        "n": 48,
+        "significant": "True"
+      },
+      "dax": {
+        "pearson_r": 0.5561,
+        "pearson_p": 0.0,
+        "spearman_r": 0.6264,
+        "spearman_p": 0.0,
+        "n": 48,
+        "significant": "True"
+      },
+      "ifo": {
+        "pearson_r": -0.3213,
+        "pearson_p": 0.026,
+        "spearman_r": -0.3072,
+        "spearman_p": 0.0337,
+        "n": 48,
+        "significant": "True"
+      },
+      "gfk": {
+        "pearson_r": 0.148,
+        "pearson_p": 0.3153,
+        "spearman_r": 0.292,
+        "spearman_p": 0.044,
+        "n": 48,
+        "significant": "False"
+      }
+    },
+    "jackpot_gewinner": {
+      "arbeitslos": {
+        "pearson_r": 0.4828,
+        "pearson_p": 0.0005,
+        "spearman_r": 0.6297,
+        "spearman_p": 0.0,
+        "n": 48,
+        "significant": "True"
+      },
+      "inflation": {
+        "pearson_r": -0.3942,
+        "pearson_p": 0.0056,
+        "spearman_r": -0.5234,
+        "spearman_p": 0.0001,
+        "n": 48,
+        "significant": "True"
+      },
+      "dax": {
+        "pearson_r": 0.5108,
+        "pearson_p": 0.0002,
+        "spearman_r": 0.6393,
+        "spearman_p": 0.0,
+        "n": 48,
+        "significant": "True"
+      },
+      "ifo": {
+        "pearson_r": -0.2464,
+        "pearson_p": 0.0913,
+        "spearman_r": -0.2825,
+        "spearman_p": 0.0518,
+        "n": 48,
+        "significant": "False"
+      },
+      "gfk": {
+        "pearson_r": 0.168,
+        "pearson_p": 0.2536,
+        "spearman_r": 0.3235,
+        "spearman_p": 0.0249,
+        "n": 48,
+        "significant": "False"
+      }
+    },
+    "spieleinsatz": {
+      "arbeitslos": {
+        "pearson_r": 0.1908,
+        "pearson_p": 0.194,
+        "spearman_r": 0.2517,
+        "spearman_p": 0.0844,
+        "n": 48,
+        "significant": "False"
+      },
+      "inflation": {
+        "pearson_r": -0.2352,
+        "pearson_p": 0.1075,
+        "spearman_r": -0.2303,
+        "spearman_p": 0.1154,
+        "n": 48,
+        "significant": "False"
+      },
+      "dax": {
+        "pearson_r": 0.1864,
+        "pearson_p": 0.2046,
+        "spearman_r": 0.2455,
+        "spearman_p": 0.0925,
+        "n": 48,
+        "significant": "False"
+      },
+      "ifo": {
+        "pearson_r": 0.0132,
+        "pearson_p": 0.929,
+        "spearman_r": 0.0072,
+        "spearman_p": 0.9614,
+        "n": 48,
+        "significant": "False"
+      },
+      "gfk": {
+        "pearson_r": 0.2428,
+        "pearson_p": 0.0964,
+        "spearman_r": 0.3053,
+        "spearman_p": 0.0348,
+        "n": 48,
+        "significant": "False"
+      }
+    }
+  },
+  "lag_correlations": {
+    "arbeitslos": {
+      "lag_-3": {
+        "correlation": 0.3752,
+        "p_value": 0.0111,
+        "significant": "True"
+      },
+      "lag_-2": {
+        "correlation": 0.4453,
+        "p_value": 0.0019,
+        "significant": "True"
+      },
+      "lag_-1": {
+        "correlation": 0.5219,
+        "p_value": 0.0002,
+        "significant": "True"
+      },
+      "lag_0": {
+        "correlation": 0.5407,
+        "p_value": 0.0001,
+        "significant": "True"
+      },
+      "lag_1": {
+        "correlation": 0.5261,
+        "p_value": 0.0001,
+        "significant": "True"
+      },
+      "lag_2": {
+        "correlation": 0.5115,
+        "p_value": 0.0003,
+        "significant": "True"
+      },
+      "lag_3": {
+        "correlation": 0.5236,
+        "p_value": 0.0002,
+        "significant": "True"
+      }
+    },
+    "inflation": {
+      "lag_-3": {
+        "correlation": -0.4406,
+        "p_value": 0.0025,
+        "significant": "True"
+      },
+      "lag_-2": {
+        "correlation": -0.4675,
+        "p_value": 0.0011,
+        "significant": "True"
+      },
+      "lag_-1": {
+        "correlation": -0.454,
+        "p_value": 0.0014,
+        "significant": "True"
+      },
+      "lag_0": {
+        "correlation": -0.4545,
+        "p_value": 0.0012,
+        "significant": "True"
+      },
+      "lag_1": {
+        "correlation": -0.4351,
+        "p_value": 0.0022,
+        "significant": "True"
+      },
+      "lag_2": {
+        "correlation": -0.437,
+        "p_value": 0.0024,
+        "significant": "True"
+      },
+      "lag_3": {
+        "correlation": -0.4576,
+        "p_value": 0.0016,
+        "significant": "True"
+      }
+    },
+    "dax": {
+      "lag_-3": {
+        "correlation": 0.6086,
+        "p_value": 0.0,
+        "significant": "True"
+      },
+      "lag_-2": {
+        "correlation": 0.6165,
+        "p_value": 0.0,
+        "significant": "True"
+      },
+      "lag_-1": {
+        "correlation": 0.5655,
+        "p_value": 0.0,
+        "significant": "True"
+      },
+      "lag_0": {
+        "correlation": 0.5561,
+        "p_value": 0.0,
+        "significant": "True"
+      },
+      "lag_1": {
+        "correlation": 0.5272,
+        "p_value": 0.0001,
+        "significant": "True"
+      },
+      "lag_2": {
+        "correlation": 0.4955,
+        "p_value": 0.0005,
+        "significant": "True"
+      },
+      "lag_3": {
+        "correlation": 0.4397,
+        "p_value": 0.0025,
+        "significant": "True"
+      }
+    },
+    "ifo": {
+      "lag_-3": {
+        "correlation": 0.0548,
+        "p_value": 0.7207,
+        "significant": "False"
+      },
+      "lag_-2": {
+        "correlation": -0.0077,
+        "p_value": 0.9597,
+        "significant": "False"
+      },
+      "lag_-1": {
+        "correlation": -0.1967,
+        "p_value": 0.185,
+        "significant": "False"
+      },
+      "lag_0": {
+        "correlation": -0.3213,
+        "p_value": 0.026,
+        "significant": "True"
+      },
+      "lag_1": {
+        "correlation": -0.3745,
+        "p_value": 0.0095,
+        "significant": "True"
+      },
+      "lag_2": {
+        "correlation": -0.356,
+        "p_value": 0.0152,
+        "significant": "True"
+      },
+      "lag_3": {
+        "correlation": -0.3506,
+        "p_value": 0.0182,
+        "significant": "True"
+      }
+    },
+    "gfk": {
+      "lag_-3": {
+        "correlation": 0.5082,
+        "p_value": 0.0004,
+        "significant": "True"
+      },
+      "lag_-2": {
+        "correlation": 0.3845,
+        "p_value": 0.0083,
+        "significant": "True"
+      },
+      "lag_-1": {
+        "correlation": 0.228,
+        "p_value": 0.1232,
+        "significant": "False"
+      },
+      "lag_0": {
+        "correlation": 0.148,
+        "p_value": 0.3153,
+        "significant": "False"
+      },
+      "lag_1": {
+        "correlation": 0.179,
+        "p_value": 0.2286,
+        "significant": "False"
+      },
+      "lag_2": {
+        "correlation": 0.2064,
+        "p_value": 0.1688,
+        "significant": "False"
+      },
+      "lag_3": {
+        "correlation": 0.1724,
+        "p_value": 0.2575,
+        "significant": "False"
+      }
+    }
+  },
+  "timing_analysis": {
+    "summary": {
+      "high_inflation": {
+        "months": 24,
+        "total_jackpots": 0,
+        "avg_jackpots": 0.0
+      },
+      "low_inflation": {
+        "months": 24,
+        "total_jackpots": 22,
+        "avg_jackpots": 0.917
+      },
+      "dax_up": {
+        "months": 32,
+        "total_jackpots": 21,
+        "avg_jackpots": 0.656
+      },
+      "dax_down": {
+        "months": 15,
+        "total_jackpots": 1,
+        "avg_jackpots": 0.067
+      }
+    }
+  },
+  "monthly_data": [
+    {
+      "jahr_monat": "2022-01",
+      "ziehungen": 29,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11089598.0,
+      "arbeitslos": 5.4,
+      "inflation": 4.9,
+      "dax": 15471,
+      "ifo": 95.7,
+      "gfk": -6.7,
+      "dax_change": NaN
+    },
+    {
+      "jahr_monat": "2022-02",
+      "ziehungen": 28,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10895807.0,
+      "arbeitslos": 5.3,
+      "inflation": 5.1,
+      "dax": 14461,
+      "ifo": 98.5,
+      "gfk": -8.1,
+      "dax_change": -0.06528343352078081
+    },
+    {
+      "jahr_monat": "2022-03",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11272697.0,
+      "arbeitslos": 5.1,
+      "inflation": 7.3,
+      "dax": 14414,
+      "ifo": 90.8,
+      "gfk": -15.5,
+      "dax_change": -0.003250121015144214
+    },
+    {
+      "jahr_monat": "2022-04",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10480507.0,
+      "arbeitslos": 5.0,
+      "inflation": 7.4,
+      "dax": 14098,
+      "ifo": 91.9,
+      "gfk": -26.5,
+      "dax_change": -0.021923130289995818
+    },
+    {
+      "jahr_monat": "2022-05",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11689206.0,
+      "arbeitslos": 5.0,
+      "inflation": 7.9,
+      "dax": 14388,
+      "ifo": 93.0,
+      "gfk": -26.0,
+      "dax_change": 0.02057029365867491
+    },
+    {
+      "jahr_monat": "2022-06",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10550232.0,
+      "arbeitslos": 5.2,
+      "inflation": 7.6,
+      "dax": 12783,
+      "ifo": 92.2,
+      "gfk": -27.4,
+      "dax_change": -0.11155129274395326
+    },
+    {
+      "jahr_monat": "2022-07",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10681879.0,
+      "arbeitslos": 5.4,
+      "inflation": 7.5,
+      "dax": 13484,
+      "ifo": 88.7,
+      "gfk": -30.6,
+      "dax_change": 0.054838457326136236
+    },
+    {
+      "jahr_monat": "2022-08",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10686262.0,
+      "arbeitslos": 5.5,
+      "inflation": 7.9,
+      "dax": 12835,
+      "ifo": 88.6,
+      "gfk": -36.5,
+      "dax_change": -0.04813111836250372
+    },
+    {
+      "jahr_monat": "2022-09",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10301351.0,
+      "arbeitslos": 5.5,
+      "inflation": 10.0,
+      "dax": 12114,
+      "ifo": 84.4,
+      "gfk": -36.8,
+      "dax_change": -0.05617452278924817
+    },
+    {
+      "jahr_monat": "2022-10",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10666471.0,
+      "arbeitslos": 5.5,
+      "inflation": 10.4,
+      "dax": 13243,
+      "ifo": 84.5,
+      "gfk": -41.9,
+      "dax_change": 0.09319795278190512
+    },
+    {
+      "jahr_monat": "2022-11",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10532058.0,
+      "arbeitslos": 5.4,
+      "inflation": 10.0,
+      "dax": 14397,
+      "ifo": 86.4,
+      "gfk": -40.2,
+      "dax_change": 0.0871403760477234
+    },
+    {
+      "jahr_monat": "2022-12",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11477359.0,
+      "arbeitslos": 5.4,
+      "inflation": 8.6,
+      "dax": 13924,
+      "ifo": 88.6,
+      "gfk": -37.8,
+      "dax_change": -0.032854066819476335
+    },
+    {
+      "jahr_monat": "2023-01",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11186822.0,
+      "arbeitslos": 5.5,
+      "inflation": 8.7,
+      "dax": 15128,
+      "ifo": 90.1,
+      "gfk": -33.9,
+      "dax_change": 0.08646940534329217
+    },
+    {
+      "jahr_monat": "2023-02",
+      "ziehungen": 28,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10354104.0,
+      "arbeitslos": 5.5,
+      "inflation": 8.7,
+      "dax": 15365,
+      "ifo": 91.1,
+      "gfk": -30.6,
+      "dax_change": 0.01566631411951347
+    },
+    {
+      "jahr_monat": "2023-03",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11177914.0,
+      "arbeitslos": 5.5,
+      "inflation": 7.4,
+      "dax": 15629,
+      "ifo": 93.2,
+      "gfk": -29.5,
+      "dax_change": 0.017181906931337476
+    },
+    {
+      "jahr_monat": "2023-04",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10748924.0,
+      "arbeitslos": 5.5,
+      "inflation": 7.2,
+      "dax": 15922,
+      "ifo": 93.4,
+      "gfk": -25.7,
+      "dax_change": 0.018747200716616508
+    },
+    {
+      "jahr_monat": "2023-05",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10801885.0,
+      "arbeitslos": 5.5,
+      "inflation": 6.1,
+      "dax": 15664,
+      "ifo": 91.5,
+      "gfk": -24.2,
+      "dax_change": -0.016203994473056094
+    },
+    {
+      "jahr_monat": "2023-06",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11003433.0,
+      "arbeitslos": 5.6,
+      "inflation": 6.4,
+      "dax": 16148,
+      "ifo": 88.4,
+      "gfk": -25.4,
+      "dax_change": 0.030898876404494402
+    },
+    {
+      "jahr_monat": "2023-07",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10989930.0,
+      "arbeitslos": 5.7,
+      "inflation": 6.2,
+      "dax": 16446,
+      "ifo": 87.4,
+      "gfk": -24.4,
+      "dax_change": 0.018454297745850834
+    },
+    {
+      "jahr_monat": "2023-08",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10826913.0,
+      "arbeitslos": 5.8,
+      "inflation": 6.1,
+      "dax": 15947,
+      "ifo": 85.8,
+      "gfk": -25.6,
+      "dax_change": -0.03034172443147265
+    },
+    {
+      "jahr_monat": "2023-09",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10340077.0,
+      "arbeitslos": 5.8,
+      "inflation": 4.5,
+      "dax": 15387,
+      "ifo": 85.8,
+      "gfk": -26.5,
+      "dax_change": -0.035116322819339074
+    },
+    {
+      "jahr_monat": "2023-10",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11050908.0,
+      "arbeitslos": 5.8,
+      "inflation": 3.8,
+      "dax": 14810,
+      "ifo": 86.9,
+      "gfk": -28.1,
+      "dax_change": -0.037499187625917973
+    },
+    {
+      "jahr_monat": "2023-11",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10756224.0,
+      "arbeitslos": 5.8,
+      "inflation": 3.2,
+      "dax": 16215,
+      "ifo": 87.2,
+      "gfk": -27.6,
+      "dax_change": 0.09486833220796753
+    },
+    {
+      "jahr_monat": "2023-12",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11025578.0,
+      "arbeitslos": 5.8,
+      "inflation": 3.7,
+      "dax": 16752,
+      "ifo": 86.3,
+      "gfk": -25.1,
+      "dax_change": 0.033117483811285764
+    },
+    {
+      "jahr_monat": "2024-01",
+      "ziehungen": 31,
+      "jackpots": 2,
+      "jackpot_gewinner": 2,
+      "spieleinsatz": 10809760.0,
+      "arbeitslos": 5.9,
+      "inflation": 2.9,
+      "dax": 16918,
+      "ifo": 85.2,
+      "gfk": -29.6,
+      "dax_change": 0.009909264565425069
+    },
+    {
+      "jahr_monat": "2024-02",
+      "ziehungen": 29,
+      "jackpots": 3,
+      "jackpot_gewinner": 8,
+      "spieleinsatz": 10715964.0,
+      "arbeitslos": 6.0,
+      "inflation": 2.5,
+      "dax": 17678,
+      "ifo": 85.7,
+      "gfk": -29.0,
+      "dax_change": 0.04492256767939473
+    },
+    {
+      "jahr_monat": "2024-03",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11037116.0,
+      "arbeitslos": 6.0,
+      "inflation": 2.2,
+      "dax": 18492,
+      "ifo": 87.9,
+      "gfk": -27.3,
+      "dax_change": 0.04604593279782776
+    },
+    {
+      "jahr_monat": "2024-04",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10516244.0,
+      "arbeitslos": 5.9,
+      "inflation": 2.2,
+      "dax": 18161,
+      "ifo": 89.4,
+      "gfk": -24.2,
+      "dax_change": -0.01789963227341551
+    },
+    {
+      "jahr_monat": "2024-05",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10688883.0,
+      "arbeitslos": 5.9,
+      "inflation": 2.4,
+      "dax": 18693,
+      "ifo": 89.3,
+      "gfk": -20.9,
+      "dax_change": 0.029293541104564724
+    },
+    {
+      "jahr_monat": "2024-06",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11851310.0,
+      "arbeitslos": 6.0,
+      "inflation": 2.2,
+      "dax": 18235,
+      "ifo": 88.6,
+      "gfk": -21.6,
+      "dax_change": -0.024501150163162677
+    },
+    {
+      "jahr_monat": "2024-07",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11343893.0,
+      "arbeitslos": 6.0,
+      "inflation": 2.3,
+      "dax": 18508,
+      "ifo": 87.0,
+      "gfk": -18.4,
+      "dax_change": 0.01497120921305184
+    },
+    {
+      "jahr_monat": "2024-08",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11381367.0,
+      "arbeitslos": 6.1,
+      "inflation": 1.9,
+      "dax": 18906,
+      "ifo": 86.6,
+      "gfk": -22.0,
+      "dax_change": 0.02150421439377559
+    },
+    {
+      "jahr_monat": "2024-09",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10933826.0,
+      "arbeitslos": 6.1,
+      "inflation": 1.6,
+      "dax": 19324,
+      "ifo": 85.4,
+      "gfk": -21.2,
+      "dax_change": 0.022109383264572013
+    },
+    {
+      "jahr_monat": "2024-10",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11198118.0,
+      "arbeitslos": 6.1,
+      "inflation": 2.0,
+      "dax": 19077,
+      "ifo": 86.5,
+      "gfk": -21.0,
+      "dax_change": -0.01278203270544398
+    },
+    {
+      "jahr_monat": "2024-11",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10868730.0,
+      "arbeitslos": 6.1,
+      "inflation": 2.2,
+      "dax": 19626,
+      "ifo": 85.6,
+      "gfk": -23.1,
+      "dax_change": 0.02877810976568651
+    },
+    {
+      "jahr_monat": "2024-12",
+      "ziehungen": 31,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 11669775.0,
+      "arbeitslos": 6.2,
+      "inflation": 2.6,
+      "dax": 19909,
+      "ifo": 84.7,
+      "gfk": -21.3,
+      "dax_change": 0.014419647406501479
+    },
+    {
+      "jahr_monat": "2025-01",
+      "ziehungen": 31,
+      "jackpots": 2,
+      "jackpot_gewinner": 2,
+      "spieleinsatz": 11381768.0,
+      "arbeitslos": 6.2,
+      "inflation": 2.3,
+      "dax": 21254,
+      "ifo": 85.1,
+      "gfk": -22.4,
+      "dax_change": 0.06755738610678597
+    },
+    {
+      "jahr_monat": "2025-02",
+      "ziehungen": 28,
+      "jackpots": 2,
+      "jackpot_gewinner": 3,
+      "spieleinsatz": 10500296.0,
+      "arbeitslos": 6.3,
+      "inflation": 2.3,
+      "dax": 22000,
+      "ifo": 85.3,
+      "gfk": -24.0,
+      "dax_change": 0.03509927543050728
+    },
+    {
+      "jahr_monat": "2025-03",
+      "ziehungen": 31,
+      "jackpots": 3,
+      "jackpot_gewinner": 5,
+      "spieleinsatz": 11220531.0,
+      "arbeitslos": 6.3,
+      "inflation": 2.2,
+      "dax": 22539,
+      "ifo": 86.7,
+      "gfk": -24.5,
+      "dax_change": 0.024499999999999966
+    },
+    {
+      "jahr_monat": "2025-04",
+      "ziehungen": 30,
+      "jackpots": 1,
+      "jackpot_gewinner": 5,
+      "spieleinsatz": 10544227.0,
+      "arbeitslos": 6.3,
+      "inflation": 2.1,
+      "dax": 22242,
+      "ifo": 86.9,
+      "gfk": -20.6,
+      "dax_change": -0.013177159590043952
+    },
+    {
+      "jahr_monat": "2025-05",
+      "ziehungen": 31,
+      "jackpots": 1,
+      "jackpot_gewinner": 2,
+      "spieleinsatz": 11963144.0,
+      "arbeitslos": 6.2,
+      "inflation": 2.1,
+      "dax": 23767,
+      "ifo": 87.5,
+      "gfk": -19.9,
+      "dax_change": 0.06856397805952708
+    },
+    {
+      "jahr_monat": "2025-06",
+      "ziehungen": 30,
+      "jackpots": 2,
+      "jackpot_gewinner": 11,
+      "spieleinsatz": 10856596.0,
+      "arbeitslos": 6.2,
+      "inflation": 2.0,
+      "dax": 24100,
+      "ifo": 87.0,
+      "gfk": -18.9,
+      "dax_change": 0.014011023688307311
+    },
+    {
+      "jahr_monat": "2025-07",
+      "ziehungen": 31,
+      "jackpots": 2,
+      "jackpot_gewinner": 3,
+      "spieleinsatz": 11229545.0,
+      "arbeitslos": 6.1,
+      "inflation": 2.0,
+      "dax": 24500,
+      "ifo": 87.3,
+      "gfk": -18.2,
+      "dax_change": 0.016597510373443924
+    },
+    {
+      "jahr_monat": "2025-08",
+      "ziehungen": 31,
+      "jackpots": 1,
+      "jackpot_gewinner": 5,
+      "spieleinsatz": 11384200.0,
+      "arbeitslos": 6.1,
+      "inflation": 1.9,
+      "dax": 24800,
+      "ifo": 87.8,
+      "gfk": -17.5,
+      "dax_change": 0.012244897959183598
+    },
+    {
+      "jahr_monat": "2025-09",
+      "ziehungen": 30,
+      "jackpots": 1,
+      "jackpot_gewinner": 1,
+      "spieleinsatz": 10693948.0,
+      "arbeitslos": 6.0,
+      "inflation": 1.8,
+      "dax": 25100,
+      "ifo": 88.2,
+      "gfk": -16.8,
+      "dax_change": 0.012096774193548487
+    },
+    {
+      "jahr_monat": "2025-10",
+      "ziehungen": 31,
+      "jackpots": 1,
+      "jackpot_gewinner": 1,
+      "spieleinsatz": 11196677.0,
+      "arbeitslos": 6.0,
+      "inflation": 1.8,
+      "dax": 25400,
+      "ifo": 88.5,
+      "gfk": -16.2,
+      "dax_change": 0.01195219123505975
+    },
+    {
+      "jahr_monat": "2025-11",
+      "ziehungen": 30,
+      "jackpots": 0,
+      "jackpot_gewinner": 0,
+      "spieleinsatz": 10770422.0,
+      "arbeitslos": 5.9,
+      "inflation": 1.7,
+      "dax": 25700,
+      "ifo": 88.9,
+      "gfk": -15.5,
+      "dax_change": 0.011811023622047223
+    },
+    {
+      "jahr_monat": "2025-12",
+      "ziehungen": 29,
+      "jackpots": 1,
+      "jackpot_gewinner": 2,
+      "spieleinsatz": 10247286.0,
+      "arbeitslos": 5.9,
+      "inflation": 1.7,
+      "dax": 26000,
+      "ifo": 89.2,
+      "gfk": -15.0,
+      "dax_change": 0.011673151750972721
+    }
+  ]
+}

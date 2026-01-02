@@ -1,0 +1,96 @@
+================================================================================
+VALIDIERUNG TEMPORALE JACKPOT-MUSTER - KENO 10/10
+Analysezeitraum: 2022-2025
+Anzahl Jackpot-Tage: 46
+Gesamte Gewinner: 103
+================================================================================
+
+ALLE JACKPOT-TAGE:
+----------------------------------------
+  31.01.2022 (Mo) - 10 Gewinner
+  26.03.2022 (Sa) - 1 Gewinner
+  25.05.2022 (Mi) - 1 Gewinner
+  28.05.2022 (Sa) - 2 Gewinner
+  29.05.2022 (So) - 1 Gewinner
+  08.06.2022 (Mi) - 1 Gewinner
+  29.06.2022 (Mi) - 1 Gewinner
+  24.07.2022 (So) - 1 Gewinner
+  25.07.2022 (Mo) - 1 Gewinner
+  24.09.2022 (Sa) - 1 Gewinner
+  30.09.2022 (Fr) - 1 Gewinner
+  16.10.2022 (So) - 2 Gewinner
+  10.12.2022 (Sa) - 2 Gewinner
+  23.12.2022 (Fr) - 1 Gewinner
+  31.03.2023 (Fr) - 10 Gewinner
+  04.04.2023 (Di) - 1 Gewinner
+  17.04.2023 (Mo) - 1 Gewinner
+  08.06.2023 (Do) - 1 Gewinner
+  13.06.2023 (Di) - 2 Gewinner
+  23.06.2023 (Fr) - 1 Gewinner
+  26.06.2023 (Mo) - 1 Gewinner
+  28.06.2023 (Mi) - 10 Gewinner
+  25.07.2023 (Di) - 2 Gewinner
+  10.10.2023 (Di) - 2 Gewinner
+  13.11.2023 (Mo) - 1 Gewinner
+  30.12.2023 (Sa) - 1 Gewinner
+  05.01.2024 (Fr) - 1 Gewinner
+  24.01.2024 (Mi) - 1 Gewinner
+  06.02.2024 (Di) - 2 Gewinner
+  16.01.2025 (Do) - 1 Gewinner
+  29.01.2025 (Mi) - 1 Gewinner
+  02.02.2025 (So) - 2 Gewinner
+  16.02.2025 (So) - 1 Gewinner
+  09.03.2025 (So) - 2 Gewinner
+  19.03.2025 (Mi) - 1 Gewinner
+  27.03.2025 (Do) - 2 Gewinner
+  24.04.2025 (Do) - 5 Gewinner
+  28.05.2025 (Mi) - 2 Gewinner
+  18.06.2025 (Mi) - 1 Gewinner
+  30.06.2025 (Mo) - 10 Gewinner
+  15.07.2025 (Di) - 1 Gewinner
+  27.07.2025 (So) - 2 Gewinner
+  07.08.2025 (Do) - 5 Gewinner
+  27.09.2025 (Sa) - 1 Gewinner
+  25.10.2025 (Sa) - 1 Gewinner
+  04.12.2025 (Do) - 2 Gewinner
+
+================================================================================
+HYPOTHESEN-ERGEBNISSE
+================================================================================
+
+H-TEMP-001: Q1 (Jan-Maerz) hat ueberproportional viele Jackpots
+  - Beobachtet: Q1=13 (28.3%)
+  - Erwartet: 24.7%
+  - Chi-Quadrat p-Wert: 0.2933
+  - STATUS: NICHT BESTAETIGT
+
+H-TEMP-002: Mi/Do sind bevorzugte Jackpot-Tage
+  - Beobachtet: Mi+Do=15 (32.6%)
+  - Erwartet: 28.5%
+  - Chi-Quadrat p-Wert: 0.9622
+  - STATUS: NICHT BESTAETIGT
+
+H-TEMP-003: Tag 22-28 des Monats ist bevorzugt
+  - Beobachtet: 22-28=18 (39.1%)
+  - Erwartet: 23.0%
+  - Chi-Quadrat p-Wert: 0.0054
+  - STATUS: BESTAETIGT (statistisch signifikant, p<0.05)
+
+H-TEMP-004: November hat signifikant weniger/keine Jackpots
+  - Beobachtet: Nov=1 (2.2%)
+  - Erwartet: 8.2%
+  - Chi-Quadrat p-Wert (Monate): 0.2956
+  - STATUS: SCHWACH BESTAETIGT (stark unterrepraesentiert)
+
+================================================================================
+FAZIT
+================================================================================
+Die einzige statistisch signifikante Auffaelligkeit ist:
+  - H-TEMP-003: Tage 22-28 haben signifikant mehr Jackpots (p<0.01)
+
+Die anderen Hypothesen zeigen zwar leichte Tendenzen,
+sind aber bei der geringen Stichprobe (n=46) nicht signifikant.
+
+WARNUNG: Korrelation != Kausalitaet.
+Diese Muster koennten zufaellige Schwankungen sein.
+Eine laengere Datenreihe waere erforderlich fuer robuste Schlussfolgerungen.

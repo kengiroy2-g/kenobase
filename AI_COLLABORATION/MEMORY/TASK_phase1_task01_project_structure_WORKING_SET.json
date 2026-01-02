@@ -1,0 +1,10 @@
+﻿[
+    "pyproject.toml",
+    "pytest.ini",
+    ".gitignore",
+    "data/raw/.gitkeep",
+    "data/processed/.gitkeep",
+    "data/results/.gitkeep",
+    "tests/test_config.py",
+    "src/ (DELETED - duplicate directory)"
+]

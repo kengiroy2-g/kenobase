@@ -1,0 +1,337 @@
+{
+  "samples": [
+    {
+      "id": "KYRITZ_2025_10_25",
+      "date": "2025-10-25",
+      "winner_10": [
+        5,
+        12,
+        20,
+        26,
+        34,
+        36,
+        42,
+        45,
+        48,
+        66
+      ],
+      "not_chosen_10": [
+        2,
+        9,
+        19,
+        35,
+        39,
+        49,
+        54,
+        55,
+        62,
+        64
+      ],
+      "total_winners": 1
+    },
+    {
+      "id": "OBERBAYERN_2023_06_28",
+      "date": "2023-06-28",
+      "winner_10": [
+        3,
+        15,
+        18,
+        27,
+        47,
+        53,
+        54,
+        55,
+        66,
+        68
+      ],
+      "not_chosen_10": [
+        6,
+        13,
+        24,
+        36,
+        38,
+        40,
+        43,
+        51,
+        56,
+        63
+      ],
+      "total_winners": 10
+    },
+    {
+      "id": "NORDSACHSEN_2024_01_24",
+      "date": "2024-01-24",
+      "winner_10": [
+        9,
+        19,
+        37,
+        38,
+        43,
+        45,
+        48,
+        57,
+        59,
+        67
+      ],
+      "not_chosen_10": [
+        3,
+        7,
+        12,
+        13,
+        16,
+        17,
+        21,
+        36,
+        52,
+        54
+      ],
+      "total_winners": 1
+    }
+  ],
+  "analyses": [
+    {
+      "id": "KYRITZ_2025_10_25",
+      "date": "2025-10-25",
+      "total_winners": 1,
+      "winner": {
+        "birthday_count": 4,
+        "birthday_pct": 40.0,
+        "lucky_count": 0,
+        "high_count": 1,
+        "even_count": 8,
+        "odd_count": 2,
+        "consecutive_pairs": 0,
+        "decades_used": 6,
+        "max_per_decade": 3,
+        "sum": 334,
+        "mean": 33.4
+      },
+      "not_chosen": {
+        "birthday_count": 3,
+        "birthday_pct": 30.0,
+        "lucky_count": 2,
+        "high_count": 4,
+        "even_count": 4,
+        "odd_count": 6,
+        "consecutive_pairs": 1,
+        "decades_used": 6,
+        "max_per_decade": 2,
+        "sum": 388,
+        "mean": 38.8
+      },
+      "delta": {
+        "birthday_count": 1,
+        "birthday_pct": 10.0,
+        "lucky_count": -2,
+        "high_count": -3,
+        "even_count": 4,
+        "odd_count": -4,
+        "consecutive_pairs": -1,
+        "decades_used": 0,
+        "max_per_decade": 1,
+        "sum": -54,
+        "mean": -5.399999999999999
+      }
+    },
+    {
+      "id": "OBERBAYERN_2023_06_28",
+      "date": "2023-06-28",
+      "total_winners": 10,
+      "winner": {
+        "birthday_count": 4,
+        "birthday_pct": 40.0,
+        "lucky_count": 1,
+        "high_count": 5,
+        "even_count": 4,
+        "odd_count": 6,
+        "consecutive_pairs": 2,
+        "decades_used": 6,
+        "max_per_decade": 3,
+        "sum": 406,
+        "mean": 40.6
+      },
+      "not_chosen": {
+        "birthday_count": 3,
+        "birthday_pct": 30.0,
+        "lucky_count": 0,
+        "high_count": 3,
+        "even_count": 6,
+        "odd_count": 4,
+        "consecutive_pairs": 0,
+        "decades_used": 7,
+        "max_per_decade": 3,
+        "sum": 370,
+        "mean": 37.0
+      },
+      "delta": {
+        "birthday_count": 1,
+        "birthday_pct": 10.0,
+        "lucky_count": 1,
+        "high_count": 2,
+        "even_count": -2,
+        "odd_count": 2,
+        "consecutive_pairs": 2,
+        "decades_used": -1,
+        "max_per_decade": 0,
+        "sum": 36,
+        "mean": 3.6000000000000014
+      }
+    },
+    {
+      "id": "NORDSACHSEN_2024_01_24",
+      "date": "2024-01-24",
+      "total_winners": 1,
+      "winner": {
+        "birthday_count": 2,
+        "birthday_pct": 20.0,
+        "lucky_count": 2,
+        "high_count": 3,
+        "even_count": 2,
+        "odd_count": 8,
+        "consecutive_pairs": 1,
+        "decades_used": 6,
+        "max_per_decade": 3,
+        "sum": 422,
+        "mean": 42.2
+      },
+      "not_chosen": {
+        "birthday_count": 7,
+        "birthday_pct": 70.0,
+        "lucky_count": 2,
+        "high_count": 2,
+        "even_count": 5,
+        "odd_count": 5,
+        "consecutive_pairs": 2,
+        "decades_used": 5,
+        "max_per_decade": 4,
+        "sum": 231,
+        "mean": 23.1
+      },
+      "delta": {
+        "birthday_count": -5,
+        "birthday_pct": -50.0,
+        "lucky_count": 0,
+        "high_count": 1,
+        "even_count": -3,
+        "odd_count": 3,
+        "consecutive_pairs": -1,
+        "decades_used": 1,
+        "max_per_decade": -1,
+        "sum": 191,
+        "mean": 19.1
+      }
+    }
+  ],
+  "consistency": {
+    "birthday_count": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        1,
+        1,
+        -5
+      ],
+      "interpretation": "birthday_count ist NICHT konsistent"
+    },
+    "birthday_pct": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        10.0,
+        10.0,
+        -50.0
+      ],
+      "interpretation": "birthday_pct ist NICHT konsistent"
+    },
+    "lucky_count": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -2,
+        1,
+        0
+      ],
+      "interpretation": "lucky_count ist NICHT konsistent"
+    },
+    "high_count": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -3,
+        2,
+        1
+      ],
+      "interpretation": "high_count ist NICHT konsistent"
+    },
+    "even_count": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        4,
+        -2,
+        -3
+      ],
+      "interpretation": "even_count ist NICHT konsistent"
+    },
+    "odd_count": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -4,
+        2,
+        3
+      ],
+      "interpretation": "odd_count ist NICHT konsistent"
+    },
+    "consecutive_pairs": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -1,
+        2,
+        -1
+      ],
+      "interpretation": "consecutive_pairs ist NICHT konsistent"
+    },
+    "decades_used": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        0,
+        -1,
+        1
+      ],
+      "interpretation": "decades_used ist NICHT konsistent"
+    },
+    "max_per_decade": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        1,
+        0,
+        -1
+      ],
+      "interpretation": "max_per_decade ist NICHT konsistent"
+    },
+    "sum": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -54,
+        36,
+        191
+      ],
+      "interpretation": "sum ist NICHT konsistent"
+    },
+    "mean": {
+      "consistent": false,
+      "direction": "MIXED",
+      "deltas": [
+        -5.399999999999999,
+        3.6000000000000014,
+        19.1
+      ],
+      "interpretation": "mean ist NICHT konsistent"
+    }
+  }
+}

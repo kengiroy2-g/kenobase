@@ -1,0 +1,8 @@
+﻿[
+    "scripts/analyze_typ7_highwin.py",
+    "results/high_win_forensik.json",
+    "results/typ9_highwin_forensik.json",
+    "results/typ10_highwin_forensik.json",
+    "scripts/analyze_cross_type_highwin.py",
+    "results/cross_type_highwin_comparison.json"
+]

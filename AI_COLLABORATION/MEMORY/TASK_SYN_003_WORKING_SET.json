@@ -1,0 +1,9 @@
+﻿[
+    "scripts/find_ripe_hotzones.py",
+    "scripts/test_frueh_phase_isolated.py",
+    "kenobase/analysis/cycle_phases.py",
+    "kenobase/core/keno_quotes.py",
+    "results/reife_hotzones.md",
+    "scripts/test_hz_delay_isolated.py",
+    "results/hz_delay_isolated_test.json"
+]

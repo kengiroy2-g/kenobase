@@ -1,0 +1,8 @@
+﻿[
+    "kenobase/analysis/ticket_correlation.py (NEW)",
+    "kenobase/analysis/__init__.py (MODIFY - add exports)",
+    "scripts/analyze_ticket_correlation.py (NEW)",
+    "tests/unit/test_ticket_correlation.py (NEW)",
+    "kenobase/analysis/__init__.py (MODIFY - 12 exports added)",
+    "results/ticket_correlation.json (NEW - generated output)"
+]

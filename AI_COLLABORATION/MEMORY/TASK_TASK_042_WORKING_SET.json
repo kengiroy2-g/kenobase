@@ -1,0 +1,9 @@
+﻿[
+    "data/raw/keno/KENO_ab_2022_bereinigt.csv",
+    "Keno_GPTs/Keno_GQ_2025.csv",
+    "kenobase/core/data_loader.py",
+    "results/distribution_analysis_2025.json",
+    "results/distribution_analysis_2022_2024.json",
+    "scripts/validate_2025_outlier.py",
+    "results/outlier_year_2025_validation.json"
+]

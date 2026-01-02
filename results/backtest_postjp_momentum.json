@@ -1,0 +1,180 @@
+{
+  "datum": "2026-01-01T23:50:13.771478",
+  "zeitraum": "2023-2024",
+  "filter_counts": {
+    "boost_only": 72,
+    "mittwoch_AND_boost": 11,
+    "any_combo": 20,
+    "tag_24_28_AND_boost": 10
+  },
+  "results": [
+    {
+      "typ": 6,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 731000,
+      "roi": -49.62243502051983
+    },
+    {
+      "typ": 6,
+      "timing_filter": "none",
+      "strategy": "momentum",
+      "games": 731000,
+      "roi": -49.96224350205198
+    },
+    {
+      "typ": 6,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 731000,
+      "roi": -50.84008207934336
+    },
+    {
+      "typ": 6,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 72000,
+      "roi": -55.78194444444444
+    },
+    {
+      "typ": 6,
+      "timing_filter": "boost_only",
+      "strategy": "momentum",
+      "games": 72000,
+      "roi": -44.34583333333333
+    },
+    {
+      "typ": 6,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 72000,
+      "roi": -53.36527777777778
+    },
+    {
+      "typ": 6,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "random",
+      "games": 10000,
+      "roi": -43.97
+    },
+    {
+      "typ": 6,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "momentum",
+      "games": 10000,
+      "roi": -63.32
+    },
+    {
+      "typ": 6,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": -28.57
+    },
+    {
+      "typ": 6,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 20000,
+      "roi": -58.86
+    },
+    {
+      "typ": 6,
+      "timing_filter": "any_combo",
+      "strategy": "momentum",
+      "games": 20000,
+      "roi": -59.37
+    },
+    {
+      "typ": 6,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 20000,
+      "roi": -52.83
+    },
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "random",
+      "games": 731000,
+      "roi": -15.46361149110807
+    },
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "momentum",
+      "games": 731000,
+      "roi": -10.563611491108071
+    },
+    {
+      "typ": 7,
+      "timing_filter": "none",
+      "strategy": "anti_momentum",
+      "games": 731000,
+      "roi": -8.294254445964434
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "random",
+      "games": 72000,
+      "roi": -37.27361111111111
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "momentum",
+      "games": 72000,
+      "roi": 19.104166666666668
+    },
+    {
+      "typ": 7,
+      "timing_filter": "boost_only",
+      "strategy": "anti_momentum",
+      "games": 72000,
+      "roi": -28.583333333333332
+    },
+    {
+      "typ": 7,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "random",
+      "games": 10000,
+      "roi": 5.89
+    },
+    {
+      "typ": 7,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "momentum",
+      "games": 10000,
+      "roi": -58.81999999999999
+    },
+    {
+      "typ": 7,
+      "timing_filter": "tag_24_28_AND_boost",
+      "strategy": "anti_momentum",
+      "games": 10000,
+      "roi": 10.69
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "random",
+      "games": 20000,
+      "roi": -16.48
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "momentum",
+      "games": 20000,
+      "roi": -58.825
+    },
+    {
+      "typ": 7,
+      "timing_filter": "any_combo",
+      "strategy": "anti_momentum",
+      "games": 20000,
+      "roi": 36.265
+    }
+  ]
+}

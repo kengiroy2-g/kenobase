@@ -1,0 +1,204 @@
+{
+  "analysis_date": "2026-01-02T19:17:14.843479",
+  "total_big_hits": 19,
+  "with_gq_data": 19,
+  "validated_count": 2,
+  "validated_gk10": [],
+  "validated_gk9": [],
+  "validated_gk8": [
+    "17.07.2025",
+    "30.07.2025"
+  ],
+  "detailed_results": [
+    {
+      "datum": "05.01.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "15.01.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 2,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "09.02.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "23.02.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "26.02.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "09.04.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "15.04.2025",
+      "pool_hits": 9,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "04.05.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "06.07.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "17.07.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": true,
+      "validation_type": "GK8 (8/8)",
+      "gk8_winners": 2,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "19.07.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "30.07.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": true,
+      "validation_type": "GK8 (8/8)",
+      "gk8_winners": 18,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "21.10.2025",
+      "pool_hits": 10,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "27.10.2025",
+      "pool_hits": 9,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "16.11.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "19.11.2025",
+      "pool_hits": 10,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "22.11.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "18.12.2025",
+      "pool_hits": 8,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    },
+    {
+      "datum": "27.12.2025",
+      "pool_hits": 9,
+      "gq_available": true,
+      "validated": false,
+      "validation_type": null,
+      "gk8_winners": 0,
+      "gk9_winners": 0,
+      "gk10_winners": 0
+    }
+  ]
+}
