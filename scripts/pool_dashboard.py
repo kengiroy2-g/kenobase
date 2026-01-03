@@ -362,9 +362,13 @@ def add_pool_for_date(df: pd.DataFrame, pool_date: datetime) -> Dict:
 # API UPDATE (Optional)
 # ============================================================================
 
-def update_keno_data_online(base_path: Path) -> bool:
+def update_keno_data_online(base_path: Path, auto_save: bool = True) -> bool:
     """
-    Versucht KENO-Daten online zu aktualisieren.
+    Aktualisiert KENO-Daten automatisch via Lotto Hessen API.
+
+    Args:
+        base_path: Projekt-Basispfad
+        auto_save: Wenn True, wird CSV automatisch aktualisiert
 
     Returns:
         True wenn erfolgreich, False sonst
@@ -377,21 +381,127 @@ def update_keno_data_online(base_path: Path) -> bool:
 
     print(c("  [*] Versuche Online-Update...", Colors.CYAN))
 
-    # Lotto Hessen API
-    api_url = "https://www.lotto-hessen.de/api/draw/keno"
+    # Offizielle Lotto Hessen API
+    api_url = "https://services.lotto-hessen.de/spielinformationen/gewinnzahlen/keno"
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Accept": "application/json",
+    }
 
     try:
-        response = requests.get(api_url, timeout=10)
+        response = requests.get(api_url, headers=headers, timeout=15)
         if response.status_code == 200:
             data = response.json()
             print(c(f"  [✓] API-Antwort erhalten", Colors.GREEN))
-            # Hier koennte die Daten-Verarbeitung stattfinden
-            return True
+
+            # Parse die Ziehungsdaten (Lotto Hessen Format)
+            if isinstance(data, dict):
+                numbers = data.get("Zahl", data.get("gewinnzahlen", []))
+                draw_date_raw = data.get("Datum", data.get("datum", ""))
+                weekday = data.get("Ziehung", "")
+
+                # Konvertiere Datum von DD.MM.YYYY zu YYYY-MM-DD
+                if "." in draw_date_raw:
+                    parts = draw_date_raw.split(".")
+                    draw_date = f"{parts[2]}-{parts[1]}-{parts[0]}"
+                else:
+                    draw_date = draw_date_raw
+
+                if numbers:
+                    print(c(f"  [✓] Ziehung vom {draw_date} ({weekday})", Colors.GREEN))
+                    print(c(f"      Zahlen: {sorted(numbers)}", Colors.CYAN))
+
+                    # Lade CSV und pruefe ob Update noetig
+                    csv_path = base_path / "data" / "raw" / "keno" / "KENO_ab_2022_bereinigt.csv"
+                    if csv_path.exists():
+                        df = pd.read_csv(csv_path, sep=";", decimal=",")
+                        # Datum im Format DD.MM.YYYY
+                        last_date = pd.to_datetime(df["Datum"], format="%d.%m.%Y").max().strftime("%Y-%m-%d")
+                        print(c(f"  [i] Letzte Ziehung in CSV: {last_date}", Colors.DIM))
+
+                        if draw_date > last_date:
+                            print(c(f"  [!] Neue Ziehung verfuegbar!", Colors.YELLOW))
+
+                            if auto_save:
+                                # Automatisch zur CSV hinzufuegen
+                                success = append_drawing_to_csv(
+                                    csv_path, draw_date_raw, numbers
+                                )
+                                if success:
+                                    print(c(f"  [✓] CSV automatisch aktualisiert!", Colors.GREEN + Colors.BOLD))
+                                    return True
+                                else:
+                                    print(c(f"  [!] CSV-Update fehlgeschlagen", Colors.RED))
+                                    return False
+                            else:
+                                print(c(f"  [i] Manuelles Update: --update --save", Colors.DIM))
+                        else:
+                            print(c(f"  [✓] CSV ist aktuell.", Colors.GREEN))
+
+                    return True
+                else:
+                    print(c(f"  [!] Keine Zahlen in API-Antwort", Colors.YELLOW))
+                    return False
+            else:
+                print(c(f"  [!] Unerwartetes Datenformat", Colors.YELLOW))
+                return False
         else:
             print(c(f"  [!] API Status: {response.status_code}", Colors.YELLOW))
             return False
+    except requests.exceptions.Timeout:
+        print(c(f"  [!] API-Timeout (15s)", Colors.YELLOW))
+        return False
+    except requests.exceptions.RequestException as e:
+        print(c(f"  [!] Netzwerk-Fehler: {str(e)[:40]}", Colors.YELLOW))
+        return False
     except Exception as e:
         print(c(f"  [!] API-Fehler: {str(e)[:50]}", Colors.YELLOW))
+        return False
+
+
+def append_drawing_to_csv(csv_path: Path, date_str: str, numbers: List[int]) -> bool:
+    """
+    Fuegt eine neue Ziehung zur CSV-Datei hinzu.
+
+    Args:
+        csv_path: Pfad zur CSV-Datei
+        date_str: Datum im Format DD.MM.YYYY
+        numbers: Liste der 20 gezogenen Zahlen
+
+    Returns:
+        True wenn erfolgreich
+    """
+    try:
+        # Erstelle neue Zeile im CSV-Format
+        # Format: Datum;Z1;Z2;...;Z20;Plus5;Spieleinsatz
+        numbers_sorted = numbers  # Behalte Original-Reihenfolge (wie gezogen)
+
+        # Plus5 und Spieleinsatz sind nicht in der API - Platzhalter
+        plus5 = ""  # Nicht verfuegbar
+        spieleinsatz = ""  # Nicht verfuegbar
+
+        # CSV-Zeile erstellen
+        row_values = [date_str] + [str(n) for n in numbers_sorted] + [plus5, spieleinsatz]
+        new_row = ";".join(row_values)
+
+        # Backup erstellen
+        backup_path = csv_path.with_suffix(".csv.bak")
+        import shutil
+        shutil.copy(csv_path, backup_path)
+        print(c(f"  [i] Backup: {backup_path.name}", Colors.DIM))
+
+        # Zeile anfuegen
+        with open(csv_path, "a", encoding="utf-8") as f:
+            f.write("\n" + new_row)
+
+        print(c(f"  [+] Neue Zeile hinzugefuegt: {date_str}", Colors.GREEN))
+        print(c(f"      Zahlen: {numbers_sorted}", Colors.CYAN))
+
+        return True
+
+    except Exception as e:
+        print(c(f"  [!] Fehler beim Schreiben: {e}", Colors.RED))
         return False
 
 
