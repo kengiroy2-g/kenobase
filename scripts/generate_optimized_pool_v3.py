@@ -485,6 +485,7 @@ def build_reduced_pool_v3(
     popularity_scores: dict[int, float],
     target_size: int = 17,
     correction_lookback_days: int = 60,
+    allowed_numbers: set[int] | None = None,
 ) -> tuple[set[int], dict]:
     """
     V3: DANCE-006 + DANCE-009 + A8 (Auszahlungs-Reaktion).
@@ -494,6 +495,15 @@ def build_reduced_pool_v3(
     """
     if not 1 <= target_size <= 70:
         raise ValueError(f"target_size muss zwischen 1 und 70 liegen (ist {target_size})")
+    universe = set(ALL_NUMBERS) if allowed_numbers is None else set(allowed_numbers)
+    if not universe:
+        raise ValueError("allowed_numbers darf nicht leer sein")
+    if any((not isinstance(n, (int, np.integer))) or n < 1 or n > 70 for n in universe):
+        raise ValueError("allowed_numbers muss nur Zahlen 1..70 enthalten")
+    if target_size > len(universe):
+        raise ValueError(
+            f"target_size ({target_size}) ist groesser als allowed_numbers ({len(universe)})"
+        )
     if len(draws) < 10:
         return set(), {"pool_size": 0, "reason": "not_enough_history"}
 
@@ -504,12 +514,12 @@ def build_reduced_pool_v3(
     )
     hot_target, cold_bd_target, cold_nbd_target = _choose_segment_sizes(target_size, correction)
 
-    hot = get_hot_numbers(draws, lookback=3)
-    cold = ALL_NUMBERS - hot
+    hot = get_hot_numbers(draws, lookback=3) & universe
+    cold = universe - hot
     cold_birthday = cold & BIRTHDAY_NUMBERS
     cold_nonbd = cold & NON_BIRTHDAY_NUMBERS
 
-    patterns = {z: get_pattern_7(draws, z) for z in ALL_NUMBERS}
+    patterns = {z: get_pattern_7(draws, z) for z in universe}
     bad_pattern_numbers = {z for z, p in patterns.items() if p in BAD_PATTERNS}
 
     # HOT selection (exclude Correction-HOT implicitly via score -1e9)
@@ -555,9 +565,9 @@ def build_reduced_pool_v3(
 
     pool = set(hot_keep | cold_bd_keep | cold_nbd_keep)
 
-    # If we underfill because of extreme constraints, fill by best V3 score overall.
+    # If we underfill because of extreme constraints, fill by best V3 score overall (within universe).
     if len(pool) < target_size:
-        remaining = sorted(list(ALL_NUMBERS - pool))
+        remaining = sorted(list(universe - pool))
         scored = [
             (
                 z,

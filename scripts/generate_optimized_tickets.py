@@ -195,7 +195,11 @@ def score_number_v2(draws: List[Dict], number: int, hot: Set[int]) -> float:
     return score
 
 
-def build_reduced_pool(draws: List[Dict], target_size: int = 17) -> Tuple[Set[int], Dict]:
+def build_reduced_pool(
+    draws: List[Dict],
+    target_size: int = 17,
+    allowed_numbers: Set[int] | None = None,
+) -> Tuple[Set[int], Dict]:
     """
     DANCE-006 + DANCE-009: Baut reduzierten Pool von ~17 Zahlen mit V2 Pattern-Filterung.
 
@@ -209,15 +213,25 @@ def build_reduced_pool(draws: List[Dict], target_size: int = 17) -> Tuple[Set[in
     - COLD-Birthday: Top 6 (seltenste, aber ohne BAD_PATTERNS)
     - COLD-Non-Birthday: Top 6 (seltenste, aber ohne BAD_PATTERNS)
     """
-    hot = get_hot_numbers(draws, lookback=3)
-    cold = ALL_NUMBERS - hot
+    universe = set(ALL_NUMBERS) if allowed_numbers is None else set(allowed_numbers)
+    if not universe:
+        raise ValueError("allowed_numbers darf nicht leer sein")
+    if any((not isinstance(n, (int, np.integer))) or n < 1 or n > 70 for n in universe):
+        raise ValueError("allowed_numbers muss nur Zahlen 1..70 enthalten")
+
+    hot = get_hot_numbers(draws, lookback=3) & universe
+    cold = universe - hot
     cold_birthday = cold & BIRTHDAY_NUMBERS
     cold_nonbd = cold & NON_BIRTHDAY_NUMBERS
 
     if not 1 <= target_size <= 70:
         raise ValueError(f"target_size muss zwischen 1 und 70 liegen (ist {target_size})")
+    if target_size > len(universe):
+        raise ValueError(
+            f"target_size ({target_size}) ist groesser als allowed_numbers ({len(universe)})"
+        )
 
-    patterns = {z: get_pattern_7(draws, z) for z in ALL_NUMBERS}
+    patterns = {z: get_pattern_7(draws, z) for z in universe}
     bad_pattern_numbers = {z for z, p in patterns.items() if p in BAD_PATTERNS}
 
     # V2: HOT - Sortiert nach score_number_v2() (hoechster Score zuerst)
@@ -260,6 +274,16 @@ def build_reduced_pool(draws: List[Dict], target_size: int = 17) -> Tuple[Set[in
         cold_nbd_keep.update(fallback[:cold_nbd_target - len(cold_nbd_keep)])
 
     reduced_pool = hot_keep | cold_bd_keep | cold_nbd_keep
+
+    # Falls wir durch Restriktionen unterfuellen: mit best-Scoring Zahlen aus universe auffuellen.
+    if len(reduced_pool) < target_size:
+        remaining = sorted(list(universe - reduced_pool))
+        scored = [(z, score_number_v2(draws, z, hot)) for z in remaining]
+        scored.sort(key=lambda x: x[1], reverse=True)
+        for z, _s in scored:
+            reduced_pool.add(z)
+            if len(reduced_pool) >= target_size:
+                break
 
     bad_in_pool = sorted(reduced_pool & bad_pattern_numbers)
 

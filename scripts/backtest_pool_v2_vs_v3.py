@@ -44,6 +44,20 @@ class DayRow:
     hits_v3: int
 
 
+def _parse_allowed_numbers(value: str) -> set[int]:
+    raw = value.strip()
+    if not raw:
+        return set()
+    normalized = raw.replace(";", ",").replace("\n", ",").replace("\t", ",").replace(" ", ",")
+    parts = [p.strip() for p in normalized.split(",") if p.strip()]
+    nums: set[int] = set()
+    for p in parts:
+        nums.add(int(p))
+    if any(n < 1 or n > 70 for n in nums):
+        raise ValueError("allowed_numbers muss nur Zahlen 1..70 enthalten")
+    return nums
+
+
 def sign_test_two_sided_p_value(wins: int, losses: int) -> float:
     """Exakter 2-seitiger Sign-Test p-Wert (Binomial, p=0.5)."""
     n = wins + losses
@@ -87,12 +101,25 @@ def main() -> None:
     )
     parser.add_argument("--permutations", type=int, default=0, help="Optional: Permutationstest N (Default: 0)")
     parser.add_argument("--seed", type=int, default=0, help="Seed fuer Permutationstest (Default: 0)")
+    parser.add_argument(
+        "--allowed-numbers",
+        type=str,
+        default="",
+        help="Optional: Restriktiere Kandidatenmenge (Komma/Space-separiert).",
+    )
     args = parser.parse_args()
 
     if args.pool_size <= 0 or args.pool_size > 70:
         raise SystemExit("--pool-size muss zwischen 1 und 70 liegen")
     if args.min_history < 1:
         raise SystemExit("--min-history muss >= 1 sein")
+
+    try:
+        allowed_numbers = _parse_allowed_numbers(args.allowed_numbers)
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
+    if allowed_numbers and args.pool_size > len(allowed_numbers):
+        raise SystemExit("--pool-size ist groesser als --allowed-numbers")
 
     base_path = Path(__file__).parent.parent
     draws = load_keno_draws(base_path / "data/raw/keno/KENO_ab_2022_bereinigt.csv")
@@ -123,13 +150,14 @@ def main() -> None:
         train = draws[:idx]
         drawn = draws[idx]["zahlen"]
 
-        pool_v2, _ = build_reduced_pool(train, target_size=args.pool_size)
+        pool_v2, _ = build_reduced_pool(train, target_size=args.pool_size, allowed_numbers=allowed_numbers or None)
         pool_v3, _ = build_reduced_pool_v3(
             draws=train,
             daily_stats=daily_stats,
             popularity_scores=popularity_scores,
             target_size=args.pool_size,
             correction_lookback_days=args.correction_lookback,
+            allowed_numbers=allowed_numbers or None,
         )
 
         hits_v2 = len(pool_v2 & drawn)
@@ -182,6 +210,8 @@ def main() -> None:
     print("=" * 100)
     print(f"BACKTEST Pool V2 vs V3: year={args.year}, pool_size={args.pool_size}")
     print(f"min_history={args.min_history}, correction_lookback={args.correction_lookback}")
+    if allowed_numbers:
+        print(f"allowed_numbers={len(allowed_numbers)} (restricted candidate universe)")
     print("=" * 100)
     print(f"Days evaluated: {len(rows)}")
     print(f"V3 better days: {wins} | V2 better days: {losses} | ties: {ties}")
