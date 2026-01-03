@@ -200,11 +200,16 @@ def main():
     print(f"\n{'Intervall':<12} {'Durchgaenge':<12} {'Erfolge':<10} {'Min':<6} {'Max':<6} {'Avg':<8} {'Median':<8}")
     print("-" * 70)
 
+    interval_results: dict[int, dict] = {}
     for interval in intervals:
         wait_times, total = measure_wait_times(draws, interval, max_wait=60, min_hits=6)
+        interval_results[interval] = {"wait_times": wait_times, "total": total}
         if wait_times:
             success = len(wait_times)
-            print(f"{interval} Tage      {total:<12} {success:<10} {min(wait_times):<6} {max(wait_times):<6} {np.mean(wait_times):<8.1f} {np.median(wait_times):<8.1f}")
+            print(
+                f"{interval} Tage      {total:<12} {success:<10} {min(wait_times):<6} {max(wait_times):<6} "
+                f"{np.mean(wait_times):<8.1f} {np.median(wait_times):<8.1f}"
+            )
 
     # Test 2: Verschiedene Hit-Schwellen
     print("\n" + "=" * 100)
@@ -216,12 +221,17 @@ def main():
     print(f"\n{'Min Hits':<10} {'Durchgaenge':<12} {'Erfolge':<10} {'Rate':<10} {'Min':<6} {'Max':<6} {'Avg':<8} {'Median':<8}")
     print("-" * 80)
 
+    threshold_results: dict[int, dict] = {}
     for min_hits in hit_thresholds:
         wait_times, total = measure_wait_times(draws, 7, max_wait=60, min_hits=min_hits)
+        threshold_results[min_hits] = {"wait_times": wait_times, "total": total}
         if wait_times:
             success = len(wait_times)
-            rate = success / total * 100
-            print(f"{min_hits:<10} {total:<12} {success:<10} {rate:<9.1f}% {min(wait_times):<6} {max(wait_times):<6} {np.mean(wait_times):<8.1f} {np.median(wait_times):<8.1f}")
+            rate = success / total * 100 if total else 0.0
+            print(
+                f"{min_hits:<10} {total:<12} {success:<10} {rate:<9.1f}% {min(wait_times):<6} {max(wait_times):<6} "
+                f"{np.mean(wait_times):<8.1f} {np.median(wait_times):<8.1f}"
+            )
         else:
             print(f"{min_hits:<10} {total:<12} {'0':<10} {'0.0':<9}%")
 
@@ -230,7 +240,8 @@ def main():
     print("TEST 3: Detaillierte Verteilung (6+ Hits, Intervall: 7 Tage)")
     print("=" * 100)
 
-    wait_times, total = measure_wait_times(draws, 7, max_wait=60, min_hits=6)
+    wait_times = threshold_results.get(6, {}).get("wait_times", [])
+    total = threshold_results.get(6, {}).get("total", 0)
 
     if wait_times:
         print(f"\nGesamt: {len(wait_times)} Erfolge von {total} Durchgaengen ({len(wait_times)/total*100:.1f}%)")
@@ -239,11 +250,17 @@ def main():
         # Kumulative Verteilung
         print("Kumulative Verteilung (Chance auf Treffer BIS Tag X):")
         print()
-        for day in [1, 2, 3, 4, 5, 6, 7, 10, 14, 21, 30]:
+        cdf_days = [1, 2, 3, 4, 5, 6, 7, 10, 14, 21, 30]
+        cdf_by_day_pct: dict[int, float] = {}
+        for day in cdf_days:
             count = sum(1 for w in wait_times if w <= day)
             pct = count / len(wait_times) * 100
+            cdf_by_day_pct[day] = pct
             bar = "█" * int(pct / 2)
             print(f"  Tag {day:2}: {pct:5.1f}% {bar}")
+    else:
+        cdf_days = []
+        cdf_by_day_pct = {}
 
     # Test 4: 60-Tage Intervall separat
     print("\n" + "=" * 100)
@@ -276,7 +293,7 @@ def main():
     print("FINALE LEITLINIE")
     print("=" * 100)
 
-    wait_times_all, _ = measure_wait_times(draws, 7, max_wait=60, min_hits=6)
+    wait_times_all = wait_times
 
     if wait_times_all:
         p25 = np.percentile(wait_times_all, 25)
@@ -308,9 +325,21 @@ KONKRET:
 
     # Export
     import json
+
+    export_intervals: dict[str, dict] = {}
+    for interval in intervals:
+        wt = interval_results.get(interval, {}).get("wait_times", [])
+        export_intervals[str(interval)] = {"avg": float(np.mean(wt)) if wt else None}
+
+    export_thresholds: dict[str, dict] = {}
+    for min_hits in hit_thresholds:
+        wt = threshold_results.get(min_hits, {}).get("wait_times", [])
+        total = threshold_results.get(min_hits, {}).get("total", 0)
+        export_thresholds[str(min_hits)] = {"success_rate": (len(wt) / total * 100) if total else 0.0}
+
     export = {
-        "intervals_test": {str(i): {"avg": float(np.mean(measure_wait_times(draws, i, 60, 6)[0])) if measure_wait_times(draws, i, 60, 6)[0] else None} for i in intervals},
-        "hit_thresholds_test": {str(h): {"success_rate": len(measure_wait_times(draws, 7, 60, h)[0]) / measure_wait_times(draws, 7, 60, h)[1] * 100 if measure_wait_times(draws, 7, 60, h)[0] else 0} for h in hit_thresholds},
+        "intervals_test": export_intervals,
+        "hit_thresholds_test": export_thresholds,
         "recommendation": {
             "p25_days": float(p25) if wait_times_all else None,
             "p50_days": float(p50) if wait_times_all else None,
@@ -318,6 +347,8 @@ KONKRET:
             "p90_days": float(p90) if wait_times_all else None,
         }
     }
+    if cdf_by_day_pct:
+        export["cdf_6plus_by_day_pct"] = {str(day): float(cdf_by_day_pct[day]) for day in cdf_days}
 
     results_path = base_path / "results" / "pool_hit_timing_extended.json"
     with open(results_path, "w", encoding="utf-8") as f:

@@ -1,0 +1,183 @@
+{
+  "total_6_6_events": 507,
+  "analyzed_windows": 50,
+  "convergence_by_days_before": {
+    "1": {
+      "avg_convergence": 90.76800000000001,
+      "avg_timing": 54.7,
+      "pct_6_6_possible": 50.0
+    },
+    "0": {
+      "avg_convergence": 95.65,
+      "avg_timing": 60.0,
+      "pct_6_6_possible": 100.0
+    },
+    "15": {
+      "avg_convergence": 94.92448979591835,
+      "avg_timing": 58.97959183673469,
+      "pct_6_6_possible": 24.489795918367346
+    },
+    "14": {
+      "avg_convergence": 95.97551020408162,
+      "avg_timing": 59.795918367346935,
+      "pct_6_6_possible": 34.69387755102041
+    },
+    "13": {
+      "avg_convergence": 96.08979591836734,
+      "avg_timing": 58.87755102040816,
+      "pct_6_6_possible": 36.734693877551024
+    },
+    "12": {
+      "avg_convergence": 96.07142857142857,
+      "avg_timing": 60.0,
+      "pct_6_6_possible": 36.734693877551024
+    },
+    "11": {
+      "avg_convergence": 96.18571428571427,
+      "avg_timing": 59.89795918367347,
+      "pct_6_6_possible": 26.53061224489796
+    },
+    "10": {
+      "avg_convergence": 96.3877551020408,
+      "avg_timing": 61.326530612244895,
+      "pct_6_6_possible": 44.89795918367347
+    },
+    "9": {
+      "avg_convergence": 96.04081632653063,
+      "avg_timing": 60.10204081632653,
+      "pct_6_6_possible": 30.612244897959183
+    },
+    "8": {
+      "avg_convergence": 93.9938775510204,
+      "avg_timing": 57.755102040816325,
+      "pct_6_6_possible": 36.734693877551024
+    },
+    "7": {
+      "avg_convergence": 92.43265306122449,
+      "avg_timing": 58.16326530612245,
+      "pct_6_6_possible": 36.734693877551024
+    },
+    "6": {
+      "avg_convergence": 94.03061224489794,
+      "avg_timing": 57.142857142857146,
+      "pct_6_6_possible": 38.775510204081634
+    },
+    "5": {
+      "avg_convergence": 92.88979591836735,
+      "avg_timing": 57.04081632653061,
+      "pct_6_6_possible": 34.69387755102041
+    },
+    "4": {
+      "avg_convergence": 93.44285714285714,
+      "avg_timing": 55.816326530612244,
+      "pct_6_6_possible": 38.775510204081634
+    },
+    "3": {
+      "avg_convergence": 93.91224489795918,
+      "avg_timing": 55.51020408163265,
+      "pct_6_6_possible": 46.93877551020408
+    },
+    "2": {
+      "avg_convergence": 90.50612244897961,
+      "avg_timing": 55.30612244897959,
+      "pct_6_6_possible": 30.612244897959183
+    },
+    "30": {
+      "avg_convergence": 84.14791666666667,
+      "avg_timing": 55.0,
+      "pct_6_6_possible": 33.33333333333333
+    },
+    "29": {
+      "avg_convergence": 93.09791666666668,
+      "avg_timing": 56.145833333333336,
+      "pct_6_6_possible": 25.0
+    },
+    "28": {
+      "avg_convergence": 91.30208333333333,
+      "avg_timing": 56.979166666666664,
+      "pct_6_6_possible": 31.25
+    },
+    "27": {
+      "avg_convergence": 92.17916666666667,
+      "avg_timing": 56.770833333333336,
+      "pct_6_6_possible": 43.75
+    },
+    "26": {
+      "avg_convergence": 94.10208333333333,
+      "avg_timing": 56.770833333333336,
+      "pct_6_6_possible": 43.75
+    },
+    "25": {
+      "avg_convergence": 94.52916666666665,
+      "avg_timing": 56.875,
+      "pct_6_6_possible": 33.33333333333333
+    },
+    "24": {
+      "avg_convergence": 94.70625000000001,
+      "avg_timing": 57.916666666666664,
+      "pct_6_6_possible": 37.5
+    },
+    "23": {
+      "avg_convergence": 92.81875000000001,
+      "avg_timing": 57.8125,
+      "pct_6_6_possible": 39.58333333333333
+    },
+    "22": {
+      "avg_convergence": 93.29166666666667,
+      "avg_timing": 54.583333333333336,
+      "pct_6_6_possible": 35.41666666666667
+    },
+    "21": {
+      "avg_convergence": 94.99791666666665,
+      "avg_timing": 56.458333333333336,
+      "pct_6_6_possible": 33.33333333333333
+    },
+    "20": {
+      "avg_convergence": 93.60208333333333,
+      "avg_timing": 57.708333333333336,
+      "pct_6_6_possible": 35.41666666666667
+    },
+    "19": {
+      "avg_convergence": 95.93958333333335,
+      "avg_timing": 61.979166666666664,
+      "pct_6_6_possible": 33.33333333333333
+    },
+    "18": {
+      "avg_convergence": 97.97083333333332,
+      "avg_timing": 61.145833333333336,
+      "pct_6_6_possible": 35.41666666666667
+    },
+    "17": {
+      "avg_convergence": 95.3,
+      "avg_timing": 62.395833333333336,
+      "pct_6_6_possible": 39.58333333333333
+    },
+    "16": {
+      "avg_convergence": 96.72499999999998,
+      "avg_timing": 60.104166666666664,
+      "pct_6_6_possible": 50.0
+    }
+  },
+  "optimal_days_before_6_6": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ]
+}

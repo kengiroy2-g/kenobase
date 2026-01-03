@@ -1,0 +1,8 @@
+{
+  "events_analyzed": 448,
+  "avg_treffer_retention": 0.4237079822459286,
+  "avg_non_jp_elimination": 0.6148153062215561,
+  "avg_precision_improvement": -0.0028230042016806718,
+  "avg_new_treffer": 3.0558035714285716,
+  "selectivity": 0.03852328846748476,
+  "hypothesis_supported": 

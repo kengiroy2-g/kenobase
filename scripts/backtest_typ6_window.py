@@ -35,9 +35,17 @@ from generate_optimized_tickets import (
     build_reduced_pool,
     filter_combinations,
     get_hot_numbers,
-    load_keno_data,
     score_combination,
 )
+
+from generate_optimized_pool_v3 import (
+    attach_stake_and_ratio,
+    build_reduced_pool_v3,
+    load_gq_daily_stats,
+    load_keno_draws,
+)
+
+from kenobase.analysis.popularity_correlation import calculate_popularity_scores_heuristic
 
 
 @dataclass
@@ -75,12 +83,27 @@ def _window_success_fixed(
     start_idx: int,
     window: int,
     pool_size: int,
+    pool_method: str,
+    daily_stats: dict,
+    popularity_scores: dict[int, float],
+    correction_lookback_days: int,
     objective: str,
     tickets_per_day: int,
     min_hits: int,
 ) -> tuple[bool, Optional[int], Optional[int]]:
     train = draws[:start_idx]
-    pool, _ = build_reduced_pool(train, target_size=pool_size)
+    if pool_method == "v2":
+        pool, _ = build_reduced_pool(train, target_size=pool_size)
+    elif pool_method == "v3":
+        pool, _ = build_reduced_pool_v3(
+            draws=train,
+            daily_stats=daily_stats,
+            popularity_scores=popularity_scores,
+            target_size=pool_size,
+            correction_lookback_days=correction_lookback_days,
+        )
+    else:
+        raise ValueError(f"Unknown pool_method: {pool_method}")
     hot = get_hot_numbers(train, lookback=3)
 
     combo_sets: list[set[int]] = []
@@ -122,6 +145,10 @@ def _build_daily_flags_rolling(
     draws: list[dict],
     day_indices: list[int],
     pool_size: int,
+    pool_method: str,
+    daily_stats: dict,
+    popularity_scores: dict[int, float],
+    correction_lookback_days: int,
     objective: str,
     tickets_per_day: int,
     min_history: int,
@@ -138,7 +165,18 @@ def _build_daily_flags_rolling(
         train = draws[:idx]
         drawn = draws[idx]["zahlen"]
 
-        pool, _ = build_reduced_pool(train, target_size=pool_size)
+        if pool_method == "v2":
+            pool, _ = build_reduced_pool(train, target_size=pool_size)
+        elif pool_method == "v3":
+            pool, _ = build_reduced_pool_v3(
+                draws=train,
+                daily_stats=daily_stats,
+                popularity_scores=popularity_scores,
+                target_size=pool_size,
+                correction_lookback_days=correction_lookback_days,
+            )
+        else:
+            raise ValueError(f"Unknown pool_method: {pool_method}")
         hits = len(pool & drawn)
 
         if objective == "pool_hits":
@@ -187,6 +225,18 @@ def main() -> None:
         help="Pool/Tickets pro Fenster (fixed) oder taeglich (rolling) (Default: fixed)",
     )
     parser.add_argument(
+        "--pool-method",
+        choices=["v2", "v3"],
+        default="v2",
+        help="Welcher Pool-Generator (Default: v2)",
+    )
+    parser.add_argument(
+        "--correction-lookback",
+        type=int,
+        default=60,
+        help="Nur fuer pool-method=v3: Lookback fuer Correction-State (Default: 60)",
+    )
+    parser.add_argument(
         "--tickets-per-day",
         type=int,
         default=3,
@@ -221,7 +271,18 @@ def main() -> None:
 
     base_path = Path(__file__).parent.parent
     keno_path = base_path / "data/raw/keno/KENO_ab_2022_bereinigt.csv"
-    draws = load_keno_data(keno_path)
+    draws = load_keno_draws(keno_path)
+
+    daily_stats: dict = {}
+    if args.pool_method == "v3":
+        gq_paths = [
+            base_path / "Keno_GPTs/Keno_GQ_2022_2023-2024.csv",
+            base_path / "Keno_GPTs/Keno_GQ_2025.csv",
+        ]
+        daily_stats = load_gq_daily_stats(gq_paths)
+        daily_stats = attach_stake_and_ratio(draws=draws, daily_stats=daily_stats)
+
+    popularity_scores = calculate_popularity_scores_heuristic(range(1, 71))
 
     day_indices = [i for i, d in enumerate(draws) if d["datum"].year == args.year]
     if not day_indices:
@@ -236,6 +297,10 @@ def main() -> None:
                 draws=draws,
                 day_indices=day_indices,
                 pool_size=pool_size,
+                pool_method=args.pool_method,
+                daily_stats=daily_stats,
+                popularity_scores=popularity_scores,
+                correction_lookback_days=args.correction_lookback,
                 objective=args.objective,
                 tickets_per_day=args.tickets_per_day,
                 min_history=args.min_history,
@@ -286,6 +351,10 @@ def main() -> None:
                     start_idx=start_idx,
                     window=args.window,
                     pool_size=pool_size,
+                    pool_method=args.pool_method,
+                    daily_stats=daily_stats,
+                    popularity_scores=popularity_scores,
+                    correction_lookback_days=args.correction_lookback,
                     objective=args.objective,
                     tickets_per_day=args.tickets_per_day,
                     min_hits=args.min_hits,
@@ -301,7 +370,18 @@ def main() -> None:
                 if args.objective in {"filtered_all", "topk"}:
                     # Kombi-Count am Fenster-Start (Kosten-Indikator)
                     train = draws[:start_idx]
-                    pool, _ = build_reduced_pool(train, target_size=pool_size)
+                    if args.pool_method == "v2":
+                        pool, _ = build_reduced_pool(train, target_size=pool_size)
+                    elif args.pool_method == "v3":
+                        pool, _ = build_reduced_pool_v3(
+                            draws=train,
+                            daily_stats=daily_stats,
+                            popularity_scores=popularity_scores,
+                            target_size=pool_size,
+                            correction_lookback_days=args.correction_lookback,
+                        )
+                    else:
+                        raise ValueError(f"Unknown pool_method: {args.pool_method}")
                     hot = get_hot_numbers(train, lookback=3)
                     combos = filter_combinations(pool, hot, ticket_size=6)
                     combo_counts.append(len(combos))
@@ -326,7 +406,7 @@ def main() -> None:
     print("=" * 80)
     print(
         f"BACKTEST Typ-6 Fenster: year={args.year}, window={args.window}, "
-        f"objective={args.objective}, mode={args.mode}"
+        f"objective={args.objective}, mode={args.mode}, pool_method={args.pool_method}"
     )
     if args.objective == "topk":
         print(f"tickets_per_day={args.tickets_per_day}")

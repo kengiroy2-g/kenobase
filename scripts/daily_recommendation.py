@@ -12,18 +12,19 @@ BESTE STRATEGIE (Backtest 2023-2024, 1000 Simulationen):
   ROI: +36.3%
 
 POOL-REIFE SYSTEM (Neu!):
-  Der Pool braucht Zeit um zu "reifen":
-  - Tag 1: 31% Chance auf 6+ Treffer (ZU FRUEH!)
-  - Tag 3: 61% Chance (Median)
-  - Tag 4: 76% Chance (OPTIMAL)
-  - Tag 7: 94% Chance
+  Basierend auf `results/pool_hit_timing_extended.json`:
+  "Chance BIS Tag X" = kumulative Wahrscheinlichkeit, dass innerhalb der ersten X Tage
+  mindestens einmal `pool_hits >= 6` auftritt (Pool ~17 Zahlen, Ziehung 20 Zahlen).
 
-  EMPFEHLUNG: Nicht sofort spielen! Warte 3-4 Tage nach Pool-Generierung.
+  Heuristik:
+  - Tag 1-2: frueh (nur ~30-50% kumulativ)
+  - Tag 3-4: gut (Median/75%-Punkt)
+  - Tag 7: sehr spaet (90%-Punkt; Neustart erwägen)
 
 TIMING-REGELN (KOMBINIERT):
 - Boost-Phase: 8-14 Tage nach Jackpot
 - UND: Tag 24-28 des Monats ODER Mittwoch
-- Pool-Reife: Mindestens 3 Tage nach Pool-Generierung
+- Pool-Reife: Mindestens bis Median (ca. Tag 3)
 
 Verwendung:
     python scripts/daily_recommendation.py
@@ -47,34 +48,147 @@ import pandas as pd
 # ============================================================================
 # POOL-REIFE SYSTEM (basierend auf pool_hit_timing_extended.json)
 # ============================================================================
-# Diese Werte kommen aus der empirischen Messung:
-# "Wie viele Tage bis der dynamische Pool 6+ Treffer hat?"
-#
-# INTERPRETATION:
-# - Tag 1: Pool ist "frisch" - nur 31% Chance dass er heute trifft
-# - Tag 3: Pool ist "gereift" - 61% Chance (Median erreicht)
-# - Tag 4: Pool ist "optimal" - 76% Chance (empfohlener Spieltag)
-# - Tag 7: Pool ist "sehr reif" - 94% Chance
-# - Nach Tag 7: Pool neu generieren (sinkt nicht, aber frischer = besser)
-
-POOL_RIPENESS = {
-    1: {"probability": 0.31, "status": "UNREIF", "recommendation": "Nicht spielen"},
-    2: {"probability": 0.45, "status": "FRUEH", "recommendation": "Noch warten"},
-    3: {"probability": 0.61, "status": "REIF", "recommendation": "Spielbereit (Median)"},
-    4: {"probability": 0.76, "status": "OPTIMAL", "recommendation": "Beste Zeit zum Spielen!"},
-    5: {"probability": 0.85, "status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
-    6: {"probability": 0.91, "status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
-    7: {"probability": 0.94, "status": "MAXIMAL", "recommendation": "Letzte Chance vor Neustart"},
+# `probability` ist immer "Chance BIS Tag X" (kumulativ) aus Test 3.
+# Diese Defaults werden beim Start uebernommen, aber wenn
+# `results/pool_hit_timing_extended.json` ein `cdf_6plus_by_day_pct` enthaelt,
+# werden sie automatisch aktualisiert.
+DEFAULT_CDF_6PLUS_BY_DAY_PCT: dict[int, float] = {
+    1: 31.1,
+    2: 47.7,
+    3: 60.6,
+    4: 75.6,
+    5: 81.9,
+    6: 87.6,
+    7: 93.8,
+}
+DEFAULT_HIT_THRESHOLD_SUCCESS_PCT: dict[int, float] = {
+    6: 100.0,
+    7: 100.0,
+    8: 97.9,
+    9: 65.3,
+    10: 17.6,
+}
+DEFAULT_QUANTILES_DAYS: dict[str, float] = {
+    "p25_days": 1.0,
+    "p50_days": 3.0,
+    "p75_days": 4.0,
+    "p90_days": 7.0,
 }
 
-# Treffer-Schwellen Erfolgsraten
-HIT_THRESHOLD_SUCCESS = {
-    6: 1.000,   # 100% - immer erfolgreich
-    7: 1.000,   # 100%
-    8: 0.979,   # 97.9%
-    9: 0.653,   # 65.3%
-    10: 0.176,  # 17.6%
+POOL_RIPENESS_TEMPLATE: dict[int, dict[str, str]] = {
+    1: {"status": "UNREIF", "recommendation": "Nicht spielen (sehr frueh)"},
+    2: {"status": "FRUEH", "recommendation": "Noch warten (frueh)"},
+    3: {"status": "REIF", "recommendation": "Spielbereit (Median)"},
+    4: {"status": "OPTIMAL", "recommendation": "Beste Zeit zum Spielen!"},
+    5: {"status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
+    6: {"status": "SEHR_REIF", "recommendation": "Sehr gute Zeit"},
+    7: {"status": "MAXIMAL", "recommendation": "Sehr spaet (90%-Punkt)"},
 }
+
+POOL_HIT_TIMING: dict = {
+    "cdf_6plus_by_day_pct": dict(DEFAULT_CDF_6PLUS_BY_DAY_PCT),
+    "hit_threshold_success_pct": dict(DEFAULT_HIT_THRESHOLD_SUCCESS_PCT),
+    "quantiles_days": dict(DEFAULT_QUANTILES_DAYS),
+}
+
+
+def _build_pool_ripeness() -> dict[int, dict]:
+    cdf = POOL_HIT_TIMING.get("cdf_6plus_by_day_pct", {}) or {}
+    ripeness: dict[int, dict] = {}
+    for day, tmpl in POOL_RIPENESS_TEMPLATE.items():
+        pct = cdf.get(day, DEFAULT_CDF_6PLUS_BY_DAY_PCT.get(day, 0.0))
+        ripeness[day] = {
+            "probability": float(pct) / 100.0,
+            **tmpl,
+        }
+    return ripeness
+
+
+POOL_RIPENESS = _build_pool_ripeness()
+
+
+def load_pool_hit_timing(base_path: Path) -> None:
+    """
+    Laedt `results/pool_hit_timing_extended.json` und aktualisiert globale Timing-Parameter.
+
+    Erwartete Felder (optional):
+      - cdf_6plus_by_day_pct: {"1": 31.1, ...}
+      - hit_thresholds_test: {"6": {"success_rate": 100.0}, ...}
+      - recommendation: {"p25_days": 1.0, ...}
+    """
+    global POOL_HIT_TIMING, POOL_RIPENESS
+
+    path = base_path / "results" / "pool_hit_timing_extended.json"
+    if not path.exists():
+        return
+
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return
+
+    # CDF (kumulativ) fuer 6+ Hits
+    cdf_raw = data.get("cdf_6plus_by_day_pct") or {}
+    if isinstance(cdf_raw, dict) and cdf_raw:
+        cdf: dict[int, float] = {}
+        for k, v in cdf_raw.items():
+            try:
+                cdf[int(k)] = float(v)
+            except Exception:
+                continue
+        if cdf:
+            POOL_HIT_TIMING["cdf_6plus_by_day_pct"] = cdf
+
+    # Threshold Success Rates
+    thr_raw = data.get("hit_thresholds_test") or {}
+    if isinstance(thr_raw, dict) and thr_raw:
+        thr: dict[int, float] = {}
+        for k, obj in thr_raw.items():
+            try:
+                thr[int(k)] = float(obj.get("success_rate", 0.0))
+            except Exception:
+                continue
+        if thr:
+            POOL_HIT_TIMING["hit_threshold_success_pct"] = thr
+
+    # Quantile Recommendations
+    rec = data.get("recommendation") or {}
+    if isinstance(rec, dict):
+        q: dict[str, float] = dict(POOL_HIT_TIMING.get("quantiles_days", {}))
+        for key in ["p25_days", "p50_days", "p75_days", "p90_days"]:
+            try:
+                if rec.get(key) is not None:
+                    q[key] = float(rec[key])
+            except Exception:
+                continue
+        if q:
+            POOL_HIT_TIMING["quantiles_days"] = q
+
+    POOL_RIPENESS = _build_pool_ripeness()
+
+
+def _cycle_state_path(base_path: Path, cycle_file: str) -> Path:
+    p = Path(cycle_file)
+    return p if p.is_absolute() else base_path / p
+
+
+def load_pool_cycle_start(path: Path) -> Optional[datetime.date]:
+    if not path.exists():
+        return None
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        value = data.get("cycle_start_date", "")
+        if not value:
+            return None
+        return datetime.strptime(value, "%Y-%m-%d").date()
+    except Exception:
+        return None
+
+
+def save_pool_cycle_start(path: Path, start_date: datetime.date) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"cycle_start_date": start_date.isoformat()}
+    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 # Import from super_model_synthesis
 try:
@@ -305,28 +419,34 @@ def calculate_pool_ripeness(pool_age_days: int) -> Dict:
     Returns:
         Dict mit probability, status, recommendation
     """
+    q = POOL_HIT_TIMING.get("quantiles_days", DEFAULT_QUANTILES_DAYS)
+    p50 = int(round(float(q.get("p50_days", 3.0))))
+    p90 = int(round(float(q.get("p90_days", 7.0))))
+
     if pool_age_days <= 0:
         return {
             "age_days": 0,
             "probability": 0.0,
             "status": "NEU",
-            "recommendation": "Pool gerade generiert - warte mindestens 3 Tage",
+            "recommendation": f"Zyklus gerade gestartet - warte bis mindestens Tag {p50}",
             "play_now": False
         }
 
-    if pool_age_days > 7:
+    if pool_age_days > p90:
+        # Nach p90 bist du in den letzten ~10% der Wartezeiten (sehr spaet).
+        p90_prob = POOL_RIPENESS.get(p90, POOL_RIPENESS[max(POOL_RIPENESS)])["probability"]
         return {
             "age_days": pool_age_days,
-            "probability": 0.94,
+            "probability": p90_prob,
             "status": "ABGELAUFEN",
-            "recommendation": "Pool ist zu alt - generiere neuen Pool!",
+            "recommendation": f"Sehr spaet (>{p90} Tage) - Zyklus neu starten empfohlen",
             "play_now": False
         }
 
-    ripeness = POOL_RIPENESS.get(pool_age_days, POOL_RIPENESS[7])
+    ripeness = POOL_RIPENESS.get(pool_age_days, POOL_RIPENESS[max(POOL_RIPENESS)])
 
-    # Spielempfehlung: Ab Tag 3 (61% Chance)
-    play_now = pool_age_days >= 3
+    # Spielempfehlung: Ab Median (p50)
+    play_now = pool_age_days >= p50
 
     return {
         "age_days": pool_age_days,
@@ -529,6 +649,10 @@ def generate_recommendations(
 
     # Pool-Reife berechnen
     ripeness = calculate_pool_ripeness(pool_age_days)
+    q = POOL_HIT_TIMING.get("quantiles_days", DEFAULT_QUANTILES_DAYS)
+    p50 = int(round(float(q.get("p50_days", 3.0))))
+    p75 = int(round(float(q.get("p75_days", 4.0))))
+    p90 = int(round(float(q.get("p90_days", 7.0))))
 
     recommendations = {
         "generated_at": datetime.now().isoformat(),
@@ -540,6 +664,11 @@ def generate_recommendations(
             "size": len(current_pool),
             "age_days": pool_age_days,
             "ripeness": ripeness,
+            "hit_timing_reference": {
+                "quantiles_days": dict(POOL_HIT_TIMING.get("quantiles_days", {})),
+                "cdf_6plus_by_day_pct": dict(POOL_HIT_TIMING.get("cdf_6plus_by_day_pct", {})),
+                "hit_threshold_success_pct": dict(POOL_HIT_TIMING.get("hit_threshold_success_pct", {})),
+            },
         },
         "warnings": [],
         "tickets": {},
@@ -610,20 +739,26 @@ def generate_recommendations(
     if ripeness["status"] == "UNREIF":
         recommendations["warnings"].append({
             "type": "pool_unreif",
-            "message": f"Pool ist UNREIF (Tag {pool_age_days}) - nur {ripeness['probability']*100:.0f}% Chance",
-            "recommendation": "Warte noch 2-3 Tage bis Pool reif ist!"
+            "message": (
+                f"Pool ist UNREIF (Tag {pool_age_days}) - "
+                f"{ripeness['probability']*100:.1f}% kumulativ bis Tag {pool_age_days}"
+            ),
+            "recommendation": f"Warte bis mindestens Tag {p50} (Median), optimal ~Tag {p75}"
         })
     elif ripeness["status"] == "FRUEH":
         recommendations["warnings"].append({
             "type": "pool_frueh",
-            "message": f"Pool ist FRUEH (Tag {pool_age_days}) - {ripeness['probability']*100:.0f}% Chance",
-            "recommendation": "Noch 1-2 Tage warten fuer optimale Chancen"
+            "message": (
+                f"Pool ist FRUEH (Tag {pool_age_days}) - "
+                f"{ripeness['probability']*100:.1f}% kumulativ bis Tag {pool_age_days}"
+            ),
+            "recommendation": f"Noch warten bis ~Tag {p75} (75%-Punkt)"
         })
     elif ripeness["status"] == "ABGELAUFEN":
         recommendations["warnings"].append({
             "type": "pool_abgelaufen",
-            "message": f"Pool ist ABGELAUFEN (Tag {pool_age_days})",
-            "recommendation": "Generiere neuen Pool mit --pool-age 0!"
+            "message": f"Pool-Zyklus ist sehr spaet (Tag {pool_age_days} > {p90})",
+            "recommendation": "Neuen Zyklus starten (z.B. --pool-age 0)"
         })
 
     return recommendations
@@ -664,7 +799,7 @@ def print_recommendations(recommendations: Dict, verbose: bool = False):
         bar_empty = 20 - bar_filled
         progress_bar = "█" * bar_filled + "░" * bar_empty
 
-        print(f"  Tag {age}: [{progress_bar}] {prob*100:.0f}%")
+        print(f"  Tag {age}: [{progress_bar}] {prob*100:.1f}% (kumulativ bis Tag {age})")
         print(f"  Status: {status}")
         print(f"  {ripeness.get('recommendation', '')}")
 
@@ -673,15 +808,27 @@ def print_recommendations(recommendations: Dict, verbose: bool = False):
         else:
             print(f"\n  >>> SPIELEN: NEIN - Warte auf Pool-Reife! <<<")
 
-        # Timing-Tabelle
-        print(f"\n  POOL-REIFE TABELLE:")
-        print(f"  ┌─────────┬────────────┬──────────────────────────────┐")
-        print(f"  │ Tag     │ Chance     │ Empfehlung                   │")
-        print(f"  ├─────────┼────────────┼──────────────────────────────┤")
-        for day, info in POOL_RIPENESS.items():
-            marker = " ◄" if day == age else ""
-            print(f"  │ Tag {day}   │ {info['probability']*100:5.0f}%     │ {info['status']:<12}{marker:>16} │")
-        print(f"  └─────────┴────────────┴──────────────────────────────┘")
+        # Timing-Tabelle (kumulativ)
+        print(f"\n  POOL-REIFE (Chance bis Tag X):")
+        for day in sorted(POOL_RIPENESS):
+            info = POOL_RIPENESS[day]
+            marker = " <==" if day == age else ""
+            print(
+                f"    Tag {day:2d}: {info['probability']*100:5.1f}%  "
+                f"{info['status']:<9}  {info['recommendation']}{marker}"
+            )
+
+        if verbose:
+            ref = pool.get("hit_timing_reference", {})
+            thr = ref.get("hit_threshold_success_pct", {})
+            if thr:
+                print("\n  HIT-SCHWELLEN (Erfolgsrate innerhalb 60 Tage):")
+                for k in sorted(thr):
+                    try:
+                        pct = float(thr[k])
+                    except Exception:
+                        continue
+                    print(f"    {k}+ Hits: {pct:5.1f}%")
 
     # Letzte Ziehung
     last = recommendations["last_drawing"]
@@ -785,24 +932,20 @@ def main():
         description="KENO Taegliche Empfehlung",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
-POOL-REIFE SYSTEM:
-  Der Pool braucht Zeit um zu "reifen". Nicht sofort spielen!
-
-  Tag 1: 31%  - UNREIF (nicht spielen)
-  Tag 2: 45%  - FRUEH (noch warten)
-  Tag 3: 61%  - REIF (spielbereit)
-  Tag 4: 76%  - OPTIMAL (beste Zeit!)
-  Tag 7: 94%  - MAXIMAL (dann neuer Pool)
+POOL-REIFE SYSTEM (Pool-Hit Timing):
+  Werte werden aus `results/pool_hit_timing_extended.json` geladen (falls vorhanden).
+  "Chance bis Tag X" = kumulative Wahrscheinlichkeit, dass innerhalb der ersten X Tage
+  mindestens einmal `pool_hits >= 6` auftritt (Pool ~17 Zahlen).
 
 BEISPIELE:
-  # Pool heute generiert (Tag 0)
-  python daily_recommendation.py --pool-age 0
+  # Neuen Pool-Zyklus starten (Tag 0) und State speichern
+  python scripts/daily_recommendation.py --start-cycle
 
-  # Pool vor 4 Tagen generiert (optimal!)
-  python daily_recommendation.py --pool-age 4
+  # Pool-Zyklus manuell setzen (YYYY-MM-DD)
+  python scripts/daily_recommendation.py --cycle-start 2026-01-01
 
-  # Pool vor 8 Tagen - zu alt, neuen generieren
-  python daily_recommendation.py --pool-age 8
+  # Pool-Alter direkt ueberschreiben (ohne State)
+  python scripts/daily_recommendation.py --pool-age 4
         """
     )
     parser.add_argument("--type", "-t", type=int, choices=[6, 7, 8, 9, 10],
@@ -813,8 +956,14 @@ BEISPIELE:
                         help="Alle Typen anzeigen (6-10)")
     parser.add_argument("--postjp", "-p", action="store_true",
                         help="Post-Jackpot Modus erzwingen")
-    parser.add_argument("--pool-age", type=int, default=4,
-                        help="Tage seit Pool-Generierung (default: 4 = optimal)")
+    parser.add_argument("--pool-age", type=int, default=None,
+                        help="Tage seit Start des Pool-Zyklus (ueberschreibt State)")
+    parser.add_argument("--start-cycle", action="store_true",
+                        help="Startet heute einen neuen Pool-Zyklus und speichert State")
+    parser.add_argument("--cycle-start", type=str, default="",
+                        help="Setzt Pool-Zyklusstart (YYYY-MM-DD) und speichert State")
+    parser.add_argument("--cycle-file", type=str, default="results/pool_cycle_state.json",
+                        help="Pfad fuer Pool-Zyklus-State (Default: results/pool_cycle_state.json)")
     parser.add_argument("--save", "-s", action="store_true",
                         help="Empfehlungen als JSON speichern")
     parser.add_argument("--verbose", "-v", action="store_true",
@@ -824,11 +973,44 @@ BEISPIELE:
 
     base_path = Path(__file__).parent.parent
 
+    # Timing-Daten laden (aktualisiert POOL_RIPENESS + Quantile)
+    load_pool_hit_timing(base_path)
+
     print("Lade Daten...")
     df, jackpot_dates = load_keno_data(base_path)
     print(f"  Ziehungen: {len(df)}")
     print(f"  Letzte: {df['Datum'].max().date()}")
     print(f"  Jackpots: {len(jackpot_dates)}")
+
+    # Pool-Zyklus-Alter bestimmen
+    today = datetime.now().date()
+    cycle_path = _cycle_state_path(base_path, args.cycle_file)
+
+    pool_age_days: int
+    cycle_start: Optional[datetime.date] = None
+
+    if args.pool_age is not None:
+        pool_age_days = int(args.pool_age)
+    elif args.cycle_start:
+        try:
+            cycle_start = datetime.strptime(args.cycle_start, "%Y-%m-%d").date()
+        except ValueError:
+            raise SystemExit("--cycle-start muss im Format YYYY-MM-DD sein")
+        pool_age_days = (today - cycle_start).days
+        if pool_age_days < 0:
+            pool_age_days = 0
+        save_pool_cycle_start(cycle_path, cycle_start)
+    elif args.start_cycle:
+        cycle_start = today
+        pool_age_days = 0
+        save_pool_cycle_start(cycle_path, cycle_start)
+    else:
+        cycle_start = load_pool_cycle_start(cycle_path)
+        pool_age_days = (today - cycle_start).days if cycle_start else 0
+        if pool_age_days < 0:
+            pool_age_days = 0
+
+    print(f"  Pool-Zyklus: Tag {pool_age_days} ({'State' if cycle_start else 'kein State'})")
 
     # Typen bestimmen
     if args.type:
@@ -844,7 +1026,7 @@ BEISPIELE:
         types=types,
         use_dual=args.dual,
         force_postjp=args.postjp,
-        pool_age_days=args.pool_age
+        pool_age_days=pool_age_days
     )
 
     # Ausgabe

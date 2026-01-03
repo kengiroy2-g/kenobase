@@ -1,0 +1,78 @@
+{
+  "backtest_period": "2022-01-03 - 2026-01-01",
+  "total_draws": 1460,
+  "configurations": [
+    {
+      "config": "STRIKT (Conv>=90, Time>=60, Stab>=0.6)",
+      "play_days": 37,
+      "hits_6_6": 1,
+      "hits_5_6": 1,
+      "hits_4_6": 5,
+      "total_tickets": 1110,
+      "total_cost": 1110,
+      "total_winnings": 541,
+      "avg_wait_days": 34.72222222222222,
+      "roi": -51.26126126126126,
+      "hit_rate_6_6": 2.7027027027027026
+    },
+    {
+      "config": "MITTEL (Conv>=80, Time>=50, Stab>=0.5)",
+      "play_days": 149,
+      "hits_6_6": 2,
+      "hits_5_6": 7,
+      "hits_4_6": 28,
+      "total_tickets": 4470,
+      "total_cost": 4470,
+      "total_winnings": 1222,
+      "avg_wait_days": 9.39864864864865,
+      "roi": -72.662192393736,
+      "hit_rate_6_6": 1.342281879194631
+    },
+    {
+      "config": "LOCKER (Conv>=70, Time>=40, Stab>=0.4)",
+      "play_days": 649,
+      "hits_6_6": 3,
+      "hits_5_6": 41,
+      "hits_4_6": 133,
+      "total_tickets": 19470,
+      "total_cost": 19470,
+      "total_winnings": 2619,
+      "avg_wait_days": 2.1728395061728394,
+      "roi": -86.54853620955316,
+      "hit_rate_6_6": 0.46224961479198773
+    },
+    {
+      "config": "NUR TIMING (Conv>=60, Time>=60, Stab>=0.3)",
+      "play_days": 648,
+      "hits_6_6": 3,
+      "hits_5_6": 34,
+      "hits_4_6": 126,
+      "total_tickets": 19440,
+      "total_cost": 19440,
+      "total_winnings": 2484,
+      "avg_wait_days": 2.1669242658423493,
+      "roi": -87.22222222222223,
+      "hit_rate_6_6": 0.4629629629629629
+    },
+    {
+      "config": "ALLE KOMBIS (Conv>=85, Time>=55, Stab>=0.5)",
+      "play_days": 120,
+      "hits_6_6": 35,
+      "hits_5_6": 34,
+      "hits_4_6": 26,
+      "total_tickets": 1480752,
+      "total_cost": 1480752,
+      "total_winnings": 18076,
+      "avg_wait_days": 11.495798319327731,
+      "roi": -98.77926891201227,
+      "hit_rate_6_6": 29.166666666666668
+    }
+  ],
+  "recommended": {
+    "convergence_threshold": 85,
+    "timing_threshold": 55,
+    "stability_threshold": 0.5,
+    "strategy": "top_12_numbers",
+    "tickets_per_play": 924
+  }
+}

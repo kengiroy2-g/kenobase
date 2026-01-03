@@ -1,0 +1,6 @@
+{
+  "events_analyzed": 20,
+  "avg_non_overlap_eliminated": -0.2,
+  "avg_precision_improvement": -0.011764705882352941,
+  "hypothesis_supported": false
+}

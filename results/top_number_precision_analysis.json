@@ -1,0 +1,10 @@
+{
+  "analysis": "top_n_precision",
+  "best_config": {
+    "convergence": 80,
+    "timing": 50,
+    "top_n": 6
+  },
+  "six_six_days": 0,
+  "six_six_rate_percent": 0.0
+}
