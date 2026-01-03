@@ -2,11 +2,12 @@ import openai
 import time
 import PyPDF2
 import re
+import os
 
 
 
-# Setze deinen OpenAI API-Schlüssel
-openai.api_key = "REDACTED_API_KEY"
+# Setze deinen OpenAI API-Schlüssel (via Umgebungsvariable!)
+openai.api_key = os.environ.get("OPENAI_API_KEY", "YOUR_KEY_HERE")
 
 
 def extract_pages(pdf_path):
